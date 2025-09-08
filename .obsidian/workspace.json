@@ -8,13 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b4c7b41edec21fb3",
+            "id": "f9434b1e5a59894d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "College/Semester 1/Physics.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Physics"
             }
           }
         ]
@@ -81,11 +95,74 @@
     "type": "split",
     "children": [
       {
-        "id": "ac58aee7518b6fb8",
+        "id": "8b8a04b2f9d79e0a",
         "type": "tabs",
         "children": [
           {
-            "id": "288dc0d116da9d75",
+            "id": "29694604cf142f0a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "College/Semester 1/Physics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Physics"
+            }
+          },
+          {
+            "id": "2df5d363fe213a76",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "College/Semester 1/Physics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Physics"
+            }
+          },
+          {
+            "id": "7a475a959aeb6d61",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c4ab145b97fc93c9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "College/Semester 1/Physics.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Physics"
+            }
+          },
+          {
+            "id": "b4d8e1c546b36bb6",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -94,7 +171,8 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -109,16 +187,28 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-matrix:Obsidian Matrix": false
     }
   },
-  "active": "288dc0d116da9d75",
+  "active": "f9434b1e5a59894d",
   "lastOpenFiles": [
+    "College/Semester 1/Python.md",
+    "College/Semester 1/Semester 1.md",
+    "College/Semester 1/Electrical Engineering.md",
+    "College/Semester 1/Environmental Studies and Life Sciences.md",
+    "College/Semester 1/Mathematics.md",
+    "College/Semester 1/Mechanical Engineering.md",
+    "College/Semester 1/Nabla operator.md",
+    "College/Semester 1/Physics.md",
+    "College/Semester 1/Gauss's law for Electric fields.md",
+    "College/Semester 1/$/nabla$.md",
+    "College/Semester 1/$",
+    "College/College Index.md",
+    "Index.md",
     "Untitled.base",
     "Welcome.md",
     "Untitled.canvas",
-    "College/Semester 1/Semester 1.md",
-    "College/College Index.md",
     "College/Semester 1",
     "College",
     "create a link.md"

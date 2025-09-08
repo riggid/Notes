@@ -1,4 +1,5 @@
 {
   "livePreview": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "newFileLocation": "current"
 }
