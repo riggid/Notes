@@ -18,8 +18,8 @@
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
+                  "collapseAll": false,
+                  "extraContext": false,
                   "sortOrder": "alphabetical",
                   "showSearch": false,
                   "searchQuery": "",
@@ -95,11 +95,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8b8a04b2f9d79e0a",
+        "id": "58fd848b12243d63",
         "type": "tabs",
         "children": [
           {
-            "id": "29694604cf142f0a",
+            "id": "d19deef2fadc6ca2",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -118,7 +118,7 @@
             }
           },
           {
-            "id": "2df5d363fe213a76",
+            "id": "8eb9a4ac9f06ac63",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -132,7 +132,7 @@
             }
           },
           {
-            "id": "7a475a959aeb6d61",
+            "id": "bb8a27b927661359",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -147,7 +147,7 @@
             }
           },
           {
-            "id": "c4ab145b97fc93c9",
+            "id": "9bd99ab2e6c6c0b5",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -162,7 +162,7 @@
             }
           },
           {
-            "id": "b4d8e1c546b36bb6",
+            "id": "5f187cb1bed28d8b",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -193,14 +193,14 @@
   },
   "active": "f9434b1e5a59894d",
   "lastOpenFiles": [
+    "College/Semester 1/Physics.md",
+    "College/Semester 1/Nabla operator.md",
     "College/Semester 1/Python.md",
     "College/Semester 1/Semester 1.md",
     "College/Semester 1/Electrical Engineering.md",
     "College/Semester 1/Environmental Studies and Life Sciences.md",
     "College/Semester 1/Mathematics.md",
     "College/Semester 1/Mechanical Engineering.md",
-    "College/Semester 1/Nabla operator.md",
-    "College/Semester 1/Physics.md",
     "College/Semester 1/Gauss's law for Electric fields.md",
     "College/Semester 1/$/nabla$.md",
     "College/Semester 1/$",
