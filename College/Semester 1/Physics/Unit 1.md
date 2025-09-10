@@ -1,21 +1,21 @@
 ## Maxwell's Equations in a Medium
 Uses the  [[Nabla operator]]
 
-### *Gauss's law for electric fields*
+### **Gauss's law for electric fields**
 $$
 \nabla \cdot \overrightarrow{E} = \frac{\rho}{\epsilon_{o}}
 $$
-###  *Gauss's law for magnetic fields*
+###  **Gauss's law for magnetic fields**
 $$
 \nabla \cdot \overrightarrow{B} = 0
 $$
 it implies the absence of magnetic monopoles.
 
-### *Faraday's law of electromagnetic induction*
+### **Faraday's law of electromagnetic induction**
 $$
 \nabla \times \overrightarrow{E} = - \frac{\partial \overrightarrow{B}}{\partial t}
 $$
-### *Ampere - Maxwell circuital law*
+### **Ampere - Maxwell circuital law**
 $$
 \nabla \times \overrightarrow{B} = \mu_{0}\overrightarrow{J} + \mu_{o} \epsilon_{o} \frac{\partial \overrightarrow{E}}{\partial t}
 $$
@@ -24,16 +24,16 @@ displacement current associated with time varying electric fields which is Maxwe
 ## Maxwell's Equations in free space
 In the case of free space (which does not have sources of charges and currents) then the
 Maxwell’s equations reduce to
-$$
+#### 1. $$
 \nabla \cdot \overrightarrow{E} = 0
 $$
-$$
+#### 2. $$
 \nabla \cdot \overrightarrow{B}
 $$
-$$
+#### 3. $$
 \nabla \times \overrightarrow{E} = - \frac{\partial \overrightarrow{B}}{\partial  t}
 $$
-$$
+#### 4. $$
 \nabla \times \overrightarrow{B} = \mu_{o}\epsilon_{o} \frac{\partial \overrightarrow{E}}{\partial t}
 $$
 
@@ -77,7 +77,7 @@ Total energy
 $$
 \epsilon_{0} E_{x}^2
 $$
-### Poynting Vector
+### **Poynting Vector**
 Direction of energy of EM wave
 $$
 s \equiv \frac{1}{\mu_{0}} E \times B = c \cdot \epsilon_{0} E^2
@@ -87,3 +87,22 @@ The average energy of the wave transmitted per unit time can be found by taking 
 $$
 \frac{1}{2} \epsilon_{0} c E^2_{xo} = \frac{1}{2} c \frac{B^2_{yo}}{\mu_{o}} = \frac{1}{2} \frac{E_{xo} B_{yo}}{\mu_{0}}
 $$
+## Polarization states of EM waves
+- **Unpolarized Light**  
+    Natural light is generally **unpolarized**. This means that the electric field oscillates randomly in all possible planes perpendicular to the direction of propagation, with equal probability.
+    
+- **Linearly Polarized Light**  
+    Light in the form of a plane wave is said to be **linearly polarized** when the electric field oscillates in a single plane.
+    
+    - Example: If a horizontally polarized wave and a vertically polarized wave of the same amplitude and in the same phase are combined, the result is linearly polarized light at a **45° angle**.
+    
+- **Circularly Polarized Light**  
+    When two plane waves of **equal amplitude** are combined with a **90° phase difference**, the resulting light is **circularly polarized**.
+    
+    - The tip of the electric field vector traces out a circle as the wave propagates.
+    
+- **Elliptically Polarized Light**  
+    If the two plane waves have **different amplitudes** and are related in phase by 90°, or if the **relative phase is not 90°**, the resulting light is **elliptically polarized**.
+    
+    - In this case, the tip of the electric field vector traces out an ellipse.
+    
