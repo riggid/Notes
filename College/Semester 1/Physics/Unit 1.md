@@ -105,4 +105,64 @@ $$
     If the two plane waves have **different amplitudes** and are related in phase by 90°, or if the **relative phase is not 90°**, the resulting light is **elliptically polarized**.
     
     - In this case, the tip of the electric field vector traces out an ellipse.
+## Black Body Radiation in Equilibrium
+
+### Classical View
+
+- Radiation interacts with matter in two main ways:
     
+    1. **Absorption** – materials absorb incident radiation.
+        
+    2. **Emission** – materials emit radiation at characteristic wavelengths, which gives them their color.
+        
+- **Kirchhoff’s Contribution**:  
+    Gustav Robert Kirchhoff studied absorption properties of materials and identified **perfect absorbers** that absorb all incident rays.
+    
+    - If such a material is heated, it emits radiation of **all wavelengths** it can absorb.
+        
+    - This idealized material is called a **black body**.
+        
+
+### Black Body Model (Cavity Model)
+
+- A black body can be modeled as a **cavity with a small hole**:
+    
+    - Radiation entering the cavity undergoes **multiple reflections** and cannot escape easily.
+        
+    - When the cavity is heated, it emits radiation of all possible frequencies.
+        
+    - The intensity of emission increases with temperature.
+        
+- However, the **amount of radiation at each frequency** is limited by thermodynamic equilibrium:
+    
+    - Energy emitted = Energy absorbed
+        
+    - Radiation density in equilibrium depends **only on temperature**, not on the material or structure of the cavity walls.
+        
+- As temperature increases:
+    
+    - The **distribution curve** of emitted radiation shifts.
+        
+    - The **peak wavelength moves to shorter wavelengths** (Wien’s displacement law).
+        
+
+### Physical Interpretation
+
+- Emission from the black body can be thought of as arising from **harmonic oscillators** (atoms/electrons in the cavity walls).
+    
+- Since the cavity is large, with many oscillators, a **wide range of wavelengths** can be emitted.
+    
+- But:
+    
+    - Only those radiations that can form **standing waves** inside the cavity are allowed.
+
+### Why Only Standing Waves?
+
+- **Boundary Conditions**:
+    
+    - The cavity walls enforce specific boundary conditions on the electromagnetic field.
+        
+    - For a wave to persist without canceling itself out, it must “fit” inside the cavity.
+        
+    - This happens only if the wave forms a **standing wave pattern**.
+
