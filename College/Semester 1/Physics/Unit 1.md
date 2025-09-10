@@ -165,4 +165,3 @@ $$
     - For a wave to persist without canceling itself out, it must “fit” inside the cavity.
         
     - This happens only if the wave forms a **standing wave pattern**.
-
