@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/Semester 1/Physics.md",
+                "file": "College/Semester 1/Physics/Unit 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Physics"
+              "title": "Unit 1"
+            }
+          },
+          {
+            "id": "214eada4afe681e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "College/Semester 1/Physics/Unit 1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Unit 1"
             }
           }
         ]
@@ -88,81 +112,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "23cafa71a74a5ded",
     "type": "split",
     "children": [
       {
-        "id": "58fd848b12243d63",
+        "id": "03b6abd93263bb13",
         "type": "tabs",
         "children": [
           {
-            "id": "d19deef2fadc6ca2",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "College/Semester 1/Physics.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Physics"
-            }
-          },
-          {
-            "id": "8eb9a4ac9f06ac63",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "College/Semester 1/Physics.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Physics"
-            }
-          },
-          {
-            "id": "bb8a27b927661359",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "9bd99ab2e6c6c0b5",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "College/Semester 1/Physics.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Physics"
-            }
-          },
-          {
-            "id": "5f187cb1bed28d8b",
+            "id": "3d6ef0e537cb56fd",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -171,8 +133,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -188,16 +149,21 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-matrix:Obsidian Matrix": false
+      "obsidian-matrix:Obsidian Matrix": false,
+      "quiz-generator:Open generator": false
     }
   },
   "active": "f9434b1e5a59894d",
   "lastOpenFiles": [
-    "College/Semester 1/Physics.md",
+    "College/Semester 1/Physics/Unit 1.md",
+    "College/Semester 1/Physics/Physics.md",
+    "College/Semester 1/Electrical Engineering",
+    "College/Semester 1/Physics",
+    "Quiz 1.md",
     "College/Semester 1/Nabla operator.md",
     "College/Semester 1/Python.md",
     "College/Semester 1/Semester 1.md",
-    "College/Semester 1/Electrical Engineering.md",
+    "College/Semester 1/Electrical Engineering/Electrical Engineering.md",
     "College/Semester 1/Environmental Studies and Life Sciences.md",
     "College/Semester 1/Mathematics.md",
     "College/Semester 1/Mechanical Engineering.md",
