@@ -1,4 +1,5 @@
 {
   "theme": "obsidian",
-  "cssTheme": "Catppuccin"
+  "cssTheme": "Catppuccin",
+  "baseFontSize": 18
 }

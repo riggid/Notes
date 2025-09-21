@@ -2,5 +2,6 @@
   "obsidian-git",
   "obsidian-latex-suite",
   "obsidian-matrix",
-  "quiz-generator"
+  "quiz-generator",
+  "obsidian-tikzjax"
 ]

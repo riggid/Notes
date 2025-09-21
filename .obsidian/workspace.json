@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/Semester 1/Physics/Unit 1.md",
+                "file": "College/Semester 1/Physics/Physics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,83 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit 1"
+              "title": "Physics"
+            }
+          },
+          {
+            "id": "73c59fc8530af42c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "College/Semester 1/Unit 1 Mathematics.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Unit 1 Mathematics"
+            }
+          },
+          {
+            "id": "dfeebb3b3abae7e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "College/Semester 1/Unit 1 Mathematics Examples.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Unit 1 Mathematics Examples"
+            }
+          },
+          {
+            "id": "5b664f5070313bcd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "College/Semester 1/Unit 1 Mathematics.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Unit 1 Mathematics"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -88,28 +161,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "23cafa71a74a5ded",
     "type": "split",
     "children": [
       {
-        "id": "03b6abd93263bb13",
+        "id": "a3c7230b713f9647",
         "type": "tabs",
         "children": [
           {
-            "id": "3d6ef0e537cb56fd",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "a25429ccc06697d1",
+            "id": "fa214e79ea7d1751",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -128,7 +192,7 @@
             }
           },
           {
-            "id": "db2b3c1e667a5ab1",
+            "id": "1678f1f2851928c0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -142,7 +206,7 @@
             }
           },
           {
-            "id": "cb1d11b68b98f824",
+            "id": "dc02201da5f94143",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -157,7 +221,7 @@
             }
           },
           {
-            "id": "f072633931cf5db3",
+            "id": "d92abf60bd00d54f",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -170,8 +234,19 @@
               "icon": "lucide-list",
               "title": "Outline of Unit 1"
             }
+          },
+          {
+            "id": "4488dcb046b9a0a4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -191,10 +266,13 @@
       "quiz-generator:Open generator": false
     }
   },
-  "active": "f9434b1e5a59894d",
+  "active": "dfeebb3b3abae7e4",
   "lastOpenFiles": [
+    "College/Semester 1/Unit 1 Mathematics.md",
+    "College/Semester 1/Unit 1 Mathematics Examples.md",
     "College/Semester 1/Physics/Physics.md",
-    "College/Semester 1/Physics/Unit 1.md",
+    "College/Semester 1/Mathematics.md",
+    "College/Semester 1/Physics/Unit 1 Physics.md",
     "College/Semester 1/Electrical Engineering",
     "College/Semester 1/Physics",
     "Quiz 1.md",
@@ -203,7 +281,6 @@
     "College/Semester 1/Semester 1.md",
     "College/Semester 1/Electrical Engineering/Electrical Engineering.md",
     "College/Semester 1/Environmental Studies and Life Sciences.md",
-    "College/Semester 1/Mathematics.md",
     "College/Semester 1/Mechanical Engineering.md",
     "College/Semester 1/Gauss's law for Electric fields.md",
     "College/Semester 1/$/nabla$.md",
