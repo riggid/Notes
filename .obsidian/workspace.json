@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fab84c7af51cf0d1",
+        "id": "b8008ab990db6734",
         "type": "tabs",
         "children": [
           {
-            "id": "f9434b1e5a59894d",
+            "id": "037ab7d990c4a2b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/Semester 1/Physics/Physics.md",
+                "file": "College/Semester 1/Mechanical Engineering/Unit 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,40 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Physics"
+              "title": "Unit 1"
             }
           },
           {
-            "id": "73c59fc8530af42c",
+            "id": "db2dcb3c679ca54c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/Semester 1/Unit 1 Mathematics.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Unit 1 Mathematics"
-            }
-          },
-          {
-            "id": "dfeebb3b3abae7e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "College/Semester 1/Unit 1 Mathematics Examples.md",
+                "file": "College/Semester 1/Electrical Engineering/Unit 1 Examples.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,35 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit 1 Mathematics Examples"
-            }
-          },
-          {
-            "id": "5b664f5070313bcd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "College/Semester 1/Unit 1 Mathematics.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Unit 1 Mathematics"
+              "title": "Unit 1 Examples"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -161,8 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "23cafa71a74a5ded",
@@ -266,27 +217,36 @@
       "quiz-generator:Open generator": false
     }
   },
-  "active": "dfeebb3b3abae7e4",
+  "active": "db2dcb3c679ca54c",
   "lastOpenFiles": [
-    "College/Semester 1/Unit 1 Mathematics.md",
-    "College/Semester 1/Unit 1 Mathematics Examples.md",
+    "College/Semester 1/Electrical Engineering/Unit 1.md",
+    "College/Semester 1/Electrical Engineering/Unit 1 Examples.md",
+    "College/Semester 1/Electrical Engineering/Electrical Engineering.md",
+    "College/Semester 1/Mechanical Engineering/Unit 1 Examples.md",
+    "College/Semester 1/Mechanical Engineering/Mechanical Engineering.md",
+    "College/Semester 1/Mechanical Engineering/Unit 1.md",
+    "College/Semester 1/Semester 1.md",
+    "College/College Index.md",
+    "Index.md",
+    "College/Semester 1/Mathematics/Unit 1.md",
+    "College/Semester 1/Mathematics/Unit 1 Examples.md",
+    "College/Semester 1/Physics/Unit 1.md",
     "College/Semester 1/Physics/Physics.md",
-    "College/Semester 1/Mathematics.md",
-    "College/Semester 1/Physics/Unit 1 Physics.md",
+    "College/Semester 1/Physics/Unit.md",
+    "College/Semester 1/Pyhton",
+    "College/Semester 1/Environmental Studies and Life Science",
+    "College/Semester 1/Mechanical Engineering",
+    "College/Semester 1/Mathematics",
+    "College/Semester 1/Mathematics/Mathematics.md",
     "College/Semester 1/Electrical Engineering",
     "College/Semester 1/Physics",
     "Quiz 1.md",
-    "College/Semester 1/Nabla operator.md",
-    "College/Semester 1/Python.md",
-    "College/Semester 1/Semester 1.md",
-    "College/Semester 1/Electrical Engineering/Electrical Engineering.md",
-    "College/Semester 1/Environmental Studies and Life Sciences.md",
-    "College/Semester 1/Mechanical Engineering.md",
+    "College/Semester 1/Physics/Nabla operator.md",
+    "College/Semester 1/Pyhton/Python.md",
+    "College/Semester 1/Environmental Studies and Life Science/Environmental Studies and Life Sciences.md",
     "College/Semester 1/Gauss's law for Electric fields.md",
     "College/Semester 1/$/nabla$.md",
     "College/Semester 1/$",
-    "College/College Index.md",
-    "Index.md",
     "Untitled.base",
     "Welcome.md",
     "Untitled.canvas",
