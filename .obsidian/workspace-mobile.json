@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/Semester 1/Electrical Engineering/Unit 1 Examples.md",
+                "file": "College/Semester 1/Semester 1.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit 1 Examples"
+              "title": "Semester 1"
             }
           }
         ]
@@ -178,14 +178,17 @@
   },
   "active": "dd2be1a19b503bdc",
   "lastOpenFiles": [
-    "College/Semester 1/Electrical Engineering/Unit 1.md",
-    "College/Semester 1/Electrical Engineering/Unit 1 Examples.md",
-    "College/Semester 1/Electrical Engineering/Electrical Engineering.md",
-    "College/Semester 1/Semester 1.md",
-    "College/Semester 1/Mathematics/Mathematics.md",
-    "College/Semester 1/Mathematics/Unit 1.md",
     "College/College Index.md",
     "Index.md",
+    "College/Semester 1/Semester 1.md",
+    "College/Semester 1/Electrical Engineering/Electrical Engineering.md",
+    "College/Semester 1/Electrical Engineering/Unit 1.md",
+    "College/Semester 1/Physics/Unit 1.md",
+    "College/Semester 1/Physics/Physics.md",
+    "Quiz 1.md",
+    "College/Semester 1/Electrical Engineering/Unit 1 Examples.md",
+    "College/Semester 1/Mathematics/Mathematics.md",
+    "College/Semester 1/Mathematics/Unit 1.md",
     "College/Semester 1/Pyhton/Python.md",
     "College/Semester 1/Pyhton",
     "College/Semester 1/Physics/Nabla operator.md",
@@ -197,8 +200,6 @@
     "College/Semester 1/Mathematics",
     "College/Semester 1/Environmental Studies and Life Science/Environmental Studies and Life Sciences.md",
     "College/Semester 1/Environmental Studies and Life Science",
-    "College/Semester 1/Mathematics.md",
-    "College/Semester 1/Physics/Unit 1.md",
-    "College/Semester 1/Physics/Physics.md"
+    "College/Semester 1/Mathematics.md"
   ]
 }
