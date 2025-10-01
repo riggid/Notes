@@ -93,7 +93,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "35255598edb52e9d",
+            "id": "d6b8409d7c1af553",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -103,33 +103,6 @@
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
-            }
-          },
-          {
-            "id": "9152ac91e6bc5c07",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
-            }
-          },
-          {
-            "id": "37bf4ef436668471",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
             }
           }
         ]
@@ -162,6 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "College/Semester 1/Mathematics/Unit 1 Examples.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +145,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Unit 1 Examples"
             }
           },
           {
@@ -180,26 +154,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "College/Semester 1/Mathematics/Unit 1 Examples.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
-            }
-          },
-          {
-            "id": "3c20ca086abccf09",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Outgoing links from Unit 1 Examples"
             }
           },
           {
@@ -208,12 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "College/Semester 1/Mathematics/Unit 1 Examples.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Unit 1 Examples"
             }
           }
         ]
@@ -231,7 +192,7 @@
       "daily-notes:Open today's daily note": true,
       "templates:Insert template": true,
       "command-palette:Open command palette": true,
-      "bases:Create new base": false,
+      "bases:Create new base": true,
       "obsidian-matrix:Obsidian Matrix": false,
       "quiz-generator:Open generator": false,
       "smart-connections:Open: Smart Chat": false,
@@ -239,7 +200,7 @@
       "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "4488dcb046b9a0a4",
+  "active": "fefe7531afeb901d",
   "lastOpenFiles": [
     "College/Semester 1/Physics/Unit 1/Core Notes.md",
     "College/Semester 1/Mathematics/Unit 1 Examples.md",
