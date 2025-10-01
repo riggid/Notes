@@ -11,24 +11,15 @@
             "id": "fefe7531afeb901d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "College/Semester 1/Mathematics/Unit 1 Examples.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "aFile": ".smart-env/smart_env.json",
+                "bFile": ".smart-env/smart_env.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Unit 1 Examples"
+              "icon": "diff",
+              "title": "Diff: smart_env.json"
             }
           },
           {
@@ -135,7 +126,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "College/Semester 1/Mathematics/Unit 1 Examples.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +135,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Unit 1 Examples"
+              "title": "Backlinks"
             }
           },
           {
@@ -154,12 +144,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "College/Semester 1/Mathematics/Unit 1 Examples.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Unit 1 Examples"
+              "title": "Outgoing links"
             }
           },
           {
@@ -168,13 +157,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "College/Semester 1/Mathematics/Unit 1 Examples.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Unit 1 Examples"
+              "title": "Outline"
             }
           }
         ]
@@ -202,8 +190,8 @@
   },
   "active": "fefe7531afeb901d",
   "lastOpenFiles": [
-    "College/Semester 1/Physics/Unit 1/Core Notes.md",
     "College/Semester 1/Mathematics/Unit 1 Examples.md",
+    "College/Semester 1/Physics/Unit 1/Core Notes.md",
     "College/Semester 1/Mechanical Engineering/Unit 1.md",
     "College/Semester 1/Physics/Unit 1/Examples.md",
     "College/Semester 1/Physics/Unit 1/Unit 1.md",
