@@ -4,5 +4,7 @@
   "obsidian-matrix",
   "quiz-generator",
   "obsidian-tikzjax",
-  "smart-connections"
+  "smart-connections",
+  "circuit-sketcher",
+  "obsidian-circuitjs"
 ]

@@ -71,3 +71,9 @@ x' \\ y'
 x \\ y
 \end{bmatrix}
 $$
+
+## Conditions for a group of vectors to be a Vector Space
+- A set of vectors
+- $\vec{a} + \vec{b}$ should be in the same vector space
+- $c \vec{a}$ should also belong to the same vector space
+
