@@ -35,14 +35,17 @@
             "id": "007f6d07b6d2df63",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".gitignore",
+                "bFile": ".gitignore",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: .gitignore"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,11 +160,13 @@
       "circuit-sketcher:Create new Circuit Sketcher file": false
     }
   },
-  "active": "d6b8409d7c1af553",
+  "active": "b2362cacaeb85f05",
   "lastOpenFiles": [
-    "College/Semester 1/Physics/Unit 1/Q&A.md",
-    "College/Semester 1/Mechanical Engineering/Unit 1.md",
+    "College/Semester 1/Mechanical Engineering/Core Notes.md",
+    "College/Semester 1/Mechanical Engineering/Mechanical Engineering.md",
+    "College/Semester 1/Mechanical Engineering/Examples.md",
     "College/Semester 1/Physics/Unit 1/Core Notes.md",
+    "College/Semester 1/Physics/Unit 1/Q&A.md",
     "College/Semester 1/Electrical Engineering/Unit 1.md",
     "College/Semester 1/Electrical Engineering/Examples.md",
     "College/Semester 1/Electrical Engineering/Core Notes.md",
@@ -170,7 +175,6 @@
     "College/Semester 1/Physics/Unit 1/Question Bank.md",
     "College/Semester 1/Electrical Engineering/Unit 1 Examples.md",
     "College/Semester 1/Physics/Unit 1/Examples.md",
-    "College/Semester 1/Mechanical Engineering/Mechanical Engineering.md",
     "College/Semester 1/Physics/Physics.md",
     "College/Semester 1/Semester 1.md",
     "College/College Index.md",
@@ -194,7 +198,6 @@
     "College/Semester 1/Mathematics",
     "College/Semester 1/Mathematics/Mathematics.md",
     "College/Semester 1/Electrical Engineering",
-    "Quiz 1.md",
     "Untitled.canvas"
   ]
 }
