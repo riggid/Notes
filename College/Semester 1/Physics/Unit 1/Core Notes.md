@@ -40,7 +40,7 @@ In free space ($\rho=0, \vec{J}=0$), Maxwell's equations can be combined to deri
 This shows that E and B fields propagate as transverse waves at the speed of light, $c = 1/\sqrt{\mu_{0}\epsilon_{0}}$. The fields are in phase and mutually perpendicular.
 
 > See also: [[Q&A#CL2_Q3: How do Maxwell's equations describe electromagnetic waves?]]
-> For a numerical problem, see: [[Examples#Example 1: EM Wave Properties]]
+> For a numerical problem, see: [[College/Semester 1/Physics/Unit 1/Examples#Example 1: EM Wave Properties]]
 
 ---
 
@@ -64,7 +64,7 @@ $$\vec{S} = \frac{1}{\mu_{0}} (\vec{E} \times \vec{B})$$
 -   **Classical Failure (Ultraviolet Catastrophe)**: The classical Rayleigh-Jeans law incorrectly predicted that the energy radiated by a black body would increase infinitely at high frequencies.
 -   **Planck's Solution (Quantum Hypothesis)**: Max Planck resolved this by postulating that energy is quantized, meaning it can only be emitted or absorbed in discrete packets ($E = nh\nu$). His formula correctly described the spectrum:
     $$\rho(\nu)d\nu = \frac{8\pi h\nu^{3}}{c^{3}}\frac{1}{e^{h\nu / kT}-1}d\nu $$
-> See also: [[Examples#Example 2: Planck's vs. Classical Energy]]
+> See also: [[College/Semester 1/Physics/Unit 1/Examples#Example 2: Planck's vs. Classical Energy]]
 
 ### **Atomic Spectra**
 -   **Observation**: Atoms emit light only at specific, discrete frequencies (line spectra).
@@ -79,14 +79,14 @@ This effect, where X-rays scatter off electrons, is treated as a particle-partic
 - **Classical Failure**: Predicts that the scattered radiation should have the same wavelength as the incident radiation.
 - **Quantum Explanation**: The collision causes the photon to lose energy to the electron, resulting in a scattered photon with a longer wavelength. The change in wavelength is the **Compton shift**:
   $$\Delta\lambda = \lambda_f - \lambda_i = \frac{h}{m_e c}(1 - \cos\theta)$$
-> See also: [[Examples#Example 3: Compton Scattering Calculation]]
+> See also: [[College/Semester 1/Physics/Unit 1/Examples#Example 3: Compton Scattering Calculation]]
 
 ### **de Broglie's Hypothesis: Matter Waves**
 - **Hypothesis**: Just as waves (light) can have particle-like properties, particles should have wave-like properties.
 - **de Broglie Wavelength**: Any particle with momentum $p=mv$ or energy E has an associated wavelength:
   $$\lambda = \frac{h}{p} = \frac{h}{\sqrt{2mE}}$$
 - **Macroscopic Objects**: For large masses, the wavelength is too small to be detected. The wave nature is only significant for micro-particles.
-> See also: [[Examples#Example 4: De-Broglie Wavelength of an Electron]], [[Examples#Example 5: De-Broglie Wavelength of an Alpha Particle]]
+> See also: [[College/Semester 1/Physics/Unit 1/Examples#Example 4: De-Broglie Wavelength of an Electron]], [[College/Semester 1/Physics/Unit 1/Examples#Example 5: De-Broglie Wavelength of an Alpha Particle]]
 
 ### **Wave Packets, Phase and Group Velocity**
 - **Wave Packet**: A moving particle is represented by a wave packet, which is a superposition of waves of slightly different frequencies. This localizes the "particle" in space.
@@ -99,7 +99,7 @@ $$v_g = \frac{d\omega}{dk} = \frac{d(\hbar\omega)}{d(\hbar k)} = \frac{dE}{dp}$$
 For a non-relativistic particle, the energy is purely kinetic, $E = \frac{p^2}{2m}$.
 $$\frac{dE}{dp} = \frac{d}{dp}\left(\frac{p^2}{2m}\right) = \frac{2p}{2m} = \frac{p}{m} = v_{particle}$$
 Thus, the group velocity of the wave packet is equal to the particle's velocity.
-> See also: [[Examples#Example 6: Phase and Group Velocity]]
+> See also: [[College/Semester 1/Physics/Unit 1/Examples#Example 6: Phase and Group Velocity]]
 
 ---
 
@@ -111,7 +111,7 @@ It is fundamentally impossible to simultaneously know the exact values of certai
 -   **Energy and Time**: $\Delta E \cdot \Delta t \geq \frac{\hbar}{2}$
 -   **Position and Wavelength**: $\Delta x \cdot \Delta\lambda \ge \frac{\lambda^2}{4\pi}$
 -   **Position and Wave Number**: $\Delta x \cdot \Delta k \ge \frac{1}{2}$
-> See also: [[Examples#Example 7: Uncertainty Principle Calculation]], [[Examples#Example 8: Spectral Line Width]], [[Examples#Example 9: Uncertainty for a Confined Particle]]
+> See also: [[College/Semester 1/Physics/Unit 1/Examples#Example 7: Uncertainty Principle Calculation]], [[College/Semester 1/Physics/Unit 1/Examples#Example 8: Spectral Line Width]], [[College/Semester 1/Physics/Unit 1/Examples#Example 9: Uncertainty for a Confined Particle]]
 
 ### **The Wavefunction ($\Psi$)**
 - **Physical Interpretation**: The wavefunction $\Psi$ is a complex probability amplitude. Its squared magnitude, $|\Psi|^2 = \Psi^*\Psi$, represents the **probability density** of finding the particle at a certain position and time.
@@ -146,4 +146,4 @@ A particle is confined to a one-dimensional box of length $L$.
 -   **Energy Levels**: The allowed energies are quantized:
     $$E_n = \frac{n^2\pi^2\hbar^2}{2mL^2} \quad \text{where } n=1, 2, 3, \dots$$
 -   **Wavefunction**: $\psi_n(x)=\sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right)$
-> See also: [[Examples#Example 10: Probability in a 1D Box]], [[Examples#Example 11: Minimum Energy in a 1D Box]]
+> See also: [[College/Semester 1/Physics/Unit 1/Examples#Example 10: Probability in a 1D Box]], [[College/Semester 1/Physics/Unit 1/Examples#Example 11: Minimum Energy in a 1D Box]]

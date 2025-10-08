@@ -1,1 +1,1 @@
-## [[College/Semester 1/Electrical Engineering/Unit 1|Unit 1]]
+## [[College/Semester 1/Electrical Engineering/Core Notes|Core Notes]]
