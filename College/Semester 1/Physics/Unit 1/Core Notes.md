@@ -63,7 +63,7 @@ $$\vec{S} = \frac{1}{\mu_{0}} (\vec{E} \times \vec{B})$$
 ### **Blackbody Radiation**
 -   **Classical Failure (Ultraviolet Catastrophe)**: The classical Rayleigh-Jeans law incorrectly predicted that the energy radiated by a black body would increase infinitely at high frequencies.
 -   **Planck's Solution (Quantum Hypothesis)**: Max Planck resolved this by postulating that energy is quantized, meaning it can only be emitted or absorbed in discrete packets ($E = nh\nu$). His formula correctly described the spectrum:
-    $$\rho(\nu)d\nu = \frac{8\pi h\nu^{3}}{c^{3}}\frac{1}{e^{h\nu / kT}-1}d\nu$$
+    $$\rho(\nu)d\nu = \frac{8\pi h\nu^{3}}{c^{3}}\frac{1}{e^{h\nu / kT}-1}d\nu $$
 > See also: [[Examples#Example 2: Planck's vs. Classical Energy]]
 
 ### **Atomic Spectra**

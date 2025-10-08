@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/Quantum Computing/Class 1.md",
+                "file": "College/Semester 1/Electrical Engineering/Unit 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,65 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Class 1"
+              "title": "Unit 1"
+            }
+          },
+          {
+            "id": "ffa05befaee9d559",
+            "type": "leaf",
+            "state": {
+              "type": "smart-chat-view",
+              "state": {},
+              "icon": "smart-chat",
+              "title": "Smart Chat"
+            }
+          },
+          {
+            "id": "c4a03805ece16278",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "College/Semester 1/Physics/Unit 1/Unit 1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Unit 1"
+            }
+          },
+          {
+            "id": "497ee95e0651e195",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "College/Semester 1/Electrical Engineering/Unit 1 Examples.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Unit 1 Examples"
             }
           }
         ]
@@ -146,32 +204,32 @@
       "circuit-sketcher:Create new Circuit Sketcher file": false
     }
   },
-  "active": "b2362cacaeb85f05",
+  "active": "d6b8409d7c1af553",
   "lastOpenFiles": [
     "College/Semester 1/Physics/Unit 1/Core Notes.md",
-    "College/Semester 1/Physics/Unit 1/Examples.md",
     "College/Semester 1/Physics/Unit 1/Unit 1.md",
+    "College/Semester 1/Electrical Engineering/Electrical Engineering.md",
+    "College/Semester 1/Physics/Unit 1/Q&A.md",
+    "College/Semester 1/Physics/Unit 1/Question Bank.md",
+    "College/Semester 1/Electrical Engineering/Unit 1 Examples.md",
+    "College/Semester 1/Physics/Unit 1/Examples.md",
+    "College/Semester 1/Mechanical Engineering/Unit 1.md",
+    "College/Semester 1/Mechanical Engineering/Mechanical Engineering.md",
     "College/Semester 1/Physics/Physics.md",
     "College/Semester 1/Semester 1.md",
     "College/College Index.md",
     "Index.md",
     "College/Quantum Computing/Class 1.md",
     "College/Semester 1/Electrical Engineering/Unit 1.md",
-    "College/Semester 1/Electrical Engineering/Unit 1 Examples.md",
-    "College/Semester 1/Electrical Engineering/Electrical Engineering.md",
     "Untitled.circuit-sketcher",
-    "College/Semester 1/Physics/Unit 1/Q&A.md",
-    "College/Semester 1/Physics/Unit 1/Question Bank.md",
     "College/Semester 1/Physics/Unit 1/Assignment.md",
     "College/Semester 1/Mathematics/Unit 1 Examples.md",
-    "College/Semester 1/Mechanical Engineering/Unit 1.md",
     "Chats/New Chat.md",
     "Chats/Untitled.base",
     "Chats",
     "College/Semester 1/Physics/Unit 1",
     "College/Quantum Computing",
     "College/Semester 1/Mechanical Engineering/Unit 1 Examples.md",
-    "College/Semester 1/Mechanical Engineering/Mechanical Engineering.md",
     "Quiz 2.md",
     "College/Semester 1/Mathematics/Unit 1.md",
     "College/Semester 1/Physics/Unit.md",

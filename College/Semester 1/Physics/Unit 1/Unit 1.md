@@ -3,5 +3,3 @@
 
 ## Practice & Review
 - [[Q&A]]
-- [[Question Bank]]
-- [[Assignment]]
