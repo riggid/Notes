@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/Semester 1/Physics/Unit 1/Q&A.md",
+                "file": "College/Semester 1/Mechanical Engineering/Examples.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Q&A"
+              "title": "Examples"
             }
           },
           {
@@ -162,15 +162,16 @@
   },
   "active": "b2362cacaeb85f05",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "College/Semester 1/Physics/Unit 1/Q&A.md",
+    "College/Semester 1/Mechanical Engineering/Unit 1 Examples.md",
+    "College/Semester 1/Mechanical Engineering/Examples.md",
     "College/Semester 1/Electrical Engineering/Q&A.md",
+    "College/Semester 1/Electrical Engineering/Examples.md",
+    "College/Semester 1/Physics/Unit 1/Q&A.md",
+    "conflict-files-obsidian-git.md",
     "College/Semester 1/Mechanical Engineering/Core Notes.md",
     "College/Semester 1/Mechanical Engineering/Mechanical Engineering.md",
-    "College/Semester 1/Mechanical Engineering/Examples.md",
     "College/Semester 1/Physics/Unit 1/Core Notes.md",
     "College/Semester 1/Electrical Engineering/Unit 1.md",
-    "College/Semester 1/Electrical Engineering/Examples.md",
     "College/Semester 1/Electrical Engineering/Core Notes.md",
     "College/Semester 1/Physics/Unit 1/Unit 1.md",
     "College/Semester 1/Electrical Engineering/Electrical Engineering.md",
@@ -190,7 +191,6 @@
     "Chats",
     "College/Semester 1/Physics/Unit 1",
     "College/Quantum Computing",
-    "College/Semester 1/Mechanical Engineering/Unit 1 Examples.md",
     "Quiz 2.md",
     "College/Semester 1/Mathematics/Unit 1.md",
     "College/Semester 1/Pyhton",
