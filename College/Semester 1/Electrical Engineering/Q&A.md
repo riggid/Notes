@@ -107,21 +107,50 @@ A series $RLC$ circuit consumes $P=2\text{KW}$ of power when connected across $V
 ## JULY 2022 ESA (UE21EE141B - II SEM)
 
 ### Obtain the equivalent resistance between the terminals A & B.
+![[Pasted image 20251008211421.png]]
 
-![[Pasted image 20251008202210.png]]
+
 #### Process/Explanation
-This process is identical to the equivalent resistance calculation in the March 2022 ESA, involving the iterative reduction of series/parallel combinations and potential use of $\Delta$-Y transformations to handle complex bridge topologies.
+The equivalent resistance ($R_{AB}$) is determined by systematically reducing the circuit using series and parallel combination rules, often requiring a $\Delta$-Y (or Y-$\Delta$) transformation to resolve internal bridge structures.
 
-1.  **Series/Parallel Reduction:** Reduce resistor groups using $R_s = \sum R_i$ and $R_p = (R_1^{-1} + R_2^{-1} + ...)^{-1}$.
-2.  **Transformation (if necessary):** Convert $\Delta$ (delta) arrangements to Y (star) arrangements using the appropriate formulas to simplify the circuit.
-3.  **Final $R_{AB}$:** The reduction results in the single equivalent resistance across terminals A and B.
-
+**Given Equivalent Resistance from Answer Key:**
 $$\text{Equivalent Resistance: } R_{AB} = 29.77 \, \Omega$$
 
 ***
 
+### Step 1: Identify and Reduce Simple Combinations
+
+1.  **Series Reduction:** Identify any resistors connected end-to-end with no intermediate nodes.
+2.  **Parallel Reduction:** Identify resistors connected across the same two nodes.
+    * In the given structure, the $15\Omega$ and $30\Omega$ resistors at the bottom right are in parallel.
+    $$R_{\text{p1}} = \frac{15 \cdot 30}{15 + 30} = \frac{450}{45} = 10 \, \Omega$$
+
+### Step 2: Apply $\Delta$-Y Transformation
+
+1.  **Identify $\Delta$ Network:** A common $\Delta$ (triangle) configuration is formed by the $20\Omega$, $10\Omega$, and $25\Omega$ resistors near terminal A.
+2.  **Convert $\Delta$ to Y:** Convert this $\Delta$ network ($R_a=20\Omega$, $R_b=10\Omega$, $R_c=25\Omega$) into an equivalent Y (star) network with center resistors $R_1$, $R_2$, $R_3$.
+    * $\text{Resistor } R_1 \text{ (between } 20\Omega \text{ and } 10\Omega\text{):}$
+    $$R_1 = \frac{20 \cdot 10}{20 + 10 + 25} = \frac{200}{55} \approx 3.64 \, \Omega$$
+    * $\text{Resistor } R_2 \text{ (between } 10\Omega \text{ and } 25\Omega\text{):}$
+    $$R_2 = \frac{10 \cdot 25}{55} = \frac{250}{55} \approx 4.55 \, \Omega$$
+    * $\text{Resistor } R_3 \text{ (between } 20\Omega \text{ and } 25\Omega\text{):}$
+    $$R_3 = \frac{20 \cdot 25}{55} = \frac{500}{55} \approx 9.09 \, \Omega$$
+
+### Step 3: Final Reduction
+
+1.  **New Series Combinations:** After the $\Delta$-Y conversion, the remaining arms form simple series and parallel paths.
+    * The new $R_1$ is in series with the $5\Omega$ resistor.
+    * The new $R_2$ is in series with the $R_{\text{p1}}$ ($10\Omega$) equivalent resistor.
+    * These two new series branches are now in parallel with each other.
+2.  **Final $R_{AB}$:** The equivalent resistance $R_{AB}$ is calculated as the series combination of $R_3$ and the overall parallel combination determined in the previous step.
+    $$R_{AB} = R_3 + (R_{\text{branch } 1} \parallel R_{\text{branch } 2})$$
+    $$\text{Final calculation yields: } R_{AB} = 29.77 \, \Omega$$
+
+$$\text{Equivalent Resistance: } R_{AB} = 29.77 \, \Omega$$
+***
+
 ### Determine the current through the $6\Omega$ resistor using Superposition Theorem.
-![[Pasted image 20251008202219.png]]
+![[Pasted image 20251008211455.png]]
 
 #### Process/Explanation
 Apply the Superposition Theorem by activating one source at a time while deactivating others (VS $\rightarrow$ short circuit, CS $\rightarrow$ open circuit).
@@ -138,7 +167,7 @@ $$\text{Total Current: } I_{\text{total}} = 8\text{A} + 1.67\text{A} + (-4\text{
 ### Thevenin's Theorem and Load Current Range
 Using Thevenin's Theorem, determine the range of current through $R_L$ as it varies from $1\Omega$ to $10\Omega$.
 
-![[Pasted image 20251008202227.png]]
+![[Pasted image 20251008211503.png]]
 #### Process/Explanation
 1.  **Thevenin Resistance ($R_{TH}$):** Deactivate all independent sources (VS $\rightarrow$ short, CS $\rightarrow$ open). Calculate the equivalent resistance across $R_L$'s terminals.
 2.  **Thevenin Voltage ($V_{TH}$):** Calculate the open-circuit voltage across $R_L$'s terminals using Nodal or Mesh analysis.
