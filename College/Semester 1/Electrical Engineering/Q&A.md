@@ -8,6 +8,8 @@ This document provides the detailed mathematical process and steps for solving t
 
 ### Obtain the equivalent resistance between the terminals A & B.
 
+![[Pasted image 20251008201709.png]]
+
 
 #### Process/Explanation
 The equivalent resistance is found by iteratively reducing the series and parallel combinations of the resistors, utilizing $\Delta$-Y or Y-$\Delta$ transformation if a bridge structure is present.
@@ -24,6 +26,7 @@ $$\text{Equivalent Resistance: } R_{AB} = 21.94 \, \Omega$$
 ***
 
 ### Determine the current through the $2\Omega$ resistor using Superposition Theorem.
+![[Pasted image 20251008201727.png]]
 
 
 #### Process/Explanation
@@ -40,7 +43,7 @@ $$\text{Total Current: } I_{\text{total}} = I' + I'' + I''' = 3\text{A} + (-2\te
 
 ### Obtain the Thevenin's Equivalent between the terminals A & B.
 
-
+![[Pasted image 20251008201756.png]]
 #### Process/Explanation
 Thevenin's theorem requires finding the open-circuit voltage ($V_{TH}$) and the Thevenin resistance ($R_{TH}$) across the specified terminals A and B.
 
@@ -58,6 +61,7 @@ $$\text{Thevenin Resistance: } R_{TH} = 10 \, \Omega$$
 ***
 
 ### Impedance of a two-element parallel AC network is $Z = (6+j8)\, \Omega$. Determine the elements and their values if the supply frequency is $50\text{Hz}$.
+
 
 #### Process/Explanation
 Since the given impedance $Z$ has a positive imaginary component ($+j8$), the equivalent circuit is overall **inductive**. For a two-element parallel network, we must convert $Z$ to its admittance $Y$ to identify the parallel components.
@@ -104,7 +108,7 @@ A series $RLC$ circuit consumes $P=2\text{KW}$ of power when connected across $V
 
 ### Obtain the equivalent resistance between the terminals A & B.
 
-
+![[Pasted image 20251008202210.png]]
 #### Process/Explanation
 This process is identical to the equivalent resistance calculation in the March 2022 ESA, involving the iterative reduction of series/parallel combinations and potential use of $\Delta$-Y transformations to handle complex bridge topologies.
 
@@ -117,7 +121,7 @@ $$\text{Equivalent Resistance: } R_{AB} = 29.77 \, \Omega$$
 ***
 
 ### Determine the current through the $6\Omega$ resistor using Superposition Theorem.
-
+![[Pasted image 20251008202219.png]]
 
 #### Process/Explanation
 Apply the Superposition Theorem by activating one source at a time while deactivating others (VS $\rightarrow$ short circuit, CS $\rightarrow$ open circuit).
@@ -134,7 +138,7 @@ $$\text{Total Current: } I_{\text{total}} = 8\text{A} + 1.67\text{A} + (-4\text{
 ### Thevenin's Theorem and Load Current Range
 Using Thevenin's Theorem, determine the range of current through $R_L$ as it varies from $1\Omega$ to $10\Omega$.
 
-
+![[Pasted image 20251008202227.png]]
 #### Process/Explanation
 1.  **Thevenin Resistance ($R_{TH}$):** Deactivate all independent sources (VS $\rightarrow$ short, CS $\rightarrow$ open). Calculate the equivalent resistance across $R_L$'s terminals.
 2.  **Thevenin Voltage ($V_{TH}$):** Calculate the open-circuit voltage across $R_L$'s terminals using Nodal or Mesh analysis.
