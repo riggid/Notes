@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b2362cacaeb85f05",
+            "id": "976cbbb55ac00d4c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/Semester 1/Physics/Unit 1/Q&A.md",
+                "file": "College/Semester 1/Electrical Engineering/Core Notes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,21 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Q&A"
-            }
-          },
-          {
-            "id": "007f6d07b6d2df63",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Core Notes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,19 +146,20 @@
       "circuit-sketcher:Create new Circuit Sketcher file": false
     }
   },
-  "active": "d6b8409d7c1af553",
+  "active": "976cbbb55ac00d4c",
   "lastOpenFiles": [
-    "College/Semester 1/Physics/Unit 1/Q&A.md",
-    "College/Semester 1/Mechanical Engineering/Unit 1.md",
-    "College/Semester 1/Physics/Unit 1/Core Notes.md",
-    "College/Semester 1/Electrical Engineering/Unit 1.md",
+    "College/Semester 1/Electrical Engineering/Q&A.md",
     "College/Semester 1/Electrical Engineering/Examples.md",
-    "College/Semester 1/Electrical Engineering/Core Notes.md",
-    "College/Semester 1/Physics/Unit 1/Unit 1.md",
     "College/Semester 1/Electrical Engineering/Electrical Engineering.md",
+    "College/Semester 1/Electrical Engineering/Core Notes.md",
+    "College/Semester 1/Electrical Engineering",
+    "College/Semester 1/Electrical Engineering/Unit 1.md",
+    "College/Semester 1/Physics/Unit 1/Unit 1.md",
+    "College/Semester 1/Physics/Unit 1/Core Notes.md",
+    "College/Semester 1/Physics/Unit 1/Q&A.md",
     "College/Semester 1/Physics/Unit 1/Question Bank.md",
-    "College/Semester 1/Electrical Engineering/Unit 1 Examples.md",
     "College/Semester 1/Physics/Unit 1/Examples.md",
+    "College/Semester 1/Mechanical Engineering/Unit 1.md",
     "College/Semester 1/Mechanical Engineering/Mechanical Engineering.md",
     "College/Semester 1/Physics/Physics.md",
     "College/Semester 1/Semester 1.md",
@@ -193,7 +183,6 @@
     "College/Semester 1/Mechanical Engineering",
     "College/Semester 1/Mathematics",
     "College/Semester 1/Mathematics/Mathematics.md",
-    "College/Semester 1/Electrical Engineering",
     "Quiz 1.md",
     "Untitled.canvas"
   ]

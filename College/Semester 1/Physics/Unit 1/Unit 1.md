@@ -2,4 +2,4 @@
 - [[Core Notes]]
 
 ## Practice & Review
-- [[Q&A]]
+- [[College/Semester 1/Physics/Unit 1/Q&A]]

@@ -92,7 +92,7 @@ A three-terminal resistive network can be converted between a Star (Y) and Delta
 
 ### **Mesh Analysis**
 A systematic application of KVL to find unknown currents in a circuit. "Mesh currents" are assumed for each closed loop, and KVL equations are written for each mesh.
-> See also: [[Q&A#DC_Q3: What is a supermesh and when is it used?]]
+> See also: [[College/Semester 1/Physics/Unit 1/Q&A#DC_Q3: What is a supermesh and when is it used?]]
 > For a numerical problem, see: [[College/Semester 1/Physics/Unit 1/Examples#Example 6: Mesh Analysis]]
 
 ### **Superposition Theorem**

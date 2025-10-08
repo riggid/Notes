@@ -4,7 +4,7 @@
 
 Maxwell's equations are a set of fundamental equations that describe the behavior of electric and magnetic fields. They can be expressed in differential form (applying to every point in space) or integral form (applying to larger regions).
 
-> See also: [[Q&A#CL2_Q1: Difference between integral and differential forms of Maxwell's equations]]
+> See also: [[College/Semester 1/Physics/Unit 1/Q&A#CL2_Q1: Difference between integral and differential forms of Maxwell's equations]]
 
 ### **Vector Operators**
 - **Gradient ($\nabla\phi$)**: A vector that points in the direction of the maximum rate of change of a scalar field $\phi$.
@@ -17,7 +17,7 @@ Maxwell's equations are a set of fundamental equations that describe the behavio
 
 -   **Gauss's Law for Magnetic Fields**: The divergence of the magnetic field ($\vec{B}$) is always zero. This mathematically shows that **magnetic monopoles do not exist**.
     $$\nabla \cdot \vec{B} = 0$$
-    > See also: [[Q&A#CL1_Q1: Magnetic monopoles do not exist. Justify.]]
+    > See also: [[College/Semester 1/Physics/Unit 1/Q&A#CL1_Q1: Magnetic monopoles do not exist. Justify.]]
 
 -   **Faraday's Law of Induction**: A time-varying magnetic field induces a circulating electric field.
     $$\nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}$$
@@ -39,7 +39,7 @@ In free space ($\rho=0, \vec{J}=0$), Maxwell's equations can be combined to deri
     $$\nabla^2 \vec{E} = \mu_{0}\epsilon_{0} \frac{\partial^2 \vec{E}}{\partial t^2}$$
 This shows that E and B fields propagate as transverse waves at the speed of light, $c = 1/\sqrt{\mu_{0}\epsilon_{0}}$. The fields are in phase and mutually perpendicular.
 
-> See also: [[Q&A#CL2_Q3: How do Maxwell's equations describe electromagnetic waves?]]
+> See also: [[College/Semester 1/Physics/Unit 1/Q&A#CL2_Q3: How do Maxwell's equations describe electromagnetic waves?]]
 > For a numerical problem, see: [[College/Semester 1/Physics/Unit 1/Examples#Example 1: EM Wave Properties]]
 
 ---
