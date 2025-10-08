@@ -5,3 +5,4 @@
 /.smart-env/smart_env.json
 /.obsidian/workspace.json
 /.smart-env/multi
+*.ajson
