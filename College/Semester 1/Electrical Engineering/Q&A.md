@@ -1,6 +1,5 @@
 # UE21EE141 - Elements of Electrical Engineering (ESA Q&A)
 
-This document provides the detailed mathematical process and steps for solving the questions from the March 2022 and July 2022 End Semester Assessments, utilizing $\LaTeX$ for all numerical and mathematical expressions.
 
 ***
 
@@ -20,7 +19,7 @@ The equivalent resistance is found by iteratively reducing the series and parall
 2.  **Apply $\Delta$-Y or Y-$\Delta$ Transformation:** If a complex junction (neither simple series nor parallel) is encountered, apply $\Delta$-Y conversion to simplify the network (e.g., converting a $\Delta$-configuration of $R_a, R_b, R_c$ to a Y-configuration of $R_1, R_2, R_3$).
     * $\Delta \text{ to Y formula (for } R_1 \text{ at intersection of } R_a, R_b\text{): } R_1 = \frac{R_a R_b}{R_a + R_b + R_c}$
 3.  **Final Reduction:** Continue the series and parallel reductions until a single equivalent resistance $R_{AB}$ is obtained.
-
+6+0
 $$\text{Equivalent Resistance: } R_{AB} = 21.94 \, \Omega$$
 
 ***
