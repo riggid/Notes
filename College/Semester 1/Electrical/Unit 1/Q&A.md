@@ -175,67 +175,6 @@ $$\text{Load current range: } I_{L} \text{ varies between } 49.66 \, \text{mA} \
 
 ***
 
-### AC Series Circuit Analysis ($RC$ type)
-A single-phase AC series circuit has supply voltage and supply current of $v(t) = 200\sin(100\pi t) \text{ V}$ and $i(t) = 10\sin(100\pi t+60^\circ) \text{ A}$ respectively. Determine: (i) Element values (ii) Active, Reactive and Apparent Powers (iii) Power factor.
-
-#### Process/Explanation
-1.  **Phasor Values:** Extract peak values ($V_m, I_m$) and phase angle ($\phi$) from the time-domain expressions. $\omega = 100\pi$ rad/s. $\phi = 60^\circ$. Since current leads voltage, it is an $RC$ circuit.
-    $$\text{RMS Voltage: } V_{\text{rms}} = \frac{200}{\sqrt{2}} \, \text{V}$$
-    $$\text{RMS Current: } I_{\text{rms}} = \frac{10}{\sqrt{2}} \, \text{A}$$
-2.  **Impedance and Components:**
-    $$|Z| = \frac{V_{\text{rms}}}{I_{\text{rms}}} = 20 \, \Omega$$
-    $$\text{Resistance: } R = |Z| \cos\phi = 20 \cos(60^\circ) = 10 \, \Omega$$
-    $$\text{Capacitive Reactance: } X_C = |Z| \sin\phi = 20 \sin(60^\circ) \approx 17.32 \, \Omega$$
-    $$\text{i) Capacitance: } C = \frac{1}{\omega X_C} = \frac{1}{100\pi (17.32)} \approx 183.78 \, \mu\text{F}$$
-3.  **Powers:**
-    $$\text{ii) Apparent Power: } S = V_{\text{rms}} I_{\text{rms}} = 1000 \, \text{VA}$$
-    $$\text{Active Power: } P = S \cos\phi = 1000 \cdot 0.5 = 500 \, \text{W}$$
-    $$\text{Reactive Power: } Q = -S \sin\phi = -1000 \cdot 0.866 = -866 \, \text{VAR} \quad (\text{negative for capacitive})$$
-4.  **Power Factor:**
-    $$\text{iii) } PF = \cos(60^\circ) = 0.5 \, \text{Lead}$$
-
-***
-
-### $\Delta$-Connected System: Line and Phase Relation
-Derive the relation between line and phase values of current and voltages for balanced three phase $\Delta$-connected system.
-
-#### Process/Explanation
-1.  **Voltage Relation ($V_L$ and $V_{\phi}$):**
-    * In a $\Delta$-connection, the line voltage ($V_L$) is connected directly across the phase winding impedance, meaning the voltage between any two lines is equal to the voltage across the corresponding phase winding.
-    $$\text{Relationship: } V_{L} = V_{\phi}$$
-2.  **Current Relation ($I_L$ and $I_{\phi}$):**
-    * The line current ($I_L$) entering a line terminal is the phasor difference (KCL) of the two phase currents leaving that terminal.
-    * For a balanced system, the line current is the vector difference of two phase currents, which are $120^\circ$ apart in phase.
-    $$\text{Phasor Subtraction: } \vec{I_L} = \vec{I_1} - \vec{I_3}$$
-    $$\text{Magnitude: } I_L = \sqrt{I_{\phi}^2 + I_{\phi}^2 - 2 I_{\phi} I_{\phi} \cos(60^\circ)} = \sqrt{2 I_{\phi}^2 - I_{\phi}^2} = \sqrt{3} I_{\phi}$$
-    $$\text{Relationship: } I_{L} = \sqrt{3} \, I_{\phi}$$
-
-***
-
-### Symmetrical Components
-For an unbalanced $3\phi$ system with currents $\vec{I_R}, \vec{I_Y}, \vec{I_B}$, determine the sequence components of current $(\vec{I_0}, \vec{I_1}, \vec{I_2})$.
-
-#### Process/Explanation
-Use the sequence component formulas with the $\text{a-operator}$ ($\vec{a} = 1 \angle 120^\circ$ and $\vec{a}^2 = 1 \angle 240^\circ$). The given currents form a perfectly **balanced positive sequence set** ($\vec{I_R}=10\angle 0^\circ, \vec{I_Y}=10\angle 240^\circ, \vec{I_B}=10\angle 120^\circ$).
-
-1.  **Zero Sequence Component ($\vec{I_0}$):**
-    $$\vec{I_0} = \frac{1}{3} (\vec{I_R} + \vec{I_Y} + \vec{I_B})$$
-    $$\vec{I_0} = \frac{1}{3} (10\angle 0^\circ + 10\angle 240^\circ + 10\angle 120^\circ) = 0$$
-2.  **Positive Sequence Component ($\vec{I_1}$):**
-    $$\vec{I_1} = \frac{1}{3} (\vec{I_R} + \vec{a} \vec{I_Y} + \vec{a}^2 \vec{I_B})$$
-    $$\vec{I_1} = \frac{1}{3} (10\angle 0^\circ + (1\angle 120^\circ)(10\angle 240^\circ) + (1\angle 240^\circ)(10\angle 120^\circ))$$
-    $$\vec{I_1} = \frac{1}{3} (10\angle 0^\circ + 10\angle 360^\circ + 10\angle 360^\circ) = \frac{1}{3} (10+10+10) = 10 \angle 0^\circ \text{A}$$
-3.  **Negative Sequence Component ($\vec{I_2}$):**
-    $$\vec{I_2} = \frac{1}{3} (\vec{I_R} + \vec{a}^2 \vec{I_Y} + \vec{a} \vec{I_B})$$
-    $$\vec{I_2} = \frac{1}{3} (10\angle 0^\circ + (1\angle 240^\circ)(10\angle 240^\circ) + (1\angle 120^\circ)(10\angle 120^\circ))$$
-    $$\vec{I_2} = \frac{10}{3} (1 + \vec{a}^4 + \vec{a}^2) = \frac{10}{3} (1 + \vec{a} + \vec{a}^2) = 0 \quad (\text{since } 1 + \vec{a} + \vec{a}^2 = 0)$$
-
-The results confirm a balanced positive sequence system:
-$$\text{Zero Sequence: } \vec{I_0} = 0$$
-$$\text{Positive Sequence: } \vec{I_1} = 10 \angle 0^\circ \text{A}$$
-$$\text{Negative Sequence: } \vec{I_2} = 0$$
-
-
 
 # Q&A: Electrical Circuit Analysis
 
