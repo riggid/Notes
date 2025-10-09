@@ -1,4 +1,4 @@
-# Unit 2: DC Circuits
+# Unit 1: DC Circuits
 
 ## Fundamental Concepts
 
