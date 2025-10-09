@@ -8,3 +8,5 @@
 *.ajson
 .obsidian/workspace.json
 .obsidian/workspace.json
+
+/.smart-env/smart_env.json
