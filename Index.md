@@ -1,7 +1,7 @@
-[[College Index]]
+# [[College Index]]
 
 
-# **Hello!! Welcome to my notes**
+### **Hello!! Welcome to my notes**
 
-# By
-- ## Shreyansh Tandon & Co.
+### By
+- ##### Shreyansh Tandon & Co.
