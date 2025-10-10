@@ -1,6 +1,10 @@
 # [[Unit 1|Back]]
 ***
 ## Example 1: Basic KVL
+
+# DC Circuits Examples
+
+### Example 1: Basic KVL
 Find the current through the 8Ω resistor in the network given.
 ```tikz
 \usepackage{circuitikz}
