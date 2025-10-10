@@ -160,3 +160,6 @@ $$
 $$
 \lambda^2 - 1 = 0 \implies \lambda = \pm 1
 $$
+
+
+## Bloch Sphere
