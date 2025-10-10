@@ -1,4 +1,4 @@
-[[Unit 1| Back]]
+# [[Unit 1| Back]]
 # Unit 1: Partial Differentiation
 
 ## Function of Several Variables
@@ -165,4 +165,4 @@ $$ F(x, y, z) = f(x, y, z) + \lambda\phi(x, y, z) $$
     - $\phi(x, y, z) = 0$ (the constraint)
 3. The solutions $(x, y, z)$ give the coordinates for the extreme values of $f$.
 
-*See [[Examples.md#Example 12: Lagrange Multipliers]] for a maximization problem using this method.*
+*See [[Examples.md#Example 12: Lagrange Multipliers|Example 12]] for a maximization problem using this method.*
