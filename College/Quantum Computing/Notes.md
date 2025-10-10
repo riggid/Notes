@@ -163,3 +163,7 @@ $$
 
 
 ## Bloch Sphere
+$$
+\ket{\psi} = \left(\cos \frac{\theta}{2}\ket{0} + e^{i\phi} \sin \frac{\theta}{2}\ket{1}\right) 
+$$
+where $0 < \theta \leq 2\pi$  and  $0 < \phi < 2\pi$  
