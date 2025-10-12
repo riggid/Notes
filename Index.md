@@ -4,5 +4,5 @@
 ### **Hello!! Welcome to my notes**
 
 ### By
--  **Shreyansh Tandon & Co.**
-- **Shubham Jalori**
+-  **Shreyansh Tandon.**
+- **Shubham Jalori.**
