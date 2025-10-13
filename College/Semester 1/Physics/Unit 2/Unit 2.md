@@ -1,0 +1,3 @@
+# [[Physics|Back]]
+***
+# [[Core Notes]]
