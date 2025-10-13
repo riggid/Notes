@@ -3,7 +3,7 @@
   "global-search": false,
   "switcher": false,
   "graph": true,
-  "backlink": true,
+  "backlink": false,
   "canvas": true,
   "outgoing-link": true,
   "tag-pane": false,
@@ -26,7 +26,7 @@
   "audio-recorder": false,
   "workspaces": false,
   "file-recovery": true,
-  "publish": false,
+  "publish": true,
   "sync": false,
   "bases": false,
   "webviewer": false
