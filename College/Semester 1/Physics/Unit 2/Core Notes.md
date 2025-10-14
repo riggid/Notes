@@ -16,7 +16,7 @@ $$
  i \hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar}{2m} \frac{\partial^2\psi}{\partial x^2} + V\psi
 $$
 
-## Time Dependent
+## Time Independent
 Write 
 $$
 \psi(x,t) = \psi(x)\phi(t)
@@ -170,8 +170,51 @@ $$
 \frac{\partial\psi_{2}}{\partial x^2} - \frac{2m}{\hbar^2} (V_{0}-E) = 0
 $$
 
-#### Solution: $\psi_{2} = Fe^{-\alpha x} + Ge^{\alpha x}$
+#### Solution: $\psi_{2} = Fe^{-\alpha x} + Ge^{\alpha x}$ 
 #### $\alpha = \sqrt{ \frac{2m(V_{0}-E)}{\hbar^2} }$
+G = 0; This makes $\psi \to \infty$ for $x \to \infty$
 
+Therefore $\psi_{2} = Fe^{-\alpha x}$ 
+this shows that there is still a small probability it penetrates **2**,even though it classically can't
 
+$$
+\psi_{2}(\Delta x) = Fe^{-\alpha \Delta x} = F \frac{1}{e}
+$$
+Therefore
+$$\alpha \Delta x = 1 \implies \Delta x = \frac{1}{\alpha} = \sqrt{ \frac{\hbar^2}{2m(V_{0}-E)} }$$
+if E increases, delta x decreases, The partial can't physically exist in *2*
 
+#### **Observations**:
+1. Reflection possible at $E > V_{0}$
+2. Transmission possible at $E < V_{0}$ (quantum tunneling)
+
+## Potential Barrier
+![[Drawing 2025-10-14 18.07.01.excalidraw]]
+
+### **Region 1:** $V = 0$  $\frac{\partial^2\psi_{1}}{\partial x^2}+ \frac{2mE}{\hbar^2} \psi_{1} =0$
+1.  $\psi_{1} = Ae^{ik_{1}x} + Be^{-ik_{1}x}$ **incident wave + reflected wave**
+2. $k_{1} = \sqrt{ \frac{2mE}{\hbar^2} }$
+3. $\lambda_{1}= \frac{h}{\sqrt{ 2mE }}$
+
+### **Region 2:** $0 < x <d \ \& \ V(x) = V_{0}$
+$$
+\frac{\partial^2\psi_{2}}{\partial x^2} - \frac{2m(v_{0}-E)}{\hbar^2} \psi_{2} = 0
+$$
+$$
+\psi_{2} = C e^{\alpha x} + De^{-\alpha x} \\ ; \\ \alpha = \sqrt{ \frac{2m(V_{0}-E)}{\hbar^2} }
+$$
+$$
+\Delta x = \frac{1}{\alpha} = \sqrt{ \frac{\hbar^2}{2m(V_{0}-E)} }
+$$
+If this extends to $+ \infty$ then only decaying element is applicable 
+$$
+\lambda_{2} = \frac{h}{\sqrt{ 2m(V_{0}-E) }}
+$$
+### **Region 3** $\frac{\partial^2\psi_{3}}{\partial x^2}+ \frac{2mE}{\hbar^2} \psi_{3} = 0$
+##### $\psi_{3}(x) = Fe^{ik_{1}x}$
+only transmitted wave exists
+
+Terms:
+1. Quantum Tunneling: Even though E < $V_0$ , the wave function in 2 is non zero
+2. Penetration Depth: distance over which wave decays to 1/e factor
+3. Transmission coefficent(T) $$
