@@ -1,8 +1,8 @@
 ---
 sources:
-  - "[[College/Semester 1/Mechanical/Unit 1/Core Notes]]"
+  - "[[Semester 1/Mechanical/Unit 1/Core Notes]]"
   - "[[College/Semester 1/Mechanical Engineering/Unit 1 Examples]]"
-  - "[[College/Semester 1/Mechanical/Unit 1/Unit 1]]"
+  - "[[Semester 1/Mechanical/Unit 1/Unit 1]]"
 ---
 > [!question] Explain the Kelvin-Planck and Clausius statements of the Second Law of Thermodynamics and provide a real-world example of each.
 >> [!success]- Answer

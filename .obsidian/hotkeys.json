@@ -40,13 +40,5 @@
       ],
       "key": "Numpad0"
     }
-  ],
-  "canvas:new-file": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "C"
-    }
   ]
 }

@@ -8,5 +8,7 @@
   "obsidian-paste-image-rename",
   "homepage",
   "obsidian-linter",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "dataview",
+  "templater-obsidian"
 ]
