@@ -1,4 +1,4 @@
-# [[Semester 1/Electrical/Unit 1/Unit 1|Back]]
+# [[Electrical|Back]]
 *** 
 ## Fundamental Concepts
 

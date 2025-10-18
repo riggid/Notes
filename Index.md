@@ -1,100 +1,68 @@
 
 ```dataviewjs
-// --- Configuration ---
-// How many recently edited notes to show at the top.
-const recentFilesLimit = 7;
+// --- This script is fully automatic ---
 
-// Optional: Folders to exclude from the "Other Topics" section.
-const excludeFolders = ["Excalidraw"];
+// Get the root folder of your vault
+const root = dv.app.vault.getRoot();
 
-// Optional: Assign emojis to your subjects.
-const subjectEmojis = {
-    "Mechanical": "⚙️",
-    "Physics": "⚛️",
-    "Electrical": "💡",
-    "Mathematics": "🧮",
-    "Python": "🐍",
-    "Environmental Studies and Life Sciences": "🌿",
-    "Quantum Computing": "🔬"
-};
-// --- End of Configuration ---
+// Find all folders in the root that start with "Semester"
+const semesterFolders = root.children
+    .filter(child => child.children && child.name.startsWith("Semester")) // 'child.children' checks if it's a folder
+    .sort((a, b) => a.name.localeCompare(b.name)); // Sort them (Semester 1, Semester 2...)
 
-// 1. "Recently Edited" Section
-dv.header(2, "🚀 Recently Edited");
-const recentPages = dv.pages('""') // Search the entire vault
-    .where(p => !excludeFolders.some(folder => p.file.folder.startsWith(folder))) // Exclude files from specified folders
-    .sort(p => p.file.mtime, 'desc')
-    .limit(recentFilesLimit);
+// If no semester folders are found, show a message
+if (semesterFolders.length === 0) {
+    dv.paragraph("No 'Semester' folders found in the root of your vault.");
+}
 
-dv.list(recentPages.map(p => 
-    `${p.file.link} — *edited ${p.file.mtime.toRelative()}*`
-));
-dv.paragraph("---");
+// Loop through each semester folder it found
+for (const semesterFolder of semesterFolders) {
+    
+    const folderName = semesterFolder.name;
+    const subjectFolders = semesterFolder.children
+        .filter(child => child.children) // Find all subject subfolders
+        .sort((a, b) => a.name.localeCompare(b.name)); // Sort subjects alphabetically
 
-// 2. Main Content Area - Organized by Semester
-const semesterFolders = dv.pages('""')
-    .map(p => p.file.folder.split('/')[0]) // Get top-level folders
-    .distinct().where(f => f && f.startsWith("Semester")).sort();
+    // --- Create the Title ---
+    dv.el("h2", folderName, { cls: "semester-title" });
 
-for (const semesterName of semesterFolders) {
-    dv.header(2, semesterName);
+    // --- Create the Button Container ---
+    const container = dv.el("div", "", { cls: "subject-button-container" });
+    let hasLinks = false;
 
-    const subjects = dv.pages(`"${semesterName}"`)
-        .map(p => p.file.folder.split('/')[1]) // Get subject-level folders
-        .distinct().where(s => s).sort();
-
-    for (const subjectName of subjects) {
-        const subjectPath = `${semesterName}/${subjectName}`;
-        const emoji = subjectEmojis[subjectName] || "📁";
+    // --- Create a Button for each Subject ---
+    for (const subjectFolder of subjectFolders) {
         
-        dv.paragraph(`> [!note] ${emoji} ${subjectName}`);
+        let subjectFolderPath = subjectFolder.path;
+        let displayName = subjectFolder.name;
         
-        const units = dv.pages(`"${subjectPath}"`).where(p => p.file.folder.startsWith(subjectPath) && p.file.folder.split('/').length > 2).map(p => p.file.folder).distinct().sort();
+        // Find the main note *directly* inside the subject folder
+        let mainNote = dv.pages(`"${subjectFolderPath}"`)
+            .where(p => p.file.folder === subjectFolderPath)
+            .first();
 
-        const createSortedList = (path) => {
-            const pages = dv.pages(`"${path}"`).sort(p => p.file.mtime, 'desc');
-            let listText = "";
-            if (pages.length > 0) {
-                pages.forEach(p => { listText += `> - ${p.file.link} \n`; });
-            } else { listText = "> - No notes in this section yet.\n"; }
-            return listText;
-        };
-
-        if (units.length > 0) {
-            for (const unitPath of units) {
-                const unitName = unitPath.split('/').pop();
-                dv.paragraph(`> #### ${unitName}`);
-                dv.paragraph(createSortedList(unitPath));
-            }
-        } else {
-            dv.paragraph(createSortedList(subjectPath));
+        if (mainNote) {
+            hasLinks = true;
+            let linkPath = mainNote.file.path;
+            
+            // Create the clickable button
+            let link = dv.el("a", displayName, {
+                cls: "subject-button", 
+                href: "#" 
+            });
+            
+            // Add the click action
+            link.addEventListener("click", (e) => {
+                e.preventDefault(); 
+                app.workspace.openLinkText(linkPath, "", false);
+            });
+            
+            container.appendChild(link);
         }
     }
-}
-dv.paragraph("---");
 
-// 3. Handle Other Top-Level Topics
-dv.header(2, "Other Topics");
-const otherFolders = dv.pages('""').map(p => p.file.folder.split('/')[0]).distinct().where(f => f && !f.startsWith("Semester") && !excludeFolders.includes(f)).sort();
-
-for (const folderName of otherFolders) {
-    const emoji = subjectEmojis[folderName] || "📁";
-    dv.paragraph(`> [!note] ${emoji} ${folderName}`);
-    const pages = dv.pages(`"${folderName}"`).sort(p => p.file.mtime, 'desc');
-    let listText = "";
-    pages.forEach(p => { listText += `> - ${p.file.link}\n`; });
-    dv.paragraph(listText || "> - No notes yet.\n");
+    if (!hasLinks) {
+        dv.paragraph(`_No subject notes found in ${folderName}._`);
+    }
 }
 ```
-### **Hello!! Welcome to my notes**
-# 🗂️ Index for Electrical - Unit 2
-
-This is the central hub for this unit. Your standard files have been automatically created and linked below.
-
-> [!info] Unit Files
-> - **Core Concepts:** [[Semester 1/Electrical/Unit 2/Core Notes|Core Notes]]
-> - **Worked Examples:** [[Semester 1/Electrical/Unit 2/Examples|Examples]]
-> - **Questions & Answers:** [[Semester 1/Electrical/Unit 2/Q&A|Q&A]]
-### By
--  **Shreyansh Tandon.**
-- **Shubham Jalori.**

@@ -1,14 +1,12 @@
 [
   "obsidian-git",
   "obsidian-latex-suite",
-  "obsidian-matrix",
-  "quiz-generator",
   "obsidian-tikzjax",
   "smart-connections",
   "obsidian-paste-image-rename",
   "homepage",
-  "obsidian-linter",
   "obsidian-excalidraw-plugin",
   "dataview",
-  "templater-obsidian"
+  "templater-obsidian",
+  "consistent-attachments-and-links"
 ]
