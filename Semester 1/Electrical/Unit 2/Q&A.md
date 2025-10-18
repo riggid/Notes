@@ -7,7 +7,16 @@
 ***
 ## AC Fundamentals & Phasors
 ***
+```tikz
+\usepackage{circuitikz}
+\begin{document}
+\begin{circuitikz}[american voltages]
+    \draw (0,0) to[sV, l=$v(t)$] (0,2) -- (2,2)
+          to[R, l=R, i<=$i(t)$] (2,0) -- (0,0);
+\end{circuitikz}
+\end{document}
 
+```
 ### 1. Draw one cycle of a sinusoidal voltage waveform and indicate: i) Positive zero crossing ii) Negative zero crossing iii) Positive peak iv) Negative peak.
 
 #### Solution:
@@ -609,7 +618,7 @@ Phasor Diagram:
 
 ---
 ### 27. 4kW inductive load, 200V, 50Hz, 0.8 Lag pf. i) Find P, Q, S. ii) Find C in parallel for unity pf.
-
+![](Q&A-1.png)
 #### Solution:
 i) Powers:
 Active Power $P = 4$ kW $= 4000$ W (given).

@@ -4,7 +4,6 @@
 ***
 # Unit 2: Worked Examples
 
-<a id="example-1-sine-wave-properties"></a>
 ### Example 1: Sine Wave Properties
 For a Sinusoidal function of frequency 50 Hz, find i) Half time period ii) Angular frequency.
 **Solution:**
@@ -14,10 +13,10 @@ i) Half time period $T/2 = 20/2 = 10$ ms.
 ii) Angular frequency $\omega = 2\pi f = 2\pi(50) = 100\pi$ rad/s $\approx 314.16$ rad/s.
 
 ---
-<a id="example-2-instantaneous-value"></a>
 ### Example 2: Instantaneous Value
 The maximum value of a sinusoidal alternating current of frequency 50Hz is 25 A. Write the equation for the instantaneous expression of current. Determine its value at 3ms and 14 ms.
 **Solution:**
+![](Examples-2.png)
 Angular frequency, $\omega = 2\pi f = 100\pi$ rad/s.
 The instantaneous expression is $i(t) = I_m \sin(\omega t) = 25 \sin(100\pi t)$ A.
 Value at $t = 3$ ms $= 0.003$ s:
@@ -29,18 +28,17 @@ $i(14ms) = 25 \sin(100\pi \times 0.014) = 25 \sin(1.4\pi \text{ rad})$
 $1.4\pi \text{ rad} = 1.4 \times 180^{\circ} = 252^{\circ}$.
 $i(14ms) = 25 \sin(252^{\circ}) \approx 25 \times (-0.951) \approx -23.77$ A.
 
+
 ---
-<a id="example-3-phase-lag-lead"></a>
 ### Example 3: Phase Lag/Lead
 Write equations for the following 50Hz sine waves: i) RMS 10A, starts at 5ms ii) Peak 20A, starts at -2.5ms. Comment on phase relation.
 **Solution:**
 $\omega = 2\pi f = 100\pi$ rad/s. Time period $T = 1/f = 20$ ms.
 
 i) RMS = 10A $\implies$ Peak $I_m = 10\sqrt{2}$ A.
-   Starts at 5ms. A standard sine wave starts (crosses zero going positive) at $t=0$. 5ms is $T/4$, which corresponds to the positive peak ($\pi/2$ or $90^{\circ}$). If "starts" means reaches positive peak at 5ms, then the wave is shifted right by $T/4$.
+   Starts at 5ms. If "starts at" refers to the zero crossing, the wave is shifted right by 5ms.
    Phase shift $\phi = -\omega t_{shift} = -(100\pi)(0.005) = -0.5\pi = -90^{\circ}$.
    $i_1(t) = 10\sqrt{2} \sin(100\pi t - 90^{\circ})$ A or $i_1(t) = -10\sqrt{2} \cos(100\pi t)$ A.
-   *(Note: The source interpretation "starting at" seems to mean zero crossing shift, leading to $\phi = -\pi/2$.)*
 
 ii) Peak $I_m = 20$ A.
    Starts at -2.5ms. Phase shift $\phi = -\omega t_{shift} = -(100\pi)(-0.0025) = +0.25\pi = +45^{\circ}$.
@@ -52,10 +50,10 @@ $i_2$ leads $i_1$ by $45^{\circ} - (-90^{\circ}) = 135^{\circ}$.
 Or $i_1$ lags $i_2$ by $135^{\circ}$.
 
 ---
-<a id="example-4-phasor-representation"></a>
 ### Example 4: Phasor Representation
 Represent the following as phasors and draw the phasor diagram: a) $f_1(t)=100\sin(100\pi t)$, b) $f_2(t)=200\sin(100\pi t+60^{\circ})$, c) $f_3(t)=100\cos(100\pi t-60^{\circ})$.
 **Solution:**
+![](Examples-1.png)
 First, convert cosine to sine form:
 $f_3(t) = 100 \cos(100\pi t - 60^{\circ}) = 100 \sin(100\pi t - 60^{\circ} + 90^{\circ}) = 100 \sin(100\pi t + 30^{\circ})$.
 
@@ -65,10 +63,10 @@ b) $\bar{F}_2 = \frac{200}{\sqrt{2}} \angle 60^{\circ}$ A.
 c) $\bar{F}_3 = \frac{100}{\sqrt{2}} \angle 30^{\circ}$ A.
 
 Phasor Diagram:
+
 (Draw $\bar{F}_1$ along the positive real axis. Draw $\bar{F}_3$ at $30^{\circ}$ counter-clockwise from $\bar{F}_1$. Draw $\bar{F}_2$ at $60^{\circ}$ counter-clockwise from $\bar{F}_1$. Lengths should represent RMS values).
 
 ---
-<a id="example-5-phasor-addition"></a>
 ### Example 5: Phasor Addition
 Currents $i_1=3\sqrt{2}\sin(\omega t)$, $i_2=5\sqrt{2}\sin(\omega t+30^{\circ})$, $i_3=6\sqrt{2}\sin(\omega t-120^{\circ})$ flow into a junction. Find the resultant current $i$ leaving the junction.
 **Solution:**
@@ -89,7 +87,6 @@ Peak value $I_m = 5.1 \sqrt{2} \approx 7.21$ A.
 $i(t) = 7.21 \sin(\omega t - 31.9^{\circ})$ A.
 
 ---
-<a id="example-6-capacitor-calculations"></a>
 ### Example 6: Capacitor Calculations
 A Capacitor $C=100\mu F$ is connected across $v(t)=100\sin(100\pi t)$ V. Determine i) $X_C$ ii) Impedance $\bar{Z}$ iii) $i(t)$ iv) Draw phasor diagram.
 **Solution:**
@@ -109,13 +106,14 @@ iii) Instantaneous Current:
 iv) Phasor Diagram:
    Voltage Phasor: $\bar{V} = \frac{100}{\sqrt{2}} \angle 0^{\circ}$ V.
    Current Phasor: $\bar{I} = \frac{3.14}{\sqrt{2}} \angle 90^{\circ}$ A.
-    (Current phasor points up along +j axis, Voltage phasor points right along +real axis).
+   ![](Examples-3.png)
 
 ---
-<a id="example-7-series-rl-calculations"></a>
 ### Example 7: Series RL Calculations
-A resistor R and inductor L are in series connected to 240V supply. Current is 3A lagging voltage by $37^{\circ}$. Voltage across inductor is 171V. Find R, and the resistance (r) and reactance ($X_L$) of the inductor.
+A resistor R and an inductor (with internal resistance r and inductance L) are in series connected to 240V supply. Current is 3A lagging voltage by $37^{\circ}$. Voltage across the inductor component is 171V. Find R, r and $X_L$.
+
 **Solution:**
+![](Examples-4.png)
 Let current be reference: $\bar{I} = 3 \angle 0^{\circ}$ A.
 Supply voltage leads current by $37^{\circ}$: $\bar{V} = 240 \angle 37^{\circ}$ V.
 Total Impedance $\bar{Z}_T = \bar{V}/\bar{I} = (240 \angle 37^{\circ}) / (3 \angle 0^{\circ}) = 80 \angle 37^{\circ} \, \Omega$.
@@ -125,7 +123,7 @@ Comparing real and imaginary parts:
 $X_L = 48.14 \, \Omega$.
 $R+r = 63.89 \, \Omega$ (Eq. 3).
 
-Voltage across inductor $V_{ind} = 171$ V. Impedance of inductor $Z_{ind} = |r + jX_L|$.
+Voltage across inductor component $V_{ind} = 171$ V. Impedance of inductor component $Z_{ind} = |r + jX_L|$.
 $V_{ind} = I \times |Z_{ind}| \implies 171 = 3 \times \sqrt{r^2 + X_L^2}$.
 $171/3 = 57 = \sqrt{r^2 + (48.14)^2}$.
 $57^2 = r^2 + 48.14^2 \implies 3249 = r^2 + 2317.46$.
@@ -137,9 +135,9 @@ Resistance of inductor $r = 30.52 \, \Omega$.
 Reactance of inductor $X_L = 48.14 \, \Omega$.
 
 ---
-<a id="example-8-series-rlc-calculations"></a>
 ### Example 8: Series RLC Calculations (Coil Voltage)
 A 250V, 50Hz voltage is applied to a coil ($R=5\Omega, L=9.55H$) in series with capacitor C. Voltage across coil is 300V. Find C.
+
 **Solution:**
 Inductive Reactance $X_L = 2\pi f L = 2\pi(50)(9.55) \approx 3000 \, \Omega$.
 Impedance of coil $Z_{coil} = R + jX_L = 5 + j3000 \, \Omega$.
@@ -160,9 +158,9 @@ $C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi (50)(5500)} \approx 0.58 \times 10^{-6
 Both values are possible.
 
 ---
-<a id="example-9-series-rlc-calculations-phase"></a>
 ### Example 9: Series RLC Calculations (Phase)
-Series RLC circuit current lags voltage by $45^{\circ}$. $V_{L(max)} = 2V_{C(max)}$. $v_L(t)=300\sin(1000t)$, $R=20\Omega$. Find L and C.
+Series RLC circuit current lags applied voltage by $45^{\circ}$. The voltage across the inductance has maximum value equal to twice the maximum value of voltage across the capacitor. Voltage across the inductance is $v_L(t)=300\sin(1000t)$ and $R=20\Omega$. Find the value of inductance and capacitance.
+
 **Solution:**
 From $v_L(t)$, we get $\omega = 1000$ rad/s.
 $V_{L(max)} = I_m X_L = 300$ V.
@@ -180,7 +178,6 @@ $X_L = \omega L \implies 40 = 1000 L \implies L = 0.04$ H.
 $X_C = 1/(\omega C) \implies 20 = 1/(1000 C) \implies C = 1/(20000) = 50 \times 10^{-6}$ F $= 50 \, \mu F$.
 
 ---
-<a id="example-10-power-calculations"></a>
 ### Example 10: Power Calculations
 Series RL circuit with $v(t)=100\sin(\omega t)$ V draws $i(t)=10\sin(\omega t - 60^{\circ})$ A. Determine P, Q, S, pf.
 **Solution:**
@@ -197,15 +194,15 @@ ii) Power Factor:
 $pf = \cos \phi = \cos 60^{\circ} = 0.5$. Since current lags voltage ($\phi$ is positive), it's $0.5$ Lagging.
 
 ---
-<a id="example-11-parallel-circuit-admittance"></a>
 ### Example 11: Parallel Circuit Admittance
 Impedances $Z_1 = 7+j5 \, \Omega$ and $Z_2 = 10-j8 \, \Omega$ are in parallel across 230V, 50Hz. Find total Y, G, B, I, pf.
 **Solution:**
-Admittance of branch 1: $\bar{Y}_1 = 1/\bar{Z}_1 = 1/(7+j5) = \frac{7-j5}{7^2+5^2} = \frac{7-j5}{74} = 0.0946 - j0.0676$ S or $0.116 \angle -35.5^{\circ}$ S.
-Admittance of branch 2: $\bar{Y}_2 = 1/\bar{Z}_2 = 1/(10-j8) = \frac{10+j8}{10^2+(-8)^2} = \frac{10+j8}{164} = 0.0610 + j0.0488$ S or $0.078 \angle 38.7^{\circ}$ S.
+![](Examples-10.png)
+Admittance of branch 1: $\bar{Y}_1 = 1/\bar{Z}_1 = 1/(7+j5) = \frac{7-j5}{7^2+5^2} = \frac{7-j5}{74} = 0.0946 - j0.0676$ S.
+Admittance of branch 2: $\bar{Y}_2 = 1/\bar{Z}_2 = 1/(10-j8) = \frac{10+j8}{10^2+(-8)^2} = \frac{10+j8}{164} = 0.0610 + j0.0488$ S.
 
 Total Admittance $\bar{Y}_T = \bar{Y}_1 + \bar{Y}_2 = (0.0946+0.0610) + j(-0.0676+0.0488) = 0.1556 - j0.0188$ S.
-In polar form: $\bar{Y}_T = \sqrt{0.1556^2 + (-0.0188)^2} \angle \arctan(\frac{-0.0188}{0.1556}) \approx 0.1567 \angle -6.9^{\circ}$ S.
+In polar form: $\bar{Y}_T \approx 0.1567 \angle -6.9^{\circ}$ S.
 
 Conductance $G = \text{Re}(\bar{Y}_T) = 0.1556$ S.
 Susceptance $B = \text{Im}(\bar{Y}_T) = -0.0188$ S (Inductive overall).
@@ -216,10 +213,10 @@ $\bar{I} = (230 \angle 0^{\circ})(0.1567 \angle -6.9^{\circ}) \approx 36.04 \ang
 Power Factor $pf = \cos \phi = \cos(-6.9^{\circ}) \approx 0.99$. Since current lags voltage (angle is negative), it's $0.99$ Lagging.
 
 ---
-<a id="example-12-parallel-rlc-analysis"></a>
 ### Example 12: Parallel RLC Analysis
 $R=2.5\Omega$, $X_L=4\Omega$, $X_C=10\Omega$ in parallel across 10V, 50Hz. Find admittances, branch currents, total current.
 **Solution:**
+![](Examples-5.png)
 i) Admittances:
 $\bar{Y}_R = G = 1/R = 1/2.5 = 0.4$ S.
 $\bar{Y}_L = -jB_L = 1/(jX_L) = 1/(j4) = -j0.25$ S.
@@ -234,9 +231,11 @@ Total Current $\bar{I}_S = \bar{I}_R + \bar{I}_L + \bar{I}_C = 4 + (-j2.5) + j1 
 In polar form: $\bar{I}_S = \sqrt{4^2 + (-1.5)^2} \angle \arctan(-1.5/4) \approx 4.27 \angle -20.56^{\circ}$ A.
 
 ---
-<a id="example-13-series-parallel-impedance"></a>
 ### Example 13: Series-Parallel Impedance
-Determine current, power, pf for the circuit with $L_1=0.01H, L_2=0.02H, C=200\mu F$ and resistors $6\Omega, 4\Omega, 2\Omega$ connected to 100V, 50Hz. **Solution:**
+Determine current, power, pf for the circuit with $L_1=0.01H, L_2=0.02H, C=200\mu F$ and resistors $6\Omega, 4\Omega, 2\Omega$ connected to 100V, 50Hz.
+
+
+**Solution:**
 Calculate reactances at $f=50$ Hz:
 $X_{L1} = 2\pi(50)(0.01) = \pi \approx 3.14 \, \Omega$.
 $X_{L2} = 2\pi(50)(0.02) = 2\pi \approx 6.28 \, \Omega$.
@@ -255,7 +254,7 @@ $= 8 - j51.12 + 100.0 \approx 108.0 - j51.12 \, \Omega^2$.
 $\bar{Z}_p = \frac{108.0 - j51.12}{6 - j9.64} \approx \frac{119.5 \angle -25.3^{\circ}}{11.34 \angle -58.1^{\circ}} \approx 10.54 \angle 32.8^{\circ} \approx 8.87 + j5.69 \, \Omega$.
 
 Total Impedance $\bar{Z}_T = \bar{Z}_1 + \bar{Z}_p = (6+j3.14) + (8.87+j5.69) = 14.87 + j8.83 \, \Omega$.
-In polar form: $\bar{Z}_T = \sqrt{14.87^2 + 8.83^2} \angle \arctan(8.83/14.87) \approx 17.3 \angle 30.7^{\circ} \, \Omega$.
+In polar form: $\bar{Z}_T \approx 17.3 \angle 30.7^{\circ} \, \Omega$.
 
 Total Current $\bar{I} = \bar{V}/\bar{Z}_T$. Let $\bar{V} = 100 \angle 0^{\circ}$ V.
 $\bar{I} = (100 \angle 0^{\circ}) / (17.3 \angle 30.7^{\circ}) \approx 5.78 \angle -30.7^{\circ}$ A.
@@ -264,9 +263,10 @@ Power Consumed $P = VI \cos \phi = (100)(5.78) \cos(30.7^{\circ}) \approx 578 \t
 Power Factor $pf = \cos \phi = \cos(30.7^{\circ}) \approx 0.86$ Lagging.
 
 ---
-<a id="example-14-series-parallel-analysis"></a>
 ### Example 14: Series-Parallel Analysis (Unknowns)
-Circuit takes 12A lagging, $P=1800W$ from 200V supply. Voltmeter reads 200V across series $R_2=10\Omega, X_2$. Find $R_1, X_1, X_2$. **Solution:**
+Circuit takes 12A lagging, $P=1800W$ from 200V supply. Voltmeter reads 200V across series $R_2=10\Omega, X_2$. Find $R_1, X_1, X_2$.
+
+**Solution:**
 Total apparent power $S = VI = (200)(12) = 2400$ VA.
 Overall power factor $pf = P/S = 1800 / 2400 = 0.75$ Lagging.
 Phase angle $\phi = \arccos(0.75) \approx 41.41^{\circ}$.
@@ -294,9 +294,10 @@ Comparing with $\bar{Z}_{p1} = R_1 - jX_1$:
 $R_1 \approx 3.12 \, \Omega$, $X_1 \approx 2.17 \, \Omega$.
 
 ---
-<a id="example-15-series-parallel-analysis-known-current"></a>
 ### Example 15: Series-Parallel Analysis (Known Current)
-In the circuit shown, voltage applied causes 10A in the capacitor ($398\mu F$). Find applied voltage. **Solution:**
+In the circuit shown, what voltage of 50Hz frequency is to be applied across A & B that will cause a current of 10A to flow in the capacitor ($398\mu F$).
+
+**Solution:**
 Calculate reactances at $f=50$ Hz:
 Branch 1: $X_{L1} = 2\pi(50)(0.0191) \approx 6 \, \Omega$. $\bar{Z}_1 = 5+j6 \, \Omega$.
 Branch 2: $X_{C2} = 1 / (2\pi(50)(398 \times 10^{-6})) \approx 8 \, \Omega$. $\bar{Z}_2 = 7-j8 \, \Omega$.
@@ -315,13 +316,14 @@ $\bar{Z}_3 = 12.8 \angle 51.3^{\circ}$.
 $\bar{V}_{CB} = (15.57 \angle -59.7^{\circ})(12.8 \angle 51.3^{\circ}) \approx 199.3 \angle -8.4^{\circ}$ V.
 Total Applied Voltage $\bar{V}_{AB} = \bar{V}_{AC} + \bar{V}_{CB} = (106.3 \angle -48.8^{\circ}) + (199.3 \angle -8.4^{\circ})$
 $\bar{V}_{AB} = (69.9 - j79.9) + (197.3 - j29.2) = 267.2 - j109.1 \approx 288.6 \angle -22.2^{\circ}$ V.
-The required voltage is approx 288.6 V.
+The required voltage magnitude is approx 288.6 V.
 
 ---
-<a id="example-16-series-parallel-power-analysis"></a>
 ### Example 16: Series-Parallel Power Analysis
 Loads connected in parallel: 15kW heating, 40kVA motor @ 0.6 lag, 20kW load @ 0.8 lag. Find total P, Q, S, pf.
+
 **Solution:**
+![](Examples-6.png)
 Treat each load separately using power triangles.
 Load 1 (Heating): $P_1 = 15$ kW, $Q_1 = 0$ kVAR (Resistive, pf=1).
 Load 2 (Motor): $S_2 = 40$ kVA, $pf_2 = 0.6$ lag.
@@ -341,48 +343,51 @@ Total Apparent Power $S_T = \sqrt{P_T^2 + Q_T^2} = \sqrt{59^2 + 47^2} = \sqrt{34
 Overall Power Factor $pf_T = P_T / S_T = 59 / 75.43 \approx 0.782$. Since $Q_T$ is positive (inductive), the overall pf is $0.782$ Lagging.
 
 ---
-<a id="example-17-power-factor-correction"></a>
 ### Example 17: Power Factor Correction (Basic)
 Single phase motor (400V, 50Hz) takes 31.7A at 0.7 lag pf. Find C to raise pf to 0.9 lag.
+
 **Solution:**
+![](Examples-9.png)
 Initial state (Motor only):
 $V = 400$ V, $I_m = 31.7$ A, $\cos \phi_m = 0.7$ lag.
 $\phi_m = \arccos(0.7) \approx 45.57^{\circ}$.
-$\sin \phi_m = \sin(45.57^{\circ}) \approx 0.714$.
+$\sin \phi_m \approx 0.714$.
 Active component of $I_m$: $I_{active} = I_m \cos \phi_m = 31.7 \times 0.7 = 22.19$ A.
 Reactive component of $I_m$: $I_{reactive, m} = I_m \sin \phi_m = 31.7 \times 0.714 \approx 22.63$ A (lagging).
-Active Power $P = V I_{active} = 400 \times 22.19 = 8876$ W.
 
 Final state (Motor + Capacitor):
 Desired pf $\cos \phi = 0.9$ lag.
 $\phi = \arccos(0.9) \approx 25.84^{\circ}$.
-$\sin \phi = \sin(25.84^{\circ}) \approx 0.436$.
-The capacitor only affects reactive current; active current remains the same.
+$\sin \phi \approx 0.436$.
 Total active component $I_{active, total} = I_{active} = 22.19$ A.
 Total current magnitude $I = I_{active, total} / \cos \phi = 22.19 / 0.9 \approx 24.66$ A.
 Total reactive component $I_{reactive, total} = I \sin \phi = 24.66 \times 0.436 \approx 10.75$ A (lagging).
 
-The capacitor must supply the difference in reactive current.
 Capacitor current $I_C = I_{reactive, m} - I_{reactive, total} = 22.63 - 10.75 = 11.88$ A (leading).
 Capacitive Reactance $X_C = V / I_C = 400 / 11.88 \approx 33.67 \, \Omega$.
-$X_C = 1 / (2\pi f C) \implies C = 1 / (2\pi f X_C) = 1 / (2\pi (50)(33.67))$.
-$C \approx 1 / (10578) \approx 94.5 \times 10^{-6}$ F $= 94.5 \, \mu F$.
+$C = 1 / (2\pi f X_C) = 1 / (2\pi (50)(33.67)) \approx 94.5 \times 10^{-6}$ F $= 94.5 \, \mu F$.
 
 ---
-<a id="example-18-power-factor-correction-power"></a>
 ### Example 18: Power Factor Correction (Power Method)
 Inductive load $P=2.5$ kW @ 0.71 lag pf. $V=230$ V, 50 Hz. Find C to raise pf to 0.866 lag.
+
+Case 1: Load only
+![](Examples-7.png)
+
+Case 2: Load + Capacitor
+
+![](Examples-8.png)
 **Solution:**
 Initial state:
 $P = 2500$ W, $\cos \phi_1 = 0.71$ lag.
 $\phi_1 = \arccos(0.71) \approx 44.76^{\circ}$.
-$\tan \phi_1 = \tan(44.76^{\circ}) \approx 0.991$.
+$\tan \phi_1 \approx 0.991$.
 Initial Reactive Power $Q_1 = P \tan \phi_1 = 2500 \times 0.991 \approx 2477.5$ VAR (inductive).
 
 Final state:
 $P = 2500$ W, $\cos \phi_2 = 0.866$ lag.
 $\phi_2 = \arccos(0.866) = 30^{\circ}$.
-$\tan \phi_2 = \tan(30^{\circ}) = 1/\sqrt{3} \approx 0.577$.
+$\tan \phi_2 = \tan(30^{\circ}) \approx 0.577$.
 Final Reactive Power $Q_2 = P \tan \phi_2 = 2500 \times 0.577 \approx 1442.5$ VAR (inductive).
 
 Reactive power to be supplied by capacitor:
@@ -391,8 +396,7 @@ $Q_C = Q_1 - Q_2 = 2477.5 - 1442.5 = 1035$ VAR.
 Capacitance:
 $Q_C = V^2 / X_C = V^2 \omega C$.
 $1035 = (230)^2 \times (2\pi \times 50) \times C$.
-$1035 = 52900 \times 100\pi \times C$.
-$C = 1035 / (5290000 \pi) \approx 62.4 \times 10^{-6}$ F $= 62.4 \, \mu F$.
+$C = 1035 / (52900 \times 100\pi) \approx 62.4 \times 10^{-6}$ F $= 62.4 \, \mu F$.
 
 ***
-# [Back](../Mathematics.md)
+# [Back](../Electrical.md)
