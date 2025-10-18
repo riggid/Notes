@@ -1,14 +1,30 @@
-/.obsidian/workspace
-/.obsidian/plugins/quiz-generator/data.json
-/.obsidian/plugins/quiz-generator/data.json
-/.obsidian/plugins/quiz-generator/data.json
-/.smart-env/smart_env.json
-/.obsidian/workspace.json
-/.smart-env/multi
-*.ajson
-.obsidian/workspace.json
-.obsidian/workspace.json
+# Ignore Obsidian's local cache
+/.obsidian/cache/
 
-/.smart-env/smart_env.json
-/.obsidian/graph.json
-/.smart-env
+# Ignore old/deprecated workspace file (conflicts with workspace.json)
+/.obsidian/workspace
+
+# Ignore mobile-specific workspace layout
+/.obsidian/workspace-mobile.json
+
+# Ignore local app settings (like window size)
+/.obsidian/config
+
+# Ignore the 'smart-env' plugin data (from your previous file)
+/.smart-env/
+
+# Ignore '.ajson' files (from your previous file)
+*.ajson
+
+# --- OS-specific junk files ---
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini

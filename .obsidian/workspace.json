@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Index"
+            }
+          },
+          {
+            "id": "d77d65e488bdcd0b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Index"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f5891c65d0f804d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ca56740c64e3724",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6b8409d7c1af553",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "23cafa71a74a5ded",
+    "type": "split",
+    "children": [
+      {
+        "id": "a3c7230b713f9647",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4488dcb046b9a0a4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "b8830c304de71f5f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Index"
+            }
+          },
+          {
+            "id": "84aab6949a7596ab",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 474
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": true,
+      "smart-connections:Open: Smart Chat": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Connections: Open random connection": true,
+      "homepage:Open homepage": false,
+      "publish:Publish changes...": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "d77d65e488bdcd0b",
+  "lastOpenFiles": [
+    "Semester 1/Mechanical/Mechanical.md",
+    "Semester 1/Mechanical/Unit 2/Core Notes.md",
+    "Index.md",
+    "Semester 1/Mechanical/Unit 2/Q&A.md",
+    "Semester 1/Mechanical/Unit 2/Examples.md",
+    "Semester 1/Mechanical/Unit 2",
+    "Semester 1/Mathematics/Mathematics.md",
+    "Semester 1/Mathematics/Unit 2/Q&A.md",
+    "Semester 1/Mathematics/Unit 2/Examples.md",
+    "Semester 1/Mathematics/Unit 2/Core Notes.md",
+    "Semester 1/Mathematics/Unit 2",
+    "Semester 1/Python/Python.md",
+    "Semester 1/Physics/Physics.md",
+    "Semester 1/Environmental Studies and Life Science/Environmental Studies and Life Sciences.md",
+    "Semester 1/Electrical/Electrical.md",
+    "Semester 1/Electrical/Unit 1/Core Notes.md",
+    "Semester 1/Electrical/Unit 1/Unit 1.md",
+    "Semester 1/Electrical/Unit 2/Core Notes.md",
+    "Semester 2",
+    "Semester 1/Electrical/Semester 1.md",
+    "subject-buttons.css.md",
+    "Semester 1/Physics/Unit 2/Core Notes.md",
+    "Semester 1/Physics/Unit 2/Unit 2.md",
+    "Semester 1/Mathematics/Unit 1/Unit 1.md",
+    "PESU IO/Assignment 1.md",
+    "PESU IO/Notes.md",
+    "Semester 1/Electrical/Unit 2/Q&A.md",
+    "Semester 1/Electrical/Unit 2/Examples.md",
+    "Semester 1/Electrical/Unit 2",
+    "_templates/T - New Unit.md",
+    "Untitled.canvas",
+    "_templates",
+    "College/Semester 1/Physics/Unit 2/Untitled Diagram.svg",
+    "Semester 1/Python",
+    "Semester 1/Physics/Unit 2",
+    "Semester 1/Physics/Unit 1",
+    "Semester 1/Physics",
+    "Semester 1/Electrical/Unit 1/Images/Q&A-9.png",
+    "Semester 1/Electrical/Unit 1/Images/Q&A-8.png",
+    "Semester 1/Electrical/Unit 1/Images/Q&A-7.png",
+    "Semester 1/Electrical/Unit 1/Images/Q&A-6.png",
+    "Semester 1/Electrical/Unit 1/Images/Q&A-5.png",
+    "Semester 1/Electrical/Unit 1/Images/Q&A-4.png",
+    "Semester 1/Electrical/Unit 1/Images/Q&A-3.png",
+    "Semester 1/Electrical/Unit 1/Images/Q&A-27.png",
+    "Semester 1/Electrical/Unit 1/Images/Q&A-26.png",
+    "Semester 1/Electrical/Unit 1/Images",
+    "Untitled 1.canvas"
+  ]
+}
