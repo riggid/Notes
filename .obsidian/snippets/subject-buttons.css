@@ -1,49 +1,92 @@
-/* This is the container <div> for the buttons */
-.subject-button-container {
-    display: flex;     /* Arranges buttons horizontally */
-    flex-wrap: wrap;   /* Lets them wrap to the next line */
-    gap: 12px;         /* Adds space *between* buttons */
-    margin-top: 10px;
-    
-    /* --- NEW --- */
-    /* This will center the buttons if they don't fill the whole row */
-    justify-content: center; 
+/* === NEW: Semester Card === */
+/* This styles the main container for each semester */
+.semester-card {
+    background-color: var(--background-secondary); /* Use theme's secondary bg */
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 25px; /* Space between semester cards */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid var(--background-modifier-border);
+    overflow: hidden; /* Ensures padding is respected */
 }
 
-/* This is the <a> link (button) itself */
+/* === UPDATED: Title (now inside a card) === */
+.semester-card .semester-title {
+    text-align: left; /* Align left inside the card */
+    font-size: 1.6em; /* A bit bigger */
+    font-weight: 700;
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    color: var(--text-normal);
+    border-bottom: 2px solid var(--background-modifier-border); /* A nice divider */
+}
+
+/* === UPDATED: Button Container (for main dashboard) === */
+/* This applies to containers *inside* a card */
+.semester-card .subject-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start; /* Aligns buttons to the left */
+}
+
+/* === UPDATED: Subject Button Style === */
 a.subject-button {
-    background-color: #8ab4f8; /* The blue color */
-    color: #000 !important;   /* Black text */
-    padding: 10px 16px;      /* Increased padding for a beefier button */
-    border-radius: 8px;      /* Slightly more rounded corners */
+    background-color: #8ab4f8; 
+    color: #000 !important;
+    padding: 10px 16px; 
+    border-radius: 8px;
     text-decoration: none !important;
-    font-weight: 600;        /* Bolder font */
-    
-    /* --- NEW --- */
-    /* Adds a subtle shadow for a "lifting" effect */
+    font-weight: 600; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
-    /* --- NEW --- */
-    /* This makes all changes (hover, click) animate smoothly */
     transition: all 0.2s ease-in-out;
+    
+    /* --- NEW: For icon alignment --- */
+    display: inline-flex; /* Use flex to align icon and text */
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
 }
 
-/* --- UPDATED HOVER EFFECT --- */
 a.subject-button:hover {
     text-decoration: none !important;
-    cursor: pointer;
-    
-    /* --- NEW --- */
-    /* Makes the button slightly larger and brighter */
     filter: brightness(1.1);
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* A larger shadow on hover */
+    transform: scale(1.03); /* A more subtle hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
-/* --- NEW CLICK EFFECT --- */
 a.subject-button:active {
-    /* Simulates the button being "pressed" down */
     transform: scale(0.98);
     filter: brightness(0.95);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* === --- Styles for Subject Pages (No Change) --- === */
+
+/* This styles the H2 title on your *subject* pages */
+.dataviewjs-child-container > .semester-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em; 
+    margin-bottom: 20px; 
+    margin-top: 5px;
+    color: var(--text-normal);
+}
+
+/* This styles the H3 "Unit" titles on your *subject* pages */
+.unit-title {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 30px; 
+    margin-bottom: 15px; 
+    border-bottom: 1px solid var(--text-faint); 
+    padding-bottom: 5px;
+    color: var(--text-normal);
+}
+
+/* This styles the button containers on your *subject* pages */
+.dataviewjs-child-container > .subject-button-container {
+    justify-content: flex-start;
 }
