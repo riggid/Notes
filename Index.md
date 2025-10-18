@@ -1,4 +1,7 @@
-
+## **Hello Welcome to my notes**
+### **By**
+- ### **Shreyansh Tandon**
+- ### **Shubham Jalori**
 ```dataviewjs
 // --- This script is fully automatic ---
 
