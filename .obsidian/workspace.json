@@ -30,13 +30,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "Semester 1/Electrical/Unit 2/Core Notes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "Core Notes"
             }
           }
         ],
@@ -111,12 +111,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d6b8409d7c1af553",
+  "active": "d77d65e488bdcd0b",
   "lastOpenFiles": [
     "Semester 1/Electrical/Electrical.md",
+    "Semester 1/Electrical/Unit 2/Q&A.md",
+    "Semester 1/Electrical/Unit 2/Examples.md",
     "Semester 1/Electrical/Unit 2/Core Notes.md",
-    "Semester 1/Electrical/Unit 1/Core Notes.md",
     "Index.md",
+    "Semester 1/Electrical/Unit 1/Core Notes.md",
     "Semester 1/Mechanical/Mechanical.md",
     "Semester 1/Mechanical/Unit 2/Core Notes.md",
     "Semester 1/Mechanical/Unit 2/Q&A.md",
@@ -139,8 +141,6 @@
     "Semester 1/Mathematics/Unit 1/Unit 1.md",
     "PESU IO/Assignment 1.md",
     "PESU IO/Notes.md",
-    "Semester 1/Electrical/Unit 2/Q&A.md",
-    "Semester 1/Electrical/Unit 2/Examples.md",
     "Semester 1/Electrical/Unit 2",
     "_templates/T - New Unit.md",
     "Untitled.canvas",

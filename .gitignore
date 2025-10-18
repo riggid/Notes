@@ -16,6 +16,8 @@
 # Ignore '.ajson' files (from your previous file)
 *.ajson
 
+/.obsidian/workspace.json
+
 # --- OS-specific junk files ---
 
 # macOS
