@@ -89,35 +89,6 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "b8830c304de71f5f",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Index.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Index"
-            }
-          },
-          {
-            "id": "84aab6949a7596ab",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Index.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Index"
-            }
           }
         ]
       }
@@ -140,11 +111,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4488dcb046b9a0a4",
+  "active": "d6b8409d7c1af553",
   "lastOpenFiles": [
+    "Semester 1/Electrical/Electrical.md",
+    "Semester 1/Electrical/Unit 2/Core Notes.md",
+    "Semester 1/Electrical/Unit 1/Core Notes.md",
+    "Index.md",
     "Semester 1/Mechanical/Mechanical.md",
     "Semester 1/Mechanical/Unit 2/Core Notes.md",
-    "Index.md",
     "Semester 1/Mechanical/Unit 2/Q&A.md",
     "Semester 1/Mechanical/Unit 2/Examples.md",
     "Semester 1/Mechanical/Unit 2",
@@ -156,10 +130,7 @@
     "Semester 1/Python/Python.md",
     "Semester 1/Physics/Physics.md",
     "Semester 1/Environmental Studies and Life Science/Environmental Studies and Life Sciences.md",
-    "Semester 1/Electrical/Electrical.md",
-    "Semester 1/Electrical/Unit 1/Core Notes.md",
     "Semester 1/Electrical/Unit 1/Unit 1.md",
-    "Semester 1/Electrical/Unit 2/Core Notes.md",
     "Semester 2",
     "Semester 1/Electrical/Semester 1.md",
     "subject-buttons.css.md",
