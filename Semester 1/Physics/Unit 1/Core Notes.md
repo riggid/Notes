@@ -1,4 +1,4 @@
-# [[Semester 1/Physics/Unit 1/Unit 1|Back]]
+# [Physics](../Physics.md)
 ***
 # Unit 1: Concepts Leading to Quantum Mechanics
 
