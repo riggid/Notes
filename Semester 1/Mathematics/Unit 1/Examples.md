@@ -1,4 +1,4 @@
-# [[Semester 1/Mathematics/Unit 1/Unit 1|Back]]
+# [Back](../Mathematics.md)
 ***
 # Questions and Examples from Unit 1
 

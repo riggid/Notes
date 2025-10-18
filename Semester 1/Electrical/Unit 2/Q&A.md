@@ -7,16 +7,6 @@
 ***
 ## AC Fundamentals & Phasors
 ***
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american voltages]
-    \draw (0,0) to[sV, l=$v(t)$] (0,2) -- (2,2)
-          to[R, l=R, i<=$i(t)$] (2,0) -- (0,0);
-\end{circuitikz}
-\end{document}
-
-```
 ### 1. Draw one cycle of a sinusoidal voltage waveform and indicate: i) Positive zero crossing ii) Negative zero crossing iii) Positive peak iv) Negative peak.
 
 #### Solution:

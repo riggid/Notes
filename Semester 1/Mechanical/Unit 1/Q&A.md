@@ -1,4 +1,4 @@
-# [[Semester 1/Mechanical/Unit 1/Unit 1|Back]]
+# [Back](../Mechanical.md)
 ***
 # Q&A: Mechanical Engineering Science
 

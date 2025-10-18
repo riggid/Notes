@@ -1,4 +1,4 @@
-# [[Semester 1/Mechanical/Unit 1/Unit 1|Back]]
+# [Back](../Mechanical.md)
 ***
 # Unit 1: Principles of Thermodynamics
 

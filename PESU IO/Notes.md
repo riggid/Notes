@@ -1,4 +1,4 @@
-# [[Semester 1|Back]]
+# [Index](../Index.md)
 ***
 a = 3 + $7i$
 $\bar{a}$ = 3 - $7i$
