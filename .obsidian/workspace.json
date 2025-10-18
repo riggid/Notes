@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Semester 1/Mathematics/Mathematics.md",
+                "file": "Semester 1/Electrical/Unit 2/Q&A.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Mathematics"
+              "title": "Q&A"
             }
           }
         ]
@@ -93,19 +93,20 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Semester 1/Mathematics/Unit 2/Core Notes.md",
+    "Semester 1/Electrical/Electrical.md",
+    "Semester 1/Electrical/Unit 2/Q&A.md",
+    "Semester 1/Electrical/Unit 2/Core Notes.md",
+    "Semester 1/Electrical/Unit 2/Examples.md",
+    "Index.md",
     "Semester 1/Mathematics/Mathematics.md",
     "Semester 1/Mathematics/Unit 2/Q&A.md",
-    "Semester 1/Electrical/Unit 2/Examples.md",
-    "Semester 1/Electrical/Unit 2/Core Notes.md",
-    "Semester 1/Electrical/Electrical.md",
-    "Index.md",
+    "Semester 1/Mathematics/Unit 2/Examples.md",
+    "Semester 1/Mathematics/Unit 2/Core Notes.md",
+    "Semester 1/Electrical/Unit 1/Examples.md",
     "Semester 1/Mechanical/Mechanical.md",
     "Semester 1/Mechanical/Unit 2/Core Notes.md",
-    "Semester 1/Electrical/Unit 1/Examples.md",
     "Semester 1/Electrical/Unit 1/Core Notes.md",
     "Semester 1/Mathematics/Unit 1/Core Notes.md",
-    "Semester 1/Mathematics/Unit 2/Examples.md",
     "Semester 1/Mathematics/Unit 2/example-5-cf-complex-roots.md",
     "consistency-report.md",
     "Semester 1/Mathematics/Unit 2/Unit 2.md",
@@ -118,7 +119,6 @@
     "Semester 1/Physics/Unit 1/Core Notes.md",
     "Semester 1/Python/Python.md",
     "Semester 1/Physics/Physics.md",
-    "Semester 1/Electrical/Unit 2/Q&A.md",
     "Semester 1/Mechanical/Unit 2/Q&A.md",
     "Semester 1/Mechanical/Unit 2/Examples.md",
     "Semester 1/Mechanical/Unit 2",

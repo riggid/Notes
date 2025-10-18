@@ -1,4 +1,4 @@
-# [Back](../Mathematics.md)
+# [Back](../Electrical.md)
 ***
 [Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
 ***
