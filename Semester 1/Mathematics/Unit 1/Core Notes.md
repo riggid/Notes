@@ -1,4 +1,4 @@
-# [[Semester 1/Mathematics/Unit 1/Unit 1| Back]]
+# [Back](../Mathematics.md)
 # Unit 1: Partial Differentiation
 
 ## Function of Several Variables
@@ -166,3 +166,5 @@ $$ F(x, y, z) = f(x, y, z) + \lambda\phi(x, y, z) $$
 3. The solutions $(x, y, z)$ give the coordinates for the extreme values of $f$.
 
 *See [Example 12](Semester%201/Mathematics/Unit%201/Examples.md#Example%2012:%20Lagrange%20Multipliers) for a maximization problem using this method.*
+---
+# [Back](../Mathematics.md)

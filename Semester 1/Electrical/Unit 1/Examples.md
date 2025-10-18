@@ -1,4 +1,4 @@
-# [[Semester 1/Electrical/Unit 1/Unit 1|Back]]
+# [Back](../Electrical.md)
 ***
 ## Example 1: Basic KVL
 

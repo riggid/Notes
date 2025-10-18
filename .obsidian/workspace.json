@@ -10,37 +10,19 @@
           {
             "id": "e7a7b303c61786dc",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Index"
-            }
-          },
-          {
-            "id": "b53877d75e307198",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Semester 1/Physics/Unit 1/Core Notes.md",
+                "file": "Semester 1/Mathematics/Mathematics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Core Notes"
+              "title": "Mathematics"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,49 +82,49 @@
     "hiddenItems": {
       "obsidian-git:Open Git source control": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
       "command-palette:Open command palette": true,
       "smart-connections:Open: Smart Chat": false,
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Smart Connections: Open random connection": true,
       "homepage:Open homepage": false,
-      "publish:Publish changes...": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b53877d75e307198",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Semester 1/Physics/Physics.md",
-    "Index.md",
+    "Semester 1/Mathematics/Unit 2/Core Notes.md",
+    "Semester 1/Mathematics/Mathematics.md",
+    "Semester 1/Mathematics/Unit 2/Q&A.md",
+    "Semester 1/Electrical/Unit 2/Examples.md",
     "Semester 1/Electrical/Unit 2/Core Notes.md",
     "Semester 1/Electrical/Electrical.md",
-    "Semester 1/Electrical/Unit 2/Q&A.md",
-    "Semester 1/Electrical/Unit 2/Examples.md",
-    "Semester 1/Electrical/Unit 1/Core Notes.md",
+    "Index.md",
     "Semester 1/Mechanical/Mechanical.md",
     "Semester 1/Mechanical/Unit 2/Core Notes.md",
+    "Semester 1/Electrical/Unit 1/Examples.md",
+    "Semester 1/Electrical/Unit 1/Core Notes.md",
+    "Semester 1/Mathematics/Unit 1/Core Notes.md",
+    "Semester 1/Mathematics/Unit 2/Examples.md",
+    "Semester 1/Mathematics/Unit 2/example-5-cf-complex-roots.md",
+    "consistency-report.md",
+    "Semester 1/Mathematics/Unit 2/Unit 2.md",
+    "Semester 1/Mathematics/Unit 1/Q&A.md",
+    "Semester 1/Mathematics/Unit 1/Unit 1.md",
+    "Semester 1/Electrical/Unit 1/Q&A.md",
+    "Semester 1/Electrical/Unit 1/Q&A-1.png",
+    "Semester 1/Electrical/Unit 1/images",
+    "Semester 1/Physics/Unit 2/Core Notes.md",
+    "Semester 1/Physics/Unit 1/Core Notes.md",
+    "Semester 1/Python/Python.md",
+    "Semester 1/Physics/Physics.md",
+    "Semester 1/Electrical/Unit 2/Q&A.md",
     "Semester 1/Mechanical/Unit 2/Q&A.md",
     "Semester 1/Mechanical/Unit 2/Examples.md",
     "Semester 1/Mechanical/Unit 2",
-    "Semester 1/Mathematics/Mathematics.md",
-    "Semester 1/Mathematics/Unit 2/Q&A.md",
-    "Semester 1/Mathematics/Unit 2/Examples.md",
-    "Semester 1/Mathematics/Unit 2/Core Notes.md",
     "Semester 1/Mathematics/Unit 2",
-    "Semester 1/Python/Python.md",
-    "Semester 1/Environmental Studies and Life Science/Environmental Studies and Life Sciences.md",
-    "Semester 1/Electrical/Unit 1/Unit 1.md",
     "Semester 2",
-    "Semester 1/Electrical/Semester 1.md",
-    "subject-buttons.css.md",
-    "Semester 1/Physics/Unit 2/Core Notes.md",
-    "Semester 1/Physics/Unit 2/Unit 2.md",
-    "Semester 1/Mathematics/Unit 1/Unit 1.md",
-    "PESU IO/Assignment 1.md",
-    "PESU IO/Notes.md",
     "Semester 1/Electrical/Unit 2",
-    "_templates/T - New Unit.md",
     "Untitled.canvas",
     "_templates",
     "College/Semester 1/Physics/Unit 2/Untitled Diagram.svg",
@@ -158,8 +140,6 @@
     "Semester 1/Electrical/Unit 1/Q&A-4.png",
     "Semester 1/Electrical/Unit 1/Q&A-3.png",
     "Semester 1/Electrical/Unit 1/Q&A-27.png",
-    "Semester 1/Electrical/Unit 1/Q&A-26.png",
-    "Semester 1/Electrical/Unit 1/Images",
     "Untitled 1.canvas"
   ]
 }

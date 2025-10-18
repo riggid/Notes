@@ -7,5 +7,6 @@
   "obsidian-excalidraw-plugin",
   "dataview",
   "templater-obsidian",
-  "consistent-attachments-and-links"
+  "consistent-attachments-and-links",
+  "obsidian-tikzjax"
 ]
