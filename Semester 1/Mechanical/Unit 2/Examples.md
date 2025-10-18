@@ -1,3 +1,3 @@
 
-# [[Semester 1/Mechanical/Mechanical|Back]]
+# [Back](../Mechanical.md)
 ***

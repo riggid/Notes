@@ -47,7 +47,7 @@ If $\lim_{(x,y)\rightarrow(x_{0},y_{0})}f(x,y)=L_{1}$ and $\lim_{(x,y)\rightarro
 ### Example: Non-existent Limit
 The limit $\lim_{(x,y)\rightarrow(0,0)}\frac{xy}{x^{2}+y^{2}}$ does not exist because along the path $y=mx$, the limit depends on the slope $m$:
 $$ \lim_{x\rightarrow0}\frac{x(mx)}{x^{2}+(mx)^{2}} = \frac{m}{1+m^{2}} $$
-*More non-existent limit examples are in [[Semester 1/Mathematics/Unit 1/Examples#Example 1: Non-existent Limits| Example 1]].*
+*More non-existent limit examples are in [ Example 1](Semester%201/Mathematics/Unit%201/Examples.md#Example%201:%20Non-existent%20Limits).*
 
 ***
 
@@ -70,7 +70,7 @@ $$ \frac{\partial z}{\partial y} = f_y = \lim_{h\rightarrow0}\frac{f(x,y+h)-f(x,
 - $f_{xx}$ and $f_{yy}$ describe the **concavity** in the $x$ and $y$ directions. ($f_{xx}>0 \implies$ concave up in $x$ direction).
 - $f_{xy}$ describes how the slope in one direction (say, $x$) changes as you move in the other direction ($y$).
 
-*For differentiation practice, see [[Semester 1/Mathematics/Unit 1/Examples#Example 3: First and Second Partial Derivatives|Example 3]] and [[Semester 1/Mathematics/Unit 1/Examples#Example 2: Second-Order Partial Derivatives| Example 2]].*
+*For differentiation practice, see [Example 3](Semester%201/Mathematics/Unit%201/Examples.md#Example%203:%20First%20and%20Second%20Partial%20Derivatives) and [ Example 2](Semester%201/Mathematics/Unit%201/Examples.md#Example%202:%20Second-Order%20Partial%20Derivatives).*
 
 ***
 
@@ -82,12 +82,12 @@ If $u=f(x,y)$ where $x=\phi(t)$ and $y=\psi(t)$, $u$ is a function of $t$ alone.
 $$ \frac{du}{dt}=\frac{\partial u}{\partial x}\cdot\frac{dx}{dt}+\frac{\partial u}{\partial y}\cdot\frac{dy}{dt} $$
 For three variables:
 $$ \frac{du}{dt}=\frac{\partial u}{\partial x}\frac{dx}{dt}+\frac{\partial u}{\partial y}\frac{dy}{dt}+\frac{\partial u}{\partial z}\frac{dz}{dt} $$
-*See [[Semester 1/Mathematics/Unit 1/Examples#Example 4: Total Derivative|Example 4]] for an application.*
+*See [Example 4](Semester%201/Mathematics/Unit%201/Examples.md#Example%204:%20Total%20Derivative) for an application.*
 
 ### Differentiation of Implicit Functions
 For an implicit function $f(x,y)=c$, the derivative $\frac{dy}{dx}$ is:
 $$ \frac{dy}{dx}=-\frac{\frac{\partial f}{\partial x}}{\frac{\partial f}{\partial y}}, \quad \text{provided } \frac{\partial f}{\partial y}\ne0 $$
-*See [[Semester 1/Mathematics/Unit 1/Examples#Example 5: Implicit Differentiation|Example 5]] for an application.*
+*See [Example 5](Semester%201/Mathematics/Unit%201/Examples.md#Example%205:%20Implicit%20Differentiation) for an application.*
 
 ***
 
@@ -97,7 +97,7 @@ If $u=f(x,y)$ where $x$ and $y$ are functions of two other independent variables
 $$ \frac{\partial u}{\partial r}=\frac{\partial u}{\partial x}\frac{\partial x}{\partial r}+\frac{\partial u}{\partial y}\frac{\partial y}{\partial r} $$
 $$ \frac{\partial u}{\partial s}=\frac{\partial u}{\partial x}\frac{\partial x}{\partial s}+\frac{\partial u}{\partial y}\frac{\partial y}{\partial s} $$
 
-*A complex composite function example is shown in [[Semester 1/Mathematics/Unit 1/Examples#Example 6: Composite Functions|Example 6]].*
+*A complex composite function example is shown in [Example 6](Semester%201/Mathematics/Unit%201/Examples.md#Example%206:%20Composite%20Functions).*
 
 ***
 
@@ -111,7 +111,7 @@ $$ x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}=nu $$
 For $n$ variables:
 $$ x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}+z\frac{\partial u}{\partial z}+...=nu $$
 
-*Applications of Euler's theorem are demonstrated in [[Semester 1/Mathematics/Unit 1/Examples#Example 7: Euler's Theorem Application 1|Example 7]] and [[Semester 1/Mathematics/Unit 1/Examples#Example 8: Euler's Theorem Application 2|Example 8]].*
+*Applications of Euler's theorem are demonstrated in [Example 7](Semester%201/Mathematics/Unit%201/Examples.md#Example%207:%20Euler's%20Theorem%20Application%201) and [Example 8](Semester%201/Mathematics/Unit%201/Examples.md#Example%208:%20Euler's%20Theorem%20Application%202).*
 
 ***
 
@@ -127,7 +127,7 @@ This is the special case of Taylor's series expanded about the point $(0, 0)$:
 $$ f(x, y) = f(0, 0) + \left[xf_x + yf_y\right] + \frac{1}{2!}\left[x^2f_{xx} + 2xyf_{xy} + y^2f_{yy}\right] + \cdots $$
 (Derivatives are evaluated at $(0, 0)$.)
 
-*See [[Semester 1/Mathematics/Unit 1/Examples#Example 9: Taylor Series Expansion|Example 9]] and [[Semester 1/Mathematics/Unit 1/Examples#Example 10: Maclaurin Series Expansion|Example 10]] for series examples.*
+*See [Example 9](Semester%201/Mathematics/Unit%201/Examples.md#Example%209:%20Taylor%20Series%20Expansion) and [Example 10](Semester%201/Mathematics/Unit%201/Examples.md#Example%2010:%20Maclaurin%20Series%20Expansion) for series examples.*
 
 ***
 
@@ -147,7 +147,7 @@ An **extreme value** (maximum or minimum) occurs at a **critical point**, where 
     - If $D < 0 \implies$ **Saddle Point**.
     - If $D = 0 \implies$ Test is inconclusive.
 
-*Finding extrema is demonstrated in [[Semester 1/Mathematics/Unit 1/Examples#Example 11: Finding Extrema|Example 11]].*
+*Finding extrema is demonstrated in [Example 11](Semester%201/Mathematics/Unit%201/Examples.md#Example%2011:%20Finding%20Extrema).*
 
 ***
 
@@ -165,4 +165,4 @@ $$ F(x, y, z) = f(x, y, z) + \lambda\phi(x, y, z) $$
     - $\phi(x, y, z) = 0$ (the constraint)
 3. The solutions $(x, y, z)$ give the coordinates for the extreme values of $f$.
 
-*See [[Semester 1/Mathematics/Unit 1/Examples#Example 12: Lagrange Multipliers|Example 12]] for a maximization problem using this method.*
+*See [Example 12](Semester%201/Mathematics/Unit%201/Examples.md#Example%2012:%20Lagrange%20Multipliers) for a maximization problem using this method.*

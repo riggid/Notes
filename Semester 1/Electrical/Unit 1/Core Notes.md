@@ -1,4 +1,4 @@
-# [[Electrical|Back]]
+# [Back](../Electrical.md)
 *** 
 ## Fundamental Concepts
 
@@ -39,12 +39,12 @@ $$P = VI$$
 ### **Kirchhoff’s Current Law (KCL)**
 The algebraic sum of currents entering a junction (or node) is zero. In other words, the sum of currents entering a node equals the sum of currents leaving it.
 $$\sum I_{in} = \sum I_{out}$$
-> For a numerical problem, see: [[Semester 1/Electrical/Unit 1/Examples#Example 2: KCL and KVL Application]]
+> For a numerical problem, see: [Examples](Semester%201/Electrical/Unit%201/Examples.md#Example%202:%20KCL%20and%20KVL%20Application)
 
 ### **Kirchhoff’s Voltage Law (KVL)**
 The algebraic sum of voltages around any closed path (or loop) in an electric network is zero. Conventionally, a voltage drop is taken as negative and a voltage rise as positive.
 $$\sum V = 0$$
-> For a numerical problem, see: [[Semester 1/Electrical/Unit 1/Examples#Example 1: KVL Application]]
+> For a numerical problem, see: [Examples](Semester%201/Electrical/Unit%201/Examples.md#Example%201:%20KVL%20Application)
 
 ---
 
@@ -61,7 +61,7 @@ $$\sum V = 0$$
   $$\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \dots + \frac{1}{R_n}$$
 - **Current Division Rule**: For two parallel resistors, the current through one resistor ($R_1$) is given by:
   $$I_1 = I_{total} \left( \frac{R_2}{R_1 + R_2} \right)$$
-> For a numerical problem, see: [[Semester 1/Electrical/Unit 1/Examples#Example 3: Current Division]]
+> For a numerical problem, see: [Examples](Semester%201/Electrical/Unit%201/Examples.md#Example%203:%20Current%20Division)
 
 ### **Source Types**
 - **Ideal Voltage Source**: Terminal voltage is constant and independent of the current drawn from it. It has **zero internal resistance**.
@@ -75,7 +75,7 @@ A practical voltage source can be converted into an equivalent practical current
   $$I_S = \frac{V_S}{R_S} \quad (\text{Resistor } R_S \text{ is placed in parallel})$$
 - **Current Source to Voltage Source**:
   $$V_S = I_S R_S \quad (\text{Resistor } R_S \text{ is placed in series})$$
-> For a numerical problem, see: [[Semester 1/Electrical/Unit 1/Examples#Example 4: Source Transformation]]
+> For a numerical problem, see: [Examples](Semester%201/Electrical/Unit%201/Examples.md#Example%204:%20Source%20Transformation)
 
 ### **Star (Y) and Delta ($\Delta$) Transformations**
 A three-terminal resistive network can be converted between a Star (Y) and Delta ($\Delta$) configuration.
@@ -84,7 +84,7 @@ A three-terminal resistive network can be converted between a Star (Y) and Delta
   $$R_a = \frac{R_{ab}R_{ca}}{R_{ab}+R_{bc}+R_{ca}}, \quad R_b = \frac{R_{ab}R_{bc}}{R_{ab}+R_{bc}+R_{ca}}, \quad R_c = \frac{R_{bc}R_{ca}}{R_{ab}+R_{bc}+R_{ca}}$$
 - **Star to Delta Transformation**:
   $$R_{ab} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_c}, \quad R_{bc} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_a}, \quad R_{ca} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_b}$$
-> For a numerical problem, see: [[Semester 1/Electrical/Unit 1/Examples#Example 5: Delta to Star Transformation]]
+> For a numerical problem, see: [Examples](Semester%201/Electrical/Unit%201/Examples.md#Example%205:%20Delta%20to%20Star%20Transformation)
 
 ---
 
@@ -92,16 +92,16 @@ A three-terminal resistive network can be converted between a Star (Y) and Delta
 
 ### **Mesh Analysis**
 A systematic application of KVL to find unknown currents in a circuit. "Mesh currents" are assumed for each closed loop, and KVL equations are written for each mesh.
-> See also: [[Semester 1/Electrical/Unit 1/Q&A#DC_Q3: What is a supermesh and when is it used?]]
-> For a numerical problem, see: [[Semester 1/Electrical/Unit 1/Examples#Example 6: Mesh Analysis]]
+> See also: [Q&A](Semester%201/Electrical/Unit%201/Q&A.md#DC_Q3:%20What%20is%20a%20supermesh%20and%20when%20is%20it%20used?)
+> For a numerical problem, see: [Examples](Semester%201/Electrical/Unit%201/Examples.md#Example%206:%20Mesh%20Analysis)
 
 ### **Superposition Theorem**
 In any **linear network** with multiple independent sources, the current or voltage for any element is the algebraic sum of the responses caused by each source acting alone. All other sources are turned off (voltage sources replaced by short circuits and current sources by open circuits).
 **Important**: This theorem applies to voltage and current, but **not directly to power**, as power is a non-linear quantity ($P=I^2R$).
-> For a numerical problem, see: [[Semester 1/Electrical/Unit 1/Examples#Example 7: Superposition Theorem]]
+> For a numerical problem, see: [Examples](Semester%201/Electrical/Unit%201/Examples.md#Example%207:%20Superposition%20Theorem)
 
 ### **Thevenin’s Theorem**
 Any two-terminal linear network can be replaced by an equivalent circuit consisting of a single voltage source ($V_{TH}$) in series with a single resistor ($R_{TH}$).
 - **Thevenin Voltage ($V_{TH}$)**: The open-circuit voltage across the two terminals of interest.
 - **Thevenin Resistance ($R_{TH}$)**: The equivalent resistance looking back into the terminals with all independent sources turned off (voltage sources shorted, current sources opened).
-> For a numerical problem, see: [[Semester 1/Electrical/Unit 1/Examples#Example 8: Thevenin's Theorem]]
+> For a numerical problem, see: [Examples](Semester%201/Electrical/Unit%201/Examples.md#Example%208:%20Thevenin's%20Theorem)

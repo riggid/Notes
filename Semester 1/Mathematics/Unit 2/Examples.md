@@ -1,3 +1,3 @@
 
-# [[Semester 1/Mathematics/Mathematics|Back]]
+# [Back](../Mathematics.md)
 ***

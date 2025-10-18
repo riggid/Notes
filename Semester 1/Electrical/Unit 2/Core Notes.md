@@ -1,3 +1,3 @@
 
-# [[Electrical|Back]]
+# [Back](../Electrical.md)
 ***

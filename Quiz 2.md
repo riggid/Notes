@@ -1,6 +1,6 @@
 ---
 sources:
-  - "[[Semester 1/Mechanical/Unit 1/Core Notes]]"
+  - "[Core Notes](Semester%201/Mechanical/Unit%201/Core%20Notes.md)"
   - "[[College/Semester 1/Mechanical Engineering/Unit 1 Examples]]"
   - "[[Semester 1/Mechanical/Unit 1/Unit 1]]"
 ---

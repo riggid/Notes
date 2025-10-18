@@ -6,7 +6,7 @@
 
 Maxwell's equations are a set of fundamental equations that describe the behavior of electric and magnetic fields. They can be expressed in differential form (applying to every point in space) or integral form (applying to larger regions).
 
-> See also: [[Semester 1/Physics/Unit 1/Q&A#CL2_Q1: Difference between integral and differential forms of Maxwell's equations]]
+> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#CL2_Q1:%20Difference%20between%20integral%20and%20differential%20forms%20of%20Maxwell's%20equations)
 
 ### **Vector Operators**
 - **Gradient ($\nabla\phi$)**: A vector that points in the direction of the maximum rate of change of a scalar field $\phi$.
@@ -19,7 +19,7 @@ Maxwell's equations are a set of fundamental equations that describe the behavio
 
 -   **Gauss's Law for Magnetic Fields**: The divergence of the magnetic field ($\vec{B}$) is always zero. This mathematically shows that **magnetic monopoles do not exist**.
     $$\nabla \cdot \vec{B} = 0$$
-    > See also: [[Semester 1/Physics/Unit 1/Q&A#CL1_Q1: Magnetic monopoles do not exist. Justify.]]
+    > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#CL1_Q1:%20Magnetic%20monopoles%20do%20not%20exist.%20Justify.)
 
 -   **Faraday's Law of Induction**: A time-varying magnetic field induces a circulating electric field.
     $$\nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}$$
@@ -41,8 +41,8 @@ In free space ($\rho=0, \vec{J}=0$), Maxwell's equations can be combined to deri
     $$\nabla^2 \vec{E} = \mu_{0}\epsilon_{0} \frac{\partial^2 \vec{E}}{\partial t^2}$$
 This shows that E and B fields propagate as transverse waves at the speed of light, $c = 1/\sqrt{\mu_{0}\epsilon_{0}}$. The fields are in phase and mutually perpendicular.
 
-> See also: [[Semester 1/Physics/Unit 1/Q&A#CL2_Q3: How do Maxwell's equations describe electromagnetic waves?]]
-> For a numerical problem, see: [[Semester 1/Physics/Unit 1/Examples#Example 1: EM Wave Properties]]
+> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#CL2_Q3:%20How%20do%20Maxwell's%20equations%20describe%20electromagnetic%20waves?)
+> For a numerical problem, see: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%201:%20EM%20Wave%20Properties)
 
 ---
 
@@ -66,7 +66,7 @@ $$\vec{S} = \frac{1}{\mu_{0}} (\vec{E} \times \vec{B})$$
 -   **Classical Failure (Ultraviolet Catastrophe)**: The classical Rayleigh-Jeans law incorrectly predicted that the energy radiated by a black body would increase infinitely at high frequencies.
 -   **Planck's Solution (Quantum Hypothesis)**: Max Planck resolved this by postulating that energy is quantized, meaning it can only be emitted or absorbed in discrete packets ($E = nh\nu$). His formula correctly described the spectrum:
     $$\rho(\nu)d\nu = \frac{8\pi h\nu^{3}}{c^{3}}\frac{1}{e^{h\nu / kT}-1}d\nu $$
-> See also: [[Semester 1/Physics/Unit 1/Examples#Example 2: Planck's vs. Classical Energy]]
+> See also: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%202:%20Planck's%20vs.%20Classical%20Energy)
 
 ### **Atomic Spectra**
 -   **Observation**: Atoms emit light only at specific, discrete frequencies (line spectra).
@@ -81,14 +81,14 @@ This effect, where X-rays scatter off electrons, is treated as a particle-partic
 - **Classical Failure**: Predicts that the scattered radiation should have the same wavelength as the incident radiation.
 - **Quantum Explanation**: The collision causes the photon to lose energy to the electron, resulting in a scattered photon with a longer wavelength. The change in wavelength is the **Compton shift**:
   $$\Delta\lambda = \lambda_f - \lambda_i = \frac{h}{m_e c}(1 - \cos\theta)$$
-> See also: [[Semester 1/Physics/Unit 1/Examples#Example 3: Compton Scattering Calculation]]
+> See also: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%203:%20Compton%20Scattering%20Calculation)
 
 ### **de Broglie's Hypothesis: Matter Waves**
 - **Hypothesis**: Just as waves (light) can have particle-like properties, particles should have wave-like properties.
 - **de Broglie Wavelength**: Any particle with momentum $p=mv$ or energy E has an associated wavelength:
   $$\lambda = \frac{h}{p} = \frac{h}{\sqrt{2mE}}$$
 - **Macroscopic Objects**: For large masses, the wavelength is too small to be detected. The wave nature is only significant for micro-particles.
-> See also: [[Semester 1/Physics/Unit 1/Examples#Example 4: De-Broglie Wavelength of an Electron]], [[Semester 1/Physics/Unit 1/Examples#Example 5: De-Broglie Wavelength of an Alpha Particle]]
+> See also: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%204:%20De-Broglie%20Wavelength%20of%20an%20Electron), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%205:%20De-Broglie%20Wavelength%20of%20an%20Alpha%20Particle)
 
 ### **Wave Packets, Phase and Group Velocity**
 - **Wave Packet**: A moving particle is represented by a wave packet, which is a superposition of waves of slightly different frequencies. This localizes the "particle" in space.
@@ -101,7 +101,7 @@ $$v_g = \frac{d\omega}{dk} = \frac{d(\hbar\omega)}{d(\hbar k)} = \frac{dE}{dp}$$
 For a non-relativistic particle, the energy is purely kinetic, $E = \frac{p^2}{2m}$.
 $$\frac{dE}{dp} = \frac{d}{dp}\left(\frac{p^2}{2m}\right) = \frac{2p}{2m} = \frac{p}{m} = v_{particle}$$
 Thus, the group velocity of the wave packet is equal to the particle's velocity.
-> See also: [[Semester 1/Physics/Unit 1/Examples#Example 6: Phase and Group Velocity]]
+> See also: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%206:%20Phase%20and%20Group%20Velocity)
 
 ---
 
@@ -113,7 +113,7 @@ It is fundamentally impossible to simultaneously know the exact values of certai
 -   **Energy and Time**: $\Delta E \cdot \Delta t \geq \frac{\hbar}{2}$
 -   **Position and Wavelength**: $\Delta x \cdot \Delta\lambda \ge \frac{\lambda^2}{4\pi}$
 -   **Position and Wave Number**: $\Delta x \cdot \Delta k \ge \frac{1}{2}$
-> See also: [[Semester 1/Physics/Unit 1/Examples#Example 7: Uncertainty Principle Calculation]], [[Semester 1/Physics/Unit 1/Examples#Example 8: Spectral Line Width]], [[Semester 1/Physics/Unit 1/Examples#Example 9: Uncertainty for a Confined Particle]]
+> See also: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%207:%20Uncertainty%20Principle%20Calculation), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%208:%20Spectral%20Line%20Width), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%209:%20Uncertainty%20for%20a%20Confined%20Particle)
 
 ### **The Wavefunction ($\Psi$)**
 - **Physical Interpretation**: The wavefunction $\Psi$ is a complex probability amplitude. Its squared magnitude, $|\Psi|^2 = \Psi^*\Psi$, represents the **probability density** of finding the particle at a certain position and time.
@@ -148,4 +148,4 @@ A particle is confined to a one-dimensional box of length $L$.
 -   **Energy Levels**: The allowed energies are quantized:
     $$E_n = \frac{n^2\pi^2\hbar^2}{2mL^2} \quad \text{where } n=1, 2, 3, \dots$$
 -   **Wavefunction**: $\psi_n(x)=\sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right)$
-> See also: [[Semester 1/Physics/Unit 1/Examples#Example 10: Probability in a 1D Box]], [[Semester 1/Physics/Unit 1/Examples#Example 11: Minimum Energy in a 1D Box]]
+> See also: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%2010:%20Probability%20in%20a%201D%20Box), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%2011:%20Minimum%20Energy%20in%20a%201D%20Box)

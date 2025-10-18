@@ -5,5 +5,7 @@
   "alwaysUpdateLinks": true,
   "readableLineLength": true,
   "vimMode": false,
-  "attachmentFolderPath": "./"
+  "attachmentFolderPath": "./",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative"
 }

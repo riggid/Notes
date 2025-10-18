@@ -1,6 +1,6 @@
 ---
 sources:
-  - "[[Physics]]"
+  - "[Physics](Physics.md)"
 ---
 > [!question] The Poynting vector describes the direction of energy flow in an electromagnetic wave, and its magnitude is given by  `____`.
 >> [!success]- Answer

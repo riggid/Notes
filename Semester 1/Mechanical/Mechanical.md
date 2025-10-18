@@ -1,4 +1,4 @@
-# [[Index]]
+# [Index](../../Index.md)
 ---
 ```dataviewjs
 // --- This script is fully automatic ---

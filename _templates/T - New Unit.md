@@ -47,6 +47,6 @@ _%>
 # 🗂️ Index for <% `${subject} - ${unit}` %>
 
 This index was created automatically. Your standard notes for this unit are:
-- [[Core Notes]]
-- [[Examples]]
-- [[Q&A]]
+- [Core Notes](../Semester%201/Physics/Unit%201/Core%20Notes.md)
+- [Examples](../Semester%201/Physics/Unit%201/Examples.md)
+- [Q&A](../Semester%201/Physics/Unit%201/Q&A.md)

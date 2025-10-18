@@ -101,7 +101,7 @@ when there is a large jump in potential, the behavior depends on
 	- reduced wavelength energy
 	- some reflection occurs
 2. E < $v_{0} \implies$ Quantum effect not present classically
-![[Drawing 2025-10-14 17.05.35.excalidraw]]
+![](Drawing%202025-10-14%2017.05.35.excalidraw.md)
 
 ### $\frac{\partial^2\psi}{\partial x^2} + \frac{2m}{\hbar^2}[E - V]\psi = 0$ 
 
@@ -189,7 +189,7 @@ if E increases, delta x decreases, The partial can't physically exist in *2*
 2. Transmission possible at $E < V_{0}$ (quantum tunneling)
 
 ## Potential Barrier
-![[Drawing 2025-10-14 18.07.01.excalidraw]]
+![](Drawing%202025-10-14%2018.07.01.excalidraw.md)
 
 ### **Region 1:** $V = 0$  $\frac{\partial^2\psi_{1}}{\partial x^2}+ \frac{2mE}{\hbar^2} \psi_{1} =0$
 1.  $\psi_{1} = Ae^{ik_{1}x} + Be^{-ik_{1}x}$ **incident wave + reflected wave**
