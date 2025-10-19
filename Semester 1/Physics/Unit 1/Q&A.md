@@ -1,4 +1,4 @@
-# [[Semester 1/Physics/Unit 1/Unit 1|Back]]
+# [Back](../Physics.md)
 ***
 ## CL1 Questions: Vector Calculus & Electromagnetism
 
@@ -362,3 +362,6 @@ $$
 \langle x \rangle = \frac{L}{2}
 $$
 This means the average position measured over many trials will be the exact center of the box, regardless of the energy level.
+
+***
+# [Back](../Physics.md)

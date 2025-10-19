@@ -52,7 +52,7 @@ In a hydroelectric plant, water stored at a high elevation (potential energy) fl
 ### How are IC engines classified?
 IC engines can be classified based on several criteria:
 * **Number of Strokes**: Four-stroke or two-stroke.
-* **Thermodynamic Cycle**: Otto cycle (for petrol engines) or Diesel cycle.
+* **Thermodynamic Cycle**: Otto cycle (for petrol engine# ￼￼￼￼￼￼Back￼￼s) or Diesel cycle.
 * **Ignition Method**: Spark Ignition (SI) for petrol engines, or Compression Ignition (CI) for diesel engines.
 * **Fuel Used**: Petrol, diesel, gas (CNG, LPG), or bi-fuel.
 * **Cylinder Arrangement**: In-line, V-type, radial, or opposed.

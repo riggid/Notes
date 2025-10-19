@@ -105,6 +105,8 @@ IC engines can be classified by:
 -   **Thermodynamic Cycle**: Otto cycle (petrol engines), Diesel cycle, or Dual cycle.
 -   **Ignition System**: Spark Ignition (SI) or Compression Ignition (CI).
 -   **Cylinder Arrangement**: In-line, V-type, radial, opposed, etc..
+-   **Cooling System**: Air-cooled (with fins) or water-cooled (with a radiator).
+-   **Fuel Used**: Petrol, diesel, gas (CNG, LPG), or bi-fuel.
 
 ### **Engine Components & Terminology**
 -   **Core Components**: Cylinder, piston, connecting rod, crankshaft, valves, cylinder head, and flywheel.
@@ -119,21 +121,28 @@ IC engines can be classified by:
 
 ### **Four-Stroke Engine Operation**
 A four-stroke cycle is completed in four piston strokes (two crankshaft revolutions).
-1.  **Suction/Intake Stroke**: The piston moves from TDC to BDC, drawing in air (Diesel) or an air-fuel mixture (Petrol).
+1.  **Suction/Intake Stroke**: The piston moves from TDC to BDC, drawing in air (Diesel) or an air-fuel mixture (Petrol) through the open inlet valve.
 2.  **Compression Stroke**: The piston moves from BDC to TDC, compressing the charge with both valves closed.
-3.  **Expansion/Power Stroke**: Combustion is initiated (by spark in SI, by self-ignition in CI), and the high-pressure gas forces the piston from TDC to BDC, producing work.
-4.  **Exhaust Stroke**: The piston moves from BDC to TDC, pushing the burnt gases out of the cylinder.
+3.  **Expansion/Power Stroke**: Combustion is initiated (by spark in SI, by self-ignition in CI), and the high-pressure gas forces the piston from TDC to BDC, producing work. Both valves remain closed.
+4.  **Exhaust Stroke**: The piston moves from BDC to TDC, pushing the burnt gases out of the cylinder through the open exhaust valve.
+
+### **Combustion in SI vs. CI Engines**
+| Feature | SI (Petrol) Engine | CI (Diesel) Engine |
+| :--- | :--- | :--- |
+| **Intake** | A mixture of air and fuel is drawn in during the suction stroke. | Only air is drawn in during the suction stroke. |
+| **Compression** | The air-fuel mixture is compressed. Compression ratio is lower (typically 6-10). | Air alone is compressed to a very high pressure. Compression ratio is higher (typically 16-20). |
+| **Ignition** | A **spark plug** ignites the compressed air-fuel mixture at the end of the compression stroke. | Fuel is injected into the hot, highly compressed air and **self-ignites** due to the high temperature. |
 
 ### **Engine Performance Parameters**
--   **Indicated Power (IP)**: The theoretical power developed inside the cylinder.
+-   **Indicated Power (IP)**: The theoretical power developed inside the cylinder by the combustion of fuel.
     $$IP = \frac{n \cdot P_m \cdot L \cdot A \cdot N \cdot K}{60}$$
-    (where K=1/2 for 4-stroke, K=1 for 2-stroke).
--   **Brake Power (BP)**: The actual useful power available at the crankshaft.
+    (where K=1/2 for 4-stroke, K=1 for 2-stroke; n for number of cylinders).
+-   **Brake Power (BP)**: The actual useful power available at the crankshaft, after accounting for internal friction losses.
     $$BP = \frac{2\pi NT}{60}$$
--   **Friction Power (FP)**: The power lost to friction. $FP = IP - BP$.
--   **Mechanical Efficiency ($\eta_{mech}$)**: The ratio of brake power to indicated power.
+-   **Friction Power (FP)**: The power lost to friction and other parasitic loads within the engine. $FP = IP - BP$.
+-   **Mechanical Efficiency ($\eta_{mech}$)**: The ratio of brake power to indicated power. It represents how effectively the power developed in the cylinders is transmitted to the crankshaft.
     $$\eta_{mech} = \frac{BP}{IP}$$
--   **Brake Thermal Efficiency ($\eta_{bth}$)**: The ratio of brake power to the energy supplied by the fuel.
+-   **Brake Thermal Efficiency ($\eta_{bth}$)**: The ratio of brake power to the total energy supplied by the fuel.
     $$\eta_{bth} = \frac{BP}{m_f \times CV}$$
 -   **Brake Specific Fuel Consumption (BSFC)**: The mass of fuel consumed per unit of brake power produced per hour.
     $$BSFC = \frac{m_f (\text{kg/hr})}{BP (\text{kW})}$$
@@ -141,14 +150,61 @@ A four-stroke cycle is completed in four piston strokes (two crankshaft revoluti
 
 ---
 
+## Hydraulic Machines & Fluid Energy
+
+-   A **hydraulic machine** is a device that converts the energy of a fluid into mechanical energy, or vice versa. They are critical in power generation and fluid transportation.
+
+### **Turbines vs. Pumps**
+-   A **Turbine** converts the fluid's energy (kinetic and pressure energy) into mechanical work. For example, water flowing through a turbine causes its blades and shaft to rotate.
+-   A **Pump** does the opposite; it uses mechanical work (from an external source like an electric motor) to increase the energy (primarily pressure) of a fluid, enabling it to be moved to a higher elevation or overcome resistance.
+
+### **Hydroelectric Power Plant Working Principle**
+In a hydroelectric power plant:
+1.  **Potential Energy**: Water stored at a high elevation (e.g., in a reservoir behind a dam) possesses high potential energy.
+2.  **Kinetic Energy**: This water flows downwards through large pipes called penstocks. As it flows, its potential energy is converted into kinetic energy.
+3.  **Mechanical Energy Conversion**: The fast-flowing water strikes the blades of a **hydraulic turbine** (e.g., Pelton, Francis, Kaplan turbine), causing the turbine's shaft to rotate at high speed. This rotation is mechanical energy.
+4.  **Electrical Energy Generation**: The rotating turbine shaft is directly connected to a **generator**. The generator then converts this mechanical energy into electrical energy, which is transmitted through power lines.
+
+---
+
 ## Electric and Hybrid Vehicles
 
 ### **Types of Electric Vehicles**
--   **Battery Electric Vehicle (BEV)**: Runs entirely on an electric motor and battery. It must be plugged in to charge.
--   **Hybrid Electric Vehicle (HEV)**: Combines an internal combustion engine (ICE) with an electric motor. The battery is charged by the ICE and regenerative braking, not by plugging in.
--   **Plug-in Hybrid Electric Vehicle (PHEV)**: An HEV with a larger battery that can be charged from the power grid.
+-   **Battery Electric Vehicle (BEV)**: Runs entirely on an electric motor powered by a large rechargeable battery pack. It produces zero tailpipe emissions and must be plugged in to charge.
+-   **Hybrid Electric Vehicle (HEV)**: Combines an internal combustion engine (ICE) with an electric motor and a smaller battery. The battery is primarily charged by the ICE and regenerative braking; it is not typically plugged into the grid.
+-   **Plug-in Hybrid Electric Vehicle (PHEV)**: An HEV with a larger battery that can be charged from the power grid, in addition to being charged by the ICE and regenerative braking. It offers a limited all-electric driving range before switching to hybrid mode.
 
 ### **HEV Architectures**
--   **Series Hybrid**: The ICE drives a generator, which either charges the battery or powers the electric motor that drives the wheels. There is no mechanical connection between the ICE and the wheels.
--   **Parallel Hybrid**: Both the ICE and the electric motor can deliver power to the wheels, either individually or together.
--   **Series-Parallel Hybrid**: A combination of both architectures, allowing for more flexible operation but with increased complexity.
+-   **Series Hybrid**: The ICE drives a generator, which then either charges the battery or powers the electric motor that drives the vehicle's wheels. There is no direct mechanical connection between the ICE and the wheels.
+-   **Parallel Hybrid**: Both the ICE and the electric motor can deliver power directly to the wheels, either individually or together. This allows for more direct power transfer.
+-   **Series-Parallel Hybrid**: A sophisticated combination of both series and parallel architectures, using a power split device to allow for highly flexible operation and optimized power delivery depending on speed and load.
+
+### **Major Components of an Electric Vehicle (BEV)**
+1.  **Battery (Power Pack)**: Stores the electrical energy that powers the vehicle. It's typically a large lithium-ion battery.
+2.  **Electric Motor**: Converts electrical energy from the battery into mechanical energy to rotate the wheels, driving the vehicle.
+3.  **Power Electronics Controller (Inverter)**: Regulates the flow of electricity from the battery to the motor, controlling the vehicle's speed, acceleration, and direction. It converts DC power from the battery to AC for the motor.
+4.  **On-board Charger**: Converts AC electricity from an external charging station or wall outlet into DC electricity to recharge the battery.
+5.  **Drivetrain**: Transmits mechanical power from the electric motor to the wheels.
+
+### **Advantages of EVs over Conventional ICE Vehicles**
+-   **Zero Tailpipe Emissions**: EVs produce no exhaust gases, significantly reducing air pollution and contribution to smog and greenhouse gases.
+-   **Lower Operating Costs**: Electricity is generally cheaper per mile than gasoline. EVs also have fewer moving parts, leading to reduced maintenance requirements and costs.
+-   **Quiet Operation**: Electric motors operate almost silently, reducing noise pollution in urban areas and enhancing driving comfort.
+-   **Instant Torque & Smooth Acceleration**: Electric motors deliver maximum torque from a standstill, providing quick and smooth acceleration.
+-   **Reduced Energy Dependence**: Can utilize diverse electricity sources (solar, wind, etc.), decreasing reliance on fossil fuels.
+
+### **Role of the Battery Management System (BMS)**
+The Battery Management System (BMS) is a crucial electronic system responsible for overseeing and controlling all aspects of the battery pack. Its key functions include:
+-   **Safety**: Monitors cell voltage and temperature to prevent overcharging, over-discharging, and overheating, which are critical for safety and battery health.
+-   **Optimization**: Balances the charge across individual battery cells to maximize the battery's usable energy and extend its range.
+-   **Performance Monitoring**: Provides real-time data on the battery's state of charge (SoC), state of health (SoH), and remaining range.
+-   **Lifespan Maximization**: By keeping the battery operating within its optimal parameters, the BMS significantly extends the battery's overall lifespan.
+
+### **Why EVs Have Better Energy Efficiency than ICE Vehicles**
+EVs inherently possess higher energy efficiency due to several factors:
+1.  **Efficient Energy Conversion**: Electric motors are extremely efficient, converting typically 85-90% of the electrical energy into mechanical power to move the wheels. In contrast, internal combustion engines (ICEs) convert only about 25-30% of the chemical energy in fuel into useful mechanical power, with the vast majority lost as waste heat and friction.
+2.  **Regenerative Braking**: EVs can recapture kinetic energy that is traditionally lost as heat during braking. The electric motor acts as a generator, converting the vehicle's momentum back into electricity to recharge the battery.
+3.  **No Idling Losses**: An EV's electric motor consumes virtually no energy when the vehicle is stationary (e.g., at a traffic light). An ICE, however, continues to burn fuel while idling, wasting energy.
+4.  **Fewer Moving Parts**: The simpler drivetrain of an EV means fewer mechanical losses due to friction compared to an ICE vehicle's complex transmission and engine components.
+***
+# [Back](../Mechanical.md)
