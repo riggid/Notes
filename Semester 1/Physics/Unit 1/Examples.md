@@ -1,4 +1,4 @@
-# [[Semester 1/Physics/Unit 1/Unit 1|Back]]
+# [Back](../Physics.md)
 ***
 # Numerical Examples
 
@@ -122,3 +122,5 @@ What is the minimum energy (ground state, n=1) of an electron trapped in a 1D re
 $$E_n = \frac{n^2 h^2}{8 m_e a^2}$$
 $$E_1 = \frac{(1)^2 (6.626 \times 10^{-34})^2}{8 (9.11 \times 10^{-31})(10^{-14})^2} \approx 6.02 \times 10^{-10} \text{ J} \approx 3.76 \times 10^9 \text{ eV} = 3.76 \text{ GeV}$$
 This incredibly high energy is another reason why electrons cannot be confined within the nucleus.
+***
+# [Back](../Physics.md)

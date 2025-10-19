@@ -2,80 +2,128 @@
 ---
 ```dataviewjs
 // --- This script is fully automatic ---
-// --- It creates a dashboard for the folder it is in ---
+// --- It builds a dashboard for the folder it is in ---
 
 const currentFile = dv.current().file;
 const currentFolder = currentFile.folder;
-const currentFolderName = currentFolder.split('/').pop();
 let hasContent = false;
 
-// --- 2. Get all Subfolders (e.g., "Unit 1", "Unit 2") ---
+// --- Icon Map ---
+// Add icons for your common note types here
+const iconMap = {
+    "Core Notes": "📓",
+    "Examples": "🧪",
+    "Q&A": "❓",
+    "Unit 1": "1️⃣",
+    "Unit 2": "2️⃣",
+    "Unit 3": "3️⃣",
+    "DefaultNote": "📄"
+};
+
+// --- 1. Get all Subfolders (e.g., "Unit 1", "Unit 2") ---
 const subfolders = dv.app.vault.getAbstractFileByPath(currentFolder)
     .children
-    .filter(child => child.children) // 'child.children' checks if it's a folder
-    .sort((a, b) => a.name.localeCompare(b.name)); // Sort them
+    .filter(child => child.children) // Is a folder
+    .sort((a, b) => a.name.localeCompare(b.name));
 
-// --- 3. Loop through each Unit folder ---
+// --- 2. Loop through each Unit folder ---
 for (const unitFolder of subfolders) {
-    let unitPath = unitFolder.path;
-    let unitName = unitFolder.name;
+    const unitName = unitFolder.name;
+    const unitPath = unitFolder.path;
+    hasContent = true;
     
-    // --- a. Create the Unit Heading ---
-    dv.el("h3", unitName, { cls: "unit-title" });
-    
-    // --- b. Find all notes *inside* this Unit folder ---
+    // --- a. Create the Card (re-using your CSS) ---
+    const card = document.createElement("div");
+    card.className = "semester-card";
+
+    // --- b. Create the Title (e.g., "Unit 1") ---
+    const title = document.createElement("h2");
+    title.className = "semester-title";
+    let unitIcon = iconMap[unitName] || "📁";
+    title.innerText = `${unitIcon} ${unitName}`;
+    card.appendChild(title);
+
+    // --- c. Create the Button Container ---
+    const container = document.createElement("div");
+    container.className = "subject-button-container";
+    card.appendChild(container);
+
+    // --- d. Find notes *inside* this Unit ---
     const notesInUnit = dv.pages(`"${unitPath}"`)
-        .where(p => p.file.folder === unitPath) // Only notes in this exact folder
+        .where(p => p.file.folder === unitPath)
         .sort(p => p.file.name);
-
-    if (notesInUnit.length > 0) {
-        hasContent = true;
         
-        // --- c. Create a button container for this Unit ---
-        const unitContainer = dv.el("div", "", { cls: "subject-button-container" });
-
-        // --- d. Create buttons for each note ---
+    if (notesInUnit.length === 0) {
+        container.innerText = "_No notes found in this unit._";
+    } else {
         for (const note of notesInUnit) {
             let linkPath = note.file.path;
-            let displayName = note.file.name;
-
-            let link = dv.el("a", displayName, { cls: "subject-button", href: "#" });
+            let displayName = note.file.name.replace(".md", "");
+            let icon = iconMap[displayName] || iconMap["DefaultNote"];
+            let buttonText = `${icon} ${displayName}`;
+            
+            let link = document.createElement("a");
+            link.className = "subject-button";
+            link.href = "#";
+            link.innerText = buttonText;
+            
             link.addEventListener("click", (e) => {
                 e.preventDefault(); 
                 app.workspace.openLinkText(linkPath, "", false);
             });
-            unitContainer.appendChild(link);
+            
+            container.appendChild(link);
         }
-    } else {
-        dv.paragraph(`_No notes found in ${unitName}._`);
     }
+    
+    // --- e. Add the finished card to the page ---
+    dv.container.appendChild(card);
 }
 
-// --- 4. Find all "loose" notes in the main subject folder ---
+// --- 3. Find all "loose" notes in this folder ---
 const looseNotes = dv.pages(`"${currentFolder}"`)
-    .where(p => p.file.folder === currentFolder && p.file.name !== currentFile.name)
+    .where(p => p.file.folder === currentFolder && p.file.path !== currentFile.path)
     .sort(p => p.file.name);
-
+    
 if (looseNotes.length > 0) {
     hasContent = true;
-    dv.el("h3", "Other Notes", { cls: "unit-title" });
-    const looseContainer = dv.el("div", "", { cls: "subject-button-container" });
+    
+    // Create a card for them
+    const card = document.createElement("div");
+    card.className = "semester-card";
+    
+    const title = document.createElement("h2");
+    title.className = "semester-title";
+    title.innerText = "General Notes";
+    card.appendChild(title);
+    
+    const container = document.createElement("div");
+    container.className = "subject-button-container";
+    card.appendChild(container);
     
     for (const note of looseNotes) {
-        let linkPath = note.file.path;
-        let displayName = note.file.name;
-        
-        let link = dv.el("a", displayName, { cls: "subject-button", href: "#" });
-        link.addEventListener("click", (e) => {
+         let linkPath = note.file.path;
+         let displayName = note.file.name.replace(".md", "");
+         let icon = iconMap[displayName] || iconMap["DefaultNote"];
+         let buttonText = `${icon} ${displayName}`;
+            
+         let link = document.createElement("a");
+         link.className = "subject-button";
+         link.href = "#";
+         link.innerText = buttonText;
+         
+         link.addEventListener("click", (e) => {
             e.preventDefault(); 
             app.workspace.openLinkText(linkPath, "", false);
-        });
-        looseContainer.appendChild(link);
+         });
+         
+         container.appendChild(link);
     }
+    dv.container.appendChild(card);
 }
 
-// --- 5. Final check ---
-if (!hasContent && looseNotes.length === 0) {
-    dv.paragraph(`_No notes or subfolders found in ${currentFolderName}._`);
+// --- 4. Final check ---
+if (!hasContent) {
+    dv.paragraph(`_No notes or subfolders found in ${currentFolder}._`);
 }
 ```
