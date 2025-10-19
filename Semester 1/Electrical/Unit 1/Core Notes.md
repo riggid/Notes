@@ -61,7 +61,7 @@ $$\sum V = 0$$
   $$\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \dots + \frac{1}{R_n}$$
 - **Current Division Rule**: For two parallel resistors, the current through one resistor ($R_1$) is given by:
   $$I_1 = I_{total} \left( \frac{R_2}{R_1 + R_2} \right)$$
-> For a numerical problem, see: [Examples](Examples#Example)
+> For a numerical problem, see: [Examples](Examples.md#Example)
 
 ### **Source Types**
 - **Ideal Voltage Source**: Terminal voltage is constant and independent of the current drawn from it. It has **zero internal resistance**.
