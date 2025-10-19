@@ -1,5 +1,7 @@
 # [Back](../Physics.md)
 ***
+[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+***
 # Unit 1: Concepts Leading to Quantum Mechanics
 
 ## Maxwell's Equations and Electromagnetic Waves
@@ -19,7 +21,7 @@ Maxwell's equations are a set of fundamental equations that describe the behavio
 -   **Curl ($\nabla \times \vec{A}$)**: Acts on a vector field ($\vec{A}$) to produce another vector field.
     -   **Physical Significance**: Measures the "rotation" or "swirl" of a vector field, indicating its tendency to circulate around a point.
     -   *Example*: In Ampere's Law, a current density ($\vec{J}$) creates a circulating magnetic field around it.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#With%20suitable%20examples%20explain%20the%20significance%20of%20gradient,%20divergence%20and%20curl%20operators%20on%20fields)
+> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Explain%20the%20geometric%20interpretation%20of%20the%20gradient,%20divergence%20and%20curl%20of%20a%20vector%20field?)
 
 ### **Maxwell's Equations in a Medium**
 -   **Gauss's Law for Electric Fields**: The divergence of the electric field ($\vec{E}$) is proportional to the local electric charge density ($\rho$).
@@ -71,7 +73,7 @@ The energy density (energy per unit volume, $u$) in an EM wave is shared equally
 -   **Magnetic Field Energy Density**: $u_B = \frac{1}{2\mu_{0}}B^2$
 -   **Total Energy Density (instantaneous)**: $u = u_E + u_B = \epsilon_{0}E^2 = \frac{1}{\mu_{0}}B^2$ (since $E=cB$ and $c^2 = 1/(\mu_0 \epsilon_0)$)
 -   **Total Average Energy Density**: $\langle u \rangle = \frac{1}{2}\epsilon_0 E_{max}^2 = \frac{1}{2\mu_0} B_{max}^2$
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Estimate%20the%20energy%20per%20unit%20volume%20in%20a%20magnetic%20field.)
+> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Find%20the%20energy%20density%20of%20an%20electromagnetic%20wave%20if%20the%20E-field%20amplitude%20is%206.2%20V/m.)
 
 ### **Poynting Vector**
 The **Poynting Vector** ($\vec{S}$) describes the direction and rate of energy flow per unit area (power per unit area, or energy flux) in an EM wave.
@@ -100,11 +102,17 @@ A black body is an idealized object that absorbs all incident electromagnetic ra
 -   **Classical Failure (Ultraviolet Catastrophe)**: The classical Rayleigh-Jeans law incorrectly predicted that the energy radiated by a black body would increase infinitely at high frequencies (short wavelengths). This led to absurd results, hence the term "ultraviolet catastrophe."
 -   **Planck's Solution (Quantum Hypothesis)**: Max Planck resolved this by postulating that energy is quantized, meaning it can only be emitted or absorbed in discrete packets (quanta) called photons, with energy $E = nh\nu$. His formula correctly described the spectrum:
     $$\rho(\nu)d\nu = \frac{8\pi h\nu^{3}}{c^{3}}\frac{1}{e^{h\nu / kT}-1}d\nu $$
+    **Average energy of a Planck oscillator**: $\langle E \rangle = \frac{h\nu}{e^{h\nu/kT}-1}$.
 > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Write%20Planck's%20formula%20for%20black%20body%20radiation.), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%202:%20Planck's%20vs.%20Classical%20Energy)
 
 ### **Atomic Spectra**
 -   **Observation**: Atoms emit light only at specific, discrete frequencies (line spectra), unique to each element.
 -   **Classical Failure**: According to classical electrodynamics, an electron orbiting a nucleus should continuously radiate energy. This energy loss would cause it to spiral into the nucleus within a very short time, implying unstable atoms and predicting a continuous spectrum of emitted light, contrary to observations.
+
+### **Photoelectric Effect**
+-   **Observations**: Electrons are emitted from a metal surface when illuminated by light above a certain threshold frequency, regardless of intensity. The kinetic energy of emitted electrons depends on the frequency of light, not its intensity. Emission is instantaneous if the threshold frequency is met.
+-   **Classical Failure**: Classical wave theory predicts that the energy of emitted electrons should depend on the intensity of light (more intense wave, more energy), and that emission should have a time delay (to accumulate enough energy).
+-   **Einstein's Explanation (1905)**: Applied Planck's quantum hypothesis to light itself, proposing that light consists of discrete energy packets (photons) with energy $E = h\nu$. When a photon hits an electron, it transfers its entire energy to it. If $h\nu$ is greater than the material's work function ($\phi$, minimum energy to remove an electron), the electron is emitted with kinetic energy $KE_{max} = h\nu - \phi$. This instantaneous, frequency-dependent behavior perfectly matched observations.
 
 ---
 
@@ -115,6 +123,8 @@ This phenomenon involves the scattering of X-rays (or gamma rays) by charged par
 -   **Classical Failure**: Classical wave theory predicted that the scattered radiation should have the same wavelength as the incident radiation, and the intensity pattern would not depend on the scattering angle. This contradicts experimental results.
 -   **Quantum Explanation**: The collision causes the photon to transfer some of its energy and momentum to the electron, resulting in a scattered photon with lower energy and thus a longer wavelength. The change in wavelength is the **Compton shift**:
     $$\Delta\lambda = \lambda_f - \lambda_i = \frac{h}{m_e c}(1 - \cos\theta)$$
+    *   $m_e$ is the electron rest mass.
+    *   $\lambda_C = h/(m_e c) \approx 2.426 \times 10^{-12}$ m is the **Compton wavelength** of the electron.
     *   **Minimum shift**: Occurs at $\theta = 0^\circ$ (forward scattering), where $\Delta\lambda = 0$.
     *   **Maximum shift**: Occurs at $\theta = 180^\circ$ (backscattering), where $\Delta\lambda = \frac{2h}{m_e c}$.
 > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#How%20does%20classical%20theory%20fail%20to%20explain%20the%20results%20of%20Compton's%20experiment%3F), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#What%20are%20the%20angles%20at%20which%20the%20Compton%20shift%20is%20minimum%20and%20maximum%3F), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%203:%20Compton%20Scattering%20Calculation)
@@ -122,8 +132,10 @@ This phenomenon involves the scattering of X-rays (or gamma rays) by charged par
 ### **de Broglie's Hypothesis: Matter Waves**
 -   **Hypothesis**: Louis de Broglie proposed that just as waves (like light) can exhibit particle-like properties, all particles should also exhibit wave-like properties. These are called **matter waves** or de Broglie waves.
 -   **de Broglie Wavelength**: Any particle with momentum $p$ has an associated wavelength given by:
-    $$\lambda = \frac{h}{p} = \frac{h}{mv} = \frac{h}{\sqrt{2mE}}$$
--   **Macroscopic Objects**: For macroscopic objects with significant mass, $h/p$ results in an extremely small wavelength, far too small to be observed or to produce detectable wave effects like diffraction or interference. The wave nature is only significant for micro-particles like electrons.
+    $$\lambda = \frac{h}{p} = \frac{h}{mv} = \frac{h}{\sqrt{2mE_K}}$$
+    *(Using non-relativistic kinetic energy $E_K$ for small velocities).*
+-   **Significance**: The wave nature is significant only for microscopic particles (like electrons) where $m$ is small, resulting in a measurable $\lambda$. For macroscopic objects, $\lambda$ is extremely small and undetectable.
+-   **Experimental Verification (Davisson-Germer, 1927)**: Observed diffraction patterns when electrons were scattered off a nickel crystal, confirming their wave nature. The observed wavelength matched the de Broglie wavelength.
 > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#What%20are%20matter%20waves%3F%20State%20the%20De-Broglie%20hypothesis.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Why%20is%20the%20wave%20nature%20of%20matter%20not%20apparent%20for%20macroscopic%20particles%3F), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%204:%20De-Broglie%20Wavelength%20of%20an%20Electron), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%205:%20De-Broglie%20Wavelength%20of%20an%20Alpha%20Particle)
 
 ### **Wave Packets, Phase and Group Velocity**
@@ -139,6 +151,15 @@ $$\frac{dE}{dp} = \frac{d}{dp}\left(\frac{p^2}{2m}\right) = \frac{2p}{2m} = \fra
 Thus, the group velocity of the wave packet is equal to the particle's classical velocity.
 > See also: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%206:%20Phase%20and%20Group%20Velocity)
 
+### **Double Slit Experiment with Particles**
+-   **Setup**: Electrons (or other quantum particles) are sent one at a time through a barrier with two narrow slits to a detector screen.
+-   **Classical Expectation**: Two distinct bands on the screen, reflecting particles passing through one slit or the other.
+-   **Quantum Observation**: Even with single particles, an **interference pattern** builds up over time on the screen, identical to that produced by waves.
+-   **Interpretation**:
+    *   This demonstrates the **wave-particle duality** of matter. Each particle, in some sense, passes through both slits simultaneously, exhibiting wave-like behavior.
+    *   The particle's wave function interferes with itself. Detection of individual particles shows their particle nature, but the overall probability distribution reveals their wave nature.
+    *   If an attempt is made to determine **which slit** the particle passes through (i.e., making an observation), the interference pattern disappears, and the result becomes that of classical particles (two bands). This signifies that the act of observation (measurement) unavoidably interacts with and alters the quantum state.
+
 ---
 
 ## Core Principles of Quantum Mechanics
@@ -152,67 +173,63 @@ It is a fundamental principle in quantum mechanics that states it is impossible 
     *(Where $\Delta t$ refers to the lifetime of an energy state or the time duration over which energy is measured).*
 -   **Angular Position and Angular Momentum**:
     $$\Delta \phi \cdot \Delta L_z \geq \frac{\hbar}{2}$$
--   **Position and Wave Number**: $\Delta x \cdot \Delta k \ge \frac{1}{2}$
--   **Position and Wavelength**: $\Delta x \cdot \Delta\lambda \ge \frac{\lambda^2}{4\pi}$ (derived from $\Delta x \cdot \Delta k \ge 1/2$ and $k=2\pi/\lambda$).
 
 **Significance for Macroscopic Bodies**: The uncertainty principle is not evident for macroscopic objects because Planck's constant ($\hbar$) is extremely small. The resulting uncertainties in position or momentum are far below any measurable limits for everyday objects, making classical mechanics sufficient.
-*Example*: For a 150g baseball, even with highly precise velocity measurement, the calculated minimum uncertainty in position is $\approx 2.5 \times 10^{-33}$ m, which is negligible.
+*Example*: For a 150g baseball, even with highly precise velocity measurement, the calculated minimum uncertainty in position is $\approx 2.5 \times 10^{-33}$ m, which is negligible. A thought experiment like the **gamma-ray microscope** also illustrates this.
 > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#State%20any%20three%20forms%20of%20the%20Heisenberg's%20Uncertainty%20Principle.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#The%20Uncertainty%20principle%20is%20not%20significant%20for%20macroscopic%20bodies.%20Justify.), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%207:%20Uncertainty%20Principle%20Calculation), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%208:%20Spectral%20Line%20Width), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%209:%20Uncertainty%20for%20a%20Confined%20Particle)
 
 ### **The Wavefunction ($\Psi$)**
--   **Physical Interpretation**: The wavefunction $\Psi(\mathbf{r}, t)$ is a complex valued function that contains all the probabilistic information about a quantum system. It has no direct physical meaning itself. Its squared magnitude, $|\Psi|^2 = \Psi^*\Psi$, represents the **probability density** of finding the particle at a certain position $\mathbf{r}$ and time $t$.
-    -   **Probability Density vs. Probability**: Probability density is the probability *per unit volume* (or length) at a specific point. Probability is the dimensionless chance of finding the particle within a *finite region*, obtained by integrating the probability density over that region.
+-   **Definition**: A complex valued function $\Psi(\mathbf{r}, t)$ that contains all the probabilistic information about a quantum system.
+-   **Physical Interpretation (Born Interpretation)**: The wavefunction $\Psi$ itself has no direct physical meaning. Its squared magnitude, $|\Psi|^2 = \Psi^*\Psi$, represents the **probability density** of finding the particle at a certain position $\mathbf{r}$ and time $t$.
+    -   **Probability Density vs. Probability**: Probability density ($|\Psi|^2$) is the probability *per unit volume* (or length for 1D) at a specific point. Probability ($P = \int |\Psi|^2 dV$) is the dimensionless chance of finding the particle within a *finite region*, obtained by integrating the probability density over that region.
 -   **Properties of a Valid Wavefunction**: For $\Psi$ to be physically acceptable, it must satisfy these conditions:
     1.  Must be finite everywhere.
     2.  Must be continuous everywhere.
     3.  Must be single-valued everywhere (for any given $\mathbf{r}$ and $t$, there is only one value of $\Psi$).
-    4.  Its first-order spatial derivatives ($\partial\Psi/\partial x$, etc.) must also be finite, continuous, and single-valued.
+    4.  Its first-order spatial derivatives ($\partial\Psi/\partial x$, etc.) must also be finite, continuous, and single-valued (ensures momentum is well-defined).
     5.  Must be **normalizable**: $\int_{\text{all space}}|\Psi|^2 dV = 1$. The physical significance of normalization is to ensure that the total probability of finding the particle *somewhere* in the universe is equal to 1, consistent with the conservation of probability.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Give%20the%20physical%20interpretation%20of%20the%20wave%20function.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Mention%20the%20important%20properties%20of%20a%20wave%20function.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#What%20is%20the%20difference%20between%20probability%20density%20and%20probability%3F), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#What%20is%20the%20physical%20significance%20of%20the%20normalization%20of%20a%20wave%20function%3F), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Normalize%20the%20wave%20function%20$\psi%20=%20A%20\sin(\frac{\pi%20x}{L})$%20for%20a%20particle%20in%20a%20box%20from%20$x=0$%20to%20$x=L$.).
+-   **Superposition Principle**: If $\psi_1$ and $\psi_2$ are possible states (wave functions) of a system, then any linear combination $\psi = c_1\psi_1 + c_2\psi_2$ (where $c_1, c_2$ are complex numbers) is also a possible state. This is fundamental to quantum mechanics and underlies phenomena like interference.
+> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Give%20the%20physical%20interpretation%20of%20the%20wave%20function.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Mention%20the%20important%20properties%20of%20a%20wave%20function.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#What%20is%20the%20difference%20between%20probability%20density%20and%20probability%3F), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#What%20is%20the%20physical%20significance%20of%20the%20normalization%20of%20a%20wave%20function%3F), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%2012:%20Normalization%20Constant)
 
-### **Operators, Observables, and Eigenvalues**
--   **Observables**: Measurable physical quantities of a system (e.g., position, momentum, energy).
--   **Operators ($\hat{A}$)**: Mathematical constructs associated with physical observables. When an operator acts on a wavefunction, it extracts the value of the corresponding observable.
-    | Observable       | Operator ($\hat{A}$)                                            |
-    | :--------------- | :-------------------------------------------------------------- |
-    | Position (x)     | $\hat{x} = x$                                                   |
-    | Momentum ($p_x$) | $\hat{p}_x = -i\hbar\frac{\partial}{\partial x}$                 |
-    | Kinetic Energy   | $\hat{K} = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}$    |
-    | Potential Energy | $\hat{V} = V(x)$                                                |
+### **Observables, Operators, and Eigenvalues**
+-   **Observables**: Measurable physical quantities of a system (e.g., position, momentum, energy, angular momentum).
+-   **Operators ($\hat{A}$)**: Mathematical constructs associated with physical observables. When an operator acts on a wavefunction, it extracts information about the corresponding observable.
+    | Observable           | Operator ($\hat{A}$)                                            |
+    | :------------------- | :-------------------------------------------------------------- |
+    | Position (x)         | $\hat{x} = x$                                                   |
+    | Momentum ($p_x$)     | $\hat{p}_x = -i\hbar\frac{\partial}{\partial x}$                 |
+    | Kinetic Energy       | $\hat{K} = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}$    |
+    | Potential Energy     | $\hat{V} = V(x)$                                                |
     | Total Energy (Hamiltonian) | $\hat{H} = -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r})$ |
 -   **Eigenvalue Equation**: An equation of the form $\hat{A}\psi = a\psi$.
     -   $\hat{A}$ is the operator corresponding to the observable.
     -   $\psi$ is the **eigenfunction**, representing a state where the observable has a definite, precise value.
     -   $a$ is the **eigenvalue**, which is the definite, measured value of the observable when the system is in the state $\psi$.
--   **Expectation Value ($\langle A \rangle$)**: The theoretical average value of an observable 'A' obtained from a large number of measurements on identical systems. It is calculated as:
-    $$\langle A \rangle = \int \Psi^* \hat{A} \Psi dV$$
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Explain%20operators,%20observables,%20and%20the%20eigenvalue%20equation.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Write%20five%20operators%20associated%20with%20dynamical%20variables.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Explain%20the%20concept%20of%20the%20"expectation%20value".), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Find%20the%20expectation%20value%20of%20position,%20$\langle%20x%20\rangle$,%20for%20a%20particle%20in%20a%20box%20of%20width%20L.).
+-   **Expectation Value ($\langle A \rangle$)**: The theoretical average value of an observable 'A' obtained from a large number of measurements on identical systems. If $\Psi$ is normalized, it is calculated as:
+    $$\langle A \rangle = \int_{\text{all space}} \Psi^* \hat{A} \Psi dV$$
+    If $\Psi$ is an eigenfunction of $\hat{A}$ with eigenvalue $a$, then $\langle A \rangle = a$.
+> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Explain%20operators,%20observables,%20and%20the%20eigenvalue%20equation.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Write%20five%20operators%20associated%20with%20dynamical%20variables.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Explain%20the%20concept%20of%20the%20"expectation%20value".), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Find%20the%20expectation%20value%20of%20position,%20$\langle%20x%20\rangle$,%20for%20a%20particle%20in%20a%20box%20of%20width%20L.), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%2013:%20Momentum%20Eigenvalue)
 
 ### **The Schrödinger Equation**
 This is the fundamental equation in quantum mechanics that describes how the quantum state of a physical system changes over time.
--   **Time-Dependent Schrödinger Equation (TDSE)**: Describes the evolution of the wavefunction $\Psi$ in time.
-    $$i\hbar \frac{\partial \Psi}{\partial t} = \left[ -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r},t) \right]\Psi$$
--   **Time-Independent Schrödinger Equation (TISE)**: Applies to stationary states where the potential energy $V$ is independent of time. It is an eigenvalue equation for energy.
+
+-   **Time-Dependent Schrödinger Equation (TDSE)**: Describes the evolution of the wavefunction $\Psi$ in time. It's the quantum analogue of Newton's second law.
+    $$i\hbar \frac{\partial \Psi}{\partial t} = \hat{H} \Psi$$
+    $$i\hbar \frac{\partial \Psi(\mathbf{r}, t)}{\partial t} = \left[ -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r},t) \right]\Psi(\mathbf{r}, t)$$
+    Where $\hat{H}$ is the Hamiltonian operator representing the total energy of the system.
+
+-   **Time-Independent Schrödinger Equation (TISE)**: Applies to stationary states where the potential energy $V$ is independent of time ($V = V(\mathbf{r})$). Solutions for the TDSE can be separated into spatial and temporal parts: $\Psi(\mathbf{r}, t) = \psi(\mathbf{r}) e^{-iEt/\hbar}$. Substituting this into the TDSE yields the TISE for the spatial part $\psi(\mathbf{r})$:
+    $$\hat{H} \psi(\mathbf{r}) = E \psi(\mathbf{r})$$
     $$\left[ -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r}) \right]\psi(\mathbf{r}) = E\psi(\mathbf{r})$$
-    *(Often written as $\hat{H}\psi = E\psi$, where $\hat{H}$ is the Hamiltonian operator).*
+    This is an eigenvalue equation for the energy. The solutions $\psi_n$ are the stationary states, and $E_n$ are the allowed quantized energy levels. These states have time-independent probability densities: $|\Psi(t)|^2 = |\psi|^2$.
 
 ### **Application: Free Particle**
 A free particle is one that experiences no forces, so its potential energy is constant ($V=0$).
--   The TISE simplifies to: $\frac{d^{2}\psi}{dx^{2}}+k^{2}\psi=0$, where $k=\sqrt{\frac{2mE}{\hbar^{2}}}$.
--   The general solution is a plane wave, $\psi(x) = Ae^{ikx} + Be^{-ikx}$, representing particles moving in the $\pm x$ direction.
--   The energy is $E=\frac{\hbar^{2}k^{2}}{2m} = \frac{p^2}{2m}$. Since there are no boundary conditions, the wave number $k$ (and thus momentum $p$ and energy $E$) can take on any continuous value.
+-   The TISE in 1D simplifies to: $\frac{d^{2}\psi}{dx^{2}}+k^{2}\psi=0$, where $k=\sqrt{\frac{2mE}{\hbar^{2}}}$.
+-   The general solution is a plane wave, $\psi(x) = Ae^{ikx} + Be^{-ikx}$, representing particles moving in the $\pm x$ direction with momentum $p = \pm \hbar k$.
+-   The energy is $E=\frac{\hbar^{2}k^{2}}{2m} = \frac{p^2}{2m}$. Since there are no boundary conditions imposed on a free particle, the wave number $k$ (and thus momentum $p$ and energy $E$) can take on any continuous value.
 -   Therefore, the energy of a free particle is **not quantized**. This continuous range of allowed energies is a characteristic feature of classical systems, which is why a free particle can be considered a classical entity.
 > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#A%20free%20particle%20is%20a%20classical%20entity.%20Justify.).
-
-### **Application: Particle in a 1-D Box**
-This model describes a particle confined to a one-dimensional region (box) of length $L$ with infinite potential walls ($V=0$ inside the box, $V=\infty$ outside).
--   **Quantization**: The infinite potential walls impose boundary conditions ($\psi(0)=0, \psi(L)=0$) that restrict the allowed wavelengths and thus lead to discrete, quantized energy levels.
--   **Energy Levels**: The allowed energies are quantized:
-    $$E_n = \frac{n^2\pi^2\hbar^2}{2mL^2} = \frac{n^2h^2}{8mL^2} \quad \text{where } n=1, 2, 3, \dots$$
-    *(n=1 is the ground state, n=2 the first excited state, etc. Note that $E=0$ is not allowed, due to the uncertainty principle).*
--   **Wavefunction**: The corresponding normalized eigenfunctions are:
-    $$\psi_n(x)=\sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right)$$
-> See also: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%2010:%20Probability%20in%20a%201D%20Box), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%2011:%20Minimum%20Energy%20in%20a%201D%20Box)
 
 ***
 # [Back](../Physics.md)
