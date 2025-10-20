@@ -13,23 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Semester 1/Physics/Unit 1/Q&A.md",
+                "file": "Semester 1/Mechanical/Unit 1/Core Notes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Q&A"
-            }
-          },
-          {
-            "id": "e8180be376dda06a",
-            "type": "leaf",
-            "state": {
-              "type": "smart-chat-view",
-              "state": {},
-              "icon": "smart-chat",
-              "title": "Smart Chat"
+              "title": "Core Notes"
             }
           }
         ]
@@ -62,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "23cafa71a74a5ded",
@@ -101,21 +92,21 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "4488dcb046b9a0a4",
   "lastOpenFiles": [
+    "Semester 1/Mechanical/Unit 1/Core Notes.md",
+    "Semester 1/Mechanical/Mechanical.md",
+    "Index.md",
+    "Semester 1/Physics/Unit 1/Q&A.md",
     "Semester 1/Physics/Physics.md",
     "Semester 1/Physics/Unit 1/Core Notes.md",
-    "Semester 1/Physics/Unit 1/Q&A.md",
     "Semester 1/Physics/Unit 1/Examples.md",
-    "Index.md",
     "Semester 1/Physics/Unit 2/Core Notes.md",
     "Semester 1/Electrical/Unit 1/Q&A.md",
     "Semester 1/Physics/Unit 2/Q&A.md",
     "Semester 1/Mathematics/Unit 1/Core Notes.md",
     "Semester 1/Mathematics/Unit 1/Q&A.md",
     "Semester 1/Electrical/Unit 1/Core Notes.md",
-    "Semester 1/Mechanical/Unit 1/Core Notes.md",
-    "Semester 1/Mechanical/Mechanical.md",
     "Semester 1/Mechanical/Unit 2/Core Notes.md",
     "Semester 1/Mechanical/Unit 2/Examples.md",
     "Semester 1/Mechanical/Unit 1/Q&A.md",
