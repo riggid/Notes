@@ -96,10 +96,10 @@ IC engines can be classified based on several criteria:
 ## Electric & Hybrid Vehicles (EVs & HEVs)
 
 ### How do EVs and HEVs differ in terms of energy source and emissions?
-| Feature | Electric Vehicle (EV) | Hybrid Electric Vehicle (HEV) |
-| :--- | :--- | :--- |
-| **Energy Source** | Runs solely on electricity stored in a rechargeable battery. | Uses a combination of a gasoline engine and an electric motor. |
-| **Emissions** | Has **zero tailpipe emissions**, making it an environmentally cleaner option. | Produces lower emissions than a conventional car but is not zero-emission because it still burns gasoline. |
+| Feature           | Electric Vehicle (EV)                                                         | Hybrid Electric Vehicle (HEV)                                                                              |
+| :---------------- | :---------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| **Energy Source** | Runs solely on electricity stored in a rechargeable battery.                  | Uses a combination of a gasoline engine and an electric motor.                                             |
+| **Emissions**     | Has **zero tailpipe emissions**, making it an environmentally cleaner option. | Produces lower emissions than a conventional car but is not zero-emission because it still burns gasoline. |
 
 ***
 

@@ -21,6 +21,7 @@ $E = 205 \, GPa$.
 ---
 ### Example 2: Bar with Multiple Loads
 A member ABCD is subjected to point loads P1, P2, P3 and P4 as shown. Calculate P2 for equilibrium if $P1=10$ kN, $P3=40$ kN and $P4=16$ kN. Taking $E = 205 \, GPa$, determine the total elongation. Diameters: AB=25mm, BC=50mm, CD=30mm. Lengths: AB=1000mm, BC=600mm, CD=800mm.
+![](Examples-1.png)
 
 
 **Solution:**
@@ -76,7 +77,8 @@ $P = \frac{471.24 \times 10^6}{6381.4} \approx 73845$ N $= 73.8$ kN.
 
 ---
 ### Example 4: Composite Bar Deformation
-Member ABC: Steel bar AB (20mm dia, 1.2m) connected to Aluminum bar BC (30mm dia, 1m). Forces: 100kN left at A, 50kN left at B, 150kN right at C. Find total deformation. $E_{steel}=2 \times 10^5$ N/mm², $E_{Al}=0.7 \times 10^5$ N/mm².
+Member ABC: Steel bar AB (20mm dia, 1.2m) connected to Aluminum bar B
+C (30mm dia, 1m). Forces: 100kN left at A, 50kN left at B, 150kN right at C. Find total deformation. $E_{steel}=2 \times 10^5$ N/mm², $E_{Al}=0.7 \times 10^5$ N/mm².
 
 
 **Solution:**
