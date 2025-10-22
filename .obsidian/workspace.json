@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Semester 1/Environmental Studies and Life Science/Unit 1/Core Notes.md",
-                "mode": "preview",
+                "file": "Index.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Core Notes"
+              "title": "Index"
             }
           }
         ]
@@ -88,16 +88,25 @@
       "smart-connections:Smart Connections: Open random connection": true,
       "homepage:Open homepage": true,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "digitalgarden:Digital Garden Publication Center": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Index.md",
+    "Semester 1/Mathematics/Mathematics.md",
+    "Semester 1/Electrical/Electrical.md",
+    "Semester 1/Electrical/Unit 1/Q&A.md",
+    "Semester 1/Electrical/Unit 1/Examples.md",
+    "Semester 1/Electrical/Unit 1/Core Notes.md",
+    "Semester 1/Electrical/Unit 2/Q&A.md",
+    "Semester 1/Electrical/Unit 2/Examples.md",
+    "Semester 1/Electrical/Unit 2/Core Notes.md",
+    "Semester 1/Environmental Studies and Life Science/Unit 1/Core Notes.md",
     "Semester 1/Environmental Studies and Life Science/Environmental Studies.md",
     "Semester 1/Environmental Studies and Life Science/Unit 1/Q&A.md",
     "Semester 1/Environmental Studies and Life Science/Unit 1/Examples.md",
-    "Semester 1/Environmental Studies and Life Science/Unit 1/Core Notes.md",
-    "Index.md",
     "Semester 1/Environmental Studies and Life Science/Unit 1",
     "Semester 1/Physics/Physics.md",
     "Semester 1/Physics/Unit 1/Core Notes.md",
@@ -111,16 +120,8 @@
     "Semester 1/Physics/Unit 1/Q&A.md",
     "Semester 1/Physics/Unit 1/Examples.md",
     "Semester 1/Physics/Unit 2/Core Notes.md",
-    "Semester 1/Electrical/Unit 1/Q&A.md",
     "Semester 1/Physics/Unit 2/Q&A.md",
     "Semester 1/Mathematics/Unit 1/Core Notes.md",
-    "Semester 1/Mathematics/Unit 1/Q&A.md",
-    "Semester 1/Electrical/Unit 1/Core Notes.md",
-    "Semester 1/Electrical/Electrical.md",
-    "Semester 1/Electrical/Unit 1/Examples.md",
-    "Semester 1/Mathematics/Mathematics.md",
-    "Semester 1/Python/Python.md",
-    "Semester 1/Physics/Unit 2/Examples.md",
     "Semester 2/Python",
     "Semester 2/Environmental Studies and Life Sciences",
     "Semester 2/Mathematics",
