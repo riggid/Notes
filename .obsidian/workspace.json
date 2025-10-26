@@ -13,16 +13,27 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "Semester 1/Mathematics/Unit 2/Core Notes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "Core Notes"
+            }
+          },
+          {
+            "id": "250ff4d84ddd2d92",
+            "type": "leaf",
+            "state": {
+              "type": "smart-chat-view",
+              "state": {},
+              "icon": "smart-chat",
+              "title": "Smart Chat"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -52,7 +63,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "23cafa71a74a5ded",
@@ -88,40 +100,39 @@
       "smart-connections:Smart Connections: Open random connection": true,
       "homepage:Open homepage": true,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "templater-obsidian:Templater": false,
-      "digitalgarden:Digital Garden Publication Center": false
+      "templater-obsidian:Templater": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "250ff4d84ddd2d92",
   "lastOpenFiles": [
-    "Index.md",
     "Semester 1/Mathematics/Mathematics.md",
-    "Semester 1/Electrical/Electrical.md",
-    "Semester 1/Electrical/Unit 1/Q&A.md",
-    "Semester 1/Electrical/Unit 1/Examples.md",
-    "Semester 1/Electrical/Unit 1/Core Notes.md",
-    "Semester 1/Electrical/Unit 2/Q&A.md",
-    "Semester 1/Electrical/Unit 2/Examples.md",
-    "Semester 1/Electrical/Unit 2/Core Notes.md",
-    "Semester 1/Environmental Studies and Life Science/Unit 1/Core Notes.md",
-    "Semester 1/Environmental Studies and Life Science/Environmental Studies.md",
-    "Semester 1/Environmental Studies and Life Science/Unit 1/Q&A.md",
-    "Semester 1/Environmental Studies and Life Science/Unit 1/Examples.md",
-    "Semester 1/Environmental Studies and Life Science/Unit 1",
-    "Semester 1/Physics/Physics.md",
-    "Semester 1/Physics/Unit 1/Core Notes.md",
-    "Semester 1/Mechanical/Unit 2/Examples.md",
-    "Semester 1/Mechanical/Unit 2/Examples-1.png",
+    "Index.md",
+    "Semester 1/Mathematics/Unit 1/Core Notes-1.png",
+    "Semester 1/Mathematics/Unit 1/Core Notes.md",
+    "Semester 1/Mathematics/Unit 1/Q&A.md",
+    "Semester 1/Mathematics/Unit 1/Examples.md",
+    "Semester 1/Mathematics/Unit 2/Core Notes.md",
+    "Semester 1/Mechanical/Unit 1/Core Notes.md",
     "Semester 1/Mechanical/Mechanical.md",
+    "Semester 1/Electrical/Electrical.md",
     "Semester 1/Mechanical/Unit 2/Core Notes.md",
+    "Semester 1/Mechanical/Unit 2/Q&A.md",
     "Semester 1/Mechanical/Unit 1/Q&A.md",
     "Semester 1/Mechanical/Unit 1/Examples.md",
-    "Semester 1/Mechanical/Unit 1/Core Notes.md",
-    "Semester 1/Physics/Unit 1/Q&A.md",
-    "Semester 1/Physics/Unit 1/Examples.md",
+    "Semester 1/Mechanical/Unit 2/Examples.md",
+    "Semester 1/Electrical/Unit 1/Core Notes.md",
+    "Semester 1/Mathematics/Unit 2/Examples.md",
     "Semester 1/Physics/Unit 2/Core Notes.md",
-    "Semester 1/Physics/Unit 2/Q&A.md",
-    "Semester 1/Mathematics/Unit 1/Core Notes.md",
+    "Semester 1/Physics/Physics.md",
+    "Semester 1/Physics/Unit 1/Core Notes.md",
+    "Semester 1/Environmental Studies and Life Science/Unit 1/Core Notes.md",
+    "Semester 1/Environmental Studies and Life Science/Environmental Studies.md",
+    "Semester 1/Electrical/Unit 1/Examples.md",
+    "Semester 1/Electrical/Unit 1/Q&A.md",
+    "Semester 1/Electrical/Unit 2/Q&A.md",
+    "Semester 1/Electrical/Unit 2/Examples.md",
+    "Semester 1/Environmental Studies and Life Science/Unit 1",
+    "Semester 1/Mechanical/Unit 2/Examples-1.png",
     "Semester 2/Python",
     "Semester 2/Environmental Studies and Life Sciences",
     "Semester 2/Mathematics",
@@ -137,7 +148,6 @@
     "Semester 1/Electrical/Unit 2/Examples-6.png",
     "Semester 1/Electrical/Unit 2/Examples-5.png",
     "Semester 1/Electrical/Unit 2/Examples-4.png",
-    "Semester 1/Electrical/Unit 2/Examples-3.png",
     "Semester 1/Electrical/Unit 1/images",
     "Semester 1/Mechanical/Unit 2",
     "Untitled.canvas",

@@ -166,7 +166,7 @@ An **extreme value** (maximum or minimum) occurs at a **critical point**, which 
 2.  One or both of the first partial derivatives do not exist.
 
 - **Saddle Point**: A critical point that is neither a local maximum nor a local minimum. It is a maximum in some directions and a minimum in others.
-
+![](Core%20Notes-1.png)
 ### Working Rule (Second Derivative Test)
 
 To classify stationary points $(a, b)$:
