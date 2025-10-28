@@ -100,10 +100,13 @@ A black body is an idealized object that absorbs all incident electromagnetic ra
 > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Describe%20the%20characteristics%20of%20a%20black%20body%20spectrum.)
 
 -   **Classical Failure (Ultraviolet Catastrophe)**: The classical Rayleigh-Jeans law incorrectly predicted that the energy radiated by a black body would increase infinitely at high frequencies (short wavelengths). This led to absurd results, hence the term "ultraviolet catastrophe."
+$$
+\rho d \nu = \frac{8\pi \nu^2kT d\nu}{c^3}
+$$
 -   **Planck's Solution (Quantum Hypothesis)**: Max Planck resolved this by postulating that energy is quantized, meaning it can only be emitted or absorbed in discrete packets (quanta) called photons, with energy $E = nh\nu$. His formula correctly described the spectrum:
     $$\rho(\nu)d\nu = \frac{8\pi h\nu^{3}}{c^{3}}\frac{1}{e^{h\nu / kT}-1}d\nu $$
     **Average energy of a Planck oscillator**: $\langle E \rangle = \frac{h\nu}{e^{h\nu/kT}-1}$.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Write%20Planck's%20formula%20for%20black%20body%20radiation.), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%202:%20Planck's%20vs.%20Classical%20Energy)
+> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Write%20Planck's%20formula%20for%20black%20body%20radiation.), [Examples](Semester%201/Physics/Unit%201/Examples.md)
 
 ### **Atomic Spectra**
 -   **Observation**: Atoms emit light only at specific, discrete frequencies (line spectra), unique to each element.
@@ -128,6 +131,53 @@ This phenomenon involves the scattering of X-rays (or gamma rays) by charged par
     *   **Minimum shift**: Occurs at $\theta = 0^\circ$ (forward scattering), where $\Delta\lambda = 0$.
     *   **Maximum shift**: Occurs at $\theta = 180^\circ$ (backscattering), where $\Delta\lambda = \frac{2h}{m_e c}$.
 > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#How%20does%20classical%20theory%20fail%20to%20explain%20the%20results%20of%20Compton's%20experiment%3F), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#What%20are%20the%20angles%20at%20which%20the%20Compton%20shift%20is%20minimum%20and%20maximum%3F), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%203:%20Compton%20Scattering%20Calculation)
+
+### **Derivation of Compton Shift ($\Delta\lambda$)** **(Self-Study Topic)**
+The Compton shift can be derived using the principles of conservation of energy and momentum in a relativistic collision between an incident photon and a stationary electron.
+**Assumptions:**
+1.  The electron is initially at rest.
+2.  The collision is elastic (conservation of kinetic energy, but here, total relativistic energy is conserved, including rest mass energy).
+3.  The photon has energy $E = h\nu = hc/\lambda$ and momentum $p = E/c = h/\lambda$.
+4.  The electron has relativistic total energy $E_e = \sqrt{(p_e c)^2 + (m_e c^2)^2}$ and momentum $p_e$.
+
+**Steps:**
+1.  **Conservation of Energy:**
+    Initial energy (photon + electron at rest) = Final energy (scattered photon + recoil electron)
+    $E_i + m_e c^2 = E_f + E_e$
+    $hc/\lambda_i + m_e c^2 = hc/\lambda_f + \sqrt{(p_e c)^2 + (m_e c^2)^2} \quad \text{(Eq. 1)}$
+
+2.  **Conservation of Momentum (vectorially):**
+    Momentum is conserved in both x and y directions. Let the incident photon be along the x-axis, the scattered photon at angle $\theta$ to the x-axis, and the recoil electron at angle $\phi$ to the x-axis.
+    *   **x-direction:** $p_{ix} + p_{ex} = p_{fx} + p_{rx}$
+        $h/\lambda_i + 0 = (h/\lambda_f)\cos\theta + p_e \cos\phi \quad \text{(Eq. 2)}$
+    *   **y-direction:** $p_{iy} + p_{ey} = p_{fy} + p_{ry}$
+        $0 + 0 = (h/\lambda_f)\sin\theta - p_e \sin\phi \quad \text{(Eq. 3)}$
+
+3.  **Eliminate the Electron Recoil Angle ($\phi$):**
+    From (Eq. 2): $p_e \cos\phi = h/\lambda_i - (h/\lambda_f)\cos\theta$
+    From (Eq. 3): $p_e \sin\phi = (h/\lambda_f)\sin\theta$
+    Square both equations and add them to eliminate $\phi$:
+    $(p_e c)^2 (\cos^2\phi + \sin^2\phi) = c^2 \left[ \left(\frac{h}{\lambda_i} - \frac{h}{\lambda_f}\cos\theta\right)^2 + \left(\frac{h}{\lambda_f}\sin\theta\right)^2 \right]$
+    $(p_e c)^2 = h^2 c^2 \left[ \frac{1}{\lambda_i^2} - \frac{2\cos\theta}{\lambda_i\lambda_f} + \frac{\cos^2\theta}{\lambda_f^2} + \frac{\sin^2\theta}{\lambda_f^2} \right]$
+    $(p_e c)^2 = h^2 c^2 \left[ \frac{1}{\lambda_i^2} - \frac{2\cos\theta}{\lambda_i\lambda_f} + \frac{1}{\lambda_f^2} \right] \quad \text{(Eq. 4)}$
+
+4.  **Eliminate Electron Recoil Energy ($E_e$) from Energy Equation:**
+    From (Eq. 1): $\sqrt{(p_e c)^2 + (m_e c^2)^2} = hc/\lambda_i + m_e c^2 - hc/\lambda_f$
+    Square both sides:
+    $(p_e c)^2 + (m_e c^2)^2 = (hc)^2 \left(\frac{1}{\lambda_i} - \frac{1}{\lambda_f}\right)^2 + (m_e c^2)^2 + 2(hc)\left(\frac{1}{\lambda_i} - \frac{1}{\lambda_f}\right)(m_e c^2)$
+    $(p_e c)^2 = h^2 c^2 \left(\frac{1}{\lambda_i^2} - \frac{2}{\lambda_i\lambda_f} + \frac{1}{\lambda_f^2}\right) + 2hm_e c^3 \left(\frac{1}{\lambda_i} - \frac{1}{\lambda_f}\right) \quad \text{(Eq. 5)}$
+
+5.  **Equate (Eq. 4) and (Eq. 5) and Solve for $\Delta\lambda$:**
+    $h^2 c^2 \left[ \frac{1}{\lambda_i^2} - \frac{2\cos\theta}{\lambda_i\lambda_f} + \frac{1}{\lambda_f^2} \right] = h^2 c^2 \left[ \frac{1}{\lambda_i^2} - \frac{2}{\lambda_i\lambda_f} + \frac{1}{\lambda_f^2}\right] + 2hm_e c^3 \left[\frac{1}{\lambda_i} - \frac{1}{\lambda_f}\right]$
+    Cancel common terms $h^2 c^2 (\frac{1}{\lambda_i^2} + \frac{1}{\lambda_f^2})$ from both sides:
+    $-2h^2 c^2 \frac{\cos\theta}{\lambda_i\lambda_f} = -2h^2 c^2 \frac{1}{\lambda_i\lambda_f} + 2hm_e c^3 \left[\frac{1}{\lambda_i} - \frac{1}{\lambda_f}\right]$
+    Divide by $2h c^2$:
+    $-h \frac{\cos\theta}{\lambda_i\lambda_f} = -h \frac{1}{\lambda_i\lambda_f} + m_e c \left[\frac{\lambda_f - \lambda_i}{\lambda_i\lambda_f}\right]$
+    Multiply by $\lambda_i\lambda_f$:
+    $-h \cos\theta = -h + m_e c (\lambda_f - \lambda_i)$
+    $h(1 - \cos\theta) = m_e c (\lambda_f - \lambda_i)$
+    $$ \Delta\lambda = \lambda_f - \lambda_i = \frac{h}{m_e c}(1 - \cos\theta) $$
+    **Q.E.D.**
 
 ### **de Broglie's Hypothesis: Matter Waves**
 -   **Hypothesis**: Louis de Broglie proposed that just as waves (like light) can exhibit particle-like properties, all particles should also exhibit wave-like properties. These are called **matter waves** or de Broglie waves.
@@ -177,6 +227,27 @@ It is a fundamental principle in quantum mechanics that states it is impossible 
 **Significance for Macroscopic Bodies**: The uncertainty principle is not evident for macroscopic objects because Planck's constant ($\hbar$) is extremely small. The resulting uncertainties in position or momentum are far below any measurable limits for everyday objects, making classical mechanics sufficient.
 *Example*: For a 150g baseball, even with highly precise velocity measurement, the calculated minimum uncertainty in position is $\approx 2.5 \times 10^{-33}$ m, which is negligible. A thought experiment like the **gamma-ray microscope** also illustrates this.
 > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#State%20any%20three%20forms%20of%20the%20Heisenberg's%20Uncertainty%20Principle.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#The%20Uncertainty%20principle%20is%20not%20significant%20for%20macroscopic%20bodies.%20Justify.), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%207:%20Uncertainty%20Principle%20Calculation), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%208:%20Spectral%20Line%20Width), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%209:%20Uncertainty%20for%20a%20Confined%20Particle)
+
+### **Why an Electron Cannot Exist Inside the Nucleus (Self-Study Topic)**
+The Heisenberg Uncertainty Principle provides a fundamental quantum mechanical argument against the existence of an electron confined within an atomic nucleus.
+
+**Argument:**
+1.  **Estimate Nuclear Size**: The typical diameter of an atomic nucleus is on the order of $10^{-14}$ to $10^{-15}$ meters. We can take this as the maximum uncertainty in the electron's position, $\Delta x \approx 10^{-14}$ m.
+2.  **Apply Uncertainty Principle**: According to the position-momentum uncertainty principle, $\Delta x \cdot \Delta p_x \ge \frac{\hbar}{2}$.
+    This allows us to estimate the minimum uncertainty in the momentum of the electron:
+    $$\Delta p_x \ge \frac{\hbar}{2 \Delta x} = \frac{1.054 \times 10^{-34} \text{ J s}}{2 \times 10^{-14} \text{ m}} \approx 5.27 \times 10^{-21} \text{ kg m/s}$$
+3.  **Minimum Kinetic Energy (Relativistic Consideration):**
+    If an electron were confined, its momentum would be at least of the order of this uncertainty. For such large momenta, the electron's speed would be a significant fraction of the speed of light, so we must use relativistic energy considerations:
+    The minimum kinetic energy $E_k$ of a particle with momentum $p$ is approximately $pc$ (for highly relativistic particles, where $E_k \approx E_{total} \approx pc$).
+    $$E_k \sim pc \approx (5.27 \times 10^{-21} \text{ kg m/s}) \times (3 \times 10^8 \text{ m/s}) \approx 1.58 \times 10^{-12} \text{ J}$$
+4.  **Convert to MeV:**
+    $1 \text{ MeV} = 1.602 \times 10^{-13}$ J.
+    $$E_k \approx \frac{1.58 \times 10^{-12} \text{ J}}{1.602 \times 10^{-13} \text{ J/MeV}} \approx 9.89 \text{ MeV}$$
+5.  **Comparison with Binding Energies:**
+    The binding energies of particles (like protons and neutrons) inside the nucleus are typically on the order of a few MeV (e.g., 8 MeV). For an electron to exist inside the nucleus, its kinetic energy would have to be around 10 MeV. This energy is significantly higher than the forces responsible for binding particles within the nucleus. An electron with such high kinetic energy would easily escape the nucleus, as it would not be a bound state.
+
+**Conclusion:** The minimum kinetic energy an electron *must* possess if confined to a nucleus-sized region, as dictated by the Heisenberg Uncertainty Principle, is much greater than the observed energy scales of nuclear particles. This disparity strongly indicates that electrons cannot be permanently confined within the nucleus. This is consistent with the fact that beta decay involves the *creation* and emission of an electron *from* the nucleus, rather than the expulsion of a pre-existing electron.
+> See also: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%2011:%20Minimum%20Energy%20in%20a%201D%20Box%20(Nucleus))
 
 ### **The Wavefunction ($\Psi$)**
 -   **Definition**: A complex valued function $\Psi(\mathbf{r}, t)$ that contains all the probabilistic information about a quantum system.
