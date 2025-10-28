@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This unit applies the Schrödinger Wave Equation (SWE) to analyze the behavior of particles in simple potential energy fields. We'll examine how quantum mechanics predicts phenomena like reflection, transmission, tunneling, and energy quantization, which differ significantly from classical expectations.
+This unit applies the Schrödinger Wave Equation (SWE) to analyze the behavior of particles in simple potential energy fields. We'll examine how quantum mechanics predicts phenomena like reflection, transmission, tunneling, and energy quantization, which differ significantly from classical expectations. The Time-Independent Schrödinger Equation (TISE) is central to finding stationary states and their quantized energy levels.
 
 ---
 ## 1. Potential Step
@@ -19,13 +19,15 @@ SWE: $\frac{d^{2}\psi_1}{dx^{2}}+k_1^{2}\psi_1=0$, where $k_1 = \sqrt{\frac{2mE}
 Solution: $\psi_1(x) = A e^{ik_1 x} + B e^{-ik_1 x}$.
 *   $A e^{ik_1 x}$: Incident wave moving right (amplitude A).
 *   $B e^{-ik_1 x}$: Reflected wave moving left (amplitude B).
+*   **Behavior of wavelength**: The particle's de Broglie wavelength is $\lambda_1 = h/p_1 = h/(\hbar k_1)$.
 
 **Region II ($x>0, V=V_0$):**
 
 **Case 1: $E > V_0$ (Classically allowed region)**
 SWE: $\frac{d^{2}\psi_2}{dx^{2}}+k_2^{2}\psi_2=0$, where $k_2 = \sqrt{\frac{2m(E-V_0)}{\hbar^2}}$.
 Solution: $\psi_2(x) = D e^{ik_2 x}$. (No reflection term $e^{-ik_2 x}$ as there is no potential change beyond this region for back-reflection).
-*   The wave is transmitted into Region II, but its momentum ($p_2 = \hbar k_2$) and kinetic energy ($E-V_0$) are lower, leading to a longer wavelength ($\lambda_2 = h/p_2 > \lambda_1$).
+*   The wave is transmitted into Region II. Its momentum ($p_2 = \hbar k_2$) and kinetic energy ($E-V_0$) are lower than in Region I.
+*   **Behavior of wavelength**: Since $E-V_0 < E$ (for $V_0>0$), $k_2 < k_1$. This implies $p_2 < p_1$, so the de Broglie wavelength in Region II, $\lambda_2 = h/p_2$, is **longer** than $\lambda_1$ (the particle effectively slows down).
 
 *   **Boundary Conditions** (at $x=0$):
     *   Continuity of wavefunction: $\psi_1(0)=\psi_2(0) \implies A+B=D$.
@@ -33,11 +35,11 @@ Solution: $\psi_2(x) = D e^{ik_2 x}$. (No reflection term $e^{-ik_2 x}$ as there
 *   Solving these two equations for B and D in terms of A gives:
     $B = A \frac{k_1-k_2}{k_1+k_2}$ and $D = A \frac{2k_1}{k_1+k_2}$.
 
-*   **Reflection Coefficient (R)**: The probability that a particle is reflected at the step. Defined as the ratio of reflected probability flux to incident probability flux.
+*   **Reflection Coefficient (R)**: The probability that a particle is reflected at the step.
     $$R = \frac{|\text{Reflected Flux}|}{|\text{Incident Flux}|} = \frac{|B|^2}{|A|^2} = \left(\frac{k_1-k_2}{k_1+k_2}\right)^2 = \left(\frac{\sqrt{E}-\sqrt{E-V_0}}{\sqrt{E}+\sqrt{E-V_0}}\right)^2$$
-    **Physical Significance**: Crucially, $R > 0$ even though $E>V_0$. This is a quantum mechanical prediction; classical mechanics predicts no reflection when $E>V_0$.
+    **Physical Significance**: $R > 0$ even though $E>V_0$. This is a quantum mechanical prediction; classical mechanics predicts no reflection when $E>V_0$.
 
-*   **Transmission Coefficient (T)**: The probability that a particle is transmitted past the step. Defined as the ratio of transmitted probability flux to incident probability flux.
+*   **Transmission Coefficient (T)**: The probability that a particle is transmitted past the step.
     $$T = \frac{|\text{Transmitted Flux}|}{|\text{Incident Flux}|} = \frac{|D|^2 k_2}{|A|^2 k_1} = \frac{4k_1 k_2}{(k_1+k_2)^2}$$
 *   **Conservation of Probability**: $R+T=1$.
 
@@ -49,6 +51,7 @@ SWE: $\frac{d^{2}\psi_2}{dx^{2}}-\alpha^{2}\psi_2=0$, where $\alpha = \sqrt{\fra
 Solution: $\psi_2(x) = F e^{-\alpha x} + G e^{\alpha x}$.
 *   Since the wave function must remain finite as $x \to \infty$, the term $G e^{\alpha x}$ (which grows exponentially) must be zero. So, $G=0$.
 *   $\psi_2(x) = F e^{-\alpha x}$. The wave function decays exponentially in Region II. This behavior is for an **evanescent wave**.
+*   **Behavior of wavelength**: In this classically forbidden region, the energy $E<V_0$ implies kinetic energy $E-V_0$ is negative. While we can still formally define a wavenumber $k_2 = i\alpha$, the wave function is no longer oscillatory (no real wavelength). Instead, it describes an exponential decay without propagation.
 
 *   **Boundary Conditions** (at $x=0$):
     *   $A+B=F$
@@ -71,13 +74,16 @@ A potential barrier has $V(x)=V_0$ for $0 < x < L$ (finite width $L$) and $V(x)=
 
 **Regions and Wave Function Nature ($E < V_0$):**
 1.  **Region I ($x<0, V=0$)**: $\psi_1(x) = A e^{ik_1 x} + B e^{-ik_1 x}$, $k_1 = \sqrt{2mE/\hbar^2}$.
-    *   Represents a superposition of an incident wave ($A e^{ik_1 x}$) moving towards the barrier and a reflected wave ($B e^{-ik_1 x}$) moving away. The wave function is **oscillatory**.
+    *   Represents a superposition of an incident wave ($A e^{ik_1 x}$) moving towards the barrier and a reflected wave ($B e^{-ik_1 x}$) moving away. The wave function is **oscillatory**. Wavelength $\lambda_1 = h/(\hbar k_1)$.
 2.  **Region II ($0<x<L, V=V_0$)**: $\psi_2(x) = F e^{-\alpha x} + G e^{\alpha x}$, $\alpha = \sqrt{2m(V_0-E)/\hbar^2}$.
-    *   Represents a combination of decaying ($e^{-\alpha x}$) and growing ($e^{\alpha x}$) exponential functions. This describes the **evanescent wave** within the barrier. Classically, the particle is forbidden here.
+    *   Represents a combination of decaying ($e^{-\alpha x}$) and growing ($e^{\alpha x}$) exponential functions. This describes the **evanescent wave** within the barrier. Classically, the particle is forbidden here. No real wavelength in this region.
 3.  **Region III ($x>L, V=0$)**: $\psi_3(x) = H e^{ik_1 x}$.
-    *   Represents only a transmitted wave moving away from the barrier. The wave function is **oscillatory** again, with the same wavelength as the incident wave (since potential is $0$) but generally a much smaller amplitude ($|H| < |A|$).
+    *   Represents only a transmitted wave moving away from the barrier. The wave function is **oscillatory** again, with the same wavelength as the incident wave ($\lambda_1 = h/(\hbar k_1)$, since potential is $0$) but generally a much smaller amplitude ($|H| < |A|$).
 
-Applying boundary conditions (continuity of $\psi$ and $\psi'$) at $x=0$ and $x=L$ allows solving for the coefficients, particularly H (transmitted amplitude).
+**Boundary Conditions for a Finite Potential Barrier:**
+At each interface ($x=0$ and $x=L$), the following conditions must be met for the wave function to be physically acceptable:
+1.  **Continuity of the wave function ($\psi(x)$)**: The value of the wave function must be the same on both sides of the interface. (e.g., $\psi_1(0) = \psi_2(0)$ and $\psi_2(L) = \psi_3(L)$).
+2.  **Continuity of the first derivative of the wave function ($\psi'(x)$)**: The slope of the wave function must be the same on both sides of the interface. (e.g., $\psi_1'(0) = \psi_2'(0)$ and $\psi_2'(L) = \psi_3'(L)$).
 
 **Quantum Tunneling:**
 Unlike classical mechanics, quantum mechanics predicts a non-zero probability for the particle to appear in Region III, even though its total energy $E$ is less than the barrier height $V_0$. This extraordinary phenomenon is called **tunneling**.
@@ -100,131 +106,160 @@ $$T \propto e^{-2\alpha L} = \exp\left(-2L \frac{\sqrt{2m(V_0-E)}}{\hbar}\right)
 
 *(See Example 3 and Example 10 in the [Examples](Examples.md) file. See Q&A 5-8 in the [Q&A](Q&A.md) file for wave function interpretation, mass dependence, and lifetime calculation.)*
 
-### **2.1 Multiple Potential Step / Barrier**
-
+### **2.1 Multiple Potential Step / Barrier** **(Self-Study Topic)**
 Instead of a single potential barrier, a particle may encounter a series of potential steps or multiple barriers. The analysis for such systems extends the concepts used for a single step/barrier.
 
-*   **Regions and Boundary Conditions**: The space is divided into multiple regions, each with a constant potential. The Schrödinger equation is solved for each region, and the solutions are matched at every interface by ensuring the continuity of the wave function ($\psi$) and its first derivative ($\psi'$).
-*   **Transfer Matrix Method**: For multiple steps or barriers, a common and systematic approach is the transfer matrix method. A $2 \times 2$ transfer matrix is associated with each interface (matching boundary conditions) and each propagation region (describing wave propagation). The overall transmission and reflection coefficients for the entire structure are obtained by multiplying these matrices.
-*   **Resonance Phenomena**: When a particle encounters multiple barriers, resonance tunneling can occur. If the incoming particle's energy matches certain "quasi-bound" energy levels within the wells formed between the barriers, the transmission probability can significantly increase, sometimes even reaching unity (perfect transmission). This is analogous to a Fabry-Pérot interferometer in optics.
-*   **Applications**: Superlattices (periodic arrangements of semiconductor layers), quantum cascade lasers, artificial atomic structures.
+*   **Regions and Boundary Conditions**: The space is divided into precisely defined regions, each with a constant potential. The Schrödinger equation is solved for each region, and the solutions are matched at every interface by ensuring the continuity of the wave function ($\psi$) and its first derivative ($\psi'$).
+*   **Transfer Matrix Method**: For multiple steps or barriers, a common and systematic approach is the transfer matrix method. A $2 \times 2$ transfer matrix is associated with each interface (matching boundary conditions) and each propagation region (describing wave propagation). The overall transmission and reflection coefficients for the entire structure are obtained by multiplying these matrices. This method simplifies complex multilayer calculations.
+*   **Resonance Phenomena**: When a particle encounters multiple barriers (forming one or more wells between them), resonance tunneling can occur. If the incoming particle's energy matches certain specific "quasi-bound" energy levels within the wells formed between the barriers, the transmission probability can significantly increase, sometimes even reaching unity (perfect transmission). This is analogous to a Fabry-Pérot interferometer in optics and results from constructive interference of waves reflecting within the wells.
+*   **Applications**: Superlattices (periodic arrangements of semiconductor layers), quantum cascade lasers, artificial atomic structures (quantum dots).
 
-### **2.2 Josephson Quantum Tunneling**
+### **2.2 Josephson Quantum Tunneling** **(Self-Study Topic)**
+Josephson quantum tunneling is a fascinating macroscopic quantum phenomenon involving the tunneling of **superconducting Cooper pairs** (pairs of electrons bound together below a critical temperature) through a thin insulating barrier separating two superconductors. This is distinct from single-particle electron tunneling.
 
-Josephson quantum tunneling is a fascinating macroscopic quantum phenomenon involving the tunneling of **superconducting Cooper pairs** (pairs of electrons bound together) through a thin insulating barrier separating two superconductors. This is distinct from single-particle electron tunneling.
-
-*   **Josephson Junction**: The device consists of two superconductors separated by a very thin insulating layer (typically 1-2 nm thick). This barrier is thin enough to allow quantum tunneling.
+*   **Josephson Junction**: The device consists of two superconductors separated by a very thin insulating layer (typically 1-2 nm thick). This insulating barrier is thin enough to allow quantum tunneling of Cooper pairs.
 *   **Two Key Effects**:
     1.  **DC Josephson Effect**: A supercurrent (a current of Cooper pairs) can flow across the junction even in the absence of any applied voltage. This current depends on the phase difference ($\Delta\phi$) between the macroscopic wave functions of the two superconductors: $I = I_c \sin(\Delta\phi)$, where $I_c$ is the critical current.
-    2.  **AC Josephson Effect**: If a constant voltage $V$ is applied across the junction, the phase difference across the junction evolves linearly with time, $\Delta\phi(t) = \Delta\phi_0 + (2eV/\hbar)t$. This leads to an oscillating supercurrent, $I = I_c \sin(\Delta\phi_0 + (2eV/\hbar)t)$, at a frequency $f = 2eV/h$. This effect allows precise measurement of $e/h$.
+    2.  **AC Josephson Effect**: If a constant voltage $V$ is applied across the junction, the phase difference across the junction evolves linearly with time, $\Delta\phi(t) = \Delta\phi_0 + (2eV/\hbar)t$. This leads to an oscillating supercurrent, $I = I_c \sin(\Delta\phi_0 + (2eV/\hbar)t)$, at a frequency $f = 2eV/h$. This effect allows precise measurement of the fundamental constant ratio $e/h$.
 *   **Applications**:
     *   **SQUIDs (Superconducting Quantum Interference Devices)**: Extremely sensitive magnetometers used in medical imaging (MEG, MRI), geophysical surveys, and fundamental physics research.
     *   **Voltage Standards**: The AC Josephson effect forms the basis for the international voltage standard.
-    *   **Quantum Computing**: Josephson junctions are explored as qubits (superconducting qubits) due to their macroscopic quantum coherence.
+    *   **Quantum Computing**: Josephson junctions are explored as superconducting qubits due to their macroscopic quantum coherence properties and non-linear inductive behavior necessary for qubit operation.
 
 ---
 ## 3. Particle in a Box (Infinite Potential Well)
 
-A particle of mass $m$ is confined to a 1D region (e.g., $0 < x < L$) where $V=0$, with infinitely high potential walls ($V=\infty$) at the boundaries. This means the particle cannot exist outside the box or at its walls.
+A particle of mass $m$ is confined to a 1D region (e.g., $0 < x < L$) where $V=0$, with infinitely high potential walls ($V=\infty$) at the boundaries. This means the particle cannot exist outside the box or at its walls, so $\psi=0$ at $x=0$ and $x=L$.
 
 Inside the well ($V=0$): The 1D time-independent SWE is $\frac{d^{2}\psi}{dx^{2}}+k^{2}\psi=0$, where $k=\sqrt{2mE/\hbar^2}$.
 General solution: $\psi(x) = A \sin(kx) + B \cos(kx)$.
 
-**Boundary Conditions:**
+**Boundary Conditions and Eigenfunctions:**
 1.  Since $\psi$ must be zero at the walls (infinite potential):
     *   $\psi(0)=0 \implies A \sin(0) + B \cos(0) = 0 \implies B=0$.
     *   The solution simplifies to $\psi(x) = A \sin(kx)$.
 2.  Now apply the second boundary condition:
-    *   $\psi(L)=0 \implies A \sin(kL)=0$. Since $A$ cannot be zero (otherwise $\psi=0$ everywhere, implying no particle exists), we must have $\sin(kL)=0$.
-    *   This implies $kL=n\pi$, where $n$ is an integer.
-    *   $k = \frac{n\pi}{L}$.
-    *   We take $n=1, 2, 3, \dots$.
-        *   $n=0$ gives $k=0$, which means $\psi(x)=0$ everywhere (no particle).
-        *   Negative values of $n$ (e.g., $n=-1$) give the same physical wave function as positive values (e.g., $n=1$), just with a sign change of the overall amplitude A, which is absorbed into the normalization constant.
+    *   $\psi(L)=0 \implies A \sin(kL)=0$. Since $A \neq 0$ (otherwise no particle), we must have $\sin(kL)=0$.
+    *   This implies $kL=n\pi$, where $n$ is a positive integer ($n=1, 2, 3, \dots$).
+    *   $k_n = \frac{n\pi}{L}$.
+    *   **Normalized Wave Functions (Eigenfunctions):** Using $\int_0^L |\psi_n(x)|^2 dx = 1$, we find $A = \sqrt{2/L}$.
+        $$\psi_n(x) = \sqrt{\frac{2}{L}} \sin\left(\frac{n\pi x}{L}\right)$$
 
 **Quantized Energy Levels (Eigenvalues):**
-Substituting $k = n\pi/L$ into the expression for $k$:
-$\frac{n^2\pi^2}{L^2} = \frac{2mE_n}{\hbar^2} = \frac{2mE_n}{(h/2\pi)^2} = \frac{8m\pi^2 E_n}{h^2}$.
+Substituting $k_n = n\pi/L$ into the expression for $k$:
+$\frac{n^2\pi^2}{L^2} = \frac{2mE_n}{\hbar^2} = \frac{8m\pi^2 E_n}{h^2}$.
 Solving for $E_n$:
 $$E_n = \frac{n^2 h^2}{8mL^2} \quad (n=1, 2, 3, \dots)$$
-*   This shows that the energy of the particle is **quantized**; only discrete values are allowed.
+*   **Quantization**: Energy is quantized; only discrete values are allowed.
 *   $n$ is the **principal quantum number**.
-*   **Zero-Point Energy**: The lowest possible energy (for $n=1$) is $E_1 = h^2 / (8mL^2)$, which is non-zero. This is called the **zero-point energy**.
-    *   **Physical Significance of Zero-Point Energy**: The particle cannot have zero energy ($E=0$) because this would imply it is perfectly at rest ($p=0$) and its position is precisely known (within the box). This would violate the **Heisenberg Uncertainty Principle** ($\Delta x \Delta p \ge \hbar/2$), which dictates a minimum uncertainty in both position and momentum. Thus, the particle must always have some minimum motion/energy.
+*   **Zero-Point Energy ($E_1$)**: The lowest possible energy is $E_1 = h^2 / (8mL^2)$, which is non-zero. This is dictated by the Heisenberg Uncertainty Principle.
+*   **No Degeneracy (1D)**: For a 1D infinite potential well, each energy level $E_n$ corresponds to a unique set of quantum numbers (just $n$), thus there is **no degeneracy**.
 
-**Normalized Wave Functions (Eigenfunctions):**
-Using the normalization condition $\int_0^L |\psi_n(x)|^2 dx = 1$:
-$\int_0^L A^2 \sin^2(\frac{n\pi x}{L}) dx = A^2 \frac{L}{2} = 1 \implies A = \sqrt{2/L}$.
-$$\psi_n(x) = \sqrt{\frac{2}{L}} \sin\left(\frac{n\pi x}{L}\right)$$
+### **Sketching Eigenfunctions and Probability Distributions (x=0 to x=a)**
+**(i) For the well extending from $x=0$ to $x=a$ (i.e., $L=a$):**
+Wavefunctions: $\psi_n(x) = \sqrt{\frac{2}{a}} \sin\left(\frac{n\pi x}{a}\right)$
+Probability Distributions: $P_n(x) = |\psi_n(x)|^2 = \frac{2}{a} \sin^2\left(\frac{n\pi x}{a}\right)$
 
-**Symmetric Well (from $-a/2$ to $+a/2$):**
-If the boundaries are at $x=\pm a/2$, the length of the well is $L=a$. The energy formula remains the same $E_n = \frac{n^2 h^2}{8ma^2}$. The wave functions, however, can be chosen to have definite parity:
-*   **Even Parity Functions**: For $n=1, 3, 5, \dots$
+*   **n=1 (Ground State):**
+    *   $\psi_1(x)$: Starts at 0, goes positive, ends at 0. (One half-wave)
+    *   $P_1(x)$: Single peak in the center. Electron most likely to be found at midpoint. (No nodes between boundaries)
+*   **n=2 (First Excited State):**
+    *   $\psi_2(x)$: Starts at 0, positive, then negative, ends at 0. (One full wave)
+    *   $P_2(x)$: Two peaks, zero probability at midpoint. (One node at $x=a/2$)
+*   **n=3 (Second Excited State):**
+    *   $\psi_3(x)$: Starts at 0, pos, neg, pos, ends at 0. (One and a half waves)
+    *   $P_3(x)$: Three peaks, two zero-probability points. (Two nodes at $x=a/3, 2a/3$)
+*   **n=4 (Third Excited State):**
+    *   $\psi_4(x)$: Starts at 0, pos, neg, pos, neg, ends at 0. (Two full waves)
+    *   $P_4(x)$: Four peaks, three zero-probability points. (Three nodes at $x=a/4, a/2, 3a/4$)
+
+*(General Notes: $\psi_n(x)$ has $n-1$ nodes in $0 < x < a$. $P_n(x)$ has $n$ peaks and $n-1$ nodes in $0 < x < a$.)*
+
+### **Symmetric Well (from $-a/2$ to $+a/2$)**
+(i) For the well extending from $x=-a/2$ to $x=+a/2$ (i.e., $L=a$):
+The energy formula remains the same: $E_n = \frac{n^2 h^2}{8ma^2}$.
+The wave functions can be chosen to have definite parity (symmetric or antisymmetric).
+*   **Even Parity Wave Functions**: For $n=1, 3, 5, \dots$
     $$\psi_n(x) = \sqrt{\frac{2}{a}} \cos\left(\frac{n\pi x}{a}\right)$$
-*   **Odd Parity Functions**: For $n=2, 4, 6, \dots$
+*   **Odd Parity Wave Functions**: For $n=2, 4, 6, \dots$
     $$\psi_n(x) = \sqrt{\frac{2}{a}} \sin\left(\frac{n\pi x}{a}\right)$$
     **Parity**: Describes the symmetry of a wave function under inversion ($x \to -x$). It is applicable when the potential $V(x)$ is symmetric ($V(-x)=V(x)$).
     *   Even parity: $\psi(-x) = +\psi(x)$.
     *   Odd parity: $\psi(-x) = -\psi(x)$.
 
-**Probability Density:** $P_n(x) = |\psi_n(x)|^2$.
-*   For $n=1$ (ground state): $P_1(x) = \frac{2}{L} \sin^2(\frac{\pi x}{L})$. Has a single peak at the center ($x=L/2$).
-*   For $n=2$ (first excited state): $P_2(x) = \frac{2}{L} \sin^2(\frac{2\pi x}{L})$. Has two peaks (at $L/4, 3L/4$) and a zero probability at the center ($x=L/2$).
-*   For $n=3$ (second excited state): $P_3(x) = \frac{2}{L} \sin^2(\frac{3\pi x}{L})$. Has three peaks and two internal nodes ($x=L/3, 2L/3$).
-*   Generally, the $n^{th}$ state has $n$ antinodes (peaks of probability) and $n-1$ internal nodes.
+### **Sketching Eigenfunctions and Probability Distributions (x=-a/2 to x=a/2)**
+
+*   **n=1 (Ground State - Even):**
+    *   $\psi_1(x)$: Cosine-like, symmetric with maximum at $x=0$.
+    *   $P_1(x)$: Single peak at $x=0$, symmetric.
+*   **n=2 (First Excited State - Odd):**
+    *   $\psi_2(x)$: Sine-like, antisymmetric, zero at $x=0$.
+    *   $P_2(x)$: Two peaks, one node at $x=0$, symmetric around origin.
+*   **n=3 (Second Excited State - Even):**
+    *   $\psi_3(x)$: Cosine-like with two nodes, symmetric.
+    *   $P_3(x)$: Three peaks, two nodes, symmetric around origin.
+*   **n=4 (Third Excited State - Odd):**
+    *   $\psi_4(x)$: Sine-like with three nodes, antisymmetric.
+    *   $P_4(x)$: Four peaks, three nodes, symmetric around origin.
+
+*(General Notes: $\psi_n(x)$ for symmetric well has $n-1$ nodes in $-a/2 < x < a/2$. $P_n(x)$ has $n$ peaks and $n-1$ nodes in $-a/2 < x < a/2$.)*
 
 *(See Example 4, Example 5, Example 6, Example 7 in the [Examples](Examples.md) file for energy and probability calculations. See Q&A 9-14 in the [Q&A](Q&A.md) file for quantization, zero-point energy, parity, wave functions, and probability plots.)*
 
-### Particle in 2D/3D Box
+### Particle in 2D/3D Box and Degeneracy
 
 The concept extends to higher dimensions. The Hamiltonian operator separates into independent components for each dimension, allowing the SWE to be solved using separation of variables.
 
+*   **1D Infinite Potential Well (No Degeneracy)**: In one dimension, energy levels $E_n = \frac{n^2 h^2}{8mL^2}$ are uniquely determined by a single quantum number $n$. Different $n$ values always lead to different energies. Hence, there is **no degeneracy** in a 1D infinite well.
 *   **2D Box (LxL square well):**
     *   Energy: $$E_{n_x, n_y} = \frac{h^2}{8mL^2} (n_x^2 + n_y^2), \quad n_x, n_y = 1, 2, \dots$$
     *   Wave function: $$\psi_{n_x, n_y}(x,y) = \frac{2}{L} \sin\left(\frac{n_x \pi x}{L}\right) \sin\left(\frac{n_y \pi y}{L}\right)$$
+    **Degeneracy (2D)**: Degeneracy occurs when different combinations of quantum numbers $(n_x, n_y)$ (e.g., $(1,2)$ vs $(2,1)$) lead to the same energy eigenvalue. For example, $E_{1,2} = E_{2,1} = \frac{h^2}{8mL^2}(1^2+2^2) = \frac{5h^2}{8mL^2}$. This state is **two-fold degenerate**.
 *   **3D Box (LxLxL cubic well):**
     *   Energy: $$E_{n_x, n_y, n_z} = \frac{h^2}{8mL^2} (n_x^2 + n_y^2 + n_z^2), \quad n_x, n_y, n_z = 1, 2, \dots$$
     *   Wave function: $$\psi_{n_x, n_y, n_z}(x,y,z) = \left(\frac{2}{L}\right)^{3/2} \sin\left(\frac{n_x \pi x}{L}\right) \sin\left(\frac{n_y \pi y}{L}\right) \sin\left(\frac{n_z \pi z}{L}\right)$$
-
-**Degeneracy:** Occurs when different combinations of quantum numbers lead to the same energy level.
-*   1D Infinite well: No degeneracy.
-*   2D Square well: Degeneracy occurs when $n_x \neq n_y$ (e.g., $E_{1,2} = E_{2,1}$). This is **two-fold degenerate**.
-*   3D Cubic well: Degeneracy is common due to permutations (e.g., $E_{1,1,2} = E_{1,2,1} = E_{2,1,1}$ is **three-fold degenerate**, and other states can have higher degeneracy).
+    **Degeneracy (3D)**: Degeneracy is common due to permutations. For example, $E_{1,1,2} = E_{1,2,1} = E_{2,1,1} = \frac{h^2}{8mL^2}(1^2+1^2+2^2) = \frac{6h^2}{8mL^2}$. This state is **three-fold degenerate**. Other states can have higher degeneracy depending on the value of $n_x^2+n_y^2+n_z^2$.
 
 *(See Q&A 15-18 in the [Q&A](Q&A.md) file for 2D/3D calculations and degeneracy.)*
 
 ---
 ## 4. Finite Potential Well (Qualitative)
 
-The finite potential well has $V(x)=0$ for $-L/2 < x < L/2$, and $V(x)=V_0$ (finite, non-infinite) for $|x|>L/2$. We usually consider $E < V_0$ for bound states.
+The finite potential well has $V(x)=0$ for $-L/2 < x < L/2$, and $V(x)=V_0$ (finite, non-infinite) for $|x|>L/2$. We usually consider $E < V_0$ for bound states and $E \ge V_0$ for scattering states.
 
 *   **Regions**:
     *   Inside the well ($-L/2 < x < L/2$, $V=0$): SWE leads to oscillatory solutions (sines and cosines).
-    *   Outside the well ($|x|>L/2$, $V=V_0$): SWE leads to exponentially decaying solutions ($\psi \propto e^{-\alpha |x|}$), similar to the $E<V_0$ case for the potential step.
+    *   Outside the well ($|x|>L/2$, $V=V_0$):
+        *   **Bound States ($E < V_0$)**: SWE leads to exponentially decaying solutions ($\psi \propto e^{-\alpha |x|}$), similar to the $E<V_0$ case for the potential step. These are confined within or near the well.
+        *   **Scattering States ($E \ge V_0$)**: SWE leads to oscillatory solutions even outside the well. These describe particles that can pass over the well.
 
-**Key Differences from Infinite Well:**
-1.  **Wave Function Penetration**: Unlike the infinite well, the wave function does not drop to zero at the boundaries of the finite well. Instead, it penetrates into the classically forbidden regions ($|x|>L/2$), decaying exponentially, but remaining non-zero. This effectively makes the "volume" occupied by the particle larger.
+**Key Differences from Infinite Well (for Bound States):**
+1.  **Wave Function Penetration**: Unlike the infinite well, the wave function does not drop to zero at the boundaries of the finite well. Instead, it penetrates into the classically forbidden regions ($|x|>L/2$), decaying exponentially. This means there's a non-zero probability of finding the particle *outside* the well.
 2.  **Boundary Conditions**: The requirement that both $\psi(x)$ and its derivative $\psi'(x)$ must be continuous at the well boundaries ($x=\pm L/2$).
 3.  **Energy Levels**:
-    *   The allowed energy levels $E_n$ for a finite potential well are **lower** than the corresponding energy levels for an infinite potential well of the same width $L$. This is because the wave function penetration effectively increases the size of the region over which the particle is spread, and by $E_n \propto 1/L_{eff}^2$, a larger effective length leads to lower energy.
-    *   The number of **bound states** ($E_n < V_0$) in a finite well is **finite**. There is always at least one bound state, regardless of $V_0$ and $L$.
-4.  **Mathematical Solution Process (Outline)**:
+    *   The allowed energy levels $E_n$ for a finite potential well are always **lower** than the corresponding energy levels for an infinite potential well of the same width $L$. This is because the wave function penetration effectively increases the effective size of the region over which the particle is spread, and $E_n \propto 1/L_{eff}^2$.
+    *   The number of **bound states** ($E_n < V_0$) in a finite well is **finite**. There is always at least one bound state, regardless of $V_0$ and $L$. The number of bound states increases with well depth ($V_0$) and width ($L$).
+4.  **Mathematical Solution Process (Outline for Bound States)**:
     *   **Define Regions and Potentials**: Split space into regions with uniform potential.
-    *   **Write SWE for each region**: Obtain solutions in terms of sines/cosines (inside) and real exponentials (outside).
+    *   **Write SWE for each region**: Obtain oscillatory solutions (inside) and real exponentials (outside, decaying).
     *   **Apply Boundary Conditions**: At each interface, enforce continuity of the wave function and its first derivative. Also, require outside solutions to decay to zero ($\psi \to 0$ as $|x|\to\infty$).
-    *   **Derive Transcendental Equations**: The boundary conditions lead to a system of equations. Solving these results in **transcendental equations** (equations involving both algebraic and trigonometric/hyperbolic terms) for the allowed energy values. E.g., for even states: $\alpha = k \tan(kL/2)$ and for odd states: $\alpha = -k \cot(kL/2)$.
+    *   **Derive Transcendental Conditions**: The boundary conditions lead to a system of equations. Solving these results in **transcendental equations** (equations involving both algebraic and trigonometric/hyperbolic terms) for the allowed energy values. E.g., for even states: $\alpha = k \tan(kL/2)$ and for odd states: $\alpha = -k \cot(kL/2)$.
     *   **Solve for Eigenvalues**: These transcendental equations must be solved graphically or numerically to find the discrete, quantized energy eigenvalues $E_n$.
     *   **Determine Eigenfunctions**: Substitute the found energy eigenvalues back into the general solutions and boundary conditions to determine the constants and obtain the complete wave functions $\psi_n(x)$, which are then normalized.
 
+### **Sketching Probability Density Distributions (Infinite vs. Finite Well)**
+**Characteristics:**
+*   **Infinite Well**: Probability density $P_n(x) = |\psi_n(x)|^2$ is strictly zero outside the well and drops sharply to zero at the boundaries. The number of peaks and nodes follow the $n$ quantum number.
+*   **Finite Well**: $P_n(x)$ is non-zero outside the well, decaying exponentially into the classically forbidden regions (penetration). The wave function is "less confined" and the peaks are somewhat broadened compared to the infinite well, reflecting the lower energy levels. Nodes still occur consistent with $n$.
+
 *(See Q&A 19-20 in the [Q&A](Q&A.md) file for comparison and solution outline.)*
 
-### **4.1 Double Potential Well**
-
+### **4.1 Double Potential Well** **(Self-Study Topic)**
 A double potential well consists of two finite potential wells separated by a finite potential barrier. This system introduces significant quantum effects not seen in single wells.
 
-*   **Symmetry and Energy States**: If the two wells are identical, the potential $V(x)$ is symmetric. This leads to energy eigenstates that can be classified by their parity (even or odd). For each energy level of a single isolated well, the double well typically produces two closely spaced energy levels (a **doublet**): one even parity and one odd parity state.
+*   **Symmetry and Energy States**: If the two wells are identical, the potential $V(x)$ is symmetric. This leads to energy eigenstates that can be classified by their parity (even or odd). For each energy level of a single isolated well, the double well typically produces two closely spaced energy levels (a **doublet**): one even parity (symmetric combination) and one odd parity state (antisymmetric combination).
 *   **Tunneling between Wells**: Due to quantum tunneling, a particle initially localized in one well has a non-zero probability of tunneling through the central barrier to the other well, even if its energy is below the barrier height. This leads to energy level splitting and the formation of symmetric and antisymmetric combinations of single-well states.
-*   **Coherent Oscillations (Tunneling) **: If a particle is prepared in a state localized within one well, it will coherently oscillate between the two wells at a characteristic **tunneling frequency**, determined by the energy splitting of the doublet states.
+*   **Coherent Oscillations (Tunneling) **: If a particle is prepared in a state initially localized within one well, it will coherently oscillate between the two wells at a characteristic **tunneling frequency**, determined by the energy splitting of the doublet states.
 *   **Applications**:
     *   **Molecular Vibrations**: Ammonia ($NH_3$) inversion is a classic example, where the nitrogen atom tunnels between two equivalent potential minima.
     *   **Quantum Dots / Artificial Atoms**: Double quantum dots can be used to study tunneling and coherent coupling, relevant for quantum computing.
@@ -240,31 +275,26 @@ The quantum harmonic oscillator models systems where a particle (mass $m$) exper
 *   **Vibrations of Atoms in a Crystal Lattice**: Atoms in a solid oscillate around their equilibrium positions, which can be modeled as coupled harmonic oscillators.
 *   **Quantum Fields**: Fundamental fields in quantum field theory can be viewed as collections of harmonic oscillators.
 
-**Time-Independent SWE for QHO**:
-$$\frac{d^{2}\psi}{dx^{2}}+\frac{2m}{\hbar^{2}}\left(E-\frac{1}{2}m\omega^{2}x^{2}\right)\psi=0$$
-
-**Quantized Energy Levels (Eigenvalues):**
-Solutions to the SWE for the QHO exist only for discrete energy values:
-$$E_n = \left(n+\frac{1}{2}\right) \hbar \omega \quad (n=0, 1, 2, \dots)$$
-*   $n$ is the **vibrational quantum number**.
-*   **Zero-Point Energy ($n=0$)**: $E_0 = \frac{1}{2} \hbar \omega$. This is the minimum possible energy the QHO can have, even at absolute zero temperature.
-    *   **Physical Significance of Zero-Point Energy**: It's a direct consequence of the **Heisenberg Uncertainty Principle**. If the QHO had zero energy, it would be stationary at $x=0$ with zero momentum, implying exact knowledge of both position and momentum, which is forbidden by the uncertainty principle. The zero-point energy signifies the unavoidable, residual quantum fluctuations in position and momentum.
-*   **Equal Spacing**: The energy levels are **equally spaced**, with the separation between adjacent levels being constant: $\Delta E = E_{n+1} - E_n = \hbar \omega$.
+### **Potential Energy Curve and Energy Spectrum**
+*   **Potential Energy Curve**: A parabolic shape centered at $x=0$, $V(x) = \frac{1}{2} m \omega^2 x^2$.
+    *(Sketch: A symmetric parabola opening upwards, with the bottom at $V=0, x=0$.)*
+*   **Quantized Energy Levels (Eigenvalues):** Solutions to the SWE exist only for discrete energy values:
+    $$E_n = \left(n+\frac{1}{2}\right) \hbar \omega \quad (n=0, 1, 2, \dots)$$
+    *   $n$ is the **vibrational quantum number**.
+    *   **Zero-Point Energy ($n=0$)**: $E_0 = \frac{1}{2} \hbar \omega$. This is the minimum possible energy the QHO can have, even at absolute zero temperature.
+        *   **Physical Significance of Zero-Point Energy**: It's a direct consequence of the **Heisenberg Uncertainty Principle**. If the QHO had zero energy, it would be stationary at $x=0$ with zero momentum, implying exact knowledge of both position and momentum, which is forbidden by the uncertainty principle. The zero-point energy signifies the unavoidable, residual quantum fluctuations in position and momentum.
+    *   **Equal Spacing**: The energy levels are **equally spaced**, with the separation between adjacent levels being constant: $\Delta E = E_{n+1} - E_n = \hbar \omega$.
+    *(Sketch: Horizontal lines representing $E_0, E_1, E_2, \dots$ symmetrically spaced on the potential curve, extending out to the classical turning points where the energy line intersects the parabola.)*
 
 **Wave Functions (Eigenfunctions):**
 The solutions involve **Hermite polynomials** $H_n(\xi)$ and a Gaussian exponential term:
 $$\psi_n(x) = N_n H_n(\gamma x) e^{-\frac{1}{2}(\gamma x)^2}$$
 where $\gamma = \sqrt{m\omega/\hbar}$, $\xi = \gamma x$, and $N_n$ is a normalization constant.
-*   **Hermite Polynomials ($H_n(\xi)$)**: These are a set of orthogonal polynomials that are solutions to Hermite's differential equation. They determine the number of nodes in the wave function.
-    *   $H_0(\xi)=1$
-    *   $H_1(\xi)=2\xi$
-    *   $H_2(\xi)=4\xi^2-2$
-    *   $H_3(\xi)=8\xi^3-12\xi$
-    *   Hermite polynomials exhibit definite parity: $H_n(-\xi) = (-1)^n H_n(\xi)$ (even for even $n$, odd for odd $n$).
-*   The ground state ($n=0$) wave function is a simple Gaussian function (no nodes). Higher states have $n$ nodes.
+*   **Hermite Polynomials ($H_n(\xi)$)**: These determine the number of nodes in the wave function.
+    *   $H_0(\xi)=1$ (Ground state, no nodes)
+    *   $H_1(\xi)=2\xi$ (First excited state, one node at $\xi=0$)
+    *   $H_n(-\xi) = (-1)^n H_n(\xi)$ (definite parity).
 *   **Penetration**: The wave functions extend beyond the classical turning points (where $E=V(x)$), indicating a non-zero probability of finding the particle in the classically forbidden region.
-
-*(See Q&A 21-25 in the [Q&A](Q&A.md) file for physical examples, Hermite polynomials, zero-point energy significance, and wave function expressions.)*
 
 **Comparison: Classical vs. Quantum Harmonic Oscillator:**
 | Feature                 | Classical Harmonic Oscillator                                 | Quantum Harmonic Oscillator                                  |
@@ -276,41 +306,65 @@ where $\gamma = \sqrt{m\omega/\hbar}$, $\xi = \gamma x$, and $N_n$ is a normaliz
 
 ### Anharmonic Oscillator
 
-Real physical systems (like molecular vibrations) are not perfectly harmonic. Their potential energy function deviates from the ideal quadratic form ($\frac{1}{2}m\omega^2 x^2$) due to higher-order terms (e.g., $x^3, x^4$). This is known as **anharmonicity**.
+Real physical systems (like molecular vibrations) are not perfectly harmonic. Their potential energy function deviates from the ideal quadratic form ($V(x) = \frac{1}{2}m\omega^2 x^2$) due to higher-order terms (e.g., $x^3, x^4$). This is known as **anharmonicity**.
 
 *   **Unequal Energy Spacing**: Unlike the QHO, the energy levels of an anharmonic oscillator are **not equally spaced**. Typically, the spacing between adjacent levels **decreases** as the vibrational quantum number $n$ increases ($E_{n+1}-E_n < E_n-E_{n-1}$).
 *   **Dissociation**: At sufficiently high energies, the potential leads to dissociation (e.g., a molecule breaks apart).
-*   **Significance**: Anharmonicity is important in spectroscopy (explaining selection rules and overtones) and in quantum information science (allowing selective addressing of specific energy transitions for qubits).
+*   **Significance**: Anharmonicity is important in spectroscopy (explaining selection rules and overtones) and in quantum information science.
+*   **Probability Density Modification**: In an anharmonic oscillator, the probability density distributions $|\psi(x)|^2$ are modified compared to the harmonic case. They tend to be **asymmetrically shifted** away from the center ($x=0$) towards regions where the potential is less steep, especially for higher energy states. They may also show slightly different peak shapes and nodes.
 
-*(See Q&A 26 in the [Q&A](Q&A.md) file for differences in energy level spacing.)*
+#### **Why a Purely Harmonic Oscillator Cannot Serve as a Qubit**
+A qubit requires two distinct and addressable quantum states (e.g., $|0\rangle$ and $|1\rangle$). For effective manipulation and readout, it is crucial that these two states can be individually controlled without inadvertently affecting higher energy states.
+*   In a **purely harmonic oscillator**, all energy levels are **equally spaced** ($E_{n+1} - E_n = \hbar\omega$).
+*   If you attempt to drive a transition from $|0\rangle$ to $|1\rangle$ using an electromagnetic pulse of frequency $\omega = (E_1-E_0)/\hbar$, this same pulse frequency would also drive transitions from $|1\rangle$ to $|2\rangle$ (since $E_2-E_1 = \hbar\omega$), from $|2\rangle$ to $|3\rangle$, and so on.
+*   This equal spacing means you cannot selectively address only the $|0\rangle \to |1\rangle$ transition. The control pulse would simultaneously excite higher states, leading to signal leakage and errors, making the system unsuitable for reliable qubit operation.
+*   **Anharmonicity is essential for qubits** because it makes the energy level spacing non-uniform, allowing for selective control of specific transitions (e.g., $|0\rangle \to |1\rangle$) without disturbing others (e.g., $|1\rangle \to |2\rangle$). This is how superconducting qubits (like the transmon) utilize engineered anharmonicity.
 
 ---
 ## 6. Hydrogen Atom (Qualitative)
 
 The hydrogen atom, with one proton and one electron, is the simplest atom and serves as a fundamental model in quantum mechanics. The force between the electron and proton is the spherically symmetric Coulomb attraction, so the potential energy is $V(r) = -\frac{e^2}{4\pi\epsilon_0 r}$.
 
-**Solving the Schrödinger Equation**:
-*   The spherical symmetry of the potential makes it challenging to solve the SWE in Cartesian coordinates $(x,y,z)$.
-*   It is **necessary to use spherical polar coordinates $(r, \theta, \phi)$**. This is because the Laplacian operator, $\nabla^2$, can be separated into parts depending only on $r$, $\theta$, and $\phi$ when $V$ depends only on $r$.
-*   Using **separation of variables**: The wave function can be expressed as a product of three independent functions: $\psi(r, \theta, \phi) = R(r) \Theta(\theta) \Phi(\phi)$.
+**Schrödinger Equation in Spherical Coordinates**:
+*   Due to the spherical symmetry of the Coulomb potential, the SWE is typically solved using **spherical polar coordinates $(r, \theta, \phi)$**.
+*   The non-relativistic time-independent Schrödinger equation for the hydrogen atom in spherical coordinates is:
+    $$-\frac{\hbar^2}{2\mu}\left[ \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial\psi}{\partial r}\right) + \frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial\psi}{\partial\theta}\right) + \frac{1}{r^2\sin^2\theta}\frac{\partial^2\psi}{\partial\phi^2} \right] - \frac{e^2}{4\pi\epsilon_0 r}\psi = E\psi$$
+    (where $\mu$ is the reduced mass of the electron-proton system).
+*   Using **separation of variables**: The wave function can be expressed as a product of three independent functions: $\psi(r, \theta, \phi) = R(r) Y(\theta, \phi) = R(r) \Theta(\theta) \Phi(\phi)$.
 *   Solving the three separated ordinary differential equations naturally leads to the introduction of three **quantum numbers**:
 
-1.  **Principal Quantum Number (n)**: Arises from the radial equation. It determines the **energy level** of the electron.
+1.  **Principal Quantum Number (n)**: Arises from the radial equation. Determines the **energy level** and the overall size of the orbital.
     *   $n = 1, 2, 3, \dots$ (positive integers).
-    *   Energy: $E_n = -\frac{me^4}{8\epsilon_0^2 h^2 n^2} = -\frac{13.6 \, \text{eV}}{n^2}$.
+    *   Energy: $E_n = -\frac{\mu e^4}{8\epsilon_0^2 h^2 n^2} = -\frac{13.6 \, \text{eV}}{n^2}$.
         *   Energy is quantized and negative, indicating a bound state.
-        *   The ground state ($n=1$) has the lowest energy ($E_1 = -13.6$ eV).
-
-2.  **Angular Momentum (Orbital) Quantum Number (l)**: Arises from the polar angle ($\theta$) equation. It determines the **magnitude of the electron's orbital angular momentum** $L = \sqrt{l(l+1)}\hbar$. It primarily describes the **shape** of the electron's probability distribution (orbital).
+        *   Energy depends only on $n$.
+2.  **Angular Momentum (Orbital) Quantum Number (l)**: Arises from the polar angle ($\theta$) equation. Determines the **magnitude of the electron's orbital angular momentum** $L = \sqrt{l(l+1)}\hbar$. It primarily describes the **shape** of the electron's probability distribution (orbital).
     *   $l = 0, 1, 2, \dots, (n-1)$. (Non-negative integer, up to $n-1$).
     *   **Spectroscopic notation**: $l=0 \rightarrow s$ orbital (spherical), $l=1 \rightarrow p$ orbital (dumbbell), $l=2 \rightarrow d$ orbital (cloverleaf), $l=3 \rightarrow f$ orbital, etc.
-
-3.  **Magnetic Quantum Number ($m_l$)**: Arises from the azimuthal angle ($\phi$) equation. It determines the **orientation of the orbital angular momentum** in space (specifically, its z-component $L_z = m_l \hbar$). It determines the spatial orientation of the orbital.
+3.  **Magnetic Quantum Number ($m_l$)**: Arises from the azimuthal angle ($\phi$) equation. Determines the **orientation of the orbital angular momentum** in space (specifically, its z-component $L_z = m_l \hbar$). It defines the spatial orientation of the orbital.
     *   $m_l = -l, -(l-1), \dots, 0, \dots, (l-1), l$. (Integer values, total $2l+1$ values).
 
 **Hydrogen Atom Orbital**:
 An orbital ($\psi_{n,l,m_l}$) is a **mathematical wave function** that is a solution to the Schrödinger equation, characterized by the three quantum numbers $n, l, m_l$.
 *   **Physical Interpretation**: The square of the orbital's magnitude, $|\psi_{n,l,m_l}(r,\theta,\phi)|^2$, represents the **probability density** of finding the electron at a particular point in space around the nucleus. It does *not* represent a fixed path or trajectory. The shapes often depicted for orbitals (spheres, dumbbells) are regions of high probability density (electron clouds).
+
+**Calculation of Ground and First Excited State Energies and Degeneracies:**
+The energy levels are $E_n = -\frac{13.6 \, \text{eV}}{n^2}$. The degeneracy for a given $n$ is $n^2$.
+
+*   **Ground State ($n=1$)**:
+    *   $E_1 = -\frac{13.6 \, \text{eV}}{1^2} = -13.6 \, \text{eV}$.
+    *   Allowed $l$ values: $l=0$ (since $l$ can go from $0$ to $n-1 = 1-1=0$).
+    *   Allowed $m_l$ values: $m_l=0$ (since $m_l$ can go from $-l$ to $l=0$).
+    *   Only one state: $(n,l,m_l) = (1,0,0)$.
+    *   **Degeneracy**: $n^2 = 1^2 = 1$. The ground state is non-degenerate.
+
+*   **First Excited State ($n=2$)**:
+    *   $E_2 = -\frac{13.6 \, \text{eV}}{2^2} = -\frac{13.6 \, \text{eV}}{4} = -3.4 \, \text{eV}$.
+    *   Allowed $l$ values: $l=0, 1$ (since $l$ can go from $0$ to $n-1 = 2-1=1$).
+        *   For $l=0$ (s-orbital): $m_l=0$. (1 state)
+        *   For $l=1$ (p-orbital): $m_l=-1, 0, +1$. (3 states)
+    *   Total states for $n=2$: $1+3=4$ states.
+    *   **Degeneracy**: $n^2 = 2^2 = 4$. The first excited state is four-fold degenerate.
 
 **Stability of the Hydrogen Atom (Quantum Explanation)**:
 Quantum mechanics inherently explains the stability of the hydrogen atom, contrary to classical electromagnetism (which predicts electron spiraling into the nucleus).
@@ -323,7 +377,7 @@ Quantum mechanics inherently explains the stability of the hydrogen atom, contra
 ---
 ## 7. Fermi-Dirac Statistics
 
-Fermi-Dirac statistics describe the statistical distribution of identical, indistinguishable particles with half-integer spin (these are called **fermions**, e.g., electrons, protons, neutrons) over available energy states in thermal equilibrium. A key principle governing fermions is the **Pauli Exclusion Principle**, which states that no two identical fermions can occupy the exact same quantum state (i.e., have the same set of quantum numbers).
+Fermi-Dirac statistics describe the statistical distribution of identical, indistinguishable particles with half-integer spin (**fermions**, e.g., electrons, protons, neutrons) over available energy states in thermal equilibrium. A key principle governing fermions is the **Pauli Exclusion Principle**, which states that no two identical fermions can occupy the exact same quantum state (i.e., have the same set of quantum numbers).
 
 *   **Fermi Energy ($E_f$)**: At absolute zero temperature (0 K), fermions fill up the lowest available energy states. The Fermi energy is the highest energy level occupied by a fermion at 0 K. All states with energy $E < E_f$ are fully occupied, and all states with energy $E > E_f$ are completely empty.
 
@@ -353,7 +407,7 @@ The density of states (DOS), $g(E)$, describes the number of available quantum s
 
 ### Density of States for 3D Free Electrons
 
-For free electrons in a 3D metal (model.ed as particles in a 3D infinite potential box of side L):
+For free electrons in a 3D metal (modeled as particles in a 3D infinite potential box of side L):
 The energy levels are $E = \frac{h^2}{8mL^2}(n_x^2+n_y^2+n_z^2)$.
 1.  **n-Space**: Each set of quantum numbers $(n_x, n_y, n_z)$ (positive integers) represents a unique quantum state. We envision these points in a 3D "n-space".
 2.  **Radius in n-Space**: Define $R = \sqrt{n_x^2+n_y^2+n_z^2}$. From the energy equation, $R^2 = \frac{8mL^2 E}{h^2}$.
