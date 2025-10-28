@@ -19,7 +19,8 @@ SWE: $\frac{d^{2}\psi_1}{dx^{2}}+k_1^{2}\psi_1=0$, where $k_1 = \sqrt{\frac{2mE}
 Solution: $\psi_1(x) = A e^{ik_1 x} + B e^{-ik_1 x}$.
 *   $A e^{ik_1 x}$: Incident wave moving right (amplitude A).
 *   $B e^{-ik_1 x}$: Reflected wave moving left (amplitude B).
-*   **Behavior of wavelength**: The particle's de Broglie wavelength is $\lambda_1 = h/p_1 = h/(\hbar k_1)$.
+*   **Behavior of wavelength**: The particle's de Broglie wavelength is $\lambda_1 = h/p_1 = h/(\hbar k_1)$
+x
 
 **Region II ($x>0, V=V_0$):**
 
@@ -277,7 +278,8 @@ The quantum harmonic oscillator models systems where a particle (mass $m$) exper
 
 ### **Potential Energy Curve and Energy Spectrum**
 *   **Potential Energy Curve**: A parabolic shape centered at $x=0$, $V(x) = \frac{1}{2} m \omega^2 x^2$.
-    *(Sketch: A symmetric parabola opening upwards, with the bottom at $V=0, x=0$.)*
+    *(Sketch: A symmetric parabola opening upwards, with the bottom at $V=0, x=0$.)
+    ![](Core%20Notes-2.png)
 *   **Quantized Energy Levels (Eigenvalues):** Solutions to the SWE exist only for discrete energy values:
     $$E_n = \left(n+\frac{1}{2}\right) \hbar \omega \quad (n=0, 1, 2, \dots)$$
     *   $n$ is the **vibrational quantum number**.
@@ -296,14 +298,15 @@ where $\gamma = \sqrt{m\omega/\hbar}$, $\xi = \gamma x$, and $N_n$ is a normaliz
     *   $H_n(-\xi) = (-1)^n H_n(\xi)$ (definite parity).
 *   **Penetration**: The wave functions extend beyond the classical turning points (where $E=V(x)$), indicating a non-zero probability of finding the particle in the classically forbidden region.
 
-**Comparison: Classical vs. Quantum Harmonic Oscillator:**
-| Feature                 | Classical Harmonic Oscillator                                 | Quantum Harmonic Oscillator                                  |
-| :---------------------- | :------------------------------------------------------------ | :----------------------------------------------------------- |
-| **Energy**              | Can take any continuous non-negative value ($E \ge 0$).        | Is quantized to discrete values $E_n = (n+1/2)\hbar\omega$. |
-| **Minimum Energy**      | Can be zero (particle at rest at equilibrium).                | Is the non-zero zero-point energy $E_0 = \frac{1}{2}\hbar\omega$. The particle is never at rest. |
-| **Energy Spacing**      | Not applicable (continuous).                                | Energy levels are equally spaced: $\Delta E = \hbar\omega$. |
-| **Position Probability**| Spends most time near turning points where speed is lowest. Zero probability beyond turning points. | For $n=0$, max probability at center. For $n>0$, has peaks and nodes. Finite probability of being *beyond* classical turning points (tunneling). |
+# Comparison: Classical vs. Quantum Harmonic Oscillator
 
+|                          |                                                                                                     |                                                                                                                                                  |
+| ------------------------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Feature**              | **Classical Harmonic Oscillator**                                                                   | **Quantum Harmonic Oscillator**                                                                                                                  |
+| **Energy**               | Can take any continuous non-negative value ($E \ge 0$).                                             | Is quantized to discrete values $E_n = (n+1/2)\hbar\omega$.                                                                                      |
+| **Minimum Energy**       | Can be zero (particle at rest at equilibrium).                                                      | Is the non-zero zero-point energy $E_0 = \frac{1}{2}\hbar\omega$. The particle is never at rest.                                                 |
+| **Energy Spacing**       | Not applicable (continuous).                                                                        | Energy levels are equally spaced: $\Delta E = \hbar\omega$.                                                                                      |
+| **Position Probability** | Spends most time near turning points where speed is lowest. Zero probability beyond turning points. | For $n=0$, max probability at center. For $n>0$, has peaks and nodes. Finite probability of being _beyond_ classical turning points (tunneling). |
 ### Anharmonic Oscillator
 
 Real physical systems (like molecular vibrations) are not perfectly harmonic. Their potential energy function deviates from the ideal quadratic form ($V(x) = \frac{1}{2}m\omega^2 x^2$) due to higher-order terms (e.g., $x^3, x^4$). This is known as **anharmonicity**.
