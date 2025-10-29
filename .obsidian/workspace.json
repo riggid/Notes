@@ -52,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "23cafa71a74a5ded",
@@ -88,25 +89,24 @@
       "smart-connections:Smart Connections: Open random connection": true,
       "homepage:Open homepage": true,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "templater-obsidian:Templater": true,
-      "edge-tts:Read note aloud": false
+      "templater-obsidian:Templater": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "4488dcb046b9a0a4",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2025-10-29 14.27.27.excalidraw.md",
-    "Index.md",
-    "Semester 1/Mechanical/Unit 1/Core Notes.md",
     "Excalidraw",
     "Semester 1/Mechanical/Mechanical.md",
+    "Index.md",
+    "Semester 1/Physics/Unit 2/Core Notes.md",
+    "Semester 1/Physics/Physics.md",
+    "Semester 1/Physics/Unit 2/Q&A.md",
+    "Semester 1/Physics/Unit 1/Q&A.md",
+    "Semester 1/Physics/Unit 1/Core Notes.md",
     "Semester 1/Physics/Unit 2/Core Notes-2.png",
     "Semester 1/Physics/Unit 2/Core Notes-1.png",
-    "Semester 1/Physics/Physics.md",
-    "Semester 1/Physics/Unit 2/Core Notes.md",
-    "Semester 1/Physics/Unit 1/Core Notes.md",
     "Semester 1/Physics/Unit 1/Q%26A.md",
     "PESU IO/Notes.md",
-    "Semester 1/Physics/Unit 1/Q&A.md",
     "Semester 1/Physics/Unit 1/Examples.md",
     "Semester 1/Mathematics/Unit 1/Q&A.md",
     "Semester 1/Mathematics/Mathematics.md",
@@ -116,6 +116,7 @@
     "Semester 1/Mathematics/Unit 2/Examples.md",
     "Semester 1/Mathematics/Unit 1/Core Notes-1.png",
     "Semester 1/Mathematics/Unit 1/Examples.md",
+    "Semester 1/Mechanical/Unit 1/Core Notes.md",
     "Semester 1/Electrical/Electrical.md",
     "Semester 1/Mechanical/Unit 2/Core Notes.md",
     "Semester 1/Mechanical/Unit 2/Q&A.md",
@@ -123,7 +124,6 @@
     "Semester 1/Mechanical/Unit 1/Examples.md",
     "Semester 1/Mechanical/Unit 2/Examples.md",
     "Semester 1/Electrical/Unit 1/Core Notes.md",
-    "Semester 1/Environmental Studies and Life Science/Unit 1/Core Notes.md",
     "Semester 1/Environmental Studies and Life Science/Unit 1",
     "Semester 1/Mechanical/Unit 2/Examples-1.png",
     "Semester 2/Python",
