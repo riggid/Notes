@@ -8,27 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3e39be403b1a2751",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "smart-chat-view",
-              "state": {},
-              "icon": "smart-chat",
-              "title": "Smart Chat"
-            }
-          },
-          {
-            "id": "af94412512050eee",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Semester 1/Mechanical/Unit 1/Core Notes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Core Notes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,18 +92,19 @@
       "templater-obsidian:Templater": true
     }
   },
-  "active": "af94412512050eee",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Semester 1/Physics/Unit 2/Core Notes.md",
-    "Semester 1/Physics/Physics.md",
-    "Semester 1/Physics/Unit 1/Core Notes.md",
+    "Semester 1/Mechanical/Mechanical.md",
     "Semester 1/Physics/Unit 2/Core Notes-2.png",
     "Semester 1/Physics/Unit 2/Core Notes-1.png",
+    "Index.md",
+    "Semester 1/Physics/Physics.md",
+    "Semester 1/Physics/Unit 2/Core Notes.md",
+    "Semester 1/Physics/Unit 1/Core Notes.md",
     "Semester 1/Physics/Unit 1/Q%26A.md",
     "PESU IO/Notes.md",
     "Semester 1/Physics/Unit 1/Q&A.md",
     "Semester 1/Physics/Unit 1/Examples.md",
-    "Index.md",
     "Semester 1/Mathematics/Unit 1/Q&A.md",
     "Semester 1/Mathematics/Mathematics.md",
     "Semester 1/Mathematics/Unit 2/Q&A.md",
@@ -119,7 +114,6 @@
     "Semester 1/Mathematics/Unit 1/Core Notes-1.png",
     "Semester 1/Mathematics/Unit 1/Examples.md",
     "Semester 1/Mechanical/Unit 1/Core Notes.md",
-    "Semester 1/Mechanical/Mechanical.md",
     "Semester 1/Electrical/Electrical.md",
     "Semester 1/Mechanical/Unit 2/Core Notes.md",
     "Semester 1/Mechanical/Unit 2/Q&A.md",

@@ -170,7 +170,7 @@ In a hydroelectric power plant:
 ## Electric and Hybrid Vehicles
 
 ### **Types of Electric Vehicles**
--   **Battery Electric Vehicle (BEV)**: Runs entirely on an electric motor powered by a large rechargeable battery pack. It produces zero tailpipe emissions and must be plugged in to charge.
+-   **Battery Electric Vehicle (BEV)**: Runs entirely on an electric motor powered by a large rechargeable battery pack. It produces zero tailpipe emissions and must be plugged in to charge. Also charged by regenerative braking.
 -   **Hybrid Electric Vehicle (HEV)**: Combines an internal combustion engine (ICE) with an electric motor and a smaller battery. The battery is primarily charged by the ICE and regenerative braking; it is not typically plugged into the grid.
 -   **Plug-in Hybrid Electric Vehicle (PHEV)**: An HEV with a larger battery that can be charged from the power grid, in addition to being charged by the ICE and regenerative braking. It offers a limited all-electric driving range before switching to hybrid mode.
 
