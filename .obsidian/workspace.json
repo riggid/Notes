@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Semester 1/Mechanical/Unit 1/Core Notes.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "23cafa71a74a5ded",
@@ -89,15 +88,19 @@
       "smart-connections:Smart Connections: Open random connection": true,
       "homepage:Open homepage": true,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "templater-obsidian:Templater": true
+      "templater-obsidian:Templater": true,
+      "edge-tts:Read note aloud": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-10-29 14.27.27.excalidraw.md",
+    "Index.md",
+    "Semester 1/Mechanical/Unit 1/Core Notes.md",
+    "Excalidraw",
     "Semester 1/Mechanical/Mechanical.md",
     "Semester 1/Physics/Unit 2/Core Notes-2.png",
     "Semester 1/Physics/Unit 2/Core Notes-1.png",
-    "Index.md",
     "Semester 1/Physics/Physics.md",
     "Semester 1/Physics/Unit 2/Core Notes.md",
     "Semester 1/Physics/Unit 1/Core Notes.md",
@@ -113,7 +116,6 @@
     "Semester 1/Mathematics/Unit 2/Examples.md",
     "Semester 1/Mathematics/Unit 1/Core Notes-1.png",
     "Semester 1/Mathematics/Unit 1/Examples.md",
-    "Semester 1/Mechanical/Unit 1/Core Notes.md",
     "Semester 1/Electrical/Electrical.md",
     "Semester 1/Mechanical/Unit 2/Core Notes.md",
     "Semester 1/Mechanical/Unit 2/Q&A.md",
@@ -138,7 +140,6 @@
     "Semester 1/Electrical/Unit 2/Examples-7.png",
     "Semester 1/Electrical/Unit 2/Examples-6.png",
     "Semester 1/Electrical/Unit 1/images",
-    "Semester 1/Mechanical/Unit 2",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

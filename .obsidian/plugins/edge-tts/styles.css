@@ -1,0 +1,941 @@
+.edge-tts-info-div {
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 1em;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: var(--background-secondary);
+}
+
+.edge-tts-star-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2em;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: var(--background-secondary);
+}
+
+.edge-tts-star-section a {
+	margin-bottom: 2em;
+}
+
+.edge-tts-star-message {
+	font-size: x-large;
+	margin-bottom: 0.5em;
+	font-weight: 500;
+}
+
+.edge-tts-status-bar-control {
+	background: none;
+	border: none;
+	cursor: pointer;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-size: 8px;
+	margin: 0 4px;
+	opacity: 0.8;
+	transition: opacity 0.2s ease;
+}
+
+.edge-tts-status-bar-control:hover {
+	color: var(--interactive-accent);
+	opacity: 1;
+}
+
+/* TTS Processing Progress Indicator */
+.edge-tts-status-bar-progress-container {
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
+	height: 100%;
+	background-color: var(--background-modifier-success-hover);
+	border-radius: 4px;
+	animation: pulse 2s infinite;
+}
+
+.edge-tts-status-bar-icon {
+	margin-right: 6px;
+}
+
+.edge-tts-status-bar-text {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+@keyframes pulse {
+	0% {
+		background-color: var(--background-modifier-success-hover);
+	}
+	50% {
+		background-color: var(--background-modifier-success);
+	}
+	100% {
+		background-color: var(--background-modifier-success-hover);
+	}
+}
+
+/* Add styles for the mobile app promotion section in settings */
+.edge-tts-mobile-app-section {
+	margin-top: 2em;
+	padding: 1.5em;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+	background-color: var(--background-secondary);
+}
+
+.edge-tts-mobile-app-section h3 {
+	margin-top: 0;
+	margin-bottom: 0.75em;
+	color: var(--text-accent);
+}
+
+.edge-tts-mobile-app-section p {
+	margin-bottom: 1em;
+	line-height: 1.6;
+}
+
+.edge-tts-app-store-buttons {
+	display: flex;
+	gap: 1em;
+	margin-top: 1em;
+}
+
+.edge-tts-app-store-button {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.5em 1em;
+	border: 1px solid var(--background-modifier-border-hover);
+	border-radius: 5px;
+	background-color: var(--interactive-normal);
+	color: var(--text-on-accent) !important; /* Ensure text is visible */
+	text-decoration: none;
+	transition: background-color 0.2s ease;
+}
+
+.edge-tts-app-store-button:hover {
+	background-color: var(--interactive-hover);
+	text-decoration: none;
+	color: var(
+		--text-on-accent
+	) !important; /* Ensure text is visible on hover */
+}
+
+.edge-tts-app-store-button svg {
+	width: 1.2em;
+	height: 1.2em;
+	margin-right: 0.5em;
+}
+
+/* Floating Player UI */
+.floating-player-ui {
+	position: fixed;
+	background-color: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+	padding: 12px; /* Uniform padding */
+	padding-right: 30px;
+	padding-left: 20px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	z-index: var(--layer-popover);
+	min-width: 220px; /* Adjusted min-width */
+	display: flex;
+	flex-direction: column;
+	gap: 8px; /* Gap between main sections */
+	/* Enable touch actions for mobile drag support */
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.floating-player-close-button {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	background-color: transparent;
+	border: none;
+	color: var(--text-muted);
+	cursor: pointer;
+	padding: 3px;
+	line-height: 1;
+	z-index: 10; /* Ensure it's above other content within the player */
+	transition: background-color 0.2s ease;
+	border-radius: 4px;
+}
+
+.floating-player-close-button:hover {
+	color: var(--text-normal);
+	background-color: var(--background-modifier-hover);
+	transition: background-color 0.2s ease;
+}
+
+.floating-player-ui .player-content {
+	padding: 0; /* Padding is now on the parent */
+	display: flex;
+	flex-direction: column;
+	gap: 10px; /* Gap between progress and controls */
+	width: 100%;
+	position: relative;
+}
+
+/* Remove title text if it was there */
+.floating-player-ui .player-content p {
+	display: none; /* Assuming we removed the status text as per JSX changes */
+}
+
+.floating-player-ui .player-progress {
+	display: flex;
+	align-items: center; /* Vertically align items */
+	gap: 8px; /* Gap between time, slider, time */
+	margin-bottom: 0; /* Remove bottom margin as parent has gap */
+}
+
+.floating-player-ui .player-progress .seek-slider {
+	flex-grow: 1; /* Slider takes up available space */
+	cursor: pointer;
+	margin: 0;
+}
+
+.floating-player-ui .player-progress .seek-slider:disabled {
+	cursor: not-allowed;
+}
+
+.floating-player-ui .player-progress span {
+	font-size: 0.9em;
+	color: var(--text-muted);
+	min-width: 35px; /* Ensure time doesn't jump around too much */
+	text-align: center;
+}
+
+.floating-player-ui .player-controls {
+	display: flex;
+	justify-content: center; /* Center main controls by default */
+	align-items: center;
+	gap: 10px; /* Gap between control buttons */
+	position: relative; /* For positioning loader and stop button */
+	min-height: 30px; /* Ensure space for loader/stop if controls are hidden */
+}
+
+/* New wrapper for the central playback buttons (play/pause, jumps) */
+.floating-player-ui .player-main-controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.floating-player-ui .player-loading-indicator {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px; /* Match button padding for alignment */
+	color: var(--text-muted);
+}
+
+/* .floating-player-ui .player-loading-indicator .obsidian-icon svg {
+	animation: spin 1s linear infinite;
+} */
+
+.floating-player-ui .player-loading-indicator {
+	animation: spin 1s linear infinite;
+}
+
+.floating-player-ui .player-stop-button {
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+	/* player-control-button class already applied for base styling */
+	background-color: transparent;
+	border: none;
+	color: var(--text-muted);
+	cursor: pointer;
+	padding: 3px;
+	line-height: 1;
+	z-index: 10; /* Ensure it's above other content within the player */
+	transition: background-color 0.2s ease;
+	border-radius: 4px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.floating-player-ui .player-controls button,
+.floating-player-ui .player-controls .player-control-button {
+	/* Apply to new divs as well */
+	background: none;
+	border: none;
+	color: var(
+		--icon-color,
+		var(--text-normal)
+	); /* Use Obsidian icon color variable or fallback */
+	cursor: pointer;
+	padding: 6px;
+	border-radius: 4px;
+	transition: background-color 0.2s ease, color 0.2s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.floating-player-ui .player-controls button:hover,
+.floating-player-ui .player-controls .player-control-button:hover {
+	background-color: var(--background-modifier-hover);
+	color: var(--icon-color-hover, var(--text-accent));
+}
+
+.floating-player-ui .player-controls button:disabled,
+.floating-player-ui .player-controls .player-control-button:disabled {
+	color: var(--text-faint);
+	cursor: not-allowed;
+}
+
+.floating-player-ui .player-controls button:disabled:hover,
+.floating-player-ui .player-controls .player-control-button:disabled:hover {
+	background-color: transparent;
+	color: var(--text-faint);
+}
+
+/* Specific cursor for interactive elements if needed, to override grab */
+.floating-player-ui button,
+.floating-player-ui input[type="range"] {
+	cursor: pointer; /* Default pointer for buttons and slider */
+}
+
+.floating-player-ui input[type="range"]:disabled {
+	cursor: not-allowed;
+}
+
+.player-control-button {
+	background-color: transparent;
+	border: none;
+	color: var(--text-muted);
+	cursor: pointer;
+	padding: 3px;
+	line-height: 1;
+	z-index: 10; /* Ensure it's above other content within the player */
+	transition: background-color 0.2s ease;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.player-control-button:hover {
+	color: var(--text-normal);
+	background-color: var(--background-modifier-hover);
+	transition: background-color 0.2s ease;
+}
+
+/* Remove old drag handle styles */
+/*
+.floating-player-ui .drag-handle {
+	padding: 8px 12px;
+	background-color: var(--background-secondary);
+	cursor: move;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.floating-player-ui .drag-handle .close-button {
+	background: none;
+	border: none;
+	color: var(--text-muted);
+	font-size: 1.2em;
+	padding: 0 4px;
+	cursor: pointer;
+}
+.floating-player-ui .drag-handle .close-button:hover {
+	color: var(--text-normal);
+}
+*/
+
+/* Queue Manager UI */
+.queue-manager-ui {
+	position: fixed;
+	z-index: var(
+		--layer-modal
+	); /* Ensure it's above most things, but configurable */
+	background-color: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+	box-shadow: var(--shadow-elevation-mid); /* Use Obsidian shadow variable */
+	width: 320px;
+	max-height: 400px; /* Consider making this a variable or setting */
+	display: flex;
+	flex-direction: column;
+	/* cursor is handled by JS for grab/grabbing */
+	/* Enable touch actions for mobile drag support */
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.queue-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 4px 5px 10px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	background-color: var(--background-secondary);
+	border-top-left-radius: 8px; /* Match parent */
+	border-top-right-radius: 8px; /* Match parent */
+	cursor: grab; /* Indicate draggable header */
+}
+
+.queue-header-title-section {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.queue-header-title-section .obsidian-icon {
+	/* If ObsidianIcon is used directly */
+	/* Style for icon in header title if needed */
+}
+
+.queue-header-title {
+	font-weight: bold;
+	font-size: var(--font-ui-small); /* Use Obsidian font size variable */
+}
+
+.queue-header-count {
+	font-size: var(--font-ui-small); /* Use Obsidian font size variable */
+	color: var(--text-muted);
+	background-color: var(--background-modifier-border);
+	padding: 2px 6px;
+	border-radius: 10px;
+}
+
+/* New two-row button layout */
+.queue-header-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-right: 8px;
+}
+
+.queue-header-buttons-row {
+	display: flex;
+	gap: 4px;
+	justify-content: flex-end;
+}
+
+/* Mini buttons styled like floating player buttons */
+.queue-mini-button {
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	background-color: transparent;
+	border: 1px solid var(--background-modifier-border);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	color: var(--text-muted);
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+.queue-mini-button:hover {
+	background-color: var(--background-modifier-hover);
+	color: var(--text-normal);
+	border-color: var(--background-modifier-border-hover);
+}
+
+/* Active state for toggle buttons */
+.queue-mini-button.active {
+	background-color: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border-color: var(--interactive-accent);
+}
+
+.queue-mini-button.active:hover {
+	background-color: var(--interactive-accent-hover);
+	border-color: var(--interactive-accent-hover);
+}
+
+/* Specific button styling */
+.queue-mini-button.play-button {
+	background-color: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border-color: var(--interactive-accent);
+}
+
+.queue-mini-button.play-button:hover {
+	background-color: var(--interactive-accent-hover);
+	border-color: var(--interactive-accent-hover);
+}
+
+.queue-mini-button.close-button:hover {
+	background-color: var(--background-modifier-error);
+	color: var(--text-error);
+	border-color: var(--background-modifier-error);
+}
+
+.queue-mini-button.clear-button:hover {
+	background-color: var(--background-modifier-error-hover);
+	color: var(--text-error);
+	border-color: var(--background-modifier-error-hover);
+}
+
+.queue-content-area {
+	flex: 1;
+	overflow-y: auto;
+	overflow-x: hidden; /* Prevent horizontal scroll */
+	padding: 8px; /* Default padding */
+	scroll-behavior: smooth; /* Smooth scrolling for manual scrolling */
+}
+
+.queue-empty-message {
+	text-align: center;
+	color: var(--text-muted);
+	font-size: var(--font-ui-medium);
+	padding: 32px 16px; /* More padding when empty */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%; /* Try to fill available space */
+}
+
+.queue-empty-message .obsidian-icon {
+	/* For the large icon */
+	opacity: 0.5;
+	margin-bottom: 12px;
+}
+
+.queue-empty-title {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.queue-empty-instructions {
+	font-size: var(--font-ui-small);
+	line-height: 1.4;
+	margin-bottom: 12px;
+}
+
+.queue-empty-instruction-list {
+	font-size: calc(var(--font-ui-small) - 1px); /* Slightly smaller */
+	line-height: 1.6;
+	text-align: left;
+	background-color: var(--background-secondary);
+	padding: 8px 12px;
+	border-radius: var(--radius-m);
+	border: 1px solid var(--background-modifier-border);
+}
+
+.queue-empty-instruction-list div {
+	/* For each instruction line */
+	margin-bottom: 2px;
+}
+
+.queue-item {
+	display: flex;
+	align-items: center;
+	padding: 10px 12px;
+	margin: 3px 0;
+	border-radius: var(--radius-m);
+	background-color: transparent;
+	border: 1px solid var(--background-modifier-border-hover);
+	cursor: pointer;
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+.queue-item:hover {
+	background-color: var(--background-modifier-hover);
+}
+
+.queue-item.is-playing {
+	background-color: var(
+		--background-accent-hover
+	); /* Use Obsidian's accent system */
+	border: 2px solid var(--interactive-accent);
+	/* box-shadow: 0 0 0 2px var(--interactive-accent); Optional: alternative to border emphasis */
+}
+
+.queue-item-number-status {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: var(--background-secondary);
+	color: var(--text-normal);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: var(--font-ui-small);
+	font-weight: bold;
+	margin-right: 12px;
+	flex-shrink: 0;
+	border: 1px solid var(--background-modifier-border);
+}
+
+.queue-item.is-playing .queue-item-number-status {
+	background-color: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border: 2px solid var(--text-on-accent); /* Contrast border for playing state */
+}
+
+.queue-item-title {
+	flex: 1;
+	font-size: var(--font-ui-small);
+	font-weight: normal;
+	color: var(--text-normal);
+	/* Text overflow will be handled by JS truncateTitle if needed, or CSS:
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	*/
+}
+
+.queue-item.is-playing .queue-item-title {
+	font-weight: bold;
+	color: var(--text-accent); /* Emphasize title of playing item */
+}
+
+/* This indicator was not styled before, adding a basic style */
+.queue-item-playing-indicator {
+	position: absolute;
+	left: 6px; /* Adjust as needed */
+	top: 50%;
+	transform: translateY(-50%);
+	width: 3px; /* Or 4px */
+	height: 20px; /* Adjust as needed */
+	background-color: var(--interactive-accent);
+	border-radius: var(--radius-s);
+}
+
+.queue-item-controls {
+	display: flex;
+	gap: 2px;
+	margin-left: 8px;
+	opacity: 0; /* Hidden by default */
+	transition: opacity 0.2s ease;
+}
+
+.queue-item:hover .queue-item-controls {
+	opacity: 0.7; /* Show on hover */
+}
+
+.queue-item.is-playing .queue-item-controls {
+	opacity: 0.7; /* Also show if playing */
+}
+
+.queue-item-controls .queue-item-control-button {
+	/* Common style for item control buttons */
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 4px;
+	border-radius: var(--radius-s);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* opacity: 0.5; Let parent .queue-item-controls handle base opacity */
+	transition: opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+	color: var(--icon-color);
+}
+
+.queue-item-controls .queue-item-control-button:hover {
+	opacity: 1;
+	background-color: var(--background-modifier-hover);
+	color: var(--icon-color-hover);
+}
+
+.queue-item-controls .queue-item-remove-button {
+	color: var(--text-error); /* Specific color for remove button */
+}
+
+.queue-item-controls .queue-item-remove-button:hover {
+	color: var(--text-error-hover); /* Or a brighter error color on hover */
+	background-color: var(--background-modifier-error-hover);
+}
+
+/* Ensure player-control-button styles don't conflict if they are too general.
+   Prefixing with .floating-player-ui helps.
+*/
+
+/* Floating Player Queue Button */
+.floating-player-queue-button {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 2;
+	transition: all 0.2s ease;
+}
+
+.floating-player-queue-button:hover {
+	background-color: var(--background-modifier-hover);
+}
+
+/* Position variants for the queue button */
+.floating-player-queue-button.top-position {
+	top: 8px;
+	right: 32px;
+}
+
+.floating-player-queue-button.bottom-position {
+	bottom: 8px;
+	left: 8px;
+}
+
+/* Chunked Progress UI Styles */
+.chunked-progress-ui {
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	width: 320px;
+	max-height: 400px;
+	overflow: hidden;
+	font-family: var(--font-family);
+	z-index: 1000;
+}
+
+.chunked-progress-header {
+	background: var(--background-secondary);
+	border-bottom: 1px solid var(--background-modifier-border);
+	padding: 12px 16px;
+}
+
+.chunked-progress-title-section {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.chunked-progress-title {
+	font-weight: 600;
+	font-size: 14px;
+	color: var(--text-normal);
+	flex: 1;
+}
+
+.chunked-progress-close-button {
+	background: none;
+	border: none;
+	color: var(--text-muted);
+	cursor: pointer;
+	padding: 4px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+}
+
+.chunked-progress-close-button:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.chunked-progress-content {
+	padding: 16px;
+	max-height: 320px;
+	overflow-y: auto;
+}
+
+.chunked-progress-note-title {
+	font-size: 12px;
+	color: var(--text-muted);
+	margin-bottom: 12px;
+	font-style: italic;
+}
+
+.chunked-progress-phase {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.chunked-progress-phase-text {
+	font-size: 13px;
+	color: var(--text-normal);
+	font-weight: 500;
+}
+
+.chunked-progress-percentage {
+	font-size: 12px;
+	color: var(--text-accent);
+	font-weight: 600;
+}
+
+.chunked-progress-error {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background: var(--background-modifier-error);
+	color: var(--text-error);
+	padding: 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	margin-bottom: 12px;
+}
+
+.chunked-progress-overall-bar {
+	width: 100%;
+	height: 8px;
+	background: var(--background-modifier-border);
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+
+.chunked-progress-overall-fill {
+	height: 100%;
+	background: var(--interactive-accent);
+	transition: width 0.3s ease;
+	border-radius: 4px;
+}
+
+.chunked-progress-overall-fill.error {
+	background: var(--text-error);
+}
+
+.chunked-progress-stats {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	color: var(--text-muted);
+	margin-bottom: 12px;
+}
+
+.chunked-progress-stats .error-text {
+	color: var(--text-error);
+}
+
+.chunked-progress-chunks {
+	border-top: 1px solid var(--background-modifier-border);
+	padding-top: 12px;
+}
+
+.chunked-progress-chunks-header {
+	font-size: 12px;
+	color: var(--text-muted);
+	margin-bottom: 8px;
+	font-weight: 500;
+}
+
+.chunked-progress-chunks-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+	gap: 6px;
+	max-height: 120px;
+	overflow-y: auto;
+}
+
+.chunked-progress-chunk {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	padding: 8px 4px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 4px;
+	font-size: 10px;
+	min-height: 50px;
+	cursor: default;
+	transition: all 0.2s ease;
+}
+
+.chunked-progress-chunk.pending {
+	background: var(--background-secondary);
+	color: var(--text-muted);
+}
+
+.chunked-progress-chunk.processing {
+	background: var(--background-modifier-hover);
+	color: var(--text-accent);
+	border-color: var(--interactive-accent);
+}
+
+.chunked-progress-chunk.completed {
+	background: var(--background-modifier-success);
+	color: var(--text-success);
+	border-color: var(--text-success);
+}
+
+.chunked-progress-chunk.failed {
+	background: var(--background-modifier-error);
+	color: var(--text-error);
+	border-color: var(--text-error);
+}
+
+.chunked-progress-chunk-number {
+	font-weight: 600;
+	font-size: 11px;
+}
+
+.chunked-progress-chunk-progress {
+	font-size: 9px;
+	color: var(--text-accent);
+	font-weight: 500;
+}
+
+/* Spinning animation for loading icons */
+.spinning {
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Collapsible settings section styles */
+.edge-tts-collapsible-header {
+	transition: background-color 0.2s ease;
+	border-radius: var(--radius-s);
+	padding: 4px 0;
+}
+
+.edge-tts-collapsible-header:hover {
+	background-color: var(--background-modifier-hover);
+}
+
+.edge-tts-collapsible-header .setting-item-name {
+	font-weight: 600;
+	color: var(--text-accent);
+	display: flex;
+	align-items: center;
+}
+
+.edge-tts-collapsible-header .setting-item-description {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+}
