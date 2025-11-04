@@ -1,0 +1,46 @@
+{
+  "selectedVoice": "en-US-AriaNeural",
+  "customVoice": "",
+  "playbackSpeed": 1,
+  "showNotices": true,
+  "showStatusBarButton": true,
+  "showMenuItems": true,
+  "generateMP3": false,
+  "outputFolder": "Note Narration Audio",
+  "embedInNote": false,
+  "replaceSpacesInFilenames": false,
+  "textFiltering": {
+    "filterFrontmatter": true,
+    "filterMarkdownLinks": false,
+    "filterCodeBlocks": true,
+    "filterInlineCode": true,
+    "filterHtmlTags": true,
+    "filterTables": true,
+    "filterImages": true,
+    "filterFootnotes": true,
+    "filterComments": true,
+    "filterMathExpressions": false,
+    "filterWikiLinks": false,
+    "filterHighlights": true,
+    "filterCallouts": false,
+    "replaceComparisonSymbols": true
+  },
+  "symbolReplacement": {
+    "enableCustomReplacements": false,
+    "language": "auto",
+    "customReplacements": {
+      "greaterThan": " greater than ",
+      "lessThan": " less than ",
+      "greaterThanOrEqual": " greater than or equal to ",
+      "lessThanOrEqual": " less than or equal to "
+    }
+  },
+  "floatingPlayerPosition": null,
+  "disablePlaybackControlPopover": false,
+  "enableReplayOption": true,
+  "enableQueueFeature": true,
+  "queueManagerPosition": null,
+  "autoPauseOnWindowBlur": false,
+  "enableExperimentalFeatures": false,
+  "reducedNoticesOnMobile": true
+}
