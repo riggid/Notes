@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "Semester 1/Physics/Unit 3/Core Notes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "Core Notes"
             }
           },
           {
@@ -32,8 +32,7 @@
               "title": "Smart Chat"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +62,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "23cafa71a74a5ded",
@@ -103,12 +103,12 @@
       "templater-obsidian:Templater": true
     }
   },
-  "active": "4488dcb046b9a0a4",
+  "active": "ba7bc73c27e58716",
   "lastOpenFiles": [
     "Semester 1/Physics/Physics.md",
+    "Index.md",
     "Semester 1/Physics/Unit 3/Core Notes.md",
     "Semester 1/Physics/Unit 3/Examples.md",
-    "Index.md",
     "Semester 1/Physics/document.pdf",
     "Semester 1/Physics/UE24PH151A_715ed9a9-6f54-11ef-b7ef-02bdb07e3b51_20241127110933.pdf",
     "Semester 1/Physics/Unit 3/Q&A.md",

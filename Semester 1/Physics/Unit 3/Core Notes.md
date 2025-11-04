@@ -43,7 +43,7 @@ This implies an effective relaxation time: $1/\tau = 1/\tau_{res} + 1/\tau_{sc}$
 ### **Drawbacks of Classical Free Electron Theory**
 
 1.  **Temperature Dependence of Resistivity**:
-    *   CFET predicts $\rho \propto \frac{1}{\tau}$. Since $\tau \propto \lambda/v_{th}$, and $v_{th} \propto \sqrt{T}$ (assuming `mean free path ($\lambda$)` is constant), CFET predicts $\rho \propto \sqrt{T}$.
+    *   CFET predicts $\rho \propto \frac{1}{\tau}$. Since $\tau \propto \lambda/v_{th}$, and $v_{th} \propto \sqrt{T}$ (assuming mean free path ($\lambda$) is constant), CFET predicts $\rho \propto \sqrt{T}$.
     *   **Experimental observation**: $\rho \propto T$. CFET fails to explain the correct temperature dependence.
 2.  **Specific Heat of Electrons ($\mathbf{C_{el}}$)**:
     *   According to Boltzmann statistics, each free electron should contribute $\frac{3}{2}k_B$ to the specific heat. For 1 mole, $C_{el} = \frac{3}{2}N_A k_B = \frac{3}{2}R$.
