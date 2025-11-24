@@ -1,4 +1,4 @@
-# [Back](../../Physics.md)
+# [Back](../Physics.md)
 ***
 [Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
 ***
