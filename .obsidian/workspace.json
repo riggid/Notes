@@ -32,8 +32,7 @@
               "title": "Smart Chat"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -103,9 +102,10 @@
       "templater-obsidian:Templater": true
     }
   },
-  "active": "00ffaf93bcee340b",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "Semester 1/Physics/Unit 3/Core Notes.md",
+    "Semester 1/Physics/Unit 3/Q&A.md",
     "Semester 1/Physics/Physics.md",
     "Index.md",
     "Semester 1/Physics/Unit 3/document_merged.pdf",
@@ -125,7 +125,6 @@
     "Semester 1/Mathematics/Unit 2/Core Notes.md",
     "Semester 1/Mathematics/Unit 3/Q&A.md",
     "Semester 1/Physics/Unit 3/Examples.md",
-    "Semester 1/Physics/Unit 3/Q&A.md",
     "Excalidraw/Drawing 2025-11-05 00.20.00.excalidraw.md",
     "Semester 1/Physics/Unit 1/Core Notes.md",
     "Semester 1/Electrical/Electrical.md",
