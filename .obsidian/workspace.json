@@ -13,23 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Semester 1/Physics/Unit 3/Q&A.md",
-                "mode": "source",
+                "file": "Semester 1/Physics/Unit 3/Core Notes.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Q&A"
-            }
-          },
-          {
-            "id": "00ffaf93bcee340b",
-            "type": "leaf",
-            "state": {
-              "type": "smart-chat-view",
-              "state": {},
-              "icon": "smart-chat",
-              "title": "Smart Chat"
+              "title": "Core Notes"
             }
           }
         ]
@@ -57,12 +47,40 @@
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
+          },
+          {
+            "id": "64b72ae036b42881",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-ghost",
+              "title": "search"
+            }
+          },
+          {
+            "id": "45e076df4126ebf8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "bookmarks"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "23cafa71a74a5ded",
@@ -90,65 +108,66 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "templater-obsidian:Templater": false,
       "edge-tts:Read note aloud": false,
       "obsidian-git:Open Git source control": false,
-      "graph:Open graph view": false,
-      "command-palette:Open command palette": true,
       "smart-connections:Open: Smart Chat": false,
       "smart-connections:Smart Connections: Open connections view": true,
       "smart-connections:Smart Connections: Open random connection": true,
-      "homepage:Open homepage": true,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "templater-obsidian:Templater": true
+      "homepage:Open homepage": false,
+      "graph:Open graph view": false,
+      "command-palette:Open command palette": true
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Semester 1/Physics/Unit 3/Core Notes.md",
-    "Semester 1/Physics/Unit 3/Q&A.md",
     "Semester 1/Physics/Physics.md",
     "Index.md",
-    "Semester 1/Physics/Unit 3/document_merged.pdf",
-    "Semester 1/Physics/Unit 3/document.pdf",
-    "Semester 1/Physics/Unit 3/UE20PH101 Q & A UNIT 5 CL46_20201204103114.pdf",
-    "Semester 1/Physics/Unit 3/UE25PH151A_3925aece-85fd-4536-a6d6-50eee754baf7_20250804130732.pdf",
-    "Semester 1/Physics/Unit 3/UE25PH151A_3925aece-85fd-4536-a6d6-50eee754baf7_20250804130230.pdf",
-    "Semester 1/Physics/Unit 3/UE21PH141A_5387894b-1b63-11ec-91ad-0299ae0e48d0_20211228164207.pdf",
-    "Semester 1/Physics/Unit 3/UE21PH141A_53878cd3-1b63-11ec-91ad-0299ae0e48d0_20211228165324.pdf",
-    "Semester 1/Physics/Unit 3/UE21PH141A_53878c91-1b63-11ec-91ad-0299ae0e48d0_20211228165237.pdf",
-    "Semester 1/Physics/Unit 3/UE21PH141A_53878be7-1b63-11ec-91ad-0299ae0e48d0_20211228165043.pdf",
-    "Semester 1/Physics/Unit 3/UE21PH141A_53878ba3-1b63-11ec-91ad-0299ae0e48d0_20211228164949.pdf",
-    "Semester 1/Mathematics/Unit 3/Core Notes.md",
-    "Semester 1/Mathematics/Unit 3/Examples.md",
-    "Semester 1/Mathematics/Mathematics.md",
-    "Semester 1/Mathematics/Unit 1/Core Notes.md",
-    "Semester 1/Mathematics/Unit 2/Core Notes.md",
-    "Semester 1/Mathematics/Unit 3/Q&A.md",
-    "Semester 1/Physics/Unit 3/Examples.md",
-    "Excalidraw/Drawing 2025-11-05 00.20.00.excalidraw.md",
-    "Semester 1/Physics/Unit 1/Core Notes.md",
-    "Semester 1/Electrical/Electrical.md",
-    "Semester 1/Electrical/Unit 1/Core Notes.md",
-    "Semester 1/Electrical/Unit 1/Q&A.md",
-    "Semester 1/Electrical/Unit 2/Core Notes.md",
-    "Semester 1/Mechanical/Unit 2/Core Notes.md",
+    "Semester 1/Physics/Unit 3/Core Notes.md",
     "Semester 1/Mechanical/Mechanical.md",
-    "Semester 1/Mechanical/Unit 1/Core Notes.md",
-    "Semester 1/Mechanical/Unit 1/Q&A.md",
-    "Semester 1/Mechanical/Unit 2/Q&A.md",
-    "Semester 1/Mechanical/Unit 2/Core Notes-2.png",
-    "Semester 1/Mechanical/Unit 2/Core Notes-1.png",
-    "Semester 1/Mechanical/Unit 1/MCQs.md",
-    "Excalidraw/Drawing 2025-10-29 14.27.27.excalidraw.md",
+    "Semester 1/Physics/Unit 3/Examples.md",
+    "_templates/T - New Unit.md",
+    "_templates/T - Standard Note Blueprint.md",
+    "_templates/T - New Semester Setup.md",
+    "_templates",
+    "Semester 1/Python/Python.md",
+    "Semester 1/Python",
+    "Semester 1/Physics/Unit 3/document_merged.pdf",
+    "Semester 1/Physics/Unit 3/Q&A.md",
+    "Semester 1/Physics/Unit 2/Q&A.md",
+    "Semester 1/Physics/Unit 2/Examples.md",
     "Semester 1/Physics/Unit 2/Core Notes.md",
     "Semester 1/Physics/Unit 2/Core Notes-2.png",
+    "Semester 1/Physics/Unit 2/Core Notes-2.excalidraw.md",
     "Semester 1/Physics/Unit 2/Core Notes-1.png",
-    "Semester 1/Mathematics/Unit 1/Core Notes-1.png",
+    "Semester 1/Physics/Unit 2/Core Notes-1.excalidraw.md",
+    "Semester 1/Physics/Unit 1/Q&A.md",
+    "Semester 1/Physics/Unit 1/Examples.md",
+    "Semester 1/Physics/Unit 1/Core Notes.md",
+    "Semester 1/Physics/Unit 3",
+    "Semester 1/Physics/Unit 2",
+    "Semester 1/Physics/Unit 1",
+    "Semester 1/Physics",
+    "Semester 1/Mechanical/Unit 1/Q&A.md",
+    "Semester 1/Mechanical/Unit 1/Examples.md",
+    "Semester 1/Mechanical/Unit 1/Core Notes.md",
+    "Semester 1/Mechanical/Unit 2/Q&A.md",
+    "Semester 1/Mechanical/Unit 2/Examples.md",
     "Semester 1/Mechanical/Unit 2/Examples-1.png",
+    "Semester 1/Mechanical/Unit 2/Core Notes.md",
+    "Semester 1/Mechanical/Unit 2/Core Notes-2.png",
+    "Semester 1/Mechanical/Unit 2/Core Notes-1.png",
+    "Semester 1/Mechanical/Unit 2",
+    "Semester 1/Mechanical/Unit 1",
+    "Semester 1/Mechanical",
+    "Semester 1/Mathematics/Unit 2/Q&A.md",
+    "Semester 1/Mathematics/Unit 2/Examples.md",
+    "Semester 1/Mathematics/Unit 1/Core Notes-1.png",
     "Semester 1/Electrical/Unit 2/Q&A-1.png",
-    "Semester 1/Electrical/Unit 2/Examples-10.png",
     "Semester 1/Electrical/Unit 2/Examples-9.png",
     "Semester 1/Electrical/Unit 2/Examples-8.png",
+    "Semester 1/Electrical/Unit 2/Examples-7.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

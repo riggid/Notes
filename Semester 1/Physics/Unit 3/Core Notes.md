@@ -186,7 +186,7 @@ $$\langle E \rangle = \frac{\int_0^{E_f} E \cdot g(E) dE}{\int_0^{E_f} g(E) dE} 
 ### **Merits of Quantum Free Electron Theory**
 
 1.  **Electronic Specific Heat ($C_{el}$)**:
-    *   QFET explains that only a small fraction of electrons ($ \approx n k_B T / E_f$) near the Fermi level can be excited by thermal energy.
+    *   QFET explains that only a small fraction of electrons ($\approx n k_B T / E_f$) near the Fermi level can be excited by thermal energy.
     *   The electronic specific heat per unit volume is:
         $$C_{el} = \frac{\pi^2}{2} n k_B \frac{k_B T}{E_f}$$
         For one mole, $C_{el} = \frac{\pi^2}{2} R \frac{k_B T}{E_f}$.
