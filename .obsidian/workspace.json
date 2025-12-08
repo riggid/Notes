@@ -21,8 +21,49 @@
               "icon": "lucide-file",
               "title": "Index"
             }
+          },
+          {
+            "id": "b61d3005140eea45",
+            "type": "leaf",
+            "state": {
+              "type": "smart-chat-view",
+              "state": {},
+              "icon": "smart-chat",
+              "title": "Smart Chat"
+            }
+          },
+          {
+            "id": "6dc7d5a11ecd2bb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Semester 1/Mechanical/Mechanical.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Mechanical"
+            }
+          },
+          {
+            "id": "cae3325db8822d93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Semester 1/Mechanical/Unit 4/Q&A.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Q&A"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,27 +133,37 @@
       "command-palette:Open command palette": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "6dc7d5a11ecd2bb9",
   "lastOpenFiles": [
+    "Semester 1/Physics/Unit 4/UE20PH101_Q & A_UNIT 4_CL45_20201125145742.pdf",
+    "Semester 1/Mechanical/Mechanical.md",
+    "Semester 1/Mechanical/Unit 4/Mechanical.pdf",
+    "Semester 1/Mechanical/Unit 4/UE25ME141A_6e0a84f0-70fe-11f0-9f05-063baf11569b_20251130053437.pdf",
+    "Semester 1/Mechanical/Unit 4/Q&A.md",
+    "Semester 1/Mechanical/Unit 4/Examples.md",
+    "Semester 1/Mechanical/Unit 4/Core Notes.md",
+    "Semester 1/Physics/Unit 4/Q&A.md",
+    "Semester 1/Physics/Unit 4/Examples.md",
+    "Index.md",
+    "Semester 1/Mechanical/Unit 4/UE25ME141A_6e0a84f0-70fe-11f0-9f05-063baf11569b_20251130053234.pdf",
+    "Semester 1/Mechanical/Unit 4",
+    "Semester 1/Physics/Physics.md",
+    "Semester 1/Physics/Unit 4/Core Notes.md",
+    "Semester 1/Physics/Unit 4/UE20PH101_ Q & A_ UNIT 4_CL44_20201121163012.pdf",
+    "Semester 1/Physics/Unit 4/UE20PH101_ Q & A_ UNIT 4_CL39_20201121162637.pdf",
+    "Semester 1/Physics/Unit 4/UE20PH101_ Q & A_ UNIT 4_CL36_20201121162400.pdf",
+    "Semester 1/Physics/Unit 4/UE20PH101_ Q & A _UNIT 4_CL43_20201121162934.pdf",
+    "Semester 1/Physics/Unit 4/UE20PH101 Q & A UNIT 5 CL56_20201204105353.pdf",
+    "Semester 1/Mechanical/Unit 3/Core Notes.md",
     "Semester 1/Mechanical/Unit 3/Q&A.md",
     "Semester 1/Physics/Unit 3/Core Notes.md",
     "Note Making.md",
-    "Semester 1/Mechanical/Mechanical.md",
-    "Index.md",
-    "Semester 1/Mechanical/Unit 3/UE25ME141A_675707c5-70fe-11f0-9f05-063baf11569b_20251123080205.pdf",
-    "Semester 1/Mechanical/Unit 3/UE25ME141A_675707c5-70fe-11f0-9f05-063baf11569b_20251123075355.pdf",
-    "Semester 1/Mechanical/Unit 3/Core Notes.md",
     "Semester 1/Mechanical/Unit 2/Core Notes.md",
-    "Semester 1/Mechanical/Unit 3",
-    "Semester 1/Physics/Physics.md",
     "Semester 1/Physics/Unit 3/Examples.md",
     "_templates/T - New Unit.md",
     "_templates/T - Standard Note Blueprint.md",
     "_templates/T - New Semester Setup.md",
-    "_templates",
     "Semester 1/Python/Python.md",
-    "Semester 1/Python",
-    "Semester 1/Physics/Unit 3/document_merged.pdf",
     "Semester 1/Physics/Unit 3/Q&A.md",
     "Semester 1/Physics/Unit 2/Q&A.md",
     "Semester 1/Physics/Unit 2/Examples.md",
@@ -121,17 +172,6 @@
     "Semester 1/Physics/Unit 2/Core Notes-2.excalidraw.md",
     "Semester 1/Physics/Unit 2/Core Notes-1.png",
     "Semester 1/Physics/Unit 2/Core Notes-1.excalidraw.md",
-    "Semester 1/Physics/Unit 1/Q&A.md",
-    "Semester 1/Physics/Unit 1/Examples.md",
-    "Semester 1/Physics/Unit 1/Core Notes.md",
-    "Semester 1/Physics/Unit 3",
-    "Semester 1/Physics/Unit 2",
-    "Semester 1/Physics/Unit 1",
-    "Semester 1/Physics",
-    "Semester 1/Mechanical/Unit 1/Q&A.md",
-    "Semester 1/Mechanical/Unit 1/Examples.md",
-    "Semester 1/Mechanical/Unit 1/Core Notes.md",
-    "Semester 1/Mechanical/Unit 2/Q&A.md",
     "Semester 1/Mechanical/Unit 2/Examples-1.png",
     "Semester 1/Mechanical/Unit 2/Core Notes-2.png",
     "Semester 1/Mechanical/Unit 2/Core Notes-1.png",
