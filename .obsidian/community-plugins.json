@@ -9,5 +9,8 @@
   "templater-obsidian",
   "consistent-attachments-and-links",
   "obsidian-tikzjax",
-  "edge-tts"
+  "edge-tts",
+  "smart-chatgpt",
+  "smart-context",
+  "copilot"
 ]
