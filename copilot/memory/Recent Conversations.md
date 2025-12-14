@@ -1,0 +1,3 @@
+## Thorough Unit 4 Mechanical Engineering Explanation
+**Time:** 2025-12-12 09:35
+**Summary:** The user initially requested questions one by one from their Semester 1/Mechanical/Unit 4 core notes but then revised their request to ask for a thorough, topic-by-topic explanation. The AI has since provided detailed explanations covering 'Metal Cutting Fundamentals' (including machining definitions, machine tool functions, chip formation, and conventional vs. non-conventional machining) and 'Lathe Operations' (covering lathe construction, various turning operations, work holding devices, machining time calculations, drilling, and milling operations).

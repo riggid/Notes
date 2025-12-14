@@ -11,7 +11,8 @@
 /.obsidian/config
 
 # Ignore the 'smart-env' plugin data (from your previous file)
-/.smart-env/
+/.obsidian/plugins/copilot/data.json
+/copilot
 
 # Ignore '.ajson' files (from your previous file)
 *.ajson
@@ -32,4 +33,4 @@ ehthumbs_vista.db
 Desktop.ini
 /.obsidian/workspace.json
 /.obsidian/workspace.json
-/copilot/
+
