@@ -1,7 +1,6 @@
 [
   "obsidian-git",
   "obsidian-latex-suite",
-  "smart-connections",
   "obsidian-paste-image-rename",
   "homepage",
   "obsidian-excalidraw-plugin",
@@ -10,7 +9,5 @@
   "consistent-attachments-and-links",
   "obsidian-tikzjax",
   "edge-tts",
-  "smart-chatgpt",
-  "smart-context",
   "copilot"
 ]

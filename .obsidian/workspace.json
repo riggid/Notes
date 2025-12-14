@@ -21,8 +21,19 @@
               "icon": "lucide-file",
               "title": "Index"
             }
+          },
+          {
+            "id": "0971e2f24c88f84f",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +104,7 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "0971e2f24c88f84f",
   "lastOpenFiles": [
     "Semester 1/Mechanical/Mechanical.md",
     "Index.md",
