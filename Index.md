@@ -1,168 +1,103 @@
-## **Hello Welcome to my notes**
-### **By**
-- ### **Shreyansh Tandon**
-- ### **Shubham Jalori**
 ```dataviewjs
-// --- This script is fully automatic ---
-
-const root = dv.app.vault.getRoot();
-const allChildren = root.children;
-
-// --- Icon Map ---
-// We've added your new root items here
-const iconMap = {
-    "Electrical": "💡",
-    "Physics": "⚛️",
-    "Mathematics": "🧮",
-    "Mechanical": "⚙️",
-    "Python": "🐍",
-    "Environmental Studies and Life Science": "🌿",
-    
-    // --- NEW ICONS ---
-    "PESU IO": "🏛️",
-    "Notes": "📝",
-    "DefaultFolder": "📂",
-    "DefaultNote": "📄"
-    // Add more as needed
+dv.container.id = "dashboard-grid";
+// --- Configuration ---
+const CONFIG = {
+    // Folders to hide
+    exclude: ["_templates", "copilot", ".", "Attachments", ".obsidian", ".git", ".smart-env", "Excalidraw"], 
+    // Icons for specific folders/files
+    icons: {
+        "Projects": "🚀",
+        "Notes": "📝",
+        "Quantum Computing": "⚛️",
+        "PESU IO": "💻",
+        "Semester 1": "📚",
+        "Electrical": "⚡",
+        "Environmental Studies and Life Science": "🌿",
+        "Mathematics": "📐",
+        "Mechanical": "⚙️",
+        "Physics": "🌌",
+        "Python": "🐍",
+        "Default": "📂",
+        "File": "📄"
+    }
 };
+// --- Main Logic (Scans Root Directory) ---
+const root = dv.app.vault.getRoot();
+const items = root.children.sort((a, b) => a.name.localeCompare(b.name));
+for (const folder of items) {
+    // Only process folders
+    if (!folder.children) continue;
+    // Skip excluded folders
+    if (CONFIG.exclude.some(ex => folder.name === ex || folder.name.startsWith("."))) continue;
+    // Create Card
+    const card = createCard(folder.name, CONFIG.icons[folder.name] || CONFIG.icons.Default);
+    const container = card.querySelector(".subject-button-container");
+    
+    let hasLinks = false;
+    const subItems = folder.children.sort((a, b) => a.name.localeCompare(b.name));
+    for (const sub of subItems) {
+        let linkPath = sub.path;
+        let displayName = sub.name.replace(".md", "");
+        // Try to find specific icon, otherwise undefined
+        let icon = CONFIG.icons[displayName];
 
-// --- Part 1: Process Semester Folders ---
-const semesterFolders = allChildren
-    .filter(child => child.children && child.name.startsWith("Semester"))
-    .sort((a, b) => a.name.localeCompare(b.name));
+        // Logic: if it's a sub-folder, try to find a "Main Note" inside it
+        if (sub.children) {
+            // If no specific icon found, use the Default folder icon
+            if (!icon) icon = CONFIG.icons.Default;
+            
+            const mainNote = dv.pages(`"${sub.path}"`)
+                .sort(p => p.file.name === sub.name ? -1 : 1) // Prioritize exact name match
+                .first();
+            
+            if (mainNote) {
+                linkPath = mainNote.file.path;
+            } else {
+                continue; // Skip empty folders
+            }
+        } else {
+            // It's a file. If no specific icon, use File icon
+            if (!icon) icon = CONFIG.icons.File;
+        }
 
-if (semesterFolders.length === 0) {
-    dv.paragraph("No 'Semester' folders found in the root of your vault.");
+        container.appendChild(createButton(displayName, icon, linkPath));
+        hasLinks = true;
+    }
+    if (!hasLinks) {
+        const emptyMsg = document.createElement("span");
+        emptyMsg.innerText = "_No contents found._";
+        emptyMsg.style.color = "var(--text-muted)";
+        emptyMsg.style.fontStyle = "italic";
+        container.appendChild(emptyMsg);
+    }
+    
+    dv.container.appendChild(card);
 }
-
-for (const semesterFolder of semesterFolders) {
-    const folderName = semesterFolder.name;
-    const subjectFolders = semesterFolder.children
-        .filter(child => child.children)
-        .sort((a, b) => a.name.localeCompare(b.name));
-
+// --- Helper Functions ---
+function createCard(title, icon) {
     const card = document.createElement("div");
     card.className = "semester-card";
-
-    const title = document.createElement("h2");
-    title.className = "semester-title";
-    title.innerText = folderName;
-    card.appendChild(title);
-
-    const container = document.createElement("div");
-    container.className = "subject-button-container";
-    card.appendChild(container);
-
-    let hasLinks = false;
     
-    for (const subjectFolder of subjectFolders) {
-        let subjectFolderPath = subjectFolder.path;
-        let displayName = subjectFolder.name;
-        
-        let mainNote = dv.pages(`"${subjectFolderPath}"`)
-            .where(p => p.file.folder === subjectFolderPath)
-            .first();
-
-        if (mainNote) {
-            hasLinks = true;
-            let linkPath = mainNote.file.path;
-            let icon = iconMap[displayName] || "📚";
-            let buttonText = `${icon} ${displayName}`;
-
-            let link = document.createElement("a");
-            link.className = "subject-button";
-            link.href = "#";
-            link.innerText = buttonText;
-            
-            link.addEventListener("click", (e) => {
-                e.preventDefault(); 
-                app.workspace.openLinkText(linkPath, "", false);
-            });
-            
-            container.appendChild(link);
-        }
-    }
-
-    if (!hasLinks) {
-        container.innerText = `_No subject notes found in ${folderName}._`;
-    }
+    const h2 = document.createElement("h2");
+    h2.className = "semester-title";
+    h2.innerText = `${icon} ${title}`;
     
-    dv.container.appendChild(card);
+    const div = document.createElement("div");
+    div.className = "subject-button-container";
+    
+    card.appendChild(h2);
+    card.appendChild(div);
+    return card;
 }
-
-// --- Part 2: Process All Other Folders & Notes ---
-const otherFolders = allChildren
-    .filter(child => 
-        child.children && // It's a folder
-        !child.name.startsWith("Semester") && // Not a semester
-        child.name !== "_templates" // Not templates
-    ).sort((a, b) => a.name.localeCompare(b.name));
-
-const otherNotes = allChildren
-    .filter(child => 
-        !child.children && // It's a note
-        child.name.endsWith(".md") && // It's a Markdown file
-        child.name !== "Index.md" // Not this dashboard file
-    ).sort((a, b) => a.name.localeCompare(b.name));
-
-// --- Create the "Other Resources" card if any exist ---
-if (otherFolders.length > 0 || otherNotes.length > 0) {
-    
-    const card = document.createElement("div");
-    card.className = "semester-card"; // Re-use the same card style
-
-    const title = document.createElement("h2");
-    title.className = "semester-title";
-    title.innerText = "Other Resources"; // New card title
-    card.appendChild(title);
-
-    const container = document.createElement("div");
-    container.className = "subject-button-container";
-    card.appendChild(container);
-
-    // --- Add buttons for other folders (e.g., "PESU IO") ---
-    for (const folder of otherFolders) {
-        let displayName = folder.name;
-        // Find the *first* note in that folder to link to
-        let mainNote = dv.pages(`"${folder.path}"`).first();
-        
-        if (mainNote) {
-            let linkPath = mainNote.file.path;
-            let icon = iconMap[displayName] || iconMap["DefaultFolder"];
-            let buttonText = `${icon} ${displayName}`;
-
-            let link = document.createElement("a");
-            link.className = "subject-button";
-            link.href = "#";
-            link.innerText = buttonText;
-
-            link.addEventListener("click", (e) => {
-                e.preventDefault();
-                app.workspace.openLinkText(linkPath, "", false);
-            });
-            container.appendChild(link);
-        }
-    }
-
-    // --- Add buttons for other notes (e.g., "Notes.md") ---
-    for (const note of otherNotes) {
-        let linkPath = note.path;
-        let displayName = note.name.replace(".md", ""); // Clean up name
-        let icon = iconMap[displayName] || iconMap["DefaultNote"];
-        let buttonText = `${icon} ${displayName}`;
-        
-        let link = document.createElement("a");
-        link.className = "subject-button";
-        link.href = "#";
-        link.innerText = buttonText;
-
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            app.workspace.openLinkText(linkPath, "", false);
-        });
-        container.appendChild(link);
-    }
-    
-    dv.container.appendChild(card);
+function createButton(text, icon, path) {
+    const link = document.createElement("a");
+    link.className = "subject-button";
+    link.href = "#";
+    link.innerText = `${icon} ${text}`;
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        app.workspace.openLinkText(path, "", false);
+    });
+    return link;
 }
 ```

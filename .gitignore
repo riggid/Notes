@@ -1,5 +1,5 @@
 # Ignore Obsidian's local cache
-/.obsidian/cache/
+.obsidian/cache/
 
 # Ignore old/deprecated workspace file (conflicts with workspace.json)
 /.obsidian/workspace
@@ -11,13 +11,10 @@
 /.obsidian/config
 
 # Ignore the 'smart-env' plugin data (from your previous file)
-/.obsidian/plugins/copilot/data.json
 /copilot
 
 # Ignore '.ajson' files (from your previous file)
 *.ajson
-
-/.obsidian/workspace.json
 
 # --- OS-specific junk files ---
 
@@ -31,6 +28,6 @@ Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
 Desktop.ini
-/.obsidian/workspace.json
+
 /.obsidian/workspace.json
 
