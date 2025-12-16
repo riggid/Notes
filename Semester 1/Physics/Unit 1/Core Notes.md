@@ -4,7 +4,7 @@ dg-publish: true
 
 # [[Physics|Back]]
 ***
-[[Semester 1/Physics/Unit 1/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 1/Examples|Examples]] | [[Semester 1/Physics/Unit 1/Q&A|Q&A]]
+[[Semester 1/Physics/Unit 1/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 1/Examples|Examples]] | [[Semester 1/Physics/Unit 1/Questions|Questions]]
 ***
 # Unit 1: Concepts Leading to Quantum Mechanics
 
@@ -13,20 +13,20 @@ dg-publish: true
 Maxwell's equations are a set of fundamental equations that describe the behavior of electric and magnetic fields. They can be expressed in differential form (applying to every point in space) or integral form (applying to larger regions).
 *   **Integral Forms**: Describe field behavior over **extended regions** (volumes, surfaces, lines). Useful for calculations with high symmetry.
 *   **Differential Forms**: Describe field behavior **at a specific point**. Relate local spatial variations (divergence, curl) to local sources or time variations. Essential for deriving other results (like the wave equation) and for analyzing fields in complex situations without symmetry.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#CL2_Q1:%20Difference%20between%20integral%20and%20differential%20forms%20of%20Maxwell's%20equations)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#CL2_Q1:%20Difference%20between%20integral%20and%20differential%20forms%20of%20Maxwell's%20equations)
 
 ### **Vector Operators**
 -   **Gradient ($\nabla\phi$)**: Acts on a scalar field ($\phi$) to produce a vector field. Points in the direction of **steepest increase**. Its magnitude is the maximum rate of change. (e.g., $\vec{E} = -\nabla V$).
 -   **Divergence ($\nabla \cdot \vec{A}$)**: Acts on a vector field ($\vec{A}$) to produce a scalar. Measures the "spreading out" or net outflow (source/sink) of the vector field from a point.
 -   **Curl ($\nabla \times \vec{A}$)**: Acts on a vector field ($\vec{A}$) to produce another vector field. Measures the "circulation density" or "vorticity" of the vector field at a point. Its direction indicates the axis of rotation, and its magnitude the strength of rotation. (e.g., current creates circulating $\vec{B}$).
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Explain%20the%20geometric%20interpretation%20of%20the%20gradient,%20divergence%20and%20curl%20of%20a%20vector%20field?)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#Explain%20the%20geometric%20interpretation%20of%20the%20gradient,%20divergence%20and%20curl%20of%20a%20vector%20field?)
 
 ### **Maxwell's Equations in a Medium**
 -   **Gauss's Law for Electric Fields**: $\nabla \cdot \vec{E} = \frac{\rho}{\epsilon_{0}}$. Source: **electric charge density** $\rho$.
 -   **Gauss's Law for Magnetic Fields**: $\nabla \cdot \vec{B} = 0$. Physically, **magnetic monopoles do not exist** (magnetic field lines always form closed loops).
 -   **Faraday's Law of Induction**: $\nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}$. A time-varying magnetic field induces an electric field.
 -   **Ampere-Maxwell Law**: $\nabla \times \vec{B} = \mu_{0}\vec{J} + \mu_{0}\epsilon_{0} \frac{\partial \vec{E}}{\partial t}$. Sources: **electric current density** $\vec{J}$ and **displacement current** density $\epsilon_0 \frac{\partial\vec{E}}{\partial t}$.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Which%20of%20Maxwell's%20equations%20contain%20'sources'?)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#Which%20of%20Maxwell's%20equations%20contain%20'sources'?)
 
 ### **The Wave Equation from Maxwell's Equations**
 In free space ($\rho=0, \vec{J}=0$), Maxwell's equations can be combined to derive the wave equation for both $\vec{E}$ and $\vec{B}$.
@@ -49,7 +49,7 @@ For a plane electromagnetic wave:
 
 ![EM Wave Propagation](Attachments/em_wave_propagation.png)
 
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Discuss%20the%20phase%20correlation%20and%20direction%20of%20the%20E%20and%20B%20fields%20of%20an%20EM%20Wave.)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#Discuss%20the%20phase%20correlation%20and%20direction%20of%20the%20E%20and%20B%20fields%20of%20an%20EM%20Wave.)
 > For a numerical problem, see: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%201:%20EM%20Wave%20Properties)
 
 ---
@@ -65,13 +65,13 @@ The energy density (energy per unit volume, $u$) in an EM wave is shared equally
 The **Poynting Vector** ($\vec{S}$) describes the direction and rate of energy flow per unit area (power per unit area, or energy flux) in an EM wave.
 $$\vec{S} = \frac{1}{\mu_{0}} (\vec{E} \times \vec{B})$$
 The magnitude of the Poynting vector ($S$) is equal to the total energy density ($u$) multiplied by the speed of the wave ($c$): $S = uc$.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Discuss%20the%20energy%20density%20in%20electromagnetic%20waves%20and%20how%20is%20it%20related%20to%20the%20Poynting%20vector%3F)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#Discuss%20the%20energy%20density%20in%20electromagnetic%20waves%20and%20how%20is%20it%20related%20to%20the%20Poynting%20vector%3F)
 
 ### **Polarization of Light**
 Polarization describes the orientation of the electric field oscillations in an electromagnetic wave.
 -   **Circularly Polarized Light**: Electric field vector rotates in a **circle**. Formed by two perpendicular plane-polarized waves of **equal amplitude** with a **$90^{\circ}$ phase difference**.
 -   **Elliptically Polarized Light**: Electric field vector traces an **ellipse**. Formed when the two perpendicular components have **unequal amplitudes** or a phase difference other than $0^\circ$, $\pm 90^\circ$, or $180^\circ$.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Differentiate%20between%20circular%20and%20elliptical%20polarization%20of%20light.)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#Differentiate%20between%20circular%20and%20elliptical%20polarization%20of%20light.)
 
 ---
 
@@ -97,7 +97,7 @@ An idealized object that absorbs all incident electromagnetic radiation and emit
     $$\rho(\nu)d\nu = \frac{8\pi h\nu^{3}}{c^{3}}\frac{1}{e^{h\nu / kT}-1}d\nu $$
     **Average energy of a Planck oscillator**: $\langle E \rangle = \frac{h\nu}{e^{h\nu/kT}-1}$.
     This formula correctly described the spectrum and explained the Ultraviolet Catastrophe by ensuring $\langle E \rangle \to 0$ for high frequencies.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Describe%20the%20characteristics%20of%20a%20black%20body%20spectrum.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Write%20Planck's%20formula%20for%20black%20body%20radiation.), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%202:%20Planck's%20vs.%20Classical%20Energy)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#Describe%20the%20characteristics%20of%20a%20black%20body%20spectrum.), [Questions](Semester%201/Physics/Unit%201/Questions.md#Write%20Planck's%20formula%20for%20black%20body%20radiation.), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%202:%20Planck's%20vs.%20Classical%20Energy)
 
 #### **Derivation of the Number of Electromagnetic Modes per Unit Frequency Interval in a 3D Cavity (Self-Study Topic)**
 This derivation is crucial for the classical Rayleigh-Jeans law. It involves counting the number of standing wave modes allowed in a cubic cavity.
@@ -152,7 +152,7 @@ Scattering of X-rays (or gamma rays) by electrons results in a decrease in energ
 
 ![Compton Scattering](Attachments/compton_scattering_diagram.png)
 
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#How%20does%20classical%20theory%20fail%20to%20explain%20the%20results%20of%20Compton's%20experiment%3F), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%203:%20Compton%20Scattering%20Calculation)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#How%20does%20classical%20theory%20fail%20to%20explain%20the%20results%20of%20Compton's%20experiment%3F), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%203:%20Compton%20Scattering%20Calculation)
 
 ### **Derivation of Compton Shift ($\Delta\lambda$)** **(Self-Study Topic - Simplified Version)**
 The Compton shift derived from relativistic conservation of energy and momentum during a collision between an incident photon and a stationary electron.
@@ -202,7 +202,7 @@ The Compton shift derived from relativistic conservation of energy and momentum 
 -   **de Broglie Wavelength**: $$\lambda = \frac{h}{p} = \frac{h}{mv} = \frac{h}{\sqrt{2mE_K}}$$ *(Using non-relativistic kinetic energy $E_K$).*
 -   **Significance**: Wave nature is significant only for microscopic particles (small $m$), producing measurable $\lambda$. For macroscopic objects, $\lambda$ is extremely small and undetectable.
 -   **Experimental Verification**: Davisson-Germer experiment (electron diffraction) confirmed the wave nature of electrons.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#What%20are%20matter%20waves%3F%20State%20the%20De-Broglie%20hypothesis.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Why%20is%20the%20wave%20nature%20of%20matter%20not%20apparent%20for%20macroscopic%20particles%3F), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%204:%20De-Broglie%20Wavelength%20of%20an%20Electron), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%205:%20De-Broglie%20Wavelength%20of%20an%20Alpha%20Particle)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#What%20are%20matter%20waves%3F%20State%20the%20De-Broglie%20hypothesis.), [Questions](Semester%201/Physics/Unit%201/Questions.md#Why%20is%20the%20wave%20nature%20of%20matter%20not%20apparent%20for%20macroscopic%20particles%3F), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%204:%20De-Broglie%20Wavelength%20of%20an%20Electron), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%205:%20De-Broglie%20Wavelength%20of%20an%20Alpha%20Particle)
 
 ### **Wave Packets, Phase and Group Velocity**
 -   **Wave Packet**: A localized superposition of waves representing a moving particle.
@@ -294,7 +294,7 @@ The Heisenberg Uncertainty Principle provides a fundamental quantum mechanical a
 -   **Physical Interpretation (Born Interpretation)**: The wavefunction $\Psi$ itself has no direct physical meaning. Its squared magnitude, $|\Psi|^2 = \Psi^*\Psi$, represents the **probability density** of finding the particle at a certain position $\mathbf{r}$ and time $t$.
 -   **Properties of a Valid Wavefunction**: Must be finite, single-valued, continuous, have continuous first derivatives, and be normalizable (total probability = 1).
 -   **Superposition Principle**: If $\psi_1$ and $\psi_2$ are possible states, then any linear combination $\psi = c_1\psi_1 + c_2\psi_2$ is also a possible state. This underlies interference phenomena.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Give%20the%20physical%20interpretation%20of%20the%20wave%20function.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Mention%20the%20important%20properties%20of%20a%20wave%20function.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#What%20is%20the%20physical%20significance%20of%20the%20normalization%20of%20a%20wave%20function%3F)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#Give%20the%20physical%20interpretation%20of%20the%20wave%20function.), [Questions](Semester%201/Physics/Unit%201/Questions.md#Mention%20the%20important%20properties%20of%20a%20wave%20function.), [Questions](Semester%201/Physics/Unit%201/Questions.md#What%20is%20the%20physical%20significance%20of%20the%20normalization%20of%20a%20wave%20function%3F)
 
 ### **Observables, Operators, and Eigenvalues**
 -   **Observables**: Measurable physical quantities (e.g., position, momentum, energy).
@@ -308,7 +308,7 @@ The Heisenberg Uncertainty Principle provides a fundamental quantum mechanical a
     | Total Energy (Hamiltonian) | $\hat{H} = -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r})$ |
 -   **Eigenvalue Equation**: $\hat{A}\psi = a\psi$. Here, $\psi$ is an **eigenfunction** (a state where the observable has a definite value), and $a$ is the **eigenvalue** (that definite measured value).
 -   **Expectation Value ($\langle A \rangle$)**: The theoretical average result of measuring an observable $A$ on many identical systems in state $\Psi$. If $\Psi$ is normalized, $\langle A \rangle = \int \Psi^* \hat{A} \Psi dV$.
-> See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Explain%20operators,%20observables,%20and%20the%20eigenvalue%20equation.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Write%20five%20operators%20associated%20with%20dynamical%20variables.), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Explain%20the%20concept%20of%20the%20"expectation%20value".), [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Find%20the%20expectation%20value%20of%20position,%20$\langle%20x%20\rangle$,%20for%20a%20particle%20in%20a%20box%20of%20width%20L.)
+> See also: [Questions](Semester%201/Physics/Unit%201/Questions.md#Explain%20operators,%20observables,%20and%20the%20eigenvalue%20equation.), [Questions](Semester%201/Physics/Unit%201/Questions.md#Write%20five%20operators%20associated%20with%20dynamical%20variables.), [Questions](Semester%201/Physics/Unit%201/Questions.md#Explain%20the%20concept%20of%20the%20"expectation%20value".), [Questions](Semester%201/Physics/Unit%201/Questions.md#Find%20the%20expectation%20value%20of%20position,%20$\langle%20x%20\rangle$,%20for%20a%20particle%20in%20a%20box%20of%20width%20L.)
 
 ---
 

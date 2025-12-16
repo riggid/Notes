@@ -4,7 +4,7 @@ dg-publish: true
 
 # [[Physics|Back]]
 ***
-[[Semester 1/Physics/Unit 1/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 1/Examples|Examples]] | [[Semester 1/Physics/Unit 1/Q&A|Questions]]
+[[Semester 1/Physics/Unit 1/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 1/Examples|Examples]] | [[Semester 1/Physics/Unit 1/Questions|Questions]]
 ***
 # Unit 1: Q&A and Worked Problems
 
