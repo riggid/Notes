@@ -1,6 +1,10 @@
-# [Back](../Environmental%20Studies.md)
+---
+dg-publish: true
+---
+
+# [[Environmental Studies|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Environmental Studies and Life Science/Unit 1/Core Notes|Core Notes]] | [[Semester 1/Environmental Studies and Life Science/Unit 1/Examples|Examples]] | [[Semester 1/Environmental Studies and Life Science/Unit 1/Q&A|Questions]]
 ***
 # Unit 1: Q&A
 
@@ -77,4 +81,4 @@ It is a framework that prioritizes waste management strategies from most to leas
 The goal is to isolate or dilute radioactive waste to ensure that the rate or concentration of any radionuclides returned to the biosphere is harmless. This is achieved by containing and managing all waste, with some requiring deep and permanent burial.
 
 ***
-# [Back](../Environmental%20Studies.md)
+# [[Environmental Studies|Back]]

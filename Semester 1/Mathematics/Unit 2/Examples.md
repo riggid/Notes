@@ -1,6 +1,10 @@
-# [Back](../Mathematics.md)
+---
+dg-publish: true
+---
+
+# [[Mathematics|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Mathematics/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Mathematics/Unit 2/Examples|Examples]] | [[Semester 1/Mathematics/Unit 2/Q&A|Questions]]
 ***
 # Unit 2: Worked Examples
 
@@ -427,4 +431,4 @@ $x_p(t) = -\frac{50}{61} \cos(3t) + \frac{60}{61} \sin(3t)$.
 **(iii) General Solution:**
 $x(t) = e^{-t} [C_1 \cos(\sqrt{3}t) + C_2 \sin(\sqrt{3}t)] - \frac{50}{61} \cos(3t) + \frac{60}{61} \sin(3t)$
 ***
-# [Back](../Mathematics.md)
+# [[Mathematics|Back]]

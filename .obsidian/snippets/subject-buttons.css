@@ -1,49 +1,103 @@
-/* --- Dashboard Premium Styles --- */
+/* --- Catppuccin Mocha Palette & Dashboard Styles --- */
+:root {
+    --ctp-rosewater: #f5e0dc;
+    --ctp-flamingo: #f2cdcd;
+    --ctp-pink: #f5c2e7;
+    --ctp-mauve: #cba6f7;
+    --ctp-red: #f38ba8;
+    --ctp-maroon: #eba0ac;
+    --ctp-peach: #fab387;
+    --ctp-yellow: #f9e2af;
+    --ctp-green: #a6e3a1;
+    --ctp-teal: #94e2d5;
+    --ctp-sky: #89dceb;
+    --ctp-sapphire: #74c7ec;
+    --ctp-blue: #89b4fa;
+    --ctp-lavender: #b4befe;
+    --ctp-text: #cdd6f4;
+    --ctp-subtext1: #bac2de;
+    --ctp-subtext0: #a6adc8;
+    --ctp-overlay2: #9399b2;
+    --ctp-overlay1: #7f849c;
+    --ctp-overlay0: #6c7086;
+    --ctp-surface2: #585b70;
+    --ctp-surface1: #45475a;
+    --ctp-surface0: #313244;
+    --ctp-base: #1e1e2e;
+    --ctp-mantle: #181825;
+    --ctp-crust: #11111b;
+}
+
 /* Main Container */
 #dashboard-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 24px;
     margin-top: 20px;
     padding: 10px;
 }
 
 /* Card Styling */
 .semester-card {
-    background: var(--background-secondary);
-    border: 1px solid var(--background-modifier-border);
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: var(--ctp-surface0);
+    border: 1px solid var(--ctp-surface1);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle gradient top border */
+.semester-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ctp-mauve), var(--ctp-blue));
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .semester-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-    border-color: var(--interactive-accent);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 0 15px rgba(203, 166, 247, 0.1);
+    border-color: var(--ctp-mauve);
+}
+
+.semester-card:hover::before {
+    opacity: 1;
 }
 
 /* Title Styling */
 .semester-title {
-    margin: 0 0 15px 0 !important;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--interactive-accent);
-    font-size: 1.2em;
-    font-weight: 600;
-    color: var(--text-normal);
+    margin: 0 0 20px 0 !important;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--ctp-surface1);
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--ctp-mauve);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
+    letter-spacing: -0.01em;
+}
+
+.title-icon {
+    font-size: 1.1em;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 /* Button Container */
 .subject-button-container {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     flex-grow: 1;
 }
 
@@ -51,24 +105,35 @@
 a.subject-button {
     display: flex !important;
     align-items: center;
-    padding: 12px 16px;
-    background: var(--background-primary);
-    border: 1px solid var(--background-modifier-border);
-    border-radius: 8px;
-    color: var(--text-normal) !important;
+    padding: 14px 18px;
+    background: var(--ctp-base);
+    border: 1px solid var(--ctp-surface1);
+    border-radius: 10px;
+    color: var(--ctp-text) !important;
     text-decoration: none !important;
     font-size: 0.95em;
-    transition: all 0.2s ease;
+    font-weight: 500;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a.subject-button:hover {
-    background: var(--interactive-accent);
-    color: var(--text-on-accent) !important;
-    border-color: var(--interactive-accent);
-    padding-left: 20px;
-    /* Slide animation */
+    background: var(--ctp-mauve);
+    color: var(--ctp-base) !important;
+    border-color: var(--ctp-mauve);
+    padding-left: 24px;
+    box-shadow: 0 4px 12px rgba(203, 166, 247, 0.3);
 }
 
-a.subject-button::before {
-    margin-right: 10px;
+.button-icon {
+    margin-right: 12px;
+    color: var(--ctp-blue);
+    font-size: 1.1em;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+a.subject-button:hover .button-icon {
+    color: var(--ctp-base);
+    /* Contrast against mauve bg */
+    transform: scale(1.2) rotate(5deg);
 }

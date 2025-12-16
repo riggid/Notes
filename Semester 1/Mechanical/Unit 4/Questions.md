@@ -1,6 +1,10 @@
-# [Back](../../Mechanical.md)
+---
+dg-publish: true
+---
+
+# [[Mechanical|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Mechanical/Unit 4/Core Notes|Core Notes]] | [[Semester 1/Mechanical/Unit 4/Examples|Examples]] | [[Semester 1/Mechanical/Unit 4/Q&A|Questions]]
 ***
 # Unit 4: Modern Machining, Heat Treatment, Control Systems, and Robotics - Practice Questions
 
@@ -122,4 +126,4 @@
 *   **Answer**: 1) Substitution in hazardous environments. 2) Consistency and repeatability. 3) Reprogrammability and flexibility. 4) Computer Integrated Manufacturing (CIM). See [Core Notes.md](Core%20Notes.md#631-reasons-for-commercial-and-technological-importance-of-industrial-robots).
 
 ---
-# [Back](../../Mechanical.md)
+# [[Mechanical|Back]]

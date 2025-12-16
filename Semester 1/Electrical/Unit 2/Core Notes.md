@@ -1,6 +1,10 @@
-# [Back](../Electrical.md)
+---
+dg-publish: true
+---
+
+# [[Electrical|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Electrical/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Electrical/Unit 2/Examples|Examples]] | [[Semester 1/Electrical/Unit 2/Q&A|Questions]]
 ***
 # Unit 2: Single Phase AC Circuits
 
@@ -28,6 +32,8 @@ Where:
 * $\phi$ is the **phase angle** in radians or degrees, indicating the waveform's shift relative to a reference sine wave ($A \sin(\omega t)$).
     * If $\phi > 0$, the waveform **leads** the reference.
     * If $\phi < 0$, the waveform **lags** the reference.
+
+![Sinusoidal Waveform](Attachments/sine_wave_ac.png)
 
 *(See Example 1 in the [Examples](Examples.md#example-1-sine-wave-properties) file for calculations involving frequency and time period.)*
 *(See Example 2 in the [Examples](Examples.md#example-2-instantaneous-value) file for calculating instantaneous values.)*
@@ -59,6 +65,8 @@ $$\bar{F} = \frac{F_m}{\sqrt{2}} \angle \phi = F_{rms} \angle \phi$$
 * **Phasor Arithmetic**:
     * Addition/Subtraction: Easier in rectangular form (add/subtract real and imaginary parts separately).
     * Multiplication/Division: Easier in polar form (multiply/divide magnitudes, add/subtract angles).
+
+![Phasor Diagram](Attachments/phasor_diagram_basic.png)
 
 *(See Example 4 in the [Examples](Examples.md#example-4-phasor-representation) file for converting sine waves to phasors.)*
 *(See Example 5 in the [Examples](Examples.md#example-5-phasor-addition) file for adding phasors.)*
@@ -110,7 +118,12 @@ For elements in series, the same current $\bar{I}$ flows through them. The total
     * $\bar{Z}_T = R + j(X_L - X_C) = |Z| \angle \phi$, where $|Z| = \sqrt{R^2 + (X_L - X_C)^2}$ and $\phi = \arctan(\frac{X_L - X_C}{R})$.
     * If $X_L > X_C$, circuit is **inductive** (current lags voltage, $\phi > 0$).
     * If $X_C > X_L$, circuit is **capacitive** (current leads voltage, $\phi < 0$).
-    * If $X_L = X_C$, circuit is **resistive** (current in phase with voltage, $\phi = 0$). This is **series resonance**. 
+    * If $X_L = X_C$, circuit is **resistive** (current in phase with voltage, $\phi = 0$). This is **series resonance**.
+
+![Series RLC Circuit](Attachments/rlc_series_circuit.png)
+
+![Impedance Triangle](Attachments/impedance_triangle.png)
+
 *(See Example 7 in the [Examples](Examples.md#example-7-series-rl-calculations) file for series RL analysis.)*
 *(See Example 8 and Example 9 in the [Examples](Examples.md#example-8-series-rlc-calculations) file for series RLC analysis.)*
 
@@ -134,6 +147,9 @@ For elements in series, the same current $\bar{I}$ flows through them. The total
     * **Unity pf**: Current in phase with voltage (purely resistive or resonant circuit, $\phi = 0$).
     For series circuits, $pf = R_T / |Z_T|$.
 * **Power Triangle**: A right-angled triangle illustrating the relationship $S^2 = P^2 + Q^2$. $P = S \cos \phi$, $Q = S \sin \phi$. 
+
+![Power Triangle](Attachments/power_triangle_diagram.png)
+
 *(See Example 10 in the [Examples](Examples.md#example-10-power-calculations) file for power calculations.)*
 
 ---
@@ -191,4 +207,4 @@ The required capacitor rating (in kVAR or capacitance in Farads) can be calculat
 *(See Example 17 and Example 18 in the [Examples](Examples.md#example-17-power-factor-correction) file for power factor correction calculations.)*
 
 ***
-# [Back](../Mathematics.md)
+# [[Mathematics|Back]]

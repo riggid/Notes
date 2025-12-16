@@ -1,6 +1,10 @@
-# [Back](../../Mechanical.md)
+---
+dg-publish: true
+---
+
+# [[Mechanical|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Mechanical/Unit 4/Core Notes|Core Notes]] | [[Semester 1/Mechanical/Unit 4/Examples|Examples]] | [[Semester 1/Mechanical/Unit 4/Q&A|Questions]]
 ***
 # Unit 4: Modern Machining, Heat Treatment, Control Systems, and Robotics
 
@@ -1067,4 +1071,4 @@ Industrial robots have become indispensable across a vast spectrum of manufactur
     5.  **Overall**: Induction hardening is highly effective for large steel components where selective surface hardness is required with minimal distortion, making it a valuable process in manufacturing.
 
 ---
-# [Back](../Mechanical.md)
+# [[Mechanical|Back]]

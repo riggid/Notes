@@ -1,6 +1,10 @@
-# [Back](../../Mechanical.md)
+---
+dg-publish: true
+---
+
+# [[Mechanical|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Mechanical/Unit 4/Core Notes|Core Notes]] | [[Semester 1/Mechanical/Unit 4/Examples|Examples]] | [[Semester 1/Mechanical/Unit 4/Q&A|Questions]]
 ***
 # Unit 4: Worked Examples
 
@@ -120,4 +124,4 @@ For drilling intricate, small-diameter holes in a very hard, brittle ceramic com
 *   **Low Heat Generation**: The amount of heat generation in AJM is low and localized. This is beneficial for heat-sensitive materials like ceramics, which can otherwise suffer from thermal damage, micro-cracks, or phase changes due to high heat input from other thermal machining processes.
 
 ---
-# [Back](../../Mechanical.md)
+# [[Mechanical|Back]]

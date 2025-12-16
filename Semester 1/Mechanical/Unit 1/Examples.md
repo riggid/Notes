@@ -1,4 +1,8 @@
-# [Back](../Mechanical.md)
+---
+dg-publish: true
+---
+
+# [[Mechanical|Back]]
 ***
 # Numerical Examples: Thermodynamics
 

@@ -1,4 +1,8 @@
-# [Back](../Mathematics.md)
+---
+dg-publish: true
+---
+
+# [[Mathematics|Back]]
 ***
 # Questions and Examples from Unit 1
 

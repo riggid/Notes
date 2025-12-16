@@ -1,6 +1,10 @@
-# [Back](../Physics.md)
+---
+dg-publish: true
+---
+
+# [[Physics|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Physics/Unit 3/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 3/Examples|Examples]] | [[Semester 1/Physics/Unit 3/Q&A|Questions]]
 ***
 # Unit 3: Worked Examples
 
@@ -76,4 +80,4 @@ $$\tau = \frac{9.109 \times 10^{-31}}{2.38675572 \times 10^{-17}} \approx 3.816 
 The relaxation time is approximately $3.82 \times 10^{-14}$ seconds.
 
 ---
-# [Back](../../Physics.md)
+# [[Physics|Back]]

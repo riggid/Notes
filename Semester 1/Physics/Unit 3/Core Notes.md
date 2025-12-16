@@ -1,6 +1,10 @@
-# [Back](../../Physics.md)
+---
+dg-publish: true
+---
+
+# [[Physics|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Physics/Unit 3/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 3/Examples|Examples]] | [[Semester 1/Physics/Unit 3/Q&A|Questions]]
 ***
 # Unit 3: Quantum Mechanical Treatment of Electron Transport and Magnetic Materials
 
@@ -129,7 +133,7 @@ Particles in the universe are fundamentally classified into two groups based on 
         *   If $E = E_f$: The exponent $(E-E_f)/k_B T = 0$. So $F_d(E) = \frac{1}{e^0 + 1} = \frac{1}{1+1} = 0.5$. The Fermi energy level (at $E_f$) has a 50% probability of being occupied.
         *   For $E$ close to $E_f$: The sharp step function observed at 0K begins to soften. Some electrons just below $E_f$ (within an energy range of a few $k_B T$) are thermally excited to states just above $E_f$, leaving unoccupied states below $E_f$ and occupying states above $E_f$. This indicates that only a small fraction of electrons near the Fermi level are thermally active.
     **Description of Plot (Fermi Factor):** The plot shows the Fermi-Dirac distribution function $F_d(E)$ as a function of energy $E$. At $T=0K$, it is a perfectly sharp step function: the occupation probability is 1 for all energies $E < E_f$ and drops discontinuously to 0 for all energies $E > E_f$. As temperature $T$ increases ($T_1 < T_2$), the sharp step at $E_f$ softens and becomes a smooth, S-shaped curve. This rounding indicates that thermal energy allows some electrons below $E_f$ to be excited to states above $E_f$. For all temperatures, the curve passes through $F_d(E)=0.5$ precisely at $E=E_f$.
-    ![Fermi factor variations with temperature for E_f=5.0eV](https://users.phys.nuk.edu.tw/user/files/20120227131751.jpg)
+    ![Fermi factor variations with temperature for E_f=5.0eV](Attachments/fermi_dirac_distribution.png)
 
 *   **Temperature Dependence of Fermi Energy**: The Fermi energy has a weak temperature dependence for typical metals. For temperatures well below the Fermi temperature ($T \ll T_f$), the Fermi energy slightly decreases with increasing temperature, given by:
     $$E_f(T) = E_{f0}\left[1 - \frac{\pi^2}{12}\left(\frac{k_B T}{E_{f0}}\right)^2\right]$$
@@ -467,7 +471,7 @@ A **solenoid** is a coil of wire (usually cylindrical) wound in a tightly packed
 *   **Field Outside the Solenoid**: Outside the solenoid, the magnetic field lines emerge from one end of the coil, loop through the surrounding space, and re-enter the other end.
 *   **Resemblance to a Bar Magnet**: The pattern of magnetic field lines produced by a current-carrying solenoid is virtually identical to the field lines produced by a permanent bar magnet. One end of the solenoid acts as a magnetic **North pole** (where field lines effectively emerge), and the other end acts as a magnetic **South pole** (where field lines effectively enter). The direction of the poles can be determined by the right-hand rule.
     **Description of Diagram:** This diagram shows a cylindrical solenoid with current flowing through its turns. Magnetic field lines are depicted inside and outside the solenoid. Inside, they are straight and parallel. Outside, they emerge from one end (labeled North pole), loop around, and enter the other end (labeled South pole), mirroring the classic field pattern of a bar magnet. This illustrates how electromagnetic fields can replicate static magnetic fields of permanent magnets.
-    ![Solenoid magnetic field vs Bar Magnet](https://www.e-education.psu.edu/files/eme803/electromagnet-bar-magnet-comparison.gif) *(Conceptual illustration)*
+    ![Solenoid magnetic field vs Bar Magnet](Attachments/solenoid_bar_magnet.png) *(Conceptual illustration)*
 *   **Significance**: This resemblance highlights Ampere's original hypothesis that all magnetism originates from electric currents, whether macroscopic (in a wire) or microscopic (orbital/spin motion of electrons in atoms). It is the basis for electromagnets.
 
 ### **5.3 Atomic Origin of Magnetization (Atomistic)**
@@ -836,4 +840,4 @@ The unique properties of superconductors offer vast potential for technological 
 *   **Power Transmission**: Superconducting power cables offer the potential for transmitting electricity with virtually zero energy loss, improving energy efficiency and reducing grid congestion. However, cooling requirements remain a challenge for widespread adoption.
 
 ---
-# [Back](../../Physics.md)
+# [[Physics|Back]]

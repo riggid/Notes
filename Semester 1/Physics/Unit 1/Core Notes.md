@@ -1,6 +1,10 @@
-# [Back](../Physics.md)
+---
+dg-publish: true
+---
+
+# [[Physics|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Physics/Unit 1/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 1/Examples|Examples]] | [[Semester 1/Physics/Unit 1/Q&A|Q&A]]
 ***
 # Unit 1: Concepts Leading to Quantum Mechanics
 
@@ -42,6 +46,9 @@ For a plane electromagnetic wave:
 *   The electric ($\vec{E}$) and magnetic ($\vec{B}$) fields are **in phase**, meaning their peaks and troughs align in space and time.
 *   They are mutually **perpendicular** to each other.
 *   They are both perpendicular to the direction of wave propagation. The direction of propagation is given by the cross product $\vec{S} \propto \vec{E} \times \vec{B}$.
+
+![EM Wave Propagation](Attachments/em_wave_propagation.png)
+
 > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#Discuss%20the%20phase%20correlation%20and%20direction%20of%20the%20E%20and%20B%20fields%20of%20an%20EM%20Wave.)
 > For a numerical problem, see: [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%201:%20EM%20Wave%20Properties)
 
@@ -82,6 +89,8 @@ An idealized object that absorbs all incident electromagnetic radiation and emit
 1.  **Continuous Spectrum with Peak**: Emitted energy is continuous, with intensity peaking at a specific wavelength.
 2.  **Wien's Displacement Law**: As blackbody temperature increases, the peak intensity shifts to shorter wavelengths (higher frequencies).
 3.  **Stefan-Boltzmann Law**: Total energy radiated (area under the curve) increases dramatically ($\propto T^4$) with temperature.
+
+![Blackbody Radiation Spectrum](Attachments/blackbody_spectrum_curves.png)
 
 -   **Classical Failure (Ultraviolet Catastrophe)**: The classical Rayleigh-Jeans law ($\rho(\nu)d\nu = \frac{8\pi \nu^2}{c^3}kT d\nu$) incorrectly predicted infinite energy at high frequencies.
 -   **Planck's Solution (Quantum Hypothesis)**: Max Planck resolved this by postulating that energy is quantized ($E = nh\nu$). His formula:
@@ -126,6 +135,8 @@ This derivation is crucial for the classical Rayleigh-Jeans law. It involves cou
 -   **Classical Failure**: Predicted energy of emitted electrons depends on intensity, and emission should have time delay.
 -   **Einstein's Explanation (1905)**: Light consists of photons ($E = h\nu$). $KE_{max} = h\nu - \phi$ (Work Function). This explained instantaneous, frequency-dependent emission.
 
+![Photoelectric Effect](Attachments/photoelectric_effect_schematic.png)
+
 ---
 
 ## The Dual Nature of Radiation & Matter
@@ -138,6 +149,9 @@ Scattering of X-rays (or gamma rays) by electrons results in a decrease in energ
     *   $\lambda_C = h/(m_e c) \approx 2.426 \times 10^{-12}$ m (Compton wavelength of electron).
     *   Minimum shift ($\Delta\lambda = 0$) at $\theta = 0^\circ$.
     *   Maximum shift ($\Delta\lambda = 2\lambda_C$) at $\theta = 180^\circ$.
+
+![Compton Scattering](Attachments/compton_scattering_diagram.png)
+
 > See also: [Q&A](Semester%201/Physics/Unit%201/Q&A.md#How%20does%20classical%20theory%20fail%20to%20explain%20the%20results%20of%20Compton's%20experiment%3F), [Examples](Semester%201/Physics/Unit%201/Examples.md#Example%203:%20Compton%20Scattering%20Calculation)
 
 ### **Derivation of Compton Shift ($\Delta\lambda$)** **(Self-Study Topic - Simplified Version)**
@@ -312,6 +326,8 @@ The Heisenberg Uncertainty Principle provides a fundamental quantum mechanical a
     This allows them to represent distinct, measurable outcomes.
 -   **Bloch Sphere**: A single qubit's state can be visualized as a point on the surface of a unit sphere (the Bloch sphere). $|0\rangle$ is at the North Pole, $|1\rangle$ at the South Pole. Any superposition $\alpha|0\rangle + \beta|1\rangle$ (after some phase factor elimination) maps to a unique point on the sphere, where the angles define $\alpha$ and $\beta$.
 
+![Bloch Sphere](Attachments/bloch_sphere_qubit.png)
+
 ### **Inner and Outer Products of Qubits**
 These are operations on state vectors that are fundamental in quantum mechanics.
 -   **Inner Product (Dot Product)**: The inner product of two state vectors (e.g., $\langle \phi |$ and $|\psi\rangle$) results in a **scalar (complex number)**. It measures the "overlap" or similarity between the two states. If $\langle \phi | \psi \rangle = 0$, the states are orthogonal.
@@ -328,4 +344,4 @@ These are operations on state vectors that are fundamental in quantum mechanics.
 
 ---
 ***
-# [Back](../Physics.md)
+# [[Physics|Back]]

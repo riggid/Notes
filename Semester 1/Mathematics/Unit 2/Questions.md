@@ -1,4 +1,8 @@
-# [Back](../Mathematics.md)
+---
+dg-publish: true
+---
+
+# [[Mathematics|Back]]
 ***
 # Unit 2: Q&A and Worked Problems
 

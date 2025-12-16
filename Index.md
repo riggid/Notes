@@ -1,3 +1,8 @@
+---
+dg-publish: true
+dg-home: true
+---
+
 ```dataviewjs
 dv.container.id = "dashboard-grid";
 // --- Configuration ---
@@ -66,7 +71,7 @@ for (const folder of items) {
     if (!hasLinks) {
         const emptyMsg = document.createElement("span");
         emptyMsg.innerText = "_No contents found._";
-        emptyMsg.style.color = "var(--text-muted)";
+        emptyMsg.style.color = "var(--ctp-subtext0)";
         emptyMsg.style.fontStyle = "italic";
         container.appendChild(emptyMsg);
     }
@@ -80,7 +85,7 @@ function createCard(title, icon) {
     
     const h2 = document.createElement("h2");
     h2.className = "semester-title";
-    h2.innerText = `${icon} ${title}`;
+    h2.innerHTML = `<span class="title-icon">${icon}</span> ${title}`;
     
     const div = document.createElement("div");
     div.className = "subject-button-container";
@@ -93,7 +98,7 @@ function createButton(text, icon, path) {
     const link = document.createElement("a");
     link.className = "subject-button";
     link.href = "#";
-    link.innerText = `${icon} ${text}`;
+    link.innerHTML = `<span class="button-icon">${icon}</span> ${text}`;
     link.addEventListener("click", (e) => {
         e.preventDefault();
         app.workspace.openLinkText(path, "", false);

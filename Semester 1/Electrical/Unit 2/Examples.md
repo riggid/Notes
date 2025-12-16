@@ -1,6 +1,10 @@
-# [Back](../Electrical.md)
+---
+dg-publish: true
+---
+
+# [[Electrical|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Electrical/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Electrical/Unit 2/Examples|Examples]] | [[Semester 1/Electrical/Unit 2/Q&A|Questions]]
 ***
 # Unit 2: Worked Examples
 
@@ -399,4 +403,4 @@ $1035 = (230)^2 \times (2\pi \times 50) \times C$.
 $C = 1035 / (52900 \times 100\pi) \approx 62.4 \times 10^{-6}$ F $= 62.4 \, \mu F$.
 
 ***
-# [Back](../Electrical.md)
+# [[Electrical|Back]]

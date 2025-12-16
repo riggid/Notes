@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # [Index](../../Index.md)
 ---
 ```dataviewjs
@@ -6,6 +9,10 @@
 
 const currentFile = dv.current().file;
 const currentFolder = currentFile.folder;
+const grid = document.createElement("div"); 
+grid.id = "dashboard-grid"; 
+dv.container.appendChild(grid);
+
 let hasContent = false;
 
 // --- Icon Map ---
@@ -13,7 +20,7 @@ let hasContent = false;
 const iconMap = {
     "Core Notes": "📓",
     "Examples": "🧪",
-    "Q&A": "❓",
+    "Questions": "❓",
     "Unit 1": "1️⃣",
     "Unit 2": "2️⃣",
     "Unit 3": "3️⃣",
@@ -64,12 +71,19 @@ for (const unitFolder of subfolders) {
             
             let link = document.createElement("a");
             link.className = "subject-button";
-            link.href = "#";
+            // Web-friendly HREF: Slugify path
+            let cleanPath = linkPath.replace(".md", "");
+            let segments = cleanPath.split("/");
+            let slugSegments = segments.map(s => s.toLowerCase().replace(/[\s&]+/g, '-').replace(/[^a-z0-9-]/g, ''));
+            let webPath = "/" + slugSegments.join("/");
+            link.href = webPath;
             link.innerText = buttonText;
             
-            link.addEventListener("click", (e) => {
-                e.preventDefault(); 
-                app.workspace.openLinkText(linkPath, "", false);
+                        link.addEventListener("click", (e) => {
+                if (typeof app !== "undefined" && app.workspace) {
+                    e.preventDefault(); 
+                    app.workspace.openLinkText(linkPath, "", false);
+                }
             });
             
             container.appendChild(link);
@@ -77,7 +91,7 @@ for (const unitFolder of subfolders) {
     }
     
     // --- e. Add the finished card to the page ---
-    dv.container.appendChild(card);
+    grid.appendChild(card);
 }
 
 // --- 3. Find all "loose" notes in this folder ---
@@ -109,17 +123,24 @@ if (looseNotes.length > 0) {
             
          let link = document.createElement("a");
          link.className = "subject-button";
-         link.href = "#";
+         // Web-friendly HREF: Slugify path
+            let cleanPath = linkPath.replace(".md", "");
+            let segments = cleanPath.split("/");
+            let slugSegments = segments.map(s => s.toLowerCase().replace(/[\s&]+/g, '-').replace(/[^a-z0-9-]/g, ''));
+            let webPath = "/" + slugSegments.join("/");
+            link.href = webPath;
          link.innerText = buttonText;
          
-         link.addEventListener("click", (e) => {
-            e.preventDefault(); 
-            app.workspace.openLinkText(linkPath, "", false);
-         });
+                     link.addEventListener("click", (e) => {
+                if (typeof app !== "undefined" && app.workspace) {
+                    e.preventDefault(); 
+                    app.workspace.openLinkText(linkPath, "", false);
+                }
+            });
          
          container.appendChild(link);
     }
-    dv.container.appendChild(card);
+    grid.appendChild(card);
 }
 
 // --- 4. Final check ---

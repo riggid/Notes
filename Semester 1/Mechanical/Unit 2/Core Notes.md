@@ -1,6 +1,10 @@
-# [Back](../Mechanical.md) 
+---
+dg-publish: true
+---
+
+# [[Mechanical|Back]] 
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Mechanical/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Mechanical/Unit 2/Examples|Examples]] | [[Semester 1/Mechanical/Unit 2/Q&A|Questions]]
 ***
 # Unit 2: Engineering Materials, Stress Analysis, and Power Transmission
 
@@ -465,4 +469,4 @@ A combination of two or more gears used to transmit motion and power, achieving 
 *   **Planetary (Epicyclic) Gear Train**: A more complex gear train where the axes of some gears (planet gears) revolve around the axis of another central gear (sun gear). This involves a sun gear, planet gears, a planet carrier, and often a ring gear. Offers very high speed ratios, compact design, and the ability to provide differential action.
 
 ---
-# [Back](../Mechanical.md)
+# [[Mechanical|Back]]

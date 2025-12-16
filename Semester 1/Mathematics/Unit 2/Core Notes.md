@@ -1,6 +1,10 @@
-# [Back](../Mathematics.md)
+---
+dg-publish: true
+---
+
+# [[Mathematics|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Mathematics/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Mathematics/Unit 2/Examples|Examples]] | [[Semester 1/Mathematics/Unit 2/Q&A|Questions]]
 ***
 # Unit 2: Higher-Order Differential Equations
 
@@ -159,4 +163,4 @@ The solution is $x(t) = c_1 \cos(\omega t) + c_2 \sin(\omega t)$.
 - **Natural Frequency:** $f = 1/T$
 *See [Example 22](Examples.md#example-22-mass-spring-system-full-solution).*
 ***
-# [Back](../Mathematics.md)
+# [[Mathematics|Back]]

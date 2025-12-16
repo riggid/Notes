@@ -1,6 +1,10 @@
-# [Back](../Environmental%20Studies.md)
+---
+dg-publish: true
+---
+
+# [[Environmental Studies|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Environmental Studies and Life Science/Unit 1/Core Notes|Core Notes]] | [[Semester 1/Environmental Studies and Life Science/Unit 1/Examples|Examples]] | [[Semester 1/Environmental Studies and Life Science/Unit 1/Q&A|Questions]]
 ***
 # Unit 1: Examples
 
@@ -75,4 +79,4 @@
     * **Swachh Bharat Abhiyan (Clean India Mission):** Launched Oct 2, 2014.
 
 ***
-# [Back](../Environmental%20Studies.md)
+# [[Environmental Studies|Back]]

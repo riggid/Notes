@@ -1,6 +1,10 @@
-# [Back](../Physics.md)
+---
+dg-publish: true
+---
+
+# [[Physics|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Physics/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 2/Examples|Examples]] | [[Semester 1/Physics/Unit 2/Q&A|Questions]]
 ***
 # Unit 2: Quantum Mechanics of Simple Systems
 
@@ -10,7 +14,7 @@ This unit applies the Schrödinger Wave Equation (SWE) to analyze the behavior o
 
 ---
 ## 1. Potential Step
-![Core Notes-1.excalidraw](Core%20Notes-1.excalidraw.md)
+![Potential Step Diagram](Attachments/potential_step_diagram.png)
 A potential step describes a sudden change in potential energy $V(x)$ from $0$ to a constant value $V_0$ at a boundary (e.g., $x=0$).
 The 1D time-independent SWE is: $\frac{d^{2}\psi}{dx^{2}}+\frac{2m}{\hbar^{2}}(E-V)\psi=0$.
 
@@ -44,7 +48,7 @@ Solution: $\psi_2(x) = D e^{ik_2 x}$. (No reflection term $e^{-ik_2 x}$ as there
     $$T = \frac{|\text{Transmitted Flux}|}{|\text{Incident Flux}|} = \frac{|D|^2 k_2}{|A|^2 k_1} = \frac{4k_1 k_2}{(k_1+k_2)^2}$$
 *   **Conservation of Probability**: $R+T=1$.
 
-*(See Example 1 and Example 9 in the [Examples](Examples.md) file. See Q&A 1-3 in the [Q&A](Q&A.md) file for derivation and calculations.)*
+*(See Example 1 and Example 9 in the [Examples](Examples.md) file. See Q&A 1-3 in the [Questions](Questions.md) file for derivation and calculations.)*
 
 
 **Case 2: $E < V_0$ (Classically forbidden region)**
@@ -66,11 +70,11 @@ Solution: $\psi_2(x) = F e^{-\alpha x} + G e^{\alpha x}$.
     $$\Delta x = \frac{1}{\alpha} = \frac{\hbar}{\sqrt{2m(V_0-E)}}$$
     Penetration depth increases as the particle's energy $E$ approaches the barrier height $V_0$, or for lighter particles.
 
-*(See Example 2 in the [Examples](Examples.md) file. See Q&A 4 in the [Q&A](Q&A.md) file.)*
+*(See Example 2 in the [Examples](Examples.md) file. See Q&A 4 in the [Questions](Questions.md) file.)*
 
 ---
 ## 2. Potential Barrier and Tunneling
-![Core Notes-2.excalidraw](Core%20Notes-2.excalidraw.md)
+![Potential Barrier Tunneling](Attachments/potential_barrier_tunneling.png)
 A potential barrier has $V(x)=V_0$ for $0 < x < L$ (finite width $L$) and $V(x)=0$ otherwise ($x<0$ or $x>L$). We primarily consider the case where $E < V_0$.
 
 **Regions and Wave Function Nature ($E < V_0$):**
@@ -105,7 +109,7 @@ $$T \propto e^{-2\alpha L} = \exp\left(-2L \frac{\sqrt{2m(V_0-E)}}{\hbar}\right)
 *   **Tunnel Diodes**: Semiconductor devices that leverage quantum tunneling for specific electronic characteristics (e.g., negative resistance region).
 *   **Chemical Reactions**: Tunneling can significantly enhance reaction rates, especially for reactions involving light atoms like hydrogen.
 
-*(See Example 3 and Example 10 in the [Examples](Examples.md) file. See Q&A 5-8 in the [Q&A](Q&A.md) file for wave function interpretation, mass dependence, and lifetime calculation.)*
+*(See Example 3 and Example 10 in the [Examples](Examples.md) file. See Q&A 5-8 in the [Questions](Questions.md) file for wave function interpretation, mass dependence, and lifetime calculation.)*
 
 ### **2.1 Multiple Potential Step / Barrier** **(Self-Study Topic)**
 Instead of a single potential barrier, a particle may encounter a series of potential steps or multiple barriers. The analysis for such systems extends the concepts used for a single step/barrier.
@@ -205,7 +209,7 @@ The wave functions can be chosen to have definite parity (symmetric or antisymme
 
 *(General Notes: $\psi_n(x)$ for symmetric well has $n-1$ nodes in $-a/2 < x < a/2$. $P_n(x)$ has $n$ peaks and $n-1$ nodes in $-a/2 < x < a/2$.)*
 
-*(See Example 4, Example 5, Example 6, Example 7 in the [Examples](Examples.md) file for energy and probability calculations. See Q&A 9-14 in the [Q&A](Q&A.md) file for quantization, zero-point energy, parity, wave functions, and probability plots.)*
+*(See Example 4, Example 5, Example 6, Example 7 in the [Examples](Examples.md) file for energy and probability calculations. See Q&A 9-14 in the [Questions](Questions.md) file for quantization, zero-point energy, parity, wave functions, and probability plots.)*
 
 ### Particle in 2D/3D Box and Degeneracy
 
@@ -221,7 +225,7 @@ The concept extends to higher dimensions. The Hamiltonian operator separates int
     *   Wave function: $$\psi_{n_x, n_y, n_z}(x,y,z) = \left(\frac{2}{L}\right)^{3/2} \sin\left(\frac{n_x \pi x}{L}\right) \sin\left(\frac{n_y \pi y}{L}\right) \sin\left(\frac{n_z \pi z}{L}\right)$$
     **Degeneracy (3D)**: Degeneracy is common due to permutations. For example, $E_{1,1,2} = E_{1,2,1} = E_{2,1,1} = \frac{h^2}{8mL^2}(1^2+1^2+2^2) = \frac{6h^2}{8mL^2}$. This state is **three-fold degenerate**. Other states can have higher degeneracy depending on the value of $n_x^2+n_y^2+n_z^2$.
 
-*(See Q&A 15-18 in the [Q&A](Q&A.md) file for 2D/3D calculations and degeneracy.)*
+*(See Q&A 15-18 in the [Questions](Questions.md) file for 2D/3D calculations and degeneracy.)*
 
 ---
 ## 4. Finite Potential Well (Qualitative)
@@ -253,7 +257,7 @@ The finite potential well has $V(x)=0$ for $-L/2 < x < L/2$, and $V(x)=V_0$ (fin
 *   **Infinite Well**: Probability density $P_n(x) = |\psi_n(x)|^2$ is strictly zero outside the well and drops sharply to zero at the boundaries. The number of peaks and nodes follow the $n$ quantum number.
 *   **Finite Well**: $P_n(x)$ is non-zero outside the well, decaying exponentially into the classically forbidden regions (penetration). The wave function is "less confined" and the peaks are somewhat broadened compared to the infinite well, reflecting the lower energy levels. Nodes still occur consistent with $n$.
 
-*(See Q&A 19-20 in the [Q&A](Q&A.md) file for comparison and solution outline.)*
+*(See Q&A 19-20 in the [Questions](Questions.md) file for comparison and solution outline.)*
 
 ### **4.1 Double Potential Well** **(Self-Study Topic)**
 A double potential well consists of two finite potential wells separated by a finite potential barrier. This system introduces significant quantum effects not seen in single wells.
@@ -279,7 +283,7 @@ The quantum harmonic oscillator models systems where a particle (mass $m$) exper
 ### **Potential Energy Curve and Energy Spectrum**
 *   **Potential Energy Curve**: A parabolic shape centered at $x=0$, $V(x) = \frac{1}{2} m \omega^2 x^2$.
     *(Sketch: A symmetric parabola opening upwards, with the bottom at $V=0, x=0$.)
-    ![](Core%20Notes-2.png)
+    ![Harmonic Oscillator Potential](Attachments/harmonic_oscillator.png)
 *   **Quantized Energy Levels (Eigenvalues):** Solutions to the SWE exist only for discrete energy values:
     $$E_n = \left(n+\frac{1}{2}\right) \hbar \omega \quad (n=0, 1, 2, \dots)$$
     *   $n$ is the **vibrational quantum number**.
@@ -341,7 +345,7 @@ The hydrogen atom, with one proton and one electron, is the simplest atom and se
     *   Energy: $E_n = -\frac{\mu e^4}{8\epsilon_0^2 h^2 n^2} = -\frac{13.6 \, \text{eV}}{n^2}$.
         *   Energy is quantized and negative, indicating a bound state.
         *   Energy depends only on $n$.
-2.  **Angular Momentum (Orbital) Quantum Number (l)**: Arises from the polar angle ($\theta$) equation. Determines the **magnitude of the electron's orbital angular momentum** $L = \sqrt{l(l+1)}\hbar$. It primarily describes the **shape** of the electron's probability distribution (orbital).
+2.  **Angular Momentum (Orbital) Quantum Number (l)**: Arises from the polar angle ($\theta$) equation. Determines the **magnitude of the electron's orbital angular momentum** $L = \sqrt{l(l+1)}\hbar. It primarily describes the **shape** of the electron's probability distribution (orbital).
     *   $l = 0, 1, 2, \dots, (n-1)$. (Non-negative integer, up to $n-1$).
     *   **Spectroscopic notation**: $l=0 \rightarrow s$ orbital (spherical), $l=1 \rightarrow p$ orbital (dumbbell), $l=2 \rightarrow d$ orbital (cloverleaf), $l=3 \rightarrow f$ orbital, etc.
 3.  **Magnetic Quantum Number ($m_l$)**: Arises from the azimuthal angle ($\phi$) equation. Determines the **orientation of the orbital angular momentum** in space (specifically, its z-component $L_z = m_l \hbar$). It defines the spatial orientation of the orbital.
@@ -375,7 +379,7 @@ Quantum mechanics inherently explains the stability of the hydrogen atom, contra
 2.  **Stable Ground State**: The $n=1$ state is the lowest energy state available. Since there's no lower energy level, the electron cannot fall further and continuously radiate, thus the atom is stable.
 3.  **Uncertainty Principle**: The electron cannot collapse onto the nucleus because doing so would imply a precise position (within the tiny nucleus) and low momentum (if at rest), violating the Heisenberg Uncertainty Principle. The electron must maintain a minimum momentum (and thus kinetic energy) keeping it away from the nucleus, even in its ground state.
 
-*(See Q&A 27-29 in the [Q&A](Q&A.md) file for the stability, orbital representation, and necessity of spherical coordinates.)*
+*(See Q&A 27-29 in the [Questions](Questions.md) file for the stability, orbital representation, and necessity of spherical coordinates.)*
 
 ---
 ## 7. Fermi-Dirac Statistics
@@ -401,7 +405,7 @@ Fermi-Dirac statistics describe the statistical distribution of identical, indis
     *   **Symmetry**: The probability of a state with energy $E_f - \Delta E$ being occupied is equal to the probability of a state with energy $E_f + \Delta E$ being *unoccupied*:
         $$f(E_f - \Delta E) = 1 - f(E_f + \Delta E)$$
 
-*(See Example 8 in the [Examples](Examples.md) file for occupancy probability calculations. See Q&A 30-32 in the [Q&A](Q&A.md) file for definition, temperature dependence, and the symmetry property.)*
+*(See Example 8 in the [Examples](Examples.md) file for occupancy probability calculations. See Q&A 30-32 in the [Questions](Questions.md) file for definition, temperature dependence, and the symmetry property.)*
 
 ---
 ## 8. Density of States ($g(E)$)
@@ -440,7 +444,7 @@ The energy levels are $E = \frac{h^2}{8mL^2}(n_x^2+n_y^2)$.
     *   $g_{2D}(E) = \frac{2}{A} \frac{dN(E)}{dE} = \frac{2}{L^2} \frac{2\pi m L^2}{h^2} = \frac{4\pi m}{h^2}$.
     *   **Result**: For 2D systems, the density of states is **constant and independent of energy**. $g_{2D}(E) \propto E^0$.
 
-*(See Example 12 in the [Examples](Examples.md) file for a conceptual overview of 3D DOS. See Q&A 33 in the [Q&A](Q&A.md) file for the derivation of 2D DOS.)*
+*(See Example 12 in the [Examples](Examples.md) file for a conceptual overview of 3D DOS. See Q&A 33 in the [Questions](Questions.md) file for the derivation of 2D DOS.)*
 
 ***
-# [Back](../Physics.md)
+# [[Physics|Back]]

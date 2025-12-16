@@ -1,6 +1,10 @@
-# [Back](../../Physics.md)
+---
+dg-publish: true
+---
+
+# [[Physics|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Physics/Unit 4/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 4/Examples|Examples]] | [[Semester 1/Physics/Unit 4/Q&A|Questions]]
 ***
 
 # Unit 7: Lasers, Optoelectronics, and Advanced Materials
@@ -56,7 +60,7 @@ $$ R_{21,st} = B_{21} N_2 u(\nu) $$
     $$ [B_{21}] = \frac{[R_{21,st}]}{[N_2][u(\nu)]} = \frac{[Time]^{-1}}{[Mass][Length]^{-1}[Time]^{-2}[Frequency]^{-1}} = \frac{[Length][Time]}{[Mass][Frequency]^{-1}} = \frac{[Length]}{[Mass]} $$
 
 **Description of Diagram (Stimulated Emission):** An energy level diagram showing stimulated emission. An atom in the upper state $E_2$ interacts with an incoming photon ($h\nu$). This interaction stimulates the atom to emit a second photon ($h\nu$), identical to the first, as it transitions to $E_1$.
-![Stimulated Emission Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Stimulated_Emission.svg/300px-Stimulated_Emission.svg.png)
+![Stimulated Emission Diagram](Attachments/stimulated_emission.png)
 
 ### 1.4 Einstein's Relations and Energy Density
 
@@ -251,7 +255,7 @@ This equation states that the threshold gain coefficient must be sufficient to o
 *   If $R_1 R_2 e^{2(g-\alpha)L} > 1$, oscillations can **build up**, and the laser is said to be above threshold.
 
 **Description of Diagram (Round Trip Gain):** A linear cavity with two mirrors $R_1$ and $R_2$, separated by active medium of length $L$. Arrows show an initial intensity $I_0$, which becomes $I_0e^{(g-\alpha)L}$ after one pass, then $R_2 I_0e^{(g-\alpha)L}$ after reflection, and $R_1 R_2 I_0e^{2(g-\alpha)L}$ after a full round trip.
-![Round Trip Gain Diagram](https://quickref.atanasovski.info/wp-content/uploads/2021/01/laser-cavity-gain-loss.png)
+![Round Trip Gain Diagram](Attachments/round_trip_gain.png)
 
 > See also: [Examples](Examples.md#Example%2012:%20Threshold%20Gain%20Factor%20for%20He-Ne%20Laser)
 

@@ -1,4 +1,8 @@
-# [Back](../Mathematics.md)
+---
+dg-publish: true
+---
+
+# [[Mathematics|Back]]
 ***
 ---
 # Unit - 1: Partial Differential Equations: Q & A

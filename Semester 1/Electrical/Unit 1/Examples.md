@@ -1,4 +1,8 @@
-# [Back](../Electrical.md)
+---
+dg-publish: true
+---
+
+# [[Electrical|Back]]
 ***
 ## Example 1: Basic KVL
 

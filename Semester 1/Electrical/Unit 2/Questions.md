@@ -1,6 +1,10 @@
-# [Back](../Electrical.md)
+---
+dg-publish: true
+---
+
+# [[Electrical|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Q&A](Q&A.md)
+[[Semester 1/Electrical/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Electrical/Unit 2/Examples|Examples]] | [[Semester 1/Electrical/Unit 2/Questions|Questions]]
 ***
 # Unit 2: Q&A and Worked Problems
 
@@ -652,4 +656,4 @@ To get unity pf, net $Q$ must be zero. The current net $Q$ is $+0.82$ kVAR (indu
 Capacitor rating required = $0.82$ kVAR.
 
 ***
-# [Back](../Electrical.md)
+# [[Electrical|Back]]

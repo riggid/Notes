@@ -1,4 +1,8 @@
-# [Back](../Electrical.md)
+---
+dg-publish: true
+---
+
+# [[Electrical|Back]]
 ***
 
 ## MARCH 2022 ESA (UE21EE141A - I SEM)
