@@ -319,7 +319,7 @@ Laser light exhibits several distinctive properties that make it invaluable acro
     *   **Significance**: Essential for processes involving interference over significant path differences, such as interferometry, fiber optics, and holography. Ordinary light sources have coherence lengths of a few millimeters to tens of centimeters, while lasers can have coherence lengths of meters to many kilometers.
 
     **Description of Diagram (Temporal Coherence):** A plot showing a wave with varying phase coherence. Initially, phases are well-defined for some oscillations, but after a coherence time, the phase becomes uncorrelated and changes randomly. A coherence length ($L_c$) is marked as the distance over which the phase remains relatively predictable.
-    ![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Temporal_coherence.svg/400px-Temporal_coherence.svg.png|Temporal Coherence Diagram]]
+    ![[Attachments/temporal_coherence.png|Temporal Coherence Diagram]]
 
 2.  **Spatial Coherence**:
     *   **Definition**: Refers to the correlation between the phases of the light wave at different points transverse to the direction of propagation (across the wavefront) at a given instant. A highly spatially coherent source behaves as if the light originates from a single, infinitely small point source.
@@ -327,7 +327,7 @@ Laser light exhibits several distinctive properties that make it invaluable acro
     *   **Significance**: Enables the laser beam to be focused to a very small spot (diffraction limit) and to maintain a narrow, collimated beam over long distances (high directionality). It's crucial for applications requiring tight focusing, such as laser cutting, welding, and optical data storage.
 
 **Description of Diagram (Spatial Coherence):** A diagram showing two points on a wavefront. In spatially coherent light, the phase difference between these two points remains constant over time. In incoherent light, this phase difference fluctuates randomly.
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Spatial_coherence.svg/400px-Spatial_coherence.svg.png|Spatial Coherence Diagram]]
+![[Attachments/spatial_coherence.png|Spatial Coherence Diagram]]
 
 > See also: [[Examples#example-8:-degree-of-non-monochromaticity|Examples]], [[Examples#example-9:-coherence-length-of-a-laser-beam|Examples]], [[Examples#example-10:-einstein-coefficients-and-coherence-length|Examples]], [[Examples#example-11:-he-ne-laser-coherence|Examples]]
 
@@ -369,7 +369,7 @@ The optical resonant cavity acts as a filter, supporting only specific frequenci
 *   **Laser Oscillation**: A laser can oscillate simultaneously on all longitudinal modes that fall within the bandwidth of the gain curve and whose gain exceeds the cavity losses. If the gain curve is sufficiently narrow or elements are added to select a single mode, the laser can operate in a single longitudinal mode, resulting in even higher monochromaticity.
 
 **Description of Diagram (Gain Curve and Cavity Modes):** A plot showing a broad, bell-shaped curve representing the laser gain as a function of optical frequency. Superimposed are sharp, equally spaced vertical lines representing the longitudinal modes of the resonant cavity. Only the modes under the gain curve and above the threshold gain oscillate.
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Laser_modes.svg/600px-Laser_modes.svg.png|Gain Curve and Cavity Modes Diagram]]
+![[Attachments/laser_modes.png|Gain Curve and Cavity Modes Diagram]]
 
 > See also: [[Examples#example-13:-number-of-modes-and-frequency-separation-in-a-resonant-cavity|Examples]]
 
@@ -467,7 +467,7 @@ A linear CO2 molecule consists of a central carbon atom bonded to two oxygen ato
 The vibrational states are designated $(v_1, v_2, v_3)$, where $v_1, v_2, v_3$ are the vibrational quantum numbers for symmetric stretch, bending, and asymmetric stretch, respectively. For example, (000) is the ground state, (100) is the first symmetric stretch excited state, (010) is the first bending excited state, and (001) is the first asymmetric stretch excited state.
 
 **Description of Diagram (CO2 Vibrational Modes):** Illustrations showing the three distinct vibrational modes of a linear CO2 molecule: Symmetric Stretch (oxygen atoms move in and out together), Asymmetric Stretch (oxygen atoms move in opposite directions, carbon moves), and Bending (atoms move perpendicular to the axis). Arrows indicate atomic motion.
-![[https://www.chegg.com/homework-help/definitions/vibrational-modes-of-carbon-dioxide-molecule-64|CO2 Vibrational Modes]]
+![[Attachments/co2_vibrational_modes.png|CO2 Vibrational Modes]]
 
 #### 7.1.4 Energy Levels and Laser Action (Four-Level System)
 
@@ -530,7 +530,7 @@ The **E-k diagram is crucial for understanding light emission (and absorption)**
 **Description of Diagram (Direct vs. Indirect Band Gap E-k Diagram):** Two E-k diagrams are shown side-by-side.
 Part A (Direct Band Gap): The minimum of the conduction band and the maximum of the valence band are aligned vertically (at the same k-value, typically $\Gamma$ point). A vertical arrow shows direct radiative recombination (electron to hole, emitting photon, $h\nu \approx E_g$).
 Part B (Indirect Band Gap): The minimum of the conduction band and the maximum of the valence band are at different k-values. A diagonal arrow shows an electron transition requiring a change in momentum, typically involving a phonon for recombination.
-![[https://qph.cf2.quoracdn.net/main-qimg-22b6833fe0328848d61741753443a992-lq|Direct vs Indirect Band Gap]]
+![[Attachments/direct_indirect_bandgap.png|Direct vs Indirect Band Gap]]
 
 ### 8.2 Concept of LED using Direct Band Gap Semiconductors
 
@@ -692,7 +692,7 @@ $$ E_{transmitted} \propto (\text{zero-order beam}) + E_O |E_R|^2 + E_R^2 E_O^* 
 **Description of Diagram (Hologram Recording and Reconstruction):** A two-part diagram.
 Part 1 (Recording): A laser beam is split into a reference beam (directly to holographic plate) and an object beam (illuminates object then to plate). The two beams interfere on the plate.
 Part 2 (Reconstruction): A reconstruction beam (often the same as the reference beam) illuminates the developed hologram, generating an undiffracted beam and two diffracted beams that form a virtual 3D image and a real 3D image.
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Holography_Scheme.png/600px-Holography_Scheme.png|Holography Scheme]]
+![[Attachments/holography_scheme.png|Holography Scheme]]
 
 ### 9.2 Off-Axis Holographic Recording Method
 

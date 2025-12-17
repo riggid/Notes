@@ -1,41 +1,28 @@
 # Previous Year Questions (PYQs)
 
-> **Unit 1** | Electrical Engineering
+> **Unit 1** | Electrical
+
 
 ---
 
-## Q&A Image References
+## 📚 PYQ Resource Links
 
-This unit contains 27 PYQ images. Below are the embedded images for reference:
+Access comprehensive previous year questions and study materials:
 
-![Q&A 1](Q&A-1.png)
-![Q&A 2](Q&A-2.png)
-![Q&A 3](Q&A-3.png)
-![Q&A 4](Q&A-4.png)
-![Q&A 5](Q&A-5.png)
-![Q&A 6](Q&A-6.png)
-![Q&A 7](Q&A-7.png)
-![Q&A 8](Q&A-8.png)
-![Q&A 9](Q&A-9.png)
-![Q&A 10](Q&A-10.png)
-![Q&A 11](Q&A-11.png)
-![Q&A 12](Q&A-12.png)
-![Q&A 13](Q&A-13.png)
-![Q&A 14](Q&A-14.png)
-![Q&A 15](Q&A-15.png)
-![Q&A 16](Q&A-16.png)
-![Q&A 17](Q&A-17.png)
-![Q&A 18](Q&A-18.png)
-![Q&A 19](Q&A-19.png)
-![Q&A 20](Q&A-20.png)
-![Q&A 21](Q&A-21.png)
-![Q&A 22](Q&A-22.png)
-![Q&A 23](Q&A-23.png)
-![Q&A 24](Q&A-24.png)
-![Q&A 25](Q&A-25.png)
-![Q&A 26](Q&A-26.png)
-![Q&A 27](Q&A-27.png)
+### 🎯 ESA Past Papers (Semester 1 & 2)
+All end-semester assessment previous year papers organized by subject and year:
+
+**[📁 ESA PYQs Drive Folder](https://drive.google.com/drive/folders/11U56PJ-VZ_5zaJ1fVrV6h3kzN4rnNX7E?usp=drive_link)**
+
+### 📖 PES-Provided Resources
+University-provided study materials, slides, notes, and PYQs:
+
+**[📁 First Year PES Resources](https://drive.google.com/drive/folders/1DIjOOU8QzWAkfEKE4fK0ZD6DIcchXYLM)**
 
 ---
 
-*Note: These images contain previous year examination questions and their solutions.*
+> **Tip**: Browse through these folders to find papers and materials specific to this unit. ESA papers are organized by year and subject.
+
+---
+
+*Last updated: December 2025*
