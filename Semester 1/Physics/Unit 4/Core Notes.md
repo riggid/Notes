@@ -391,7 +391,7 @@ The **Helium-Neon (He-Ne) laser** is a continuous-wave (CW) gas laser known for 
 #### 6.1.3 Energy Levels and Laser Action (Four-Level System)
 
 **Description of Diagram (He-Ne Laser Energy Levels):** A detailed energy level diagram for He and Ne atoms. On the left, He ground state and two metastable excited states ($2^1S$ at 20.61 eV and $2^3S$ at 19.82 eV). On the right, Ne ground state, a lower laser level ($3p_4$ state around 18.70 eV), and several upper laser levels ($2s_2$ state around 20.66 eV, $3s_2$ state). Arrows show electron impact excitation of He, resonant energy transfer from He to Ne, lasing transitions (e.g., 632.8 nm from $3s_2$ to $2p_4$), and fast decay of lower laser levels.
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HeNe_laser_diagram.svg/600px-HeNe_laser_diagram.svg.png|He-Ne Laser Energy Levels]]
+![[Attachments/he_ne_laser.png|He-Ne Laser Energy Levels]]
 
 1.  **Excitation of Helium**: Electrons in the discharge collide with ground state He atoms, exciting them to two specific metastable states:
     *   **$2^3S$ state (19.82 eV)**: The first excited triplet state of Helium.
@@ -548,7 +548,7 @@ A **Light-Emitting Diode (LED)** is a semiconductor device that utilizes the pri
 4.  **Incoherent Light**: While LEDs emit light efficiently, it is **spontaneous emission**, which is generally incoherent and non-directional.
 
 **Description of Diagram (LED Energy Band Diagram with Forward Bias):** An energy band diagram showing a p-n junction under forward bias. Conduction and valence bands are shown for n-type and p-type regions. Under forward bias, the bands are tilted, and the depletion region narrows. Arrows depict electrons injecting from n-side into p-side, holes from p-side into n-side, and then recombining at the junction, emitting photons ($h\nu$).
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/LED_Banddiagramm.png/600px-LED_Banddiagramm.png|LED Energy Band Diagram]]
+![[Attachments/led_band_diagram.png|LED Energy Band Diagram]]
 
 ### 8.3 Semiconductor Laser (Diode Laser)
 
@@ -606,7 +606,7 @@ Part (a): Cross-section showing n-AlGaAs, p-GaAs (active layer), and p-AlGaAs la
 Part (b): Band diagram under forward bias, illustrating the conduction band and valence band edges forming quantum wells in the active GaAs layer, confining electrons and holes. Split quasi-Fermi levels are shown.
 Part (c): Refractive index profile, showing the higher refractive index of GaAs compared to AlGaAs, creating an optical waveguide.
 Part (d): Photon density profile, showing peak confinement within the GaAs active region.
-![[https://upload.wikimedia.org/wikipedia/commons/e/e4/Structure_of_heterojunction_laser.png|Double Heterostructure Laser]]
+![[Attachments/heterostructure_laser.png|Double Heterostructure Laser]]
 
 #### 8.4.3 Why Creating White LEDs took a long time in the making?
 
@@ -830,7 +830,7 @@ Where:
 **Description of Diagram (Electric Fields in Dielectric):** Two diagrams illustrating fields.
 Part 1: A dielectric slab between capacitor plates. $E_{ext}$ is the external field. $E_p$ is the depolarizing field caused by surface polarization charges within the dielectric, opposing $E_{ext}$.
 Part 2: An imaginary spherical cavity within a polarized dielectric. $E_{loc}$ is shown at the center, resulting from $E_{ext}$, $E_{dep}$, $E_{cav}$, and $E_{int}$. The Lorentz force/field is often represented as $E_L$.
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dipole_polarisation_of_a_dielectric_material.svg/600px-Dipole_polarisation_of_a_dielectric_material.svg.png|Electric Fields in Dielectric]]
+![[Attachments/dielectric_polarization.png|Electric Fields in Dielectric]]
 
 #### 10.2.2 Lorentz Field ($\mathbf{E}_L$)
 
@@ -1037,7 +1037,7 @@ Many of the interesting dielectric properties discussed above are intrinsically 
     - **Below** : Transforms from orthorhombic to **rhombohedral symmetry**. The  ion shifts along a body diagonal, giving another ferroelectric phase.
 
 **Description of Diagram (BaTiO3 Phase Transitions and Properties):** A graph showing relative permittivity () as a function of temperature. It displays a sharp peak at the Curie temperature, where the material transitions from a high-symmetry (cubic, paraelectric) phase to lower-symmetry (tetragonal, orthorhombic, rhombohedral) ferroelectric phases upon cooling. Spontaneous polarization arises in the ferroelectric phases.  
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pyroelectric-Ferroelectric_Titanate_Diagram.png/600px-Pyroelectric-Ferroelectric_Titanate_Diagram.png|BaTiO3 Phase Transitions]]
+![[Attachments/batio3_transitions.png|BaTiO3 Phase Transitions]]
 
 ### 12.3 Hysteresis (P-E Loop)
 
@@ -1057,7 +1057,7 @@ The most distinctive characteristic of ferroelectric materials is the **hystere
     - **Coercive Field ()**: The magnitude of the (opposing) electric field required to reduce the polarization to zero. It indicates the "switching energy" or "hardness" of the ferroelectric.
 
 **Description of Diagram (Ferroelectric Hysteresis Loop):** A graph with Electric Field (E) on the x-axis and Polarization (P) on the y-axis, showing a typical S-shaped hysteresis loop. Points for saturation polarization (), remnant polarization (), and coercive field () are clearly marked, with arrows indicating the path of the curve.  
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ferroelectric_hysteresis.svg/600px-Ferroelectric_hysteresis.svg.png|Ferroelectric Hysteresis Loop]]
+![[Attachments/ferroelectric_hysteresis.png|Ferroelectric Hysteresis Loop]]
 
 ### 12.4 Application as Memory Materials
 
@@ -1118,7 +1118,7 @@ Here:
 4. This oscillating polarization at  acts as a source term for new electromagnetic waves within the crystal, generating light at the second harmonic frequency.
 
 **Description of Diagram (SHG Energy Levels):** A simplified energy diagram showing two input photons of energy  (frequency ) exciting an atom or molecule in a non-linear material, resulting in the emission of one photon of energy  (frequency ). This is not a direct energy level transition for a single atom but a coherent interaction with the material's electrons.  
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Second_harmonic_generation.svg/400px-Second_harmonic_generation.svg.png|SHG Diagram]]
+![[Attachments/shg_diagram.png|SHG Diagram]]
 
 #### 13.2.2 Phase Matching
 
@@ -1190,7 +1190,7 @@ A typical optical tweezers setup involves:
     - **Microrheology**: Measuring the viscoelastic properties of soft materials by observing trapped particles.
 
 **Description of Diagram (Optical Tweezers Principle):** A diagram showing a highly focused laser beam (converging rays) impinging on a small dielectric sphere (particle). Rays are shown being refracted by the particle. The change in momentum of the light rays, due to refraction, results in a net gradient force pushing the particle towards the high-intensity focal point of the beam, counteracting the scattering force.  
-![[https://upload.wikimedia.org/wikipedia/commons/e/e9/Optical_Tweezer_Principle_(English).jpg|Optical Tweezers Principle]]
+![[Attachments/optical_tweezers.jpg|Optical Tweezers Principle]]
 
 ### 14.2 Laser Cooling
 
@@ -1229,4 +1229,4 @@ A typical laser cooling setup (MOT) involves:
 - **Atom Interferometry**: Using cooled atoms to create highly sensitive sensors for gravity, rotation, and other forces.
 
 **Description of Diagram (Doppler Cooling Principle):** A diagram showing an atom moving towards a red-detuned laser beam (frequency ). Due to the Doppler effect, the atom "sees" the laser light as blue-shifted (), bringing it closer to resonance (). This increases the absorption probability, and the momentum transfer from the absorbed photon slows the atom. Spontaneous emission occurs in random directions, with average zero momentum change.  
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Doppler_Cooling.svg/500px-Doppler_Cooling.svg.png|Doppler Cooling Principle]]
+![[Attachments/doppler_cooling.png|Doppler Cooling Principle]]

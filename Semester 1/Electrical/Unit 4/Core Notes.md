@@ -28,7 +28,7 @@ The **B-H Curve** (Magnetization Curve) plots Flux Density ($B$) vs Magnetizing 
 *   **Saturation**: The point where increasing $H$ yields no significant increase in $B$.
 *   **Hysteresis Loop**: The loop formed by the B-H curve when a magnetic material is magnetized, demagnetized, and re-magnetized in the opposite direction.
 
-    ![[https://upload.wikimedia.org/wikipedia/commons/4/4b/Hysteresis-comparison.svg|Hysteresis Loop]]
+    ![[Attachments/hysteresis_comparison.svg|Hysteresis Loop]]
     > Hysteresis loops for soft and hard ferromagnetic materials.
 
     *   **Retentivity**: The amount of magnetism remaining ($B$) when the external field $H$ is reduced to zero (Residual Magnetism).
@@ -52,7 +52,7 @@ A static device transferring electrical energy between two circuits via mutual i
 *   **Core Type**: Windings surround the core. Easier insulation.
 *   **Shell Type**: Core surrounds the windings. Stronger mechanical support.
 
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Transformer_winding_formats.jpg/640px-Transformer_winding_formats.jpg|Transformer Winding Formats]]
+![[Attachments/transformer_winding.jpg|Transformer Winding Formats]]
 > (a) Core Type Transformer (b) Shell Type Transformer Windings
 
 ### 2.2 EMF Equation and Ratios
@@ -93,7 +93,7 @@ Same for Generator and Motor:
     *   **Wave Winding**: Parallel paths $A = 2$. For high voltage.
 *   **Commutator**: Converts AC induced in armature to DC (Generator) or limits constant torque direction (Motor).
 
-![[https://upload.wikimedia.org/wikipedia/commons/6/6e/DC-MOTOR_CONSTRUCTION.PNG|DC Machine Construction]]
+![[Attachments/dc_motor.png|DC Machine Construction]]
 > Cross-section of a DC Machine
 
 ### 3.2 DC Generator

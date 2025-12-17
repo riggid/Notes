@@ -36,6 +36,6 @@ details[open] { background: #970302; color: #dfdedd; }
 <p>Our servers are currently under maintenance or experiencing a technical issue</p>
 </div>
 </div>
-<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request served via cp5025 cp5025, Varnish XID 880267276<br>Upstream caches: cp5025 int<br>Error: 404, Not Found at Wed, 17 Dec 2025 20:49:01 GMT<br><details><summary>Sensitive client information</summary>IP address: 2401:4900:6191:94da:d03c:e55c:17ea:944b</details></code></p>
+<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request served via cp5028 cp5028, Varnish XID 4196876<br>Upstream caches: cp5028 int<br>Error: 404, Not Found at Wed, 17 Dec 2025 22:32:28 GMT<br><details><summary>Sensitive client information</summary>IP address: 2401:4900:c8f2:6788:74a9:baf1:91d2:f41d</details></code></p>
 </div>
 </html>

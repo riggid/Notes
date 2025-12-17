@@ -36,7 +36,7 @@ The order in which the three-phase voltages attain their peak positive values. T
 ### 1.2 Balanced Star (WYE) Connected System
 In a **Star ($\mathbf{Y}$)** connection, similar terminals (e.g., all "finish" ends) of the three phases are connected together to form a common point called the **Neutral (N)**.
 
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Three-phase_star_schematic.svg/400px-Three-phase_star_schematic.svg.png|Star Connection]]
+![[Attachments/star_connection.png|Star Connection]]
 
 #### 1.2.1 Voltage and Current Definitions
 *   **Phase Voltage ($V_{ph}$)**: Voltage across the terminals of a single phase winding (e.g., $V_{RN}, V_{YN}, V_{BN}$).
@@ -56,7 +56,7 @@ In a **Star ($\mathbf{Y}$)** connection, similar terminals (e.g., all "finish" e
 ### 1.3 Balanced Delta (Mesh) Connected System
 In a **Delta ($\mathbf{\Delta}$)** connection, the coils are connected end-to-end (R finish to Y start, Y finish to B start, etc.) to form a closed loop. There is no neutral point.
 
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Three-phase_delta_schematic.svg/400px-Three-phase_delta_schematic.svg.png|Delta Connection]]
+![[Attachments/delta_connection.png|Delta Connection]]
 
 #### 1.3.1 Relationships in Delta Connection
 1.  **Voltage Relation**: The voltage across the lines is directly across the phase windings.

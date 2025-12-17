@@ -43,7 +43,7 @@ $$V \propto I \implies V=IR$$
 - **Conductance (G)**: The reciprocal of resistance, representing how easily current flows. It is measured in **Siemens (S)**.
   $$G = \frac{1}{R}$$
 
-![[https://upload.wikimedia.org/wikipedia/commons/8/83/Ohm's_law_simple_circuit.svg|Ohm's Law Circuit]]
+![[Attachments/ohms_law.svg|Ohm's Law Circuit]]
 
 ### **Circuit States: Open & Short Circuit**
 - **Short Circuit**: A path of zero resistance ($R=0$).
