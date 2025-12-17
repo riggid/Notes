@@ -2,15 +2,13 @@
 dg-publish: true
 ---
 
+# [[../Physics|Back]]
+***
+[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+***
+
 > [!TIP] Better MCQ Experience
 > For a much more interactive and better MCQ experience, visit [PESU Dash](https://pesu-dash.vercel.app/)!
-
-# Previous Year Questions (PYQs)
-
-> **Unit 3** | Physics
-
-
----
 
 ## 📚 PYQ Resource Links
 
@@ -26,10 +24,6 @@ University-provided study materials, slides, notes, and PYQs:
 
 **[📁 First Year PES Resources](https://drive.google.com/drive/folders/1DIjOOU8QzWAkfEKE4fK0ZD6DIcchXYLM)**
 
----
-
 > **Tip**: Browse through these folders to find papers and materials specific to this unit. ESA papers are organized by year and subject.
-
----
 
 *Last updated: December 2025*
