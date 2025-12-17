@@ -45,9 +45,9 @@ dg-publish: true
 
 ## 3. Operators
 *   **Arithmetic**: `+`, `-`, `*`, `/` (division), `//` (floor division), `%` (modulus), `**` (exponent).
-*   **Relational (Comparison)**: `==`, `!=`, `>`, `<`, `>=`, `<=`.
+*   **Relational (Comparison)**: ` ==`, `!=`, `>`, `<`, `>=`, `<=`.
 *   **Logical**: `and`, `or`, `not`.
-*   **Assignment**: `=`, `+=`, `-=`, etc.
+*   **Assignment**: ` =`, `+=`, `-=`, etc.
 *   **Bitwise**: `&`, `|`, `^`, `~`, `<<`, `>>`.
 *   **Membership**: `in`, `not in`.
 *   **Identity**: `is`, `is not`.
