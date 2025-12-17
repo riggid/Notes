@@ -4,7 +4,7 @@ dg-publish: true
 
 # [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Examples]] | [[Questions]]
+[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
 ***
 # Unit 1: Q&A and Worked Problems
 
@@ -582,6 +582,279 @@ A single qubit state $|\psi\rangle = \cos(\theta/2)|0\rangle + e^{i\phi}\sin(\th
 Norm squared $N^2 = |2+i|^2 + |1-2i|^2 = 5 + 5 = 10$. Normalization factor $1/\sqrt{10}$.
 Normalized state: $|\psi_{norm}\rangle = \frac{1}{\sqrt{10}} (2+i)|0\rangle + \frac{1}{\sqrt{10}} (1-2i)|1\rangle$.
 Matrix form: $|\psi_{norm}\rangle = \begin{pmatrix} \frac{2+i}{\sqrt{10}} \\ \frac{1-2i}{\sqrt{10}} \end{pmatrix}$.
+
+***
+# [[../Physics|Back]]
+
+---
+
+# Additional Question Bank
+
+> **Source**: PESU Assessment Question Bank 2020-2023
+
+Additional practice questions for Unit 1 (EM Waves, Quantum Concepts).
+
+---
+
+## CL1: Maxwell's Equations & Vector Operators
+
+1. With suitable examples explain the significance of gradient, divergence and curl operators on fields.
+2. Magnetic monopoles do not exist. Justify.
+3. What is the physical meaning of gradient of a scalar function?
+4. Estimate the energy per unit volume in a magnetic field.
+
+---
+
+## CL3: Energy & Polarization
+
+1. Differentiate between circular and elliptical polarization states of electromagnetic waves.
+2. Find the energy density of electromagnetic wave, if the electric field of amplitude 6.2 V/m oscillates with a frequency of 2.4 × 10¹⁰ Hz.
+3. Discuss the energy density in electromagnetic waves and how is it related with the Poynting vectors?
+4. Give expressions for two electric field wave functions that can produce circular polarization.
+
+---
+
+## CL4: Black Body Radiation
+
+1. Describe the characteristics of a black body spectrum.
+2. Find the average energy of an oscillator of frequency 5×10¹²/s at 300 K treating the oscillator as Planck's oscillator.
+3. Using the quantum theory, derive the expression for energy density of blackbody radiation.
+4. What was Planck's crucial contribution in explaining Black body spectrum?
+
+---
+
+## CL5: Compton Effect
+
+1. How does classical theory fail to explain the results of Compton's experiment?
+2. What are the angles at which the Compton shift is minimum and maximum? What are the conclusions drawn from these angles?
+3. Calculate the energy that a photon must possess if it has to have a momentum equal to that of a 10MeV proton. In Compton Effect did you understand why the original peak at λ remained in the spectrum of the scattered radiation?
+4. What is Compton shift? According to classical theory, the scattered X rays have the same frequency as the incident wave. Explain.
+
+---
+
+## CL6: Wave-Particle Duality
+
+1. The central mystery of quantum mechanics lies in the single particle quantum interference. Do you understand why the resultant intensity?
+2. If an electron and a proton have energy of 10 MeV, calculate their de Broglie wavelength.
+3. Give a brief account of the Fourier transform.
+4. An electron accelerated through some potential difference, crosses two points separated by a distance of 3m in 1μs with a steady state velocity. Calculate the de-Broglie wavelength of the accelerated electron and hence calculate the potential difference through which it has been accelerated.
+
+---
+
+## CL7: Wave Packets
+
+1. Write an expression for a travelling wave explaining each term.
+2. Derive a relation between group velocity and phase velocity.
+3. When does group velocity become equal to phase velocity? Give an example.
+4. How are phase and group velocity related for a monochromatic wave?
+
+---
+
+## CL8: Uncertainty Principle
+
+1. State any three forms of the Heisenberg's Uncertainty Principle.
+2. Demonstrate using Heisenberg's Uncertainty Principle that an electron can't exist inside a typical nucleus.
+3. An atom in an excited state of life time Δt=10⁻⁸s makes a transition to a lower state emitting a photon of frequency of 3×10¹⁴Hz. Estimate the uncertainty in the frequency of the emitted photon.
+4. State Heisenberg's uncertainty principle. Use the Gamma ray thought experiment to arrive at the principle.
+
+---
+
+## CL9: Wave Function
+
+1. What is the significance of a quantum wave function?
+2. What is the difference between probability density and probability?
+3. How do you determine the value of the amplitude of a wave function?
+4. Determine the probability of finding an electron in the limits x=0 to x= 0.5a when it is bound in a 1D box of length a.
+
+---
+
+## CL10: Operators & Expectation Values
+
+1. Describe an Eigen value equation explaining each term.
+2. Write any five operators associated with dynamical variables.
+3. Define Expectation value.
+4. Determine the expectation value of position of a particle bound between x=0 to x=3 and described by the wave function.
+
+---
+
+## CL12: Schrödinger's Equation
+
+1. Why is Schrodinger's equation referred to as a linear equation?
+2. Set up Schrödinger's time dependent wave equation as an Eigen value equation and time independent wave equation from Schrodinger's time dependent wave equation.
+3. Schrodinger's equation is an operator equation. Explain.
+4. Write the three dimensional Schrodinger wave equation.
+5. A free particle is a classical entity. Justify.
+6. Describe the state of a particle for the case of a free state, bound state and scattering state.
+7. What is step potential in quantum mechanics?
+8. What are the similarities and differences between the reflection of light from an air-glass boundary and the reflection of an electron from a potential step?
+
+# [[../Physics|Back]]---
+dg-publish: true
+---
+
+# [[../Physics|Back]]
+***
+[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+***
+# Unit 1: Worked Examples
+
+### Example 1: EM Wave Properties
+The electric field of an EM wave is given by $E(x, t)= 10^3 \cos(\omega t - 3\pi \times 10^6 x) \hat{z}$. Evaluate its properties.
+
+#### Solution
+Comparing with the standard form $E(x,t) = E_m \cos(\omega t - kx)$:
+1.  **Speed**: The speed of an EM wave in vacuum is $c = 3 \times 10^8$ m/s.
+2.  **Wave number (k)**: $k = 3\pi \times 10^6$ rad/m.
+3.  **Wavelength ($\lambda$)**: $\lambda = \frac{2\pi}{k} = \frac{2\pi}{3\pi \times 10^6} = \frac{2}{3} \times 10^{-6}$ m.
+4.  **Frequency ($\nu$)**: $\nu = \frac{c}{\lambda} = \frac{3 \times 10^8}{ (2/3) \times 10^{-6} } = 4.5 \times 10^{14}$ Hz.
+5.  **Period (T)**: $T = \frac{1}{\nu} = \frac{1}{4.5 \times 10^{14}} \approx 2.22 \times 10^{-15}$ s.
+6.  **Amplitude of E-field**: $E_0 = 10^3$ V/m.
+7.  **Amplitude of B-field**: $B_0 = \frac{E_0}{c} = \frac{10^3}{3 \times 10^8} \approx 3.33 \times 10^{-6}$ T.
+8.  **Direction**: Since $\vec{E}$ is in the $\hat{z}$ direction and the wave propagates in the $\hat{x}$ direction, the magnetic field $\vec{B}$ must be in the $\hat{y}$ direction (as $\vec{S} \propto \vec{E} \times \vec{B}$).
+
+---
+
+### Example 2: Planck's vs. Classical Energy
+A harmonic oscillator has a frequency of $6.2 \times 10^{12}$ Hz at a temperature of 50°C (323 K). Compare its average energy according to Planck's law and the classical Rayleigh-Jeans law.
+
+#### Solution
+- **Planck's Law**:
+  $$\langle E \rangle = \frac{h\nu}{e^{h\nu/kT} - 1} = \frac{(6.626 \times 10^{-34})(6.2 \times 10^{12})}{e^{\frac{(6.626 \times 10^{-34})(6.2 \times 10^{12})}{(1.38 \times 10^{-23})(323)}} - 1}$$
+  $$\langle E \rangle \approx \frac{4.11 \times 10^{-21}}{e^{0.923} - 1} \approx \frac{4.11 \times 10^{-21}}{2.517 - 1} \approx 2.71 \times 10^{-21} \text{ J}$$
+- **Rayleigh-Jeans Law (Classical)**:
+  $$\langle E \rangle = kT = (1.38 \times 10^{-23})(323) \approx 4.46 \times 10^{-21} \text{ J}$$
+
+---
+
+### Example 3: Compton Scattering Calculation
+X-rays of wavelength 0.112 nm are scattered from a carbon target. Calculate the wavelength of X-rays scattered at an angle of $90^\circ$. What is the energy lost by the photon?
+
+#### Solution
+- **Compton Shift**: The Compton wavelength is $\lambda_C = h/(m_e c) \approx 2.426 \times 10^{-12}$ m.
+  $$\Delta\lambda = \lambda_C(1 - \cos\theta) = (2.426 \times 10^{-12} \text{ m})(1 - \cos 90^\circ) = 2.426 \times 10^{-12} \text{ m}$$
+- **Final Wavelength**:
+  $$\lambda_f = \lambda_i + \Delta\lambda = (0.112 \times 10^{-9}) + (2.426 \times 10^{-12}) \approx 0.1144 \times 10^{-9} \text{ m} = 0.1144 \text{ nm}$$
+- **Energy Lost**:
+  $$E_{lost} = E_i - E_f = hc\left(\frac{1}{\lambda_i} - \frac{1}{\lambda_f}\right)$$
+  $$E_{lost} = (6.626 \times 10^{-34})(3 \times 10^8)\left(\frac{1}{0.112 \times 10^{-9}} - \frac{1}{0.1144 \times 10^{-9}}\right)$$
+  $$E_{lost} \approx (1.988 \times 10^{-25})\left(8.9286 \times 10^9 - 8.7413 \times 10^9\right)$$
+  $$E_{lost} \approx (1.988 \times 10^{-25})(0.1873 \times 10^9) \approx 3.72 \times 10^{-17} \text{ J}$$
+  $$E_{lost} (eV) = \frac{3.72 \times 10^{-17}}{1.602 \times 10^{-19}} \approx 232 \text{ eV}$$
+
+---
+
+### Example 4: De-Broglie Wavelength of an Electron
+Find the de Broglie wavelength of an electron moving at a speed of $10^7$ m/s.
+
+#### Solution
+$$\lambda = \frac{h}{m_e v} = \frac{6.626 \times 10^{-34}}{(9.11 \times 10^{-31})(10^7)} \approx 7.27 \times 10^{-11} \text{ m} = 0.0727 \text{ nm}$$
+
+---
+
+### Example 5: De-Broglie Wavelength of an Alpha Particle
+An alpha particle ($m_\alpha = 4 m_p$, $q=2e$) is accelerated through a potential difference of 1 kV. Find its de Broglie wavelength.
+
+#### Solution
+The kinetic energy gained is $E_k = qV = (2 \times 1.602 \times 10^{-19} \text{ C})(1000 \text{ V}) = 3.204 \times 10^{-16}$ J.
+Mass of alpha particle $m_\alpha \approx 4 \times 1.672 \times 10^{-27} \text{ kg} \approx 6.688 \times 10^{-27}$ kg.
+Momentum $p = \sqrt{2m_\alpha E_k}$.
+$$\lambda = \frac{h}{p} = \frac{h}{\sqrt{2m_\alpha E_k}}$$
+$$\lambda = \frac{6.626 \times 10^{-34}}{\sqrt{2(6.688 \times 10^{-27})(3.204 \times 10^{-16})}} \approx 3.2 \times 10^{-13} \text{ m}$$
+
+---
+
+### Example 6: Phase and Group Velocity
+A wave packet is represented as $y=10 \sin(30t-40x) \cos(0.3t-0.5x)$. Find the phase and group velocities.
+
+#### Solution
+Comparing to the form $y=2A\cos(\frac{\Delta\omega t - \Delta k x}{2})\sin(\omega t - kx)$:
+* High frequency part: $\omega = 30$, $k = 40$.
+* Low frequency (envelope) part: $\Delta\omega/2 = 0.3 \implies \Delta\omega=0.6$, and $\Delta k/2 = 0.5 \implies \Delta k=1.0$.
+* **Phase Velocity**: $v_p = \frac{\omega}{k} = \frac{30}{40} = 0.75$ m/s.
+* **Group Velocity**: $v_g = \frac{d\omega}{dk} \approx \frac{\Delta\omega}{\Delta k} = \frac{0.6}{1.0} = 0.6$ m/s.
+
+---
+
+### Example 7: Uncertainty Principle Calculation
+The speed of an electron is measured to be 1 km/s with an accuracy of 0.005%. Estimate the minimum uncertainty in its position.
+
+#### Solution
+- Velocity uncertainty: $\Delta v = (1000 \text{ m/s}) \times (\frac{0.005}{100}) = 0.05$ m/s.
+- Using Heisenberg's Uncertainty Principle, $\Delta x \cdot \Delta p \ge \hbar/2$:
+  $$\Delta x \ge \frac{\hbar}{2 \Delta p} = \frac{\hbar}{2 m_e \Delta v} = \frac{1.054 \times 10^{-34}}{2 (9.11 \times 10^{-31})(0.05)} \approx 1.157 \times 10^{-3} \text{ m} \approx 1.16 \text{ mm}$$
+
+---
+
+### Example 8: Spectral Line Width
+The spectral line of Mercury green is 546.1 nm and has a measured width of $10^{-5}$ nm. Evaluate the minimum time spent by the electrons in the upper state.
+
+#### Solution
+Using the energy-time uncertainty, $\Delta E \cdot \Delta t \ge \hbar/2$. We relate $\Delta E$ to $\Delta \lambda$:
+$E = hc/\lambda \implies |\Delta E| \approx \frac{hc}{\lambda^2} |\Delta\lambda|$.
+$$\Delta t \ge \frac{\hbar}{2 \Delta E} = \frac{\hbar \lambda^2}{2 hc \Delta\lambda} = \frac{\lambda^2}{4\pi c \Delta\lambda}$$
+$$\Delta t \ge \frac{(546.1 \times 10^{-9})^2}{4\pi (3 \times 10^8)(10^{-5} \times 10^{-9})} \approx 7.9 \times 10^{-9} \text{ s} \approx 7.9 \text{ ns}$$
+
+---
+
+### Example 9: Uncertainty for a Confined Particle
+A proton is confined to a box of length 2 nm. What is the minimum uncertainty in its velocity?
+
+#### Solution
+The maximum uncertainty in position is the width of the box, $\Delta x = 2 \times 10^{-9}$ m.
+$$\Delta p \ge \frac{\hbar}{2 \Delta x} \implies m_p \Delta v \ge \frac{\hbar}{2 \Delta x}$$
+$$\Delta v \ge \frac{\hbar}{2 m_p \Delta x} = \frac{1.054 \times 10^{-34}}{2 (1.67 \times 10^{-27})(2 \times 10^{-9})} \approx 15.8 \text{ m/s}$$
+
+---
+
+### Example 10: Probability in a 1D Box
+Evaluate the probability of locating a particle trapped in an infinite potential well of width L between the limits L/4 and 3L/4, assuming the particle is in the 3rd excited state (n=4).
+
+#### Solution
+The probability is $P = \int_{L/4}^{3L/4} |\psi_4(x)|^2 dx$.
+$$P = \int_{L/4}^{3L/4} \frac{2}{L}\sin^2\left(\frac{4\pi x}{L}\right) dx = \frac{2}{L} \int_{L/4}^{3L/4} \frac{1}{2}\left(1-\cos\left(\frac{8\pi x}{L}\right)\right) dx$$
+$$P = \frac{1}{L} \left[ x - \frac{L}{8\pi}\sin\left(\frac{8\pi x}{L}\right) \right]_{L/4}^{3L/4}$$
+$$P = \frac{1}{L} \left[ (\frac{3L}{4} - \frac{L}{8\pi}\sin(6\pi)) - (\frac{L}{4} - \frac{L}{8\pi}\sin(2\pi)) \right]$$
+Since $\sin(6\pi) = 0$ and $\sin(2\pi) = 0$:
+$$P = \frac{1}{L} \left[ \frac{3L}{4} - \frac{L}{4} \right] = \frac{1}{L} \left[ \frac{2L}{4} \right] = \frac{1}{2}$$
+
+---
+
+### Example 11: Minimum Energy in a 1D Box (Nucleus)
+What is the minimum energy (ground state, n=1) of an electron trapped in a 1D region the size of an atomic nucleus ($10^{-14}$ m)?
+
+#### Solution
+$$E_n = \frac{n^2 h^2}{8 m_e L^2}$$
+$$E_1 = \frac{(1)^2 (6.626 \times 10^{-34})^2}{8 (9.11 \times 10^{-31})(10^{-14})^2} \approx 6.02 \times 10^{-10} \text{ J}$$
+Convert to MeV ($1 \text{ MeV} = 1.602 \times 10^{-13}$ J):
+$$E_1 \approx \frac{6.02 \times 10^{-10}}{1.602 \times 10^{-13}} \approx 3758 \text{ MeV} \approx 3.76 \text{ GeV}$$
+This incredibly high energy suggests electrons cannot exist within the nucleus.
+
+---
+### Example 12: Normalization Constant
+Find the normalization constant A, given that $\psi(x)=A~e^{-\alpha x^{2}}$ , $(-\infty < x < \infty)$, $\alpha > 0$.
+
+#### Solution
+Normalization condition: $\int_{-\infty}^{\infty} \psi^* \psi dx = 1$.
+$$\int_{-\infty}^{\infty} (A e^{-\alpha x^2})^* (A e^{-\alpha x^2}) dx = A^2 \int_{-\infty}^{\infty} e^{-2\alpha x^2} dx = 1$$
+This is a standard Gaussian integral: $\int_{-\infty}^{\infty} e^{-ax^2} dx = \sqrt{\frac{\pi}{a}}$.
+Here $a = 2\alpha$.
+$$A^2 \sqrt{\frac{\pi}{2\alpha}} = 1$$
+$$A^2 = \sqrt{\frac{2\alpha}{\pi}}$$
+$$A = \left(\frac{2\alpha}{\pi}\right)^{1/4}$$
+
+---
+### Example 13: Momentum Eigenvalue
+Find the eigenvalue of momentum corresponding to the wavefunction $\psi(x)=Ae^{-ikx}$.
+
+#### Solution
+The momentum operator is $\hat{p}_x = -i\hbar \frac{\partial}{\partial x}$.
+Apply the operator to the wave function:
+$$\hat{p}_x \psi(x) = -i\hbar \frac{\partial}{\partial x} (A e^{-ikx})$$
+$$\hat{p}_x \psi(x) = -i\hbar A (-ik) e^{-ikx}$$
+$$\hat{p}_x \psi(x) = -i^2 \hbar k (A e^{-ikx})$$
+$$\hat{p}_x \psi(x) = (+1) \hbar k \psi(x)$$
+This is in the form $\hat{A}\psi = a\psi$.
+The eigenvalue of momentum is $p = \hbar k$.
 
 ***
 # [[../Physics|Back]]

@@ -115,4 +115,10 @@ dg-publish: true
 *   **Answer**: Joins dissimilar metals, less preheating/distortion, faster speed, no spatter, little finishing, preserves base metal properties. See [[Core Notes#464-advantages-of-brazing|Core Notes.md]].
 
 ---
-# [[../Mechanical|Back]]
+# [[../Mechanical|Back]]# Examples
+
+> **Unit 3** | Mechanical Engineering
+
+---
+
+*No examples available yet. This file is ready for future additions.*

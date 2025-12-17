@@ -19,11 +19,14 @@ let hasContent = false;
 // Add icons for your common note types here
 const iconMap = {
     "Core Notes": "📓",
-    "Examples": "🧪",
+    "Examples": "💡",
     "Questions": "❓",
+    "MCQs": "✅",
+    "PYQs": "📋",
     "Unit 1": "1️⃣",
     "Unit 2": "2️⃣",
     "Unit 3": "3️⃣",
+    "Unit 4": "4️⃣",
     "DefaultNote": "📄"
 };
 
@@ -57,7 +60,7 @@ for (const unitFolder of subfolders) {
 
     // --- d. Find notes *inside* this Unit ---
     const notesInUnit = dv.pages(`"${unitPath}"`)
-        .where(p => p.file.folder === unitPath)
+        .where(p => p.file.folder === unitPath && !p.file.name.endsWith(".excalidraw"))
         .sort(p => p.file.name);
         
     if (notesInUnit.length === 0) {
@@ -96,7 +99,7 @@ for (const unitFolder of subfolders) {
 
 // --- 3. Find all "loose" notes in this folder ---
 const looseNotes = dv.pages(`"${currentFolder}"`)
-    .where(p => p.file.folder === currentFolder && p.file.path !== currentFile.path)
+    .where(p => p.file.folder === currentFolder && p.file.path !== currentFile.path && !p.file.name.endsWith(".excalidraw"))
     .sort(p => p.file.name);
     
 if (looseNotes.length > 0) {

@@ -3,6 +3,7 @@
   "cssTheme": "Catppuccin",
   "baseFontSize": 18,
   "enabledCssSnippets": [
-    "subject-buttons"
+    "subject-buttons",
+    "mcq-interactive"
   ]
 }

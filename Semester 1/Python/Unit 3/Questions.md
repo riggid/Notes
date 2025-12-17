@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Python|Back]]
 ***
-[[Core Notes]] | [[Examples]] | [[Questions]]
+[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
 
 # Unit 3: Question Bank (SOLVED)
 
@@ -33,7 +33,7 @@ def fun(num):
     return fun(fun(num + 11))
 print(fun(75))
 ```
-**Answer:** `91` (McCarthy 91 function)
+**Answer:** `91`
 
 **4. Power of Two:** Check if a number is a power of two recursively.
 ```python
@@ -133,19 +133,192 @@ def my_decorator(func):
 *   `from module import func`: Access via `func()`
 *   `from module import *`: Imports everything (can cause name clashes).
 
-## 6. GUI (Tkinter)
+## 6. GUI (wxPython)
 
 **19. Widgets:**
-*   **Label**: Display text/image.
-*   **Button**: Trigger an action.
-*   **Entry**: Single line text input.
-*   **Grid vs Pack**: `grid()` uses row/col, `pack()` uses side/anchor relative positioning.
+*   **wx.StaticText**: Dispay static text (Label).
+*   **wx.Button**: Trigger an action.
+*   **wx.TextCtrl**: Single line (or multi-line) text input.
+*   **Sizers**: `wx.BoxSizer` (linear), `wx.GridSizer` (grid), `wx.GridBagSizer` (complex grid).
 
 **20. Event Handling:**
-**Answer:** Using `command=` parameter in buttons or `bind()` method for other events.
+**Answer:** Using `Bind()` method to link an event (e.g., `wx.EVT_BUTTON`) to a handler function.
 
 ## 7. Short Answers
 
 *   **PDB**: Python Debugger. Commands: `n` (next), `s` (step), `c` (continue), `q` (quit).
 *   **Namespace**: A mapping from names to objects.
 *   **Difference generator function vs regular**: Generator uses `yield`, returns an iterator, pauses execution. Regular returns once.
+---
+dg-publish: true
+---
+# [[../Python|Back]]
+***
+[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+
+# Unit 3: Examples (Recursion & Files & GUI)
+
+## 1. Recursion
+
+### Example 1: Recursive Factorial
+```python
+def factorial(n):
+    # Base Case
+    if n == 0 or n == 1:
+        return 1
+    # Recursive Case
+    return n * factorial(n - 1)
+
+print(f"Factorial of 5: {factorial(5)}")
+```
+**Output:**
+```text
+Factorial of 5: 120
+```
+
+### Example 2: Recursive Fibonacci
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+n_terms = 5
+print(f"Fibonacci sequence ({n_terms} terms):")
+for i in range(n_terms):
+    print(fibonacci(i), end=" ")
+print()
+```
+**Output:**
+```text
+Fibonacci sequence (5 terms):
+0 1 1 2 3
+```
+
+## 2. Higher Order Functions
+
+### Example 3: Callback with Sort
+```python
+words = ["apple", "Banana", "cherry", "Date"]
+
+# Sort case-insensitive using a callback
+def ignore_case(s):
+    return s.lower()
+
+words.sort(key=ignore_case)
+# Equivalent lambda: words.sort(key=lambda s: s.lower())
+
+print(f"Sorted: {words}")
+```
+**Output:**
+```text
+Sorted: ['apple', 'Banana', 'cherry', 'Date']
+```
+
+## 3. Testing
+
+### Example 4: Doctest
+```python
+def add(a, b):
+    """
+    Returns the sum of a and b.
+    >>> add(2, 3)
+    5
+    >>> add(-1, 1)
+    0
+    """
+    return a + b
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+    print("Doctests run (no output means success)")
+```
+**Output:**
+```text
+Doctests run (no output means success)
+```
+
+## 4. GUI Programming (wxPython)
+
+### Example 5: Basic wxPython Window
+**Problem:** Create a window with a label and a button that changes the label text.
+```python
+import wx
+
+def on_click(event):
+    label.SetLabel("Button Clicked!")
+    label.SetForegroundColour(wx.RED)
+
+app = wx.App()
+frame = wx.Frame(None, title="My App", size=(300, 200))
+panel = wx.Panel(frame)
+
+sizer = wx.BoxSizer(wx.VERTICAL)
+
+label = wx.StaticText(panel, label="Hello GUI")
+font = label.GetFont()
+font.SetPointSize(12)
+label.SetFont(font)
+sizer.Add(label, 0, wx.ALL | wx.CENTER, 10)
+
+btn = wx.Button(panel, label="Click Me")
+btn.Bind(wx.EVT_BUTTON, on_click)
+sizer.Add(btn, 0, wx.ALL | wx.CENTER, 10)
+
+panel.SetSizer(sizer)
+frame.Show()
+app.MainLoop()
+```
+**Output:**
+*A window appears with "Hello GUI". Clicking "Click Me" changes text to "Button Clicked!" in red.*
+
+### Example 6: Grid Layout & Entry (wxPython)
+**Problem:** Create a simple Login form using GridBagSizer.
+```python
+import wx
+
+class LoginFrame(wx.Frame):
+    def __init__(self, parent, title):
+        super(LoginFrame, self).__init__(parent, title=title, size=(300, 200))
+        
+        panel = wx.Panel(self)
+        sizer = wx.GridBagSizer(5, 5)
+
+        # Labels
+        st1 = wx.StaticText(panel, label="Username:")
+        sizer.Add(st1, pos=(0, 0), flag=wx.ALL | wx.ALIGN_CENTER_VERTICAL, border=5)
+        
+        st2 = wx.StaticText(panel, label="Password:")
+        sizer.Add(st2, pos=(1, 0), flag=wx.ALL | wx.ALIGN_CENTER_VERTICAL, border=5)
+
+        # Entry Fields
+        self.entry_user = wx.TextCtrl(panel)
+        sizer.Add(self.entry_user, pos=(0, 1), flag=wx.EXPAND|wx.ALL, border=5)
+        
+        self.entry_pass = wx.TextCtrl(panel, style=wx.TE_PASSWORD)
+        sizer.Add(self.entry_pass, pos=(1, 1), flag=wx.EXPAND|wx.ALL, border=5)
+
+        # Button
+        button = wx.Button(panel, label="Login")
+        button.Bind(wx.EVT_BUTTON, self.on_login)
+        sizer.Add(button, pos=(2, 0), span=(1, 2), flag=wx.ALIGN_CENTER|wx.ALL, border=10)
+
+        panel.SetSizer(sizer)
+        self.Centre()
+
+    def on_login(self, event):
+        print(f"Username: {self.entry_user.GetValue()}")
+        print(f"Password: {self.entry_pass.GetValue()}")
+
+app = wx.App()
+frame = LoginFrame(None, "Login")
+frame.Show()
+app.MainLoop()
+```
+**Output:**
+*Window with Username/Password fields. Entering text and clicking Login prints credentials to console.*
+```text
+Username: admin
+Password: 123
+```

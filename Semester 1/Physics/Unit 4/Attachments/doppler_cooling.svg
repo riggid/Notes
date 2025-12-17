@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-440 -210 900 2250">
+ <title>Simplified principle of Doppler laser cooling</title>
+ <desc>Simplified principle of Doppler laser cooling, drawn by CMG Lee. (1) A stationary atom sees the laser neither red- nor blue-shifted and does not absorb the photon. (2) An atom moving away from the laser sees it red-shifted and does not absorb the photon. (3.1) An atom moving towards the laser sees it blue-shifted and absorbs the photon, slowing the atom. (3.2) The photon excites the atom, moving an electron to a higher quantum state. (3.3) The atom re-emits a photon. As its direction is random, there is no net change in momentum over many atoms.</desc>
+ <defs>
+  <radialGradient id="grad_photon" cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+   <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+   <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
+  </radialGradient>
+  <radialGradient id="grad_atom" cx="50%" cy="50%" r="50%" fx="33%" fy="33%">
+   <stop offset="0%"   stop-color="#ffffff"/>
+   <stop offset="100%" stop-color="#333333"/>
+  </radialGradient>
+  <radialGradient id="grad_electron" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+   <stop offset="50%"  stop-color="#000000" stop-opacity="0"/>
+   <stop offset="75%"  stop-color="#000000" stop-opacity="0.5"/>
+   <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="grad_excited" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+   <stop offset="50%"  stop-color="#330066" stop-opacity="0"/>
+   <stop offset="75%"  stop-color="#330066" stop-opacity="0.5"/>
+   <stop offset="100%" stop-color="#330066" stop-opacity="0"/>
+  </radialGradient>
+  <path id="arrow" d="M 0 0 h 300 m -100 -50 q 50 50 100 50 q -50 0 -100 50" fill="none"/>
+  <path id="wave1" d="M -100 -100 C -63.5 -100  -36.5 100  0 100 S 63.5 -100  100 -100" fill="none"/>
+  <g id="wave2">
+   <use xlink:href="#wave1" transform="translate(100,100)"/>
+   <use xlink:href="#wave1" transform="translate(300,100)"/>
+  </g>
+  <g id="wave6">
+   <use xlink:href="#wave2"/>
+   <use xlink:href="#wave2" transform="translate(200,0)"/>
+   <use xlink:href="#wave2" transform="translate(400,0)"/>
+  </g>
+ </defs>
+ <g font-size="128" font-family="sans-serif" letter-spacing="-10" text-anchor="start" stroke-width="10" stroke-linecap="round" fill="#000000">
+  <g transform="translate(0,0)">
+   <text x="-430" y="50" stroke="none">1</text>
+   <circle cx="0" cy="0" r="200" fill="url(#grad_electron)"/>
+   <circle cx="0" cy="0" r="100" fill="url(#grad_atom)"/>
+   <use xlink:href="#wave6" transform="translate(-300,-100)" stroke="#009900"/>
+   <circle cx="-300" cy="-100" r="20" fill="#009900"/>
+   <circle cx="-300" cy="-100" r="20" fill="url(#grad_photon)"/>
+  </g>
+  <g transform="translate(0,450)">
+   <text x="-430" y="50" stroke="none">2</text>
+   <circle cx="0" cy="0" r="200" fill="url(#grad_electron)"/>
+   <circle cx="0" cy="0" r="100" fill="url(#grad_atom)"/>
+   <use xlink:href="#arrow" transform="rotate(180)" stroke="#000000"/>
+   <use xlink:href="#wave6" transform="translate(-300,-100) scale(1.25,1)" stroke="#cc0000"/>
+   <circle cx="-300" cy="-100" r="20" fill="#cc0000"/>
+   <circle cx="-300" cy="-100" r="20" fill="url(#grad_photon)"/>
+  </g>
+  <g transform="translate(0,900)">
+   <text x="-430" y="50" stroke="none">3.1</text>
+   <circle cx="0" cy="0" r="200" fill="url(#grad_electron)"/>
+   <circle cx="0" cy="0" r="100" fill="url(#grad_atom)"/>
+   <use xlink:href="#arrow" stroke="#000000"/>
+   <use xlink:href="#wave6" transform="translate(120,-100) scale(0.8,1)" stroke="#0000ff"/>
+   <circle cx="120" cy="-100" r="20" fill="#0000ff"/>
+   <circle cx="120" cy="-100" r="20" fill="url(#grad_photon)"/>
+  </g>
+  <g transform="translate(0,1300)">
+   <text x="-430" y="50" stroke="none">3.2</text>
+   <circle cx="0" cy="0" r="200" fill="url(#grad_excited)"/>
+   <circle cx="0" cy="0" r="100" fill="url(#grad_atom)"/>
+   <use xlink:href="#arrow" transform="scale(0.7,1)" stroke="#000000"/>
+  </g>
+  <g transform="translate(0,1700)">
+   <text x="-430" y="50" stroke="none">3.3</text>
+   <circle cx="0" cy="0" r="200" fill="url(#grad_electron)"/>
+   <circle cx="0" cy="0" r="100" fill="url(#grad_atom)"/>
+   <use xlink:href="#arrow" transform="rotate(-45) scale(0.5,1)" stroke="#000000"/>
+   <use xlink:href="#wave2" transform="translate(350,200) rotate(45) scale(-0.8,1)" stroke="#0000ff"/>
+   <use xlink:href="#arrow" transform="translate(350,200) rotate(45) scale(0.5,0.5)" stroke="#0000ff"/>
+   <circle cx="350" cy="200" r="20" fill="#0000ff"/>
+   <circle cx="350" cy="200" r="20" fill="url(#grad_photon)"/>
+  </g>
+ </g>
+</svg>

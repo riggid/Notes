@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Python|Back]]
 ***
-[[Core Notes]] | [[Examples]] | [[Questions]]
+[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
 
 # Unit 2: Collections and Functions
 

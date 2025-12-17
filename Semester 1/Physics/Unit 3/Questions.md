@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Examples]] | [[Questions]]
+[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
 ***
 # Unit 3: Conceptual & Descriptive Practice Questions (Weeks 10-…)
 
@@ -1195,6 +1195,234 @@ Refer to the [[Examples|Examples.md]] file for worked problems based on Classica
 *   [[Examples#example-3:-fermi-velocity-calculation|Example 3: Fermi Velocity Calculation]]
 *   [[Examples#example-4:-number-of-electron-states|Example 4: Number of Electron States]]
 *   [[Examples#example-7:-relaxation-time-in-a-metal|Example 7: Relaxation Time in a Metal]]
+
+---
+# [[../Physics|Back]]# Question Bank - Unit 3
+
+> **Source**: PESU Assessment Question Bank 2020-2023
+
+Additional practice questions for Unit 3 (Free Electron Theory, Band Theory, Magnetism).
+
+---
+
+## CL23: Classical Free Electron Theory
+
+1. Bring out the salient features of Drude-Lorentz theory and mention the drawbacks of the classical free-electron theory.
+2. Define: (i) drift velocity (ii) relaxation time (iii) mean collision time (iv) mean free path and (v) mobility of electrons.
+3. Distinguish between drift velocity and thermal velocity of an electron.
+4. Give the microscopic form of Ohm's law and state whether the Ohm's law holds true at all temperatures.
+5. Using the free electron model derive the expression for electrical conductivity in a metal.
+6. The relaxation time of conduction electron in a metal is 3×10⁻¹⁴ s. If the density of electrons is 5.8×10²⁸ per m³, calculate the resistivity of the material and mobility of electrons.
+
+---
+
+## CL26: Density of States
+
+1. Explain the concept of density of states and density of occupied states in metals.
+2. Derive an expression for the density of electron states in a metal.
+3. Calculate the density of states with energy between 4eV and 4.005eV in copper with Fermi energy of 7.02eV. (E = 4eV = 4×1.6×10⁻¹⁹ J and dE = 0.005×1.6×10⁻¹⁹ J, mass of electron = 9.1× 10⁻³¹ kg)
+4. Calculate the density of occupied states, for copper, at an energy level which is 0.026 eV above the Fermi level, at a temperature 300K. Assume Fermi energy of copper as 7eV.
+5. The energy states below EF in the range kT are emptied and probability of occupancy lies between 1 and 0.5. Justify.
+6. With suitable plot, explain the dependence of density of states on energy.
+
+---
+
+## CL28: Temperature Dependence & Specific Heat
+
+1. Define effective number of electrons.
+2. The electrons near the Fermi level contribute to the conduction in metals. Explain.
+3. How does the specific heat of metals depend on temperature?
+4. Discuss the temperature dependence of conductivity of a metal based on the quantum free electron theory. How is the approach different from the classical method?
+5. Explain the contribution of free electrons to the specific heat of metals on the basis of quantum free electron theory.
+
+---
+
+## CL29: Wiedemann-Franz Law
+
+1. Mention the expressions for electrical and thermal conductivities of a metal and hence obtain the Wiedemann-Franz law.
+2. State and explain Wiedemann–Franz law.
+3. Deduce the Lorenz number.
+4. What are the demerits of quantum free electron theory?
+5. Obtain the relation between thermal and electrical conductivities of a metal.
+
+---
+
+## CL30: Band Theory (Kronig-Penney)
+
+1. Explain the terms (i) Periodic potential (ii) Bloch function and (iii) Effective mass.
+2. Outline the Kronig Penny Model to describe the motion of electrons in a metal and discuss how the band structure evolves from this model.
+3. What is Bloch function and how is it different from the free electron wave function?
+4. How does the potential energy of an electron vary in an infinite one dimensional crystal and how this potential is represented in Kronig-Penny model?
+5. What is crystal momentum? Is it a conserved quantity?
+6. Describe the nature of potential experienced by valence electrons according to Kronig–Penny model. How does it affect the wave function of electron?
+
+---
+
+## CL31: E-k Diagram & Band Gaps
+
+1. Discuss E-k diagram and give a qualitative picture of the origin of band gaps.
+2. Explain the E-k relationship for a free electron and relate it to the electron mass.
+3. Distinguish between conductors, insulators and semiconductors on the basis of band theory of solids.
+4. Draw the E-K graph for electrons in metal as per the band theory of solids and discuss the concept of the effective mass of electrons in the conduction band of the metal.
+5. With the help of E-K plot, show that materials can be classified into conductors, insulators and semiconductors.
+
+---
+
+## CL32: Effective Mass
+
+1. What is meant by effective mass of electron?
+2. The "effective mass" of electrons depends on the curvature of the E-k plot. Explain this statement.
+3. "The mass of an electron in the periodic potential of a solid is different from the free electron mass" Is the statement true or false? Can the effective mass be positive and negative? If yes, what are the specific conditions for the same.
+4. In which condition for an electron its effective mass is equal to its true mass.
+5. Explain the concept of electrons and holes using the idea of effective mass.
+6. With the help of a neat labelled diagram, explain the curvature of E-k in conduction band and valence band.
+
+---
+
+## CL33: Superconductivity
+
+1. Compare the dependence of resistance on temperature of a superconductor with that of a normal conductor.
+2. The DC resistance of a superconductor is practically zero. What about its AC resistance?
+3. What is meant by persistent current in a superconductor?
+4. Describe how cooper pairs are formed and explain the salient features of superconductivity.
+5. What are type I and type II superconductors?
+6. What is Meissner effect? Explain.
+
+---
+
+## CL46: Magnetic Materials
+
+1. The magnetic induction inside a medium is given by B = μ₀(H + M). Discuss this equation with basic principle.
+2. Define the following terms (i) Intensity of magnetization and (ii) relative permeability.
+3. Classify the magnetic materials based on susceptibility of the material.
+4. Explain magnetic flux density B, magnetic flux intensity H and magnetization M. How are they related to each other?
+5. A magnetic field of 2500 A/m is applied to a material which has a susceptibility of 800. Estimate (i) relative permeability (ii) intensity of magnetization and (iii) flux density.
+
+---
+
+## CL47: Orbital Magnetic Moment
+
+1. Obtain the expression for orbital magnetic moment of the electron and Explain Bohr magneton.
+2. Estimate the magnetic moment of an electron that revolves around a nucleus in an orbit of 0.53Å radius. If the frequency of revolution 6.6 × 10¹⁵ Hz.
+3. Why does a magnetic dipole due to orbital motion of the electron precess in a magnetic field?
+4. Evaluate the magnetic moment corresponding to one Bohr magneton.
+5. What is Larmor precession? A magnetic field of 2T is applied to an electron undergoing orbital motion. Calculate the precessional frequency.
+
+---
+
+## CL48: Classification of Magnetic Materials
+
+1. How are magnetic materials classified?
+2. Write the range of susceptibility values for each class of magnetic material.
+3. What happens, if diamagnetic, paramagnetic and ferromagnetic sample is suspended by thread and a bar magnet is slowly brought near each of the sample?
+4. Classify magnetic materials based on susceptibility dependence on temperature (χ versus T) and magnetization dependence on field (M versus H) plots.
+5. Elaborate on two tests which can differentiate a paramagnetic material from a diamagnetic material.
+
+---
+
+## CL49-50: Para & Ferromagnetism
+
+1. Obtain the expression saturation magnetization, if the magnetic interaction energy is much greater than the thermal energy.
+2. What does Brillouin function represent?
+3. Discuss the Brillouin function for magnetic materials for large values of j and when j=1/2. How does this lead to the expression for the paramagnetic susceptibility?
+4. How does magnetic susceptibility vary with temperature in case of paramagnetic materials?
+5. Describe Quantum theory of Paramagnetism.
+6. Discuss Weiss theory of spontaneous magnetization and express susceptibility in terms of the modified Curie-Weiss law.
+7. Explain how Curie law is modified by internal molecular field and mention the significance of Curie temperature.
+
+---
+
+## CL51-52: Spin Ordering & GMR
+
+1. Elaborate on spin ordered magnetic materials and their classification.
+2. Discuss the temperature dependence of susceptibility for each type of magnetic material.
+3. Distinguish between soft and hard magnets with the help of hysteresis graphs.
+4. What are ferrites? In what respect is it superior to ferromagnetic materials?
+5. Explain the significance of Neel temperature.
+6. Discuss the parameters that distinguish Ferro, antiferro and Ferri-magnetic materials.
+7. What is Giant Magneto Resistance and mention its important applications.
+8. Briefly describe the structure of a GMR nano-device.
+9. Elaborate the significance of magnetization states of the magnetic layers towards giant magneto resistance.
+10. List various applications of ferromagnetic and anti-ferromagnetic materials.
+---
+dg-publish: true
+---
+# [[../Physics|Back]]
+***
+[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+***
+# Unit 3: Worked Examples
+
+### Example 1: Fermi Factor Calculation
+Estimate the Fermi factor of an energy state 0.01eV below the Fermi level at 500K.
+
+#### Solution
+Given $E-E_f = -0.01 \text{ eV} = -0.01 \times 1.6 \times 10^{-19} \text{ J}$.
+$k_B = 1.38 \times 10^{-23} \text{ J/K}$.
+$T = 500 \text{ K}$.
+$k_B T = 1.38 \times 10^{-23} \text{ J/K} \times 500 \text{ K} = 6.9 \times 10^{-21} \text{ J}$.
+The exponent term is: $(E-E_f)/k_B T = (-0.01 \times 1.6 \times 10^{-19}) / (6.9 \times 10^{-21}) = -2.3188$.
+Using the Fermi-Dirac distribution function:
+$$F_d(E) = \frac{1}{e^{(E-E_f)/k_B T} + 1} = \frac{1}{e^{-2.3188} + 1}$$
+$$F_d(E) = \frac{1}{0.0984 + 1} = \frac{1}{1.0984} \approx 0.9104$$
+
+---
+
+### Example 3: Fermi Velocity Calculation
+Determine the free electron concentration and Fermi velocity for electrons in a metal with Fermi energy of 5.10 eV.
+
+#### Solution
+Given $E_f = 5.10 \text{ eV} = 5.10 \times 1.602 \times 10^{-19} \text{ J} = 8.17 \times 10^{-19} \text{ J}$.
+Mass of electron $m_e = 9.109 \times 10^{-31} \text{ kg}$.
+Planck's constant $h = 6.626 \times 10^{-34} \text{ J s}$.
+
+*   **Fermi Velocity ($v_f$)**:
+    $$v_f = \sqrt{\frac{2E_f}{m_e}} = \sqrt{\frac{2 \times 8.17 \times 10^{-19} \text{ J}}{9.109 \times 10^{-31} \text{ kg}}} \approx 1.34 \times 10^6 \text{ m/s}$$
+*   **Free Electron Concentration ($n$)**:
+    $$n = \frac{\pi}{3} \left(\frac{8m_e}{h^2}\right)^{3/2} E_f^{3/2}$$
+    $$n = \frac{\pi}{3} \left(\frac{8 \times 9.109 \times 10^{-31} \text{ kg}}{(6.626 \times 10^{-34} \text{ J s})^2}\right)^{3/2} (8.17 \times 10^{-19} \text{ J})^{3/2}$$
+    $$n \approx 5.21 \times 10^{28} \text{ m}^{-3}$$
+
+---
+
+### Example 4: Number of Electron States
+A monovalent metal has $5 \times 10^{28}$ valence electrons per m³. Estimate the number of electron energy states per unit volume in the metal between 2eV and 2.005eV from the concept of the density of states.
+
+#### Solution
+Given $E = 2 \text{ eV} = 3.204 \times 10^{-19} \text{ J}$.
+$\Delta E = 0.005 \text{ eV} = 8.01 \times 10^{-22} \text{ J}$.
+$m_e = 9.109 \times 10^{-31} \text{ kg}$. $h = 6.626 \times 10^{-34} \text{ J s}$.
+The number of states in the energy interval $dE$ at energy $E$ is $g(E) dE$.
+$$g(E) dE = \frac{\pi}{2} \left(\frac{8m_e}{h^2}\right)^{3/2} E^{1/2} dE$$
+$$g(E) dE = \frac{\pi}{2} \left(\frac{8 \times 9.109 \times 10^{-31} \text{ kg}}{(6.626 \times 10^{-34} \text{ J s})^2}\right)^{3/2} (3.204 \times 10^{-19} \text{ J})^{1/2} (8.01 \times 10^{-22} \text{ J})$$
+$$g(E) dE \approx 4.80 \times 10^{25} \text{ m}^{-3}$$
+
+---
+
+### Example 7: Relaxation Time in a Metal
+Calculate the relaxation time of conduction electrons in a metal of resistivity of 1.55 x 10<sup>-8</sup> Ω m and an electronic concentration of 6 x 10<sup>28</sup> per m³.
+
+#### Solution
+Given:
+*   Resistivity, $\rho = 1.55 \times 10^{-8} \Omega \text{ m}$
+*   Electronic concentration, $n = 6 \times 10^{28} \text{ m}^{-3}$
+*   Charge of electron, $e = 1.602 \times 10^{-19} \text{ C}$
+*   Mass of electron, $m_e = 9.109 \times 10^{-31} \text{ kg}$
+
+The formula for resistivity in the Classical Free Electron Theory is:
+$$\rho = \frac{m_e}{ne^2\tau}$$
+We need to find the relaxation time ($\tau$), so we rearrange the formula:
+$$\tau = \frac{m_e}{ne^2\rho}$$
+Substitute the given values:
+$$\tau = \frac{9.109 \times 10^{-31} \text{ kg}}{(6 \times 10^{28} \text{ m}^{-3}) \times (1.602 \times 10^{-19} \text{ C})^2 \times (1.55 \times 10^{-8} \Omega \text{ m})}$$
+Calculate the denominator:
+$$n \times e^2 \times \rho = (6 \times 10^{28}) \times (2.566404 \times 10^{-38}) \times (1.55 \times 10^{-8})$$
+$$= 6 \times 2.566404 \times 1.55 \times 10^{(28 - 38 - 8)}$$
+$$= 23.8675572 \times 10^{-18}$$
+$$= 2.38675572 \times 10^{-17} \text{ kg m}^{-2} \Omega \text{ C}^2$$
+Now, calculate $\tau$:
+$$\tau = \frac{9.109 \times 10^{-31}}{2.38675572 \times 10^{-17}} \approx 3.816 \times 10^{-14} \text{ s}$$
+The relaxation time is approximately $3.82 \times 10^{-14}$ seconds.
 
 ---
 # [[../Physics|Back]]

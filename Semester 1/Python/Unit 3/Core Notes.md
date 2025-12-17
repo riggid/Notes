@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Python|Back]]
 ***
-[[Core Notes]] | [[Examples]] | [[Questions]]
+[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
 ***
 # Unit 3: Advanced Functions, Testing, Debugging, and GUI
 
@@ -70,17 +70,7 @@ dg-publish: true
 *   **GUI**: Allows users to interact via windows, icons, and buttons.
 *   **Event-Driven**: Programs respond to user actions (clicks, key presses).
 
-### 3.2 Tkinter
-*   **Status**: Standard Python GUI library.
-*   **Workflow**:
-    1.  Import module: `import tkinter`
-    2.  Create main window: `root = tkinter.Tk()`
-    3.  Add widgets (Label, Button, Entry).
-    4.  Pack/Grid/Place widgets.
-    5.  Start Loop: `root.mainloop()`
-*   **Geometry Managers**: `pack()` (blocks), `grid()` (table), `place()` (coordinates).
-
-### 3.3 wxPython
+### 3.2 wxPython
 *   **Definition**: A cross-platform GUI toolkit wrapper for wxWidgets (C++).
 *   **Structure**:
     *   `wx.App`: The application object. Starts the GUI.
@@ -88,7 +78,7 @@ dg-publish: true
     *   `wx.Panel`: Container for widgets.
     *   `wx.EVT_*`: Event binders (e.g., `wx.EVT_BUTTON`).
     *   **Widgets**: `wx.Button`, `wx.TextCtrl`, `wx.StaticText`.
-*   **Comparison**: More native look-and-feel compared to Tkinter.
+
 
 ---
 

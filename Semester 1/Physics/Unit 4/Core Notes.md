@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Examples]] | [[Questions]]
+[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
 ***
 
 # Unit 7: Lasers, Optoelectronics, and Advanced Materials
@@ -25,7 +25,7 @@ $$ R_{12} = B_{12} N_1 u(\nu) $$
     This is typically expressed in units of $\text{m}^2 \text{ J}^{-1} \text{ s}^{-1}$ or $\text{m}^3 \text{ s}^{-2} \text{ kg}^{-1}$. In common units, it's often given as $\text{m}^3 \text{ Hz}^{-1} \text{ J}^{-1} \text{ s}^{-1}$.
 
 **Description of Diagram (Induced Absorption):** An energy level diagram illustrating induced absorption. Two energy levels are shown: $E_1$ (lower) and $E_2$ (upper). An upward arrow from $E_1$ to $E_2$ indicates an atom absorbing a photon ($h\nu$) to transition to the excited state. $N_1$ and $N_2$ represent populations of the respective states.
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Absorption_Process.svg/300px-Absorption_Process.svg.png|Induced Absorption Diagram]]
+![[Attachments/induced_absorption_diagram.png|Induced Absorption Diagram]]
 
 ### 1.2 Spontaneous Emission
 
@@ -45,7 +45,7 @@ $$ R_{21,sp} = A_{21} N_2 $$
     Thus, the **lifetime of a state undergoing spontaneous emission is the inverse of the Einstein A coefficient**.
 
 **Description of Diagram (Spontaneous Emission):** An energy level diagram showing spontaneous emission. An atom in the upper state $E_2$ randomly transitions to the lower state $E_1$, emitting a photon ($h\nu$). This process is independent of external fields.
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Spontaneous_Emission.svg/300px-Spontaneous_Emission.svg.png|Spontaneous Emission Diagram]]
+![[Attachments/spontaneous_emission.png|Spontaneous Emission Diagram]]
 
 ### 1.3 Stimulated Emission
 
@@ -129,7 +129,7 @@ At thermal equilibrium, the ratio of populations $N_2/N_1 = e^{-(E_2-E_1)/k_B T}
 *   **Drawbacks**: Three-level systems require very high pump power because the lower laser level is the heavily populated ground state. This often leads to **pulsed operation** rather than continuous wave (CW) due to the difficulty in maintaining inversion. The ruby laser is a classic example.
 
 **Description of Diagram (Three-Level Laser System):** An energy level diagram showing three states $E_1$ (ground), $E_2$ (metastable upper laser level), and $E_3$ (pump level). An upward arrow indicates pumping from $E_1$ to $E_3$. A wavy arrow shows fast non-radiative decay from $E_3$ to $E_2$. A downward arrow marks the laser transition from $E_2$ to $E_1$.
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Three_level_laser.svg/330px-Three_level_laser.svg.png|Three-Level Laser System Diagram]]
+![[Attachments/three_level_laser.png|Three-Level Laser System Diagram]]
 
 ### 2.4 Four-Level Systems
 
@@ -149,7 +149,7 @@ At thermal equilibrium, the ratio of populations $N_2/N_1 = e^{-(E_2-E_1)/k_B T}
 *   **Advantages**: Low pump power requirement, high efficiency, and suitability for CW operation. Examples include He-Ne and Nd:YAG lasers.
 
 **Description of Diagram (Four-Level Laser System):** An energy level diagram showing four states: $E_0$ (ground), $E_1$ (lower laser level, fast decay), $E_2$ (metastable upper laser level), and $E_3$ (pump level, fast decay). An upward arrow indicates pumping from $E_0$ to $E_3$. Wavy arrows show fast non-radiative decays from $E_3$ to $E_2$ and from $E_1$ to $E_0$. A downward arrow marks the laser transition from $E_2$ to $E_1$.
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Four_level_laser.svg/330px-Four_level_laser.svg.png|Four-Level Laser System Diagram]]
+![[Attachments/four_level_laser.png|Four-Level Laser System Diagram]]
 
 ### 2.5 Difference between Three-Level and Four-Level Lasers:
 
@@ -200,7 +200,7 @@ The **resonant cavity** provides positive feedback for the light within the acti
 *   **Role in Sustained Lasing**: It ensures that stimulated emission in the desired wavelength is amplified to achieve a sustainable laser action of sufficient intensity.
 
 **Description of Diagram (Basic Laser Construction):** A schematic showing an active medium placed between a highly reflective mirror and a partially reflective output coupler. An energy pump source is shown exciting the active medium. Arrows indicate light bouncing back and forth within the cavity, with a laser output beam emanating from the output coupler.
-![[https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Construction_of_a_laser.svg/600px-Construction_of_a_laser.svg.png|Basic Laser Construction Diagram]]
+![[Attachments/laser_construction.png|Basic Laser Construction Diagram]]
 
 ## 4. Round Trip Gain in a Laser Medium
 
