@@ -1,7 +1,7 @@
 ---
 dg-publish: true
 ---
-# [Index](../../Index.md)
+# [[../../Index|Index]]
 ---
 ```dataviewjs
 // --- This script is fully automatic ---
@@ -24,6 +24,8 @@ const iconMap = {
     "Unit 1": "1️⃣",
     "Unit 2": "2️⃣",
     "Unit 3": "3️⃣",
+    "Unit 4": "4️⃣",
+    "Lab": "💻",
     "DefaultNote": "📄"
 };
 
