@@ -74,7 +74,7 @@ In a resistive circuit, $P = I^2R = V^2/R$.
 The algebraic sum of currents entering a junction (or node) is zero. This implies that the total current flowing into a node must equal the total current flowing out of it, representing the conservation of charge.
 $$\sum I_{in} = \sum I_{out} \quad \text{or} \quad \sum I_{node} = 0$$
 
-![[Attachments/kcl_diagram.png|Kirchhoff's Current Law]]
+<!-- Missing Image: kcl_diagram.png -->
 
 > For a numerical problem, see: [[Questions#question-2:-find-voltage-$v_{ab}$|Q&A Examples (Voltage)]]
 
@@ -82,7 +82,7 @@ $$\sum I_{in} = \sum I_{out} \quad \text{or} \quad \sum I_{node} = 0$$
 The algebraic sum of all voltages (rises and drops) around any closed path (or loop) in an electric network is zero. This represents the conservation of energy.
 $$\sum V = 0$$
 
-![[Attachments/kvl_diagram.png|Kirchhoff's Voltage Law]]
+<!-- Missing Image: kvl_diagram.png -->
 
 > For numerical problems, see: [[Examples#example-1:-basic-kvl|Examples (Basic KVL)]], [[Questions#question-2:-find-voltage-$v_{ab}$|Q&A Examples (Voltage)]]
 
@@ -108,7 +108,7 @@ $$\sum V = 0$$
         $$I_1 = I_{total} \left( \frac{R_2}{R_1 + R_2} \right)$$
         Similarly, for $I_2$: $$I_2 = I_{total} \left( \frac{R_1}{R_1 + R_2} \right)$$
 
-![[Attachments/series_parallel_resistors.png|Series and Parallel Resistors]]
+<!-- Missing Image: series_parallel_resistors.png -->
 
 > For numerical applications, see: [[Examples#example-4:-current-division|Examples (Current Division)]], [[Examples#example-5:-voltage-division|Examples (Voltage Division)]]
 
@@ -126,7 +126,7 @@ A practical voltage source (in series with a resistor) can be converted into an 
 - **Current Source to Voltage Source**: A current source $I_S$ in parallel with a resistor $R_S$ is equivalent to a voltage source $V_S$ in series with the same resistor $R_S$.
   $$V_S = I_S R_S$$
 
-![[Attachments/source_transformation_diagram.png|Source Transformation]]
+<!-- Missing Image: source_transformation_diagram.png -->
 
 > For numerical problems, see: [[Examples#example-7:-source-transformation|Examples (Source Transformation)]], [[Questions#question-2:-find-current-using-source-transformation|Q&A (Lecture 3, Q2)]]
 
@@ -146,7 +146,7 @@ These transformations are used to simplify complex resistive networks that canno
     $$R_{bc} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_a} = R_b + R_c + \frac{R_b R_c}{R_a}$$
     $$R_{ca} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_b} = R_c + R_a + \frac{R_c R_a}{R_b}$$
 
-![[Attachments/star_delta_transform.png|Star Delta Transformation]]
+<!-- Missing Image: star_delta_transform.png -->
 
 > For numerical problems, see: [[Examples#example-8:-star-delta-transformation|Examples (Star-Delta)]], [[Questions#question-2:-delta-to-star-transformation|Q&A (Lecture 7, Q2 & Q3)]]
 
@@ -199,6 +199,6 @@ Any two-terminal linear electrical network can be replaced by an equivalent circ
 3.  **Draw Equivalent Circuit**: Construct the Thevenin equivalent circuit with $V_{TH}$ in series with $R_{TH}$.
 4.  **Connect Load**: Reconnect the original load to the Thevenin equivalent circuit to find the load current or voltage.
 
-![[Attachments/thevenin_equivalent_circuit.png|Thevenin Equivalent Circuit]]
+<!-- Missing Image: thevenin_equivalent_circuit.png -->
 
 > For numerical problems, see: [[Questions#obtain-the-thevenin's-equivalent-between-the-terminals-a-&-b.|Q&A (Thevenin's)]], [[Examples#example-19:-thevenin's-theorem-1|Examples (Thevenin's)]]

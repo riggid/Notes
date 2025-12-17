@@ -23,6 +23,13 @@ University-provided study materials, slides, notes, and PYQs:
 
 **[📁 First Year PES Resources](https://drive.google.com/drive/folders/1DIjOOU8QzWAkfEKE4fK0ZD6DIcchXYLM)**
 
-> **Tip**: Browse through these folders to find papers and materials specific to this unit. ESA papers are organized by year and subject.
+## 📝 Selected Previous Year Questions
+
+### DC Circuits & Network Theorems
+1. **Equivalent Resistance**: Obtain the equivalent resistance between two terminals (A & B) in a given complex resistor network (series-parallel combination).
+2. **Superposition Theorem**: Determine the current through a specific resistor (e.g., $2\Omega$) in a circuit with multiple sources using the Superposition Theorem.
+3. **Thevenin’s Theorem**: Obtain the Thevenin’s Equivalent circuit with respect to a given pair of terminals for a network containing independent sources and resistors.
+
+> **Note**: For more questions, refer to the [ESA PYQs Drive Folder](https://drive.google.com/drive/folders/11U56PJ-VZ_5zaJ1fVrV6h3kzN4rnNX7E?usp=drive_link).
 
 *Last updated: December 2025*

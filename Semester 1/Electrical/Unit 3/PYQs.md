@@ -23,6 +23,15 @@ University-provided study materials, slides, notes, and PYQs:
 
 **[📁 First Year PES Resources](https://drive.google.com/drive/folders/1DIjOOU8QzWAkfEKE4fK0ZD6DIcchXYLM)**
 
-> **Tip**: Browse through these folders to find papers and materials specific to this unit. ESA papers are organized by year and subject.
+## 📝 Selected Previous Year Questions
+
+### Three Phase Systems & Installations
+1. **Star Connection**: Derive the relationship between line and phase voltage ($V_L = \sqrt{3}V_{ph}$) and current ($I_L = I_{ph}$) for a balanced Star connected system. Draw the phasor diagram.
+2. **Power Measurement**: Explain the Two Wattmeter method for measuring power in a three-phase circuit with a neat circuit diagram. Derive the expression for power factor in terms of wattmeter readings.
+3. **Protection**: Write short notes on the working principle of:
+   - MCB (Miniature Circuit Breaker)
+   - ELCB (Earth Leakage Circuit Breaker)
+
+> **Note**: For more questions, refer to the [ESA PYQs Drive Folder](https://drive.google.com/drive/folders/11U56PJ-VZ_5zaJ1fVrV6h3kzN4rnNX7E?usp=drive_link).
 
 *Last updated: December 2025*

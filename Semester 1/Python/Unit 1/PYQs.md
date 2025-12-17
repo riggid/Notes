@@ -23,6 +23,13 @@ University-provided study materials, slides, notes, and PYQs:
 
 **[📁 First Year PES Resources](https://drive.google.com/drive/folders/1DIjOOU8QzWAkfEKE4fK0ZD6DIcchXYLM)**
 
-> **Tip**: Browse through these folders to find papers and materials specific to this unit. ESA papers are organized by year and subject.
+## 📝 Selected Previous Year Questions
+
+### Problem Solving & Python Basics
+1. **Translator Systems**: Differentiate between an Interpreter and a Compiler. Why is Python considered an interpreted language?
+2. **Errors**: Define 'Logical Error' and 'Syntax Error' with appropriate examples.
+3. **Data Types**: Discuss the difference between immutable and mutable data types in Python. Give examples of each.
+
+> **Note**: For more questions, refer to the [ESA PYQs Drive Folder](https://drive.google.com/drive/folders/11U56PJ-VZ_5zaJ1fVrV6h3kzN4rnNX7E?usp=drive_link).
 
 *Last updated: December 2025*

@@ -157,7 +157,7 @@ To understand electron distribution and overall properties, we need the **densit
         $$g(E) = \frac{\pi}{2} \left(\frac{8m}{h^2}\right)^{3/2} E^{1/2}$$
     *   **Plot Description**: The plot of $g(E)$ versus energy $E$ for a 3D system starts at zero for $E=0$ and then increases parabolically as energy increases ($g(E) \propto E^{1/2}$). This monotonic increase indicates that more states become available per unit energy interval at higher energies.
     *   **Plot:**
-        ![[Attachments/density_states_3d.png|Density of States 3D]]
+<!-- Missing Image: density_states_3d.png -->
 *   **2D Case (Quantum Well - Area A):**
     *   **Derivation Sketch**: Confinement in one dimension (e.g., width Lz) quantizes energy ($E_z \propto n_z^2$), while electrons are free to move in the other two dimensions (x, y). This leads to a series of 2D sub-bands. Within each sub-band, counting states in 2D k-space and differentiating reveals the DoS.
     *   **Expression**:
@@ -269,7 +269,7 @@ The **Bloch Theorem** is a fundamental theorem that describes the behavior of el
 The **Kronig-Penney Model** is a simplified, one-dimensional mathematical model used to illustrate how energy bands and forbidden gaps arise when an electron moves in a periodic potential. It provides a qualitative understanding without the complexity of a real 3D crystal.
 *   **Model Potential Profile**: The model approximates the complex, continuous periodic potential of a crystal into an idealized, simpler form: an infinite series of rectangular potential wells (representing the attractive potential of atomic nuclei) separated by rectangular potential barriers (representing the repulsive potential between them).
     **Description of Potential Profile:** The Kronig-Penney model approximates the periodic potential of a crystal as a series of rectangular potential wells (regions of lower potential energy, representing electron attraction to atomic nuclei) separated by rectangular potential barriers (regions of higher potential energy, representing the regions between nuclei). The width of the wells (`a`) and barriers (`b` or `c`), along with the height of the barriers (`V0`), are key parameters in the model. The overall periodicity is `a+c`.
-    ![[Attachments/kronig_penney_potential.png|Kronig-Penney Model Potential Profile]]
+<!-- Missing Image: kronig_penney_potential.png -->
 *   **Mathematical Result & Graphical Solution**: Applying the Schrödinger equation and Bloch's theorem to this periodic potential leads to a transcendental equation that relates the electron's energy $E$ to its wave vector $k$:
     $$\cos(ka) = P \frac{\sin(\alpha a)}{\alpha a} + \cos(\alpha a)$$
     Where $P = \frac{m a V_0 c}{\hbar^2}$ (a measure of barrier strength, often simplified) and $\alpha = \sqrt{2mE/\hbar^2}$.
@@ -283,7 +283,7 @@ The **Kronig-Penney Model** is a simplified, one-dimensional mathematical model 
     *   **Origin of Energy Bands**: Conceptually, as isolated atoms come together to form a solid, their sharp, discrete atomic energy levels overlap and interact. The periodic potential of the crystal, combined with the Pauli Exclusion Principle, forces these discrete levels to broaden into continuous ranges of allowed energy, known as **energy bands**, separated by energy gaps.
 *   **E-k Diagram (Energy-Wave Vector Diagram)**: The graph of energy ($E$) as a function of the wave vector ($k$) for a periodic potential, illustrating the allowed energy bands and forbidden band gaps.
     **Description of E-k Diagram:** A diagram would show the electron energy $E$ plotted against the wave vector $k$. In the free electron model (dashed parabola), $E$ is continuous and proportional to $k^2$. However, for the Kronig-Penney model (or any periodic potential, solid curves), the $E-k$ relation is periodic but exhibits discontinuities (gaps) at specific values of $k = \pm n\pi/a$. These are the boundaries of the Brillouin zones. The continuous segments within these regions are the allowed energy bands, and the vertical breaks represent the forbidden energy bands (band gaps).
-    ![[Attachments/kronig_penney_ek.png|E-k Diagram for Periodic Potential vs Free Electron (Band Structure)]]
+<!-- Missing Image: kronig_penney_ek.png -->
 
 ### **3.2 Brillouin Zones and E-k Diagrams**
 
@@ -368,7 +368,7 @@ The **Hall Effect** is the production of a voltage difference (the Hall voltage,
 
 **Schematic Diagram of Hall Effect:**
 **Description of Diagram:** A rectangular block of conducting material is shown. Current ($I$) flows along the length (e.g., X-axis). A magnetic field ($B$) is applied perpendicular to the current (e.g., Z-axis). This causes charge carriers to deflect due to the Lorentz force, resulting in a buildup of charge on opposite sides of the sample. This charge separation creates a transverse Hall electric field ($E_H$) and a measurable Hall voltage ($V_H$) across the width (Y-axis). Arrows indicate the directions of current, magnetic field, Lorentz force, and the resulting Hall electric field.
-![[Attachments/hall_effect.png|Hall effect schematic diagram]]
+<!-- Missing Image: hall_effect.png -->
 
 ### **4.2 Derivation of Hall Voltage and Hall Coefficient ($R_H$)**
 Let's consider charge carriers of charge $q$ and density $n$.
@@ -447,7 +447,7 @@ Materials respond to external magnetic fields in various ways due to the quantum
     The **permeability of the material** is $\mu = \mu_0 \mu_r$.
 *   **Classification of Magnetic Materials**: Materials are classified based on their $\chi_m$ value and characteristic behavior in a magnetic field.
     **Description of B-H Curves:** This diagram typically shows plots of magnetic flux density (B) against magnetic field strength (H) for different types of magnetic materials. Diamagnetic materials would show a very slight negative slope, indicating weak opposition to the field. Paramagnetic materials would show a very slight positive, but linear, slope, indicating weak alignment with the field. Ferromagnetic materials exhibit a highly non-linear curve with a distinctive hysteresis loop, indicating saturation, remanence, and coercivity, due to strong, permanent magnetic effects.
-    ![[Attachments/bh_curve.png|Typical B-H curves for magnetic materials]]
+<!-- Missing Image: bh_curve.png -->
 
 ### **5.2 Basic Electromagnetism Concepts Relevant to Magnetism**
 
@@ -644,7 +644,7 @@ Ferromagnetic materials are divided into microscopic regions called **magnetic d
 #### **5.8.4 Hysteresis**
 The **hysteresis** property is a defining characteristic of ferromagnetic materials, where the magnetization ($M$) of the material depends not only on the current applied magnetic field ($H$) but also on its magnetic history. This is graphically represented by a **Hysteresis Loop**.
 *   **Description of Hysteresis Loop**: A plot of magnetization (M) versus applied magnetic field (H). Starting from an unmagnetized state (origin), as the external field H is increased, M increases non-linearly to a maximum value called **saturation magnetization ($M_s$)**. Upon reducing H to zero, M does not return to zero but retains a residual magnetization called **remanence or retentivity ($M_r$)**. To bring M to zero, a reverse magnetic field, called **coercivity ($H_c$)**, must be applied. Further cycling of the field completes the characteristic loop.
-    ![[Attachments/magnetic_hysteresis.png|Magnetic Hysteresis Loop]]
+<!-- Missing Image: magnetic_hysteresis.png -->
 *   **Significance**: Hysteresis implies energy loss (proportional to the loop area) during each cycle of magnetization and demagnetization, and it gives ferromagnetic materials a "memory," which is crucial for data storage applications.
 
 ### **5.9 Antiferromagnetic and Ferrimagnetic Materials**

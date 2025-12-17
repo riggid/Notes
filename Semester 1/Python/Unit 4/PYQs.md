@@ -23,6 +23,13 @@ University-provided study materials, slides, notes, and PYQs:
 
 **[📁 First Year PES Resources](https://drive.google.com/drive/folders/1DIjOOU8QzWAkfEKE4fK0ZD6DIcchXYLM)**
 
-> **Tip**: Browse through these folders to find papers and materials specific to this unit. ESA papers are organized by year and subject.
+## 📝 Selected Previous Year Questions
+
+### Data Structures: Tuples, Sets, Dictionaries
+1. **Tuples vs Lists**: Differentiate between Lists and Tuples. Why are Tuples called immutable?
+2. **Dictionary Properties**: Explain the characteristics of keys in a Python dictionary. Can a list be used as a key? Justify.
+3. **Set Operations**: Discuss basic set operations (Union, Intersection, Difference) in Python with suitable method calls.
+
+> **Note**: For more questions, refer to the [ESA PYQs Drive Folder](https://drive.google.com/drive/folders/11U56PJ-VZ_5zaJ1fVrV6h3kzN4rnNX7E?usp=drive_link).
 
 *Last updated: December 2025*

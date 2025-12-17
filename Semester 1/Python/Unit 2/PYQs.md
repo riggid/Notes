@@ -23,6 +23,17 @@ University-provided study materials, slides, notes, and PYQs:
 
 **[📁 First Year PES Resources](https://drive.google.com/drive/folders/1DIjOOU8QzWAkfEKE4fK0ZD6DIcchXYLM)**
 
-> **Tip**: Browse through these folders to find papers and materials specific to this unit. ESA papers are organized by year and subject.
+## 📝 Selected Previous Year Questions
+
+### Strings & List Operations
+1. **String Operations**: Predict the output of the following snippet and explain the operation:
+   ```python
+   x = "python" * 2
+   print(x)
+   ```
+2. **List Methods**: Differentiate between `append()` and `extend()` methods in Python lists with an example.
+3. **Slicing**: Explain string slicing with syntax `[start:stop:step]` and valid examples.
+
+> **Note**: For more questions, refer to the [ESA PYQs Drive Folder](https://drive.google.com/drive/folders/11U56PJ-VZ_5zaJ1fVrV6h3kzN4rnNX7E?usp=drive_link).
 
 *Last updated: December 2025*

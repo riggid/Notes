@@ -23,6 +23,13 @@ University-provided study materials, slides, notes, and PYQs:
 
 **[📁 First Year PES Resources](https://drive.google.com/drive/folders/1DIjOOU8QzWAkfEKE4fK0ZD6DIcchXYLM)**
 
-> **Tip**: Browse through these folders to find papers and materials specific to this unit. ESA papers are organized by year and subject.
+## 📝 Selected Previous Year Questions
+
+### Differential Calculus & Differential Equations
+1. **Partial Differentiation**: If $x^x y^y z^z = c$, show that at $x=y=z$, the value of $\frac{\partial^2 z}{\partial x \partial y}$ is $-(x \ln(ex))^{-1}$.
+2. **Orthogonal Trajectories**: Find the orthogonal trajectories of the family of curves $\frac{x^2}{a^2} + \frac{y^2}{b^2+\lambda} = 1$, where $\lambda$ is a parameter.
+3. **Jacobians**: If $u = x+y+z$, $uv = y+z$, and $uvw = z$, find the Jacobian $\frac{\partial(x,y,z)}{\partial(u,v,w)}$.
+
+> **Note**: For more questions, refer to the [ESA PYQs Drive Folder](https://drive.google.com/drive/folders/11U56PJ-VZ_5zaJ1fVrV6h3kzN4rnNX7E?usp=drive_link).
 
 *Last updated: December 2025*

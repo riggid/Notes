@@ -32,7 +32,7 @@ Where:
     * If $\phi > 0$, the waveform **leads** the reference.
     * If $\phi < 0$, the waveform **lags** the reference.
 
-![[Attachments/sine_wave_ac.png|Sinusoidal Waveform]]
+<!-- Missing Image: sine_wave_ac.png -->
 
 *(See Example 1 in the [[Examples#example-1-sine-wave-properties|Examples]] file for calculations involving frequency and time period.)*
 *(See Example 2 in the [[Examples#example-2-instantaneous-value|Examples]] file for calculating instantaneous values.)*
@@ -70,7 +70,7 @@ $$\bar{F} = \frac{F_m}{\sqrt{2}} \angle \phi = F_{rms} \angle \phi$$
     * Addition/Subtraction: Easier in rectangular form (add/subtract real and imaginary parts separately).
     * Multiplication/Division: Easier in polar form (multiply/divide magnitudes, add/subtract angles).
 
-![[Attachments/phasor_diagram_basic.png|Phasor Diagram]]
+<!-- Missing Image: phasor_diagram_basic.png -->
 
 *(See Example 4 in the [[Examples#example-4-phasor-representation|Examples]] file for converting sine waves to phasors.)*
 *(See Example 5 in the [[Examples#example-5-phasor-addition|Examples]] file for adding phasors.)*
@@ -128,9 +128,9 @@ For elements in series, the same current $\bar{I}$ flows through them. The total
         * **Resonant Frequency ($f_r$)**: The frequency at which $X_L = X_C$.
           $$\omega_r L = \frac{1}{\omega_r C} \implies f_r = \frac{1}{2\pi \sqrt{LC}}$$
 
-![[Attachments/rlc_series_circuit.png|Series RLC Circuit]]
+<!-- Missing Image: rlc_series_circuit.png -->
 
-![[Attachments/impedance_triangle.png|Impedance Triangle]]
+<!-- Missing Image: impedance_triangle.png -->
 
 *(See Example 7 in the [[Examples#example-7-series-rl-calculations|Examples]] file for series RL analysis.)*
 *(See Example 8 and Example 9 in the [[Examples#example-8-series-rlc-calculations|Examples]] file for series RLC analysis.)*
@@ -157,7 +157,7 @@ For elements in series, the same current $\bar{I}$ flows through them. The total
     For series circuits, $pf = R_T / |Z_T|$.
 * **Power Triangle**: A right-angled triangle illustrating the relationship $S^2 = P^2 + Q^2$. $P = S \cos \phi$, $Q = S \sin \phi$. 
 
-![[Attachments/power_triangle_diagram.png|Power Triangle]]
+<!-- Missing Image: power_triangle_diagram.png -->
 
 *(See Example 10 in the [[Examples#example-10-power-calculations|Examples]] file for power calculations.)*
 

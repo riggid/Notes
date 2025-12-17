@@ -97,7 +97,7 @@ The power calculations are identical for both Star and Delta balanced systems wh
 ### 1.5 Measurement of Power: Two Wattmeter Method
 Two wattmeters are sufficient to measure the total three-phase active power in a three-wire system (Star or Delta), balanced or unbalanced.
 
-![[Attachments/two_wattmeter_method.png|Two Wattmeter Method Circuit]]
+<!-- Missing Image: two_wattmeter_method.png -->
 > Two Wattmeter method with phase A common
 
 *   **Current Coils (CC)**: Connected in series with two of the lines (e.g., R and B).
