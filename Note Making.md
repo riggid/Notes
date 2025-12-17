@@ -17,16 +17,20 @@ Within each `Unit X/` folder, the following three Markdown (`.md`) files are man
 
 Consistent and clear navigation must be implemented in every generated Markdown file.
 
+### 2.3 Publishing Permissions:
+*   **Permission Required**: New notes must not be marked for publishing (i.e., do not add `dg-publish: true`) until explicitly permitted by the user.
+*   **Workflow**: First generate the notes. Then, ask the user if they should be published. Only upon confirmation, add the frontmatter property.
+
 ### 2.1 Back to Subject Index:
 Every Markdown file (`Core Notes.md`, `Examples.md`, `Questions.md`) must begin with a link pointing back to the main subject index file.
-*   **Format**: `# [Back](../../[Subject Name].md)`
+*   **Format**: `# [[../../[Subject Name]|Back]]`
 *   **Placement**: This must be the very first line of the file.
-*   **Example (from a Unit 3 Physics file)**: `# [Back](../../Physics.md)`
+*   **Example (from a Unit 3 Physics file)**: `# [[../../Physics|Back]]`
     *(Note: The number of `../` specifies the relative path depth and should be correctly set based on the file's location within the hierarchy; `../../` is typical for files inside a `Unit X/` folder.)*
 
 ### 2.2 Internal Unit Navigation:
 Immediately following the "Back to Subject Index" link and a horizontal rule (`***`), every Markdown file within a specific `Unit X/` folder must include a series of direct links to the other two files within that same unit.
-*   **Format**: `[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Questions](Questions.md)`
+*   **Format**: `[[Core Notes]] | [[Examples]] | [[Questions]]`
 *   **Placement**: This line must appear directly after the `***` horizontal rule.
 
 ---
@@ -87,7 +91,7 @@ Strict adherence to Markdown syntax, proper LaTeX for equations, and a clear, re
 
 ### 3.8 Blockquotes:
 *   Use blockquotes (`>`) for special notes, important warnings, or (crucially) for internal references to other files or sections.
-    *   Example: `> See also: [Examples](Examples.md#Example%207:%20Relaxation%20Time%20in%20a%20Metal)`
+    *   Example: `> See also: [[Examples#Example 7: Relaxation Time in a Metal|Examples]]`
 
 ### 3.9 Images/Diagrams:
 *   When a diagram, plot, or image is referenced or is necessary for clarity (e.g., E-k diagrams, DoS plots, hysteresis loops, experimental setups), it **must** be included.
@@ -120,15 +124,15 @@ The notes must be **exceptionally detailed, comprehensive, and thorough** for al
 *   **Complete Step-by-Step Solutions**: Provide exhaustive, detailed, step-by-step solutions for each problem. Do not skip any mathematical or logical steps. Explain the reasoning behind each step.
 *   **Formula & Value Recall**: Clearly identify all formulas used and list all given/known values with units before starting calculations.
 *   **Final Answer**: Present the final answer clearly, accompanied by appropriate units and, where relevant, correct significant figures.
-*   **Internal Referencing**: `Core Notes.md` must contain blockquote links to relevant examples within `Examples.md` using the exact format: `> See also: [Examples](Examples.md#Example%20X:%20[Example Title])`. The example title in the link must precisely match the heading in `Examples.md`.
+*   **Internal Referencing**: `Core Notes.md` must contain blockquote links to relevant examples within `Examples.md` using the exact format: `> See also: [[Examples#Example X: [Example Title]|Examples]]`. The example title in the link must precisely match the heading in `Examples.md`.
 
 ### 4.3 `Questions.md` - Concise Review and Practice:
 *   **Concise Questions**: Questions should be direct, targeted at specific concepts, definitions, principles, or summaries.
 *   **Brief Answers/References**: Answers should be either a succinct 1-3 sentence summary or a direct, precise reference to the detailed explanation in `Core Notes.md`.
-    *   **Format 1 (Summary)**: Provide a summary answer (e.g., "See [Core Notes.md](Core%20Notes.md#111-basic-assumptions-of-cfet)").
+    *   **Format 1 (Summary)**: Provide a summary answer (e.g., "See [[Semester 1/Python/Unit 2/Core Notes#111-basic-assumptions-of-cfet|Core Notes.md]]").
     *   **Format 2 (Reference)**: For questions requiring extensive detail (e.g., derivations, complex explanations), *only* provide a reference to the relevant section in `Core Notes.md`.
         *   **Example (Summary)**: `*   **1. Briefly outline the basic assumptions of CFET.**`
-            `    *   **Answer**: Electrons as ideal gas, fixed ion cores (scattering centers), no e-e repulsion, Maxwell-Boltzmann statistics, collisions with ion cores cause resistance (relaxation time $\tau$). See [Core Notes.md](Core%20Notes.md#111-basic-assumptions-of-cfet).`
+            `    *   **Answer**: Electrons as ideal gas, fixed ion cores (scattering centers), no e-e repulsion, Maxwell-Boltzmann statistics, collisions with ion cores cause resistance (relaxation time $\tau$). See [[Core Notes#111-basic-assumptions-of-cfet|Core Notes.md]].`
 *   **Logical Grouping**: Questions should be grouped under main section headings that are identical to those used in `Core Notes.md` for seamless cross-referencing.
 
 ---

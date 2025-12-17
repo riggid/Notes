@@ -1,10 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Physics|Back]]
+# [[../Physics|Back]]
 ***
-[[Semester 1/Physics/Unit 3/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 3/Examples|Examples]] | [[Semester 1/Physics/Unit 3/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 3: Quantum Mechanical Treatment of Electron Transport and Magnetic Materials
 
@@ -52,7 +51,7 @@ The **Maxwell-Boltzmann (MB) distribution function** is a classical statistical 
     Where $n$ is the free electron concentration (number of free electrons per unit volume).
     **Resistivity ($\rho$)** is the inverse of conductivity:
     $$\rho = \frac{1}{\sigma} = \frac{m}{ne^2\tau}$$
-    > See also: [Examples](Examples.md#Example%207:%20Relaxation%20Time%20in%20a%20Metal)
+    > See also: [[Examples#example-7:-relaxation-time-in-a-metal|Examples]]
 5.  **Mean Free Path ($\lambda$)**: The average distance an electron travels between successive collisions with ion cores or other scattering centers. It is related to the relaxation time ($\tau$) and the electron's velocity ($v_{th}$): $\lambda = v_{th} \tau$.
 
 #### **1.1.5 Derivation of Thermal Conductivity (CFET)**
@@ -124,7 +123,7 @@ Particles in the universe are fundamentally classified into two groups based on 
 *   **Fermi-Dirac Distribution Function ($F_d(E)$)**: Gives the probability that an energy state $E$ is occupied by an electron at temperature $T$. This distribution is crucial for quantum systems of fermions.
     $$F_d(E) = \frac{1}{e^{(E-E_f)/k_B T} + 1}$$
     Where $E_f$ is the **Fermi energy** and $k_B$ is the Boltzmann constant.
-    > See also: [Examples](Examples.md#Example%201:%20Fermi%20Factor%20Calculation)
+    > See also: [[Examples#example-1:-fermi-factor-calculation|Examples]]
 *   **Interpretation of $\mathbf{F_d(E)}$**:
     *   **At T=0K**: (Absolute Zero Temperature)
         *   If $E < E_f$: The exponent $(E-E_f)/k_B T \rightarrow -\infty$. So $F_d(E) = \frac{1}{e^{-\infty} + 1} = \frac{1}{0+1} = 1$. This means all energy states below the Fermi energy are completely filled.
@@ -133,7 +132,7 @@ Particles in the universe are fundamentally classified into two groups based on 
         *   If $E = E_f$: The exponent $(E-E_f)/k_B T = 0$. So $F_d(E) = \frac{1}{e^0 + 1} = \frac{1}{1+1} = 0.5$. The Fermi energy level (at $E_f$) has a 50% probability of being occupied.
         *   For $E$ close to $E_f$: The sharp step function observed at 0K begins to soften. Some electrons just below $E_f$ (within an energy range of a few $k_B T$) are thermally excited to states just above $E_f$, leaving unoccupied states below $E_f$ and occupying states above $E_f$. This indicates that only a small fraction of electrons near the Fermi level are thermally active.
     **Description of Plot (Fermi Factor):** The plot shows the Fermi-Dirac distribution function $F_d(E)$ as a function of energy $E$. At $T=0K$, it is a perfectly sharp step function: the occupation probability is 1 for all energies $E < E_f$ and drops discontinuously to 0 for all energies $E > E_f$. As temperature $T$ increases ($T_1 < T_2$), the sharp step at $E_f$ softens and becomes a smooth, S-shaped curve. This rounding indicates that thermal energy allows some electrons below $E_f$ to be excited to states above $E_f$. For all temperatures, the curve passes through $F_d(E)=0.5$ precisely at $E=E_f$.
-    ![Fermi factor variations with temperature for E_f=5.0eV](Attachments/fermi_dirac_distribution.png)
+    ![[Attachments/fermi_dirac_distribution.svg|Fermi factor variations with temperature for E_f=5.0eV]]
 
 *   **Temperature Dependence of Fermi Energy**: The Fermi energy has a weak temperature dependence for typical metals. For temperatures well below the Fermi temperature ($T \ll T_f$), the Fermi energy slightly decreases with increasing temperature, given by:
     $$E_f(T) = E_{f0}\left[1 - \frac{\pi^2}{12}\left(\frac{k_B T}{E_{f0}}\right)^2\right]$$
@@ -145,7 +144,7 @@ Particles in the universe are fundamentally classified into two groups based on 
 *   **Fermi Velocity ($v_f$)**: The velocity of an electron that possesses a kinetic energy exactly equal to the Fermi energy ($E_f$). It represents the maximum velocity an electron possesses at 0 Kelvin. It is calculated using the classical kinetic energy formula (though arising from quantum phenomena):
     $$E_f = \frac{1}{2}m v_f^2 \implies v_f = \sqrt{\frac{2E_f}{m}}$$
     For copper, $v_f \approx 1.6 \times 10^6 \text{ m/s}$, which is orders of magnitude higher than the classical thermal velocity ($~10^5 \text{ m/s}$). This substantial velocity at 0K is a direct consequence of the Pauli Exclusion Principle forcing electrons into high-energy states. These fast-moving electrons near the Fermi surface are primarily responsible for electrical and thermal conduction.
-    > See also: [Examples](Examples.md#Example%203:%20Fermi%20Velocity%20Calculation)
+    > See also: [[Examples#example-3:-fermi-velocity-calculation|Examples]]
 
 ### **2.3 Graphical Representations of g(E) and N(E) and Analysis**
 
@@ -158,7 +157,7 @@ To understand electron distribution and overall properties, we need the **densit
         $$g(E) = \frac{\pi}{2} \left(\frac{8m}{h^2}\right)^{3/2} E^{1/2}$$
     *   **Plot Description**: The plot of $g(E)$ versus energy $E$ for a 3D system starts at zero for $E=0$ and then increases parabolically as energy increases ($g(E) \propto E^{1/2}$). This monotonic increase indicates that more states become available per unit energy interval at higher energies.
     *   **Plot:**
-        ![Density of States 3D](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Density_of_states.svg/500px-Density_of_states.svg.png)
+        ![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Density_of_states.svg/500px-Density_of_states.svg.png|Density of States 3D]]
 *   **2D Case (Quantum Well - Area A):**
     *   **Derivation Sketch**: Confinement in one dimension (e.g., width Lz) quantizes energy ($E_z \propto n_z^2$), while electrons are free to move in the other two dimensions (x, y). This leads to a series of 2D sub-bands. Within each sub-band, counting states in 2D k-space and differentiating reveals the DoS.
     *   **Expression**:
@@ -166,7 +165,7 @@ To understand electron distribution and overall properties, we need the **densit
         For each sub-band, above its minimum energy.
     *   **Plot Description**: The plot of $g(E)$ versus energy $E$ for a 2D system shows a series of steps. Within each step, corresponding to a 2D sub-band (above a specific energy threshold for each quantized level), $g(E)$ is constant (independent of energy). The DoS jumps discontinuously when a new sub-band becomes available.
     *   **Plot:**
-        ![Density of States 2D](https://www.tf.uni-kiel.de/matwis/ag_th/lectures/esm/esmfiles/image010.gif) *(Conceptual image for 2D DoS)*
+        ![[https://www.tf.uni-kiel.de/matwis/ag_th/lectures/esm/esmfiles/image010.gif|Density of States 2D]] *(Conceptual image for 2D DoS)*
 *   **1D Case (Quantum Wire - Length L):**
     *   **Derivation Sketch**: Confinement in two dimensions (e.g., width Ly, Lz) quantizes energy ($E_y \propto n_y^2, E_z \propto n_z^2$), while electrons are free to move in only one dimension (x). This forms a series of 1D sub-bands. The DoS is then derived for these 1D components.
     *   **Expression**:
@@ -174,9 +173,9 @@ To understand electron distribution and overall properties, we need the **densit
         For each sub-band, above its minimum energy.
     *   **Plot Description**: The plot of $g(E)$ versus energy $E$ for a 1D system shows an inverse square root dependence, $g(E) \propto E^{-1/2}$. This means that the density of states is highest at low energies close to the bottom of each new 1D sub-band (where the curve spikes) and decreases sharply as energy increases within that sub-band.
     *   **Plot:**
-        ![Density of States 1D](https://www.tf.uni-kiel.de/matwis/ag_th/lectures/esm/esmfiles/image009.gif) *(Conceptual image for 1D DoS)*
+        ![[https://www.tf.uni-kiel.de/matwis/ag_th/lectures/esm/esmfiles/image009.gif|Density of States 1D]] *(Conceptual image for 1D DoS)*
 
-    > See also: [Examples](Examples.md#Example%204:%20Number%20of%20Electron%20States)
+    > See also: [[Examples#example-4:-number-of-electron-states|Examples]]
 
 #### **2.3.2 Relation between Total Electron Concentration (n) and Fermi Energy (E_f)**
 The total number of free electrons per unit volume ($n$) in a metal is found by integrating the density of states ($g(E)$) from $E=0$ up to $E_f$, given that at 0K, all states up to $E_f$ are completely filled and all states above $E_f$ are empty:
@@ -270,7 +269,7 @@ The **Bloch Theorem** is a fundamental theorem that describes the behavior of el
 The **Kronig-Penney Model** is a simplified, one-dimensional mathematical model used to illustrate how energy bands and forbidden gaps arise when an electron moves in a periodic potential. It provides a qualitative understanding without the complexity of a real 3D crystal.
 *   **Model Potential Profile**: The model approximates the complex, continuous periodic potential of a crystal into an idealized, simpler form: an infinite series of rectangular potential wells (representing the attractive potential of atomic nuclei) separated by rectangular potential barriers (representing the repulsive potential between them).
     **Description of Potential Profile:** The Kronig-Penney model approximates the periodic potential of a crystal as a series of rectangular potential wells (regions of lower potential energy, representing electron attraction to atomic nuclei) separated by rectangular potential barriers (regions of higher potential energy, representing the regions between nuclei). The width of the wells (`a`) and barriers (`b` or `c`), along with the height of the barriers (`V0`), are key parameters in the model. The overall periodicity is `a+c`.
-    ![Kronig-Penney Model Potential Profile](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Kronig-Penney_potential.svg/langja-480px-Kronig-Penney_potential.svg.png)
+    ![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Kronig-Penney_potential.svg/langja-480px-Kronig-Penney_potential.svg.png|Kronig-Penney Model Potential Profile]]
 *   **Mathematical Result & Graphical Solution**: Applying the Schrödinger equation and Bloch's theorem to this periodic potential leads to a transcendental equation that relates the electron's energy $E$ to its wave vector $k$:
     $$\cos(ka) = P \frac{\sin(\alpha a)}{\alpha a} + \cos(\alpha a)$$
     Where $P = \frac{m a V_0 c}{\hbar^2}$ (a measure of barrier strength, often simplified) and $\alpha = \sqrt{2mE/\hbar^2}$.
@@ -284,7 +283,7 @@ The **Kronig-Penney Model** is a simplified, one-dimensional mathematical model 
     *   **Origin of Energy Bands**: Conceptually, as isolated atoms come together to form a solid, their sharp, discrete atomic energy levels overlap and interact. The periodic potential of the crystal, combined with the Pauli Exclusion Principle, forces these discrete levels to broaden into continuous ranges of allowed energy, known as **energy bands**, separated by energy gaps.
 *   **E-k Diagram (Energy-Wave Vector Diagram)**: The graph of energy ($E$) as a function of the wave vector ($k$) for a periodic potential, illustrating the allowed energy bands and forbidden band gaps.
     **Description of E-k Diagram:** A diagram would show the electron energy $E$ plotted against the wave vector $k$. In the free electron model (dashed parabola), $E$ is continuous and proportional to $k^2$. However, for the Kronig-Penney model (or any periodic potential, solid curves), the $E-k$ relation is periodic but exhibits discontinuities (gaps) at specific values of $k = \pm n\pi/a$. These are the boundaries of the Brillouin zones. The continuous segments within these regions are the allowed energy bands, and the vertical breaks represent the forbidden energy bands (band gaps).
-    ![E-k Diagram for Periodic Potential vs Free Electron (Band Structure)](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Kronig_penney.png/600px-Kronig_penney.png)
+    ![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Kronig_penney.png/600px-Kronig_penney.png|E-k Diagram for Periodic Potential vs Free Electron (Band Structure)]]
 
 ### **3.2 Brillouin Zones and E-k Diagrams**
 
@@ -369,7 +368,7 @@ The **Hall Effect** is the production of a voltage difference (the Hall voltage,
 
 **Schematic Diagram of Hall Effect:**
 **Description of Diagram:** A rectangular block of conducting material is shown. Current ($I$) flows along the length (e.g., X-axis). A magnetic field ($B$) is applied perpendicular to the current (e.g., Z-axis). This causes charge carriers to deflect due to the Lorentz force, resulting in a buildup of charge on opposite sides of the sample. This charge separation creates a transverse Hall electric field ($E_H$) and a measurable Hall voltage ($V_H$) across the width (Y-axis). Arrows indicate the directions of current, magnetic field, Lorentz force, and the resulting Hall electric field.
-![Hall effect schematic diagram](https://upload.wikimedia.org/wikipedia/commons/e/ec/Hall_effect_schematic.png)
+![[https://upload.wikimedia.org/wikipedia/commons/e/ec/Hall_effect_schematic.png|Hall effect schematic diagram]]
 
 ### **4.2 Derivation of Hall Voltage and Hall Coefficient ($R_H$)**
 Let's consider charge carriers of charge $q$ and density $n$.
@@ -448,7 +447,7 @@ Materials respond to external magnetic fields in various ways due to the quantum
     The **permeability of the material** is $\mu = \mu_0 \mu_r$.
 *   **Classification of Magnetic Materials**: Materials are classified based on their $\chi_m$ value and characteristic behavior in a magnetic field.
     **Description of B-H Curves:** This diagram typically shows plots of magnetic flux density (B) against magnetic field strength (H) for different types of magnetic materials. Diamagnetic materials would show a very slight negative slope, indicating weak opposition to the field. Paramagnetic materials would show a very slight positive, but linear, slope, indicating weak alignment with the field. Ferromagnetic materials exhibit a highly non-linear curve with a distinctive hysteresis loop, indicating saturation, remanence, and coercivity, due to strong, permanent magnetic effects.
-    ![Typical B-H curves for magnetic materials](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/B-H_Curve.svg/1024px-B-H_Curve.svg.png)
+    ![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/B-H_Curve.svg/1024px-B-H_Curve.svg.png|Typical B-H curves for magnetic materials]]
 
 ### **5.2 Basic Electromagnetism Concepts Relevant to Magnetism**
 
@@ -471,7 +470,7 @@ A **solenoid** is a coil of wire (usually cylindrical) wound in a tightly packed
 *   **Field Outside the Solenoid**: Outside the solenoid, the magnetic field lines emerge from one end of the coil, loop through the surrounding space, and re-enter the other end.
 *   **Resemblance to a Bar Magnet**: The pattern of magnetic field lines produced by a current-carrying solenoid is virtually identical to the field lines produced by a permanent bar magnet. One end of the solenoid acts as a magnetic **North pole** (where field lines effectively emerge), and the other end acts as a magnetic **South pole** (where field lines effectively enter). The direction of the poles can be determined by the right-hand rule.
     **Description of Diagram:** This diagram shows a cylindrical solenoid with current flowing through its turns. Magnetic field lines are depicted inside and outside the solenoid. Inside, they are straight and parallel. Outside, they emerge from one end (labeled North pole), loop around, and enter the other end (labeled South pole), mirroring the classic field pattern of a bar magnet. This illustrates how electromagnetic fields can replicate static magnetic fields of permanent magnets.
-    ![Solenoid magnetic field vs Bar Magnet](Attachments/solenoid_bar_magnet.png) *(Conceptual illustration)*
+    ![[Attachments/solenoid_bar_magnet.svg|Solenoid magnetic field vs Bar Magnet]] *(Conceptual illustration)*
 *   **Significance**: This resemblance highlights Ampere's original hypothesis that all magnetism originates from electric currents, whether macroscopic (in a wire) or microscopic (orbital/spin motion of electrons in atoms). It is the basis for electromagnets.
 
 ### **5.3 Atomic Origin of Magnetization (Atomistic)**
@@ -645,7 +644,7 @@ Ferromagnetic materials are divided into microscopic regions called **magnetic d
 #### **5.8.4 Hysteresis**
 The **hysteresis** property is a defining characteristic of ferromagnetic materials, where the magnetization ($M$) of the material depends not only on the current applied magnetic field ($H$) but also on its magnetic history. This is graphically represented by a **Hysteresis Loop**.
 *   **Description of Hysteresis Loop**: A plot of magnetization (M) versus applied magnetic field (H). Starting from an unmagnetized state (origin), as the external field H is increased, M increases non-linearly to a maximum value called **saturation magnetization ($M_s$)**. Upon reducing H to zero, M does not return to zero but retains a residual magnetization called **remanence or retentivity ($M_r$)**. To bring M to zero, a reverse magnetic field, called **coercivity ($H_c$)**, must be applied. Further cycling of the field completes the characteristic loop.
-    ![Magnetic Hysteresis Loop](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hysteresis_loop_soft_magnetics.svg/800px-Hysteresis_loop_soft_magnetics.svg.png)
+    ![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hysteresis_loop_soft_magnetics.svg/800px-Hysteresis_loop_soft_magnetics.svg.png|Magnetic Hysteresis Loop]]
 *   **Significance**: Hysteresis implies energy loss (proportional to the loop area) during each cycle of magnetization and demagnetization, and it gives ferromagnetic materials a "memory," which is crucial for data storage applications.
 
 ### **5.9 Antiferromagnetic and Ferrimagnetic Materials**
@@ -673,7 +672,7 @@ The **hysteresis** property is a defining characteristic of ferromagnetic materi
 *   **Ferromagnetic**: Very high $\chi_m$ below its Curie temperature ($T_C$), then sharply drops and follows the Curie-Weiss law ($\chi_m \propto 1/(T-T_C)$) above $T_C$.
 *   **Antiferromagnetic**: $\chi_m$ increases with $T$ to a peak at $T_N$ (Néel temperature), then decreases.
 *   **Ferrimagnetic**: Similar to ferromagnets, with high $\chi_m$ below a $T_C$, sharply dropping above it.
-![Magnetic Susceptibility vs. Temperature](https://ars.els-cdn.com/content/image/3-s2.0-B978012803254500002X-f02-12-9780128032545.jpg)
+![[https://ars.els-cdn.com/content/image/3-s2.0-B978012803254500002X-f02-12-9780128032545.jpg|Magnetic Susceptibility vs. Temperature]]
 
 ### **5.10 Soft vs. Hard Magnetic Materials**
 
@@ -802,7 +801,7 @@ For **Type II superconductors (green curves)**, there are two distinct critical 
 2.  **Mixed (Vortex) State**: Between $H_{C1}(T)$ and $H_{C2}(T)$, magnetic flux penetrates the material in quantized filaments (vortices), but the bulk remains superconducting and can carry a supercurrent. The Meissner effect is incomplete.
 3.  **Normal State**: Above $H_{C2}(T)$, the material completely loses its superconducting properties.
 Note that the maximum $H_{C2}$ for Type II superconductors is typically much higher than $H_C$ for Type I materials, making them suitable for high-field applications.
-![Critical magnetic field behavior for Type I and Type II superconductors](https://qph.cf2.quoracdn.net/main-qimg-80dc48e7188b776a394b9f33333e680a-lq)
+![[https://qph.cf2.quoracdn.net/main-qimg-80dc48e7188b776a394b9f33333e680a-lq|Critical magnetic field behavior for Type I and Type II superconductors]]
 
 ### **7.4 BCS Theory (Bardeen-Cooper-Schrieffer Theory) - Concise Ideas**
 The **BCS theory** (developed by Bardeen, Cooper, and Schrieffer in 1957) is the microscopic theory that explains conventional superconductivity (Type I and some Type II superconductors).
@@ -840,4 +839,4 @@ The unique properties of superconductors offer vast potential for technological 
 *   **Power Transmission**: Superconducting power cables offer the potential for transmitting electricity with virtually zero energy loss, improving energy efficiency and reducing grid congestion. However, cooling requirements remain a challenge for widespread adoption.
 
 ---
-# [[Physics|Back]]
+# [[../Physics|Back]]

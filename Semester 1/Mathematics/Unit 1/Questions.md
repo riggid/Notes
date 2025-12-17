@@ -1,10 +1,10 @@
 ---
 dg-publish: true
 ---
-
-# [[Mathematics|Back]]
+# [[../Mathematics|Back]]
 ***
----
+[[Core Notes]] | [[Examples]] | [[Questions]]
+***
 # Unit - 1: Partial Differential Equations: Q & A
 ***
 ## 1. Find all the first-order partial derivatives of the following function:

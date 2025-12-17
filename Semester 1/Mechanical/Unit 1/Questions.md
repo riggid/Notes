@@ -2,7 +2,7 @@
 dg-publish: true
 ---
 
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]
 ***
 # Q&A: Mechanical Engineering Science
 

@@ -1,8 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Electrical|Back]]
+# [[../Electrical|Back]]
+***
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 ## Example 1: Basic KVL
 
@@ -10,21 +11,7 @@ dg-publish: true
 
 ### Example 1: Basic KVL
 Find the current through the 8Ω resistor in the network given.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-
-\begin{circuitikz}[american]
-    \draw (0,0) 
-          to[battery1, invert, l=12V] (0,4)
-          to[battery1, invert, l=10V] (3,4)
-          to[R, l=8$\Omega$] (3,2)
-          to[battery1, l=6V] (3,0)
-          to[battery1, l=8V] (0,0);
-\end{circuitikz}
-
-\end{document}
-```
+![[Attachments/example_1_diagram.png|Example 1 Diagram]]
 
 #### Solution
 Assume a clockwise current I. Applying KVL starting from the 12V source:
@@ -37,23 +24,7 @@ $I = \frac{10}{8} = 1.25A$
 
 ### Example 2: KVL with Multiple Loops
 Find the voltage $V_{AB}$ in the network shown.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    \draw (0,0) node[below] {A}
-        to[battery1, l=20V] (0,3) node[above] {X}
-        to[R, l=5$\Omega$] (2.5,3) node[above] {Y}
-        to[R, l=3$\Omega$] (2.5,0) node[below] {C};
-    \draw (2.5,0) to[R, l=2$\Omega$] (0,0);
-    \draw (2.5,0) to[R, l=2$\Omega$] (4.5,0) node[below] {D}
-        to[battery1, l=10V] (6.5,0) node[below] {E};
-    \draw (6.5,0) to[R, l=5$\Omega$] (9,0) node[below] {B}
-        to[battery1, l=40V, invert] (9,3) node[above] {Z}
-        to[R, l=5$\Omega$] (6.5,3) -- (6.5,0);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_2_diagram.png|Example 2 Diagram]]
 #### Solution
 1.  **Left Loop (AXYCA)**: Apply KVL.
     $+20V - 5\Omega \cdot I_1 - 3\Omega \cdot I_1 - 2\Omega \cdot I_1 = 0$
@@ -75,49 +46,7 @@ i) $R_a=\infty, R_b=\infty$ (both open)
 ii) $R_a=0, R_b=\infty$ (Ra short, Rb open)
 iii) $R_a=\infty, R_b=0$ (Ra open, Rb short)
 iv) $R_a=0, R_b=0$ (both short)
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-
-\begin{circuitikz}[american]
-    % Define the 4 corner nodes of the main box
-    \coordinate (TL) at (0, 2.5);   % Top-Left
-    \coordinate (TR) at (6, 2.5);   % Top-Right
-    \coordinate (BL) at (0, -2.5);  % Bottom-Left
-    \coordinate (BR) at (6, -2.5);  % Bottom-Right
-
-    % Define the 4 midpoints of the outer edges
-    \coordinate (MT) at (3, 2.5);   % Mid-Top
-    \coordinate (MB) at (3, -2.5);  % Mid-Bottom
-    \coordinate (ML) at (0, 0);     % Mid-Left
-    \coordinate (MR) at (6, 0);     % Mid-Right
-
-    % Define the central connection point
-    \coordinate (Center) at (3, 0);
-
-    % Draw the outer resistors
-    \draw (TL) to[R, l=1$\Omega$] (MT);
-    \draw (MT) to[R, l=8$\Omega$] (TR);
-    \draw (TR) to[R, l=7$\Omega$] (MR);
-    \draw (MR) to[R, l=4$\Omega$] (BR);
-    \draw (BR) to[R, l=1$\Omega$] (MB);
-    \draw (MB) to[R, l=3$\Omega$] (BL);
-    \draw (BL) to[R, l=2$\Omega$] (ML);
-    \draw (ML) to[R, l=2$\Omega$] (TL);
-
-    % Draw the central bridge as four segments meeting at the center
-    \draw (MT) to[R, l^=$R_a$] (Center); % Top to Center
-    \draw (MB) to[R] (Center);           % Bottom to Center
-    \draw (ML) to[R, l_=$R_b$] (Center); % Left to Center
-    \draw (MR) to[R] (Center);           % Right to Center
-
-    % Draw the input lines correctly
-    \draw (TL) ++(-1,0) -- ++(-0.5, 0.5) node[above] {y};
-    \draw (TL) ++(-1,0) -- ++(-0.5, -0.5) node[above] {x};
-\end{circuitikz}
-
-\end{document}
-```
+![[Attachments/example_3_diagram.png|Example 3 Diagram]]
 
 #### Solution
 i) **Both Open**: All resistors are in a single series path.
@@ -144,34 +73,7 @@ A current of 8A is shared between two resistors, R1 and R2=2Ω. Calculate the cu
 
 ### Example 5: Voltage Division
 Calculate $V_{AB}$ for the given bridge circuit with a 20V source.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-
-\begin{circuitikz}[american]
-    % Draw the 20V source lines on the left
-    \draw (0,4) to[open, v=$20V$] (0,0);
-
-    % Define the common nodes
-    \coordinate (T) at (1,4); % Top wire
-    \coordinate (B) at (1,0); % Bottom wire
-
-    % Draw the parallel branches
-    \draw (T) -- (2,4) to[R, l=$R_1=25\Omega$] (2,2) node[right] {A};
-    \draw (2,2) to[R, l=$R_3=15\Omega$] (2,0) -- (B);
-
-    \draw (T) -- (4,4) to[R, l=$R_2=40\Omega$] (4,2) node[left] {B};
-    \draw (4,2) to[R, l=$R_4=10\Omega$] (4,0) -- (B);
-    
-    % Label the common bottom node
-    \node at (B) [below] {C};
-
-    % Indicate V_AB
-    \draw[->, dashed] (2.2,2) -- (3.8,2) node[midway, above] {$V_{AB}$};
-\end{circuitikz}
-
-\end{document}
-```
+![[Attachments/example_5_diagram.png|Example 5 Diagram]]
 #### Solution
 Using the voltage divider rule:
 - Voltage at point A (with respect to C): $V_{AC} = 20V \times \frac{15\Omega}{25\Omega+15\Omega} = 20 \times \frac{15}{40} = 7.5V$
@@ -194,22 +96,7 @@ Find the equivalent resistance between A & B.
 
 ### Example 7: Source Transformation
 Find the current in the 4Ω resistor using source transformation.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-
-\begin{circuitikz}[american]
-    \draw (0,0) to[I, l=5A] (0,3)
-          to[short] (2,3)
-          to[R, l=2$\Omega$] (2,0) -- (0,0);
-    \draw (2,3) to[battery1, l=6V] (4,3);
-    \draw (4,3) to[I, l=2A] (4,0) -- (2,0);
-    \draw (4,3) to[short] (6,3)
-          to[R, l=4$\Omega$] (6,0) -- (4,0);
-\end{circuitikz}
-
-\end{document}
-```
+![[Attachments/example_7_diagram.png|Example 7 Diagram]]
 #### Solution
 1. Convert the 5A source and parallel 2Ω resistor to a voltage source: $V = 5A \times 2\Omega = 10V$, in series with 2Ω.
 2. The circuit is now: 10V source, 2Ω resistor, 6V source, 2A source, 4Ω resistor. The 10V and 6V sources oppose each other. Net voltage is 4V. The two 2Ω resistors are in series (4Ω).
@@ -287,24 +174,7 @@ This is a complex bridge circuit. The source document gives a final answer of $3
 
 ### Example 13: Basic Mesh Analysis
 Obtain the current through the 6Ω resistor using Mesh Analysis.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    \draw (0,0) -- (7,0); % Ground
-    \draw (0,3) to[battery1, invert, l=42V] (0,0);
-    \draw (0,3) to[R, l=3$\Omega$] (2,3);
-    \draw (2,3) to[R, l=4$\Omega$] (2,0);
-    \draw (2,0) to[battery1, invert, l=25V] (2,3);
-    \draw (2,3) to[R, l=5$\Omega$] (4,3);
-    \draw (4,3) to[battery1, l=57V] (5,3);
-    \draw (4,3) to[R, l=6$\Omega$] (4,0);
-    \draw (4,0) to[battery1, l=70V] (4,3);
-    \draw (5,3) to[R, l=7$\Omega$] (7,3);
-    \draw (7,3) to[battery1, invert, l=4V] (7,0);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_13_diagram.png|Example 13 Diagram]]
 #### Solution
 1. **KVL Mesh 1**: $7I_1 - 4I_2 + 0I_3 = 67$
 2. **KVL Mesh 2**: $-4I_1 + 15I_2 - 6I_3 = -152$
@@ -319,23 +189,7 @@ Obtain the current through the 6Ω resistor using Mesh Analysis.
 
 ### Example 14: Mesh Analysis with Current Sources
 Obtain the current through the 4Ω resistor using Mesh Analysis.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    \draw (0,0) -- (8,0); % Ground
-    \draw (0,3) to[battery1, invert, l=100V] (0,0);
-    \draw (0,3) to[R, l=8$\Omega$] (2,3);
-    \draw (2,3) to[R, l=4$\Omega$] (2,0);
-    \draw (2,3) to[R, l=2$\Omega$] (4,3);
-    \draw (4,3) to[R, l=3$\Omega$] (4,0);
-    \draw (4,3) to[R, l=10$\Omega$] (6,3);
-    \draw (6,3) to[R, l=5$\Omega$] (6,0);
-    \draw (6,3) to[I, invert, l=8A] (8,3);
-    \draw (8,3) -- (8,0);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_14_diagram.png|Example 14 Diagram]]
 #### Solution
 1. **Mesh 4 Current**: The 8A source is in this mesh, so $I_4 = -8A$.
 2. **KVL Mesh 1**: $12I_1 - 4I_2 - 0I_3 = 100$
@@ -350,22 +204,7 @@ Obtain the current through the 4Ω resistor using Mesh Analysis.
 
 ### Example 15: Mesh Analysis with a Shared Current Source
 Obtain the voltage across the 3Ω resistor using Mesh Analysis.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    \coordinate (A) at (2,3);
-    \coordinate (B) at (4,0);
-    \draw (0,0) to[I, l=4A] (0,3);
-    \draw (0,3) -- (A);
-    \draw (A) to[R, l=1$\Omega$] (2,0);
-    \draw (A) to[R, l=2$\Omega$] (4,3);
-    \draw (4,3) to[R, l=3$\Omega$] (B);
-    \draw (B) to[battery1, invert, l=6V] (0,0);
-    \draw (A) to[I, invert, l=5A] (B);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_15_diagram.png|Example 15 Diagram]]
 #### Solution
 1. Rearrange the circuit to confine the 5A source to a single outer mesh.
 2. **Mesh 1 Current**: $I_1 = 4A$.
@@ -381,20 +220,7 @@ Obtain the voltage across the 3Ω resistor using Mesh Analysis.
 
 ### Example 16: Superposition Theorem 1
 Obtain the current through the 1Ω resistor using Superposition.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    \draw (0,0) to[battery1, l=6V] (0,2)
-        to[R, l=3$\Omega$] (2,2);
-    \draw (2,0) to[I, l=4A] (2,2);
-    \draw (2,2) to[R, l=1$\Omega$, i>_=$I$] (4,2)
-        to[R, l=6$\Omega$] (4,0);
-    \draw (4,2) to[R, l=3$\Omega$] (6,2)
-        to[battery1, invert, l=22V] (6,0) -- (0,0);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_16_diagram.png|Example 16 Diagram]]
 #### Solution
 1. **6V Source Alone**: $I' = \frac{6V}{3\Omega + 1\Omega + (6\Omega || 3\Omega)} = \frac{6}{4+2} = 1A$.
 2. **4A Source Alone**: Using current division, the current splits between the left branch (3Ω) and the right branch (1Ω + (6Ω||3Ω) = 3Ω).
@@ -408,31 +234,7 @@ Obtain the current through the 1Ω resistor using Superposition.
 
 ### Example 17: Superposition Theorem 2
 Obtain voltage 'V' across the 40Ω resistor using Superposition.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    \coordinate (C) at (3,1.5);
-    
-    % Ground line
-    \draw (0,0) -- (6,0);
-    
-    % Left Branch
-    \draw (0,3) to[battery1, l=32V, invert] (0,0);
-    \draw (0,3) to[R, l=40$\Omega$, v^=$V$] (C);
-    
-    % Bottom Branch
-    \draw (C) to[I, l=6A, invert] (3,0);
-    
-    % Right Branch
-    \draw (C) to[battery1, l=20V] (6,3);
-    \draw (6,3) to[R, l=160$\Omega$] (6,0);
-
-    % Top Branch
-    \draw (0,3) to[I, invert, l=3A] (6,3);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_17_diagram.png|Example 17 Diagram]]
 #### Solution
 1. **32V Source Alone**: Simple voltage divider. $V' = 32V \times \frac{40\Omega}{40\Omega+160\Omega} = 6.4V$.
 2. **6A Source Alone**: Current divider. Current through 40Ω is $I = 6A \times \frac{160\Omega}{40\Omega+160\Omega} = 4.8A$ (flowing down).
@@ -447,28 +249,7 @@ Obtain voltage 'V' across the 40Ω resistor using Superposition.
 ### Example 18: Superposition Theorem 3
 i) Find current through 5Ω resistor with only the 2V source active.
 ii) Find current through 3Ω resistor with only the 4V source active.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    % Ground line
-    \draw (0,0) -- (6,0);
-    
-    % Left branch
-    \draw (0,0) to[battery1, l=2V] (0,2);
-    \draw (0,2) to[R, l=2$\Omega$] (2,2);
-    
-    % Middle branch
-    \draw (2,2) to[I, l=2A] (2,0);
-    \draw (2,2) to[R, l=5$\Omega$] (4,2);
-    \draw (4,2) to[R, l=1$\Omega$] (4,0);
-    
-    % Right branch
-    \draw (4,2) to[R, l=3$\Omega$] (6,2);
-    \draw (6,2) to[battery1, l=4V] (6,0);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_18_diagram.png|Example 18 Diagram]]
 #### Solution
 i) **2V Source Alone**: Deactivate other sources (4V becomes short, 2A becomes open).
    Total resistance = $2\Omega + (5\Omega || (1\Omega+3\Omega)) = 2 + (5||4) = 2+2.22 = 4.22\Omega$.
@@ -483,29 +264,7 @@ ii) **4V Source Alone**: Deactivate other sources (2V becomes short, 2A becomes 
 
 ### Example 19: Thevenin's Theorem 1
 Using Thevenin's Theorem, calculate the range of current flowing through R as it varies from 6Ω to 36Ω.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    % Ground line
-    \draw (0,0) -- (8,0);
-    
-    % Left Loop
-    \draw (0,3) to[battery1, l=90V, invert] (0,0);
-    \draw (0,3) to[R, l=60$\Omega$] (2,3);
-    \draw (2,3) to[R, l=30$\Omega$] (2,0);
-
-    % Center Path with R
-    \draw (2,3) to[battery1, l=50V] (4,3);
-    \draw (4,3) to[R, l_=$R$] (6,3);
-
-    % Right Loop
-    \draw (6,3) to[R, l=40$\Omega$] (8,3);
-    \draw (8,3) to[battery1, l=100V] (8,0);
-    \draw (6,3) to[R, l=60$\Omega$] (6,0);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_19_diagram.png|Example 19 Diagram]]
 #### Solution
 1.  **Find $V_{TH}$**: Remove R. Find voltage $V_{AB}$.
     - Left loop current $I_1 = \frac{90V}{60\Omega+30\Omega} = 1A$.
@@ -524,26 +283,7 @@ Using Thevenin's Theorem, calculate the range of current flowing through R as it
 
 ### Example 20: Thevenin's Theorem 2
 Find the current in the 40Ω resistor in the bridge circuit using Thevenin's theorem.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    \coordinate (A) at (0,1.5);
-    \coordinate (B) at (4,3);
-    \coordinate (C) at (6,1.5);
-    \coordinate (D) at (2,0);
-    \coordinate (TopJunction) at (2,3);
-    
-    \draw (A) to[battery1, l=2V] (TopJunction);
-    \draw (TopJunction) to[R, l=10$\Omega$] (B);
-    \draw (B) to[R, l=30$\Omega$] (C);
-    \draw (C) -- (D);
-    \draw (D) to[R, l=20$\Omega$] (TopJunction);
-    \draw (D) -- (A);
-    \draw (B) to[R, l=40$\Omega$] (D);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_20_diagram.png|Example 20 Diagram]]
 #### Solution
 1.  **Find $V_{TH}$**: Remove the 40Ω load resistor. Find voltage $V_{BD}$.
     - As calculated in Example 5, $V_{AD} = 7.5V$ and $V_{CD} = 4.0V$.
@@ -562,23 +302,7 @@ Find the current in the 40Ω resistor in the bridge circuit using Thevenin's the
 
 ### Example 21: Thevenin's Theorem 3
 Obtain the Thevenin's Equivalent across terminals A & B.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    \draw (0,0) coordinate (B)
-        to[short, -*] (8,0) node[right]{B};
-    \draw (0,3) to[short, -*] (8,3) node[right]{A};
-    \draw (0,0) to[battery1, l=60V] (0,3)
-        to[R, l=6$\Omega$] (2,3)
-        to[R, l=12$\Omega$] (2,0);
-    \draw (2,3) to[R, l=4$\Omega$] (4,3)
-        to[R, l=8$\Omega$] (4,0);
-    \draw (4,3) to[short] (6,3);
-    \draw (6,0) to[I, l=8A, invert] (6,3);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_21_diagram.png|Example 21 Diagram]]
 #### Solution
 1.  **Find $V_{TH}$**: Find open-circuit voltage $V_{AB}$.
     - Let's use mesh analysis. Mesh 1 (left), Mesh 2 (middle), Mesh 3 (right).
@@ -599,28 +323,7 @@ Obtain the Thevenin's Equivalent across terminals A & B.
 
 ### Example 22: Thevenin's Theorem 4
 Determine the range of current through R as it varies between 1Ω and 10Ω.
-```tikz
-\usepackage{circuitikz}
-\begin{document}
-\begin{circuitikz}[american]
-    % Left current source
-    \draw (0,0) to[I, l=9A] (0,3);
-    % Top wire segments
-    \draw (0,3) -- (2,3);
-    \draw (2,3) -- (4,3);
-    \draw (4,3) -- (6,3);
-    \draw (6,3) -- (8,3);
-    % Bottom wire (ground)
-    \draw (0,0) -- (8,0);
-    % Components in the middle
-    \draw (2,3) to[R, l=6$\Omega$] (2,0);
-    \draw (4,3) to[R, l_=$R$] (4,0);
-    \draw (6,3) to[R, l=3$\Omega$] (6,0);
-    % Right current source
-    \draw (8,3) to[I, invert, l=2A] (8,0);
-\end{circuitikz}
-\end{document}
-```
+![[Attachments/example_22_diagram.png|Example 22 Diagram]]
 #### Solution
 1.  **Find $V_{TH}$**: Remove R. The circuit is open between the two connection points.
     - Voltage across 6Ω: By voltage divider, $V_{6\Omega} = \text{what source?}$. The circuit is drawn differently in the source. Let's assume the source shows current sources.

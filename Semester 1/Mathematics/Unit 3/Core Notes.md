@@ -1,211 +1,171 @@
 ---
 dg-publish: true
 ---
+# [[../Mathematics|Back]]
+***
+[[Core Notes]] | [[Examples]] | [[Questions]]
 
-# [[Mathematics|Back]]
-***
-[[Semester 1/Mathematics/Unit 3/Core Notes|Core Notes]] | [[Semester 1/Mathematics/Unit 3/Examples|Examples]] | [[Semester 1/Mathematics/Unit 3/Q&A|Questions]]
-***
 # Unit 3: Partial Differential Equations
 
 ## 1. Introduction to Partial Differential Equations (PDEs)
 
 A **Partial Differential Equation (PDE)** is an equation involving an unknown function of two or more independent variables and its partial derivatives with respect to those variables.
 
-Let $z$ be a dependent variable and $x, y$ be independent variables, so $z = z(x,y)$.
-We define:
-*   First-order partial derivatives: $p = \frac{\partial z}{\partial x} = z_x$ and $q = \frac{\partial z}{\partial y} = z_y$.
-*   Second-order partial derivatives: $r = \frac{\partial^2 z}{\partial x^2} = z_{xx}$, $s = \frac{\partial^2 z}{\partial x \partial y} = z_{xy}$, $t = \frac{\partial^2 z}{\partial y^2} = z_{yy}$.
+Let $z$ be a dependent variable and $x, y$ be independent variables, i.e., $z = f(x, y)$.
+The partial derivatives are denoted as systematically:
+*   **First Order derivatives**:
+    *   $p = \frac{\partial z}{\partial x} = z_x$
+    *   $q = \frac{\partial z}{\partial y} = z_y$
+*   **Second Order derivatives**:
+    *   $r = \frac{\partial^2 z}{\partial x^2} = z_{xx}$
+    *   $s = \frac{\partial^2 z}{\partial x \partial y} = z_{xy}$
+    *   $t = \frac{\partial^2 z}{\partial y^2} = z_{yy}$
 
-### **Classification of PDEs**
+A PDE of the first order involving $x, y, z, p, q$ can be written generally as:
+$$ f(x, y, z, p, q) = 0 $$
 
-1.  **First-Order PDE**: An equation containing $x, y, z, p, q$ defines a first-order partial differential equation:
-    $$f(x, y, z, p, q) = 0 \quad (1)$$
-    This equation is **linear** if it is linear in $p$ and $q$.
+A PDE of second order involving $x, y, z, p, q, r, s, t$ is written as:
+$$ g(x, y, z, p, q, r, s, t) = 0 $$
 
-2.  **Second-Order PDE**: An equation containing $x, y, z, p, q, r, s, t$ defines a second-order partial differential equation:
-    $$g(x, y, z, p, q, r, s, t) = 0 \quad (2)$$
-    This equation is **linear** if it is linear in $p, q, r, s, t$.
+### 1.1 Order and Degree
+*   **Order**: The order of the highest derivative appearing in the equation.
+*   **Degree**: The power of the highest order derivative occurring in the equation, provided the equation is free from radicals and fractions w.r.t derivatives.
+*   **Linear PDE**: If the dependent variable $z$ and its derivatives appear only in the first degree and are not multiplied together, the PDE is linear.
 
-### **Examples of Fundamental PDEs**
-Many physical processes are described by PDEs:
-*   **One-dimensional heat conduction equation**: $u_t = u_{xx}$
-*   **Laplace equation**: $u_{xx} + u_{yy} = 0$
-*   **One-dimensional wave equation**: $u_{tt} = u_{xx}$
-
-The solutions of partial differential equations are often of the form $f(x, y, z) = c$, which represents a surface in three dimensions.
+***
 
 ## 2. Formation of Partial Differential Equations
 
-PDEs can be formed by eliminating arbitrary constants or arbitrary functions from a given relation involving the variables and the unknown function.
+Partial differential equations can be formed either by the elimination of arbitrary constants or by the elimination of arbitrary functions.
 
-### **Elimination of Arbitrary Functions**
+### 2.1 Elimination of Arbitrary Constants
+Consider a relation $f(x, y, z, a, b) = 0$ involving two arbitrary constants $a$ and $b$. To form a PDE:
+1.  Differentiate the given relation partially with respect to $x$ to get an equation involving $p$.
+2.  Differentiate the given relation partially with respect to $y$ to get an equation involving $q$.
+3.  Eliminate the constants $a$ and $b$ using the original equation and the two derived equations.
+Since there are two constants to be eliminated from three equations, we typically get a first-order PDE.
 
-1.  **From an equation involving a single arbitrary function**: A first-order PDE can be derived.
-    > See also: [Examples](Examples.md#Example%201:%20Eliminate%20Arbitrary%20Function%20(z=f(x%C2%B2+y%C2%B2)))
+*See [[Examples#example-1:-formation-by-eliminating-constants|Example 1]] for a detailed walkthrough.*
 
-2.  **From an equation involving two arbitrary functions**: A second-order PDE may often arise.
-    > See also: [Examples](Examples.md#Example%202:%20Eliminate%20Arbitrary%20Functions%20(u=f(x+ct)+g(x%E2%80%93ct)))
+### 2.2 Elimination of Arbitrary Functions
+Consider a relation $z = f(u)$ where $u$ is a known function of $x, y$ (e.g., $u = x^2 + y^2$), or a more general implicit form $\phi(u, v) = 0$ where $u, v$ are functions of $x, y, z$.
 
-3.  **From a relation $\phi(u, v) = 0$ where $u$ and $v$ are functions of $x, y, z$**:
-    Differentiating $\phi(u, v) = 0$ partially with respect to $x$ and $y$ (and noting that $\frac{\partial\phi}{\partial u}$ and $\frac{\partial\phi}{\partial v}$ cannot both be zero for a non-trivial solution) leads to a first-order PDE of the form:
-    $$P(x, y, z)p + Q(x, y, z)q = R(x, y, z)$$
-    Where $P, Q, R$ are given by the Jacobians:
-    $$P = \frac{\partial(u, v)}{\partial(y, z)}, \quad Q = \frac{\partial(u, v)}{\partial(z, x)}, \quad R = \frac{\partial(u, v)}{\partial(x, y)}$$
-    > See also: [Examples](Examples.md#Example%203:%20Eliminate%20Arbitrary%20Function%20(phi(u,v)=0,%20u=xyz,%20v=x+y+z))
+**Case A: $z = f(u(x, y))$**
+Differentiating w.r.t $x$:
+$$ p = \frac{\partial z}{\partial x} = f'(u) \frac{\partial u}{\partial x} $$
+Differentiating w.r.t $y$:
+$$ q = \frac{\partial z}{\partial y} = f'(u) \frac{\partial u}{\partial y} $$
+Eliminating $f'(u)$ between these gives the PDE.
 
-4.  **From an equation involving two arbitrary functions of specific composite arguments**:
-    This often involves complex chain rule applications.
-    > See also: [Examples](Examples.md#Example%204:%20Eliminate%20Arbitrary%20Function%20(f(x+y+z,%20x%C2%B2+y%C2%B2+z%C2%B2)=0))
+**Case B: $\phi(u, v) = 0$ where $u = u(x, y, z), v = v(x, y, z)$**
+Differentiating $\phi(u, v) = 0$ with respect to $x$ (keeping $y$ constant, $z$ depends on $x$):
+$$ \frac{\partial \phi}{\partial u} \left( \frac{\partial u}{\partial x} + p \frac{\partial u}{\partial z} \right) + \frac{\partial \phi}{\partial v} \left( \frac{\partial v}{\partial x} + p \frac{\partial v}{\partial z} \right) = 0 $$
+Differentiating with respect to $y$:
+$$ \frac{\partial \phi}{\partial u} \left( \frac{\partial u}{\partial y} + q \frac{\partial u}{\partial z} \right) + \frac{\partial \phi}{\partial v} \left( \frac{\partial v}{\partial y} + q \frac{\partial v}{\partial z} \right) = 0 $$
+Eliminating $\frac{\partial \phi}{\partial u}$ and $\frac{\partial \phi}{\partial v}$ leads to a determinant form, which expands to:
+$$ P p + Q q = R $$
+where
+$$ P = \frac{\partial(u, v)}{\partial(y, z)}, \quad Q = \frac{\partial(u, v)}{\partial(z, x)}, \quad R = \frac{\partial(u, v)}{\partial(x, y)} $$
 
-## 3. Solution of First Order Equations: Lagrange's Equation
+*See [[Examples#example-2:-formation-by-eliminating-arbitrary-functions|Example 2]] and [[Questions#1.-form-the-pde-from-$z-=-y^2-+-2f(1/x-+-\log-y|Q&A Q1]]$.).*
 
-A linear first-order partial differential equation of the form:
-$$P(x, y, z)p + Q(x, y, z)q = R(x, y, z) \quad (1)$$
-is called **Lagrange's Equation**.
+***
 
-### **General Solution using Auxiliary Equations**
+## 3. Linear PDEs of First Order: Lagrange's Equation
 
-The general solution of Lagrange's equation (1) is given by $\phi(u, v) = 0$, where $\phi$ is an arbitrary function, and $u(x, y, z) = C_1$ and $v(x, y, z) = C_2$ are two linearly independent solutions of the **auxiliary (or subsidiary) equations**:
-$$\frac{dx}{P} = \frac{dy}{Q} = \frac{dz}{R} \quad (2)$$
-Here, $C_1$ and $C_2$ are arbitrary constants. The solution can also be written as $C_2 = \phi(C_1)$ or $C_1 = \phi(C_2)$.
+A linear PDE of the first order is of the form:
+$$ P(x, y, z)p + Q(x, y, z)q = R(x, y, z) $$
+This is known as **Lagrange's Linear Equation**.
 
-### **Methods for Determining Solutions of Auxiliary Equations**
+### 3.1 Method of Multipliers / Grouping (Lagrange's Auxiliary Equations)
+The general solution of $Pp + Qq = R$ is $\phi(u, v) = 0$, where $u(x, y, z) = c_1$ and $v(x, y, z) = c_2$ are two independent solutions of the **Lagrange's Auxiliary Equations (or Subsidiary Equations)**:
 
-1.  **Pairing Terms**: Solve by taking any two pairs of fractions from the auxiliary equations (2). This is useful when one variable is absent from a term, allowing direct integration.
-    > See also: [Examples](Examples.md#Example%205:%20Lagrange's%20Equation%20(xp+yq=3z)), [Examples](Examples.md#Example%206:%20Lagrange's%20Equation%20(yzp-xzq=xy))
+$$ \frac{dx}{P} = \frac{dy}{Q} = \frac{dz}{R} $$
 
-2.  **Using Multipliers**: Choose a set of multipliers $a, b, c$ (which can be functions of $x, y, z$) such that:
-    $$\frac{dx}{P} = \frac{dy}{Q} = \frac{dz}{R} = \frac{a dx + b dy + c dz}{aP + bQ + cR}$$
-    *   **Case 1: $aP + bQ + cR = 0$**: If the denominator becomes zero, then the numerator $a dx + b dy + c dz = 0$. If this numerator is an exact differential, it can be integrated directly to give one solution (e.g., $u = C_1$).
-    *   **Case 2: $aP + bQ + cR \neq 0$**: If the numerator $a dx + b dy + c dz = d(aP + bQ + cR)$, then the expression $\frac{a dx + b dy + c dz}{aP + bQ + cR}$ can be integrated to yield a solution (e.g., $\log(aP+bQ+cR) = C_1$).
+To find $u$ and $v$:
+1.  **Method of Grouping**: Take any two fractions where variables can be separated easily (e.g., $dx/x = dy/y$) and integrate.
+2.  **Method of Multipliers**: Choose multipliers $(l, m, n)$ such that $lP + mQ + nR = 0$ or is an exact differential. If the denominator becomes zero, then the numerator $l dx + m dy + n dz = 0$, which can be integrated.
 
-    > See also: [Examples](Examples.md#Example%207:%20Lagrange's%20Equation%20(z(z%C2%B2+xy)(px%E2%80%93qy)%3Dx%E2%81%B4)), [Examples](Examples.md#Example%208:%20Lagrange's%20Equation%20(px(x+y)=qy(x+y)%E2%80%93...))), [Examples](Examples.md#Example%209:%20Lagrange's%20Equation%20((x%C2%B2%E2%80%93y%C2%B2%E2%80%93yz)p+%E2%80%A6))
+*See [[Examples#example-3:-lagrange's-method---grouping|Example 3]] and [[Questions#6.-solve-$2yzp-+-zxq-=-3xy$.|Q&A Q6]].*
 
-## 4. Method of Separation of Variables
+***
 
-The method of **separation of variables** is a powerful technique to solve PDEs, especially linear ones with homogeneous boundary conditions. It reduces a PDE to a set of ordinary differential equations (ODEs).
+## 4. Higher Order Linear PDEs with Constant Coefficients
 
-### **Procedure**
+An $n$-th order linear PDE with constant coefficients has the form:
+$$ \left( A_0 D^n + A_1 D^{n-1}D' + \dots + A_n (D')^n \right) z = f(x, y) $$
+where $D = \frac{\partial}{\partial x}$ and $D' = \frac{\partial}{\partial y}$.
 
-1.  **Assume a Separable Solution**: For a PDE involving a function $u(x, t)$, assume the solution is separable:
-    $$u(x, t) = X(x)T(t)$$
-    where $X(x)$ is a function of $x$ alone and $T(t)$ is a function of $t$ alone.
-2.  **Substitute and Separate**: Substitute $u$ and its partial derivatives into the PDE. Rearrange the equation so that all terms involving $x$ are on one side and all terms involving $t$ are on the other side.
-    For example, if a PDE transforms to $f(X, X', X'', \dots) = g(T, T', T'', \dots)$, then:
-    $$\frac{f(X, X', X'', \dots)}{X} = \frac{g(T, T', T'', \dots)}{T}$$
-3.  **Equate to a Constant**: Since the left-hand side is a function of $x$ only and the right-hand side is a function of $t$ only, both sides must be equal to a common constant (separation constant), say $k$.
-    $$f(X, X', X'', \dots) = k \quad \text{and} \quad g(T, T', T'', \dots) = k$$
-4.  **Solve ODEs**: Solve the resulting two (or more) ODEs. The choice of $k$ (positive, negative, or zero) will depend on the physical nature of the problem and boundary conditions.
-    > See also: [Examples](Examples.md#Example%2010:%20Separation%20of%20Variables%20(3u%E2%82%93x+2u%E2%82%93y=0))
+The complete solution is:
+$$ z = \text{Complementary Function (C.F.)} + \text{Particular Integral (P.I.)} $$
 
-### **Derivation of the One-Dimensional Heat Equation**
+### 4.1 Complementary Function (C.F.)
+Consider the homogeneous part $F(D, D')z = 0$.
+The auxiliary equation is formed by replacing $D$ with $m$ and $D'$ with $1$ (or treating it as such to solve for $m$ in $D - mD'$ factors).
+Specifically, if the operator can be factorized into $(D - m_1 D')(D - m_2 D')...z = 0$, the roots $m_1, m_2, \dots$ determine the C.F.
 
-This section typically involves applying physical principles (Fourier's law of heat conduction, conservation of energy) to a segment of a material.
-*   **Fourier's Law**: Heat flow rate $Q \propto -KA \frac{\partial u}{\partial x}$, where $K$ is thermal conductivity, $A$ is cross-sectional area, and $\frac{\partial u}{\partial x}$ is temperature gradient.
-*   **Energy Conservation**: The net rate of heat retained in a small slab leads to a temperature change over time.
-Combining these, for a uniform bar with insulated sides, we derive the **One-Dimensional Heat Equation**:
-$$\frac{\partial u}{\partial t} = c^2 \frac{\partial^2 u}{\partial x^2}$$
-where $c^2 = K/(s\rho)$ is the thermal diffusivity, with $s$ as specific heat and $\rho$ as density.
+1.  **Distinct Roots ($m_1 \neq m_2 \dots$)**:
+    $$ \text{C.F.} = \phi_1(y + m_1 x) + \phi_2(y + m_2 x) + \dots $$
+2.  **Repeated Roots ($m_1 = m_2 = m$)**:
+    $$ \text{C.F.} = \phi_1(y + mx) + x \phi_2(y + mx) $$
+    (If repeated 3 times, add $x^2 \phi_3, etc.)
 
-### **Solution of the Heat Equation using Separation of Variables**
+*Note: If a factor is just $D$, it corresponds to $m \to \infty$ or just strict integration. Usually, we handle factors like $(aD + bD')$. The solution for $(aD + bD')z=0$ is $\phi(bx - ay)$.*
+Standard notation: Factors usually extracted as $(D - mD')$. If root is $m$, factor is $(D-mD')$, solution $\phi(y+mx)$.
 
-Applying separation of variables $u(x,t) = X(x)T(t)$ to the heat equation leads to two ODEs:
-$$\frac{d^2X}{dx^2} - kX = 0 \quad \text{and} \quad \frac{dT}{dt} - kc^2T = 0$$
-The solutions depend on the sign of $k$:
-*   **Case 1: $k > 0$ (e.g., $k = p^2$)**: Solutions involve exponential functions (e.g., $e^{px}, e^{-px}$) in $x$ and $e^{c^2p^2t}$ in $t$.
-*   **Case 2: $k < 0$ (e.g., $k = -p^2$)**: Solutions involve trigonometric functions (e.g., $\cos(px), \sin(px)$) in $x$ and $e^{-c^2p^2t}$ in $t$. This is typically chosen for physically realistic solutions where temperature decreases over time.
-    $$u(x,t) = (C_1 \cos(px) + C_2 \sin(px))C_3 e^{-c^2p^2t}$$
-*   **Case 3: $k = 0$**: Solutions involve linear functions in $x$ and constant in $t$.
+### 4.2 Particular Integral (P.I.)
+$$ \text{P.I.} = \frac{1}{F(D, D')} f(x, y) $$
 
-The appropriate solution is chosen based on initial and boundary conditions of the specific problem.
+**Case 1: $f(x, y) = e^{ax + by}$**
+Substitute $D = a$ and $D' = b$.
+$$ \text{P.I.} = \frac{1}{F(a, b)} e^{ax+by}, \quad \text{provided } F(a, b) \neq 0 $$
+If $F(a, b) = 0$ (Case of Failure):
+Multiply by $x$ and differentiate the denominator w.r.t $D$. Repeat if necessary.
+Or use the general formula for failure: $\frac{1}{(bD - aD')^n} \phi(ax+by) = \frac{x^n}{b^n n!} \phi(ax+by)$.
 
-## 5. Higher-Order Linear Equations with Constant Coefficients
+**Case 2: $f(x, y) = \sin(ax + by)$ or $\cos(ax + by)$**
+Substitute $D^2 = -a^2$, $D D' = -ab$, $(D')^2 = -b^2$.
+$$ \text{P.I.} = \frac{1}{F(D^2, DD', D'^2)} \sin(ax+by) $$
+(Do not replace $D$ or $D'$ directly, only second order terms).
 
-These PDEs resemble higher-order linear ODEs and can be solved using similar techniques involving operator notation.
+**Case 3: $f(x, y) = x^m y^n$ (Polynomial)**
+Expand the inverse operator $[F(D, D')]^{-1}$ in ascending powers of $D'/D$ (if $n$ small) or $D/D'$ (if $m$ small).
+$$ \frac{1}{D^n (1 + \dots)} x^m y^n = D^{-n} (1 + \dots)^{-1} x^m y^n $$
+Use Binomial expansion $(1+X)^{-1} = 1 - X + X^2 - \dots$.
 
-### **Differential Operators**
+**Case 4: General Case $f(x, y)$**
+Factorize $F(D, D')$ into linear factors $(D - m_1 D')(D - m_2 D')\dots$.
+Resolve into partial fractions or apply successively:
+$$ \frac{1}{D - mD'} f(x, y) = \int f(x, c - mx) dx $$
+where $y$ is replaced by $c - mx$ for integration, and after integration $c$ is replaced back by $y + mx$.
 
-We use the notation:
-*   $D = \frac{\partial}{\partial x}$, $D' = \frac{\partial}{\partial y}$
-*   $D^2 = \frac{\partial^2}{\partial x^2}$, $DD' = \frac{\partial^2}{\partial x \partial y}$, $D'^2 = \frac{\partial^2}{\partial y^2}$
+*See [[Examples#example-5:-higher-order-pde-solution|Example 5]] and [[Questions#13.-solve-$(d^2-+-dd'---2d'^2|Q&A Q13]]z-=-5e^{x+2y}$.).*
 
-A general linear homogeneous PDE with constant coefficients can be written as:
-$$F(D, D')z = 0 \quad (3)$$
-where $F(D, D')$ is a polynomial in $D$ and $D'$.
+***
 
-### **Reducible and Irreducible Forms**
+## 5. Applications of PDEs
 
-*   **Reducible**: If $F(D, D')$ can be factorized into linear factors of the form $(a_i D + b_i D' + c_i)$.
-*   **Irreducible**: If it cannot be factorized in this way.
+### 5.1 One-Dimensional Heat Equation
+The heat equation describes the distribution of heat (temperature variations) in a given region over time.
+For a rod of length $L$, the temperature $u(x, t)$ is governed by:
+$$ \frac{\partial u}{\partial t} = \alpha^2 \frac{\partial^2 u}{\partial x^2} $$
+where $\alpha^2 = \frac{k}{c\rho}$ is the **thermal diffusivity**.
+($k =$ thermal conductivity, $c =$ specific heat, $\rho =$ density).
 
-We primarily focus on **reducible forms**. If all terms in $F(D, D')$ have the same total degree (e.g., $D^2, DD', D'^2$ are all degree 2), the equation is called **homogeneous in derivatives**.
+### 5.2 Method of Separation of Variables
+To solve $u_t = \alpha^2 u_{xx}$, we assume a solution of the form:
+$$ u(x, t) = X(x) T(t) $$
+Substituting into the PDE:
+$$ X T' = \alpha^2 X'' T \implies \frac{X''}{X} = \frac{1}{\alpha^2} \frac{T'}{T} = k \text{ (constant)} $$
 
-### **Complementary Function (CF)**
+Three cases for $k$:
+1.  **$k > 0$ ($k=p^2$)**: $X = c_1 e^{px} + c_2 e^{-px}$, $T = c_3 e^{\alpha^2 p^2 t}$. (Unstable, temperature rises indefinitely).
+2.  **$k = 0$**: $X = c_1 x + c_2$, $T = c_3$. (Linear steady state).
+3.  **$k < 0$ ($k=-p^2$)**:
+    $$ X'' + p^2 X = 0 \implies X(x) = c_1 \cos(px) + c_2 \sin(px) $$
+    $$ T' + \alpha^2 p^2 T = 0 \implies T(t) = c_3 e^{-\alpha^2 p^2 t} $$
+    **Solution**: $u(x, t) = (A \cos px + B \sin px) e^{-\alpha^2 p^2 t}$.
 
-The complementary function is the general solution of the homogeneous equation $F(D, D')z = 0$.
+This form ($k < 0$) is the only physically realistic solution for transient heat conduction (decaying over time). Examples involve applying boundary conditions (e.g., $u(0, t)=0, u(L, t)=0$) to find $p$ and initial conditions to find coefficients using Fourier series.
 
-1.  **Distinct Linear Factors (Homogeneous $F(D,D')$: $c_i=0$)**:
-    If $F(D, D') = (D - m_1 D')(D - m_2 D')\dots(D - m_n D') = 0$, where $m_i$ are distinct, the solution is:
-    $$z = \phi_1(y + m_1 x) + \phi_2(y + m_2 x) + \dots + \phi_n(y + m_n x)$$
-    (This is derived from factors like $a_iD + b_iD'$ or $D - (\frac{-a_i}{b_i})D'$, with $m_i = -a_i/b_i$).
-    > See also: [Examples](Examples.md#Example%2011:%20Solution%20of%20Homogeneous%20PDE%20(D%C2%B2%E2%80%93D%E2%80%B2%C2%B2)z=0)
-
-2.  **Distinct Linear Factors (Non-Homogeneous $F(D,D')$: $c_i \neq 0$)**:
-    If $F(D, D') = (a_1 D + b_1 D' + c_1)(a_2 D + b_2 D' + c_2)\dots z = 0$, the general solution is the sum of terms from each factor:
-    $$z = \sum_{i=1}^n e^{-(c_i x)/a_i} \phi_i(b_i x - a_i y) \quad \text{(if } a_i \neq 0 \text{)}$$
-    Or if $b_i \neq 0$:
-    $$z = \sum_{i=1}^n e^{-(c_i y)/b_i} \phi_i(b_i x - a_i y)$$
-    > See also: [Examples](Examples.md#Example%2012:%20Solution%20of%20Homogeneous%20PDE%20(D%C2%B3%E2%80%936D%C2%B2D%E2%80%B2%2B%E2%80%A6)z=0)
-
-3.  **Repeated Linear Factors**:
-    If a factor $(aD + bD' + c)$ is repeated $m$ times, i.e., $(aD + bD' + c)^m z = 0$, then the corresponding part of the CF is:
-    $$e^{-(cx)/a} [\phi_1(bx - ay) + x\phi_2(bx - ay) + \dots + x^{m-1}\phi_m(bx - ay)] \quad \text{(if } a \neq 0 \text{)}$$
-    (Replace $x$ with $y$ and $a$ with $b$ if $b \neq 0$).
-    > See also: [Examples](Examples.md#Example%2013:%20Solution%20of%20Homogeneous%20PDE%20(D%E2%81%B4%E2%80%932D%C2%B2D%E2%80%B2%C2%B2%2BD%E2%80%B2%E2%81%B4)z=0), [Examples](Examples.md#Example%2014:%20Solution%20of%20Homogeneous%20PDE%20(4D%C2%B3%E2%80%933DD%E2%80%B2%C2%B2%2BD%E2%80%B2%C2%B3)z=0)
-
-### **Particular Integral (PI)**
-
-The particular integral is a specific solution of the non-homogeneous equation $F(D, D')z = f(x, y)$ that does not contain any arbitrary functions. It's written as $z_{PI} = [F(D, D')]^{-1} f(x, y)$.
-
-1.  **When $f(x, y) = e^{ax+by}$**:
-    $$z_{PI} = \frac{1}{F(a, b)} e^{ax+by}, \quad \text{if } F(a, b) \neq 0$$
-    **Case of Failure (when $F(a, b) = 0$)**:
-    If $F(D, D')$ can be written as $(D-mD')^r \psi(D, D')$ and $a=m b$, then
-    $$z_{PI} = \frac{x^r}{r!} e^{ax+by}$$
-    More generally, when $F(a,b)=0$, we use a modified procedure involves a substitution $z = \phi(x,y)e^{ax+by}$ and operating on 1.
-    > See also: [Examples](Examples.md#Example%2015:%20Particular%20Integral%20(e%E2%81%B2%E2%81%B8%2B%C2%B3%E2%81%B9)), [Examples](Examples.md#Example%2016:%20Particular%20Integral%20(e(x%2B2y)/2))
-
-2.  **When $f(x, y) = \sin(ax+by)$ or $\cos(ax+by)$**:
-    Substitute $D^2 \rightarrow -a^2$, $D'^2 \rightarrow -b^2$, $DD' \rightarrow -ab$ into $F(D,D')$.
-    $$z_{PI} = \frac{1}{F(-a^2, -ab, -b^2)}\sin(ax+by), \quad \text{if } F(-a^2, -ab, -b^2) \neq 0$$
-    **Case of Failure**: If the denominator becomes zero, apply the operator method by multiplying by $x$ or $y$ and differentiating or by more advanced techniques.
-    > See also: [Examples](Examples.md#Example%2017:%20Particular%20Integral%20(sin(x-2y)))
-
-3.  **When $f(x, y) = x^m y^n$ (or a polynomial)**:
-    Expand $[F(D, D')]^{-1}$ in an infinite series, typically using binomial expansion like $(1+X)^{-1} \approx 1 - X + X^2 - \dots$, and then operate on $x^m y^n$.
-    *   If $F(D, D')$ does not contain a constant term, expand in powers of $(D')^{-1}D$ if $m < n$, or $D^{-1}D'$ if $m > n$.
-    *   Remember $D^{-1}$ means $\int (\dots)dx$ (treating $y$ as constant) and $(D')^{-1}$ means $\int (\dots)dy$ (treating $x$ as constant).
-    > See also: [Examples](Examples.md#Example%2018:%20Particular%20Integral%20(x%C2%B2%2By%C2%B2)), [Examples](Examples.md#Example%2019:%20Particular%20Integral%20(3x%2B2y))
-
-4.  **General Procedure (for specific reducible factors)**:
-    If $f(x, y)$ is not of the above forms or in case of failure, and $F(D, D')$ is reducible, we can process one factor at a time using the Lagrange's equation approach.
-    For a factor $(a_1 D + b_1 D' + c_1)$, for $f(x,y)$, the particular integral is:
-    $$z = \frac{1}{a_1} \int F(x, c) dx$$
-    where $c = b_1 x - a_1 y$ and $F(x, c)$ is $f(x, y)$ with $y$ replaced using $c = b_1 x - a_1 y$. This integral is then evaluated.
-    > See also: [Examples](Examples.md#Example%2020:%20Particular%20Integral%20(ye%E2%81%B8))
-
-## 6. Applications of Partial Differential Equations
-
-PDEs are fundamental to describing a wide range of physical phenomena:
-*   **Fluid Mechanics**: Navier-Stokes equations
-*   **Solid Mechanics**: Equations of elasticity
-*   **Heat Transfer**: Heat equation
-*   **Electromagnetic Theory**: Maxwell's equations
-*   **Quantum Mechanics**: Schrödinger equation
-*   **Wave Phenomena**: Wave equation
-
-Many of these problems involve **Initial Boundary Value Problems (IBVPs)**, where the PDE is solved subject to initial conditions (state at starting time) and/or boundary conditions (state at edges of the region). The method of separation of variables is particularly effective for linear IBVPs with homogeneous boundary conditions.
-
----
-# [[Mathematics|Back]]
+*See [[Examples#example-6:-separation-of-variables---heat-eq|Example 6]] and [[Questions#10.-solve-$x^2-\frac{\partial-u}{\partial-x}-+-y^2-\frac{\partial-u}{\partial-y}-=-0$.|Q&A Q10]].*

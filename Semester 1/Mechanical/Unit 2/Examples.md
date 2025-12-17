@@ -2,9 +2,9 @@
 dg-publish: true
 ---
 
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]
 ***
-[[Semester 1/Mechanical/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Mechanical/Unit 2/Examples|Examples]] | [[Semester 1/Mechanical/Unit 2/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 2: Worked Examples
 
@@ -25,7 +25,7 @@ $E = 205 \, GPa$.
 ---
 ### Example 2: Bar with Multiple Loads
 A member ABCD is subjected to point loads P1, P2, P3 and P4 as shown. Calculate P2 for equilibrium if $P1=10$ kN, $P3=40$ kN and $P4=16$ kN. Taking $E = 205 \, GPa$, determine the total elongation. Diameters: AB=25mm, BC=50mm, CD=30mm. Lengths: AB=1000mm, BC=600mm, CD=800mm.
-![](Examples-1.png)
+![[Examples-1.png]]
 
 
 **Solution:**
@@ -657,4 +657,4 @@ Speed of Gear D is $N_D = 100$ rpm.
 Direction of Gear D is Clockwise.
 
 ***
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]

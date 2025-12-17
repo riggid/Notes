@@ -1,10 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]
 ***
-[[Semester 1/Mechanical/Unit 4/Core Notes|Core Notes]] | [[Semester 1/Mechanical/Unit 4/Examples|Examples]] | [[Semester 1/Mechanical/Unit 4/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 4: Modern Machining, Heat Treatment, Control Systems, and Robotics
 
@@ -282,7 +281,7 @@ The total amount of material to be removed from a workpiece is typically achieve
 #### **2.4.4 Total Actual Machining Time**
 The total actual machining time is the sum of the machining times for all roughing passes and all finishing passes.
 $$ \text{Total Machining Time} = (P_r \times t_{rough}) + (P_f \times t_{finish}) $$
-> See also: [Examples](Examples.md#Example%201:%20Machining%20Time%20Calculation%20for%20a%20Turning%20Operation)
+> See also: [[Examples#example-1:-machining-time-calculation-for-a-turning-operation|Examples]]
 
 ### **2.5 Drilling Operations and Twist Drills**
 
@@ -1071,4 +1070,4 @@ Industrial robots have become indispensable across a vast spectrum of manufactur
     5.  **Overall**: Induction hardening is highly effective for large steel components where selective surface hardness is required with minimal distortion, making it a valuable process in manufacturing.
 
 ---
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]

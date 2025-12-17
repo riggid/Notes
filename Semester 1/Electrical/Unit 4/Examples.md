@@ -1,14 +1,14 @@
 ---
 dg-publish: true
 ---
-# [Back](../../Electrical.md)
+# [[../Electrical|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Questions](Questions.md)
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 
 # Unit 4 Examples: Machines
 
-> See also: [Core Notes](Core%20Notes.md#unit-4-electromagnetism--electrical-machines)
+> See also: [[Core Notes#unit-4-electromagnetism--electrical-machines|Core Notes]]
 
 ## 1. Magnetic Circuits
 

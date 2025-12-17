@@ -2,9 +2,9 @@
 dg-publish: true
 ---
 
-# # [Back](../Environmental%20Studies.md)
+# # [[../Environmental Studies|Back]]
 ***
-[[Semester 1/Environmental Studies and Life Science/Unit 1/Core Notes|Core Notes]] | [[Semester 1/Environmental Studies and Life Science/Unit 1/Examples|Examples]] | [[Semester 1/Environmental Studies and Life Science/Unit 1/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 1: Environmental Studies & Life Sciences
 
@@ -260,4 +260,4 @@ A framework prioritizing waste management strategies from most to least preferab
     * Limit the number of users and areas where radioactive materials are used.
 
 ***
-# [[Environmental Studies|Back]]
+# [[../Environmental Studies|Back]]

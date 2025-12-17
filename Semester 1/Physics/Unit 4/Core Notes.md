@@ -1,10 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Physics|Back]]
+# [[../Physics|Back]]
 ***
-[[Semester 1/Physics/Unit 4/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 4/Examples|Examples]] | [[Semester 1/Physics/Unit 4/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 
 # Unit 7: Lasers, Optoelectronics, and Advanced Materials
@@ -26,7 +25,7 @@ $$ R_{12} = B_{12} N_1 u(\nu) $$
     This is typically expressed in units of $\text{m}^2 \text{ J}^{-1} \text{ s}^{-1}$ or $\text{m}^3 \text{ s}^{-2} \text{ kg}^{-1}$. In common units, it's often given as $\text{m}^3 \text{ Hz}^{-1} \text{ J}^{-1} \text{ s}^{-1}$.
 
 **Description of Diagram (Induced Absorption):** An energy level diagram illustrating induced absorption. Two energy levels are shown: $E_1$ (lower) and $E_2$ (upper). An upward arrow from $E_1$ to $E_2$ indicates an atom absorbing a photon ($h\nu$) to transition to the excited state. $N_1$ and $N_2$ represent populations of the respective states.
-![Induced Absorption Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Absorption_Process.svg/300px-Absorption_Process.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Absorption_Process.svg/300px-Absorption_Process.svg.png|Induced Absorption Diagram]]
 
 ### 1.2 Spontaneous Emission
 
@@ -46,7 +45,7 @@ $$ R_{21,sp} = A_{21} N_2 $$
     Thus, the **lifetime of a state undergoing spontaneous emission is the inverse of the Einstein A coefficient**.
 
 **Description of Diagram (Spontaneous Emission):** An energy level diagram showing spontaneous emission. An atom in the upper state $E_2$ randomly transitions to the lower state $E_1$, emitting a photon ($h\nu$). This process is independent of external fields.
-![Spontaneous Emission Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Spontaneous_Emission.svg/300px-Spontaneous_Emission.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Spontaneous_Emission.svg/300px-Spontaneous_Emission.svg.png|Spontaneous Emission Diagram]]
 
 ### 1.3 Stimulated Emission
 
@@ -60,7 +59,7 @@ $$ R_{21,st} = B_{21} N_2 u(\nu) $$
     $$ [B_{21}] = \frac{[R_{21,st}]}{[N_2][u(\nu)]} = \frac{[Time]^{-1}}{[Mass][Length]^{-1}[Time]^{-2}[Frequency]^{-1}} = \frac{[Length][Time]}{[Mass][Frequency]^{-1}} = \frac{[Length]}{[Mass]} $$
 
 **Description of Diagram (Stimulated Emission):** An energy level diagram showing stimulated emission. An atom in the upper state $E_2$ interacts with an incoming photon ($h\nu$). This interaction stimulates the atom to emit a second photon ($h\nu$), identical to the first, as it transitions to $E_1$.
-![Stimulated Emission Diagram](Attachments/stimulated_emission.png)
+![[Attachments/stimulated_emission.svg|Stimulated Emission Diagram]]
 
 ### 1.4 Einstein's Relations and Energy Density
 
@@ -90,7 +89,7 @@ Or, using $B_{12}=B_{21}$:
 $$ u(\nu) = \frac{A_{21}}{B_{12}} \frac{1}{e^{h\nu/k_B T} - 1} $$
 This expression, identical to Planck's distribution when using the derived relations, underscores the necessity of stimulated emission for achieving thermal equilibrium in light-matter interaction.
 
-> See also: [Examples](Examples.md#Example%201:%20Population%20of%20Higher%20Energy%20State), [Examples](Examples.md#Example%202:%20Emission%20Wavelength%20and%20A/B%20Ratio), [Examples](Examples.md#Example%203:%20Wavelength%20and%20Energy%20Density%20of%20Radiation)
+> See also: [[Examples#example-1:-population-of-higher-energy-state|Examples]], [[Examples#example-2:-emission-wavelength-and-a/b-ratio|Examples]], [[Examples#example-3:-wavelength-and-energy-density-of-radiation|Examples]]
 
 ## 2. Conditions for Laser Action
 
@@ -130,7 +129,7 @@ At thermal equilibrium, the ratio of populations $N_2/N_1 = e^{-(E_2-E_1)/k_B T}
 *   **Drawbacks**: Three-level systems require very high pump power because the lower laser level is the heavily populated ground state. This often leads to **pulsed operation** rather than continuous wave (CW) due to the difficulty in maintaining inversion. The ruby laser is a classic example.
 
 **Description of Diagram (Three-Level Laser System):** An energy level diagram showing three states $E_1$ (ground), $E_2$ (metastable upper laser level), and $E_3$ (pump level). An upward arrow indicates pumping from $E_1$ to $E_3$. A wavy arrow shows fast non-radiative decay from $E_3$ to $E_2$. A downward arrow marks the laser transition from $E_2$ to $E_1$.
-![Three-Level Laser System Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Three_level_laser.svg/330px-Three_level_laser.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Three_level_laser.svg/330px-Three_level_laser.svg.png|Three-Level Laser System Diagram]]
 
 ### 2.4 Four-Level Systems
 
@@ -150,7 +149,7 @@ At thermal equilibrium, the ratio of populations $N_2/N_1 = e^{-(E_2-E_1)/k_B T}
 *   **Advantages**: Low pump power requirement, high efficiency, and suitability for CW operation. Examples include He-Ne and Nd:YAG lasers.
 
 **Description of Diagram (Four-Level Laser System):** An energy level diagram showing four states: $E_0$ (ground), $E_1$ (lower laser level, fast decay), $E_2$ (metastable upper laser level), and $E_3$ (pump level, fast decay). An upward arrow indicates pumping from $E_0$ to $E_3$. Wavy arrows show fast non-radiative decays from $E_3$ to $E_2$ and from $E_1$ to $E_0$. A downward arrow marks the laser transition from $E_2$ to $E_1$.
-![Four-Level Laser System Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Four_level_laser.svg/330px-Four_level_laser.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Four_level_laser.svg/330px-Four_level_laser.svg.png|Four-Level Laser System Diagram]]
 
 ### 2.5 Difference between Three-Level and Four-Level Lasers:
 
@@ -201,7 +200,7 @@ The **resonant cavity** provides positive feedback for the light within the acti
 *   **Role in Sustained Lasing**: It ensures that stimulated emission in the desired wavelength is amplified to achieve a sustainable laser action of sufficient intensity.
 
 **Description of Diagram (Basic Laser Construction):** A schematic showing an active medium placed between a highly reflective mirror and a partially reflective output coupler. An energy pump source is shown exciting the active medium. Arrows indicate light bouncing back and forth within the cavity, with a laser output beam emanating from the output coupler.
-![Basic Laser Construction Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Construction_of_a_laser.svg/600px-Construction_of_a_laser.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Construction_of_a_laser.svg/600px-Construction_of_a_laser.svg.png|Basic Laser Construction Diagram]]
 
 ## 4. Round Trip Gain in a Laser Medium
 
@@ -255,9 +254,9 @@ This equation states that the threshold gain coefficient must be sufficient to o
 *   If $R_1 R_2 e^{2(g-\alpha)L} > 1$, oscillations can **build up**, and the laser is said to be above threshold.
 
 **Description of Diagram (Round Trip Gain):** A linear cavity with two mirrors $R_1$ and $R_2$, separated by active medium of length $L$. Arrows show an initial intensity $I_0$, which becomes $I_0e^{(g-\alpha)L}$ after one pass, then $R_2 I_0e^{(g-\alpha)L}$ after reflection, and $R_1 R_2 I_0e^{2(g-\alpha)L}$ after a full round trip.
-![Round Trip Gain Diagram](Attachments/round_trip_gain.png)
+![[Attachments/round_trip_gain.svg|Round Trip Gain Diagram]]
 
-> See also: [Examples](Examples.md#Example%2012:%20Threshold%20Gain%20Factor%20for%20He-Ne%20Laser)
+> See also: [[Examples#example-12:-threshold-gain-factor-for-he-ne-laser|Examples]]
 
 ### 4.2 Cavity Design Considerations for a Laser
 
@@ -320,7 +319,7 @@ Laser light exhibits several distinctive properties that make it invaluable acro
     *   **Significance**: Essential for processes involving interference over significant path differences, such as interferometry, fiber optics, and holography. Ordinary light sources have coherence lengths of a few millimeters to tens of centimeters, while lasers can have coherence lengths of meters to many kilometers.
 
     **Description of Diagram (Temporal Coherence):** A plot showing a wave with varying phase coherence. Initially, phases are well-defined for some oscillations, but after a coherence time, the phase becomes uncorrelated and changes randomly. A coherence length ($L_c$) is marked as the distance over which the phase remains relatively predictable.
-    ![Temporal Coherence Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Temporal_coherence.svg/400px-Temporal_coherence.svg.png)
+    ![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Temporal_coherence.svg/400px-Temporal_coherence.svg.png|Temporal Coherence Diagram]]
 
 2.  **Spatial Coherence**:
     *   **Definition**: Refers to the correlation between the phases of the light wave at different points transverse to the direction of propagation (across the wavefront) at a given instant. A highly spatially coherent source behaves as if the light originates from a single, infinitely small point source.
@@ -328,9 +327,9 @@ Laser light exhibits several distinctive properties that make it invaluable acro
     *   **Significance**: Enables the laser beam to be focused to a very small spot (diffraction limit) and to maintain a narrow, collimated beam over long distances (high directionality). It's crucial for applications requiring tight focusing, such as laser cutting, welding, and optical data storage.
 
 **Description of Diagram (Spatial Coherence):** A diagram showing two points on a wavefront. In spatially coherent light, the phase difference between these two points remains constant over time. In incoherent light, this phase difference fluctuates randomly.
-![Spatial Coherence Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Spatial_coherence.svg/400px-Spatial_coherence.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Spatial_coherence.svg/400px-Spatial_coherence.svg.png|Spatial Coherence Diagram]]
 
-> See also: [Examples](Examples.md#Example%208:%20Degree%20of%20Non-Monochromaticity), [Examples](Examples.md#Example%209:%20Coherence%20Length%20of%20a%20Laser%20Beam), [Examples](Examples.md#Example%2010:%20Einstein%20Coefficients%20and%20Coherence%20Length), [Examples](Examples.md#Example%2011:%20He-Ne%20Laser%20Coherence)
+> See also: [[Examples#example-8:-degree-of-non-monochromaticity|Examples]], [[Examples#example-9:-coherence-length-of-a-laser-beam|Examples]], [[Examples#example-10:-einstein-coefficients-and-coherence-length|Examples]], [[Examples#example-11:-he-ne-laser-coherence|Examples]]
 
 ### 5.3 Directionality (Low Divergence)
 
@@ -370,9 +369,9 @@ The optical resonant cavity acts as a filter, supporting only specific frequenci
 *   **Laser Oscillation**: A laser can oscillate simultaneously on all longitudinal modes that fall within the bandwidth of the gain curve and whose gain exceeds the cavity losses. If the gain curve is sufficiently narrow or elements are added to select a single mode, the laser can operate in a single longitudinal mode, resulting in even higher monochromaticity.
 
 **Description of Diagram (Gain Curve and Cavity Modes):** A plot showing a broad, bell-shaped curve representing the laser gain as a function of optical frequency. Superimposed are sharp, equally spaced vertical lines representing the longitudinal modes of the resonant cavity. Only the modes under the gain curve and above the threshold gain oscillate.
-![Gain Curve and Cavity Modes Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Laser_modes.svg/600px-Laser_modes.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Laser_modes.svg/600px-Laser_modes.svg.png|Gain Curve and Cavity Modes Diagram]]
 
-> See also: [Examples](Examples.md#Example%2013:%20Number%20of%20Modes%20and%20Frequency%20Separation%20in%20a%20Resonant%20Cavity)
+> See also: [[Examples#example-13:-number-of-modes-and-frequency-separation-in-a-resonant-cavity|Examples]]
 
 ## 6. Types of LASERs: Atomic Gas Laser - He-Ne Laser
 
@@ -392,7 +391,7 @@ The **Helium-Neon (He-Ne) laser** is a continuous-wave (CW) gas laser known for 
 #### 6.1.3 Energy Levels and Laser Action (Four-Level System)
 
 **Description of Diagram (He-Ne Laser Energy Levels):** A detailed energy level diagram for He and Ne atoms. On the left, He ground state and two metastable excited states ($2^1S$ at 20.61 eV and $2^3S$ at 19.82 eV). On the right, Ne ground state, a lower laser level ($3p_4$ state around 18.70 eV), and several upper laser levels ($2s_2$ state around 20.66 eV, $3s_2$ state). Arrows show electron impact excitation of He, resonant energy transfer from He to Ne, lasing transitions (e.g., 632.8 nm from $3s_2$ to $2p_4$), and fast decay of lower laser levels.
-![He-Ne Laser Energy Levels](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HeNe_laser_diagram.svg/600px-HeNe_laser_diagram.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HeNe_laser_diagram.svg/600px-HeNe_laser_diagram.svg.png|He-Ne Laser Energy Levels]]
 
 1.  **Excitation of Helium**: Electrons in the discharge collide with ground state He atoms, exciting them to two specific metastable states:
     *   **$2^3S$ state (19.82 eV)**: The first excited triplet state of Helium.
@@ -468,12 +467,12 @@ A linear CO2 molecule consists of a central carbon atom bonded to two oxygen ato
 The vibrational states are designated $(v_1, v_2, v_3)$, where $v_1, v_2, v_3$ are the vibrational quantum numbers for symmetric stretch, bending, and asymmetric stretch, respectively. For example, (000) is the ground state, (100) is the first symmetric stretch excited state, (010) is the first bending excited state, and (001) is the first asymmetric stretch excited state.
 
 **Description of Diagram (CO2 Vibrational Modes):** Illustrations showing the three distinct vibrational modes of a linear CO2 molecule: Symmetric Stretch (oxygen atoms move in and out together), Asymmetric Stretch (oxygen atoms move in opposite directions, carbon moves), and Bending (atoms move perpendicular to the axis). Arrows indicate atomic motion.
-![CO2 Vibrational Modes](https://www.chegg.com/homework-help/definitions/vibrational-modes-of-carbon-dioxide-molecule-64)
+![[https://www.chegg.com/homework-help/definitions/vibrational-modes-of-carbon-dioxide-molecule-64|CO2 Vibrational Modes]]
 
 #### 7.1.4 Energy Levels and Laser Action (Four-Level System)
 
 **Description of Diagram (CO2 Laser Energy Levels & Vibrational Modes):** An energy level diagram showing the interplay between N2 and CO2 vibrational states. N2 ground state and first vibrational state ($N_2^*$) are shown. CO2 energy levels include (000) ground, (010) bending, (100) symmetric stretch, (020), and (001) asymmetric stretch. Arrows indicate: (1) Pumping from N2 ground to $N_2^*$. (2) Resonant energy transfer from $N_2^*$ to CO2(001) (upper laser level). (3) Stimulated emission from CO2(001) to CO2(100) (10.6 µm) and CO2(001) to CO2(020) (9.6 µm). (4) Fast non-radiative decay from CO2(100) and CO2(020) to CO2(010), then to CO2(000).
-![CO2 Laser Energy Levels](https://www.tf.uni-kiel.de/matwis/amat/semicond/lectures/lasers/laser_types/co2_laser_principle.gif)
+![[https://www.tf.uni-kiel.de/matwis/amat/semicond/lectures/lasers/laser_types/co2_laser_principle.gif|CO2 Laser Energy Levels]]
 
 1.  **Excitation of Nitrogen ($N_2 \rightarrow N_2^*$)**: Electrons from the electrical discharge primarily excite N2 molecules to their first vibrational state ($N_2^*$). This state is metastable and has a long lifetime.
 
@@ -531,7 +530,7 @@ The **E-k diagram is crucial for understanding light emission (and absorption)**
 **Description of Diagram (Direct vs. Indirect Band Gap E-k Diagram):** Two E-k diagrams are shown side-by-side.
 Part A (Direct Band Gap): The minimum of the conduction band and the maximum of the valence band are aligned vertically (at the same k-value, typically $\Gamma$ point). A vertical arrow shows direct radiative recombination (electron to hole, emitting photon, $h\nu \approx E_g$).
 Part B (Indirect Band Gap): The minimum of the conduction band and the maximum of the valence band are at different k-values. A diagonal arrow shows an electron transition requiring a change in momentum, typically involving a phonon for recombination.
-![Direct vs Indirect Band Gap](https://qph.cf2.quoracdn.net/main-qimg-22b6833fe0328848d61741753443a992-lq)
+![[https://qph.cf2.quoracdn.net/main-qimg-22b6833fe0328848d61741753443a992-lq|Direct vs Indirect Band Gap]]
 
 ### 8.2 Concept of LED using Direct Band Gap Semiconductors
 
@@ -549,7 +548,7 @@ A **Light-Emitting Diode (LED)** is a semiconductor device that utilizes the pri
 4.  **Incoherent Light**: While LEDs emit light efficiently, it is **spontaneous emission**, which is generally incoherent and non-directional.
 
 **Description of Diagram (LED Energy Band Diagram with Forward Bias):** An energy band diagram showing a p-n junction under forward bias. Conduction and valence bands are shown for n-type and p-type regions. Under forward bias, the bands are tilted, and the depletion region narrows. Arrows depict electrons injecting from n-side into p-side, holes from p-side into n-side, and then recombining at the junction, emitting photons ($h\nu$).
-![LED Energy Band Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/LED_Banddiagramm.png/600px-LED_Banddiagramm.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/LED_Banddiagramm.png/600px-LED_Banddiagramm.png|LED Energy Band Diagram]]
 
 ### 8.3 Semiconductor Laser (Diode Laser)
 
@@ -562,9 +561,9 @@ A **semiconductor laser** (or **diode laser**) is essentially an LED designed to
 5.  **Stimulated Emission**: Once population inversion is established, photons generated by spontaneous emission are reflected back and forth within the cavity. When these photons interact with other excited electron-hole pairs, they trigger **stimulated emission**, producing identical photons and leading to light amplification and laser action.
 
 **Description of Diagram (Semiconductor Laser Energy Band Diagram under Lasing Condition):** A simplified energy band diagram for a p-n junction displaying distinct quasi-Fermi levels for electrons ($E_{F_e}$) and holes ($E_{F_h}$) under strong forward bias. The splitting $E_{F_e} - E_{F_h} > E_g$ signifies population inversion. An arrow depicts stimulated emission ($h\nu \approx E_g$) via electron-hole recombination.
-![Semiconductor Laser Band Diagram](https://qph.cf2.quoracdn.net/main-qimg-e069542a73fd0fb5fb057406a441399f-lq)
+![[https://qph.cf2.quoracdn.net/main-qimg-e069542a73fd0fb5fb057406a441399f-lq|Semiconductor Laser Band Diagram]]
 
-> See also: [Examples](Examples.md#Example%204:%20Wavelength%20of%20Laser%20Emitted%20from%20Semiconductor)
+> See also: [[Examples#example-4:-wavelength-of-laser-emitted-from-semiconductor|Examples]]
 
 ### 8.4 Homo-junction Laser and Hetero-junction Laser
 
@@ -607,7 +606,7 @@ Part (a): Cross-section showing n-AlGaAs, p-GaAs (active layer), and p-AlGaAs la
 Part (b): Band diagram under forward bias, illustrating the conduction band and valence band edges forming quantum wells in the active GaAs layer, confining electrons and holes. Split quasi-Fermi levels are shown.
 Part (c): Refractive index profile, showing the higher refractive index of GaAs compared to AlGaAs, creating an optical waveguide.
 Part (d): Photon density profile, showing peak confinement within the GaAs active region.
-![Double Heterostructure Laser](https://upload.wikimedia.org/wikipedia/commons/e/e4/Structure_of_heterojunction_laser.png)
+![[https://upload.wikimedia.org/wikipedia/commons/e/e4/Structure_of_heterojunction_laser.png|Double Heterostructure Laser]]
 
 #### 8.4.3 Why Creating White LEDs took a long time in the making?
 
@@ -693,7 +692,7 @@ $$ E_{transmitted} \propto (\text{zero-order beam}) + E_O |E_R|^2 + E_R^2 E_O^* 
 **Description of Diagram (Hologram Recording and Reconstruction):** A two-part diagram.
 Part 1 (Recording): A laser beam is split into a reference beam (directly to holographic plate) and an object beam (illuminates object then to plate). The two beams interfere on the plate.
 Part 2 (Reconstruction): A reconstruction beam (often the same as the reference beam) illuminates the developed hologram, generating an undiffracted beam and two diffracted beams that form a virtual 3D image and a real 3D image.
-![Holography Scheme](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Holography_Scheme.png/600px-Holography_Scheme.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Holography_Scheme.png/600px-Holography_Scheme.png|Holography Scheme]]
 
 ### 9.2 Off-Axis Holographic Recording Method
 
@@ -802,7 +801,7 @@ Since $E = E_0 / \epsilon_r$,
 $$ P = \epsilon_0 (\epsilon_r - 1) \frac{E_0}{\epsilon_r} $$
 This expression relates the polarization to the external field.
 
-> See also: [Examples](Examples.md#Example%2014:%20Induced%20Surface%20Charge%20and%20Electric%20Fields), [Examples](Examples.md#Example%2015:%20Dielectric%20Properties%20with%20Charge%20Density), [Examples](Examples.md#Example%2016:%20Electronic%20Polarizability%20Calculation), [Examples](Examples.md#Example%2018:%20Polarization%20and%20Electric%20Field%20in%20a%20Capacitor)
+> See also: [[Examples#example-14:-induced-surface-charge-and-electric-fields|Examples]], [[Examples#example-15:-dielectric-properties-with-charge-density|Examples]], [[Examples#example-16:-electronic-polarizability-calculation|Examples]], [[Examples#example-18:-polarization-and-electric-field-in-a-capacitor|Examples]]
 
 #### 10.1.4 Susceptibility Tensor
 
@@ -831,7 +830,7 @@ Where:
 **Description of Diagram (Electric Fields in Dielectric):** Two diagrams illustrating fields.
 Part 1: A dielectric slab between capacitor plates. $E_{ext}$ is the external field. $E_p$ is the depolarizing field caused by surface polarization charges within the dielectric, opposing $E_{ext}$.
 Part 2: An imaginary spherical cavity within a polarized dielectric. $E_{loc}$ is shown at the center, resulting from $E_{ext}$, $E_{dep}$, $E_{cav}$, and $E_{int}$. The Lorentz force/field is often represented as $E_L$.
-![Electric Fields in Dielectric](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dipole_polarisation_of_a_dielectric_material.svg/600px-Dipole_polarisation_of_a_dielectric_material.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dipole_polarisation_of_a_dielectric_material.svg/600px-Dipole_polarisation_of_a_dielectric_material.svg.png|Electric Fields in Dielectric]]
 
 #### 10.2.2 Lorentz Field ($\mathbf{E}_L$)
 
@@ -869,7 +868,7 @@ The Lorentz field is fundamental in connecting the macroscopic dielectric proper
     $$ \frac{\epsilon_r - 1}{\epsilon_r + 2} = \frac{N \alpha}{3\epsilon_0} $$
 This is the **Clausius-Mossotti relation**, valid for materials with cubic symmetry and where electronic and ionic polarization mechanisms are dominant. It links macroscopic dielectric constant ($\epsilon_r$) to microscopic polarizability ($\alpha$) and number density ($N$).
 
-> See also: [Examples](Examples.md#Example%2017:%20Polarizability%20of%20Kr%20Atom), [Examples](Examples.md#Example%2019:%20Electronic%20Polarizability%20of%20Sulphur), [Examples](Examples.md#Example%2020:%20Total%20Polarizability%20of%20CO2)
+> See also: [[Examples#example-17:-polarizability-of-kr-atom|Examples]], [[Examples#example-19:-electronic-polarizability-of-sulphur|Examples]], [[Examples#example-20:-total-polarizability-of-co2|Examples]]
 
 ### 10.3 Frequency Dependence of Dielectric Constant
 
@@ -882,7 +881,7 @@ The dielectric constant ($\epsilon_r$) of a material is not fixed but depends on
 *   **Beyond Optical Frequencies ($\approx 10^{16}$ Hz and higher)**: As the frequency increases further (UV, X-rays), even electronic polarization cannot keep up. The material essentially behaves as vacuum, with $\epsilon_r$ approaching 1.
 
 **Description of Diagram (Frequency Dependence of Dielectric Constant):** A plot showing the real part of the dielectric constant ($\epsilon'$) and imaginary part ($\epsilon''$) as a function of $\log(\text{frequency})$. Plateaus and drop-offs are observed at frequencies corresponding to the relaxation times of each polarization mechanism (space charge, orientational, ionic, electronic), illustrating their sequential loss of contribution as frequency increases. Resonant peaks might be shown for ionic and electronic parts.
-![Dielectric Constant vs Frequency](https://www.tf.uni-kiel.de/matwis/amat/semicond/lectures/dielectric/dielectric_dispersion.gif)
+![[https://www.tf.uni-kiel.de/matwis/amat/semicond/lectures/dielectric/dielectric_dispersion.gif|Dielectric Constant vs Frequency]]
 
 ### 10.4 Microwave Oven Operation: How it Works
 
@@ -1038,7 +1037,7 @@ Many of the interesting dielectric properties discussed above are intrinsically 
     - **Below** : Transforms from orthorhombic to **rhombohedral symmetry**. The  ion shifts along a body diagonal, giving another ferroelectric phase.
 
 **Description of Diagram (BaTiO3 Phase Transitions and Properties):** A graph showing relative permittivity () as a function of temperature. It displays a sharp peak at the Curie temperature, where the material transitions from a high-symmetry (cubic, paraelectric) phase to lower-symmetry (tetragonal, orthorhombic, rhombohedral) ferroelectric phases upon cooling. Spontaneous polarization arises in the ferroelectric phases.  
-![BaTiO3 Phase Transitions](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pyroelectric-Ferroelectric_Titanate_Diagram.png/600px-Pyroelectric-Ferroelectric_Titanate_Diagram.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pyroelectric-Ferroelectric_Titanate_Diagram.png/600px-Pyroelectric-Ferroelectric_Titanate_Diagram.png|BaTiO3 Phase Transitions]]
 
 ### 12.3 Hysteresis (P-E Loop)
 
@@ -1058,7 +1057,7 @@ The most distinctive characteristic of ferroelectric materials is the **hystere
     - **Coercive Field ()**: The magnitude of the (opposing) electric field required to reduce the polarization to zero. It indicates the "switching energy" or "hardness" of the ferroelectric.
 
 **Description of Diagram (Ferroelectric Hysteresis Loop):** A graph with Electric Field (E) on the x-axis and Polarization (P) on the y-axis, showing a typical S-shaped hysteresis loop. Points for saturation polarization (), remnant polarization (), and coercive field () are clearly marked, with arrows indicating the path of the curve.  
-![Ferroelectric Hysteresis Loop](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ferroelectric_hysteresis.svg/600px-Ferroelectric_hysteresis.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ferroelectric_hysteresis.svg/600px-Ferroelectric_hysteresis.svg.png|Ferroelectric Hysteresis Loop]]
 
 ### 12.4 Application as Memory Materials
 
@@ -1119,7 +1118,7 @@ Here:
 4. This oscillating polarization at  acts as a source term for new electromagnetic waves within the crystal, generating light at the second harmonic frequency.
 
 **Description of Diagram (SHG Energy Levels):** A simplified energy diagram showing two input photons of energy  (frequency ) exciting an atom or molecule in a non-linear material, resulting in the emission of one photon of energy  (frequency ). This is not a direct energy level transition for a single atom but a coherent interaction with the material's electrons.  
-![SHG Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Second_harmonic_generation.svg/400px-Second_harmonic_generation.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Second_harmonic_generation.svg/400px-Second_harmonic_generation.svg.png|SHG Diagram]]
 
 #### 13.2.2 Phase Matching
 
@@ -1191,7 +1190,7 @@ A typical optical tweezers setup involves:
     - **Microrheology**: Measuring the viscoelastic properties of soft materials by observing trapped particles.
 
 **Description of Diagram (Optical Tweezers Principle):** A diagram showing a highly focused laser beam (converging rays) impinging on a small dielectric sphere (particle). Rays are shown being refracted by the particle. The change in momentum of the light rays, due to refraction, results in a net gradient force pushing the particle towards the high-intensity focal point of the beam, counteracting the scattering force.  
-![Optical Tweezers Principle](https://upload.wikimedia.org/wikipedia/commons/e/e9/Optical_Tweezer_Principle_%28English%29.jpg)
+![[https://upload.wikimedia.org/wikipedia/commons/e/e9/Optical_Tweezer_Principle_(English).jpg|Optical Tweezers Principle]]
 
 ### 14.2 Laser Cooling
 
@@ -1230,4 +1229,4 @@ A typical laser cooling setup (MOT) involves:
 - **Atom Interferometry**: Using cooled atoms to create highly sensitive sensors for gravity, rotation, and other forces.
 
 **Description of Diagram (Doppler Cooling Principle):** A diagram showing an atom moving towards a red-detuned laser beam (frequency ). Due to the Doppler effect, the atom "sees" the laser light as blue-shifted (), bringing it closer to resonance (). This increases the absorption probability, and the momentum transfer from the absorbed photon slows the atom. Spontaneous emission occurs in random directions, with average zero momentum change.  
-![Doppler Cooling Principle](https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Doppler_Cooling.svg/500px-Doppler_Cooling.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Doppler_Cooling.svg/500px-Doppler_Cooling.svg.png|Doppler Cooling Principle]]

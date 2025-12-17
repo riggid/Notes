@@ -2,9 +2,9 @@
 dg-publish: true
 ---
 
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]
 ***
-[[Semester 1/Mechanical/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Mechanical/Unit 2/Examples|Examples]] | [[Semester 1/Mechanical/Unit 2/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 2: Q&A and Worked Problems
 
@@ -467,4 +467,4 @@ ii) Overall pf $= P_T / S_T = 10.5 / 10.53 \approx 0.997$ Lagging (since $Q_T>0$
 iii) kVAR for Unity pf: Need to supply $Q_C = -Q_T = -0.82$ kVAR. Capacitor rating is $0.82$ kVAR.
 
 ***
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]

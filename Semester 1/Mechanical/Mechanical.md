@@ -1,7 +1,7 @@
 ---
 dg-publish: true
 ---
-# [Index](../../Index.md)
+# [[../../Index|Index]]
 ---
 ```dataviewjs
 // --- This script is fully automatic ---

@@ -1,8 +1,7 @@
 ---
 dg-publish: true
 ---
-
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]
 ***
 # Unit 1: Principles of Thermodynamics
 
@@ -63,7 +62,7 @@ Systems are classified based on how they interact with their surroundings:
 This is the work associated with the expansion or compression of a gas in a piston-cylinder device.
 -   The general expression for moving boundary work is:
     $$W_{1-2} = \int_{1}^{2} P dV$$
-    > See also: [Examples](Semester%201/Mechanical/Unit%201/Examples.md#Example%201:%20Isothermal%20Work), [Examples](Semester%201/Mechanical/Unit%201/Examples.md#Example%202:%20Polytropic%20Work)
+    > See also: [[Examples#example-1:-isothermal-work|Examples]], [[Examples#example-2:-polytropic-work|Examples]]
 
 -   The work done depends on the process path relating pressure (P) and volume (V).
     -   **Isobaric Process ($P=C$)**:
@@ -85,10 +84,10 @@ This is the work associated with the expansion or compression of a gas in a pist
 This is the principle of conservation of energy.
 -   **For a Process**: The change in the total energy of a system is equal to the net heat added to the system minus the net work done by the system.
     $$\Delta U = Q - W$$
-    > See also: [Examples](Semester%201/Mechanical/Unit%201/Examples.md#Example%206:%20Stirring%20Work)
+    > See also: [[Examples#example-6:-stirring-work|Examples]]
 -   **For a Cycle**: Since the system returns to its initial state, the change in internal energy is zero ($\Delta U = 0$). Therefore, the net heat transfer equals the net work done.
     $$Q_{net} = W_{net}$$
-    > See also: [Examples](Semester%201/Mechanical/Unit%201/Examples.md#Example%204:%20First%20Law%20for%20a%20Cycle)
+    > See also: [[Examples#example-4:-first-law-for-a-cycle|Examples]]
 
 ### **Second Law of Thermodynamics**
 The first law states that energy is conserved, but the second law provides direction and sets limits on the conversion of heat to work.
@@ -150,7 +149,7 @@ A four-stroke cycle is completed in four piston strokes (two crankshaft revoluti
     $$\eta_{bth} = \frac{BP}{m_f \times CV}$$
 -   **Brake Specific Fuel Consumption (BSFC)**: The mass of fuel consumed per unit of brake power produced per hour.
     $$BSFC = \frac{m_f (\text{kg/hr})}{BP (\text{kW})}$$
-> See also: [Examples](Semester%201/Mechanical/Unit%201/Examples.md#Example%208:%20IC%20Engine%20Performance)
+> See also: [[Examples#example-8:-ic-engine-performance|Examples]]
 
 ---
 
@@ -211,4 +210,4 @@ EVs inherently possess higher energy efficiency due to several factors:
 3.  **No Idling Losses**: An EV's electric motor consumes virtually no energy when the vehicle is stationary (e.g., at a traffic light). An ICE, however, continues to burn fuel while idling, wasting energy.
 4.  **Fewer Moving Parts**: The simpler drivetrain of an EV means fewer mechanical losses due to friction compared to an ICE vehicle's complex transmission and engine components.
 ***
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]

@@ -2,9 +2,9 @@
 dg-publish: true
 ---
 
-# [[Physics|Back]]
+# [[../Physics|Back]]
 ***
-[[Semester 1/Physics/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 2/Examples|Examples]] | [[Semester 1/Physics/Unit 2/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 2: Q&A and Worked Problems
 
@@ -439,4 +439,4 @@ $g_{2D}(E) = \frac{4\pi m}{h^2}$.
 **Result:** The density of states in 2D is constant, independent of energy.
 
 ***
-# [[Physics|Back]]
+# [[../Physics|Back]]

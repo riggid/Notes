@@ -2,7 +2,6 @@
 dg-publish: true
 dg-home: true
 ---
-
 ```dataviewjs
 dv.container.id = "dashboard-grid";
 // --- Configuration ---
@@ -97,12 +96,25 @@ function createCard(title, icon) {
 function createButton(text, icon, path) {
     const link = document.createElement("a");
     link.className = "subject-button";
-    link.href = "#";
+    
+    // Web-friendly HREF: Slugify path (Matches Electrical.md logic)
+    // This ensures consistency with the working Unit navigation
+    let cleanPath = path.replace(".md", "");
+    let segments = cleanPath.split("/");
+    let slugSegments = segments.map(s => s.toLowerCase().replace(/[\s&]+/g, '-').replace(/[^a-z0-9-]/g, ''));
+    let webPath = "/" + slugSegments.join("/");
+    link.href = webPath;
+    
     link.innerHTML = `<span class="button-icon">${icon}</span> ${text}`;
+    
     link.addEventListener("click", (e) => {
-        e.preventDefault();
-        app.workspace.openLinkText(path, "", false);
+        const appInstance = dv.app || app;
+        if (typeof appInstance !== "undefined" && appInstance.workspace) {
+            e.preventDefault();
+            appInstance.workspace.openLinkText(path, "", false);
+        }
     });
+
     return link;
 }
 ```

@@ -2,9 +2,9 @@
 dg-publish: true
 ---
 
-# [[Physics|Back]]
+# [[../Physics|Back]]
 ***
-[[Semester 1/Physics/Unit 4/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 4/Examples|Examples]] | [[Semester 1/Physics/Unit 4/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 
 # Unit 7: Lasers, Optoelectronics, and Advanced Materials - Examples

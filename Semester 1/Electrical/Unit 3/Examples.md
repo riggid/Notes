@@ -1,14 +1,14 @@
 ---
 dg-publish: true
 ---
-# [Back](../../Electrical.md)
+# [[../Electrical|Back]]
 ***
-[Core Notes](Core%20Notes.md) | [Examples](Examples.md) | [Questions](Questions.md)
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 
 # Unit 3 Examples: Three Phase Systems
 
-> See also: [Core Notes](Core%20Notes.md#1-three-phase-balanced-systems)
+> See also: [[Core Notes#1-three-phase-balanced-systems|Core Notes]]
 
 ## 1. Balanced Star Connected Systems
 

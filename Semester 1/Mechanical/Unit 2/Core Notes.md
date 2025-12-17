@@ -1,10 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Mechanical|Back]] 
+# [[../Mechanical|Back]] 
 ***
-[[Semester 1/Mechanical/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Mechanical/Unit 2/Examples|Examples]] | [[Semester 1/Mechanical/Unit 2/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 2: Engineering Materials, Stress Analysis, and Power Transmission
 
@@ -230,7 +229,7 @@ Mechanics of materials (also known as strength of materials) is a fundamental br
 ## Stress-Strain Diagram
 
 The stress-strain diagram is a fundamental plot, typically obtained from a tensile test on a Universal Testing Machine (UTM), that illustrates the relationship between engineering stress and engineering strain for a material. It provides crucial insights into a material's mechanical properties.
-![](Core%20Notes-2.png)
+![[Core Notes-2.png]]
 ### Stress-Strain Diagram for Mild Steel (A Ductile Material)
 
 1.  **O-A (Linear Elastic Region)**:
@@ -469,4 +468,4 @@ A combination of two or more gears used to transmit motion and power, achieving 
 *   **Planetary (Epicyclic) Gear Train**: A more complex gear train where the axes of some gears (planet gears) revolve around the axis of another central gear (sun gear). This involves a sun gear, planet gears, a planet carrier, and often a ring gear. Offers very high speed ratios, compact design, and the ability to provide differential action.
 
 ---
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]

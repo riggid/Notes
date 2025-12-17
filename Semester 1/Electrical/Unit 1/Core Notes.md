@@ -1,8 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Electrical|Back]]
+# [[../Electrical|Back]]
+***
+[[Core Notes]] | [[Examples]] | [[Questions]]
 *** 
 # Unit 1: Electrical Circuit Analysis
 
@@ -27,8 +28,12 @@ dg-publish: true
 ## Basic Laws and Definitions
 
 ### **Electric Current & Potential Difference**
-- **Electric Current (I)**: The rate of flow of electric charge through a conductor's cross-section. It is defined as the net rate of flow of charge past a cross-section. It is measured in **Amperes (A)**, where `1 A = 1 Coulomb/second`.
-- **Potential Difference (V)**: Also known as **Voltage**. It is the work or energy required to move a unit positive charge from one terminal to another. It is the "pressure" that drives the current. It is measured in **Volts (V)**, where `1 V = 1 Joule/Coulomb`.
+- **Electric Current (I)**: The rate of flow of electric charge through a conductor's cross-section.
+  $$i(t) = \frac{dq}{dt}$$
+  It is measured in **Amperes (A)**, where `1 A = 1 Coulomb/second`.
+- **Potential Difference (V)**: Also known as **Voltage**. It is the work or energy required to move a unit positive charge from one terminal to another.
+  $$v(t) = \frac{dw}{dq}$$
+  It is measured in **Volts (V)**, where `1 V = 1 Joule/Coulomb`.
 
 ### **Ohm's Law**
 At a constant temperature, the potential difference (`V`) across a conductor is directly proportional to the current (`I`) flowing through it.
@@ -38,7 +43,15 @@ $$V \propto I \implies V=IR$$
 - **Conductance (G)**: The reciprocal of resistance, representing how easily current flows. It is measured in **Siemens (S)**.
   $$G = \frac{1}{R}$$
 
-![Ohm's Law Circuit](https://upload.wikimedia.org/wikipedia/commons/8/83/Ohm%27s_law_simple_circuit.svg)
+![[https://upload.wikimedia.org/wikipedia/commons/8/83/Ohm's_law_simple_circuit.svg|Ohm's Law Circuit]]
+
+### **Circuit States: Open & Short Circuit**
+- **Short Circuit**: A path of zero resistance ($R=0$).
+    -   **Voltage**: Always zero ($V=0$) across the short.
+    -   **Current**: Limited only by the rest of the circuit (can be very high).
+- **Open Circuit**: A path of infinite resistance ($R=\infty$).
+    -   **Current**: Always zero ($I=0$).
+    -   **Voltage**: Determined by the rest of the circuit (can be high).
 
 ### **Sign Conventions for Voltage and Current**
 - **Passive Sign Convention**: When current enters the positive terminal of an element, the element is **absorbing** power.
@@ -49,6 +62,7 @@ $$V \propto I \implies V=IR$$
 
 ### **Electric Power (P)**
 The rate at which electrical energy is absorbed or delivered by a circuit element. It is measured in **Watts (W)**.
+$$p(t) = \frac{dw}{dt} = v(t) \cdot i(t)$$
 $$P = VI$$
 In a resistive circuit, $P = I^2R = V^2/R$.
 
@@ -60,17 +74,17 @@ In a resistive circuit, $P = I^2R = V^2/R$.
 The algebraic sum of currents entering a junction (or node) is zero. This implies that the total current flowing into a node must equal the total current flowing out of it, representing the conservation of charge.
 $$\sum I_{in} = \sum I_{out} \quad \text{or} \quad \sum I_{node} = 0$$
 
-![Kirchhoff's Current Law](Attachments/kcl_diagram.png)
+![[Attachments/kcl_diagram.png|Kirchhoff's Current Law]]
 
-> For a numerical problem, see: [Q&A Examples (Voltage)](Semester%201/Electrical/Unit%201/Q&A.md#Question%202:%20Find%20Voltage%20$V_{AB}$)
+> For a numerical problem, see: [[Questions#question-2:-find-voltage-$v_{ab}$|Q&A Examples (Voltage)]]
 
 ### **Kirchhoff’s Voltage Law (KVL)**
 The algebraic sum of all voltages (rises and drops) around any closed path (or loop) in an electric network is zero. This represents the conservation of energy.
 $$\sum V = 0$$
 
-![Kirchhoff's Voltage Law](Attachments/kvl_diagram.png)
+![[Attachments/kvl_diagram.png|Kirchhoff's Voltage Law]]
 
-> For numerical problems, see: [Examples (Basic KVL)](Semester%201/Electrical/Unit%201/Examples.md#Example%201:%20Basic%20KVL), [Q&A Examples (Voltage)](Semester%201/Electrical/Unit%201/Q&A.md#Question%202:%20Find%20Voltage%20$V_{AB}$)
+> For numerical problems, see: [[Examples#example-1:-basic-kvl|Examples (Basic KVL)]], [[Questions#question-2:-find-voltage-$v_{ab}$|Q&A Examples (Voltage)]]
 
 ---
 
@@ -94,9 +108,9 @@ $$\sum V = 0$$
         $$I_1 = I_{total} \left( \frac{R_2}{R_1 + R_2} \right)$$
         Similarly, for $I_2$: $$I_2 = I_{total} \left( \frac{R_1}{R_1 + R_2} \right)$$
 
-![Series and Parallel Resistors](Attachments/series_parallel_resistors.png)
+![[Attachments/series_parallel_resistors.png|Series and Parallel Resistors]]
 
-> For numerical applications, see: [Examples (Current Division)](Semester%201/Electrical/Unit%201/Examples.md#Example%204:%20Current%20Division), [Examples (Voltage Division)](Semester%201/Electrical/Unit%201/Examples.md#Example%205:%20Voltage%20Division)
+> For numerical applications, see: [[Examples#example-4:-current-division|Examples (Current Division)]], [[Examples#example-5:-voltage-division|Examples (Voltage Division)]]
 
 ### **Source Types**
 - **Ideal Voltage Source**: Provides a constant terminal voltage that is independent of the current drawn from it. It has **zero internal resistance** ($R_{int}=0$).
@@ -112,29 +126,29 @@ A practical voltage source (in series with a resistor) can be converted into an 
 - **Current Source to Voltage Source**: A current source $I_S$ in parallel with a resistor $R_S$ is equivalent to a voltage source $V_S$ in series with the same resistor $R_S$.
   $$V_S = I_S R_S$$
 
-![Source Transformation](Attachments/source_transformation_diagram.png)
+![[Attachments/source_transformation_diagram.png|Source Transformation]]
 
-> For numerical problems, see: [Examples (Source Transformation)](Semester%201/Electrical/Unit%201/Examples.md#Example%207:%20Source%20Transformation), [Q&A (Lecture 3, Q2)](Semester%201/Electrical/Unit%201/Q&A.md#Question%202:%20Find%20Current%20using%20Source%20Transformation)
+> For numerical problems, see: [[Examples#example-7:-source-transformation|Examples (Source Transformation)]], [[Questions#question-2:-find-current-using-source-transformation|Q&A (Lecture 3, Q2)]]
 
 ### **Star (Y) and Delta ($\Delta$) Transformations**
 These transformations are used to simplify complex resistive networks that cannot be reduced using simple series or parallel combinations (e.g., bridge circuits). They allow conversion between a three-terminal Star (Y) configuration and an equivalent Delta ($\Delta$) configuration.
 
 - **Delta to Star Transformation**:
     *   For a delta network with resistors $R_{ab}, R_{bc}, R_{ca}$ connected between terminals A, B, C.
-    *   The equivalent star network has resistors $R_a, R_b, R_c$ connected from the common center node to terminals A, B, C respectively.
+    *   **Logic**: The star resistor connected to a specific node is the product of the two adjacent delta resistors connected to that node, divided by the sum of all three delta resistors.
     $$R_a = \frac{R_{ab}R_{ca}}{R_{ab}+R_{bc}+R_{ca}}$$
     $$R_b = \frac{R_{ab}R_{bc}}{R_{ab}+R_{bc}+R_{ca}}$$
     $$R_c = \frac{R_{bc}R_{ca}}{R_{ab}+R_{bc}+R_{ca}}$$
 - **Star to Delta Transformation**:
     *   For a star network with resistors $R_a, R_b, R_c$ connected from a common center node to terminals A, B, C.
-    *   The equivalent delta network has resistors $R_{ab}, R_{bc}, R_{ca}$ connected between terminals A-B, B-C, C-A respectively.
-    $$R_{ab} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_c}$$
-    $$R_{bc} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_a}$$
-    $$R_{ca} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_b}$$
+    *   **Logic**: The delta resistor between two terminals is the sum of the two star resistors connected to those terminals, plus their product divided by the third (opposite) star resistor.
+    $$R_{ab} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_c} = R_a + R_b + \frac{R_a R_b}{R_c}$$
+    $$R_{bc} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_a} = R_b + R_c + \frac{R_b R_c}{R_a}$$
+    $$R_{ca} = \frac{R_aR_b+R_bR_c+R_cR_a}{R_b} = R_c + R_a + \frac{R_c R_a}{R_b}$$
 
-![Star Delta Transformation](Attachments/star_delta_transform.png)
+![[Attachments/star_delta_transform.png|Star Delta Transformation]]
 
-> For numerical problems, see: [Examples (Star-Delta)](Semester%201/Electrical/Unit%201/Examples.md#Example%208:%20Star-Delta%20Transformation), [Q&A (Lecture 7, Q2 & Q3)](Semester%201/Electrical/Unit%201/Q&A.md#Question%202:%20Delta%20to%20Star%20Transformation)
+> For numerical problems, see: [[Examples#example-8:-star-delta-transformation|Examples (Star-Delta)]], [[Questions#question-2:-delta-to-star-transformation|Q&A (Lecture 7, Q2 & Q3)]]
 
 ---
 
@@ -156,7 +170,7 @@ A systematic application of KVL to find unknown mesh currents in a circuit.
         *   Write a KVL equation around the outer boundary of this supermesh, *treating the current source branch as if it were open*.
         *   Write a KCL (constraint) equation at one of the nodes, expressing the relationship between the two mesh currents and the current source value.
 4.  **Solve Simultaneous Equations**: Solve the resulting system of linear equations to find all mesh currents.
-> For numerical problems, see: [Q&A (Lecture 10, Q1 & Q2)](Semester%201/Electrical/Unit%201/Q&A.md#Question%201%20&%202:%20Mesh%20Analysis), [Examples (Basic & With Current Sources)](Semester%201/Electrical/Unit%201/Examples.md#Example%2013:%20Basic%20Mesh%20Analysis)
+> For numerical problems, see: [[Questions#question-1-&-2:-mesh-analysis|Q&A (Lecture 10, Q1 & Q2)]], [[Examples#example-13:-basic-mesh-analysis|Examples (Basic & With Current Sources)]]
 
 ### **Superposition Theorem**
 In any **linear circuit** with multiple independent sources, the total current through or voltage across any element is the algebraic sum of the current or voltage produced by each independent source acting alone.
@@ -169,7 +183,7 @@ In any **linear circuit** with multiple independent sources, the total current t
 4.  **Repeat**: Repeat steps 1-3 for each independent source in the circuit.
 5.  **Algebraic Sum**: Algebraically add the individual responses (contributions) to find the total response in the element. Pay close attention to direction (positive for one direction, negative for opposite).
 **Limitations**: This theorem applies to voltage and current, but **not directly to power**, as power is a non-linear quantity ($P=I^2R$).
-> For numerical problems, see: [Q&A (Superposition Theorem)](Semester%201/Electrical/Unit%201/Q&A.md#Determine%20the%20current%20through%20the%20$2\Omega$%20resistor%20using%20Superposition%20Theorem.), [Examples (Superposition)](Semester%201/Electrical/Unit%201/Examples.md#Example%2016:%20Superposition%20Theorem%201)
+> For numerical problems, see: [[Questions#determine-the-current-through-the-$2\omega$-resistor-using-superposition-theorem.|Q&A (Superposition Theorem)]], [[Examples#example-16:-superposition-theorem-1|Examples (Superposition)]]
 
 ### **Thevenin’s Theorem**
 Any two-terminal linear electrical network can be replaced by an equivalent circuit consisting of a single voltage source ($V_{TH}$) in series with a single resistor ($R_{TH}$). This simplifies analysis of complex circuits for varying loads.
@@ -185,6 +199,6 @@ Any two-terminal linear electrical network can be replaced by an equivalent circ
 3.  **Draw Equivalent Circuit**: Construct the Thevenin equivalent circuit with $V_{TH}$ in series with $R_{TH}$.
 4.  **Connect Load**: Reconnect the original load to the Thevenin equivalent circuit to find the load current or voltage.
 
-![Thevenin Equivalent Circuit](Attachments/thevenin_equivalent_circuit.png)
+![[Attachments/thevenin_equivalent_circuit.png|Thevenin Equivalent Circuit]]
 
-> For numerical problems, see: [Q&A (Thevenin's)](Semester%201/Electrical/Unit%201/Q&A.md#Obtain%20the%20Thevenin's%20Equivalent%20between%20the%20terminals%20A%20&%20B.), [Examples (Thevenin's)](Semester%201/Electrical/Unit%201/Examples.md#Example%2019:%20Thevenin's%20Theorem%201)
+> For numerical problems, see: [[Questions#obtain-the-thevenin's-equivalent-between-the-terminals-a-&-b.|Q&A (Thevenin's)]], [[Examples#example-19:-thevenin's-theorem-1|Examples (Thevenin's)]]

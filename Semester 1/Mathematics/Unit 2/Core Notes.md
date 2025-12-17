@@ -1,10 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Mathematics|Back]]
+# [[../Mathematics|Back]]
 ***
-[[Semester 1/Mathematics/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Mathematics/Unit 2/Examples|Examples]] | [[Semester 1/Mathematics/Unit 2/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 2: Higher-Order Differential Equations
 
@@ -39,7 +38,7 @@ Let the roots of the A.E. be $m_1, m_2, ..., m_n$. The form of the C.F. depends 
 If all roots $m_1, m_2, ..., m_n$ are real and different, the C.F. is:
 $$y_c = c_1 e^{m_1 x} + c_2 e^{m_2 x} + \cdots + c_n e^{m_n x}$$
 
-*See [Example 1](Examples.md#example-1-cf-real-distinct-roots) and [Example 2](Examples.md#example-2-cf-real-distinct-roots-ivp).*
+*See [[Examples#example-1-cf-real-distinct-roots|Example 1]] and [[Examples#example-2-cf-real-distinct-roots-ivp|Example 2]].*
 
 **Case II: Roots are Real and Repeated**
 - If a root $m_1$ is repeated twice (i.e., $m_1 = m_2$), the C.F. for those roots is:
@@ -48,13 +47,13 @@ $$y_c = c_1 e^{m_1 x} + c_2 e^{m_2 x} + \cdots + c_n e^{m_n x}$$
 - If a root $m_1$ is repeated three times, the C.F. is:
   $$y_c = (c_1 + c_2 x + c_3 x^2) e^{m_1 x}$$
  
-*See [Example 3](Examples.md#example-3-cf-repeated-roots) and [Example 4](Examples.md#example-4-cf-repeated-roots-ivp).*
+*See [[Examples#example-3-cf-repeated-roots|Example 3]] and [[Examples#example-4-cf-repeated-roots-ivp|Example 4]].*
 
 **Case III: Roots are Complex (Imaginary)**
 - If a pair of roots is complex, $m = \alpha \pm i\beta$, the C.F. for that pair is:
   $$y_c = e^{\alpha x} (C_1 \cos(\beta x) + C_2 \sin(\beta x))$$
   
-*See [Example 5](Examples.md#example-5-cf-complex-roots) and [Example 6](Examples.md#example-6-cf-complex-roots-ivp).*
+*See [[Examples#example-5-cf-complex-roots|Example 5]] and [[Examples#example-6-cf-complex-roots-ivp|Example 6]].*
 
 **Case IV: Roots are Complex and Repeated**
 - If a complex pair $m = \alpha \pm i\beta$ is repeated twice, the C.F. is:
@@ -71,7 +70,7 @@ $$P.I. = \frac{1}{f(D)} e^{ax} = \frac{1}{f(a)} e^{ax}, \quad \text{provided } f
 **If $f(a) = 0$ (Case of Failure):**
 If $a$ is a root of the A.E. repeated $r$ times, the rule is:
 $$P.I. = \frac{x^r}{f^{(r)}(a)} e^{ax} \quad \text{or} \quad P.I. = x^r \frac{1}{\phi(a)} e^{ax} \text{ where } f(D) = (D-a)^r \phi(D)$$
-*See [Example 7](Examples.md#example-7-pi-case-i-eax) and [Example 8](Examples.md#example-8-pi-case-i-failure-case).*
+*See [[Examples#example-7-pi-case-i-eax|Example 7]] and [[Examples#example-8-pi-case-i-failure-case|Example 8]].*
 
 **Case II: $X = \sin(ax+b)$ or $\cos(ax+b)$**
 Replace $D^2$ with $-a^2$ in $f(D^2)$:
@@ -79,18 +78,18 @@ $$P.I. = \frac{1}{f(D^2)} \sin(ax+b) = \frac{1}{f(-a^2)} \sin(ax+b), \quad \text
 **If $f(-a^2) = 0$ (Case of Failure):**
 The rule is:
 $$P.I. = x \frac{1}{f'(-a^2)} \sin(ax+b)$$
-*See [Example 9](Examples.md#example-9-pi-case-ii-cosax) and [Example 10](Examples.md#example-10-pi-case-ii-failure-case).*
+*See [[Examples#example-9-pi-case-ii-cosax|Example 9]] and [[Examples#example-10-pi-case-ii-failure-case|Example 10]].*
 
 **Case III: $X = x^m$**
 Expand $[f(D)]^{-1}$ in ascending powers of $D$ using binomial expansion, and operate on $x^m$. Stop after the $D^m$ term, as higher derivatives of $x^m$ are zero.
 $$P.I. = [f(D)]^{-1} x^m = (a_0 + a_1 D + a_2 D^2 + \cdots + a_m D^m) x^m$$
-*See [Example 11](Examples.md#example-11-pi-case-iii-xm).*
+*See [[Examples#example-11-pi-case-iii-xm|Example 11]].*
 
 **Case IV: $X = e^{ax} V(x)$**
 Use the **exponential shift theorem**. Move $e^{ax}$ to the left and replace $D$ with $(D+a)$:
 $$P.I. = \frac{1}{f(D)} [e^{ax} V(x)] = e^{ax} \frac{1}{f(D+a)} V(x)$$
 Then, solve for $V(x)$ using one of the other cases.
-*See [Example 12](Examples.md#example-12-pi-case-iv-eaxv) and [Example 15](Examples.md#example-15-full-solution-case-iv).*
+*See [[Examples#example-12-pi-case-iv-eaxv|Example 12]] and [[Examples#example-15-full-solution-case-iv|Example 15]].*
 
 **Case V: $X$ is any other function**
 Resolve $\frac{1}{f(D)}$ into partial fractions and apply each fraction to $X$:
@@ -98,7 +97,7 @@ $$P.I. = \left( \frac{A_1}{D-m_1} + \frac{A_2}{D-m_2} + \cdots \right) X$$
 Then use the formula:
 $$\frac{1}{D-a} X = e^{ax} \int X e^{-ax} dx$$
 
-*This method is also used for $X = \sec(ax)$ or $\tan(ax)$. See [Example 16](Examples.md#example-16-pi-case-v-secax).*
+*This method is also used for $X = \sec(ax)$ or $\tan(ax)$. See [[Examples#example-16-pi-case-v-secax|Example 16]].*
 *Note: An alternative for this case is the **Method of Variation of Parameters**.*
 
 ---
@@ -116,7 +115,7 @@ This substitution transforms the operators as follows:
 - $x^2\frac{d^2y}{dx^2} = D(D-1)y$
 - $x^3\frac{d^3y}{dx^3} = D(D-1)(D-2)y$
 where $D = \frac{d}{dz}$.
-*See [Example 17](Examples.md#example-17-cauchy-euler-equation) and [Example 18](Examples.md#example-18-cauchy-euler-equation-pi).*
+*See [[Examples#example-17-cauchy-euler-equation|Example 17]] and [[Examples#example-18-cauchy-euler-equation-pi|Example 18]].*
 
 ### Legendre's Homogeneous Linear Equation
 An equation of the form:
@@ -130,7 +129,7 @@ This substitution transforms the operators as follows:
 - $(a+bx)^2\frac{d^2y}{dx^2} = b^2 D(D-1)y$
 - $(a+bx)^3\frac{d^3y}{dx^3} = b^3 D(D-1)(D-2)y$
 where $D = \frac{d}{dz}$.
-*See [Example 19](Examples.md#example-19-legendres-equation).*
+*See [[Examples#example-19-legendres-equation|Example 19]].*
 
 ---
 ## Applications of Linear Differential Equations
@@ -141,7 +140,7 @@ Based on Kirchhoff's voltage law ($E_L + E_R + E_C = E$), the differential equat
 $$L\frac{d^2q}{dt^2} + R\frac{dq}{dt} + \frac{1}{C}q = E(t)$$
 
 Where $i = \frac{dq}{dt}$, $L$ is inductance (Henrys), $R$ is resistance (Ohms), $C$ is capacitance (Farads), and $E(t)$ is the electromotive force (Volts).
-*See [Example 20](Examples.md#example-20-lcr-circuit-setup) and [Example 21](Examples.md#example-21-lcr-circuit-full-solution).*
+*See [[Examples#example-20-lcr-circuit-setup|Example 20]] and [[Examples#example-21-lcr-circuit-full-solution|Example 21]].*
 
 ### 2. Mass-Spring System (Mechanical Vibrations) 
 
@@ -161,6 +160,6 @@ The solution is $x(t) = c_1 \cos(\omega t) + c_2 \sin(\omega t)$.
 - **Amplitude:** $A = \sqrt{c_1^2 + c_2^2}$
 - **Period:** $T = \frac{2\pi}{\omega}$
 - **Natural Frequency:** $f = 1/T$
-*See [Example 22](Examples.md#example-22-mass-spring-system-full-solution).*
+*See [[Examples#example-22-mass-spring-system-full-solution|Example 22]].*
 ***
-# [[Mathematics|Back]]
+# [[../Mathematics|Back]]

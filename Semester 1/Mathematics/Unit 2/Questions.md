@@ -1,8 +1,7 @@
 ---
 dg-publish: true
 ---
-
-# [[Mathematics|Back]]
+# [[../Mathematics|Back]]
 ***
 # Unit 2: Q&A and Worked Problems
 

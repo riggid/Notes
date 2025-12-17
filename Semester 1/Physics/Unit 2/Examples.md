@@ -2,9 +2,9 @@
 dg-publish: true
 ---
 
-# [[Physics|Back]]
+# [[../Physics|Back]]
 ***
-[[Semester 1/Physics/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 2/Examples|Examples]] | [[Semester 1/Physics/Unit 2/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 2: Worked Examples
 
@@ -230,4 +230,4 @@ The derivation involves:
 The result is $g(E) = C \cdot E^{1/2}$, where $C = \frac{\pi}{2} (\frac{8m}{h^2})^{3/2}$.
 
 ***
-# [[Physics|Back]]
+# [[../Physics|Back]]

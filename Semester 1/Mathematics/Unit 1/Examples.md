@@ -1,8 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Mathematics|Back]]
+# [[../Mathematics|Back]]
+***
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Questions and Examples from Unit 1
 

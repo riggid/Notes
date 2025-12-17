@@ -2,9 +2,9 @@
 dg-publish: true
 ---
 
-# [[Physics|Back]]
+# [[../Physics|Back]]
 ***
-[[Semester 1/Physics/Unit 1/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 1/Examples|Examples]] | [[Semester 1/Physics/Unit 1/Questions|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 1: Worked Examples
 
@@ -167,4 +167,4 @@ This is in the form $\hat{A}\psi = a\psi$.
 The eigenvalue of momentum is $p = \hbar k$.
 
 ***
-# [[Physics|Back]]
+# [[../Physics|Back]]

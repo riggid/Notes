@@ -1,10 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Electrical|Back]]
+# [[../Electrical|Back]]
 ***
-[[Semester 1/Electrical/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Electrical/Unit 2/Examples|Examples]] | [[Semester 1/Electrical/Unit 2/Questions|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 2: Q&A and Worked Problems
 
@@ -612,7 +611,7 @@ Phasor Diagram:
 
 ---
 ### 27. 4kW inductive load, 200V, 50Hz, 0.8 Lag pf. i) Find P, Q, S. ii) Find C in parallel for unity pf.
-![](Q&A-1.png)
+![[Q&A-1.png]]
 #### Solution:
 i) Powers:
 Active Power $P = 4$ kW $= 4000$ W (given).
@@ -656,4 +655,4 @@ To get unity pf, net $Q$ must be zero. The current net $Q$ is $+0.82$ kVAR (indu
 Capacitor rating required = $0.82$ kVAR.
 
 ***
-# [[Electrical|Back]]
+# [[../Electrical|Back]]

@@ -1,10 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Electrical|Back]]
+# [[../Electrical|Back]]
 ***
-[[Semester 1/Electrical/Unit 2/Core Notes|Core Notes]] | [[Semester 1/Electrical/Unit 2/Examples|Examples]] | [[Semester 1/Electrical/Unit 2/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 2: Worked Examples
 
@@ -20,7 +19,7 @@ ii) Angular frequency $\omega = 2\pi f = 2\pi(50) = 100\pi$ rad/s $\approx 314.1
 ### Example 2: Instantaneous Value
 The maximum value of a sinusoidal alternating current of frequency 50Hz is 25 A. Write the equation for the instantaneous expression of current. Determine its value at 3ms and 14 ms.
 **Solution:**
-![](Examples-2.png)
+![[Examples-2.png]]
 Angular frequency, $\omega = 2\pi f = 100\pi$ rad/s.
 The instantaneous expression is $i(t) = I_m \sin(\omega t) = 25 \sin(100\pi t)$ A.
 Value at $t = 3$ ms $= 0.003$ s:
@@ -57,7 +56,7 @@ Or $i_1$ lags $i_2$ by $135^{\circ}$.
 ### Example 4: Phasor Representation
 Represent the following as phasors and draw the phasor diagram: a) $f_1(t)=100\sin(100\pi t)$, b) $f_2(t)=200\sin(100\pi t+60^{\circ})$, c) $f_3(t)=100\cos(100\pi t-60^{\circ})$.
 **Solution:**
-![](Examples-1.png)
+![[Examples-1.png]]
 First, convert cosine to sine form:
 $f_3(t) = 100 \cos(100\pi t - 60^{\circ}) = 100 \sin(100\pi t - 60^{\circ} + 90^{\circ}) = 100 \sin(100\pi t + 30^{\circ})$.
 
@@ -110,14 +109,14 @@ iii) Instantaneous Current:
 iv) Phasor Diagram:
    Voltage Phasor: $\bar{V} = \frac{100}{\sqrt{2}} \angle 0^{\circ}$ V.
    Current Phasor: $\bar{I} = \frac{3.14}{\sqrt{2}} \angle 90^{\circ}$ A.
-   ![](Examples-3.png)
+   ![[Examples-3.png]]
 
 ---
 ### Example 7: Series RL Calculations
 A resistor R and an inductor (with internal resistance r and inductance L) are in series connected to 240V supply. Current is 3A lagging voltage by $37^{\circ}$. Voltage across the inductor component is 171V. Find R, r and $X_L$.
 
 **Solution:**
-![](Examples-4.png)
+![[Examples-4.png]]
 Let current be reference: $\bar{I} = 3 \angle 0^{\circ}$ A.
 Supply voltage leads current by $37^{\circ}$: $\bar{V} = 240 \angle 37^{\circ}$ V.
 Total Impedance $\bar{Z}_T = \bar{V}/\bar{I} = (240 \angle 37^{\circ}) / (3 \angle 0^{\circ}) = 80 \angle 37^{\circ} \, \Omega$.
@@ -201,7 +200,7 @@ $pf = \cos \phi = \cos 60^{\circ} = 0.5$. Since current lags voltage ($\phi$ is 
 ### Example 11: Parallel Circuit Admittance
 Impedances $Z_1 = 7+j5 \, \Omega$ and $Z_2 = 10-j8 \, \Omega$ are in parallel across 230V, 50Hz. Find total Y, G, B, I, pf.
 **Solution:**
-![](Examples-10.png)
+![[Examples-10.png]]
 Admittance of branch 1: $\bar{Y}_1 = 1/\bar{Z}_1 = 1/(7+j5) = \frac{7-j5}{7^2+5^2} = \frac{7-j5}{74} = 0.0946 - j0.0676$ S.
 Admittance of branch 2: $\bar{Y}_2 = 1/\bar{Z}_2 = 1/(10-j8) = \frac{10+j8}{10^2+(-8)^2} = \frac{10+j8}{164} = 0.0610 + j0.0488$ S.
 
@@ -220,7 +219,7 @@ Power Factor $pf = \cos \phi = \cos(-6.9^{\circ}) \approx 0.99$. Since current l
 ### Example 12: Parallel RLC Analysis
 $R=2.5\Omega$, $X_L=4\Omega$, $X_C=10\Omega$ in parallel across 10V, 50Hz. Find admittances, branch currents, total current.
 **Solution:**
-![](Examples-5.png)
+![[Examples-5.png]]
 i) Admittances:
 $\bar{Y}_R = G = 1/R = 1/2.5 = 0.4$ S.
 $\bar{Y}_L = -jB_L = 1/(jX_L) = 1/(j4) = -j0.25$ S.
@@ -327,7 +326,7 @@ The required voltage magnitude is approx 288.6 V.
 Loads connected in parallel: 15kW heating, 40kVA motor @ 0.6 lag, 20kW load @ 0.8 lag. Find total P, Q, S, pf.
 
 **Solution:**
-![](Examples-6.png)
+![[Examples-6.png]]
 Treat each load separately using power triangles.
 Load 1 (Heating): $P_1 = 15$ kW, $Q_1 = 0$ kVAR (Resistive, pf=1).
 Load 2 (Motor): $S_2 = 40$ kVA, $pf_2 = 0.6$ lag.
@@ -351,7 +350,7 @@ Overall Power Factor $pf_T = P_T / S_T = 59 / 75.43 \approx 0.782$. Since $Q_T$ 
 Single phase motor (400V, 50Hz) takes 31.7A at 0.7 lag pf. Find C to raise pf to 0.9 lag.
 
 **Solution:**
-![](Examples-9.png)
+![[Examples-9.png]]
 Initial state (Motor only):
 $V = 400$ V, $I_m = 31.7$ A, $\cos \phi_m = 0.7$ lag.
 $\phi_m = \arccos(0.7) \approx 45.57^{\circ}$.
@@ -376,11 +375,11 @@ $C = 1 / (2\pi f X_C) = 1 / (2\pi (50)(33.67)) \approx 94.5 \times 10^{-6}$ F $=
 Inductive load $P=2.5$ kW @ 0.71 lag pf. $V=230$ V, 50 Hz. Find C to raise pf to 0.866 lag.
 
 Case 1: Load only
-![](Examples-7.png)
+![[Examples-7.png]]
 
 Case 2: Load + Capacitor
 
-![](Examples-8.png)
+![[Examples-8.png]]
 **Solution:**
 Initial state:
 $P = 2500$ W, $\cos \phi_1 = 0.71$ lag.
@@ -403,4 +402,4 @@ $1035 = (230)^2 \times (2\pi \times 50) \times C$.
 $C = 1035 / (52900 \times 100\pi) \approx 62.4 \times 10^{-6}$ F $= 62.4 \, \mu F$.
 
 ***
-# [[Electrical|Back]]
+# [[../Electrical|Back]]

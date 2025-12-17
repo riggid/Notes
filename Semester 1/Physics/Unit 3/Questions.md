@@ -1,10 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Physics|Back]]
+# [[../Physics|Back]]
 ***
-[[Semester 1/Physics/Unit 3/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 3/Examples|Examples]] | [[Semester 1/Physics/Unit 3/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 3: Conceptual & Descriptive Practice Questions (Weeks 10-…)
 
@@ -36,7 +35,7 @@ The Classical Free Electron Theory (CFET), proposed by Drude and Lorentz (1904),
     The mean free path is the average distance an electron travels between successive collisions with ion cores or other scattering centers in a material. It is related to the relaxation time ($\tau$) and the electron's velocity ($v_{th}$ or $v_f$) by $\lambda = v \tau$.
 
 *   **(v) Relaxation time ($\tau$)**
-    The relaxation time (or mean free time) is the average time between two successive collisions of a conduction electron in a material. When an external electric field is applied, electrons accelerate, but collisions tend to restore them to equilibrium. $\tau$ is the characteristic time for this relaxation process. It is a key parameter in determining electrical conductivity. (See [Example 7: Relaxation Time in a Metal](../Examples.md#Example%207:%20Relaxation%20Time%20in%20a%20Metal))
+    The relaxation time (or mean free time) is the average time between two successive collisions of a conduction electron in a material. When an external electric field is applied, electrons accelerate, but collisions tend to restore them to equilibrium. $\tau$ is the characteristic time for this relaxation process. It is a key parameter in determining electrical conductivity. (See [[Examples#example-7:-relaxation-time-in-a-metal|Example 7: Relaxation Time in a Metal]])
 
 *   **(vi) Mobility ($\mu$)**
     Electron mobility is a measure of how quickly an electron (or hole) can move through a metal or semiconductor under the influence of an electric field. It is defined as the magnitude of drift velocity per unit electric field: $\mu = \frac{|\mathbf{v_d}|}{E}$. In CFET, $\mu = \frac{e\tau}{m}$. Its unit is m$^2$/(V s).
@@ -77,7 +76,7 @@ $$\sigma = \frac{ne^2\tau}{m}$$
 
 **5. What is a distribution function?**
 
-A **distribution function** is a mathematical function that describes how particles (or states, or properties) are distributed across different values of a relevant variable (e.g., energy, velocity, momentum) within a system. In statistical mechanics, these functions quantify the probability of finding a particle in a particular state or energy level at a given temperature. They are fundamental for characterizing the statistical behavior of large ensembles of particles. (Refer to [Core Notes.md](#distribution-functions) for more detail).
+A **distribution function** is a mathematical function that describes how particles (or states, or properties) are distributed across different values of a relevant variable (e.g., energy, velocity, momentum) within a system. In statistical mechanics, these functions quantify the probability of finding a particle in a particular state or energy level at a given temperature. They are fundamental for characterizing the statistical behavior of large ensembles of particles. (Refer to [[#distribution-functions|Core Notes.md]] for more detail).
 
 **6. Write a brief review of Maxwell-Boltzmann distribution function.**
 
@@ -89,7 +88,7 @@ The **Maxwell-Boltzmann (MB) distribution function** is a classical statistical 
     *   **No State Limit:** There is no restriction on how many particles can occupy the same energy state.
     *   **Thermal Velocity (in CFET):** In the context of the Classical Free Electron Theory (CFET), electrons are assumed to obey Maxwell-Boltzmann statistics. This leads to the prediction that the average kinetic energy of a free electron is $\frac{3}{2}k_B T$, and their thermal velocity is $v_{th} = \sqrt{\frac{3k_B T}{m}}$.
 
-*   **Review in Context of CFET:** The CFET uses the Maxwell-Boltzmann distribution to model electron energies. While this simplified the theory, it led to several significant drawbacks, such as the incorrect prediction for the electronic specific heat (vastly overestimating it) and the wrong temperature dependence for resistivity. These failures ultimately highlighted the necessity of quantum mechanical treatment for electrons in metals. (Refer to [Core Notes.md](#maxwell-boltzmann-distribution-function) for more detail).
+*   **Review in Context of CFET:** The CFET uses the Maxwell-Boltzmann distribution to model electron energies. While this simplified the theory, it led to several significant drawbacks, such as the incorrect prediction for the electronic specific heat (vastly overestimating it) and the wrong temperature dependence for resistivity. These failures ultimately highlighted the necessity of quantum mechanical treatment for electrons in metals. (Refer to [[#maxwell-boltzmann-distribution-function|Core Notes.md]] for more detail).
 
 ---
 
@@ -117,7 +116,7 @@ These two concepts are the core defining features of a quantum free electron gas
     *   **Explanation:** Electrons are fermions, so they obey the Pauli Exclusion Principle: no two identical fermions can occupy the exact same quantum state simultaneously (a quantum state is defined by its energy, momentum, and spin).
     *   **Significance:** Because electrons cannot share states, they are forced to occupy successively higher energy levels, starting from the lowest available state. Even at absolute zero temperature (0K), electrons do not all collapse into the lowest energy level. Instead, they fill up the available states from the lowest energy until all electrons are accommodated, creating a "Fermi sea" of electrons up to the Fermi energy ($E_f$). This leads to a substantial average kinetic energy for electrons even at 0K, a concept entirely absent in classical physics.
 
-**In essence, the combination of quantum confinement leading to discrete energy levels, and the Pauli Exclusion Principle forcing electrons to occupy these levels sequentially, fills up a broad range of energy states, creating a highly energetic "sea" of electrons even at low temperatures, which is the hallmark of the quantum free electron gas.** (Refer to [Core Notes.md](#defining-features-of-a-quantum-free-electron-gas) for more detail).
+**In essence, the combination of quantum confinement leading to discrete energy levels, and the Pauli Exclusion Principle forcing electrons to occupy these levels sequentially, fills up a broad range of energy states, creating a highly energetic "sea" of electrons even at low temperatures, which is the hallmark of the quantum free electron gas.** (Refer to [[#defining-features-of-a-quantum-free-electron-gas|Core Notes.md]] for more detail).
 
 **9. Write the differences between Fermions and Bosons.**
 
@@ -132,7 +131,7 @@ Particles in the universe are fundamentally classified into two groups based on 
 | **Behavior at Low T**  | Tend to occupy distinct energy states, forming a "Fermi sea." | Tend to condense into the lowest energy quantum state (Bose-Einstein Condensation). |
 | **Examples**           | Electrons, Protons, Neutrons, Quarks, Neutrinos | Photons, Phonons, Gluons, Higgs boson, Cooper pairs |
 
-(Refer to [Core Notes.md](#fermions-vs-bosons) for more detail).
+(Refer to [[#fermions-vs-bosons|Core Notes.md]] for more detail).
 
 **10. Explain the concepts of Fermi Energy and Fermi velocity.**
 
@@ -142,7 +141,7 @@ Particles in the universe are fundamentally classified into two groups based on 
 *   **(ii) Fermi velocity ($v_f$)**
     Fermi velocity is the velocity of an electron that has a kinetic energy exactly equal to the Fermi energy ($E_f$). It represents the maximum velocity an electron can have at 0 Kelvin. It is calculated using the classical kinetic energy formula applied to this quantum energy: $E_f = \frac{1}{2}m v_f^2 \implies v_f = \sqrt{\frac{2E_f}{m}}$. For metals, Fermi velocities are typically very high (e.g., $1.6 \times 10^6 \text{ m/s}$ for copper), much greater than classical thermal velocities at room temperature. This substantial velocity at 0K highlights the quantum nature of electrons in a solid and is crucial for their transport properties.
 
-(Refer to [Core Notes.md](#fermi-energy-e_f-fermi-temperature-t_f-fermi-velocity-v_f) for more detail).
+(Refer to [[#fermi-energy-e_f-fermi-temperature-t_f-fermi-velocity-v_f|Core Notes.md]] for more detail).
 
 **11. Derive an expression for Fermi energy using the concept of density of states.**
 
@@ -169,7 +168,7 @@ The Fermi energy ($E_f$) at 0 Kelvin is defined as the highest energy level occu
     Taking the $\frac{2}{3}$ power of both sides:
     $$E_f = \left[ n \frac{3}{\pi} \left(\frac{h^2}{8m}\right)^{3/2} \right]^{2/3}$$
     $$E_f = \left(\frac{3n}{\pi}\right)^{2/3} \frac{h^2}{8m}$$
-This is the expression for the Fermi energy in terms of the electron (carrier) density $n$. (Refer to [Core Notes.md](#total-electron-concentration-n) for more detail).
+This is the expression for the Fermi energy in terms of the electron (carrier) density $n$. (Refer to [[#total-electron-concentration-n|Core Notes.md]] for more detail).
 
 **12. Plot the density of states for 1D and 2D systems. Relate DoS to nanomaterials' special properties.**
 
@@ -179,19 +178,19 @@ This is the expression for the Fermi energy in terms of the electron (carrier) d
     *   **Expression:** $g(E) \propto E^{-1/2}$
     *   **Description of Plot:** The plot of $g(E)$ versus energy $E$ for a 1D system shows an inverse square root dependence, $g(E) \propto E^{-1/2}$. This means that the density of states is highest at low energies close to the band edges and decreases as energy increases. The plot starts with a high value and quickly drops for increasing $E$. It is continuous between step-like changes as new 1D sub-bands are started.
     *   **Plot:**
-        ![1D Density of States Plot](https://www.tf.uni-kiel.de/matwis/ag_th/lectures/esm/esmfiles/image009.gif) *(Conceptual image for 1D DoS - actual image source: tf.uni-kiel.de)*
+        ![[https://www.tf.uni-kiel.de/matwis/ag_th/lectures/esm/esmfiles/image009.gif|1D Density of States Plot]] *(Conceptual image for 1D DoS - actual image source: tf.uni-kiel.de)*
 
 *   **2D System (e.g., Quantum Well):**
     *   **Expression:** $g(E) \propto \text{constant}$ (independent of E)
     *   **Description of Plot:** The plot of $g(E)$ versus energy $E$ for a 2D system is a horizontal line (a constant value) that begins at $E=0$ and extends outwards. This means that after a certain energy threshold (e.g., if there are multiple 2D sub-bands due to confinement), the DoS is a series of steps. Within each step, the DoS is constant, starting from a particular energy value.
     *   **Plot:**
-        ![2D Density of States Plot](https://www.tf.uni-kiel.de/matwis/ag_th/lectures/esm/esmfiles/image010.gif) *(Conceptual image for 2D DoS - actual image source: tf.uni-kiel.de)*
+        ![[https://www.tf.uni-kiel.de/matwis/ag_th/lectures/esm/esmfiles/image010.gif|2D Density of States Plot]] *(Conceptual image for 2D DoS - actual image source: tf.uni-kiel.de)*
 
 *   **(For comparison, 3D System - bulk material):**
     *   **Expression:** $g(E) \propto E^{1/2}$
     *   **Description of Plot:** The plot of $g(E)$ versus energy $E$ for a 3D system starts at zero for $E=0$ and then increases parabolically as energy increases. This shows that more states become available at higher energies.
     *   **Plot:**
-        ![3D Density of States Plot](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Density_of_states.svg/500px-Density_of_states.svg.png) *(Conceptual image for 3D free electron gas)*
+        ![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Density_of_states.svg/500px-Density_of_states.svg.png|3D Density of States Plot]] *(Conceptual image for 3D free electron gas)*
 
 **Relation of DoS to Nanomaterials' Special Properties:**
 
@@ -207,7 +206,7 @@ The unique properties of nanomaterials stem directly from the modification of th
 3.  **Improved Thermoelectric Efficiency:** Quantum wells and wires can exhibit enhanced thermoelectric properties (better conversion of heat to electricity or vice versa) due to the sharp features in their DoS, allowing for efficient scattering of phonons while maintaining electron transport.
 4.  **Novel Electronic Behavior:** Quantum confinement impacts electron mobility, conductivity, and other electronic transport properties, potentially enabling new types of transistors, sensors, and quantum computing elements.
 
-(Refer to [Core Notes.md](#density-of-states-ge) and [Density of States and Nanomaterials' Special Properties](#density-of-states-and-nanomaterials-special-properties) for more detail).
+(Refer to [[#density-of-states-ge|Core Notes.md]] and [[#density-of-states-and-nanomaterials-special-properties|Density of States and Nanomaterials' Special Properties]] for more detail).
 
 **13. Create a table of 6 metals comparing valency, conductivity, free electron density and relaxation time.**
 
@@ -263,7 +262,7 @@ The thermal conductivity ($K$) of a metal, particularly considering the contribu
     $$K = \frac{1 \cdot \pi^2 n k_B^2 T \tau}{3 m^*}$$
     Thus, the expression for the thermal conductivity of a metal according to Quantum Free Electron Theory is:
     $$K = \frac{\pi^2 n k_B^2 T \tau}{3 m^*}$$
-(Refer to [Core Notes.md](#derivation-of-thermal-conductivity-quantum-free-electron-theory) for more detail).
+(Refer to [[#derivation-of-thermal-conductivity-quantum-free-electron-theory|Core Notes.md]] for more detail).
 
 **15. Correlate thermal conductivity and Electrical conductivity as per Wiedemann Franz's law to establish Lorenz Number (Assignment 1).**
 
@@ -293,7 +292,7 @@ To establish the Lorenz Number, we use the expressions for thermal and electrica
     $$L \approx 2.44 \times 10^{-8} \text{ W}\Omega\text{ K}^{-2}$$
 
 **Correlation and Significance:**
-The successful derivation of a constant Lorenz Number that matches experimental observations perfectly demonstrates the strong correlation between heat and electrical transport in metals, mediated by the same free electrons. It validates the Quantum Free Electron Theory's ability to accurately describe these fundamental physical processes in metals. (Refer to [Core Notes.md](#wiedemann-franz-law-and-lorenz-number-l) for more detail).
+The successful derivation of a constant Lorenz Number that matches experimental observations perfectly demonstrates the strong correlation between heat and electrical transport in metals, mediated by the same free electrons. It validates the Quantum Free Electron Theory's ability to accurately describe these fundamental physical processes in metals. (Refer to [[#wiedemann-franz-law-and-lorenz-number-l|Core Notes.md]] for more detail).
 
 **16. Elaborate quantitatively to prove the fact that the heat and electrical transport in metals involve the free electrons in the metal (Assignment 2).**
 
@@ -326,7 +325,7 @@ The quantitative proof that both heat and electrical transport in metals are pri
 5.  **Experimental Verification:**
     Experimentally, the ratio $K/(\sigma T)$ for a wide range of metals at various temperatures is found to be remarkably constant and close to the theoretical value of $2.44 \times 10^{-8} \text{ W}\Omega\text{ K}^{-2}$.
 
-**Conclusion:** The quantitative agreement between the theoretically derived Lorenz Number and experimental measurements provides strong and conclusive evidence that the same population of free electrons is responsible for both electrical and thermal transport in metals. The identical dependence on parameters like electron density, effective mass, and relaxation time in the expressions for $\sigma$ and $K$, which then perfectly cancel out to yield a universal constant, is the ultimate quantitative proof. (Refer to [Core Notes.md](#wiedemann-franz-law-and-lorenz-number-l) for more detail).
+**Conclusion:** The quantitative agreement between the theoretically derived Lorenz Number and experimental measurements provides strong and conclusive evidence that the same population of free electrons is responsible for both electrical and thermal transport in metals. The identical dependence on parameters like electron density, effective mass, and relaxation time in the expressions for $\sigma$ and $K$, which then perfectly cancel out to yield a universal constant, is the ultimate quantitative proof. (Refer to [[#wiedemann-franz-law-and-lorenz-number-l|Core Notes.md]] for more detail).
 
 ---
 
@@ -358,7 +357,7 @@ The Kronig-Penney model simplifies the complex periodic potential experienced by
 
 1.  **Potential Profile:**
     **Description of Potential Profile:** The Kronig-Penney model approximates the periodic potential of a crystal as a series of rectangular potential wells (representing the regions where electrons are attracted to atomic nuclei, offering lower potential energy) separated by rectangular potential barriers (representing the regions between atomic nuclei, offering higher potential energy). The width of the wells and barriers, along with the height of the barriers, are adjustable parameters.
-    ![Kronig-Penney Model Potential Profile](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Kronig-Penney_potential.svg/langja-480px-Kronig-Penney_potential.svg.png)
+    ![[https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Kronig-Penney_potential.svg/langja-480px-Kronig-Penney_potential.svg.png|Kronig-Penney Model Potential Profile]]
 
 2.  **Emergence of Band Structure / Origin of Energy Bands:**
     When Schrödinger's equation is solved for an electron in this periodic potential, it's found that not all energies are allowed. The continuous energy spectrum of a free electron breaks into discrete allowed and forbidden regions. This is because the electron wave, moving through the periodic arrangement of atoms, undergoes diffraction.
@@ -366,7 +365,7 @@ The Kronig-Penney model simplifies the complex periodic potential experienced by
     *   **Forbidden Bands (Band Gaps / Stop bands):** For other ranges of electron energies, the electron waves experience strong back-scattering (destructive interference) from the periodic potential. This prevents the electron from propagating through the crystal, effectively creating **band gaps** or forbidden energy levels.
 
 3.  **Origin of Band Gaps (Specifically Indication):**
-    The band gaps fundamentally arise from the **Bragg reflection** of electron waves by the periodic lattice. When the electron's wave vector ($k$) satisfies a condition similar to the Bragg condition for X-ray diffraction (i.e., at the boundaries of the Brillouin zones, such as $k = \pm n\pi/a$), the electron waves are strongly reflected by the lattice planes. This interference leads to standing waves, and the degeneracy of energy levels at these wave vectors is lifted, creating a gap between the lowest energy allowed state and the next higher energy allowed state. These discontinuities in the $E-k$ relation precisely define the forbidden energy bands. (Refer to [Core Notes.md](#kronig-penney-model-1d-periodic-potential) for more detail).
+    The band gaps fundamentally arise from the **Bragg reflection** of electron waves by the periodic lattice. When the electron's wave vector ($k$) satisfies a condition similar to the Bragg condition for X-ray diffraction (i.e., at the boundaries of the Brillouin zones, such as $k = \pm n\pi/a$), the electron waves are strongly reflected by the lattice planes. This interference leads to standing waves, and the degeneracy of energy levels at these wave vectors is lifted, creating a gap between the lowest energy allowed state and the next higher energy allowed state. These discontinuities in the $E-k$ relation precisely define the forbidden energy bands. (Refer to [[#kronig-penney-model-1d-periodic-potential|Core Notes.md]] for more detail).
 
 **3. Give the classification of solids on the basis of band theory of solids.**
 
@@ -420,7 +419,7 @@ The effective mass of a charge carrier (electron or hole) in a semiconductor (or
     *   At the top of the valence band (where $E(k)$ has a maximum), the curvature $d^2E/dk^2$ is negative. This would imply a negative effective mass for electrons. However, this is more intuitively interpreted as the movement of a positively charged **hole** with a positive effective mass.
 *   **Density of States**: The effective mass also influences the density of states (number of available energy levels), which in turn affects carrier concentration and thus conductivity. A larger effective mass leads to a higher density of states for a given energy, impacting doping and intrinsic carrier concentrations.
 *   **Transport Properties**: The effective mass is a fundamental parameter in all transport phenomena (conductivity, Hall effect, diffusion, thermoelectric effects) as it dictates the inertial response of charge carriers within the crystal, reflecting how much the lattice "drags" or "assists" their motion.
-(Refer to [Core Notes.md](#effective-mass-of-charge-carriers-m) for more detail).
+(Refer to [[#effective-mass-of-charge-carriers-m|Core Notes.md]] for more detail).
 
 **5. What are Brillouin zones and what is their significance?**
 
@@ -433,7 +432,7 @@ Brillouin zones are fundamental concepts in solid-state physics that delineate r
 3.  **Electron Dynamics and Conductivity**: The filling of Brillouin zones with electrons dictates the electrical properties of the material. If a Brillouin zone is completely filled (and separated by a band gap), electrons cannot easily gain energy to conduct electricity unless they can be excited across that band gap. Conversely, partially filled zones facilitate electrical conduction.
 4.  **Crystal Momentum**: The wave vector $k$ is often referred to as the crystal momentum. The Brillouin zone defines the range of physically distinct crystal momentum states that an electron can occupy within the periodic potential of the lattice.
 
-(Refer to [Core Notes.md](#brillouin-zones) for more detail).
+(Refer to [[#brillouin-zones|Core Notes.md]] for more detail).
 
 ---
 
@@ -513,7 +512,7 @@ The Meissner effect is crucial because it is a **defining characteristic** of su
     *   **Normal State (Region III, above $H_{C2}(T)$):** The material completely loses its superconducting properties and reverts to its normal, resistive state.
 The upper critical field $H_{C2}$ for Type II superconductors is typically much higher than the $H_C$ for Type I materials, making them suitable for high-field applications.
 
-![Critical magnetic field behavior for Type I and Type II superconductors](https://qph.cf2.quoracdn.net/main-qimg-80dc48e7188b776a394b9f33333e680a-lq)
+![[https://qph.cf2.quoracdn.net/main-qimg-80dc48e7188b776a394b9f33333e680a-lq|Critical magnetic field behavior for Type I and Type II superconductors]]
 
 **5. Define Cooper pairs. Explain their role in the microscopic theory of superconductivity (BCS theory).**
 
@@ -549,7 +548,7 @@ A **SQUID (Superconducting QUantum Interference Device)** is an extremely sensit
 *   **Geophysics:** Detecting subtle magnetic anomalies for mineral exploration or studying Earth's magnetic field.
 *   **Materials Science:** Characterizing magnetic properties of novel materials at very low magnetic fields.
 
-(Refer to [Core Notes.md](#josephson-junctions-jj) and [High-Sensitivity Detection (SQUIDs)](#high-sensitivity-detection-squids) for more detail).
+(Refer to [[#josephson-junctions-jj|Core Notes.md]] and [[#high-sensitivity-detection-squids|High-Sensitivity Detection (SQUIDs)]] for more detail).
 
 ## Magnetic Materials
 
@@ -749,7 +748,7 @@ $$\chi_m = \frac{C}{T}$$
 Where the Curie constant $C = \frac{N \mu^2 \mu_0}{k_B}$.
 (For a more rigorous quantum mechanical treatment using the full range of $m_J$ values for total angular momentum $J$, the term $\mu^2$ is replaced by $g^2 \mu_B^2 J(J+1)$, resulting in $C = \frac{N g^2 \mu_0 \mu_B^2 J(J+1)}{3 k_B}$.)
 
-This derivation shows that for paramagnetic materials, the susceptibility is directly proportional to the number of magnetic moments and inversely proportional to the absolute temperature. (Refer to [Core Notes.md](#quantum-theory-of-paramagnetism) for more detail).
+This derivation shows that for paramagnetic materials, the susceptibility is directly proportional to the number of magnetic moments and inversely proportional to the absolute temperature. (Refer to [[#quantum-theory-of-paramagnetism|Core Notes.md]] for more detail).
 
 **7. Briefly explain ferromagnetism in solids. State its characteristic features and give examples of ferromagnetic materials.**
 
@@ -864,7 +863,7 @@ Hysteresis (from Greek for "lagging behind") refers to the phenomenon where the 
 5.  **Reverse Saturation (Point E):** As the reverse field is further increased, the material eventually saturates in the opposite direction (point E).
 6.  **Complete Loop (EFB):** Reducing the reverse field to zero and then applying a positive field again completes the loop, returning to saturation (B). The entire closed curve (BCDEFB) is the hysteresis loop.
 
-![Magnetic Hysteresis Loop](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hysteresis_loop_soft_magnetics.svg/800px-Hysteresis_loop_soft_magnetics.svg.png)
+![[https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hysteresis_loop_soft_magnetics.svg/800px-Hysteresis_loop_soft_magnetics.svg.png|Magnetic Hysteresis Loop]]
 
 **Implications of Hysteresis:**
 *   **Energy Loss:** The area enclosed by the hysteresis loop represents the energy dissipated as heat in the material during one complete cycle of magnetization and demagnetization.
@@ -980,7 +979,7 @@ A solenoid is essentially a long coil of wire wound helically. When current flow
 *   **Dipole Field:** Both a solenoid and a bar magnet produce a magnetic dipole field.
 *   **Example Illustration:**
     **Description of Diagram:** This diagram shows a cylindrical solenoid with current flowing through its turns. Magnetic field lines are depicted inside and outside the solenoid. Inside, they are straight and parallel. Outside, they emerge from one end (labeled North pole), loop around, and enter the other end (labeled South pole), mirroring the classic field pattern of a bar magnet.
-    ![Solenoid magnetic field vs Bar Magnet](https://www.e-education.psu.edu/files/eme803/electromagnet-bar-magnet-comparison.gif) *(Conceptual image: solenoid with field lines and labelled poles, resembling a bar magnet)*
+    ![[https://www.e-education.psu.edu/files/eme803/electromagnet-bar-magnet-comparison.gif|Solenoid magnetic field vs Bar Magnet]] *(Conceptual image: solenoid with field lines and labelled poles, resembling a bar magnet)*
 
 **Significance:** This striking resemblance highlights how electric currents are the fundamental source of all magnetism. It forms the basis of electromagnets, which are essential components in countless technologies, allowing for controllable magnetic fields generated solely by electrical means.
 
@@ -1007,7 +1006,7 @@ Despite its successes in explaining the general features of diamagnetism and par
 5.  **Temperature Independent Paramagnetism:** It failed to explain Pauli paramagnetism, observed in some metals (e.g., alkali metals), which is a weak, temperature-independent paramagnetism arising from the quantum statistics of free electrons near the Fermi level (Fermi-Dirac distribution), not classical alignment.
 6.  **Instability of Classical Atoms:** To generate the observed magnetic moments, classical electrons in orbits would require speeds so high they would be relativistically unstable.
 
-(Refer to [Core Notes.md](#classical-theory-of-magnetism) for more detail on its ideas and limitations).
+(Refer to [[#classical-theory-of-magnetism|Core Notes.md]] for more detail on its ideas and limitations).
 
 **18. Discuss normal Zeeman effect using orbital angular momentum concept. Comment on how it helps in reducing the degeneracy in atoms.**
 
@@ -1039,7 +1038,7 @@ The **Normal Zeeman Effect** describes the splitting of a single atomic spectral
 *   **Reduction of Degeneracy:** The application of an external magnetic field introduces a preferred direction in space. This lifts the magnetic degeneracy associated with $m_l$. Different $m_l$ values now correspond to different interaction energies with the magnetic field ($E_B = \mu_B B m_l$).
 *   **Visualization:** An energy level that was ($2l+1$)-fold degenerate (e.g., a p-state with $l=1$ is 3-fold degenerate for $m_l = +1, 0, -1$) will split into distinct energy levels in the presence of the field. For $m_l=+1$, energy increases; for $m_l=0$, energy remains same; for $m_l=-1$, energy decreases. This partial lifting of degeneracy is directly observable through the splitting of spectral lines.
 
-(Refer to [Core Notes.md](#normal-zeeman-effect-using-orbital-angular-momentum) for more detail).
+(Refer to [[#normal-zeeman-effect-using-orbital-angular-momentum|Core Notes.md]] for more detail).
 
 **19. Discuss the role of the magnetic moment operator in Electron Spin Resonance (ESR) and Nuclear Magnetic Resonance (NMR) spectroscopy.**
 
@@ -1069,7 +1068,7 @@ In quantum mechanics, every measurable physical quantity (observable) is associa
     *   **Mediates Transitions:** Describes the coupling of the nuclear spin to the applied oscillating RF field, which drives transitions between these states.
     NMR is a powerful tool in chemistry, biology, and medicine (MRI) for elucidating molecular structure, dynamics, and composition, as the resonance frequency is subtly affected by the local electronic environment (chemical shift).
 
-(Refer to [Core Notes.md](#role-of-the-magnetic-moment-operator-in-esr-and-nmr-spectroscopy) for more detail).
+(Refer to [[#role-of-the-magnetic-moment-operator-in-esr-and-nmr-spectroscopy|Core Notes.md]] for more detail).
 
 **20. List the Maxwell's equations which involve magnetic field and explain them.**
 
@@ -1085,7 +1084,7 @@ Maxwell's equations are a set of four fundamental equations that describe how el
         *   **Conduction Current Density ($\mathbf{J}$):** This is the conventional electric current flowing through conductors, as described by Ampère's original law.
         *   **Displacement Current Density ($\frac{\partial \mathbf{D}}{\partial t}$):** This is Maxwell's crucial addition, representing a magnetic field generated by a time-varying electric field. It implies that a changing electric field produces a magnetic field in the same way that a current does. This displacement current term was vital for predicting the existence of electromagnetic waves and demonstrating that light itself is an electromagnetic wave.
 
-(Refer to [Core Notes.md](#maxwells-equations-involving-magnetic-field) for more detail).
+(Refer to [[#maxwells-equations-involving-magnetic-field|Core Notes.md]] for more detail).
 
 **21. Discuss the ideas of the classical theory of magnetism and outline the limitations.**
 
@@ -1109,7 +1108,7 @@ The classical theory ultimately proved inadequate in explaining many fundamental
 5.  **Temperature-Independent Paramagnetism:** It could not explain Pauli paramagnetism, the weak, temperature-independent paramagnetism observed in many metals, which arises from the Fermi-Dirac statistics of conduction electrons.
 6.  **Atomic Stability:** To produce the predicted magnetic moments classically, electrons would either have to crash into the nucleus or reach relativistic speeds, which contradicted atomic stability and classical electrodynamics.
 
-(Refer to [Core Notes.md](#classical-theory-of-magnetism) for more detail).
+(Refer to [[#classical-theory-of-magnetism|Core Notes.md]] for more detail).
 
 **22. Give an outline of the Langevin's theory of paramagnetism.**
 
@@ -1141,7 +1140,7 @@ Langevin's classical theory of paramagnetism (1905) attempts to explain the beha
 **Significance and Limitations:**
 Langevin's theory successfully predicted the temperature dependence of paramagnetic susceptibility (Curie's Law) for many substances. However, it failed to correctly predict the magnitude of atomic magnetic moments and couldn't explain ferromagnetism or the true quantum origin of atomic moments (electron spin).
 
-(Refer to [Core Notes.md](#paramagnetic-materials-quantum-treatment) and [Classical Theory of Magnetism](#classical-theory-of-magnetism) for more detail).
+(Refer to [[#paramagnetic-materials-quantum-treatment|Core Notes.md]] and [[#classical-theory-of-magnetism|Classical Theory of Magnetism]] for more detail).
 
 **23. What is the significance of Order -Disorder phase transitions? Give examples of first order and second order phase transitions.**
 
@@ -1186,16 +1185,16 @@ Phase transitions are classified based on the behavior of thermodynamic quantiti
     3.  **Order-Disorder Transition in Alloys:** The transition in $\beta$-brass (a CuZn alloy) where, above a critical temperature, copper and zinc atoms are randomly distributed on lattice sites (disordered), but below it, they arrange themselves into an ordered superlattice.
     4.  **Lambda Transition in Helium-4:** The transition of liquid Helium-4 from its normal fluid state (He-I) to a superfluid state (He-II) at 2.17 K (the lambda point).
 
-(Refer to [Core Notes.md](#phase-transitions) for more detail).
+(Refer to [[#phase-transitions|Core Notes.md]] for more detail).
 
 ---
 ## Problems based on CFET and QFET
 
-Refer to the [Examples.md](../Examples.md) file for worked problems based on Classical and Quantum Free Electron Theory. Key examples include:
-*   [Example 1: Fermi Factor Calculation](../Examples.md#Example%201:%20Fermi%20Factor%20Calculation)
-*   [Example 3: Fermi Velocity Calculation](../Examples.md#Example%203:%20Fermi%20Velocity%20Calculation)
-*   [Example 4: Number of Electron States](../Examples.md#Example%204:%20Number%20of%20Electron%20States)
-*   [Example 7: Relaxation Time in a Metal](../Examples.md#Example%207:%20Relaxation%20Time%20in%20a%20Metal)
+Refer to the [[Examples|Examples.md]] file for worked problems based on Classical and Quantum Free Electron Theory. Key examples include:
+*   [[Examples#example-1:-fermi-factor-calculation|Example 1: Fermi Factor Calculation]]
+*   [[Examples#example-3:-fermi-velocity-calculation|Example 3: Fermi Velocity Calculation]]
+*   [[Examples#example-4:-number-of-electron-states|Example 4: Number of Electron States]]
+*   [[Examples#example-7:-relaxation-time-in-a-metal|Example 7: Relaxation Time in a Metal]]
 
 ---
-# [[Physics|Back]]
+# [[../Physics|Back]]

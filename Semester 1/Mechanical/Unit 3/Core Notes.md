@@ -1,10 +1,9 @@
 ---
 dg-publish: true
 ---
-
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]
 ***
-[[Semester 1/Mechanical/Unit 3/Core Notes|Core Notes]] | [[Semester 1/Mechanical/Unit 3/Examples|Examples]] | [[Semester 1/Mechanical/Unit 3/Q&A|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 3: Manufacturing Techniques and Metal Joining Processes
 
@@ -588,4 +587,4 @@ The analysis of manufacturing techniques reveals a structured engineering discip
 4.  **Mould Design and Stress Mitigation**: In casting, the successful use of complex geometries requires careful management of internal stresses. Allowances (Shrinkage, Distortion) correct for dimensional changes, while the physical property of mould **collapsibility** is non-negotiable for preventing catastrophic structural failures (like Hot Tears) during the critical post-solidification cooling phase.
 
 ---
-# [[Mechanical|Back]]
+# [[../Mechanical|Back]]

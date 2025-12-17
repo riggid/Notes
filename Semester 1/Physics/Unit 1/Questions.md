@@ -2,9 +2,9 @@
 dg-publish: true
 ---
 
-# [[Physics|Back]]
+# [[../Physics|Back]]
 ***
-[[Semester 1/Physics/Unit 1/Core Notes|Core Notes]] | [[Semester 1/Physics/Unit 1/Examples|Examples]] | [[Semester 1/Physics/Unit 1/Questions|Questions]]
+[[Core Notes]] | [[Examples]] | [[Questions]]
 ***
 # Unit 1: Q&A and Worked Problems
 
@@ -584,4 +584,4 @@ Normalized state: $|\psi_{norm}\rangle = \frac{1}{\sqrt{10}} (2+i)|0\rangle + \f
 Matrix form: $|\psi_{norm}\rangle = \begin{pmatrix} \frac{2+i}{\sqrt{10}} \\ \frac{1-2i}{\sqrt{10}} \end{pmatrix}$.
 
 ***
-# [[Physics|Back]]
+# [[../Physics|Back]]
