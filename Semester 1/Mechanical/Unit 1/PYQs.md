@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Previous Year Questions (PYQs)
 
 > **Unit 1** | Mechanical

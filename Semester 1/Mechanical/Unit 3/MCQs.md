@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Multiple Choice Questions (MCQs)
 
 > **Unit 3** | Mechanical Engineering
