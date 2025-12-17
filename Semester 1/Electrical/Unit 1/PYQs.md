@@ -1,9 +1,10 @@
-> [!TIP] Better MCQ Experience
-> For a much more interactive and better MCQ experience, visit [PESU Dash](https://pesu-dash.vercel.app/)!
-
 ---
 dg-publish: true
 ---
+
+> [!TIP] Better MCQ Experience
+> For a much more interactive and better MCQ experience, visit [PESU Dash](https://pesu-dash.vercel.app/)!
+
 # Previous Year Questions (PYQs)
 
 > **Unit 1** | Electrical
