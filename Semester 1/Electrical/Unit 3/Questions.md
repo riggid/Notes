@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Electrical|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 
 # Unit 3 Q&A: Three Phase Systems & Installations
@@ -56,7 +56,7 @@ dg-publish: true
 ---
 # [[../Electrical|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 
 # Unit 3 Examples: Three Phase Systems

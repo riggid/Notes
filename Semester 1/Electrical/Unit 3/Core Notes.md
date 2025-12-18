@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Electrical|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 
 # Unit 3: Three Phase Balanced Systems & Electrical Installations

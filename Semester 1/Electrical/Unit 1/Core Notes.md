@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Electrical|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 *** 
 # Unit 1: Electrical Circuit Analysis
 

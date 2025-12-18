@@ -908,7 +908,7 @@ dg-publish: true
 ---
 # [[../Mathematics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 # Unit 2: Worked Examples
 

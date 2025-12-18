@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Mathematics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 
 # Unit 4 Questions: Special Functions
 
@@ -273,7 +273,7 @@ dg-publish: true
 ---
 # [[../Mathematics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 
 # Unit 4 Examples: Special Functions
 

@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Electrical|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 
 # Unit 4 Q&A: Electromagnetism & Machines
@@ -50,7 +50,7 @@ dg-publish: true
 ---
 # [[../Electrical|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 
 # Unit 4 Examples: Machines

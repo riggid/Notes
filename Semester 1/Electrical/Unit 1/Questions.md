@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Electrical|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 
 ## MARCH 2022 ESA (UE21EE141A - I SEM)
@@ -692,7 +692,7 @@ dg-publish: true
 ---
 # [[../Electrical|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 ## Example 1: Basic KVL
 

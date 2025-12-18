@@ -4,7 +4,7 @@ dg-publish: true
 
 # [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 
 # Unit 7: Lasers, Optoelectronics, and Advanced Materials - Q&A
@@ -393,7 +393,7 @@ dg-publish: true
 
 # [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 
 # Unit 7: Lasers, Optoelectronics, and Advanced Materials - Examples

@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Mathematics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 
 # Unit 3 Questions: Partial Differential Equations
 
@@ -435,7 +435,7 @@ dg-publish: true
 ---
 # [[../Mathematics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 
 # Unit 3 Examples: Partial Differential Equations
 

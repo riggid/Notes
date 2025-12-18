@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 # Unit 3: Quantum Mechanical Treatment of Electron Transport and Magnetic Materials
 

@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 # Unit 3: Conceptual & Descriptive Practice Questions (Weeks 10-…)
 
@@ -1349,7 +1349,7 @@ dg-publish: true
 ---
 # [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 # Unit 3: Worked Examples
 

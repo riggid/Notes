@@ -4,7 +4,7 @@ dg-publish: true
 
 # [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 # Unit 2: Q&A and Worked Problems
 
@@ -549,7 +549,7 @@ dg-publish: true
 
 # [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[PYQs]] | [[MCQs]]
+[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 # Unit 2: Worked Examples
 
