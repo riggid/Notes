@@ -9,20 +9,44 @@ dg-publish: true
 [[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
 ***
 
-## 📚 PYQ Resource Links
+## 📝 Selected Previous Year Questions with Solutions
 
-Access comprehensive previous year questions and study materials:
+### Environment and Ecosystems
 
-### 🎯 ESA Past Papers (Semester 1 & 2)
-All end-semester assessment previous year papers organized by subject and year:
+### 1. Components of Environment
+**Question:** Define Environment. Explain the four major segments of the environment.
 
-**[📁 ESA PYQs Drive Folder](https://drive.google.com/drive/folders/11U56PJ-VZ_5zaJ1fVrV6h3kzN4rnNX7E?usp=drive_link)**
+**Answer:**
+-   **Environment**: The sum total of all distinct surroundings (physical, chemical, biological) affecting the life of an organism.
+-   **Segments**:
+    1.  **Atmosphere**: Protective blanket of gases surrounding the earth (Nitrogen, Oxygen). Protects from UV shielding.
+    2.  **Hydrosphere**: All water resources (Oceans, rivers, glaciers). Covers 70% of earth.
+    3.  **Lithosphere**: Outer solid crust of the earth (Soil, rocks, minerals).
+    4.  **Biosphere**: The realm of living organisms and their interactions with the environment (Zone where life exists).
 
-### 📖 PES-Provided Resources
-University-provided study materials, slides, notes, and PYQs:
+### 2. Ecosystem Structure
+**Question:** Define Ecosystem. Differentiate between Biotic and Abiotic components with examples.
 
-**[📁 First Year PES Resources](https://drive.google.com/drive/folders/1DIjOOU8QzWAkfEKE4fK0ZD6DIcchXYLM)**
+**Answer:**
+-   **Ecosystem**: A self-regulating community of living organisms interacting with each other and their non-living environment.
+-   **Biotic Components (Living)**:
+    -   **Producers**: Autotrophs (Plants).
+    -   **Consumers**: Heterotrophs (Animals, Humans).
+    -   **Decomposers**: Saprotrophs (Bacteria, Fungi).
+-   **Abiotic Components (Non-Living)**:
+    -   **Physical**: Sunlight, Temperature, Rainfall.
+    -   **Chemical**: Soil, Minerals, Oxygen, Carbon dioxide.
 
-> **Tip**: Browse through these folders to find papers and materials specific to this unit. ESA papers are organized by year and subject.
+### 3. Biodiversity
+**Question:** What is Biodiversity? Explain the three levels of biodiversity.
+
+**Answer:**
+-   **Biodiversity**: The variety and variability of life on Earth.
+-   **Levels**:
+    1.  **Genetic Diversity**: Variation of genes within a species (e.g., Different breeds of dogs, varieties of rice).
+    2.  **Species Diversity**: Variety of species within a region (e.g., Tigers, Lions, Elephants in a forest).
+    3.  **Ecosystem Diversity**: Variety of ecosystems in a geographical area (e.g., Deserts, Rainforests, Mangroves).
+
+---
 
 *Last updated: December 2025*
