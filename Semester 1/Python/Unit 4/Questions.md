@@ -7,343 +7,227 @@ dg-publish: true
 
 # Unit 4: Question Bank (SOLVED)
 
-## 1. True/False Questions
+## 1. Functional Programming Tools (zip, map, filter)
 
-1. `zip()` modifies the original iterables. **(False)**
-2. `zip()` can only combine two iterables. **(False - multiple allowed)**
-3. `zip()` result length is equal to longest iterable. **(False - shortest)**
-4. Lazy objects conserve memory. **(True)**
-5. `map()` returns a list immediately. **(False - returns iterator in Py3)**
-6. List comprehensions are eager. **(True)**
-7. List comprehensions limited to one iterable. **(False)**
-8. List comprehensions allow `if/else`. **(True)**
-9. In Python, everything is an object. **(True)**
-10. Python supports method overloading (same name, diff params) natively. **(False - uses default args or *args)**
-11. Method overriding possible in composition? **(False - only in inheritance)**
-12. Multiple `except` statements allowed? **(True)**
-13. Possible to create empty class? **(True)**
-14. Python supports multiple inheritance. **(True)**
-15. `raise` forces specific exception. **(True)**
-16. Python has automatic garbage collection. **(True)**
-17. `finally` block executed only on exception. **(False - always executed)**
+**1. What is the `zip()` function? Describe its return type and behavior with multiple iterables.**
+*   **Answer**: `zip()` aggregates elements from multiple iterables (like lists or tuples) into an iterator of tuples.
+    *   **Return Type**: Returns an **iterator** (lazy object), not a list.
+    *   **Multiple Iterables**: It can take any number of iterables (e.g., `zip(list1, list2, list3)`).
+    *   **Length Mismatch**: It stops when the **shortest** iterable is exhausted.
 
-## 2. Fill in the Blanks
+**2. True or False: `zip()` modifies the original iterables.**
+*   **Answer**: **False**. It creates new tuples without changing the original data.
 
-1. Return type of `zip()` is an **iterator** object.
-2. `zip()` iterates over iterables **simultaneously**.
-3. `zip()` stops at length of **shortest** input.
-4. `map()` applies function to **each item**.
-5. `filter()` returns elements where function returns **True**.
-6. `map()` returns a **new iterator**.
-7. `reduce()` repeatedly applies function to **pairs** of elements.
-8. **Data Abstraction** ensures access only to implementation.
-9. One-line anonymous function: **lambda**.
-10. **Constructor (`__init__`)** is called when object created.
-11. **Static** method is bound by class, not object.
-12. **super()** allows child to refer to parent method.
-13. Attributes are **public** by default in Python.
-14. **Composition** is class containing objects of other classes as attributes.
+**3. Explain the difference between `map()` and `filter()` functions.**
+*   **Answer**:
+    *   **`map(func, iter)`**: Applies `func` to **every item** in the iterable and returns an iterator of results.
+    *   **`filter(func, iter)`**: Applies `func` to every item and returns an iterator of only those items where `func` returns **True**.
 
-## 3. Theoretical Questions
+**4. What does `reduce()` do?**
+*   **Answer**: `reduce(func, iter)` (from `functools`) repeatedly applies a function to **pairs** of elements, reducing the iterable to a single cumulative value (e.g., sum or product).
 
-**1. zip() Function:**
-*   **Purpose**: Aggregate elements from multiple iterables.
-*   **Multiple**: `zip(list1, list2, list3)` works.
-*   **Unzipping**: `zip(*zipped_object)`.
+**5. True or False: In Python 3, `map()` returns a list immediately.**
+*   **Answer**: **False**. It returns a **map object** (an iterator). You must convert it to a list (e.g., `list(map(...))`) to see all values immediately.
 
-**2. map(), filter(), reduce():**
-*   **map(func, iter)**: Transforms every element.
-*   **filter(func, iter)**: Selects elements where func is True.
-*   **reduce(func, iter)**: Aggregates elements to single value (e.g., sum).
-
-**3. List Comprehension:**
-*   **Syntax**: `[expression for item in iterable if condition]`
-*   **Vs Map**: List comp is more readable and Pythonic but eager (returns list). Map is lazy (returns iterator).
-
-**4. Exception Handling:**
-*   **Syntax**:
+**6. Programming Exercise: Filter Integers**
+*   **Question**: Given `nums = [1, 2, 3, 4, 5, 6]`, use `filter` and `lambda` to separate evens and odds.
+*   **Solution**:
     ```python
-    try:
-        # code
-    except ValueError:
-        # handle val error
-    except IndexError:
-        # handle index error
-    finally:
-        # always runs
+    nums = [1, 2, 3, 4, 5, 6]
+    evens = list(filter(lambda x: x % 2 == 0, nums))
+    odds = list(filter(lambda x: x % 2 != 0, nums))
+    print(f"Evens: {evens}, Odds: {odds}")
     ```
 
-**5. OOP Concepts:**
-*   **Class**: Blueprint for objects.
-*   **Inheritance**: Child class derives from Parent.
-*   **Polymorphism**: ability to treat objects of different classes uniformly (e.g., method overriding).
-*   **Composition**: "Has-a" relationship (Car has an Engine).
+**7. Programming Exercise: Uppercase & Unique**
+*   **Question**: One-liner to uppercase a string `seq = "hello world"` and get unique characters.
+*   **Solution**:
+    ```python
+    seq = "hello world"
+    res = ''.join(set(map(str.upper, seq)))
+    print(res)
+    ```
 
-**6. Multiple Inheritance:**
-*   **MRO**: Method Resolution Order (Left-to-Right, Depth-First usually, C3 Linearization). `Class.mro()` helps resolve diamond problem.
+**8. Programming Exercise: Filter & Map on Range**
+*   **Question**: Filter even numbers from 1 to 10, then square them.
+*   **Solution**:
+    ```python
+    # Filter even
+    evens = list(filter(lambda x: x % 2 == 0, range(1, 11)))
+    # Square them
+    squared = list(map(lambda x: x**2, evens))
+    print(squared) # [4, 16, 36, 64, 100]
+    ```
 
-## 4. Programming Exercises (Solved)
+## 2. List Comprehensions & Lazy Evaluation
 
-**1. Filter Integers (Lambda):**
-```python
-nums = [1, 2, 3, 4, 5, 6]
-evens = list(filter(lambda x: x % 2 == 0, nums))
-odds = list(filter(lambda x: x % 2 != 0, nums))
-print(f"Evens: {evens}, Odds: {odds}")
-```
+**9. Compare List Comprehensions with `map()`/`filter()`.**
+*   **Answer**:
+    *   **List Comprehensions**: Concise syntax `[expr for x in iter]`. They are **eager** (create the full list in memory). Generally more "Pythonic" and readable.
+    *   **Map/Filter**: Functional approach. They are **lazy** (return iterators), which is more memory efficient for large datasets.
 
-**2. Uppercase & Unique (Map):**
-```python
-seq = "hello world"
-# uppercased, unique, joined
-res = ''.join(set(map(str.upper, seq)))
-print(res)
-```
+**10. True or False: List comprehensions allow `if/else` logic.**
+*   **Answer**: **True**. Example: `[x if x > 0 else 0 for x in nums]`.
 
-**3. Integer Input (Exception):**
-```python
-try:
-    val = int(input("Enter integer: "))
-except ValueError:
-    print("Not a valid integer")
-```
+**11. True or False: Lazy objects (like generators) conserve memory.**
+*   **Answer**: **True**. They generate values on the fly rather than storing them all at once.
 
-**4. File Not Found:**
-```python
-try:
-    with open("missing.txt", "r") as f:
-        print(f.read())
-except FileNotFoundError:
-    print("File does not exist")
-```
+**12. Programming Exercise: List Comprehension Logic**
+*   **Question**: Filter numbers divisible by both 5 and 7 from a list.
+*   **Solution**:
+    ```python
+    nums = [12, 24, 35, 70, 88, 120, 155]
+    div5_7 = [x for x in nums if x % 5 == 0 and x % 7 == 0]
+    print(div5_7) # [35, 70]
+    ```
 
-**5. Person Class (Age Calculation):**
-```python
-from datetime import date
-class Person:
-    def __init__(self, name, dob_year):
-        self.name = name
-        self.dob = dob_year
-    def age(self):
-        return date.today().year - self.dob
+## 3. Object Oriented Programming (OOP)
 
-p = Person("John", 1995)
-print(p.age())
-```
+**13. Define the core OOP concepts: Class, Inheritance, Polymorphism, Composition.**
+*   **Answer**:
+    *   **Class**: A blueprint for creating objects.
+    *   **Inheritance**: A child class derives attributes and methods from a Parent class.
+    *   **Polymorphism**: The ability to treat objects of different classes uniformly (e.g., Method Overriding).
+    *   **Composition**: A "Has-a" relationship where a class contains objects of other classes as attributes.
 
-**6. Shape Subclasses:**
-```python
-class Shape:
-    def area(self): pass
+**14. Fill in the blanks:**
+    *   **Constructor**: The `__init__` method is called when an object is created.
+    *   **Static Method**: A method bound by the **class**, not the instance.
+    *   **super()**: Function used to refer to the parent class methods.
+    *   **Data Abstraction**: Hides implementation details and exposes only functionality.
 
-class Square(Shape):
-    def __init__(self, side): self.side = side
-    def area(self): return self.side ** 2
+**15. True or False: Python natively supports method overloading (same name, different params).**
+*   **Answer**: **False**. Python uses default arguments or variable-length arguments (`*args`) to achieve similar behavior, not native overloading.
 
-class Circle(Shape):
-    def __init__(self, r): self.r = r
-    def area(self): return 3.14 * self.r ** 2
-```
+**16. True or False: Method overriding is possible in Composition.**
+*   **Answer**: **False**. Overriding is a feature of **Inheritance**.
 
-**7. Point in Circle:**
-```python
-def point_in_circle(cx, cy, r, px, py):
-    dist = ((px-cx)**2 + (py-cy)**2)**0.5
-    if dist < r: return "Inside"
-    elif dist == r: return "On"
-    else: return "Outside"
-```
+**17. Explain Multiple Inheritance and MRO.**
+*   **Answer**: Python supports a class inheriting from multiple parents. **MRO (Method Resolution Order)** determines the order in which base classes are searched for a method (usually Left-to-Right, Depth-First).
 
-**8. Filter Range:**
-```python
-# Even
-print(list(filter(lambda x: x%2==0, range(1,11))))
-# Divisible by 3
-print(list(filter(lambda x: x%3==0, range(1,11))))
-```
+**18. True or False: In Python, everything is an object.**
+*   **Answer**: **True**. Functions, classes, and basic types are all objects.
 
-**9. Map Range:**
-```python
-# Squares
-print(list(map(lambda x: x**2, range(1,11))))
-# Cubes
-print(list(map(lambda x: x**3, range(1,11))))
-```
+**19. True or False: Attributes are public by default in Python.**
+*   **Answer**: **True**.
 
-**10. List Comp (Fibonacci):**
-```python
-# Generating predefined list of fibs is complex in one-line comp, but usually done iteratively.
-# Simple filtering exercise:
-nums = [12, 24, 35, 70, 88, 120, 155]
-div5_7 = [x for x in nums if x % 5 == 0 and x % 7 == 0]
-print(div5_7) # [35, 70]
-```
+**20. Abstract Classes & Destructors:**
+*   **Abstract Class**: Defined using `ABC` module. Contains at least one abstract method.
+*   **Destructor**: `__del__` method, called when object is garbage collected.
 
-***
+## Code Output Tracing (New)
 
+1. **Inheritance & Super**:
+   ```python
+   class A:
+       def show(self): return "A"
+   class B(A):
+       def show(self): return "B " + super().show()
+   print(B().show())
+   ```
+   - **Output**: `B A`
 
-# Unit 4: Examples (OOPs & Advanced)
+2. **Polymorphism**:
+   ```python
+   class Dog:
+       def speak(self): return "Woof"
+   class Cat:
+       def speak(self): return "Meow"
+   for animal in [Dog(), Cat()]:
+       print(animal.speak())
+   ```
+   - **Output**: `Woof` then `Meow`.
 
-## 1. Object Oriented Programming (OOP)
+3. **Exception Order**:
+   ```python
+   try:
+       1 / 0
+   except ZeroDivisionError:
+       print("Zero")
+   except ArithmeticError:
+       print("Arithmetic")
+   ```
+   - **Output**: `Zero` (First matching catch block executes).
 
-### Example 1: Class and Object Basics
-**Problem:** Definitions of a class, constructor, and method.
-```python
-class Dog:
-    # Class Attribute
-    species = "Canis familiaris"
+**21. Programming Exercise: Person Class**
+*   **Question**: Create a `Person` class with `name` and `dob_year`, and a method to calculate age.
+*   **Solution**:
+    ```python
+    from datetime import date
+    class Person:
+        def __init__(self, name, dob_year):
+            self.name = name
+            self.dob = dob_year
+        def age(self):
+            return date.today().year - self.dob
 
-    # Initializer / Instance Attributes
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+    p = Person("John", 1995)
+    print(p.age())
+    ```
 
-    # Instance Method
-    def description(self):
-        return f"{self.name} is {self.age} years old"
+**21. Programming Exercise: Shape Subclasses**
+*   **Question**: Create a `Shape` base class and `Square`/`Circle` subclasses with an `area()` method.
+*   **Solution**:
+    ```python
+    class Shape:
+        def area(self): pass
 
-    # Another instance method
-    def speak(self, sound):
-        return f"{self.name} says {sound}"
+    class Square(Shape):
+        def __init__(self, side): self.side = side
+        def area(self): return self.side ** 2
 
-# Creating Objects
-mikey = Dog("Mikey", 6)
-tom = Dog("Tom", 9)
+    class Circle(Shape):
+        def __init__(self, r): self.r = r
+        def area(self): return 3.14 * self.r ** 2
+    ```
 
-print(mikey.description())
-print(tom.speak("Woof"))
-print(f"Species: {mikey.species}")
-```
-**Output:**
-```text
-Mikey is 6 years old
-Tom says Woof
-Species: Canis familiaris
-```
+**22. Programming Exercise: Point in Circle**
+*   **Question**: Function to check if a point `(px, py)` is inside a circle defined by `(cx, cy, r)`.
+*   **Solution**:
+    ```python
+    def point_in_circle(cx, cy, r, px, py):
+        dist = ((px-cx)**2 + (py-cy)**2)**0.5
+        if dist < r: return "Inside"
+        elif dist == r: return "On"
+        else: return "Outside"
+    ```
 
-### Example 2: Managing Attributes (getattr, setattr, delattr)
-**Problem:** Dynamically manage object attributes.
-```python
-class Person:
-    pass
+## 4. Exception Handling
 
-p = Person()
+**23. What is the syntax for handling exceptions in Python?**
+*   **Answer**:
+    ```python
+    try:
+        # Risky code
+    except SpecificError:
+        # Handle error
+    finally:
+        # Always executes (cleanup)
+    ```
 
-# Set attribute
-setattr(p, 'name', 'Alice')
-print(f"Name: {getattr(p, 'name')}")
+**24. True or False: The `finally` block is executed only if an exception occurs.**
+*   **Answer**: **False**. It is **always** executed, regardless of whether an exception occurred or not.
 
-# Add another
-p.age = 30
-print(f"Age: {p.age}")
+**25. True or False: You can have multiple `except` blocks for a single `try`.**
+*   **Answer**: **True**. You can catch different exceptions separately.
 
-# Delete attribute
-delattr(p, 'name')
-# print(p.name) # This would raise AttributeError
-print(f"Has name? {hasattr(p, 'name')}")
-```
-**Output:**
-```text
-Name: Alice
-Age: 30
-Has name? False
-```
+**26. Programming Exercise: Integer Input**
+*   **Question**: Handle the error when a user inputs a non-integer.
+*   **Solution**:
+    ```python
+    try:
+        val = int(input("Enter integer: "))
+    except ValueError:
+        print("Not a valid integer")
+    ```
 
-### Example 3: Inheritance & Polymorphism
-**Problem:** Demonstrate inheritance and method overriding.
-```python
-class Animal:
-    def speak(self):
-        print("Generic Sound")
-
-class Dog(Animal):
-    def speak(self):
-        print("Woof")
-
-class Cat(Animal):
-    def speak(self):
-        print("Meow")
-
-animals = [Dog(), Cat(), Animal()]
-for a in animals:
-    a.speak()
-```
-**Output:**
-```text
-Woof
-Meow
-Generic Sound
-```
-
-### Example 4: Operator Overloading
-**Problem:** Allow using `+` operator for vector addition.
-```python
-class Vector:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-    def __add__(self, other):
-        return Vector(self.x + other.x, self.y + other.y)
-
-    def __str__(self):
-        return f"Vector({self.x}, {self.y})"
-
-v1 = Vector(1, 2)
-v2 = Vector(3, 4)
-v3 = v1 + v2
-print(v3)
-```
-**Output:**
-```text
-Vector(4, 6)
-```
-
-## 2. Functional Programming Features
-
-### Example 5: Map and Filter w/ Lambda
-```python
-nums = [1, 2, 3, 4, 5, 6]
-
-# Filter even numbers
-evens = list(filter(lambda x: x % 2 == 0, nums))
-print(f"Evens: {evens}")
-
-# Square them using map
-squared = list(map(lambda x: x**2, evens))
-print(f"Squared Evens: {squared}")
-```
-**Output:**
-```text
-Evens: [2, 4, 6]
-Squared Evens: [4, 16, 36]
-```
-
-### Example 6: Custom Iterator
-**Problem:** Create a class that iterates from `start` down to 1.
-```python
-class CountDown:
-    def __init__(self, start):
-        self.current = start
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        if self.current <= 0:
-            raise StopIteration
-        val = self.current
-        self.current -= 1
-        return val
-
-print("Countdown:")
-for num in CountDown(3):
-    print(num)
-```
-**Output:**
-```text
-Countdown:
-3
-2
-1
-```
+**27. Programming Exercise: File Not Found**
+*   **Question**: Handle the case where a file does not exist.
+*   **Solution**:
+    ```python
+    try:
+        with open("missing.txt", "r") as f:
+            print(f.read())
+    except FileNotFoundError:
+        print("File does not exist")
+    ```

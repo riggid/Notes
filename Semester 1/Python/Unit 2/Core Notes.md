@@ -52,7 +52,14 @@ Python provides built-in sequence data structures to store collections of data.
 *   **Characteristics**:
     *   **Unordered**: No indexing or slicing.
     *   **Unique**: No duplicate elements.
-*   **Operations**: Union (`|`), Intersection (`&`), Difference (`-`), Symmetric Difference (`^`).
+*   **Operations**:
+    *   **Union**: `s1 | s2` or `s1.union(s2)`
+    *   **Intersection**: `s1 & s2` or `s1.intersection(s2)`
+    *   **Difference**: `s1 - s2` or `s1.difference(s2)`
+    *   **Symmetric Difference**: `s1 ^ s2` or `s1.symmetric_difference(s2)`
+    *   **Subset**: `s1 < s2` (proper subset), `s1 <= s2`.
+*   **Methods**: `add()`, `remove()` (raises error if missing), `discard()` (no error if missing), `pop()`, `clear()`.
+*   **Note**: Sets cannot contain mutable items (like lists) or other sets (use `frozenset`). Elements must be hashable.
 
 ### 1.4 Dictionaries
 *   **Definition**: A collection of key-value pairs.
@@ -61,7 +68,16 @@ Python provides built-in sequence data structures to store collections of data.
     *   **Keys**: Must be unique and immutable (strings, numbers, tuples).
     *   **Values**: Can be any type.
     *   **Mutable**: Keys can be added/removed.
-*   **Methods**: `keys()`, `values()`, `items()`, `get()`, `update()`.
+*   **Methods**:
+    *   `keys()`: Returns view of keys.
+    *   `values()`: Returns view of values.
+    *   `items()`: Returns view of (key, value) pairs.
+    *   `get(key, default)`: Safe access, returns `default` if key missing.
+    *   `update(other_dict)`: Merges dictionary.
+    *   `pop(key)`: Removes key and returns value.
+    *   `copy()`: Shallow copy.
+    *   **Comparison**: `d1 == d2` checks if they contain the same key-value pairs.
+    *   **Note on Copying**: `d2 = d1` creates a reference, not a copy. Modifying `d2` modifies `d1`. Use `d1.copy()` for a shallow copy.
 
 ---
 
@@ -88,8 +104,9 @@ def function_name(parameters):
 2.  **Keyword Arguments**: Arguments matched by parameter name (`func(a=1, b=2)`).
 3.  **Default Arguments**: Parameters with default values (`def func(a, b=5):`).
 4.  **Variable-Length Arguments**:
-    *   `*args`: Collects positional arguments into a **tuple**.
-    *   `**kwargs`: Collects keyword arguments into a **dictionary**.
+    *   `*args`: Collects extra positional arguments into a **tuple**.
+    *   `**kwargs`: Collects extra keyword arguments into a **dictionary**.
+    *   **Note**: Positional arguments must generally precede keyword arguments.
 
 ### 2.4 Scope and Lifetime
 *   **Local Scope**: Variables defined inside a function. specific to that function.
@@ -100,7 +117,12 @@ def function_name(parameters):
 
 ## 3. Files (Brief Overview)
 *   **Opening**: `f = open("filename", "mode")`
-    *   Modes: `'r'` (read), `'w'` (write), `'a'` (append), `'b'` (binary).
+    *   Modes:
+        *   `'r'` (read, default, error if not exists).
+        *   `'w'` (write, truncates file, creates if not exists).
+        *   `'a'` (append, creates if not exists).
+        *   `'x'` (exclusive creation, error if exists).
+        *   `'b'` (binary mode, e.g., `'rb'`, `'wb'`).
 *   **Reading**: `read()`, `readline()`, `readlines()`.
 *   **Writing**: `write()`, `writelines()`.
 *   **Closing**: `f.close()` or use context manager `with open(...) as f:`.

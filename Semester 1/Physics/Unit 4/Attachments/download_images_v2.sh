@@ -40,8 +40,8 @@ download_mw "He-Ne-Laser-Energieschema.svg" "hene_laser_levels.svg"
 # 10. CO2 Vibrational Modes
 download_mw "VibrationModesCO2.svg" "co2_vibrational_modes.svg"
 
-# 11. CO2 Laser Levels (External)
-curl -s -L -A "Mozilla/5.0" "https://www.tf.uni-kiel.de/matwis/amat/semicond/lectures/lasers/laser_types/co2_laser_principle.gif" -o "$TARGET_DIR/co2_laser_levels.gif"
+# 11. Alternative CO2 Laser Levels (Wikimedia)
+download_mw "Co2_laser_energieniveau_schema.svg" "co2_laser_levels.svg"
 
 # 12. Direct vs Indirect Bandgap
 # Using Wikimedia: "Band structure of indirect and direct bandgap.svg"
@@ -66,8 +66,8 @@ download_mw "Holography-record.png" "holography_scheme.png"
 # 17. Dielectric Polarisation
 download_mw "Dipole_polarisation_of_a_dielectric_material.svg" "dielectric_polarisation.svg"
 
-# 18. Dielectric Dispersion (External)
-curl -s -L -A "Mozilla/5.0" "https://www.tf.uni-kiel.de/matwis/amat/semicond/lectures/dielectric/dielectric_dispersion.gif" -o "$TARGET_DIR/dielectric_dispersion.gif"
+# 18. Dielectric Dispersion (Wikimedia Alternative)
+download_mw "Dielectric_responses.svg" "dielectric_dispersion.svg"
 
 # 19. BaTiO3 Phase Transitions
 download_mw "Pyroelectric-Ferroelectric_Titanate_Diagram.png" "batio3_phase_transitions.png"

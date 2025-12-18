@@ -9,7 +9,18 @@ dg-publish: true
 
 ## 1. Advanced Functions
 
-### 1.1 Recursion
+### 1.1 Generators
+*   **Definition**: Functions that yield a sequence of values lazily using `yield` keyword.
+*   **Benefits**: Memory efficient (generates one item at a time), handles infinite sequences.
+*   **Next**: `next()` retrieves the next value.
+*   **Expression**: `gen = (x**2 for x in range(5))` (similar to list comprehension but with `()`).
+
+### 1.2 Decorators
+*   **Definition**: A design pattern that allows user to add new functionality to an existing object without modifying its structure.
+*   **Syntax**: `@decorator_name` above function definition.
+*   **Usage**: Logging, authentication, timing functions.
+
+### 1.3 Recursion
 *   **Definition**: A function calling itself to solve a smaller instance of the problem.
 *   **Components**:
     *   **Base Case**: The condition that stops the recursion.
@@ -18,14 +29,14 @@ dg-publish: true
 *   **Usage**: Suitable for hierarchical problems (trees, graphs) and mathematical series (Fibonacci, Factorial).
 *   **Pros/Cons**: Cleaner code vs Potential Stack Overflow/Memory overhead.
 
-### 1.2 Callbacks
+### 1.4 Callbacks
 *   **Definition**: Passing a function as an argument to another function.
 *   **Usage**:
     *   Event handling (GUI).
     *   Custom sorting (e.g., `list.sort(key=custom_function)`).
     *   Asynchronous programming.
 
-### 1.3 Closures
+### 1.5 Closures
 *   **Definition**: A nested function that captures and remembers values from its enclosing scope even after the outer function has finished execution.
 *   **Requirement**: Nested function must refer to value in enclosing scope, and enclosing function must return the nested function.
 
@@ -77,7 +88,27 @@ dg-publish: true
     *   `wx.Frame`: The window interface.
     *   `wx.Panel`: Container for widgets.
     *   `wx.EVT_*`: Event binders (e.g., `wx.EVT_BUTTON`).
-    *   **Widgets**: `wx.Button`, `wx.TextCtrl`, `wx.StaticText`.
+    *   **MainLoop**: `app.MainLoop()` starts the event loop.
+    *   **Widgets**:
+        *   `wx.StaticText`: Display text (Label).
+        *   `wx.TextCtrl`: User input (Single line, Multiline, Password).
+        *   `wx.Button`: Trigger actions.
+        *   `wx.CheckBox`: Boolean input.
+        *   `wx.MessageDialog`: Popups (Info, Limit, Error).
+        *   `wx.TextEntryDialog`: Get single line input.
+    *   **Formatting**:
+        *   `SetFont()`: Change font style, size, weight.
+        *   `SetBackgroundColour()`: Change widget color.
+        *   `SetSize()`: Manually set pixel size and position.
+
+### 3.3 Layout Managers (Sizers)
+*   **Definition**: Automatically arrange widgets instead of fixed `pos=(x,y)`.
+*   **wx.BoxSizer**:
+    *   Rows or Columns (`wx.HORIZONTAL` or `wx.VERTICAL`).
+    *   `Add(widget, proportion, flag, border)`.
+*   **wx.GridSizer**:
+    *   Table-like grid (`rows`, `cols`, `vgap`, `hgap`).
+    *   Cells have equal size.
 
 
 ---

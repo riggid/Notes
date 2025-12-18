@@ -170,7 +170,7 @@ where $x>0, y>0$, and $x+y<1$.
 ### Solution
 Given the function:
 $$f(x,y) = x^3y^2(1 - x - y) = x^{3}y^{2} - x^{4}y^{2} - x^{3}y^{3}$$
-*(Note: The function given in the source derivation $f(x,y) = xy²(1 - x - y) = x²y² - xy² - 3y³$ is incorrect and does not match the first line or the subsequent partial derivatives.)*
+$$f(x,y) = x^3y^2(1 - x - y) = x^{3}y^{2} - x^{4}y^{2} - x^{3}y^{3}$$
 
 ### Step 1: Partial Derivatives
 
@@ -448,9 +448,10 @@ $$z_{vv}=0$$
     $$\frac{\partial u}{\partial x}+\frac{\partial u}{\partial y}+\frac{\partial u}{\partial z}=0$$
 2.  **(ii) Euler's Theorem:** $u$ is a **homogeneous function of degree $n=3$**.
     $$u(tx, ty, tz) = (tx-ty)(ty-tz)(tz-tx) = t^3 (x-y)(y-z)(z-x) = t^3 u(x,y,z)$$
+    (ii) **Euler's Theorem:** $u$ is a **homogeneous function of degree $n=3$**.
+    $$u(tx, ty, tz) = (tx-ty)(ty-tz)(tz-tx) = t^3 (x-y)(y-z)(z-x) = t^3 u(x,y,z)$$
     By Euler's Theorem for three variables:
     $$x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}+z\frac{\partial u}{\partial z}=nu = 3u$$
-    *(Note: The question in the file says $=u$, which is $n=1$. The correct degree is $n=3$ from the formula, but if the problem is stated as $=u$, it must be a typo in the question or an alternate form. Based on the function $u$, the correct result is $3u$.)*
 
 ***
 ### 13. If $u=x^{2}\tan^{-1}(\frac{y}{x})-y^{2}\tan^{-1}(\frac{x}{y})$ : then find the value of:
@@ -777,6 +778,7 @@ Examine $f(x,y)=x^{4}+y^{4}-2x^{2}+4xy-2y^{2}$ for extreme values.
     - **At $(\sqrt{2}, -\sqrt{2})$**: $r = 20 > 0$, $D = (20)(20) - 16 > 0 \implies$ **Minimum**.
     - **At $(-\sqrt{2}, \sqrt{2})$**: $r = 20 > 0$, $D = (20)(20) - 16 > 0 \implies$ **Minimum**.
     - **At $(0,0)$**: $D = (-4)(-4) - 16 = 0 \implies$ Test is inconclusive.
+      Further investigation along paths $y=x$ and $y=-x$ shows that $f(x,x) > 0$ for small $x$ while $f(x,-x) < 0$ for small $x$. Thus, $(0,0)$ is a **Saddle Point**.
 
 ---
 

@@ -24,7 +24,14 @@ dg-publish: true
 7. **Bruteforce**: Define the Bruteforce approach in problem solving.
    - **Answer**: A method that solves a problem by exhaustively checking all possible candidates/solutions.
 8. **Literals**: Define a literal and list the different types (Integer, Float, String, Boolean).
-   - **Answer**: A notation for representing a fixed value in source code. Types: String (`'hi'`), Numeric (`10`, `3.14`), Boolean (`True`), Special (`None`).
+   - **Answer**: A notation for representing a fixed value in source code.
+12:      - **String**: `'hi'`, `"hello"`
+13:      - **Numeric**:
+14:        - **Integer**: Decimal (`123`), Octal (`0o12` starts with `0o`), Hexadecimal (`0xA` starts with `0x`).
+15:        - **Float**: `3.14`, `1.5e2`
+16:        - **Complex**: `3+4j`
+17:      - **Boolean**: `True`, `False`
+18:      - **Special**: `None`
 9. **OS**: What is an Operating System?
    - **Answer**: System software that manages computer hardware and software resources and provides common services for computer programs.
 10. **Escape Sequences**: What is an escape sequence? List three examples (e.g., `\n`, `\t`, `\\`).
@@ -35,6 +42,73 @@ dg-publish: true
     - **Answer**: Hard Drive, Flash Drive, ROM.
 13. **Operators**: List the different categories of operators in Python.
     - **Answer**: Arithmetic, Relational, Logical, Bitwise, Assignment, Identity, Membership.
+
+## Code Output & Logic Tracing
+
+1. **Boolean Logic**: What is the output of the following?
+   ```python
+   a = True
+   b = False
+   c = False
+   if not a or b:
+       print(1)
+   elif not a or not b and c:
+       print(2)
+   elif not a or b or not b and a:
+       print(3)
+   else:
+       print(4)
+   ```
+   - **Answer**: `3`.
+     - `not a` is False. `not a or b` is False.
+     - `not b` is True. `not b and c` is False. `not a or ...` is False.
+     - `not b and a` is `True and True` = True. So the condition is True.
+
+2. **Short Circuiting**: What is the output?
+   ```python
+   a = True
+   b = False
+   c = False
+   if a or b and c:
+       print("HELLOWORLD")
+   else:
+       print("helloworld")
+   ```
+   - **Answer**: `HELLOWORLD`.
+     - operator precedence: `and` has higher precedence than `or`.
+     - `b and c` is False.
+     - `a or False` is `True or False` which is True.
+
+3. **Loop Step**: What is the output?
+   ```python
+   for i in range(0, 10, 2):
+       if i % 5 == 0:
+           print(i)
+   ```
+   - **Answer**: `0`.
+     - `range(0, 10, 2)` generates: 0, 2, 4, 6, 8.
+     - 0 % 5 == 0 (True) -> Prints 0.
+     - 2, 4, 6, 8 are not divisible by 5.
+
+4. **Nested Loop Pattern**: Trace the output for this pattern (similar to logic, self-trace):
+   ```python
+   increment = 1
+   val = 65
+   for i in range(0, 5):
+       for j in range(0, increment):
+           print(chr(val), end=" ")
+           val += 1
+       increment += 2
+       print()
+   ```
+   - **Answer**:
+     ```text
+     A 
+     B C D 
+     E F G H I 
+     J K L M N O P 
+     Q R S T U V W X Y 
+     ```
 
 ## True/False Questions
 

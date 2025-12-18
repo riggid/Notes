@@ -48,7 +48,7 @@ The constants are $C_1=3, C_2=-3, C_3=1$.
 **(f) Final Solution:**
 $$y(x) = 3 e^x - 3 e^{2x} + e^{3x}$$
 
-*(Note: The solution $y(x) = \frac{5}{2} e^x - 2 e^{2x} + \frac{1}{2} e^{3x}$ corresponds to the initial condition $y''(0)=-1$, not $y''(0)=0$.)*
+*(Note: The solution assumes the standard initial condition $y''(0)=0$.)*
 
 
 ---
@@ -152,17 +152,8 @@ $y'''(0)=1 \implies (6C_4) - (2C_3) - 2[(2C_3) - C_2] + [C_2 - C_1] = 1$.
 $6C_4 - 2C_3 - 4C_3 + 2C_2 + C_2 - C_1 = 1 \implies 6C_4 - 6C_3 + 3C_2 - C_1 = 1$.
 $6C_4 - 6(-1/2) + 3(0) - 1 = 1 \implies 6C_4 + 3 - 1 = 1 \implies 6C_4 = -1 \implies C_4 = -1/6$.
 
-*(Note: Source answer has $C_4 = 1/6$. Let's re-verify $y'''(0)$.
-$y'' = (C_1-2C_2+2C_3 + (C_2-2C_3+6C_4)x + (C_3-2C_4)x^2 + C_4x^3)e^{-x}$. My calculation above seems wrong.
-Let's use a simpler method: $y = (C_1+C_2x+C_3x^2+C_4x^3)e^{-x}$.
-$y(0)=1 \implies C_1=1$.
-$y'(0)=-1 \implies C_2-C_1 = -1 \implies C_2=0$.
-$y''(0)=0 \implies C_1-2C_2+2C_3 = 0 \implies 1-0+2C_3=0 \implies C_3=-1/2$.
-$y'''(0)=1 \implies -C_1+3C_2-6C_3+6C_4 = 1 \implies -1+0-6(-1/2)+6C_4 = 1 \implies -1+3+6C_4=1 \implies 2+6C_4=1 \implies 6C_4=-1 \implies C_4=-1/6$.)*
-The source answer ($y(x)=(1-\frac{1}{2}x^{2}+\frac{1}{6}x^{3})e^{-x}$) implies $C_1=1, C_2=0, C_3=-1/2, C_4=1/6$. This satisfies $y(0)=1, y'(0)=-1, y''(0)=0$, but $y'''(0)= -1+3(0)-6(-1/2)+6(1/6) = -1+3+1 = 3$. The source answer likely corresponds to $y'''(0)=3$. Assuming the source answer is correct for the coefficients:
-
-**Final Solution (matching source answer format):**
-$$y(x) = (1 - \frac{1}{2} x^2 + \frac{1}{6} x^3) e^{-x}$$
+**Final Solution:**
+$$y(x) = (1 - \frac{1}{2} x^2 - \frac{1}{6} x^3) e^{-x}$$
 
 ---
 ### 7. Solve $y^{(4)}-5y^{\prime\prime}+4y=0$ with $y(0)=0, y^{\prime}(0)=1, y^{\prime\prime}(0)=0, y^{\prime\prime\prime}(0)=-1$.
@@ -416,24 +407,16 @@ A.E. is $m^2+1=0$. Roots $m=\pm i$.
 $C.F. = C_1 \cos x + C_2 \sin x$.
 
 **2. P.I.:**
-$P.I. = \frac{1}{D^2+1} (x \sin x)$. (Case II Failure for $\sin x$)
-Use $e^{ix} = \cos x + i \sin x$. $\sin x = \text{Im.P. of } e^{ix}$.
-$P.I. = \text{Im.P. of } \frac{1}{D^2+1} (x e^{ix})$ (Case IV Failure)
-$= \text{Im.P. of } e^{ix} \frac{1}{(D+i)^2+1} x = \text{Im.P. of } e^{ix} \frac{1}{D^2+2iD} x$
-$= \text{Im.P. of } e^{ix} \frac{1}{2iD(1 + D/2i)} x = \text{Im.P. of } e^{ix} \frac{1}{2iD} (1 - \frac{D}{2i} + \dots) x$
-$= \text{Im.P. of } \frac{e^{ix}}{2i} \frac{1}{D} (x - \frac{1}{2i}) = \text{Im.P. of } \frac{e^{ix}}{2i} (\frac{x^2}{2} - \frac{x}{2i})$
-$= \text{Im.P. of } \frac{e^{ix}}{2i} (\frac{x^2}{2} + \frac{ix}{2}) = \text{Im.P. of } (-\frac{i e^{ix}}{2})(\frac{x^2+ix}{2})$
-$= \text{Im.P. of } -\frac{i}{4} (\cos x + i \sin x)(x^2+ix)$
-$= \text{Im.P. of } -\frac{i}{4} (x^2 \cos x + ix \cos x + ix^2 \sin x - x \sin x)$
-$= -\frac{1}{4} (x^2 \cos x - x \sin x + x^2 \sin x)$. (Mistake somewhere?)
-
-Alternative method for Case II failure: $P.I. = x \frac{1}{f'(D)} \sin x - \frac{f''(D)}{[f'(D)]^2} \sin x$? No.
-Formula: $\frac{1}{D^2+a^2} (x \sin ax) = -\frac{x^2}{4a} \cos ax + \frac{x}{4a^2} \sin ax$.
-Here $a=1$. $P.I. = -\frac{x^2}{4} \cos x + \frac{x}{4} \sin x$.
+$P.I. = \frac{1}{D^2+1} (x \sin x) = \text{Im}\left[ \frac{1}{D^2+1} (x e^{ix}) \right]$
+$= \text{Im}\left[ e^{ix} \frac{1}{(D+i)^2+1} x \right] = \text{Im}\left[ e^{ix} \frac{1}{D^2+2iD} x \right]$
+$= \text{Im}\left[ e^{ix} \frac{1}{2iD} \left(1 + \frac{D}{2i}\right)^{-1} x \right] = \text{Im}\left[ \frac{e^{ix}}{2i} \frac{1}{D} \left(1 - \frac{D}{2i}\right) x \right]$
+$= \text{Im}\left[ \frac{e^{ix}}{2i} \left(\frac{x^2}{2} - \frac{x}{2i}\right) \right] = \text{Im}\left[ \frac{\cos x + i \sin x}{2i} \left(\frac{x^2}{2} + \frac{ix}{2}\right) \right]$
+$= \text{Im}\left[ \frac{-i(\cos x + i \sin x)}{2} \left(\frac{x^2}{2} + \frac{ix}{2}\right) \right] = \text{Im}\left[ \frac{-i \cos x + \sin x}{2} \left(\frac{x^2}{2} + \frac{ix}{2}\right) \right]$
+$= \text{Im}\left[ \frac{1}{2} \left( -\frac{i x^2}{2} \cos x + \frac{x}{2} \cos x + \frac{x^2}{2} \sin x + \frac{ix}{2} \sin x \right) \right]$
+$= \frac{1}{2} \left( -\frac{x^2}{2} \cos x + \frac{x}{2} \sin x \right) = -\frac{x^2}{4} \cos x + \frac{x}{4} \sin x$
 
 **3. General Solution:**
-$$y=C_{1}cos~x+C_{2}sin~x - \frac{x^2}{4}cos~x + \frac{x}{4}sin~x$$
-*(The answer in the source is incorrect)*
+$$y=C_{1}\cos x+C_{2}\sin x - \frac{x^2}{4}\cos x + \frac{x}{4}\sin x$$
 
 ---
 ### 19. Solve $(D^{3}-12D+16)y=(e^{x}+e^{-2x})^{2}$.
@@ -510,8 +493,7 @@ $P.I. = \frac{1}{D^2-3D+2} [2\cos(2x+3)] + \frac{1}{D^2-3D+2} [2e^x]$.
 $P.I. = -\frac{1}{10} [3\sin(2x+3) + \cos(2x+3)] - 2x e^x$.
 
 **3. General Solution:**
-$$y=C_{1}e^{x}+C_{2}e^{2x}-\frac{3~sin(2x+3)+cos(2x+3)}{10}-2xe^{x}$$
-*(Note: Source answer has a sign error in the trig part of P.I.)*
+$$y=C_{1}e^{x}+C_{2}e^{2x}-\frac{3\sin(2x+3)+\cos(2x+3)}{10}-2xe^{x}$$
 
 ---
 ### 22. Solve $(D^{3}-D^{2}-D+1)y=1+x^{2}$.
@@ -595,24 +577,9 @@ $C.F. = C_1 e^{2x} + C_2 e^{-2x}$.
 **2. P.I.:**
 $X = \cosh(2x-1) + 3^x = \cosh(2x-1) + e^{x \ln 3}$.
 $P.I. = \frac{1}{D^2-4} \cosh(2x-1) + \frac{1}{D^2-4} e^{x \ln 3}$.
-* $P.I._1 = \frac{1}{D^2-4} \cosh(2x-1)$. Use $\cosh A = \frac{e^A+e^{-A}}{2}$.
-  $= \frac{1}{2} \frac{1}{D^2-4} e^{2x-1} + \frac{1}{2} \frac{1}{D^2-4} e^{-(2x-1)}$.
-  For $e^{2x-1}$, $D=2$ fails. $P.I._{1a} = \frac{e^{-1}}{2} \frac{x}{2D}|_{D=2} e^{2x} = \frac{e^{-1}}{2} \frac{x}{4} e^{2x}$.
-  For $e^{-2x+1}$, $D=-2$ fails. $P.I._{1b} = \frac{e^{1}}{2} \frac{x}{2D}|_{D=-2} e^{-2x} = \frac{e}{2} \frac{x}{(-4)} e^{-2x}$.
-  $P.I._1 = \frac{x}{8} (e^{2x-1} - e^{-2x+1})$. This is not $\frac{x \sinh(2x-1)}{4}$.
-  Let's use formula for $\cosh ax$: replace $D^2=a^2=4$. Failure!
-  Use $\frac{1}{f(D^2)} \cosh ax = x \frac{1}{f'(D^2)} \cosh ax$? No.
-  Use $P.I. = x \frac{1}{f'(D)} \cosh(ax)$? No.
-  Use formula $\frac{1}{D^2-a^2} \cosh ax = \frac{x}{2a} \sinh ax$.
-  Here we have $\cosh(2x-1)$. Let $u=2x-1$. $du=2dx$. $D_x = 2D_u$. $D_x^2=4D_u^2$.
-  $(4D_u^2-4)y = \cosh u$. $P.I. = \frac{1}{4(D_u^2-1)} \cosh u$. Not standard.
-  Let's redo $P.I._{1a}, P.I._{1b}$ properly.
-  $P.I._1 = \frac{1}{D^2-4} \cosh(2x-1) = \text{Re.P of} \frac{1}{D^2-4} e^{i(i(2x-1))} = ?$ No.
-  Use $x \frac{1}{f'(D)} e^{ax}$ form.
-  $P.I._1 = \frac{1}{2} \frac{x}{2D} e^{2x-1} + \frac{1}{2} \frac{x}{2D} e^{-(2x-1)}$ is wrong.
-  Formula is: $\frac{1}{D^2-a^2} \cosh ax = \frac{x}{2a}\sinh ax$.
-  What about $\cosh(ax+b)$? $P.I. = \frac{x}{2a}\sinh(ax+b)$. Let's use this.
-  $P.I._1 = \frac{x}{2(2)} \sinh(2x-1) = \frac{x}{4} \sinh(2x-1)$.
+* $P.I._1 = \frac{1}{D^2-4} \cosh(2x-1)$.
+  Using the formula $\frac{1}{D^2-a^2} \cosh(ax+b) = \frac{x}{2a} \sinh(ax+b)$.
+  Here $a=2$, so $P.I._1 = \frac{x}{4} \sinh(2x-1)$.
 * $P.I._2 = \frac{1}{D^2-4} e^{x \ln 3}$. Replace $D = \ln 3$.
   $P.I._2 = \frac{1}{(\ln 3)^2 - 4} e^{x \ln 3} = \frac{3^x}{(\ln 3)^2 - 4}$.
 
@@ -775,8 +742,7 @@ Solution in x: $y = (C_1 + C_2 \ln x) x^2$.
 $$y=C_{1}x^{2}+C_{2}x^{2}ln~x$$
 
 ---
-### 32. Solve $x^{2}\frac{d^{2}y}{dx^{2}}-x\frac{dy}{dx}+y=x^{3}$.
-*(Typo in source, Q19 is $x^2 y'' - 2xy' + y = x^3$. Let's solve the source version)*
+### 32. Solve $x^{2}\frac{d^{2}y}{dx^{2}}-2x\frac{dy}{dx}+y=x^{3}$.
 #### Detailed Solution:
 Equation: $x^{2}\frac{d^{2}y}{dx^{2}}-2x\frac{dy}{dx}+y=x^{3}$.
 Substitute $x=e^z$. $[D(D-1) - 2D + 1]y = (e^z)^3$.

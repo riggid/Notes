@@ -29,6 +29,53 @@ dg-publish: true
    - **Answer**: Empty Set: `set()`. Empty Dictionary: `{}`.
 10. **Tuple Syntax**: How do you write a tuple of only one element? (`(x,)`).
     - **Answer**: `(x,)` (must include a comma).
+11. **Functions**: Function defined without a name?
+    - **Answer**: Anonymous function or Lambda function.
+12. **Parameter Passing**: Is Python pass-by-value or pass-by-reference?
+    - **Answer**: Python uses "Pass by Object Reference".
+      - Immutable args (int, str, tuple) act like pass-by-value (cannot be changed in caller).
+      - Mutable args (list, dict) act like pass-by-reference (contents can be changed).
+13. **File Modes**: Which mode raises validation error if file exists?
+    - **Answer**: `'x'` (exclusive creation). `'r'` raises error if file *does not* exist.
+14. **Keys**: Can a list be a dictionary key?
+    - **Answer**: No, because lists are mutable and unhashable. Keys must be immutable (str, int, tuple).
+
+## Logic & Code Tracing (New)
+
+1. **List Aliasing**:
+   ```python
+   x = [1, 2, 3, 4]
+   y = x
+   y[2] = 100
+   print(x)
+   ```
+   - **Output**: `[1, 2, 100, 4]` (x and y refer to same object).
+
+2. **Default Mutable Argument**:
+   ```python
+   def func(x=[]):
+       x.append(1)
+       return x
+   print(func())
+   print(func())
+   ```
+   - **Output**: `[1]` then `[1, 1]` (Default arg created once).
+
+3. **Dictionary Copy**:
+   ```python
+   d1={"i":"ice cream", "f":"fun"}
+   d2=d1.copy()
+   d2["i"]="ice"
+   print(d1["i"])
+   ```
+   - **Output**: `ice cream` (Shallow copy, top-level keys independent).
+
+4. **Set Mutability**:
+   ```python
+   s = {1, 2, 3}
+   s.add([4, 5]) 
+   ```
+   - **Output**: `TypeError` (List is unhashable).
 
 ## True/False Questions
 
@@ -130,6 +177,36 @@ print(f"Vowels in '{text}': {count}")
 **Output:**
 ```text
 Vowels in 'Python Programming': 4
+```
+
+### Program 5.1: Vowel & Consonant Count (Lab)
+**Count vowels and consonants in a string.**
+```python
+text = "Python Programming"
+vowels = "aeiouAEIOU"
+v_count = 0
+c_count = 0
+
+for char in text:
+    if char.isalpha():
+        if char in vowels:
+            v_count += 1
+        else:
+            c_count += 1
+print(f"Vowels: {v_count}, Consonants: {c_count}")
+```
+
+### Program 5.2: Replace and Uppercase (Lab)
+**Replace 'o' with '0' and convert to uppercase.**
+```python
+text = "Hello World"
+res = ""
+for char in text:
+    if char.lower() == 'o':
+        res += '0'
+    else:
+        res += char
+print(res.upper())
 ```
 
 ## 2. Lists & Tuples
@@ -283,7 +360,70 @@ print()
 2 3 5 7 11 13 17 19 23 29 
 ```
 
-## 4. Functions
+### Program 15.1: Voting System (Duplicate Check) (Lab)
+**Identify duplicate votes and unique candidates.**
+```python
+votes = [1, 2, 3, 1, 1, 2, 3, 4, 5, 6, 7]
+counts = {}
+unique_candidates = set()
+
+for v in votes:
+    counts[v] = counts.get(v, 0) + 1
+
+duplicates = {k: v for k, v in counts.items() if v > 1}
+single_votes = {k for k, v in counts.items() if v == 1}
+
+print(f"Duplicates: {duplicates}")
+print(f"Unique Candidates: {single_votes}")
+```
+
+## 4. File Operations (New)
+
+### Program 16: Read and Display (CSV)
+**Read the contents of `pythonlab.csv` and display each record.**
+```python
+f = open("pythonlab.csv", "r")
+for line in f:
+    print(line.strip())
+f.close()
+```
+
+### Program 17: Count Employees (CSV)
+**Count how many employee records are present (excluding header).**
+```python
+with open("pythonlab.csv", "r") as f:
+    lines = f.readlines()
+    print("Total (excluding header):", len(lines) - 1)
+```
+
+### Program 18: Filter by Salary (CSV)
+**Print names of employees earning > 50,000.**
+```python
+with open("pythonlab.csv", "r") as f:
+    f.readline() # Skip header
+    for line in f:
+        data = line.strip().split(",")
+        if int(data[4]) > 50000:
+            print(f"{data[0]} - {data[4]}")
+```
+
+### Program 19: Sort by Salary (CSV)
+**Display names sorted by salary (highest first).**
+```python
+with open("pythonlab.csv", "r") as f:
+    f.readline()
+    records = []
+    for line in f:
+        data = line.strip().split(",")
+        records.append((data[0], int(data[4])))
+
+# Sort using lambda
+sorted_list = sorted(records, key=lambda x: x[1], reverse=True)
+for name, sal in sorted_list:
+    print(f"{name} - {sal}")
+```
+
+## 5. Functions
 
 ### Program 16: Basic Functions (Mandatory)
 ```python
@@ -688,4 +828,6 @@ while sieve:
 
 for p in sorted(primes):
     print(p, end=" ")
+```
+
 ```

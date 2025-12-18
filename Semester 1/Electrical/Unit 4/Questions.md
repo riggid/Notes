@@ -139,7 +139,7 @@ A 6-pole armature is wound with $498$ conductors. The flux and the speed is such
 1.  **Given**: $P=6$, $Z=498$. EMF/conductor = $2V$. Current/conductor ($I_c$) = $120A$.
 2.  **Total Generated Power** (Same for both):
     $$ P_{gen} = \text{Total EMF} \times \text{Total Current} = Z \times (\text{EMF/cond}) \times I_c $$
-    Actually simpler: Total Power = Total Volts * Total Amps.
+    **Alternative Method**: Total Power = Total Volts $\times$ Total Amps.
     Total Power = $498 \text{ conds} \times 2 V/cond \times 120 A = 119.52 kW$ (Power is independent of connection type).
 
 3.  **Case a) Wave Winding ($A=2$)**:

@@ -131,7 +131,9 @@ def my_decorator(func):
 **18. Import Styles:**
 *   `import module`: Access via `module.func()`
 *   `from module import func`: Access via `func()`
-*   `from module import *`: Imports everything (can cause name clashes).
+*   `from module import *`: Imports everything (can cause name clashes, modifying `sys.path` vs `PYTHONPATH`).
+*   **Package vs Module**: Package is a directory with `__init__.py` containing modules. Module is a single file.
+*   **Relative Import**: `from . import module` (current package).
 
 ## 6. GUI (wxPython)
 
@@ -149,6 +151,45 @@ def my_decorator(func):
 *   **PDB**: Python Debugger. Commands: `n` (next), `s` (step), `c` (continue), `q` (quit).
 *   **Namespace**: A mapping from names to objects.
 *   **Difference generator function vs regular**: Generator uses `yield`, returns an iterator, pauses execution. Regular returns once.
+*   **PDB Commands**:
+    *   `l` (list): Show code.
+    *   `p` (print): Print variable value.
+
+## Code Output Tracing (New)
+
+1. **Generator Execution**:
+   ```python
+   def gen():
+       yield 1
+       yield 2
+   g = gen()
+   print(next(g))
+   print(next(g))
+   ```
+   - **Output**: `1` then `2`.
+
+2. **Closure Scope**:
+   ```python
+   def outer():
+       x = 10
+       def inner():
+           print(x)
+       return inner
+   func = outer()
+   func()
+   ```
+   - **Output**: `10` (Closure remembers `x`).
+
+3. **Decorator Order**:
+   ```python
+   def dec(f):
+       print("Decorating")
+       return f
+   @dec
+   def my_func():
+       pass
+   ```
+   - **Output**: `Decorating` (Printed at definition time, not call time).
 
 ***
 

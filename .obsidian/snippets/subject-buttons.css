@@ -136,9 +136,7 @@ a.subject-button:hover .button-icon {
     color: var(--ctp-base);
     /* Contrast against mauve bg */
     transform: scale(1.2) rotate(5deg);
-}
-
-/* ================================================== */
+}/* ================================================== */
 /* MCQ Interactive Styling - Catppuccin Mocha Theme  */
 /* ================================================== */
 

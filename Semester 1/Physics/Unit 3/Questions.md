@@ -11,7 +11,9 @@ dg-publish: true
 
 ## Classical Free Electron Theory (CFET)
 
-**1. Briefly outline the features of classical free electron theory.**
+### 1. Briefly outline the features of classical free electron theory.
+
+#### Answer
 
 The Classical Free Electron Theory (CFET), proposed by Drude and Lorentz (1904), explains the electrical and thermal conductivity of metals by modeling conduction electrons as a gas of free particles. Its basic assumptions are:
 *   Valence electrons become free electrons, moving randomly like an ideal gas within the metal.
@@ -20,7 +22,9 @@ The Classical Free Electron Theory (CFET), proposed by Drude and Lorentz (1904),
 *   Electrons obey classical Maxwell-Boltzmann statistics.
 *   Electrons collide with ion cores, which is responsible for resistance. The mean time between collisions is called the relaxation time ($\tau$).
 
-**2. Define and explain the following terms (i) conductivity (ii) resistivity (iii) drift velocity (iv) mean free path (v) relaxation time (vi) mobility.**
+### 2. Define and explain the following terms (i) conductivity (ii) resistivity (iii) drift velocity (iv) mean free path (v) relaxation time (vi) mobility.
+
+#### Answer
 
 *   **(i) Conductivity ($\sigma$)**
     Electrical conductivity is a measure of a material's ability to conduct an electric current. It is the reciprocal of resistivity ($\sigma = 1/\rho$) and is defined as the ratio of current density ($\vec{J}$) to the applied electric field ($\vec{E}$): $\vec{J} = \sigma \vec{E}$. In CFET, it is given by $\sigma = \frac{ne^2\tau}{m}$. Its unit is siemens per meter (S/m) or $(\Omega \text{ m})^{-1}$.
@@ -40,7 +44,9 @@ The Classical Free Electron Theory (CFET), proposed by Drude and Lorentz (1904),
 *   **(vi) Mobility ($\mu$)**
     Electron mobility is a measure of how quickly an electron (or hole) can move through a metal or semiconductor under the influence of an electric field. It is defined as the magnitude of drift velocity per unit electric field: $\mu = \frac{|\mathbf{v_d}|}{E}$. In CFET, $\mu = \frac{e\tau}{m}$. Its unit is m$^2$/(V s).
 
-**3. Obtain the expression for dc conductivity using the ideas of classical free electron theory.**
+### 3. Obtain the expression for dc conductivity using the ideas of classical free electron theory.
+
+#### Answer
 
 Under the classical free electron theory, the current density ($\vec{J}$) is given by:
 $\vec{J} = n e \mathbf{v_d}$
@@ -60,7 +66,9 @@ $\sigma \vec{E} = \frac{ne^2\tau}{m}\vec{E}$
 Therefore, the expression for dc conductivity in classical free electron theory is:
 $$\sigma = \frac{ne^2\tau}{m}$$
 
-**4. Give the merits and drawbacks of classical free electron theory.**
+### 4. Give the merits and drawbacks of classical free electron theory.
+
+#### Answer
 
 **Merits:**
 *   It successfully explains Ohm's Law (the linear relationship between current and voltage).
@@ -74,11 +82,15 @@ $$\sigma = \frac{ne^2\tau}{m}$$
 3.  **Conductivity Variations with Electron Concentrations**: CFET suggests $\sigma \propto n$, implying metals with more valence electrons would be better conductors. However, copper (1 valence electron) conducts better than aluminum (3 valence electrons), contradicting this.
 4.  **Hall Effect**: CFET predicts a negative Hall coefficient for all metals (because electrons are negatively charged carriers). Experimentally, some metals (e.g., Zinc, Cadmium) show a positive Hall coefficient.
 
-**5. What is a distribution function?**
+### 5. What is a distribution function?
+
+#### Answer
 
 A **distribution function** is a mathematical function that describes how particles (or states, or properties) are distributed across different values of a relevant variable (e.g., energy, velocity, momentum) within a system. In statistical mechanics, these functions quantify the probability of finding a particle in a particular state or energy level at a given temperature. They are fundamental for characterizing the statistical behavior of large ensembles of particles. (Refer to [[#distribution-functions|Core Notes.md]] for more detail).
 
-**6. Write a brief review of Maxwell-Boltzmann distribution function.**
+### 6. Write a brief review of Maxwell-Boltzmann distribution function.
+
+#### Answer
 
 The **Maxwell-Boltzmann (MB) distribution function** is a classical statistical distribution used to describe the energies or speeds of distinguishable particles (like atoms or molecules in an ideal gas) at thermal equilibrium.
 
@@ -94,7 +106,9 @@ The **Maxwell-Boltzmann (MB) distribution function** is a classical statistical 
 
 ## Quantum Free Electron Theory (QFET)
 
-**7. Briefly outline the features of quantum free electron theory.**
+### 7. Briefly outline the features of quantum free electron theory.
+
+#### Answer
 
 The Quantum Free Electron Theory (QFET) emerged from the failings of CFET and incorporates quantum mechanics:
 *   Electrons are treated as quantum particles obeying **Fermi-Dirac statistics** instead of classical Maxwell-Boltzmann statistics.
@@ -104,7 +118,9 @@ The Quantum Free Electron Theory (QFET) emerged from the failings of CFET and in
 *   It considers the **density of states** to determine the number of available energy levels for electrons.
 *   It largely neglects the periodic potential of the ion cores, treating electrons as "free" particles within a potential well, but with quantum behavior.
 
-**8. Energy quantization for particle in a box and the application of Pauli exclusion principle are the defining features of a quantum free electron gas. Explain.**
+### 8. Energy quantization for particle in a box and the application of Pauli exclusion principle are the defining features of a quantum free electron gas. Explain.
+
+#### Answer
 
 These two concepts are the core defining features of a quantum free electron gas, fundamentally distinguishing it from a classical gas:
 
@@ -118,7 +134,9 @@ These two concepts are the core defining features of a quantum free electron gas
 
 **In essence, the combination of quantum confinement leading to discrete energy levels, and the Pauli Exclusion Principle forcing electrons to occupy these levels sequentially, fills up a broad range of energy states, creating a highly energetic "sea" of electrons even at low temperatures, which is the hallmark of the quantum free electron gas.** (Refer to [[#defining-features-of-a-quantum-free-electron-gas|Core Notes.md]] for more detail).
 
-**9. Write the differences between Fermions and Bosons.**
+### 9. Write the differences between Fermions and Bosons.
+
+#### Answer
 
 Particles in the universe are fundamentally classified into two groups based on their intrinsic spin and the statistical laws they obey. These are Fermions and Bosons.
 
@@ -133,7 +151,9 @@ Particles in the universe are fundamentally classified into two groups based on 
 
 (Refer to [[#fermions-vs-bosons|Core Notes.md]] for more detail).
 
-**10. Explain the concepts of Fermi Energy and Fermi velocity.**
+### 10. Explain the concepts of Fermi Energy and Fermi velocity.
+
+#### Answer
 
 *   **(i) Fermi energy ($E_f$)**
     Fermi energy is the highest occupied energy level by electrons in a material at absolute zero temperature (0 Kelvin). It represents the maximum kinetic energy an electron can have when all states below it are filled and all states above it are empty, due to the Pauli Exclusion Principle. It defines the boundary between occupied and unoccupied electron states at T=0K. In essence, it is the energy of the most energetic electron in the system at 0K.
@@ -143,7 +163,9 @@ Particles in the universe are fundamentally classified into two groups based on 
 
 (Refer to [[#fermi-energy-e_f-fermi-temperature-t_f-fermi-velocity-v_f|Core Notes.md]] for more detail).
 
-**11. Derive an expression for Fermi energy using the concept of density of states.**
+### 11. Derive an expression for Fermi energy using the concept of density of states.
+
+#### Answer
 
 The Fermi energy ($E_f$) at 0 Kelvin is defined as the highest energy level occupied by electrons. At 0K, all energy states up to $E_f$ are completely filled, and all states above $E_f$ are empty. Therefore, the total number of free electrons per unit volume ($n$) in a metal can be found by integrating the density of states ($g(E)$) from $E=0$ up to $E_f$.
 
@@ -170,7 +192,9 @@ The Fermi energy ($E_f$) at 0 Kelvin is defined as the highest energy level occu
     $$E_f = \left(\frac{3n}{\pi}\right)^{2/3} \frac{h^2}{8m}$$
 This is the expression for the Fermi energy in terms of the electron (carrier) density $n$. (Refer to [[#total-electron-concentration-n|Core Notes.md]] for more detail).
 
-**12. Plot the density of states for 1D and 2D systems. Relate DoS to nanomaterials' special properties.**
+### 12. Plot the density of states for 1D and 2D systems. Relate DoS to nanomaterials' special properties.
+
+#### Answer
 
 **Plots of Density of States (g(E)) for Different Dimensions:**
 
@@ -208,7 +232,9 @@ The unique properties of nanomaterials stem directly from the modification of th
 
 (Refer to [[#density-of-states-ge|Core Notes.md]] and [[#density-of-states-and-nanomaterials-special-properties|Density of States and Nanomaterials' Special Properties]] for more detail).
 
-**13. Create a table of 6 metals comparing valency, conductivity, free electron density and relaxation time.**
+### 13. Create a table of 6 metals comparing valency, conductivity, free electron density and relaxation time.
+
+#### Answer
 
 Here's a conceptual table comparing these properties for six common metals. The values for conductivity, free electron density, and relaxation time can vary slightly depending on the source, purity, and temperature.
 
@@ -226,7 +252,9 @@ Here's a conceptual table comparing these properties for six common metals. The 
 *   **Electron Density vs. Conductivity:** While free electron density ($n$) is a factor in conductivity ($\sigma = \frac{ne^2\tau}{m}$), it is not the sole determinant. Aluminum has a higher electron density than Copper, but Copper is a better conductor. This highlights the crucial role of **relaxation time ($\tau$)** (or equivalently, mean free path) in determining conductivity.
 *   **Relaxation Time vs. Conductivity:** Metals with longer relaxation times (meaning electrons can travel for a longer duration or distance before scattering) tend to have higher conductivity, assuming similar free electron densities. Silver, with the highest conductivity, also has a relatively long relaxation time. This confirms that the frequency of electron-scattering events is a dominant factor in electrical resistance, especially at room temperature.
 
-**14. Derive an expression for thermal conductivity of a metal.**
+### 14. Derive an expression for thermal conductivity of a metal.
+
+#### Answer
 
 The thermal conductivity ($K$) of a metal, particularly considering the contribution of free electrons, can be derived using the kinetic theory of gases, adapted with quantum insights from QFET. It quantifies the rate at which heat energy is transported through a material under a temperature gradient.
 
@@ -264,7 +292,9 @@ The thermal conductivity ($K$) of a metal, particularly considering the contribu
     $$K = \frac{\pi^2 n k_B^2 T \tau}{3 m^*}$$
 (Refer to [[#derivation-of-thermal-conductivity-quantum-free-electron-theory|Core Notes.md]] for more detail).
 
-**15. Correlate thermal conductivity and Electrical conductivity as per Wiedemann Franz's law to establish Lorenz Number (Assignment 1).**
+### 15. Correlate thermal conductivity and Electrical conductivity as per Wiedemann Franz's law to establish Lorenz Number (Assignment 1).
+
+#### Answer
 
 The Wiedemann-Franz law states that for metals, the ratio of thermal conductivity ($K$) to electrical conductivity ($\sigma$) is directly proportional to the absolute temperature ($T$). The constant of proportionality is known as the Lorenz Number ($L$).
 To establish the Lorenz Number, we use the expressions for thermal and electrical conductivity derived from the Quantum Free Electron Theory.
@@ -294,7 +324,9 @@ To establish the Lorenz Number, we use the expressions for thermal and electrica
 **Correlation and Significance:**
 The successful derivation of a constant Lorenz Number that matches experimental observations perfectly demonstrates the strong correlation between heat and electrical transport in metals, mediated by the same free electrons. It validates the Quantum Free Electron Theory's ability to accurately describe these fundamental physical processes in metals. (Refer to [[#wiedemann-franz-law-and-lorenz-number-l|Core Notes.md]] for more detail).
 
-**16. Elaborate quantitatively to prove the fact that the heat and electrical transport in metals involve the free electrons in the metal (Assignment 2).**
+### 16. Elaborate quantitatively to prove the fact that the heat and electrical transport in metals involve the free electrons in the metal (Assignment 2).
+
+#### Answer
 
 The quantitative proof that both heat and electrical transport in metals are primarily mediated by free electrons lies in the successful theoretical derivation and experimental verification of the **Wiedemann-Franz Law** and its associated **Lorenz Number**, using the Quantum Free Electron Theory (QFET).
 
@@ -331,7 +363,9 @@ The quantitative proof that both heat and electrical transport in metals are pri
 
 ## Band Theory & Electron Transport
 
-**1. State Bloch’s theorem and explain the form of Bloch functions in a periodic potential. Illustrate how this theorem underpins the concept of electron wavefunctions in crystalline solids.**
+### 17. State Bloch’s theorem and explain the form of Bloch functions in a periodic potential. Illustrate how this theorem underpins the concept of electron wavefunctions in crystalline solids.
+
+#### Answer
 
 **Bloch's Theorem Statement:**
 Bloch's theorem states that for an electron moving in a perfectly periodic potential, the wave function solution ($\psi_k(\mathbf{r})$) can be written as a product of a plane wave ($e^{i\mathbf{k}\cdot\mathbf{r}}$) and a periodic function ($u_k(\mathbf{r})$) that has the same periodicity as the crystal lattice.
@@ -350,7 +384,9 @@ The Bloch function $\psi_k(\mathbf{r})$ consists of two parts:
 *   **Effective Mass**: The interaction with the periodic lattice modifies the electron's dynamic response to external forces, giving rise to the concept of **effective mass**, which can be different from the free electron mass and even negative.
 *   **Extended States**: Unlike electrons in isolated atoms or molecules, electrons in a crystal are not localized to individual atoms but exist in extended states throughout the entire crystal. The Bloch function describes these delocalized states.
 
-**2. Using the Kronig–Penney model, provide a qualitative explanation of how allowed and forbidden energy bands arise in a one‑dimensional crystal. Sketch the potential profile and indicate the origin of band gaps.**
+### 18. Using the Kronig–Penney model, provide a qualitative explanation of how allowed and forbidden energy bands arise in a one‑dimensional crystal. Sketch the potential profile and indicate the origin of band gaps.
+
+#### Answer
 
 **Qualitative Explanation of Allowed and Forbidden Energy Bands (Kronig-Penney Model):**
 The Kronig-Penney model simplifies the complex periodic potential experienced by an electron in a crystal to a series of rectangular potential wells and barriers.
@@ -367,7 +403,9 @@ The Kronig-Penney model simplifies the complex periodic potential experienced by
 3.  **Origin of Band Gaps (Specifically Indication):**
     The band gaps fundamentally arise from the **Bragg reflection** of electron waves by the periodic lattice. When the electron's wave vector ($k$) satisfies a condition similar to the Bragg condition for X-ray diffraction (i.e., at the boundaries of the Brillouin zones, such as $k = \pm n\pi/a$), the electron waves are strongly reflected by the lattice planes. This interference leads to standing waves, and the degeneracy of energy levels at these wave vectors is lifted, creating a gap between the lowest energy allowed state and the next higher energy allowed state. These discontinuities in the $E-k$ relation precisely define the forbidden energy bands. (Refer to [[#kronig-penney-model-1d-periodic-potential|Core Notes.md]] for more detail).
 
-**3. Give the classification of solids on the basis of band theory of solids.**
+### 19. Give the classification of solids on the basis of band theory of solids.
+
+#### Answer
 
 Based on the Band Theory, solids are broadly classified into three categories:
 
@@ -389,7 +427,9 @@ Based on the Band Theory, solids are broadly classified into three categories:
     *   **Electrical Properties:** The large energy gap means that even at room temperature, thermal energy is insufficient to excite electrons from the valence band to the conduction band. With no available empty states in the valence band and no electrons in the conduction band, electrons are tightly bound and cannot move freely. This results in extremely low electrical conductivity and they effectively do not conduct current.
     *   **Examples:** Diamond, Glass, Rubber.
 
-**4. Define the effective mass of charge carriers in a semiconductor. Derive its relation to the curvature of the energy band E(k), and discuss its physical significance in determining carrier mobility and transport properties.**
+### 20. Define the effective mass of charge carriers in a semiconductor. Derive its relation to the curvature of the energy band E(k), and discuss its physical significance in determining carrier mobility and transport properties.
+
+#### Answer
 
 **Definition of Effective Mass ($m^*$):**
 The effective mass of a charge carrier (electron or hole) in a semiconductor (or any crystal lattice) is a conceptual quantity that describes how the carrier responds to external forces as if it were a free particle with that mass. It takes into account the complex interactions between the carrier and the periodic potential of the crystal lattice. It can be different from the actual free electron mass and can even be negative, or anisotropic.
@@ -421,7 +461,9 @@ The effective mass of a charge carrier (electron or hole) in a semiconductor (or
 *   **Transport Properties**: The effective mass is a fundamental parameter in all transport phenomena (conductivity, Hall effect, diffusion, thermoelectric effects) as it dictates the inertial response of charge carriers within the crystal, reflecting how much the lattice "drags" or "assists" their motion.
 (Refer to [[#effective-mass-of-charge-carriers-m|Core Notes.md]] for more detail).
 
-**5. What are Brillouin zones and what is their significance?**
+### 21. What are Brillouin zones and what is their significance?
+
+#### Answer
 
 **Definition of Brillouin Zones:**
 Brillouin zones are fundamental concepts in solid-state physics that delineate regions in reciprocal space (or k-space) that are important for describing the energy and momentum of electrons in a periodic crystal lattice. The **first Brillouin zone** is the Wigner-Seitz primitive cell in reciprocal space. Successive Brillouin zones are defined by regions further out from the origin. They are geometrical constructions that simplify the representation of electron behavior in periodic structures.
@@ -438,7 +480,9 @@ Brillouin zones are fundamental concepts in solid-state physics that delineate r
 
 ## Superconductivity
 
-**1. Define superconductivity. List and explain at least three fundamental properties of superconductors (e.g., zero resistance, perfect diamagnetism).**
+### 22. Define superconductivity. List and explain at least three fundamental properties of superconductors (e.g., zero resistance, perfect diamagnetism).
+
+#### Answer
 
 **Definition of Superconductivity:**
 Superconductivity is a quantum mechanical phenomenon observed in certain materials, called superconductors, when they are cooled below a characteristic critical temperature ($T_C$). Below $T_C$, these materials exhibit exactly zero electrical resistance (meaning current can flow indefinitely without energy loss) and completely expel magnetic fields from their interior (the Meissner effect).
@@ -461,7 +505,9 @@ Superconductivity is a quantum mechanical phenomenon observed in certain materia
 *   **Explanation:** Superconductivity can be destroyed not only by increasing the temperature above $T_C$ but also by applying a magnetic field stronger than a certain value called the critical magnetic field ($H_C$). At a given temperature below $T_C$, if the external magnetic field exceeds $H_C(T)$, the material reverts to its normal, resistive state. $H_C$ typically decreases as temperature approaches $T_C$.
 *   **Significance:** Limits the maximum magnetic field that can be generated or screened by a superconductor. For many applications, high critical fields are desired.
 
-**2. Describe three practical applications of superconductors in engineering or technology. For each application, briefly explain how superconductivity enables its function.**
+### 23. Describe three practical applications of superconductors in engineering or technology. For each application, briefly explain how superconductivity enables its function.
+
+#### Answer
 
 1.  **Medical Imaging (MRI - Magnetic Resonance Imaging):**
     *   **How Superconductivity Enables It:** MRI scanners use very strong and stable magnetic fields to align protons in the body's water molecules. These fields are generated by **superconducting electromagnets**. The zero electrical resistance of the superconducting coils allows them to carry extremely large currents for extended periods without dissipating energy as heat, producing powerful and consistent magnetic fields (typically 1.5 to 3 Tesla or more) necessary for high-resolution imaging. This eliminates the need for continuous power input to maintain the field once it's established, saving energy and providing field stability.
@@ -476,7 +522,9 @@ Superconductivity is a quantum mechanical phenomenon observed in certain materia
         *   **Geophysics:** Detecting subtle magnetic anomalies in the Earth's crust.
         *   **Materials Science:** Characterizing magnetic properties of novel materials.
 
-**3. State and explain the Meissner effect. Illustrate its significance in distinguishing superconductors from perfect conductors.**
+### 24. State and explain the Meissner effect. Illustrate its significance in distinguishing superconductors from perfect conductors.
+
+#### Answer
 
 **State of Meissner Effect:**
 The Meissner effect states that when a material transitions into the superconducting state upon cooling below its critical temperature ($T_C$) in the presence of an external magnetic field, it **expels all magnetic field lines from its interior**. This results in the complete cancellation of the magnetic field inside the superconductor ($B=0$).
@@ -489,7 +537,9 @@ The Meissner effect is crucial because it is a **defining characteristic** of su
 *   **Perfect Conductor (Hypothetical):** If a normal conductor were cooled to zero resistance in a magnetic field, the magnetic flux lines initially threading through it would become "frozen in" (trapped) due to Lenz's law preventing any change in flux. The material would not expel existing fields.
 *   **Superconductor (Actual):** A superconductor, however, actively expels the magnetic flux as it passes below $T_C$. This implies that the superconducting state is fundamentally different from a normal conductor with zero resistance; it's a distinct thermodynamic phase that requires $B=0$ in its interior (for Type I superconductors, or partial expulsion for Type II). This perfect diamagnetism is what allows for striking phenomena like magnetic levitation.
 
-**4. Differentiate between Type I and Type II superconductors. Explain their critical magnetic field behavior with the help of a schematic diagram.**
+### 25. Differentiate between Type I and Type II superconductors. Explain their critical magnetic field behavior with the help of a schematic diagram.
+
+#### Answer
 
 **Differentiation between Type I and Type II Superconductors:**
 
@@ -514,7 +564,9 @@ The upper critical field $H_{C2}$ for Type II superconductors is typically much 
 
 ![[https://qph.cf2.quoracdn.net/main-qimg-80dc48e7188b776a394b9f33333e680a-lq|Critical magnetic field behavior for Type I and Type II superconductors]]
 
-**5. Define Cooper pairs. Explain their role in the microscopic theory of superconductivity (BCS theory).**
+### 26. Define Cooper pairs. Explain their role in the microscopic theory of superconductivity (BCS theory).
+
+#### Answer
 
 **Definition of Cooper Pairs:**
 Cooper pairs are pairs of electrons that are weakly bound together within a superconductor, despite the electrostatic repulsion between them. This binding occurs via an indirect attractive interaction that is mediated by the collective vibrations of the crystal lattice, known as **phonons**. Each Cooper pair effectively consists of two electrons with opposite momenta and opposite spins ($\mathbf{k}\uparrow, -\mathbf{k}\downarrow$).
@@ -532,7 +584,9 @@ The BCS (Bardeen-Cooper-Schrieffer) theory (1957) provides a microscopic explana
 
 In summary, Cooper pairs, formed through phonon-mediated attraction and behaving as bosons, condense into a coherent ground state below $T_C$. The energy required to perturb this state (the energy gap) ensures that the pairs can flow freely without scattering, thus leading to zero resistance.
 
-**6. Briefly write about a Josephson junction and its application in a SQUID magnetometer.**
+### 27. Briefly write about a Josephson junction and its application in a SQUID magnetometer.
+
+#### Answer
 
 **Josephson Junction (JJ):**
 A Josephson junction consists of two superconducting electrodes separated by a very thin (typically 1-2 nm) insulating barrier (e.g., oxide). Due to macroscopic quantum phenomena, Cooper pairs can tunnel through this insulating barrier even without an applied voltage. This tunneling creates a non-linear inductance and allows a supercurrent to flow up to a critical current ($I_c$) at zero voltage (DC Josephson effect), and an oscillating supercurrent when a constant voltage is applied (AC Josephson effect).
@@ -552,7 +606,9 @@ A **SQUID (Superconducting QUantum Interference Device)** is an extremely sensit
 
 ## Magnetic Materials
 
-**1. Define and explain the following (a) magnetization M (b) magnetic field intensity or strength H, (c) magnetic flux density B (d) magnetic susceptibility χ. Classify magnetic materials based on susceptibility. (OR) write the properties of diamagnetic, paramagnetic, and ferromagnetic materials with suitable examples.**
+### 28. Define and explain the following (a) magnetization M (b) magnetic field intensity or strength H, (c) magnetic flux density B (d) magnetic susceptibility χ. Classify magnetic materials based on susceptibility. (OR) write the properties of diamagnetic, paramagnetic, and ferromagnetic materials with suitable examples.
+
+#### Answer
 
 **(a) Magnetization (M):**
 *   **Definition:** Magnetization is the vector magnetic dipole moment per unit volume of a material. It represents the measure of how strongly a material is magnetized in response to an external magnetic field. It arises from the alignment of atomic magnetic moments within the material.
@@ -612,7 +668,9 @@ A **SQUID (Superconducting QUantum Interference Device)** is an extremely sensit
     *   **Temperature Dependence:** Also has a Curie Temperature ($T_C$) above which it becomes paramagnetic.
     *   **Examples:** Ferrites (e.g., Fe$_3$O$_4$, NiFe$_2$O$_4$).
 
-**2. Explain the microscopic origin of magnetism in solids. Discuss the role of electron spin and orbital motion.**
+### 29. Explain the microscopic origin of magnetism in solids. Discuss the role of electron spin and orbital motion.
+
+#### Answer
 
 The microscopic origin of magnetism in solids primarily stems from the quantum mechanical properties of electrons within atoms. There are two main contributions from electrons:
 
@@ -629,7 +687,9 @@ The microscopic origin of magnetism in solids primarily stems from the quantum m
 **Total Atomic Magnetic Moment:**
 The total magnetic moment of an atom is the vector sum of orbital and spin magnetic moments of all its electrons. In solids, the crystalline environment can affect these moments. For example, in many solids, the orbital motion is "quenched" by interactions with the electric fields from neighboring atoms, reducing its contribution, and leaving the spin magnetic moment as the primary source of magnetism.
 
-**3. Explain the concept of Larmor precession. Derive the expression for Larmor frequency and state its physical significance.**
+### 30. Explain the concept of Larmor precession. Derive the expression for Larmor frequency and state its physical significance.
+
+#### Answer
 
 **Concept of Larmor Precession:**
 Larmor precession describes the precessional motion of a magnetic dipole moment (associated with an angular momentum) when placed in an external static magnetic field. Instead of simply aligning with the external magnetic field, the magnetic moment, along with its associated angular momentum, rotates around the direction of the magnetic field. This is analogous to a spinning top exerting a torque in a gravitational field and consequently precessing rather than toppling over.
@@ -659,7 +719,9 @@ Larmor precession describes the precessional motion of a magnetic dipole moment 
 *   **Spectroscopy (NMR/ESR):** Larmor precession is central to resonance techniques like Nuclear Magnetic Resonance (NMR) and Electron Spin Resonance (ESR). These techniques apply an oscillating electromagnetic field at the Larmor frequency. When the frequency matches, the moments resonate, allowing for precise measurements that reveal structural and chemical information about materials.
 *   **Measurement of Magnetic Fields:** The Larmor frequency directly depends on the magnetic field strength, making it a principle for measuring magnetic fields.
 
-**4. Briefly explain diamagnetism in solids. State its characteristic features and give examples of diamagnetic materials.**
+### 31. Briefly explain diamagnetism in solids. State its characteristic features and give examples of diamagnetic materials.
+
+#### Answer
 
 **Brief Explanation of Diamagnetism:**
 Diamagnetism is a fundamental magnetic property exhibited by all materials, though it is often masked by stronger magnetic effects (like paramagnetism or ferromagnetism). It arises from the change in the orbital motion of electrons induced by an external magnetic field. According to Lenz's law, this induced change creates a small magnetic moment that **opposes the applied magnetic field**. Thus, diamagnetic materials are weakly repelled by magnetic fields.
@@ -680,7 +742,9 @@ Diamagnetism is a fundamental magnetic property exhibited by all materials, thou
 *   Noble gases (e.g., Argon, Neon)
 *   Superconductors (perfect diamagnets, $\chi_m = -1$)
 
-**5. Briefly explain paramagnetism in solids. State its characteristic features and give examples of paramagnetic materials.**
+### 32. Briefly explain paramagnetism in solids. State its characteristic features and give examples of paramagnetic materials.
+
+#### Answer
 
 **Brief Explanation of Paramagnetism:**
 Paramagnetism is a form of magnetism exhibited by materials that contain atoms or ions with **unpaired electron spins**. These unpaired electrons give the individual atoms a permanent, intrinsic magnetic dipole moment. In the absence of an external magnetic field, these atomic dipoles are randomly oriented due to thermal agitation, resulting in zero net magnetization for the bulk material. When an external magnetic field is applied, these permanent dipoles partially align with the field, producing a net positive magnetization in the direction of the applied field.
@@ -699,7 +763,9 @@ Paramagnetism is a form of magnetism exhibited by materials that contain atoms o
 *   Transition metal ions (e.g., Mn$^{2+}$, Fe$^{3+}$)
 *   Rare earth elements (e.g., Ytterbium)
 
-**6. Present the quantum theory of paramagnetism. Derive the expression for magnetic susceptibility of paramagnetic materials.**
+### 33. Present the quantum theory of paramagnetism. Derive the expression for magnetic susceptibility of paramagnetic materials.
+
+#### Answer
 
 **Quantum Theory of Paramagnetism:**
 The quantum theory of paramagnetism explains the behavior of paramagnetic materials by considering the quantized nature of atomic magnetic moments and their interaction with an external magnetic field.
@@ -750,7 +816,9 @@ Where the Curie constant $C = \frac{N \mu^2 \mu_0}{k_B}$.
 
 This derivation shows that for paramagnetic materials, the susceptibility is directly proportional to the number of magnetic moments and inversely proportional to the absolute temperature. (Refer to [[#quantum-theory-of-paramagnetism|Core Notes.md]] for more detail).
 
-**7. Briefly explain ferromagnetism in solids. State its characteristic features and give examples of ferromagnetic materials.**
+### 34. Briefly explain ferromagnetism in solids. State its characteristic features and give examples of ferromagnetic materials.
+
+#### Answer
 
 **Brief Explanation of Ferromagnetism:**
 Ferromagnetism is the strongest form of magnetism, characterized by spontaneous magnetization. In ferromagnetic materials, there is a strong, quantum mechanical **exchange interaction** between electron spins that causes the magnetic moments of neighboring atoms to align parallel to each other. This alignment occurs even in the absence of an external magnetic field, leading to a permanent, large net magnetic moment within microscopic regions called **magnetic domains**.
@@ -772,7 +840,9 @@ Ferromagnetism is the strongest form of magnetism, characterized by spontaneous 
 *   Gadolinium (Gd)
 *   Some alloys (e.g., Alnico, Permalloy)
 
-**8. Explain the concept of Weiss molecular field in ferromagnetic materials.**
+### 35. Explain the concept of Weiss molecular field in ferromagnetic materials.
+
+#### Answer
 
 The **Weiss Molecular Field Theory** (proposed by Pierre-Ernest Weiss in 1907) is a phenomenological (not truly quantum mechanical) approach to explain the spontaneous magnetization and Curie temperature in ferromagnetic materials.
 
@@ -791,7 +861,9 @@ Weiss proposed that within a ferromagnetic material, there exists a very strong 
 
 **Importance:** While a classical approximation, the Weiss molecular field theory provided the first successful explanation for spontaneous magnetization, the existence of a Curie temperature, and the Curie-Weiss law. It correctly highlighted that a strong internal aligning force—later identified as the quantum exchange interaction—is necessary for ferromagnetism.
 
-**9. Derive the Curie–Weiss law and discuss its importance.**
+### 36. Derive the Curie–Weiss law and discuss its importance.
+
+#### Answer
 
 **Derivation of the Curie-Weiss Law:**
 The Curie-Weiss law describes the magnetic susceptibility of ferromagnetic materials *above* their Curie temperature ($T_C$), when they behave paramagnetically, and the paramagnetism of ferrimagnetic and antiferromagnetic materials above their respective ordering temperatures. It's derived using the Weiss molecular field concept.
@@ -1218,132 +1290,132 @@ Additional practice questions for Unit 3 (Free Electron Theory, Band Theory, Mag
 
 ## CL26: Density of States
 
-1. Explain the concept of density of states and density of occupied states in metals.
-2. Derive an expression for the density of electron states in a metal.
-3. Calculate the density of states with energy between 4eV and 4.005eV in copper with Fermi energy of 7.02eV. (E = 4eV = 4×1.6×10⁻¹⁹ J and dE = 0.005×1.6×10⁻¹⁹ J, mass of electron = 9.1× 10⁻³¹ kg)
-4. Calculate the density of occupied states, for copper, at an energy level which is 0.026 eV above the Fermi level, at a temperature 300K. Assume Fermi energy of copper as 7eV.
-5. The energy states below EF in the range kT are emptied and probability of occupancy lies between 1 and 0.5. Justify.
-6. With suitable plot, explain the dependence of density of states on energy.
+7. Explain the concept of density of states and density of occupied states in metals.
+8. Derive an expression for the density of electron states in a metal.
+9. Calculate the density of states with energy between 4eV and 4.005eV in copper with Fermi energy of 7.02eV. (E = 4eV = 4×1.6×10⁻¹⁹ J and dE = 0.005×1.6×10⁻¹⁹ J, mass of electron = 9.1× 10⁻³¹ kg)
+10. Calculate the density of occupied states, for copper, at an energy level which is 0.026 eV above the Fermi level, at a temperature 300K. Assume Fermi energy of copper as 7eV.
+11. The energy states below EF in the range kT are emptied and probability of occupancy lies between 1 and 0.5. Justify.
+12. With suitable plot, explain the dependence of density of states on energy.
 
 ---
 
 ## CL28: Temperature Dependence & Specific Heat
 
-1. Define effective number of electrons.
-2. The electrons near the Fermi level contribute to the conduction in metals. Explain.
-3. How does the specific heat of metals depend on temperature?
-4. Discuss the temperature dependence of conductivity of a metal based on the quantum free electron theory. How is the approach different from the classical method?
-5. Explain the contribution of free electrons to the specific heat of metals on the basis of quantum free electron theory.
+13. Define effective number of electrons.
+14. The electrons near the Fermi level contribute to the conduction in metals. Explain.
+15. How does the specific heat of metals depend on temperature?
+16. Discuss the temperature dependence of conductivity of a metal based on the quantum free electron theory. How is the approach different from the classical method?
+17. Explain the contribution of free electrons to the specific heat of metals on the basis of quantum free electron theory.
 
 ---
 
 ## CL29: Wiedemann-Franz Law
 
-1. Mention the expressions for electrical and thermal conductivities of a metal and hence obtain the Wiedemann-Franz law.
-2. State and explain Wiedemann–Franz law.
-3. Deduce the Lorenz number.
-4. What are the demerits of quantum free electron theory?
-5. Obtain the relation between thermal and electrical conductivities of a metal.
+18. Mention the expressions for electrical and thermal conductivities of a metal and hence obtain the Wiedemann-Franz law.
+19. State and explain Wiedemann–Franz law.
+20. Deduce the Lorenz number.
+21. What are the demerits of quantum free electron theory?
+22. Obtain the relation between thermal and electrical conductivities of a metal.
 
 ---
 
 ## CL30: Band Theory (Kronig-Penney)
 
-1. Explain the terms (i) Periodic potential (ii) Bloch function and (iii) Effective mass.
-2. Outline the Kronig Penny Model to describe the motion of electrons in a metal and discuss how the band structure evolves from this model.
-3. What is Bloch function and how is it different from the free electron wave function?
-4. How does the potential energy of an electron vary in an infinite one dimensional crystal and how this potential is represented in Kronig-Penny model?
-5. What is crystal momentum? Is it a conserved quantity?
-6. Describe the nature of potential experienced by valence electrons according to Kronig–Penny model. How does it affect the wave function of electron?
+23. Explain the terms (i) Periodic potential (ii) Bloch function and (iii) Effective mass.
+24. Outline the Kronig Penny Model to describe the motion of electrons in a metal and discuss how the band structure evolves from this model.
+25. What is Bloch function and how is it different from the free electron wave function?
+26. How does the potential energy of an electron vary in an infinite one dimensional crystal and how this potential is represented in Kronig-Penny model?
+27. What is crystal momentum? Is it a conserved quantity?
+28. Describe the nature of potential experienced by valence electrons according to Kronig–Penny model. How does it affect the wave function of electron?
 
 ---
 
 ## CL31: E-k Diagram & Band Gaps
 
-1. Discuss E-k diagram and give a qualitative picture of the origin of band gaps.
-2. Explain the E-k relationship for a free electron and relate it to the electron mass.
-3. Distinguish between conductors, insulators and semiconductors on the basis of band theory of solids.
-4. Draw the E-K graph for electrons in metal as per the band theory of solids and discuss the concept of the effective mass of electrons in the conduction band of the metal.
-5. With the help of E-K plot, show that materials can be classified into conductors, insulators and semiconductors.
+29. Discuss E-k diagram and give a qualitative picture of the origin of band gaps.
+30. Explain the E-k relationship for a free electron and relate it to the electron mass.
+31. Distinguish between conductors, insulators and semiconductors on the basis of band theory of solids.
+32. Draw the E-K graph for electrons in metal as per the band theory of solids and discuss the concept of the effective mass of electrons in the conduction band of the metal.
+33. With the help of E-K plot, show that materials can be classified into conductors, insulators and semiconductors.
 
 ---
 
 ## CL32: Effective Mass
 
-1. What is meant by effective mass of electron?
-2. The "effective mass" of electrons depends on the curvature of the E-k plot. Explain this statement.
-3. "The mass of an electron in the periodic potential of a solid is different from the free electron mass" Is the statement true or false? Can the effective mass be positive and negative? If yes, what are the specific conditions for the same.
-4. In which condition for an electron its effective mass is equal to its true mass.
-5. Explain the concept of electrons and holes using the idea of effective mass.
-6. With the help of a neat labelled diagram, explain the curvature of E-k in conduction band and valence band.
+34. What is meant by effective mass of electron?
+35. The "effective mass" of electrons depends on the curvature of the E-k plot. Explain this statement.
+36. "The mass of an electron in the periodic potential of a solid is different from the free electron mass" Is the statement true or false? Can the effective mass be positive and negative? If yes, what are the specific conditions for the same.
+37. In which condition for an electron its effective mass is equal to its true mass.
+38. Explain the concept of electrons and holes using the idea of effective mass.
+39. With the help of a neat labelled diagram, explain the curvature of E-k in conduction band and valence band.
 
 ---
 
 ## CL33: Superconductivity
 
-1. Compare the dependence of resistance on temperature of a superconductor with that of a normal conductor.
-2. The DC resistance of a superconductor is practically zero. What about its AC resistance?
-3. What is meant by persistent current in a superconductor?
-4. Describe how cooper pairs are formed and explain the salient features of superconductivity.
-5. What are type I and type II superconductors?
-6. What is Meissner effect? Explain.
+40. Compare the dependence of resistance on temperature of a superconductor with that of a normal conductor.
+41. The DC resistance of a superconductor is practically zero. What about its AC resistance?
+42. What is meant by persistent current in a superconductor?
+43. Describe how cooper pairs are formed and explain the salient features of superconductivity.
+44. What are type I and type II superconductors?
+45. What is Meissner effect? Explain.
 
 ---
 
 ## CL46: Magnetic Materials
 
-1. The magnetic induction inside a medium is given by B = μ₀(H + M). Discuss this equation with basic principle.
-2. Define the following terms (i) Intensity of magnetization and (ii) relative permeability.
-3. Classify the magnetic materials based on susceptibility of the material.
-4. Explain magnetic flux density B, magnetic flux intensity H and magnetization M. How are they related to each other?
-5. A magnetic field of 2500 A/m is applied to a material which has a susceptibility of 800. Estimate (i) relative permeability (ii) intensity of magnetization and (iii) flux density.
+46. The magnetic induction inside a medium is given by B = μ₀(H + M). Discuss this equation with basic principle.
+47. Define the following terms (i) Intensity of magnetization and (ii) relative permeability.
+48. Classify the magnetic materials based on susceptibility of the material.
+49. Explain magnetic flux density B, magnetic flux intensity H and magnetization M. How are they related to each other?
+50. A magnetic field of 2500 A/m is applied to a material which has a susceptibility of 800. Estimate (i) relative permeability (ii) intensity of magnetization and (iii) flux density.
 
 ---
 
 ## CL47: Orbital Magnetic Moment
 
-1. Obtain the expression for orbital magnetic moment of the electron and Explain Bohr magneton.
-2. Estimate the magnetic moment of an electron that revolves around a nucleus in an orbit of 0.53Å radius. If the frequency of revolution 6.6 × 10¹⁵ Hz.
-3. Why does a magnetic dipole due to orbital motion of the electron precess in a magnetic field?
-4. Evaluate the magnetic moment corresponding to one Bohr magneton.
-5. What is Larmor precession? A magnetic field of 2T is applied to an electron undergoing orbital motion. Calculate the precessional frequency.
+51. Obtain the expression for orbital magnetic moment of the electron and Explain Bohr magneton.
+52. Estimate the magnetic moment of an electron that revolves around a nucleus in an orbit of 0.53Å radius. If the frequency of revolution 6.6 × 10¹⁵ Hz.
+53. Why does a magnetic dipole due to orbital motion of the electron precess in a magnetic field?
+54. Evaluate the magnetic moment corresponding to one Bohr magneton.
+55. What is Larmor precession? A magnetic field of 2T is applied to an electron undergoing orbital motion. Calculate the precessional frequency.
 
 ---
 
 ## CL48: Classification of Magnetic Materials
 
-1. How are magnetic materials classified?
-2. Write the range of susceptibility values for each class of magnetic material.
-3. What happens, if diamagnetic, paramagnetic and ferromagnetic sample is suspended by thread and a bar magnet is slowly brought near each of the sample?
-4. Classify magnetic materials based on susceptibility dependence on temperature (χ versus T) and magnetization dependence on field (M versus H) plots.
-5. Elaborate on two tests which can differentiate a paramagnetic material from a diamagnetic material.
+56. How are magnetic materials classified?
+57. Write the range of susceptibility values for each class of magnetic material.
+58. What happens, if diamagnetic, paramagnetic and ferromagnetic sample is suspended by thread and a bar magnet is slowly brought near each of the sample?
+59. Classify magnetic materials based on susceptibility dependence on temperature (χ versus T) and magnetization dependence on field (M versus H) plots.
+60. Elaborate on two tests which can differentiate a paramagnetic material from a diamagnetic material.
 
 ---
 
 ## CL49-50: Para & Ferromagnetism
 
-1. Obtain the expression saturation magnetization, if the magnetic interaction energy is much greater than the thermal energy.
-2. What does Brillouin function represent?
-3. Discuss the Brillouin function for magnetic materials for large values of j and when j=1/2. How does this lead to the expression for the paramagnetic susceptibility?
-4. How does magnetic susceptibility vary with temperature in case of paramagnetic materials?
-5. Describe Quantum theory of Paramagnetism.
-6. Discuss Weiss theory of spontaneous magnetization and express susceptibility in terms of the modified Curie-Weiss law.
-7. Explain how Curie law is modified by internal molecular field and mention the significance of Curie temperature.
+61. Obtain the expression saturation magnetization, if the magnetic interaction energy is much greater than the thermal energy.
+62. What does Brillouin function represent?
+63. Discuss the Brillouin function for magnetic materials for large values of j and when j=1/2. How does this lead to the expression for the paramagnetic susceptibility?
+64. How does magnetic susceptibility vary with temperature in case of paramagnetic materials?
+65. Describe Quantum theory of Paramagnetism.
+66. Discuss Weiss theory of spontaneous magnetization and express susceptibility in terms of the modified Curie-Weiss law.
+67. Explain how Curie law is modified by internal molecular field and mention the significance of Curie temperature.
 
 ---
 
 ## CL51-52: Spin Ordering & GMR
 
-1. Elaborate on spin ordered magnetic materials and their classification.
-2. Discuss the temperature dependence of susceptibility for each type of magnetic material.
-3. Distinguish between soft and hard magnets with the help of hysteresis graphs.
-4. What are ferrites? In what respect is it superior to ferromagnetic materials?
-5. Explain the significance of Neel temperature.
-6. Discuss the parameters that distinguish Ferro, antiferro and Ferri-magnetic materials.
-7. What is Giant Magneto Resistance and mention its important applications.
-8. Briefly describe the structure of a GMR nano-device.
-9. Elaborate the significance of magnetization states of the magnetic layers towards giant magneto resistance.
-10. List various applications of ferromagnetic and anti-ferromagnetic materials.
+68. Elaborate on spin ordered magnetic materials and their classification.
+69. Discuss the temperature dependence of susceptibility for each type of magnetic material.
+70. Distinguish between soft and hard magnets with the help of hysteresis graphs.
+71. What are ferrites? In what respect is it superior to ferromagnetic materials?
+72. Explain the significance of Neel temperature.
+73. Discuss the parameters that distinguish Ferro, antiferro and Ferri-magnetic materials.
+74. What is Giant Magneto Resistance and mention its important applications.
+75. Briefly describe the structure of a GMR nano-device.
+76. Elaborate the significance of magnetization states of the magnetic layers towards giant magneto resistance.
+77. List various applications of ferromagnetic and anti-ferromagnetic materials.
 
 ***
 

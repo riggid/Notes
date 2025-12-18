@@ -217,7 +217,7 @@ Calculate the monthly electricity bill for a household with the following daily 
 Total per day = $8802.5 Wh = 8.8 kHh$ (Units)
 
 **2. Monthly Consumption:**
-$$ Units_{month} = 8.8 \times 30 = 264 \text{ Units} $$ (approx, notes say 245, let's follow the calculation logic strictly based on note inputs if they differ. The note example 54 matches approximately. Let's use 264).
+$$ Units_{month} = 8.8 \times 30 = 264 \text{ Units} $$
 
 **3. Bill Calculation:**
 *   **Fixed Charges:**

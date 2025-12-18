@@ -11,7 +11,7 @@ dg-publish: true
 ***
 ## CL1 Questions: Maxwell's Equations & Vector Calculus
 
-### What is the physical meaning of each of the Maxwell's equations?
+### 1. What is the physical meaning of each of the Maxwell's equations?
 
 #### Answer
 1.  **Gauss's Law for $\vec{E}$**: Electric field lines originate from positive charges and end on negative charges. The net outward electric flux through any closed surface is proportional to the net charge enclosed.
@@ -21,7 +21,7 @@ dg-publish: true
 
 ***
 
-### Connect the Four Maxwell's equations to Faraday's, Gauss's and Ampere's laws.
+### 2. Connect the Four Maxwell's equations to Faraday's, Gauss's and Ampere's laws.
 
 #### Answer
 Maxwell's equations are the mathematical formulations of these fundamental laws:
@@ -32,7 +32,7 @@ Maxwell's equations are the mathematical formulations of these fundamental laws:
 
 ***
 
-### Explain the geometric interpretation of the gradient, divergence and curl of a vector field?
+### 3. Explain the geometric interpretation of the gradient, divergence and curl of a vector field?
 
 #### Answer
 * **Gradient ($\nabla f$)**: (Applies to scalar fields) A vector pointing in the direction of the maximum rate of spatial increase of the scalar field, with magnitude equal to that rate.
@@ -42,7 +42,7 @@ Maxwell's equations are the mathematical formulations of these fundamental laws:
 ***
 ## CL2 Questions: Maxwell's Equations & EM Waves
 
-### Differentiate between the integral and differential forms of Maxwell's equations. Why is it that we need the differential form?
+### 4. Differentiate between the integral and differential forms of Maxwell's equations. Why is it that we need the differential form?
 
 #### Answer
 * **Integral Forms**: Describe field behavior over **extended regions** (volumes, surfaces, lines). Useful for calculations with symmetry.
@@ -51,7 +51,7 @@ Maxwell's equations are the mathematical formulations of these fundamental laws:
 
 ***
 
-### Which of Maxwell's equations contain 'sources'?
+### 5. Which of Maxwell's equations contain 'sources'?
 
 #### Answer
 1.  **Gauss's Law for $\vec{E}$**: $\nabla \cdot \vec{E} = \frac{\rho}{\epsilon_{0}}$. Source: **electric charge density** $\rho$.
@@ -59,7 +59,7 @@ Maxwell's equations are the mathematical formulations of these fundamental laws:
 
 ***
 
-### How do Maxwell's equations predict the existence of electromagnetic waves?
+### 6. How do Maxwell's equations predict the existence of electromagnetic waves?
 
 #### Answer
 By combining Maxwell's equations in free space ($\rho=0, \vec{J}=0$), one can mathematically derive the **wave equation** for both $\vec{E}$ and $\vec{B}$:
@@ -68,7 +68,7 @@ This equation describes waves propagating at speed $c = 1/\sqrt{\mu_0 \epsilon_0
 
 ***
 
-### Discuss the phase correlation and direction of the E and B fields of an EM Wave.
+### 7. Discuss the phase correlation and direction of the E and B fields of an EM Wave.
 
 #### Answer
 For a plane electromagnetic wave:
@@ -79,7 +79,7 @@ For a plane electromagnetic wave:
 
 ***
 
-### Starting from Maxwell's equations, obtain the wave equation of a transverse electric wave in free space and compare this with the corresponding plane magnetic wave.
+### 8. Starting from Maxwell's equations, obtain the wave equation of a transverse electric wave in free space and compare this with the corresponding plane magnetic wave.
 
 #### Answer
 Maxwell's equations for free space:
@@ -101,7 +101,7 @@ Both fields obey the same wave equation, propagating at speed $c$.
 ***
 ## CL3 Questions: Polarization & Energy Flow
 
-### Differentiate between circular and elliptical polarization of light.
+### 9. Differentiate between circular and elliptical polarization of light.
 
 #### Answer
 * **Circular Polarization**: Electric field vector rotates in a **circle**. Requires two perpendicular components with **equal amplitudes** and a **$90^{\circ}$ phase difference**.
@@ -109,14 +109,14 @@ Both fields obey the same wave equation, propagating at speed $c$.
 
 ***
 
-### Show that an unpolarised light is equivalent to two mutually perpendicular plane polarised light where the phase difference between them is ninety degrees.
+### 10. Show that an unpolarised light is equivalent to two mutually perpendicular plane polarised light where the phase difference between them is ninety degrees.
 
 #### Answer
 This statement is incorrect. Unpolarized light is statistically equivalent to the superposition of **two incoherent, perpendicular, plane-polarized waves of equal average intensity**. "Incoherent" means the phase difference between them fluctuates randomly and rapidly. A fixed $90^\circ$ phase difference would result in circular (if equal amplitude) or elliptical polarization.
 
 ***
 
-### How many kinds of solution exists for the wave equation? Explain with reference to line and point sources.
+### 11. How many kinds of solution exists for the wave equation? Explain with reference to line and point sources.
 
 #### Answer
 The wave equation admits various solutions depending on boundary conditions and source geometry. Key types include:
@@ -126,7 +126,7 @@ The wave equation admits various solutions depending on boundary conditions and 
 
 ***
 
-### Set up a general second order differential equation by partially differentiating the wave function $y = a \sin(\omega t - kx)$. Explain each term.
+### 12. Set up a general second order differential equation by partially differentiating the wave function $y = a \sin(\omega t - kx)$. Explain each term.
 
 #### Answer
 Wave function: $y(x,t) = a \sin(\omega t - kx)$
@@ -144,7 +144,7 @@ $$\frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial
 
 ***
 
-### Find the energy density of an electromagnetic wave if the E-field amplitude is 6.2 V/m.
+### 13. Find the energy density of an electromagnetic wave if the E-field amplitude is 6.2 V/m.
 
 #### Answer
 Average energy density $\langle u \rangle = \frac{1}{2}\epsilon_{0}E_{max}^{2}$.
@@ -152,7 +152,7 @@ $$\langle u \rangle = \frac{1}{2}(8.85\times10^{-12}) \times (6.2)^2 \approx 1.7
 
 ***
 
-### Discuss the energy density in electromagnetic waves and how is it related to the Poynting vector?
+### 14. Discuss the energy density in electromagnetic waves and how is it related to the Poynting vector?
 
 #### Answer
 * **Energy Density ($u$)**: Instantaneous energy per volume $u = \frac{1}{2}\epsilon_0 E^2 + \frac{1}{2\mu_0} B^2 = \epsilon_0 E^2$. Average density $\langle u \rangle = \frac{1}{2}\epsilon_0 E_{max}^2$.
@@ -162,7 +162,7 @@ $$\langle u \rangle = \frac{1}{2}(8.85\times10^{-12}) \times (6.2)^2 \approx 1.7
 ---
 ## CL4 Questions: Blackbody Radiation
 
-### Describe the characteristics of a black body spectrum.
+### 15. Describe the characteristics of a black body spectrum.
 
 #### Answer
 1.  **Continuity and Peak**: Continuous spectrum with intensity peaking at $\lambda_{max}$ (or $\nu_{max}$).
@@ -171,7 +171,7 @@ $$\langle u \rangle = \frac{1}{2}(8.85\times10^{-12}) \times (6.2)^2 \approx 1.7
 
 ***
 
-### Write Planck's formula for black body radiation.
+### 16. Write Planck's formula for black body radiation.
 
 #### Answer
 Spectral energy density:
@@ -179,7 +179,7 @@ $$\rho(\nu) = \frac{8\pi h\nu^{3}}{c^{3}}\frac{1}{e^{h\nu/kT}-1}$$
 
 ***
 
-### Find the average energy of an oscillator of frequency $5\times10^{12}$ Hz at 300 K treating it as a Planck's oscillator.
+### 17. Find the average energy of an oscillator of frequency $5\times10^{12}$ Hz at 300 K treating it as a Planck's oscillator.
 
 #### Answer
 $\langle E \rangle = \frac{h\nu}{e^{h\nu/kT}-1}$.
@@ -188,7 +188,7 @@ $\langle E \rangle = \frac{(6.626\times10^{-34})(5\times10^{12})}{e^{0.800}-1} \
 
 ***
 
-### Calculate the average energy of Planck's oscillator of frequency $5.6 \times 10^{12}$ Hz at 330 K.
+### 18. Calculate the average energy of Planck's oscillator of frequency $5.6 \times 10^{12}$ Hz at 330 K.
 
 #### Answer
 $\langle E \rangle = \frac{h\nu}{e^{h\nu/kT}-1}$.
@@ -197,7 +197,7 @@ $\langle E \rangle = \frac{(6.626\times10^{-34})(5.6\times10^{12})}{e^{0.814}-1}
 
 ***
 
-### Evaluate how Planck's hypothesis of quantized energy changed the understanding of electromagnetic radiation?
+### 19. Evaluate how Planck's hypothesis of quantized energy changed the understanding of electromagnetic radiation?
 
 #### Answer
 Planck's hypothesis fundamentally changed the view of EM radiation from purely continuous waves to entities possessing particle-like properties concerning energy exchange. Key changes include:
@@ -207,7 +207,7 @@ Planck's hypothesis fundamentally changed the view of EM radiation from purely c
 
 ***
 
-### Compare and contrast the Rayleigh-Jeans law and Planck's radiation law. Why does one succeed where the other fails?
+### 20. Compare and contrast the Rayleigh-Jeans law and Planck's radiation law. Why does one succeed where the other fails?
 
 #### Answer
 * **Rayleigh-Jeans Law**: Derived using classical physics (electromagnetism and equipartition theorem). Assumes energy is continuous. Formula: $\rho(\nu) = \frac{8\pi \nu^2}{c^3} kT$. Outcome: Agrees with experiment only at low frequencies; predicts infinite energy at high frequencies (UV catastrophe).
@@ -216,7 +216,7 @@ Planck's hypothesis fundamentally changed the view of EM radiation from purely c
 
 ***
 
-### Apply Planck's radiation law to explain why the color of a heated body changes from red to white with increasing temperature.
+### 21. Apply Planck's radiation law to explain why the color of a heated body changes from red to white with increasing temperature.
 
 #### Answer
 Planck's law shows that as temperature (T) increases:
@@ -227,14 +227,14 @@ At lower temperatures (e.g., ~800K), the peak is in the infrared, but enough rad
 ---
 ## CL5 & CL6 Questions: The Compton Effect
 
-### How does classical theory fail to explain the results of Compton's experiment?
+### 22. How does classical theory fail to explain the results of Compton's experiment?
 
 #### Answer
 Classical wave theory predicts scattered light should have the **same wavelength** as incident light. Compton observed scattered X-rays had a **longer wavelength**, with the shift depending on the **scattering angle**. Classical theory cannot explain this wavelength change.
 
 ***
 
-### What are the angles at which the Compton shift is minimum and maximum?
+### 23. What are the angles at which the Compton shift is minimum and maximum?
 
 #### Answer
 $\Delta\lambda=\frac{h}{m_{e}c}(1-\cos\theta)$.
@@ -243,7 +243,7 @@ $\Delta\lambda=\frac{h}{m_{e}c}(1-\cos\theta)$.
 
 ***
 
-### Explain Compton shift and prove that for two photons of different initial energies scattered at the same angle, their Compton shifts are identical.
+### 24. Explain Compton shift and prove that for two photons of different initial energies scattered at the same angle, their Compton shifts are identical.
 
 #### Answer
 **Compton shift ($\Delta\lambda$)** is the increase in wavelength $\lambda_f - \lambda_i$ of a photon after scattering off a free electron.
@@ -253,14 +253,14 @@ $$\Delta\lambda = \frac{h}{m_e c}(1 - \cos\theta)$$
 
 ***
 
-### Discuss how the Compton Effect supports the concept of wave-particle duality.
+### 25. Discuss how the Compton Effect supports the concept of wave-particle duality.
 
 #### Answer
 The Compton Effect provides strong evidence for the **particle nature of light (photons)**. Explaining the observed wavelength shift requires treating the photon as a particle with energy $E=h\nu$ and momentum $p=h/\lambda$, which collides with an electron. Applying particle conservation laws (energy and momentum) correctly predicts the shift. Since light also exhibits wave properties (interference, diffraction), the Compton effect reinforces the concept of **wave-particle duality**.
 
 ***
 
-### Explain why Compton scattering is negligible for optical photons. Support with numerical comparison.
+### 26. Explain why Compton scattering is negligible for optical photons. Support with numerical comparison.
 
 #### Answer
 The Compton shift $\Delta\lambda = \lambda_C(1-\cos\theta)$ is small ($\lambda_C \approx 0.00243$ nm) and independent of $\lambda_i$.
@@ -270,7 +270,7 @@ The absolute shift is only comparable to the initial wavelength for high-energy 
 
 ***
 
-### Comment on how the wavelength shift in Compton scattering would change if the scattering particle were a proton instead of an electron.
+### 27. Comment on how the wavelength shift in Compton scattering would change if the scattering particle were a proton instead of an electron.
 
 #### Answer
 The shift $\Delta\lambda = \frac{h}{m c}(1 - \cos\theta)$ is inversely proportional to the mass $m$ of the scattering particle. Since a proton is much heavier than an electron ($m_p \approx 1836 m_e$), the Compton shift for scattering off a proton would be about **1836 times smaller** and generally undetectable for typical photon energies.
@@ -278,35 +278,35 @@ The shift $\Delta\lambda = \frac{h}{m c}(1 - \cos\theta)$ is inversely proportio
 ---
 ## CL7 Questions: Matter Waves
 
-### What are matter waves? State the De-Broglie hypothesis.
+### 28. What are matter waves? State the De-Broglie hypothesis.
 
 #### Answer
 **Matter waves** are waves associated with moving particles. The **de Broglie hypothesis** states that all particles in motion have an associated wave character, with wavelength $\lambda$ inversely proportional to momentum $p$: $\lambda = h/p$.
 
 ***
 
-### Why is the wave nature of matter not apparent for macroscopic particles?
+### 29. Why is the wave nature of matter not apparent for macroscopic particles?
 
 #### Answer
 Because Planck's constant $h$ is extremely small, the de Broglie wavelength $\lambda = h/mv$ for macroscopic objects (large $m$) is incredibly tiny, far too small to produce observable wave effects.
 
 ***
 
-### Calculate the de-Broglie wavelength of an oxygen molecule with mass $5.4\times10^{-26}$ kg moving at 500 m/s.
+### 30. Calculate the de-Broglie wavelength of an oxygen molecule with mass $5.4\times10^{-26}$ kg moving at 500 m/s.
 
 #### Answer
 $\lambda = \frac{h}{mv} = \frac{6.626\times10^{-34}}{(5.4\times10^{-26}) \times (500)} \approx 2.45\times10^{-11} \text{ m}$.
 
 ***
 
-### Electron diffraction at a double slit is proof of the wave nature of electrons. Justify.
+### 31. Electron diffraction at a double slit is proof of the wave nature of electrons. Justify.
 
 #### Answer
 The observation of an **interference pattern** (alternating maxima and minima) when electrons pass through a double slit, even one electron at a time, is definitive proof of their wave nature. This pattern can only be explained by the wave associated with each electron interfering with itself after passing through both slits simultaneously, a characteristic wave phenomenon. The fringe spacing matches the prediction using the electron's de Broglie wavelength.
 
 ***
 
-### Electrons are diffracted at a double slit. D=100cm, d=0.20 $\mu$m. Fringe width w=2 mm. Calculate $\lambda$.
+### 32. Electrons are diffracted at a double slit. D=100cm, d=0.20 $\mu$m. Fringe width w=2 mm. Calculate $\lambda$.
 
 #### Answer
 Fringe width $w = \frac{\lambda D}{d}$.
@@ -314,7 +314,7 @@ $\lambda = \frac{w d}{D} = \frac{(2 \times 10^{-3} \text{ m})(0.20 \times 10^{-6
 
 ***
 
-### Is the wavelength of electrons on different orbits the same or different? If different what is the ratio of the wavelength in first and 4th orbits?
+### 33. Is the wavelength of electrons on different orbits the same or different? If different what is the ratio of the wavelength in first and 4th orbits?
 
 #### Answer
 **Different**. In Bohr/de Broglie model, $\lambda_n = 2\pi r_n / n$. Since $r_n \propto n^2$, $\lambda_n \propto n$.
@@ -322,7 +322,7 @@ Ratio: $\frac{\lambda_1}{\lambda_4} = \frac{1}{4}$.
 
 ***
 
-### The Davisson-Germer experiment used electrons accelerated to 54 V. Solve: a) Electron energy in J? b) Electron speed? c) Electron momentum? d) Electron wavelength?
+### 34. The Davisson-Germer experiment used electrons accelerated to 54 V. Solve: a) Electron energy in J? b) Electron speed? c) Electron momentum? d) Electron wavelength?
 
 #### Answer
 a) $E_k = qV = (1.602 \times 10^{-19})(54) \approx 8.65 \times 10^{-18}$ J.
@@ -332,7 +332,7 @@ d) $\lambda = h/p = (6.626 \times 10^{-34}) / (3.97 \times 10^{-24}) \approx 1.6
 
 ***
 
-### Show that the phase velocity $v_p$ of the de Broglie waves of a particle of rest mass $m_0$ is given by $v_p = c \sqrt{1 + (\frac{m_0 c \lambda}{h})^2}$.
+### 35. Show that the phase velocity $v_p$ of the de Broglie waves of a particle of rest mass $m_0$ is given by $v_p = c \sqrt{1 + (\frac{m_0 c \lambda}{h})^2}$.
 
 #### Answer
 $v_p = \lambda \nu = \lambda (E/h)$. Use relativistic $E = \sqrt{(pc)^2 + (m_0 c^2)^2}$ and $p = h/\lambda$.
@@ -340,14 +340,14 @@ $v_p = \frac{\lambda}{h} \sqrt{(\frac{hc}{\lambda})^2 + (m_0 c^2)^2} = \frac{\la
 
 ***
 
-### Discuss the role of wave packet in signal processing.
+### 36. Discuss the role of wave packet in signal processing.
 
 #### Answer
 In signal processing, a wave packet represents a signal that is localized in both time and frequency. Unlike a pure sine wave (localized in frequency but infinite in time) or a sharp pulse (localized in time but infinite in frequency), a wave packet provides a compromise. Techniques like the Short-Time Fourier Transform (STFT) or Wavelet Transform analyze signals by decomposing them into wave packets (or wavelets), allowing analysis of how the frequency content of a signal changes over time (time-frequency analysis), which is crucial for non-stationary signals like speech or music.
 
 ***
 
-### How the group velocity and phase velocity related in relativistic quantum mechanics?
+### 37. How the group velocity and phase velocity related in relativistic quantum mechanics?
 
 #### Answer
 In relativistic QM, $E^2 = (pc)^2 + (m_0c^2)^2$.
@@ -358,7 +358,7 @@ Thus, $v_g v_p = v (c^2/v) = c^2$. This relationship $v_g v_p = c^2$ holds for r
 ---
 ## CL8 Questions: The Uncertainty Principle
 
-### State any three forms of the Heisenberg's Uncertainty Principle.
+### 38. State any three forms of the Heisenberg's Uncertainty Principle.
 
 #### Answer
 1.  **Position-Momentum:** $\Delta x \cdot \Delta p_x \ge \frac{\hbar}{2}$.
@@ -367,14 +367,14 @@ Thus, $v_g v_p = v (c^2/v) = c^2$. This relationship $v_g v_p = c^2$ holds for r
 
 ***
 
-### The Uncertainty principle is not significant for macroscopic bodies. Justify.
+### 39. The Uncertainty principle is not significant for macroscopic bodies. Justify.
 
 #### Answer
 Because $\hbar$ is extremely small, the minimum uncertainties ($\Delta x$ or $\Delta p$) predicted by $\Delta x \Delta p \ge \hbar/2$ are far smaller than any possible measurement precision for macroscopic objects. For practical purposes, classical determinism holds.
 
 ***
 
-### An atom in an excited state of lifetime $\Delta t=10^{-8}$ s emits a photon. Estimate the uncertainty in the frequency of the photon.
+### 40. An atom in an excited state of lifetime $\Delta t=10^{-8}$ s emits a photon. Estimate the uncertainty in the frequency of the photon.
 
 #### Answer
 $\Delta E \cdot \Delta t \ge \hbar/2$. $\Delta E = h \Delta \nu$.
@@ -384,21 +384,21 @@ $\Delta\nu \ge \frac{1}{4\pi (10^{-8})} \approx 7.96 \times 10^6 \text{ Hz}$.
 ---
 ## CL9 Questions: The Wave Function
 
-### Give the physical interpretation of the wave function.
+### 41. Give the physical interpretation of the wave function.
 
 #### Answer
 The wave function $\psi$ is the **probability amplitude**. Its squared magnitude, $|\psi|^2$, is the **probability density** of finding the particle at a given point in space and time.
 
 ***
 
-### Mention the important properties of a wave function.
+### 42. Mention the important properties of a wave function.
 
 #### Answer
 Must be: 1. Finite, 2. Single-valued, 3. Continuous, 4. Have continuous first derivatives, 5. Normalizable.
 
 ***
 
-### Prove that $\psi^*(x,t)\psi(x,t)$ is necessarily real and either positive or zero.
+### 43. Prove that $\psi^*(x,t)\psi(x,t)$ is necessarily real and either positive or zero.
 
 #### Answer
 Let $\psi(x,t) = A+iB$, where A and B are real functions.
@@ -408,7 +408,7 @@ Since A and B are real, $A^2 \ge 0$ and $B^2 \ge 0$. Therefore, $A^2+B^2 \ge 0$ 
 
 ***
 
-### What is the difference between probability density and probability?
+### 44. What is the difference between probability density and probability?
 
 #### Answer
 * **Probability Density ($|\psi|^2$)**: Probability *per unit volume/length* at a point.
@@ -417,21 +417,21 @@ Since A and B are real, $A^2 \ge 0$ and $B^2 \ge 0$. Therefore, $A^2+B^2 \ge 0$ 
 ***
 ## CL12 & CL13 Questions: Schrödinger's Equation & Normalization
 
-### A free particle is a classical entity. Justify.
+### 45. A free particle is a classical entity. Justify.
 
 #### Answer
 The energy spectrum for a free particle solution to the Schrödinger equation is **continuous**, not quantized, just like in classical mechanics.
 
 ***
 
-### What is the physical significance of the normalization of a wave function?
+### 46. What is the physical significance of the normalization of a wave function?
 
 #### Answer
 Normalization ensures the total probability of finding the particle somewhere in all space is exactly 1 (100%), which is required for a consistent probabilistic interpretation. $\int |\psi|^2 dV = 1$.
 
 ***
 
-### A particle is in a stationary state $\psi(x,t)=\phi(x)e^{-iEt/\hbar}$. Show $|\psi(x,t)|^2$ is time-independent. Physical implication?
+### 47. A particle is in a stationary state $\psi(x,t)=\phi(x)e^{-iEt/\hbar}$. Show $|\psi(x,t)|^2$ is time-independent. Physical implication?
 
 #### Answer
 $|\psi(x,t)|^2 = \psi^* \psi = (\phi^*(x)e^{+iEt/\hbar})(\phi(x)e^{-iEt/\hbar}) = |\phi(x)|^2 e^0 = |\phi(x)|^2$.
@@ -440,7 +440,7 @@ Since $|\phi(x)|^2$ depends only on position, the probability density is constan
 
 ***
 
-### Find the normalization constant A, given $\psi(x)=A e^{-\alpha x^2}$, $(-\infty < x < \infty)$, $\alpha > 0$.
+### 48. Find the normalization constant A, given $\psi(x)=A e^{-\alpha x^2}$, $(-\infty < x < \infty)$, $\alpha > 0$.
 
 #### Answer
 $\int_{-\infty}^{\infty} |\psi|^2 dx = A^2 \int_{-\infty}^{\infty} e^{-2\alpha x^2} dx = 1$.
@@ -449,7 +449,7 @@ $A^2 \sqrt{\pi/(2\alpha)} = 1 \implies A^2 = \sqrt{2\alpha/\pi} \implies A = (2\
 
 ***
 
-### Find the normalization constant B for $\psi=B[\sin(\pi x/L)+\sin(2\pi x/L)]$ (assume $0 \le x \le L$).
+### 49. Find the normalization constant B for $\psi=B[\sin(\pi x/L)+\sin(2\pi x/L)]$ (assume $0 \le x \le L$).
 
 #### Answer
 Need $\int_0^L |\psi|^2 dx = 1$.
@@ -466,7 +466,7 @@ $B = \sqrt{1/L}$.
 ---
 ## CL14 Questions: Operators & Expectation Values
 
-### Explain operators, observables, and the eigenvalue equation.
+### 50. Explain operators, observables, and the eigenvalue equation.
 
 #### Answer
 * **Observables**: Measurable physical quantities.
@@ -475,7 +475,7 @@ $B = \sqrt{1/L}$.
 
 ***
 
-### Write five operators associated with dynamical variables.
+### 51. Write five operators associated with dynamical variables.
 
 #### Answer
 
@@ -489,14 +489,14 @@ $B = \sqrt{1/L}$.
 
 ***
 
-### Explain the concept of the "expectation value".
+### 52. Explain the concept of the "expectation value".
 
 #### Answer
 The **expectation value** $\langle A \rangle$ is the theoretical average result of measuring observable $A$ many times on identical systems in state $\psi$. $\langle A \rangle = \int \psi^* \hat{A} \psi dV$.
 
 ***
 
-### Find the expectation value of position, $\langle x \rangle$, for a particle in a box of width L.
+### 53. Find the expectation value of position, $\langle x \rangle$, for a particle in a box of width L.
 
 #### Answer
 $\psi_n(x) = \sqrt{\frac{2}{L}}\sin(\frac{n\pi x}{L})$. $\hat{x}=x$.
@@ -504,7 +504,7 @@ $\langle x \rangle = \int_0^L x |\psi_n|^2 dx = \frac{2}{L} \int_0^L x \sin^2\le
 
 ***
 
-### Find the expectation values of position and momentum for $\psi(x)=Ne^{ikx}$ in $-a < x < a$.
+### 54. Find the expectation values of position and momentum for $\psi(x)=Ne^{ikx}$ in $-a < x < a$.
 
 #### Answer
 First, normalize: $\int_{-a}^{a} |N e^{ikx}|^2 dx = N^2 \int_{-a}^{a} dx = N^2 (2a) = 1 \implies N=1/\sqrt{2a}$.
@@ -520,63 +520,63 @@ $\langle p \rangle = \hbar k$.
 ---
 ## State Vectors & Qubits (From Other Files)
 
-### What is a state vector in quantum mechanics?
+### 55. What is a state vector in quantum mechanics?
 
 #### Answer
 A state vector (ket $|\psi\rangle$) is a vector in a complex Hilbert space representing the complete quantum state of a system.
 
 ***
 
-### What condition must two vectors $|\psi\rangle$ and $|\phi\rangle$ satisfy to be orthogonal?
+### 56. What condition must two vectors $|\psi\rangle$ and $|\phi\rangle$ satisfy to be orthogonal?
 
 #### Answer
 Their inner product must be zero: $\langle \phi | \psi \rangle = 0$.
 
 ***
 
-### Discuss orthogonality condition of the basis vectors.
+### 57. Discuss orthogonality condition of the basis vectors.
 
 #### Answer
 Basis vectors $\{|e_i\rangle\}$ representing distinct physical outcomes are chosen to be mutually orthogonal: $\langle e_j | e_i \rangle = 0$ for $i \neq j$.
 
 ***
 
-### What does it mean for a set of vectors to be an orthonormal basis?
+### 58. What does it mean for a set of vectors to be an orthonormal basis?
 
 #### Answer
 It means they are mutually orthogonal ($\langle e_j | e_i \rangle = 0$ for $i \neq j$) AND each vector is normalized ($\langle e_i | e_i \rangle = 1$). Combined: $\langle e_j | e_i \rangle = \delta_{ij}$.
 
 ***
 
-### Discuss few physical systems which can be modeled as two level quantum systems.
+### 59. Discuss few physical systems which can be modeled as two level quantum systems.
 
 #### Answer
 Examples: Spin-1/2 particle (up/down), photon polarization (horizontal/vertical), two specific energy levels of an atom (ground/excited), qubits ($|0\rangle / |1\rangle$).
 
 ***
 
-### What is superposition in quantum computing, and how does it differ from classical binary states?
+### 60. What is superposition in quantum computing, and how does it differ from classical binary states?
 
 #### Answer
 A classical bit is 0 OR 1. A qubit can be in a **superposition** of both states simultaneously: $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$, where $|\alpha|^2 + |\beta|^2 = 1$. It holds information about both states until measured.
 
 ***
 
-### Explain the physical meaning of a projection state in quantum mechanics.
+### 61. Explain the physical meaning of a projection state in quantum mechanics.
 
 #### Answer
 When a measurement is made on a system in superposition, the state "collapses" into one of the eigenstates corresponding to the measured value. This resulting eigenstate, representing the definite outcome *after* measurement, is the projection state.
 
 ***
 
-### How is qubit represented in Bloch sphere?
+### 62. How is qubit represented in Bloch sphere?
 
 #### Answer
 A single qubit state $|\psi\rangle = \cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$ is represented as a point on the surface of a unit sphere (Bloch sphere). $|0\rangle$ is at the North Pole, $|1\rangle$ at the South Pole. $\theta$ is the angle from the z-axis, $\phi$ is the angle in the xy-plane. Superpositions lie on the surface.
 
 ***
 
-### A qubit is given by $(2+i)|0\rangle+(1-2i)|1\rangle$. Normalize the qubit and represent it in matrix form.
+### 63. A qubit is given by $(2+i)|0\rangle+(1-2i)|1\rangle$. Normalize the qubit and represent it in matrix form.
 
 #### Answer
 Norm squared $N^2 = |2+i|^2 + |1-2i|^2 = 5 + 5 = 10$. Normalization factor $1/\sqrt{10}$.

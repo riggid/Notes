@@ -25,6 +25,10 @@ Functional programming treats computation as the evaluation of mathematical func
 *   **`reduce(function, iterable)`**:
     *   Applies a rolling computation to sequential pairs of values in a list.
     *   Needs import: `from functools import reduce`.
+*   **Comparision**:
+    *   `map`: One-to-one transformation.
+    *   `filter`: One-to-subset selection.
+    *   `reduce`: Many-to-one aggregation.
 
 ---
 
@@ -45,6 +49,14 @@ Functional programming treats computation as the evaluation of mathematical func
 *   **Object**: An instance of a class.
 *   **Encapsulation**: Bundling data (attributes) and methods within a class.
 *   **Self**: Reference to the current instance of the class.
+*   **Class Attributes vs Instance Attributes**:
+    *   **Class Attribute**: Shared by all instances (defined outside `__init__`).
+    *   **Instance Attribute**: Specific to an instance (defined inside `__init__` using `self`).
+*   **Methods**:
+    *   **Instance Method**: Takes `self`.
+    *   **Class Method**: Takes `cls` parameter and uses `@classmethod`.
+    *   **Static Method**: No implicit first argument, uses `@staticmethod`.
+*   **Destructor**: `__del__(self)` called when object is about to be destroyed.
 
 ### 2.2 Inheritance
 *   **Definition**: Mechanism where a new class inherits properties and behavior from an existing class.
@@ -61,6 +73,10 @@ Functional programming treats computation as the evaluation of mathematical func
 *   **Definition**: The ability to present the same interface for differing underlying forms (data types).
 *   **Method Overriding**: Child class provides a specific implementation of a method already provided by its parent class.
 *   **Operator Overloading**: Defining custom behavior for standard operators (e.g., `+`, `-`) using magic methods.
+*   **Abstract Classes**:
+    *   Classes that cannot be instantiated and are meant to be inherited.
+    *   Defined using `abc` module (`from abc import ABC, abstractmethod`).
+    *   Force subclasses to implement specific methods.
 
 ### 2.4 Magic (Dunder) Methods
 *   `__init__(self)`: Constructor/Initializer.

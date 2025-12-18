@@ -8,7 +8,7 @@ dg-publish: true
 
 ## Fundamentals of Thermodynamics
 
-### What are the definitions of system, property, state, and process?
+### 1. What are the definitions of system, property, state, and process?
 * **System**: A fixed quantity of matter or a specific region in space that is chosen for study. Everything outside the system is called the **surroundings**.
 * **Property**: A measurable characteristic of a system, such as pressure, temperature, or volume. Its value depends only on the current state of the system, not on how it got there.
 * **State**: The specific condition of a system at any given moment, defined by its properties. If any property changes, the state of the system changes.
@@ -16,14 +16,14 @@ dg-publish: true
 
 ***
 
-### How do temperature, heat, and internal energy differ?
+### 2. How do temperature, heat, and internal energy differ?
 * **Temperature** is a property that determines the direction of heat flow. It's a measure of the average kinetic energy of the molecules in a system.
 * **Heat** is the energy that is transferred between systems due to a temperature difference. It is energy in transit, not something a system possesses.
 * **Internal Energy (U)** is the total energy stored within a system. It is the sum of all microscopic forms of energy (kinetic, potential, chemical) of the system's molecules. For an ideal gas, it depends only on temperature.
 
 ***
 
-### What are the Zeroth, First, and Second Laws of Thermodynamics?
+### 3. What are the Zeroth, First, and Second Laws of Thermodynamics?
 * **Zeroth Law of Thermodynamics**: This law deals with thermal equilibrium. It states that if two systems are each in thermal equilibrium with a third system, then they are in thermal equilibrium with each other. This is the principle that allows thermometers to work.
 * **First Law of Thermodynamics**: This is the principle of energy conservation. For a process, it's stated as $\Delta U = Q - W$, meaning the change in a system's internal energy ($\Delta U$) equals the heat added to it ($Q$) minus the work it does ($W$). For a cycle, the net heat transfer equals the net work done ($Q_{net} = W_{net}$).
 * **Second Law of Thermodynamics**: This law provides direction to energy transfer and sets limits on efficiency. It can be expressed in two key ways:
@@ -32,28 +32,28 @@ dg-publish: true
 
 ***
 
-### What is a quasi-static process?
+### 4. What is a quasi-static process?
 A quasi-static (or quasi-equilibrium) process is an idealized process that happens so infinitely slowly that the system remains in thermodynamic equilibrium at every single moment. This means properties like pressure and temperature are uniform throughout the system at all times. It is achieved by applying changes (like force or heat) very gradually to avoid any sudden shifts or turbulence.
 
 ---
 
 ## Hydraulic Machines & Fluid Energy
 
-### What is a hydraulic machine, and what is the difference between a turbine and a pump?
+### 5. What is a hydraulic machine, and what is the difference between a turbine and a pump?
 A **hydraulic machine** is a device that converts the energy of a fluid into mechanical energy, or vice versa.
 * A **turbine** converts the energy of a fluid (kinetic and pressure energy) into mechanical work. For example, the force of water turns the blades of a turbine, which rotates a shaft.
 * A **pump** does the opposite; it uses mechanical work to increase the energy (primarily pressure) of a fluid.
 
 ***
 
-### How does a hydroelectric power plant work?
+### 6. How does a hydroelectric power plant work?
 In a hydroelectric plant, water stored at a high elevation (potential energy) flows down through a pipe. This flowing water strikes the blades of a **hydraulic turbine**, causing its shaft to rotate (mechanical energy). This rotating shaft is connected to a **generator**, which converts the mechanical energy into electrical energy.
 
 ---
 
 ## Internal Combustion (IC) Engines
 
-### How are IC engines classified?
+### 7. How are IC engines classified?
 IC engines can be classified based on several criteria:
 * **Number of Strokes**: Four-stroke or two-stroke.
 * **Thermodynamic Cycle**: Otto cycle (for petrol engine# ￼￼￼￼￼￼Back￼￼s) or Diesel cycle.
@@ -64,7 +64,7 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### What are the functions of five major IC engine parts?
+### 8. What are the functions of five major IC engine parts?
 1.  **Cylinder**: The core part where fuel combustion takes place and the piston reciprocates to produce power.
 2.  **Piston**: A cylindrical component that moves up and down inside the cylinder. It transfers the force from the expanding gas to the crankshaft.
 3.  **Connecting Rod**: Connects the piston to the crankshaft, converting the piston's linear (reciprocating) motion into the crankshaft's rotational motion.
@@ -73,7 +73,7 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### How does combustion differ in SI (Petrol) and CI (Diesel) engines?
+### 9. How does combustion differ in SI (Petrol) and CI (Diesel) engines?
 | Feature | SI (Petrol) Engine | CI (Diesel) Engine |
 | :--- | :--- | :--- |
 | **Intake** | A mixture of air and fuel is drawn in during the suction stroke. | Only air is drawn in during the suction stroke. |
@@ -82,7 +82,7 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### What are the four strokes of a 4-stroke CI (Diesel) engine?
+### 10. What are the four strokes of a 4-stroke CI (Diesel) engine?
 1.  **Suction Stroke**: The piston moves down, and the inlet valve opens, drawing only air into the cylinder.
 2.  **Compression Stroke**: Both valves close, and the piston moves up, compressing the air to a very high pressure and temperature.
 3.  **Power (or Expansion) Stroke**: Fuel is injected into the hot compressed air, and it ignites instantly. The resulting combustion pushes the piston down, producing power. Both valves remain closed.
@@ -90,7 +90,7 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### How are engine performance parameters defined?
+### 11. How are engine performance parameters defined?
 * **Indicated Power (IP)**: The total theoretical power developed by the combustion of fuel inside the engine cylinder.
 * **Brake Power (BP)**: The actual, useful power available at the engine's crankshaft after accounting for internal friction losses. It's the power that can be used to do work.
 * **Mechanical Efficiency ($\eta_{mech}$)**: The ratio of brake power to indicated power. It represents how effectively the power developed in the cylinders is transmitted to the crankshaft. It is calculated as $\eta_{mech} = (BP / IP)$.
@@ -99,7 +99,7 @@ IC engines can be classified based on several criteria:
 
 ## Electric & Hybrid Vehicles (EVs & HEVs)
 
-### How do EVs and HEVs differ in terms of energy source and emissions?
+### 12. How do EVs and HEVs differ in terms of energy source and emissions?
 | Feature           | Electric Vehicle (EV)                                                         | Hybrid Electric Vehicle (HEV)                                                                              |
 | :---------------- | :---------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
 | **Energy Source** | Runs solely on electricity stored in a rechargeable battery.                  | Uses a combination of a gasoline engine and an electric motor.                                             |
@@ -107,7 +107,7 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### What are the major components of an Electric Vehicle?
+### 13. What are the major components of an Electric Vehicle?
 1.  **Battery (Power Pack)**: Stores the electrical energy that powers the vehicle.
 2.  **Electric Motor**: Converts electrical energy from the battery into mechanical energy to rotate the wheels.
 3.  **Controller**: Regulates the flow of electricity from the battery to the motor, controlling the vehicle's speed and acceleration.
@@ -115,7 +115,7 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### What are the advantages of EVs over conventional ICE vehicles?
+### 14. What are the advantages of EVs over conventional ICE vehicles?
 * **Zero Emissions**: EVs produce no tailpipe emissions, reducing air pollution.
 * **Lower Operating Costs**: Electricity is generally cheaper than gasoline, and EVs have fewer moving parts, leading to lower maintenance costs.
 * **Quiet Operation**: Electric motors are nearly silent, which reduces noise pollution.
@@ -123,12 +123,12 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### What is the role of the Battery Management System (BMS)?
+### 15. What is the role of the Battery Management System (BMS)?
 The Battery Management System (BMS) is the "brain" of the battery pack. It monitors and controls all aspects of the battery's performance, including its state of charge, temperature, and health. Its key roles are to ensure safety, optimize battery performance, and maximize the battery's lifespan.
 
 ***
 
-### Why do EVs have better energy efficiency than ICE vehicles?
+### 16. Why do EVs have better energy efficiency than ICE vehicles?
 EVs are more efficient primarily because:
 * **Efficient Energy Conversion**: Electric motors convert 85-90% of electrical energy into mechanical power to move the wheels, whereas internal combustion engines (ICEs) only convert about 25-30% of the energy stored in fuel, with the rest lost as heat and friction.
 * **Regenerative Braking**: EVs can recapture energy that is normally lost as heat during braking and use it to recharge the battery.
@@ -136,7 +136,9 @@ EVs are more efficient primarily because:
 
 ---
 
+***
 ## Numerical Problems
+
 
 ### 1. Work Done Calculation
 *Determine the work done in compressing 1 kg of air from a volume of 0.15 m³ at 1 bar to 0.05 m³, when compression is (i) isothermal, and (ii) adiabatic ($\gamma=1.4$).*
@@ -209,10 +211,7 @@ The friction loss is **19.33%** of the brake power.
     $$ L = 1.5 \times d = 1.5 \times 78.1 = 117.15 \text{ mm} $$
 The bore is **78.1 mm** and the stroke is **117.15 mm**.
 
-***
-# Numerical Examples: Thermodynamics
-
-### Example 1: Isothermal Work
+### 5. Isothermal Work
 A mass of 1.5 kg of air is compressed in a quasi-static process where $PV=constant$ from 0.1 MPa to 0.7 MPa. The initial density of the air is $1.16~kg/m^3$. Determine the work done.
 
 #### Solution
@@ -236,7 +235,7 @@ A mass of 1.5 kg of air is compressed in a quasi-static process where $PV=consta
 
 ---
 
-### Example 2: Polytropic Work
+### 6. Polytropic Work
 A mass of gas is compressed in a quasi-static process from 80 kPa, $0.1~m^3$ to 0.4 MPa, $0.03~m^3$. Assuming the process follows $PV^n = constant$, determine the work done.
 
 #### Solution
@@ -260,7 +259,7 @@ A mass of gas is compressed in a quasi-static process from 80 kPa, $0.1~m^3$ to 
 
 ---
 
-### Example 4: First Law for a Cycle
+### 7. First Law for a Cycle
 During one cycle, an engine has two work interactions (15 kJ *to* the fluid, 44 kJ *from* the fluid) and three heat interactions (75 kJ *to* the fluid, 40 kJ *from* the fluid, and one unknown). Evaluate the third heat transfer.
 
 #### Solution
@@ -283,7 +282,7 @@ During one cycle, an engine has two work interactions (15 kJ *to* the fluid, 44 
 
 ---
 
-### Example 6: Stirring Work
+### 8. Stirring Work
 1.5 kg of a liquid with a constant specific heat of $2.5~\text{kJ/kg-K}$ is stirred in a well-insulated chamber, causing its temperature to rise by 15°C. Find the change in internal energy ($\Delta E$) and the work done (W).
 
 #### Solution
@@ -308,7 +307,7 @@ During one cycle, an engine has two work interactions (15 kJ *to* the fluid, 44 
 
 ---
 
-### Example 8: IC Engine Performance
+### 9. IC Engine Performance
 A single-cylinder, four-stroke engine test yields the following data:
 - Brake drum diameter: 60 cm
 - Rope diameter: 3 cm
