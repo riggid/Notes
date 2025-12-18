@@ -268,35 +268,9 @@ $$I = \frac{1}{2} \Gamma(3/4)\Gamma(1/4)$$
 Using reflection formula $\Gamma(p)\Gamma(1-p) = \pi/\sin(p\pi)$:
 With $p=1/4$: $\Gamma(1/4)\Gamma(3/4) = \frac{\pi}{\sin(\pi/4)} = \frac{\pi}{1/\sqrt{2}} = \pi\sqrt{2}$.
 $$I = \frac{1}{2} (\pi\sqrt{2}) = \frac{\pi}{\sqrt{2}}$$
----
-dg-publish: true
----
-# [[../Mathematics|Back]]
-***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
-
-# Unit 4 Examples: Special Functions
-
-### Example 1: Evaluation using Beta-Gamma Relation
-Evaluate $\int_0^{\pi/2} \sin^4 x \cos^5 x \, dx$ using Beta functions.
-
-#### Solution
-1.  Recall the formula:
-    $$ \int_0^{\pi/2} \sin^p \theta \cos^q \theta \, d\theta = \frac{1}{2} \beta\left( \frac{p+1}{2}, \frac{q+1}{2} \right) $$
-2.  Here $p=4, q=5$.
-    $$ I = \frac{1}{2} \beta\left( \frac{4+1}{2}, \frac{5+1}{2} \right) = \frac{1}{2} \beta\left( \frac{5}{2}, 3 \right) $$
-3.  Use relation $\beta(m, n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}$.
-    $$ I = \frac{1}{2} \frac{\Gamma(5/2)\Gamma(3)}{\Gamma(5/2 + 3)} = \frac{1}{2} \frac{\Gamma(2.5)\Gamma(3)}{\Gamma(5.5)} $$
-4.  Expand $\Gamma$ functions:
-    *   $\Gamma(3) = 2! = 2$.
-    *   $\Gamma(2.5) = 1.5 \times 0.5 \times \sqrt{\pi} = \frac{3}{2} \frac{1}{2} \sqrt{\pi} = \frac{3}{4}\sqrt{\pi}$.
-    *   $\Gamma(5.5) = 4.5 \times 3.5 \times 2.5 \times 1.5 \times 0.5 \times \sqrt{\pi}$.
-    $$ I = \frac{1}{2} \frac{(3/4 \sqrt{\pi}) (2)}{(9/2)(7/2)(5/2)(3/2)(1/2)\sqrt{\pi}} $$
-    Cancel terms:
-    $$ I = \frac{3/4}{(945/32)} = \frac{3}{4} \cdot \frac{32}{945} = \frac{8}{315} $$
-**Answer:** $8/315$.
 
 ***
+
 
 ### Example 2: Gamma Function Integral
 Evaluate $\int_0^{\infty} x^4 e^{-x} \, dx$.

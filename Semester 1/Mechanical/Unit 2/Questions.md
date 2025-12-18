@@ -467,14 +467,10 @@ ii) Overall pf $= P_T / S_T = 10.5 / 10.53 \approx 0.997$ Lagging (since $Q_T>0$
 iii) kVAR for Unity pf: Need to supply $Q_C = -Q_T = -0.82$ kVAR. Capacitor rating is $0.82$ kVAR.
 
 ***
-# [[../Mechanical|Back]]---
-dg-publish: true
----
-
 # [[../Mechanical|Back]]
+
 ***
-[[Core Notes]] | [[Examples]] | [[Questions]]
-***
+
 # Unit 2: Worked Examples
 
 ### Example 1: Calculating E from Tensile Test

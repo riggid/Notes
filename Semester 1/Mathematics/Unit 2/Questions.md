@@ -903,12 +903,8 @@ $q(t) = \frac{E}{2\omega^2 L} \sin(\omega t) - \frac{Et}{2\omega L} \cos(\omega 
 Substitute $\omega = 1/\sqrt{LC}$, $\omega^2 = 1/LC$.
 $q(t) = \frac{E}{2(1/LC)L} \sin(\omega t) - \frac{E\sqrt{LC}}{2L} t \cos(\omega t)$.
 $q(t) = \frac{EC}{2} \sin(\omega t) - \frac{EC}{2} \frac{t}{\sqrt{LC}} \cos(\omega t)$.
-$$q = \frac{EC}{2} \left[ \sin(\frac{t}{\sqrt{LC}}) - \frac{t}{\sqrt{LC}} \cos---
-dg-publish: true
----
-# [[../Mathematics|Back]]
-***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
+$$q = \frac{EC}{2} \left[ \sin(\frac{t}{\sqrt{LC}}) - \frac{t}{\sqrt{LC}} \cos(\frac{t}{\sqrt{LC}}) \right]$$
+
 ***
 # Unit 2: Worked Examples
 

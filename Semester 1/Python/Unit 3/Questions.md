@@ -149,12 +149,9 @@ def my_decorator(func):
 *   **PDB**: Python Debugger. Commands: `n` (next), `s` (step), `c` (continue), `q` (quit).
 *   **Namespace**: A mapping from names to objects.
 *   **Difference generator function vs regular**: Generator uses `yield`, returns an iterator, pauses execution. Regular returns once.
----
-dg-publish: true
----
-# [[../Python|Back]]
+
 ***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
+
 
 # Unit 3: Examples (Recursion & Files & GUI)
 

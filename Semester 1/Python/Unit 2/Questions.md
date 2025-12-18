@@ -49,12 +49,9 @@ dg-publish: true
 5. A dictionary is accessed by a **key** rather than an index.
 6. The **strip** string function returns a copy with leading/trailing whitespace removed.
 7. When a file is opened, a **file object** is created.
----
-dg-publish: true
----
-# [[../Python|Back]]
+
 ***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
+
 
 # Unit 2: Essential Examples & Programs
 

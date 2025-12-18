@@ -387,14 +387,10 @@ This section provides concise answers or references to detailed explanations for
 *   **14.4. Laser cooling.**
     *   **Answer**: See [[Core Notes#142-laser-cooling|Core Notes.md]].
 
-***---
-dg-publish: true
----
+***
 
-# [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
-***
+
 
 # Unit 7: Lasers, Optoelectronics, and Advanced Materials - Examples
 

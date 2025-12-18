@@ -45,13 +45,9 @@ dg-publish: true
     *   **Answer**: Precise positioning control, compatibility with digital systems, high torque at low speeds, low cost (variable reluctance type). See [[Core Notes#52-stepper-motor|Core Notes]].
 
 > See also: [[Examples]] for numerical problems.
----
-dg-publish: true
----
-# [[../Electrical|Back]]
+
 ***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
-***
+
 
 # Unit 4 Examples: Machines
 

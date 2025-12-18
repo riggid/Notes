@@ -82,14 +82,9 @@ The goal is to isolate or dilute radioactive waste to ensure that the rate or co
 
 ***
 # [[../Environmental Studies|Back]]
----
-dg-publish: true
----
 
-# [[../Environmental Studies|Back]]
 ***
-[[Core Notes]] | [[Examples]] | [[Questions]]
-***
+
 # Unit 1: Examples
 
 ### Ecosystems & Biomes

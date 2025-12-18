@@ -430,31 +430,10 @@ $$z = \phi_1(y+x) + x\phi_2(y+x) + \phi_3(y-x) + x\phi_4(y-x)$$
     $$= -2 e^{2y} [1 + \frac{D+4D'}{4}]^{-1} x$$
     $$= -2 e^{2y} [1 - \frac{D}{4} - \dots] x$$
     $$= -2 e^{2y} [x - \frac{1}{4}]$$
-    $$= e^{2y} (\frac{1}{2} - 2x)$$ or $\frac{1}{2} e^{2y} (1-4x)$.---
-dg-publish: true
----
-# [[../Mathematics|Back]]
-***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
-
-# Unit 3 Examples: Partial Differential Equations
-
-### Example 1: Formation by Eliminating Constants
-Form the partial differential equation by eliminating arbitrary constants $a$ and $b$ from $z = (x+a)(y+b)$.
-
-#### Solution
-1.  Given:
-    $$ z = (x+a)(y+b) \quad \dots(1) $$
-2.  Differentiate partially w.r.t $x$:
-    $$ p = \frac{\partial z}{\partial x} = 1 \cdot (y+b) = y+b \quad \dots(2) $$
-3.  Differentiate partially w.r.t $y$:
-    $$ q = \frac{\partial z}{\partial y} = (x+a) \cdot 1 = x+a \quad \dots(3) $$
-4.  Substitute $(y+b) = p$ and $(x+a) = q$ from (2) and (3) into (1):
-    $$ z = q \cdot p $$
-    $$ z = pq $$
-**Answer:** The required PDE is $z = pq$.
+    $$= e^{2y} (\frac{1}{2} - 2x)$$ or $\frac{1}{2} e^{2y} (1-4x)$.
 
 ***
+
 
 ### Example 2: Formation by Eliminating Arbitrary Functions
 Form the PDE from $z = f(x^2 - y^2)$.

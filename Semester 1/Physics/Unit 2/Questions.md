@@ -543,14 +543,9 @@ Additional practice questions for Unit 2 (Quantum Mechanics, Potentials, Wells).
 4. Calculate the Fermi energy in eV for a metal at 0K, whose density is 10500 kg/m³, atomic weight is 107.9, and it has one conduction electron per atom.
 5. Using the expression of density of states, show that average energy of electrons in a metal at 0K is related to Fermi energy.
 6. A current of 5A can easily be carried in a copper wire of length 3m and resistance 20 mΩ at room temperature. Given: Density of copper = 8.95 × 10³kg/m³, mobility of charge carriers = 4.3 × 10⁻³ m²/Vs and Fermi energy = 7eV. Estimate and compare the values of: a) Drift velocity b) Thermal velocity c) Fermi velocity
----
-dg-publish: true
----
 
-# [[../Physics|Back]]
 ***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
-***
+
 # Unit 2: Worked Examples
 
 ### Example 1: Potential Step Reflection/Transmission (E > V0)

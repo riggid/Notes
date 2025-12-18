@@ -687,13 +687,10 @@ Thevenin's Theorem states that any linear electrical network with two terminals 
 *Obtain Thevenin's equivalent across the terminals A & B.*
 
 This is the same problem as solved in the main `Q&A - Electrical Circuits.md` file. The result is:
-The Thevenin equivalent is a **6V** voltage source in series with a **9Ω** resistor.---
-dg-publish: true
----
-# [[../Electrical|Back]]
+The Thevenin equivalent is a **6V** voltage source in series with a **9Ω** resistor.
+
 ***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
-***
+
 ## Example 1: Basic KVL
 
 # DC Circuits Examples

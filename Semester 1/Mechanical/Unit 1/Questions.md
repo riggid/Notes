@@ -207,11 +207,8 @@ The friction loss is **19.33%** of the brake power.
     $$ d^3 = 0.0004774 \implies d = 0.0781 \text{ m} = 78.1 \text{ mm} $$
 4.  **Find Stroke (L)**:
     $$ L = 1.5 \times d = 1.5 \times 78.1 = 117.15 \text{ mm} $$
-The bore is **78.1 mm** and the stroke is **117.15 mm**.---
-dg-publish: true
----
+The bore is **78.1 mm** and the stroke is **117.15 mm**.
 
-# [[../Mechanical|Back]]
 ***
 # Numerical Examples: Thermodynamics
 

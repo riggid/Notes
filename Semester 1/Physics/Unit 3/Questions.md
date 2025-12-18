@@ -1344,13 +1344,9 @@ Additional practice questions for Unit 3 (Free Electron Theory, Band Theory, Mag
 8. Briefly describe the structure of a GMR nano-device.
 9. Elaborate the significance of magnetization states of the magnetic layers towards giant magneto resistance.
 10. List various applications of ferromagnetic and anti-ferromagnetic materials.
----
-dg-publish: true
----
-# [[../Physics|Back]]
+
 ***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
-***
+
 # Unit 3: Worked Examples
 
 ### Example 1: Fermi Factor Calculation

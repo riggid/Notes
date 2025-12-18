@@ -655,13 +655,10 @@ To get unity pf, net $Q$ must be zero. The current net $Q$ is $+0.82$ kVAR (indu
 Capacitor rating required = $0.82$ kVAR.
 
 ***
-# [[../Electrical|Back]]---
-dg-publish: true
----
 # [[../Electrical|Back]]
+
 ***
-[[Core Notes]] | [[Questions]] | [[pyqs|PYQs]] | [[mcqs|MCQs]]
-***
+
 # Unit 2: Worked Examples
 
 ### Example 1: Sine Wave Properties
