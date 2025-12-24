@@ -1197,39 +1197,20 @@ $$ g_{th} = 0.15125 \text{ m}^{-1} $$
     Given the context of other problems, it's possible this is a flawed question or from a model not provided. Without additional context on what $d=4 \times 10^{-17} \text{ m}$ represents in the calculation of polarisability *given* a dipole moment and *no external field*.
     If $d$ refers to displacement of electron cloud, then effective electric field is $E = (Zq) / (4\pi\epsilon_0 R^2)$ with restoring force $k d$.
     Let's assume the question implicitly means the classical model of electron cloud displacement. An electron is confined to an atom of radius R. When a field E is applied, it displaces by x. The restoring force is $k x$. The electric field is $E$. $p = ex$. $eE = kx$.
-    From this, $\alpha = p/E = ex / (kx/e) = e^2 x / kx = e^2/k$. We don't have $k$.
-
-    The only other alternative is perhaps $p = Z\alpha E$?
-    Let's assume the $d = 4 \times 10^{-17} \text{ m}$ is supposed to directly yield the polarizability in a very simple framework which I cannot discern from the standards.
-
-    Given the format of the problem from the OCR, it would lead to a value based on some direct combination of the numbers.
-    If the question meant to ask for how external field $E$ relates to $d$, then $p = \alpha E_{loc}$.
-    The information in the problem is insufficient for standard calculation of polarisability. I will mark this example as requiring more context for a definite standard solution. Let's make an assumption based on some unusual problem context: if $d$ refers to the radius of the atom, $p = \alpha E$. If it's simple electronic polarizability, $\alpha_e = \epsilon_0 (4 \pi R^3)$. The given $d$ is too small for $R$.
-    Let me provide a solution to an *imagined* context to match typical values. If $d$ was a displacement $x$ and $p=e x$:
-    $x = p/e = 0.5 \times 10^{-22} / 1.6 \times 10^{-19} = 3.125 \times 10^{-4}$m. Still too big.
-
-    Given the very precise wording, I suspect a specific textbook model is implied.
-    Let's try one more interpretation: what if "distance of the center of the -ve charge cloud from the nucleus" *is* the $d$ in a dipole $p=qd$, and it means $q$ is specific to oxygen. For an oxygen atom, the nucleus has +8e. It has 2 shells of electrons.
-    If $p = \alpha_e E$, and the effective field in atom can be thought of as for a charge $Ze$ displaced distance $d$, then $E \approx Z e / (4 \pi \epsilon_0 d^2)$. And $p = Z e d_{displacement}$.
-    This is too complex without further clarification.
-
-    As a last resort, for problem 5 from the problem set, let's assume "distance of the center of the -ve charge cloud from the nucleus is d" implies it's equivalent to the size of the electron cloud's response relevant to polarizability.
-    Let's use the definition $p = qd'$ for the dipole moment, where $q$ is the effective charge ($e$) and $d'$ is the *actual displacement*.
-    So, if $p = 0.5 \times 10^{-22}$ C-m, then $d' = p/e = 0.5 \times 10^{-22} / 1.6 \times 10^{-19} \approx 3.125 \times 10^{-4}$ m.
-    This $d'$ is the displacement of the electron cloud. Now, the problem also says, if actual distance is $4 \times 10^{-17}$ m. This cannot be.
-    I will state that this problem requires more context or clarification for a standard solution. However, since the prompt specifies providing the complete problem set (which implies a solution should exist), I will provide a plausible interpretation that generates a polarizability value.
-    The simplest would be using a direct proportionality of polarizability to the volume of the atom, $\alpha_e = 4\pi\epsilon_0 R^3$. If $d = 4 \times 10^{-17} \text{ m}$ were a radius (even if very small):
-    $\alpha_e = 4\pi (8.854 \times 10^{-12}) (4 \times 10^{-17})^3 = 1.112 \times 10^{-10} \times 64 \times 10^{-51} = 7.11 \times 10^{-60} \text{ F m}^2$. This is extremely small.
-
-    Let's use the simpler $\alpha = \frac{p}{E_{ext}}$. We don't have $E_{ext}$.
-    I'll consider the problem as flawed/needing more info and state it.
-
-**Problem (PS-5, Revised interpretation):** On being polarised, an oxygen atom shows an induced dipole moment of $0.5 \times 10^{-22} \text{ C-m}$. If the effective displacement of the electron cloud from the nucleus that corresponds to the induced dipole is $X$, and the average electric field causing this displacement is $E$, then $p = eX$. The electronic polarisability is $\alpha_e = \frac{p}{E}$. The wording "if the distance of the center of the -ve charge cloud from the nucleus is $4 \times 10^{-17} \text{ m}$" is tricky; it might be a subtle hint about the restoring force or an internal field. Without an external field value, a general solution for $\alpha_e$ is not possible directly from $p = \alpha_e E_{ext}$. If $d_0=4 \times 10^{-17} \text{ m}$ were the effective diameter/radius of the electron cloud. A more plausible scenario for this type of problem involves calculating the effective electric field strength experienced by the electron at that displacement $d_0$. If we consider a hydrogen-like model where the positive charge is effectively at origin and electron cloud spreads.
-    A very simplified relation often used in such problems is $\alpha_e = 4\pi\epsilon_0 R^3$. If we use $R = 4 \times 10^{-17}$ m, the value becomes extremely small as shown above. This $d = 4 \times 10^{-17}$ m must be a very specific meaning for the course material.
-
-    Let's assume the question implicitly refers to the following model from some contexts: the electron cloud is displaced by $d$ in the field $E$. The restoring force on the electron is $K_0 d$. In equilibrium, $eE = K_0 d$. The induced dipole moment is $p = ed$. So $\alpha_e = p/E = (ed) / (K_0 d/e) = e^2/K_0$. We do not have $K_0$.
-
-**Final Answer for Example 15:** This problem is underspecified for a standard solution without additional assumptions or context about the model intended for relating the given values to polarizability. The typical approach $p=\alpha_e E$ cannot be applied without $E$. The given separation $d$ is too small for an atomic radius or displacement for a typical induced dipole, making the interpretation problematic. More information is required to provide a definitive quantitative solution.
+**Solution:**
+1.  **Given Values:**
+    *   Induced Dipole Moment ($p$) = $0.5 \times 10^{-22}$ C m
+    *   Distance of center of negative charge from nucleus ($d$) = $4 \times 10^{-17}$ m
+2.  **Formula & Ambiguity:**
+    *   Electronic polarisability is defined by $\alpha_e = \frac{p}{E}$, where $E$ is the polarizing electric field. The problem does not explicitly state the electric field $E$.
+    *   Alternatively, for a simple atomic model, $\alpha_e \approx 4\pi \epsilon_0 R^3$.
+3.  **Analysis:**
+    *   The given distance $d = 4 \times 10^{-17}$ m is extremely small (typical atomic radii are $\sim 10^{-10}$ m, and nuclear radii $\sim 10^{-15}$ m).
+    *   If we interpret $d$ as the displacement $x$ in $p=q_{eff} x$, then $q_{eff} = p/d = 0.5 \times 10^{-22} / 4 \times 10^{-17} \approx 1.25 \times 10^{-6}$ C, which is much larger than the elementary charge $e$, implying a non-physical scenario for a single atom.
+    *   If we assume $d$ to be a typo for an atomic dimension (e.g., $4 \times 10^{-11}$ m), we could estimate $\alpha$.
+4.  **Conclusion:**
+    *   Due to the likely typographical error in the "distance" value (orders of magnitude too small) and the absence of an external field value, a standard numerical answer cannot be calculated.
+    *   However, the method would be: Determine $E$ (or $R$), then use $\alpha_e = p/E$ (or $4\pi \epsilon_0 R^3$).
 
 ***
 
@@ -1394,3 +1375,66 @@ $$ g_{th} = 0.15125 \text{ m}^{-1} $$
 **Final Answer:** The total polarisability of $\text{CO}_2$ is approximately $3.249 \times 10^{-40} \text{ F m}^2$.
 
 ***
+---
+## Assignment 4 Questions
+
+### 57. Explain spatial coherence and temporal coherence properties of laser beam.
+
+#### Answer
+**Spatial Coherence:**
+*   Refers to the correlation of the phase of the light wave at different **points in space** (transverse to direction of prop) at the **same time**.
+*   A laser beam has high spatial coherence, meaning the wavefronts are perfectly uniform across the beam diameter.
+*   **Measure:** High spatial coherence allows lasers to be focused to a tiny spot or stay collimated over long distances.
+
+**Temporal Coherence:**
+*   Refers to the correlation of the phase of the light wave at the **same point** in space at **different times** (along the direction of prop).
+*   Related to the monochromaticity of the source. High temporal coherence means the wave stays a perfect sine wave for a long time (coherence time $\tau_c$) implies a very narrow frequency spread ($\Delta \nu$).
+*   **Measure:** Coherence length ($L_c = c \tau_c$). Lasers can have $L_c$ of kilometers.
+
+### 58. A pulsed laser emits photons of wavelength 780 nm with 20 mW average power. Calculate the number of photons contained in each pulse if the pulse duration is 10 ns.
+
+#### Answer
+This question phrasing is slightly ambiguous. "20 mW average power" usually implies continuous average. If it meant "peak pulse power is 20mW", it's one thing. If it's a rep-rate laser...
+Assuming the **energy of one pulse** is derived from power: Energy = Power × Time.
+(If 20mW is the peak power during the pulse):
+1.  **Energy per pulse ($E_p$):**
+    $E_p = P \times t = (20 \times 10^{-3} \text{ W}) \times (10 \times 10^{-9} \text{ s}) = 200 \times 10^{-12} \text{ J} = 2 \times 10^{-10} \text{ J}$.
+2.  **Energy of one photon ($E_{ph}$):**
+    $E_{ph} = \frac{hc}{\lambda}$.
+    $E_{ph} = \frac{(6.626 \times 10^{-34}) \times (3 \times 10^8)}{780 \times 10^{-9}} = \frac{19.878 \times 10^{-26}}{7.8 \times 10^{-7}} \approx 2.55 \times 10^{-19} \text{ J}$.
+3.  **Number of photons ($N$):**
+    $N = \frac{E_p}{E_{ph}} = \frac{2 \times 10^{-10}}{2.55 \times 10^{-19}} \approx 0.78 \times 10^9$.
+    $$ N \approx 7.8 \times 10^8 \text{ photons} $$
+(If 20mW is average power and repetition rate is unknown, we can't solve. Assuming Power refers to pulse power is standard for such simpler problems).
+
+### 59. The lifetime of transitions in Na atoms emitting a wavelength of 589.6 nm is estimated to be 16.4 ns. Calculate the Einstein’s coefficients A and B. Calculate spectral broadening and the coherence length of radiations.
+
+#### Answer
+$\lambda = 589.6$ nm $= 5.896 \times 10^{-7}$ m. Lifetime $\tau_{sp} = 16.4$ ns $= 1.64 \times 10^{-8}$ s.
+
+1.  **Einstein Coefficient A ($A_{21}$):**
+    $A_{21} = \frac{1}{\tau_{sp}} = \frac{1}{1.64 \times 10^{-8}} \approx 6.1 \times 10^7 \text{ s}^{-1}$.
+2.  **Einstein Coefficient B ($B_{21}$):**
+    Relation: $\frac{A_{21}}{B_{21}} = \frac{8\pi h \nu^3}{c^3} = \frac{8\pi h}{\lambda^3}$.
+    $B_{21} = A_{21} \frac{\lambda^3}{8\pi h}$.
+    $B_{21} = (6.1 \times 10^7) \frac{(5.896 \times 10^{-7})^3}{8\pi (6.626 \times 10^{-34})}$.
+    $\lambda^3 \approx 205 \times 10^{-21}$.
+    $B_{21} = \frac{(6.1 \times 10^7)(2.05 \times 10^{-19})}{1.665 \times 10^{-32}} \approx \frac{12.5 \times 10^{-12}}{1.665 \times 10^{-32}} \approx 7.5 \times 10^{20} \text{ m}^3/(\text{J s}^2)$.
+3.  **Spectral Broadening (Natural Linewidth $\Delta \nu$):**
+    $\Delta \nu \approx \frac{1}{2\pi \tau} = \frac{1}{2\pi (1.64 \times 10^{-8})} \approx \frac{1}{10.3 \times 10^{-8}} \approx 9.7 \times 10^6 \text{ Hz}$ (or 9.7 MHz).
+4.  **Coherence Length ($L_c$):**
+    $L_c = c \tau_c$. Assuming $\tau_c \approx \tau_{sp}$ (for natural broadening limit).
+    $L_c = (3 \times 10^8) \times (1.64 \times 10^{-8}) \approx 4.92 \text{ m}$.
+
+### 60. Why is susceptibility treated as a tensor in anisotropic materials? Explain the tensor relation between polarization and electric field in anisotropic dielectrics.
+
+#### Answer
+**Why Tensor?**
+In isotropic materials (like glass), the induced polarization $\mathbf{P}$ is always parallel to the applied electric field $\mathbf{E}$ ($\mathbf{P} = \epsilon_0 \chi \mathbf{E}$).
+In **anisotropic materials** (like quartz or calcite crystals), the atoms are arranged differently in different directions. An electric field applied along the x-axis might induce a response (displacement of charges) along the x, y, and z axes due to the internal restoring forces not being symmetric.
+**Tensor Relation:**
+Thus, $\mathbf{P}$ is not necessarily parallel to $\mathbf{E}$. Each component of $\mathbf{P}$ depends on all components of $\mathbf{E}$:
+$$ P_i = \epsilon_0 \sum_j \chi_{ij} E_j $$
+Matrix form:
+$$ \begin{pmatrix} P_x \\ P_y \\ P_z \end{pmatrix} = \epsilon_0 \begin{pmatrix} \chi_{xx} & \chi_{xy} & \chi_{xz} \\ \chi_{yx} & \chi_{yy} & \chi_{yz} \\ \chi_{zx} & \chi_{zy} & \chi_{zz} \end{pmatrix} \begin{pmatrix} E_x \\ E_y \\ E_z \end{pmatrix} $$
+The susceptibility $\chi$ is a second-rank tensor (3x3 matrix) describing this directional dependence.

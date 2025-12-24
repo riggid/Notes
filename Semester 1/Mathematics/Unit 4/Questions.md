@@ -151,9 +151,25 @@ $$I = \frac{1}{5} \frac{\Gamma(0.6)\sqrt{\pi}}{\Gamma(1.1)}$$
 
 ***
 
+### 9. Evaluate $\int_0^{\pi/2} \sqrt{\tan x} \, dx$.
+
+#### Detailed Answer:
+$$I = \int_0^{\pi/2} \sin^{1/2}x \cos^{-1/2}x dx$$
+Using formula: $\int_0^{\pi/2} \sin^p x \cos^q x dx = \frac{1}{2} \beta\left(\frac{p+1}{2}, \frac{q+1}{2}\right)$.
+Here $p=1/2, q=-1/2$.
+$$I = \frac{1}{2} \beta\left(\frac{1/2+1}{2}, \frac{-1/2+1}{2}\right)$$
+$$= \frac{1}{2} \beta(3/4, 1/4)$$
+Using relationship $\beta(m, n) = \Gamma(m)\Gamma(n)/\Gamma(m+n)$:
+$$I = \frac{1}{2} \Gamma(3/4)\Gamma(1/4)$$
+Using reflection formula $\Gamma(p)\Gamma(1-p) = \pi/\sin(p\pi)$:
+With $p=1/4$: $\Gamma(1/4)\Gamma(3/4) = \frac{\pi}{\sin(\pi/4)} = \frac{\pi}{1/\sqrt{2}} = \pi\sqrt{2}$.
+$$I = \frac{1}{2} (\pi\sqrt{2}) = \frac{\pi}{\sqrt{2}}$$
+
+***
+
 ## Bessel Functions
 
-### 9. Prove that $J_0'(x) = -J_1(x)$.
+### 10. Prove that $J_0'(x) = -J_1(x)$.
 
 #### Detailed Answer:
 1.  **Use Recurrence Relation 2:**
@@ -165,7 +181,7 @@ $$I = \frac{1}{5} \frac{\Gamma(0.6)\sqrt{\pi}}{\Gamma(1.1)}$$
 
 ***
 
-### 10. Prove that $J_{-1/2}(x) = \sqrt{\frac{2}{\pi x}} \cos x$.
+### 11. Prove that $J_{-1/2}(x) = \sqrt{\frac{2}{\pi x}} \cos x$.
 
 #### Detailed Answer:
 1.  **Series Definition:**
@@ -189,7 +205,7 @@ $$I = \frac{1}{5} \frac{\Gamma(0.6)\sqrt{\pi}}{\Gamma(1.1)}$$
 
 ***
 
-### 11. Express $J_5(x)$ in terms of $J_0(x)$ and $J_1(x)$.
+### 12. Express $J_5(x)$ in terms of $J_0(x)$ and $J_1(x)$.
 
 #### Detailed Answer:
 Using recurrence relation: $J_{n+1}(x) = \frac{2n}{x} J_n(x) - J_{n-1}(x)$.
@@ -210,7 +226,7 @@ Using recurrence relation: $J_{n+1}(x) = \frac{2n}{x} J_n(x) - J_{n-1}(x)$.
 
 ***
 
-### 12. Express $J_{-5/2}(x)$ in terms of sine and cosine.
+### 13. Express $J_{-5/2}(x)$ in terms of sine and cosine.
 
 #### Detailed Answer:
 Use relation $J_{-(n+1)/2}$ reduction or explicit simple forms.
@@ -233,22 +249,6 @@ So $J_{-5/2} = -\frac{3}{x} J_{-3/2} - J_{-1/2}$.
     $$= \sqrt{\frac{2}{\pi x}} \left[ \frac{3}{x} \sin x + \left(\frac{3}{x^2} - 1\right) \cos x \right]$$
     $$= \sqrt{\frac{2}{\pi x}} \left[ \frac{3}{x} \sin x + \frac{3-x^2}{x^2} \cos x \right]$$
     (Note: The previous summary had sine/cosine terms swapped or different coefficients. This derivation is consistent with recurrence).
-
-***
-
-### 13. Evaluate $\int_0^{\pi/2} \sqrt{\tan x} \, dx$.
-
-#### Detailed Answer:
-$$I = \int_0^{\pi/2} \sin^{1/2}x \cos^{-1/2}x dx$$
-Using formula: $\int_0^{\pi/2} \sin^p x \cos^q x dx = \frac{1}{2} \beta\left(\frac{p+1}{2}, \frac{q+1}{2}\right)$.
-Here $p=1/2, q=-1/2$.
-$$I = \frac{1}{2} \beta\left(\frac{1/2+1}{2}, \frac{-1/2+1}{2}\right)$$
-$$= \frac{1}{2} \beta(3/4, 1/4)$$
-Using relationship $\beta(m, n) = \Gamma(m)\Gamma(n)/\Gamma(m+n)$:
-$$I = \frac{1}{2} \Gamma(3/4)\Gamma(1/4)$$
-Using reflection formula $\Gamma(p)\Gamma(1-p) = \pi/\sin(p\pi)$:
-With $p=1/4$: $\Gamma(1/4)\Gamma(3/4) = \frac{\pi}{\sin(\pi/4)} = \frac{\pi}{1/\sqrt{2}} = \pi\sqrt{2}$.
-$$I = \frac{1}{2} (\pi\sqrt{2}) = \frac{\pi}{\sqrt{2}}$$
 
 ***
 

@@ -79,30 +79,7 @@ $$R = \frac{\partial(u,v)}{\partial(x,y)} = \frac{\partial u}{\partial x}\frac{\
     Using the standard elimination relation $P p + Q q = R$ derived from Jacobian determinants:
     *   $P = \frac{\partial(u,v)}{\partial(y,z)} = u_y v_z - u_z v_y = (2y)(1) - (0)(q-x) = 2y$
     *   $Q = \frac{\partial(u,v)}{\partial(z,x)} = u_z v_x - u_x v_z = (0)(p-y) - (2x)(1) = -2x$
-    *   $R = \frac{\partial(u,v)}{\partial(x,y)} = u_x v_y - u_y v_x = (2x)(q-x) - (2y)(p-y)$. Wait, standard form gives $R$ as the RHS.
-    Let's use the determinant form directly:
-    $\begin{vmatrix} u_x & v_x \\ u_y & v_y \end{vmatrix} = 0$ is for $z$ absent.
-    For $f(u,v)=0$, we use:
-    $p \frac{\partial(u,v)}{\partial(y,z)} + q \frac{\partial(u,v)}{\partial(z,x)} = \frac{\partial(u,v)}{\partial(x,y)}$
-    This yields $P p + Q q = R_{Jacobian}$.
-    $R = u_x v_y - u_y v_x$ corresponds to $z$-independent terms?
-    Here $v$ depends on $z$.
-    $P = 2y$. $Q = -2x$.
-    $R = \frac{\partial(u,v)}{\partial(x,y)} = u_x v_y - u_y v_x$?
-    Usually $R = u_y v_x - u_x v_y$?
-    Standard form: $P = \frac{\partial(u,v)}{\partial(y,z)}$, $Q = \frac{\partial(u,v)}{\partial(z,x)}$, $R = \frac{\partial(u,v)}{\partial(x,y)}$.
-    $R = (2x)(0) ...$ no $u_x, u_y$ are partials wrt x, y.
-    Let's rely on the result derived: $u_x + p u_z$ approach.
-    $\frac{\partial u}{\partial x} + p \frac{\partial u}{\partial z} = 2x$.
-    $\frac{\partial v}{\partial x} + p \frac{\partial v}{\partial z} = -y + p$.
-    $\frac{\partial u}{\partial y} + q \frac{\partial u}{\partial z} = 2y$.
-    $\frac{\partial v}{\partial y} + q \frac{\partial v}{\partial z} = -x + q$.
-    Jacobian $\frac{\partial(u,v)}{\partial(x,y)}$ on the surface?
-    Determinant of total derivatives must vanish?
-    Correct relation: $P p + Q q = R$ where $P = u_y v_z - u_z v_y$, $Q = u_z v_x - u_x v_z$, $R = u_x v_y - u_y v_x$.
-    $P = 2y(1) - 0 = 2y$.
-    $Q = 0 - 2x(1) = -2x$.
-    $R = 2x(-x) - 2y(-y) = -2x^2 + 2y^2 = 2(y^2-x^2)$.
+    *   $R = \frac{\partial(u,v)}{\partial(x,y)} = u_x v_y - u_y v_x = (2x)(-x) - (2y)(-y) = -2x^2 + 2y^2 = 2(y^2-x^2)$.
 2.  **Form Equation:**
     $$2y p - 2x q = 2(y^2 - x^2)$$
     $$yp - xq = y^2 - x^2$$
@@ -221,10 +198,7 @@ $$\frac{dx}{xz} = \frac{dy}{yz} = \frac{dz}{xy}$$
     $$\frac{dx}{xz} = \frac{dy}{yz} \implies \frac{dx}{x} = \frac{dy}{y}$$
     Integrate: $\log x = \log y + \log c \implies x/y = c_1$.
 2.  **Second integration:**
-    Use multipliers $x, y, -2z$? No.
     Use equality of fractions:
-    $$\frac{x dx}{x^2 z} = \frac{y dy}{y^2 z} = \frac{z dz}{xyz} \dots$$
-    Try simple grouping:
     $$\frac{dy}{yz} = \frac{dz}{xy} \implies x dy = z dz$$
     Substitute $x = c_1 y$:
     $$c_1 y dy = z dz$$
@@ -237,62 +211,9 @@ $$\frac{dx}{xz} = \frac{dy}{yz} = \frac{dz}{xy}$$
 
 ***
 
-## 3. Separation of Variables
+## 3. Higher Order Linear PDEs
 
-### 10. Solve $x^2 \frac{\partial u}{\partial x} + y^2 \frac{\partial u}{\partial y} = 0$.
-
-#### Detailed Answer:
-Let $u = X(x)Y(y)$.
-Substitute into PDE:
-$$x^2 X' Y + y^2 X Y' = 0$$
-Divide by $X Y$:
-$$x^2 \frac{X'}{X} + y^2 \frac{Y'}{Y} = 0$$
-$$x^2 \frac{X'}{X} = -y^2 \frac{Y'}{Y} = k \text{ (constant)}$$
-
-1.  **Solve for X:**
-    $$\frac{X'}{X} = \frac{k}{x^2}$$
-    $$\log X = \int k x^{-2} dx = -\frac{k}{x} + c_1$$
-    $$X = A e^{-k/x}$$
-2.  **Solve for Y:**
-    $$-\frac{Y'}{Y} = \frac{k}{y^2} \implies \frac{Y'}{Y} = -\frac{k}{y^2}$$
-    $$\log Y = \int -k y^{-2} dy = \frac{k}{y} + c_2$$
-    $$Y = B e^{k/y}$$
-3.  **Combine:**
-    $$u = X Y = (AB) e^{-k/x + k/y} = C e^{k(1/y - 1/x)}$$
-    (Note: The sign of k is arbitrary, so $e^{k(1/x - 1/y)}$ is also valid).
-
-***
-
-### 11. Solve $4 \frac{\partial u}{\partial x} + \frac{\partial u}{\partial y} = 3u$, given $u(0, y) = 2e^{5y}$.
-
-#### Detailed Answer:
-Let $u = X(x)Y(y)$.
-$$4 X' Y + X Y' = 3 X Y$$
-Divide by $XY$:
-$$4 \frac{X'}{X} + \frac{Y'}{Y} = 3$$
-$$4 \frac{X'}{X} = 3 - \frac{Y'}{Y} = k$$
-
-1.  **Solve for X:**
-    $$4 \frac{X'}{X} = k \implies \frac{X'}{X} = \frac{k}{4} \implies X = c_1 e^{kx/4}$$
-2.  **Solve for Y:**
-    $$3 - \frac{Y'}{Y} = k \implies \frac{Y'}{Y} = 3 - k \implies Y = c_2 e^{(3-k)y}$$
-3.  **General Solution:**
-    $$u(x,y) = A e^{\frac{k}{4}x + (3-k)y}$$
-4.  **Apply Boundary Condition:**
-    $$u(0, y) = A e^{0 + (3-k)y} = A e^{(3-k)y}$$
-    Given $u(0, y) = 2 e^{5y}$.
-    Comparing coefficients:
-    $A = 2$
-    $3 - k = 5 \implies k = -2$
-5.  **Final Solution:**
-    Substitute $A=2, k=-2$ into the general solution:
-    $$u(x,y) = 2 e^{\frac{-2}{4}x + 5y} = 2 e^{-\frac{1}{2}x + 5y}$$
-
-***
-
-## 4. Higher Order Linear PDEs
-
-### 12. Solve $(D^4 - 2D^2 D'^2 + D'^4)z = 0$.
+### 10. Solve $(D^4 - 2D^2 D'^2 + D'^4)z = 0$.
 
 #### Detailed Answer:
 Auxiliary Equation (put $D=m, D'=1$):
@@ -311,7 +232,7 @@ $$z = \phi_1(y+x) + x\phi_2(y+x) + \phi_3(y-x) + x\phi_4(y-x)$$
 
 ***
 
-### 13. Solve $(D^2 + DD' - 2D'^2)z = 5e^{x+2y}$.
+### 11. Solve $(D^2 + DD' - 2D'^2)z = 5e^{x+2y}$.
 
 #### Detailed Answer:
 1.  **Complementary Function (C.F.):**
@@ -328,7 +249,7 @@ $$z = \phi_1(y+x) + x\phi_2(y+x) + \phi_3(y-x) + x\phi_4(y-x)$$
 
 ***
 
-### 14. Solve $(3D^2 + 10DD' + 3D'^2)z = e^{x-y}$.
+### 12. Solve $(3D^2 + 10DD' + 3D'^2)z = e^{x-y}$.
 
 #### Detailed Answer:
 1.  **C.F.:**
@@ -348,7 +269,7 @@ $$z = \phi_1(y+x) + x\phi_2(y+x) + \phi_3(y-x) + x\phi_4(y-x)$$
 
 ***
 
-### 15. Solve $(2D^2 + 5DD' - 3D'^2)z = \sin(2x-y)$.
+### 13. Solve $(2D^2 + 5DD' - 3D'^2)z = \sin(2x-y)$.
 
 #### Detailed Answer:
 1.  **C.F.:**
@@ -367,7 +288,7 @@ $$z = \phi_1(y+x) + x\phi_2(y+x) + \phi_3(y-x) + x\phi_4(y-x)$$
 
 ***
 
-### 16. Solve $(D^2 + 3DD' + 2D'^2)z = 84 \cos(x+3y)$.
+### 14. Solve $(D^2 + 3DD' + 2D'^2)z = 84 \cos(x+3y)$.
 
 #### Detailed Answer:
 1.  **C.F.:**
@@ -383,7 +304,7 @@ $$z = \phi_1(y+x) + x\phi_2(y+x) + \phi_3(y-x) + x\phi_4(y-x)$$
 
 ***
 
-### 17. Solve $(2D^2 - 7DD' + 6D'^2)z = x^3 y$.
+### 15. Solve $(2D^2 - 7DD' + 6D'^2)z = x^3 y$.
 
 #### Detailed Answer:
 1.  **C.F.:**
@@ -413,7 +334,7 @@ $$z = \phi_1(y+x) + x\phi_2(y+x) + \phi_3(y-x) + x\phi_4(y-x)$$
 
 ***
 
-### 18. Solve $(D^2 - DD' - 2D'^2)z = 16 x e^{2y}$.
+### 16. Solve $(D^2 - DD' - 2D'^2)z = 16 x e^{2y}$.
 
 #### Detailed Answer:
 1.  **C.F.:**
@@ -436,6 +357,58 @@ $$z = \phi_1(y+x) + x\phi_2(y+x) + \phi_3(y-x) + x\phi_4(y-x)$$
 
 ***
 
+## 4. Separation of Variables
+
+### 17. Solve $x^2 \frac{\partial u}{\partial x} + y^2 \frac{\partial u}{\partial y} = 0$.
+
+#### Detailed Answer:
+Let $u = X(x)Y(y)$.
+Substitute into PDE:
+$$x^2 X' Y + y^2 X Y' = 0$$
+Divide by $X Y$:
+$$x^2 \frac{X'}{X} + y^2 \frac{Y'}{Y} = 0$$
+$$x^2 \frac{X'}{X} = -y^2 \frac{Y'}{Y} = k \text{ (constant)}$$
+
+1.  **Solve for X:**
+    $$\frac{X'}{X} = \frac{k}{x^2}$$
+    $$\log X = \int k x^{-2} dx = -\frac{k}{x} + c_1$$
+    $$X = A e^{-k/x}$$
+2.  **Solve for Y:**
+    $$-\frac{Y'}{Y} = \frac{k}{y^2} \implies \frac{Y'}{Y} = -\frac{k}{y^2}$$
+    $$\log Y = \int -k y^{-2} dy = \frac{k}{y} + c_2$$
+    $$Y = B e^{k/y}$$
+3.  **Combine:**
+    $$u = X Y = (AB) e^{-k/x + k/y} = C e^{k(1/y - 1/x)}$$
+    (Note: The sign of k is arbitrary, so $e^{k(1/x - 1/y)}$ is also valid).
+
+***
+
+### 18. Solve $4 \frac{\partial u}{\partial x} + \frac{\partial u}{\partial y} = 3u$, given $u(0, y) = 2e^{5y}$.
+
+#### Detailed Answer:
+Let $u = X(x)Y(y)$.
+$$4 X' Y + X Y' = 3 X Y$$
+Divide by $XY$:
+$$4 \frac{X'}{X} + \frac{Y'}{Y} = 3$$
+$$4 \frac{X'}{X} = 3 - \frac{Y'}{Y} = k$$
+
+1.  **Solve for X:**
+    $$4 \frac{X'}{X} = k \implies \frac{X'}{X} = \frac{k}{4} \implies X = c_1 e^{kx/4}$$
+2.  **Solve for Y:**
+    $$3 - \frac{Y'}{Y} = k \implies \frac{Y'}{Y} = 3 - k \implies Y = c_2 e^{(3-k)y}$$
+3.  **General Solution:**
+    $$u(x,y) = A e^{\frac{k}{4}x + (3-k)y}$$
+4.  **Apply Boundary Condition:**
+    $$u(0, y) = A e^{0 + (3-k)y} = A e^{(3-k)y}$$
+    Given $u(0, y) = 2 e^{5y}$.
+    Comparing coefficients:
+    $A = 2$
+    $3 - k = 5 \implies k = -2$
+5.  **Final Solution:**
+    Substitute $A=2, k=-2$ into the general solution:
+    $$u(x,y) = 2 e^{\frac{-2}{4}x + 5y} = 2 e^{-\frac{1}{2}x + 5y}$$
+
+***
 
 ### Example 2: Formation by Eliminating Arbitrary Functions
 Form the PDE from $z = f(x^2 - y^2)$.
@@ -520,7 +493,6 @@ Solve $(D^2 - D D' - 2D'^2)z = (y-1)e^x$.
     $$ \approx e^x \frac{1}{1 + (2D - D')} (y-1) = e^x [1 + (2D - D')]^{-1} (y-1) $$
     $$ = e^x [1 - (2D - D') + \dots] (y-1) $$
     $$ = e^x [ (y-1) - 2D(y-1) + D'(y-1) ] $$
-    $D(y-1) = 0$ (deriv w.r.t x), $D'(y-1) = 1$ (deriv w.r.t y).
     $$ = e^x [ y - 1 + 1 ] = y e^x $$
 
 3.  **Complete Solution**:

@@ -598,95 +598,372 @@ Additional practice questions for Unit 1 (EM Waves, Quantum Concepts).
 
 ## CL1: Maxwell's Equations & Vector Operators
 
-1. With suitable examples explain the significance of gradient, divergence and curl operators on fields.
-2. Magnetic monopoles do not exist. Justify.
-3. What is the physical meaning of gradient of a scalar function?
-4. Estimate the energy per unit volume in a magnetic field.
+### 1. With suitable examples explain the significance of gradient, divergence and curl operators on fields.
+
+#### Answer
+*   **Gradient ($\nabla \phi$)**: Operates on a scalar field to produce a vector field. It points in the direction of the maximum rate of change of the scalar.
+    *   *Example*: In a temperature field $T(x,y,z)$, $\nabla T$ points from cold to hot, steepness indicates how fast T changes. Electric field is the negative gradient of potential: $\vec{E} = -\nabla V$.
+*   **Divergence ($\nabla \cdot \vec{A}$)**: Operates on a vector field to produce a scalar. It measures the net outflow of the vector field from a point (source/sink strength).
+    *   *Example*: $\nabla \cdot \vec{E} = \rho/\epsilon_0$ (Gauss's Law). Positive divergence implies a source (positive charge), negative is a sink.
+*   **Curl ($\nabla \times \vec{A}$)**: Operates on a vector field to produce a vector. It measures the rotation or circulation of the field around a point.
+    *   *Example*: $\nabla \times \vec{B} = \mu_0 \vec{J}$. Currents create curling magnetic fields.
+
+### 2. Magnetic monopoles do not exist. Justify.
+
+#### Answer
+Maxwell's equation $\nabla \cdot \vec{B} = 0$ (Gauss's Law for Magnetism) states that the divergence of the magnetic field is always zero. This implies there are no point sources (monopoles) of magnetic flux. Magnetic field lines always form closed loops; they do not start or end at a point. Breaking a magnet results in two dipoles, not isolated poles.
+
+### 3. What is the physical meaning of gradient of a scalar function?
+
+#### Answer
+The gradient of a scalar function $\phi$, denoted $\nabla \phi$, physically represents the vector field of the **maximum spatial rate of change** of $\phi$. Its magnitude equals the rate of change in that direction, and its direction is perpendicular to the level surfaces (equipotential surfaces) of $\phi$.
+
+### 4. Estimate the energy per unit volume in a magnetic field.
+
+#### Answer
+The energy density (energy per unit volume) stored in a magnetic field $\vec{B}$ in free space is given by:
+$$ u_B = \frac{1}{2} \frac{B^2}{\mu_0} $$
+If a material with permeability $\mu$ is present, $u_B = \frac{B^2}{2\mu}$. This energy is associated with the work done to establish the field against the back EMF.
 
 ---
 
 ## CL3: Energy & Polarization
 
-1. Differentiate between circular and elliptical polarization states of electromagnetic waves.
-2. Find the energy density of electromagnetic wave, if the electric field of amplitude 6.2 V/m oscillates with a frequency of 2.4 × 10¹⁰ Hz.
-3. Discuss the energy density in electromagnetic waves and how is it related with the Poynting vectors?
-4. Give expressions for two electric field wave functions that can produce circular polarization.
+### 1. Differentiate between circular and elliptical polarization states of electromagnetic waves.
+
+#### Answer
+| Feature | Circular Polarization | Elliptical Polarization |
+| :--- | :--- | :--- |
+| **Amplitudes** | Two orthogonal components have **equal** amplitudes ($E_{0x} = E_{0y}$). | Components have **unequal** amplitudes OR equal amplitudes. |
+| **Phase Difference** | Phase difference is exactly **$\pi/2$ ($90^\circ$)**. | Phase difference is **arbitrary** (neither $0, \pi$ nor exactly $\pi/2$ with equal amps). |
+| **Tip Trajectory** | Electric vector tip traces a **circle**. | Electric vector tip traces an **ellipse**. |
+| **Symmetry** | Highly symmetric special case. | General form of polarization. |
+
+### 2. Find the energy density of electromagnetic wave, if the electric field of amplitude 6.2 V/m oscillates with a frequency of 2.4 × 10¹⁰ Hz.
+
+#### Answer
+The average energy density is $\langle u \rangle = \frac{1}{2} \epsilon_0 E_0^2$.
+Given $E_0 = 6.2$ V/m. $\epsilon_0 = 8.854 \times 10^{-12}$ F/m.
+$$ \langle u \rangle = 0.5 \times (8.854 \times 10^{-12}) \times (6.2)^2 $$
+$$ \langle u \rangle = 0.5 \times 8.854 \times 10^{-12} \times 38.44 \approx 1.70 \times 10^{-10} \text{ J/m}^3 $$
+(Frequency is not needed for energy density calculation given amplitude).
+
+### 3. Discuss the energy density in electromagnetic waves and how is it related with the Poynting vectors?
+
+#### Answer
+*   **Energy Density ($u$)**: The total energy stored per unit volume in the fields. $u = \frac{1}{2}\epsilon_0 E^2 + \frac{1}{2\mu_0}B^2 = \epsilon_0 E^2$ (instantaneous).
+*   **Poynting Vector ($\vec{S}$)**: Represents the rate of energy flow per unit area (Power density). $\vec{S} = \vec{E} \times \vec{H} = \frac{1}{\mu_0}(\vec{E} \times \vec{B})$.
+*   **Relation**: The magnitude of the Poynting vector (Intensity) is the energy density times the wave speed. $S = u \cdot c$.
+    $\vec{S}$ indicates the direction of transport of the energy density $u$.
+
+### 4. Give expressions for two electric field wave functions that can produce circular polarization.
+
+#### Answer
+For circularly polarized light propagating in the +z direction, the x and y components must have equal amplitude $E_0$ and a phase difference of $\pm \pi/2$:
+1.  **Right Circularly Polarized (RCP)**:
+    $$ \vec{E}(z,t) = E_0 \cos(kz - \omega t) \hat{i} + E_0 \sin(kz - \omega t) \hat{j} $$
+2.  **Left Circularly Polarized (LCP)**:
+    $$ \vec{E}(z,t) = E_0 \cos(kz - \omega t) \hat{i} - E_0 \sin(kz - \omega t) \hat{j} $$
+(Note: Sine is cosine shifted by $\pi/2$).
 
 ---
 
 ## CL4: Black Body Radiation
 
-1. Describe the characteristics of a black body spectrum.
-2. Find the average energy of an oscillator of frequency 5×10¹²/s at 300 K treating the oscillator as Planck's oscillator.
-3. Using the quantum theory, derive the expression for energy density of blackbody radiation.
-4. What was Planck's crucial contribution in explaining Black body spectrum?
+### 1. Describe the characteristics of a black body spectrum.
+
+#### Answer
+1.  **Continuous Spectrum**: Emits radiation at all wavelengths.
+2.  **Temperature Dependence**: Intensity increases with Temperature for all wavelengths.
+3.  **Peak Shift (Wien's Law)**: The wavelength of maximum emission $\lambda_{max}$ shifts to lower values (blue shift) as T increases ($\lambda_{max} T = b$).
+4.  **Zero Limits**: Energy density goes to zero at $\lambda \to 0$ and $\lambda \to \infty$.
+
+### 2. Find the average energy of an oscillator of frequency 5×10¹²/s at 300 K treating the oscillator as Planck's oscillator.
+
+#### Answer
+$\nu = 5 \times 10^{12}$ Hz, $T = 300$ K.
+$h\nu = (6.626 \times 10^{-34})(5 \times 10^{12}) = 3.313 \times 10^{-21}$ J.
+$kT = (1.38 \times 10^{-23})(300) = 4.14 \times 10^{-21}$ J.
+$x = h\nu / kT = 3.313 / 4.14 \approx 0.80$.
+$\langle E \rangle = \frac{h\nu}{e^{h\nu/kT} - 1} = \frac{3.313 \times 10^{-21}}{e^{0.8} - 1} = \frac{3.313 \times 10^{-21}}{2.225 - 1} \approx 2.70 \times 10^{-21}$ J.
+
+### 3. Using the quantum theory, derive the expression for energy density of blackbody radiation.
+
+#### Answer
+*   **Mode Density**: Number of standing wave modes per unit volume in frequency range $d\nu$ is $N(\nu)d\nu = \frac{8\pi \nu^2}{c^3} d\nu$.
+*   **Average Energy**: Planck assumed energy quantization ($E_n = nh\nu$) and Boltzmann statistics to derive average energy per mode: $\langle E \rangle = \frac{h\nu}{e^{h\nu/kT} - 1}$.
+*   **Total Energy Density**: Multiply mode density by average energy:
+    $$ \rho(\nu) d\nu = N(\nu) \langle E \rangle d\nu = \left( \frac{8\pi \nu^2}{c^3} \right) \left( \frac{h\nu}{e^{h\nu/kT} - 1} \right) d\nu $$
+    $$ \rho(\nu) d\nu = \frac{8\pi h \nu^3}{c^3} \frac{1}{e^{h\nu/kT} - 1} d\nu $$
+
+### 4. What was Planck's crucial contribution in explaining Black body spectrum?
+
+#### Answer
+Planck's crucial contribution was the hypothesis of **energy quantization**. He proposed that the energy of atomic oscillators in the cavity walls is not continuous but discrete, coming in integer multiples of a base unit $h\nu$ ($E = nh\nu$). This assumption replaced the classical equipartition principle (which led to the UV catastrophe) and successfully derived a radiation formula that matched experimental data across the entire spectrum.
 
 ---
 
 ## CL5: Compton Effect
 
-1. How does classical theory fail to explain the results of Compton's experiment?
-2. What are the angles at which the Compton shift is minimum and maximum? What are the conclusions drawn from these angles?
-3. Calculate the energy that a photon must possess if it has to have a momentum equal to that of a 10MeV proton. In Compton Effect did you understand why the original peak at λ remained in the spectrum of the scattered radiation?
-4. What is Compton shift? According to classical theory, the scattered X rays have the same frequency as the incident wave. Explain.
+### 1. How does classical theory fail to explain the results of Compton's experiment?
+
+#### Answer
+Classical electromagnetic theory predicts that when light scatters off a charged particle, the particle oscillates at the frequency of the incident wave and re-radiates light at the **same frequency** (same wavelength). It cannot explain the experimentally observed **shift to a longer wavelength** (Compton shift) which depends on the scattering angle.
+
+### 2. What are the angles at which the Compton shift is minimum and maximum? What are the conclusions drawn from these angles?
+
+#### Answer
+$\Delta \lambda = \frac{h}{m_0 c} (1 - \cos \phi)$.
+*   **Minimum Shift**: At $\phi = 0^\circ$ (Forward scattering), $\cos 0 = 1$, $\Delta \lambda = 0$. No energy is transferred to the electron.
+*   **Maximum Shift**: At $\phi = 180^\circ$ (Back scattering), $\cos 180 = -1$, $\Delta \lambda = \frac{2h}{m_0 c} \approx 0.0485$ Å. Maximum energy is transferred to the electron.
+
+### 3. Calculate the energy that a photon must possess if it has to have a momentum equal to that of a 10MeV proton. In Compton Effect did you understand why the original peak at λ remained in the spectrum of the scattered radiation?
+
+#### Answer
+**Part 1**: Momentum of 10 MeV proton.
+Energy $E_p = 10 \text{ MeV} \ll m_p c^2$ (938 Mev), so classical approx is valid.
+$E_p = p^2 / 2m \implies p = \sqrt{2m E_p}$.
+$p = \sqrt{2 \times (1.67 \times 10^{-27}) \times (10 \times 1.6 \times 10^{-13})} = \sqrt{5.34 \times 10^{-39}} \approx 7.3 \times 10^{-20}$ kg m/s.
+Photon energy $E_{\gamma} = pc = (7.3 \times 10^{-20}) (3 \times 10^8) \approx 2.19 \times 10^{-11} \text{ J} \approx 137 \text{ MeV}$.
+**Part 2**: The original peak at $\lambda$ remains because some photons scatter off the **entire atom** (nucleus + electrons) rather than a single free electron. The effective mass $M$ is the mass of the whole atom ($M \gg m_e$), making the Compton shift $\Delta \lambda \propto 1/M$ negligible.
+
+### 4. What is Compton shift? According to classical theory, the scattered X rays have the same frequency as the incident wave. Explain.
+
+#### Answer
+**Compton Shift** is the increase in wavelength ($\Delta \lambda$) of X-rays or gamma rays when they are scattered by loosely bound (quasi-free) electrons in a target.
+**Classical Theory**: Treats light as a continuous electromagnetic wave. An electron in the wave feels an oscillating E-field, vibrates at the incident frequency $\nu$, and acts as a dipole antenna emitting radiation at that same frequency $\nu$. There is no mechanism in wave theory for the frequency to change upon scattering.
 
 ---
 
 ## CL6: Wave-Particle Duality
 
-1. The central mystery of quantum mechanics lies in the single particle quantum interference. Do you understand why the resultant intensity?
-2. If an electron and a proton have energy of 10 MeV, calculate their de Broglie wavelength.
-3. Give a brief account of the Fourier transform.
-4. An electron accelerated through some potential difference, crosses two points separated by a distance of 3m in 1μs with a steady state velocity. Calculate the de-Broglie wavelength of the accelerated electron and hence calculate the potential difference through which it has been accelerated.
+### 1. The central mystery of quantum mechanics lies in the single particle quantum interference. Do you understand why the resultant intensity?
+
+#### Answer
+*(Question appears incomplete, assuming it refers to double-slit interference)*.
+In the double-slit experiment, even when particles (electrons/photons) are sent one by one, an interference pattern builds up over time. This implies each particle interferes with itself, behaving as a wave passing through both slits simultaneously. The resultant intensity at any point is determined by the square of the superposition of wave amplitudes from both slits ($I = |\psi_1 + \psi_2|^2$), leading to constructive and destructive interference fringes, which is impossible to explain with classical particle trajectories.
+
+### 2. If an electron and a proton have energy of 10 MeV, calculate their de Broglie wavelength.
+
+#### Answer
+$E_k = 10 \text{ MeV} = 10 \times 1.6 \times 10^{-13} \text{ J}$.
+$\lambda = h / p$.
+*   **Proton**: $m_p c^2 = 938$ MeV. $E_k \ll m_p c^2$ (Non-relativistic).
+    $p = \sqrt{2mE}$. $\lambda = h / \sqrt{2m_p E}$.
+    $\lambda_p = \frac{6.63 \times 10^{-34}}{\sqrt{2(1.67 \times 10^{-27})(1.6 \times 10^{-12})}} = \frac{6.63 \times 10^{-34}}{7.3 \times 10^{-20}} \approx 9.1 \times 10^{-15} \text{ m}$ (9.1 fm).
+*   **Electron**: $m_e c^2 = 0.511$ MeV. $E_k \gg m_e c^2$ (Relativistic).
+    $E_{total} = E_k + m_e c^2 \approx 10.511$ MeV.
+    $E^2 = (pc)^2 + (mc^2)^2 \implies pc = \sqrt{E^2 - m^2 c^4} \approx E$ (Ultra-relativistic).
+    $p \approx E/c$. $\lambda = hc/E$.
+    $\lambda_e = \frac{1240 \text{ eV nm}}{10 \times 10^6 \text{ eV}} = 124 \times 10^{-6} \text{ nm} = 1.24 \times 10^{-13} \text{ m}$ (0.124 pm).
+
+### 3. Give a brief account of the Fourier transform.
+
+#### Answer
+The **Fourier Transform** is a mathematical tool that decomposes a function (like a signal in time, $f(t)$) into its constituent frequencies ($\tilde{f}(\omega)$). In Quantum Mechanics, it relates the position space wave function $\psi(x)$ to the momentum space wave function $\phi(k)$. A localized particle (wave packet) in space is a superposition of many momentum states; the tighter the confinement in $x$, the broader the spread in $k$ (Fourier pair), leading to the Uncertainty Principle.
+
+### 4. An electron accelerated through some potential difference, crosses two points separated by a distance of 3m in 1μs with a steady state velocity. Calculate the de-Broglie wavelength of the accelerated electron and hence calculate the potential difference through which it has been accelerated.
+
+#### Answer
+*   **Velocity**: $v = \text{distance} / \text{time} = 3 \text{ m} / 10^{-6} \text{ s} = 3 \times 10^6 \text{ m/s}$.
+*   **Wavelength**: $\lambda = h / m_e v = \frac{6.626 \times 10^{-34}}{(9.11 \times 10^{-31})(3 \times 10^6)} \approx 2.42 \times 10^{-10} \text{ m}$ (2.42 Å).
+*   **Potential Difference**: $K.E. = \frac{1}{2}m v^2 = eV$.
+    $V = \frac{m v^2}{2e} = \frac{(9.11 \times 10^{-31})(3 \times 10^6)^2}{2(1.602 \times 10^{-19})} = \frac{8.2 \times 10^{-18}}{3.2 \times 10^{-19}} \approx 25.6 \text{ V}$.
 
 ---
 
 ## CL7: Wave Packets
 
-1. Write an expression for a travelling wave explaining each term.
-2. Derive a relation between group velocity and phase velocity.
-3. When does group velocity become equal to phase velocity? Give an example.
-4. How are phase and group velocity related for a monochromatic wave?
+### 1. Write an expression for a travelling wave explaining each term.
+
+#### Answer
+$y(x,t) = A \sin(kx - \omega t + \phi)$
+*   $y$: Displacement at position $x$ and time $t$.
+*   $A$: Amplitude (maximum displacement).
+*   $k$: Angular wave number ($2\pi/\lambda$), related to spatial frequency.
+*   $x$: Position coordinate.
+*   $\omega$: Angular frequency ($2\pi \nu$), related to temporal frequency.
+*   $t$: Time.
+*   $\phi$: Phase constant (initial phase at $x=0, t=0$).
+
+### 2. Derive a relation between group velocity and phase velocity.
+
+#### Answer
+$v_p = \frac{\omega}{k} \implies \omega = k v_p$.
+Group velocity $v_g = \frac{d\omega}{dk} = \frac{d}{dk}(k v_p) = v_p + k \frac{dv_p}{dk}$.
+Since $k = 2\pi/\lambda$, $dk = (-2\pi/\lambda^2) d\lambda$, making $\frac{k}{dk} = -\lambda$.
+$$ v_g = v_p - \lambda \frac{dv_p}{d\lambda} $$
+This relates group velocity to phase velocity and dispersion ($dv_p/d\lambda$).
+
+### 3. When does group velocity become equal to phase velocity? Give an example.
+
+#### Answer
+Group velocity equals phase velocity ($v_g = v_p$) in a **non-dispersive medium**, where the phase velocity is independent of wavelength ($dv_p/d\lambda = 0$).
+*   **Example**: Electromagnetic waves traveling in a **vacuum** (free space). All frequencies travel at $c$.
+
+### 4. How are phase and group velocity related for a monochromatic wave?
+
+#### Answer
+For a purely monochromatic wave (single frequency $\omega$ and single wavenumber $k$), the concept of group velocity (velocity of a packet/envelope) is not strictly applicable as there is no envelope. However, mathematically, if one considers it as the limit of a packet, the phase velocity is well-defined ($v_p = \omega/k$). In non-relativistic quantum mechanics for a free particle, $v_g = 2 v_p$. For light in vacuum, $v_g = v_p = c$.
 
 ---
 
 ## CL8: Uncertainty Principle
 
-1. State any three forms of the Heisenberg's Uncertainty Principle.
-2. Demonstrate using Heisenberg's Uncertainty Principle that an electron can't exist inside a typical nucleus.
-3. An atom in an excited state of life time Δt=10⁻⁸s makes a transition to a lower state emitting a photon of frequency of 3×10¹⁴Hz. Estimate the uncertainty in the frequency of the emitted photon.
-4. State Heisenberg's uncertainty principle. Use the Gamma ray thought experiment to arrive at the principle.
+### 1. State any three forms of the Heisenberg's Uncertainty Principle.
+
+#### Answer
+1.  **Position-Momentum**: $\Delta x \cdot \Delta p_x \ge \frac{\hbar}{2}$.
+2.  **Energy-Time**: $\Delta E \cdot \Delta t \ge \frac{\hbar}{2}$.
+3.  **Angular Position-Angular Momentum**: $\Delta \theta \cdot \Delta L \ge \frac{\hbar}{2}$.
+
+### 2. Demonstrate using Heisenberg's Uncertainty Principle that an electron can't exist inside a typical nucleus.
+
+#### Answer
+Nucleus size $\Delta x \approx 10^{-14}$ m.
+Min momentum $\Delta p \approx \hbar / (2\Delta x) \approx 0.5 \times 10^{-20}$ kg m/s.
+Min Kinetic Energy $K \approx pc \approx (0.5 \times 10^{-20})(3 \times 10^8) \approx 1.5 \times 10^{-12}$ J $\approx 9$ MeV.
+Assuming a stronger confinement or proper bounds often yields energies ~20-100 MeV. However, experimental beta decay electrons have only ~2-3 MeV. The electron is too energetic to be confined by the nuclear potential depth, implying it cannot reside there.
+
+### 3. An atom in an excited state of life time Δt=10⁻⁸s makes a transition to a lower state emitting a photon of frequency of 3×10¹⁴Hz. Estimate the uncertainty in the frequency of the emitted photon.
+
+#### Answer
+Using $\Delta E \cdot \Delta t \ge \hbar/2$ and $\Delta E = h \Delta \nu$:
+$h \Delta \nu \cdot \Delta t \ge h/4\pi$.
+$\Delta \nu \ge \frac{1}{4\pi \Delta t}$.
+$\Delta \nu \ge \frac{1}{4\pi (10^{-8})} \approx \frac{1}{12.56 \times 10^{-8}} \approx 7.96 \times 10^6 \text{ Hz}$ (approx 8 MHz).
+
+### 4. State Heisenberg's uncertainty principle. Use the Gamma ray thought experiment to arrive at the principle.
+
+#### Answer
+**Statement**: It is impossible to determine simultaneously both the position and momentum of a particle with infinite accuracy. The product of uncertainties is $\Delta x \Delta p \ge \hbar/2$.
+**Gamma Ray Microscope**: To measure an electron's position, we shine light (photons) on it. To minimize $\Delta x$, we favor short wavelength $\lambda$ (higher resolution). However, short $\lambda$ photons have high momentum $p=h/\lambda$. When such a photon hits the electron, it transfers a large, uncertain amount of momentum to it, increasing $\Delta p$. Thus $\Delta x \propto \lambda$ and $\Delta p \propto 1/\lambda$. Reducing one increases the other.
 
 ---
 
 ## CL9: Wave Function
 
-1. What is the significance of a quantum wave function?
-2. What is the difference between probability density and probability?
-3. How do you determine the value of the amplitude of a wave function?
-4. Determine the probability of finding an electron in the limits x=0 to x= 0.5a when it is bound in a 1D box of length a.
+### 1. What is the significance of a quantum wave function?
+
+#### Answer
+The wave function $\Psi(\vec{r}, t)$ contains all the dynamic information about a quantum system. Its primary significance is probabilistic: the quantity $|\Psi|^2$ represents the **probability density** of finding the particle at a specific position and time.
+
+### 2. What is the difference between probability density and probability?
+
+#### Answer
+*   **Probability Density ($P(x) = |\psi|^2$)**: The probability per unit length/volume. It can have a value greater than 1.
+*   **Probability ($P_{ab}$)**: The actual likelihood of finding the particle in a specific interval $[a, b]$, obtained by integrating the density: $P_{ab} = \int_a^b |\psi|^2 dx$. This value is dimensionless and always $\le 1$.
+
+### 3. How do you determine the value of the amplitude of a wave function?
+
+#### Answer
+The amplitude (or normalization constant) is determined using the **normalization condition**. Since the particle must exist somewhere in space, the integral of the probability density over all space must equal 1:
+$$ \int_{-\infty}^{\infty} |\psi(x)|^2 dx = 1 $$
+Solving this integral allows one to find the unknown amplitude constant.
+
+### 4. Determine the probability of finding an electron in the limits x=0 to x= 0.5a when it is bound in a 1D box of length a.
+
+#### Answer
+For a particle in a 1D box ($0 \le x \le a$), the probability density is symmetric about the center $x=a/2$ for all stationary states (since $\sin^2(n\pi x/a)$ is symmetric).
+The region $0$ to $0.5a$ corresponds to exactly half the box.
+Therefore, the probability is **0.5** (or 50%), regardless of the quantum number $n$.
+Calculation: $\int_0^{a/2} \frac{2}{a}\sin^2(\frac{n\pi x}{a}) dx = \frac{1}{a} [x - \frac{a}{2n\pi}\sin(\frac{2n\pi x}{a})]_0^{a/2} = \frac{1}{a}(\frac{a}{2} - 0) = 0.5$.
 
 ---
 
 ## CL10: Operators & Expectation Values
 
-1. Describe an Eigen value equation explaining each term.
-2. Write any five operators associated with dynamical variables.
-3. Define Expectation value.
-4. Determine the expectation value of position of a particle bound between x=0 to x=3 and described by the wave function.
+### 1. Describe an Eigen value equation explaining each term.
+
+#### Answer
+An eigenvalue equation has the form $\hat{A} \psi = a \psi$.
+*   $\hat{A}$: An **operator** (mathematical transformation).
+*   $\psi$: The **eigenfunction** (a state that stays unchanged in shape, only scaled).
+*   $a$: The **eigenvalue** (a constant scalar multiplier).
+In QM, if an operator corresponds to an observable, the eigenvalues are the possible measurement results.
+
+### 2. Write any five operators associated with dynamical variables.
+
+#### Answer
+1.  **Position**: $\hat{x} = x$
+2.  **Linear Momentum**: $\hat{p} = -i\hbar \nabla$ (or $-i\hbar \frac{\partial}{\partial x}$)
+3.  **Kinetic Energy**: $\hat{K} = -\frac{\hbar^2}{2m} \nabla^2$
+4.  **Hamiltonian (Total Energy)**: $\hat{H} = -\frac{\hbar^2}{2m} \nabla^2 + V$
+5.  **Orbital Angular Momentum (z)**: $\hat{L_z} = -i\hbar \frac{\partial}{\partial \phi}$
+
+### 3. Define Expectation value.
+
+#### Answer
+The expectation value $\langle A \rangle$ is the **average value** of the observable $A$ that would be obtained from a large number of independent measurements on identical systems in the same quantum state $\psi$.
+$$ \langle A \rangle = \int_{-\infty}^{\infty} \psi^* \hat{A} \psi dx $$
+
+### 4. Determine the expectation value of position of a particle bound between x=0 to x=3 and described by the wave function.
+
+#### Answer
+Assuming the particle is in a 1D infinite well of width $L=3$, and in a defined state (e.g., ground state $\psi_1 = \sqrt{2/3}\sin(\pi x/3)$).
+By symmetry, the probability distribution $|\psi|^2$ is symmetric around the center of the well.
+Therefore, the expectation value of position is simply the midpoint:
+$$ \langle x \rangle = \frac{L}{2} = \frac{3}{2} = 1.5 $$
 
 ---
 
 ## CL12: Schrödinger's Equation
 
-1. Why is Schrodinger's equation referred to as a linear equation?
-2. Set up Schrödinger's time dependent wave equation as an Eigen value equation and time independent wave equation from Schrodinger's time dependent wave equation.
-3. Schrodinger's equation is an operator equation. Explain.
-4. Write the three dimensional Schrodinger wave equation.
-5. A free particle is a classical entity. Justify.
-6. Describe the state of a particle for the case of a free state, bound state and scattering state.
-7. What is step potential in quantum mechanics?
-8. What are the similarities and differences between the reflection of light from an air-glass boundary and the reflection of an electron from a potential step?
+### 1. Why is Schrodinger's equation referred to as a linear equation?
+
+#### Answer
+It is linear because the wave function $\psi$ and its derivatives appear only to the first power. There are no terms like $\psi^2$ or $\psi \frac{\partial \psi}{\partial x}$. This linearity ensures the **Principle of Superposition** holds: if $\psi_1$ and $\psi_2$ are solutions, then $c_1\psi_1 + c_2\psi_2$ is also a solution.
+
+### 2. Set up Schrödinger's time dependent wave equation as an Eigen value equation and time independent wave equation from Schrodinger's time dependent wave equation.
+
+#### Answer
+*   **Time Dependent**: $i\hbar \frac{\partial \Psi}{\partial t} = \hat{H} \Psi$. This is an equation for time evolution, not a simple eigenvalue equation for energy unless $\Psi$ is stationary.
+*   **Derivation**: Assume $\Psi(x,t) = \psi(x) \phi(t)$.
+    Divide by $\psi \phi$: LHS depends only on t, RHS only on x. Both equal constant E.
+    Time part: $i\hbar \phi' = E\phi \implies \phi(t) = e^{-iEt/\hbar}$.
+    Space part: $\hat{H} \psi(x) = E \psi(x)$ (Time Independent SWE).
+
+### 3. Schrodinger's equation is an operator equation. Explain.
+
+#### Answer
+It can be written as $\hat{H} \psi = E \psi$ (Time-Independent) or $\hat{H} \Psi = i\hbar \frac{\partial}{\partial t} \Psi$ (Time-Dependent). Here $\hat{H}$ is the **Hamiltonian Operator** (Total Energy operator). The equation states that the operation of the Hamiltonian on the wave function yields the total energy times the wave function (or the time evolution). It is fundamentally a statement about operators acting on states.
+
+### 4. Write the three dimensional Schrodinger wave equation.
+
+#### Answer
+Time Independent:
+$$ \nabla^2 \psi + \frac{2m}{\hbar^2}(E - V(x,y,z))\psi = 0 $$
+OR
+$$ \left( -\frac{\hbar^2}{2m} \nabla^2 + V \right) \psi = E \psi $$
+where $\nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}$.
+
+### 5. A free particle is a classical entity. Justify.
+
+#### Answer
+A free particle ($V=0$) has energy $E = \hbar^2 k^2 / 2m$. Since $k$ can take any continuous value, the energy spectrum is **continuous**, not quantized. Energy quantization arises only from confinement (bound states). In this sense (continuous energy), it resembles a classical entity.
+
+### 6. Describe the state of a particle for the case of a free state, bound state and scattering state.
+
+#### Answer
+*   **Bound State ($E < V_{\infty}$)**: Particle is confined to a finite region. Energy is quantized. Wave function decays at infinity. ($E < 0$ usually).
+*   **Scattering State ($E > V_{\infty}$)**: Particle is not confined and can travel to infinity. Energy is continuous. ($E > 0$).
+*   **Free State ($V=0$ everywhere)**: Special case of scattering. Plane wave solutions $e^{ikx}$, continuous energy.
+
+### 7. What is step potential in quantum mechanics?
+
+#### Answer
+A **Step Potential** is an idealized potential profile that changes abruptly at a boundary:
+$V(x) = 0$ for $x < 0$ and $V(x) = V_0$ for $x > 0$.
+It is used to study reflection and transmission (tunneling) behaviors of quantum particles at interfaces.
+
+### 8. What are the similarities and differences between the reflection of light from an air-glass boundary and the reflection of an electron from a potential step?
+
+#### Answer
+*   **Similarities**: Both exhibit reflection and transmission even when transmission is classically allowed. Both satisfy relations (Snell's law/Continuity) at the interface. Both have coefficients ($R, T$) that sum to 1.
+*   **Differences**:
+    *   **Basis**: Light reflection is due to change in refractive index (speed). Electron reflection is due to change in potential (kinetic energy/momentum).
+    *   **Total Internal Reflection**: Light has TIR going from dense to rare. Electrons have total reflection when $E < V_0$.
+    *   **Tunneling**: A quantum particle can penetrate a barrier where $E < V_0$ (evanescent wave), analogous to frustrated total internal reflection in optics.
 
 # [[../Physics|Back]]
 
@@ -854,3 +1131,95 @@ The eigenvalue of momentum is $p = \hbar k$.
 
 ***
 # [[../Physics|Back]]
+
+---
+## Assignment 1 Questions
+
+### 64. Write the expressions in terms of wavelength for (a) maximum kinetic energy of photoelectrons emitted from the solid in photoelectric effect and (b) maximum recoil energy of electron in the Compton effect. Explain the symbols used in writing the expressions.
+
+#### Answer
+**(a) Photoelectric Effect:**
+The maximum kinetic energy ($K_{max}$) of the emitted photoelectrons is given by Einstein's photoelectric equation:
+$$ K_{max} = \frac{hc}{\lambda} - \phi $$
+Where:
+*   $h$ is Planck's constant.
+*   $c$ is the speed of light.
+*   $\lambda$ is the wavelength of the incident light.
+*   $\phi$ (phi) is the work function of the metal.
+
+**(b) Compton Effect:**
+The maximum recoil energy of the electron ($K_{max}$) occurs when the photon is back-scattered ($\theta = 180^\circ$).
+The shift in wavelength is $\Delta \lambda = \frac{h}{m_0 c}(1 - \cos 180^\circ) = \frac{2h}{m_0 c}$.
+The energy of the scattered photon is $E' = \frac{hc}{\lambda + \Delta \lambda}$.
+The kinetic energy of the electron is the difference between incident and scattered photon energies:
+$$ K_{max} = \frac{hc}{\lambda} - \frac{hc}{\lambda + \frac{2h}{m_0 c}} = hc \left( \frac{1}{\lambda} - \frac{1}{\lambda + 2\lambda_c} \right) $$
+Where:
+*   $m_0$ is the rest mass of the electron.
+*   $\lambda_c = h/(m_0 c)$ is the Compton wavelength.
+
+### 65. Calculate the average energy of the Planck’s oscillator of frequency 5.6×10^12 Hz at 330 K.
+
+#### Answer
+The average energy $\langle E \rangle$ of a Planck oscillator at temperature $T$ is given by:
+$$ \langle E \rangle = \frac{h\nu}{e^{h\nu/k_B T} - 1} $$
+Given: Frequency $\nu = 5.6 \times 10^{12}$ Hz, Temperature $T = 330$ K.
+Constants: $h = 6.626 \times 10^{-34}$ J s, $k_B = 1.38 \times 10^{-23}$ J/K.
+
+1.  **Calculate $h\nu$:**
+    $h\nu = (6.626 \times 10^{-34}) \times (5.6 \times 10^{12}) \approx 3.71 \times 10^{-21}$ J.
+2.  **Calculate $k_B T$:**
+    $k_B T = (1.38 \times 10^{-23}) \times (330) \approx 4.55 \times 10^{-21}$ J.
+3.  **Calculate the ratio $x = \frac{h\nu}{k_B T}$:**
+    $x = \frac{3.71}{4.55} \approx 0.815$.
+4.  **Calculate average energy:**
+    $\langle E \rangle = \frac{3.71 \times 10^{-21}}{e^{0.815} - 1} = \frac{3.71 \times 10^{-21}}{2.26 - 1} = \frac{3.71 \times 10^{-21}}{1.26}$.
+    $$ \langle E \rangle \approx 2.94 \times 10^{-21} \text{ J} $$
+
+### 66. The wave function of a particle which is constrained to move along x-axis is described by Ψ(x)=Nsin⁡(nπx/a) in the domain 0≤x≤a. Compute the expectation value of momentum.
+
+#### Answer
+The expectation value of momentum $\langle p \rangle$ is given by:
+$$ \langle p \rangle = \int_{0}^{a} \Psi^*(x) \left(-i\hbar \frac{d}{dx}\right) \Psi(x) dx $$
+Given $\Psi(x) = N \sin(\frac{n\pi x}{a})$.
+Differentiation: $\frac{d\Psi}{dx} = N \frac{n\pi}{a} \cos(\frac{n\pi x}{a})$.
+Integral:
+$$ \langle p \rangle = -i\hbar N^2 \frac{n\pi}{a} \int_{0}^{a} \sin\left(\frac{n\pi x}{a}\right) \cos\left(\frac{n\pi x}{a}\right) dx $$
+Using $\sin(2\theta) = 2\sin\theta\cos\theta$, the integrand is $\frac{1}{2}\sin(\frac{2n\pi x}{a})$.
+The integral of sine over a full period (or integer multiple of periods $2n\pi$) is zero.
+$$ \int_{0}^{a} \sin\left(\frac{2n\pi x}{a}\right) dx = \left[ -\frac{a}{2n\pi} \cos\left(\frac{2n\pi x}{a}\right) \right]_0^a = -\frac{a}{2n\pi} (1 - 1) = 0 $$
+Thus, **$\langle p \rangle = 0$**.
+Physical significance: The particle is moving back and forth (standing wave), so the average momentum is zero.
+
+### 67. The phase velocity of ocean waves is √(gλ/2π) where g is acceleration due to gravity. Find the group velocity of a wave packet of these waves.
+
+#### Answer
+Phase velocity $v_p = \sqrt{\frac{g\lambda}{2\pi}}$.
+We know $v_p = \frac{\omega}{k}$. Also $k = \frac{2\pi}{\lambda} \implies \lambda = \frac{2\pi}{k}$.
+Substitute $\lambda$ into $v_p$:
+$v_p = \frac{\omega}{k} = \sqrt{\frac{g(2\pi/k)}{2\pi}} = \sqrt{\frac{g}{k}}$.
+$\omega = k \sqrt{\frac{g}{k}} = \sqrt{gk}$.
+Group velocity $v_g = \frac{d\omega}{dk}$.
+$v_g = \frac{d}{dk} (\sqrt{g} k^{1/2}) = \sqrt{g} \cdot \frac{1}{2} k^{-1/2} = \frac{1}{2} \sqrt{\frac{g}{k}}$.
+Comparing with $v_p = \sqrt{\frac{g}{k}}$, we get:
+$$ v_g = \frac{1}{2} v_p $$
+The group velocity is half the phase velocity.
+
+### 68. Determine the kinetic energy of the recoiling electron in Compton scattering.
+
+#### Answer
+By conservation of energy, the kinetic energy ($K_e$) gained by the recoiling electron is equal to the energy lost by the photon.
+$$ K_e = E - E' = h\nu - h\nu' $$
+Using the Compton shift formula, the scattered photon energy $E'$ is related to the incident energy $E$ by:
+$$ E' = \frac{E}{1 + \frac{E}{m_0 c^2}(1-\cos\theta)} $$
+Thus,
+$$ K_e = E \left[ 1 - \frac{1}{1 + \frac{E}{m_0 c^2}(1-\cos\theta)} \right] = E \frac{\frac{E}{m_0 c^2}(1-\cos\theta)}{1 + \frac{E}{m_0 c^2}(1-\cos\theta)} $$
+Where $\theta$ is the scattering angle of the photon.
+
+### 69. Why do we introduce normalisation constant in the normalisation procedure? Give its significance.
+
+#### Answer
+The normalization constant is introduced to ensure that the total probability of finding the particle somewhere in the entire space is exactly 1 (unity).
+$$ \int_{-\infty}^{\infty} |\Psi(x)|^2 dx = 1 $$
+**Significance:**
+1.  **Conservation of Probability:** It ensures physical reality, meaning the particle exists 100% of the time.
+2.  **Probabilistic Interpretation:** It scales the wavefunction so that $|\Psi|^2$ correctly represents a probability density, allowing us to calculate meaningful absolute probabilities for finding the particle in specific regions.

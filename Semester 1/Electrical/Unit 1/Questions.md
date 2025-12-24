@@ -8,7 +8,7 @@ dg-publish: true
 
 # Unit 1 Q&A: DC Circuits
 
-## 1. Basic Concepts & Kirchhoff's Laws
+## 1. Fundamental Concepts & Basic Laws
 
 ### 1. Definitions
 **Question:** Define (i) Electric Current, Potential Difference & Electric Power, (ii) KCL & KVL, and (iii) Active & Passive Elements & Sign conventions.
@@ -60,39 +60,9 @@ We analyze the two independent loops using KVL.
 
 ---
 
-## 2. Mesh Analysis
+## 2. DC Circuit Analysis Techniques
 
-### 4. Three-Mesh Circuit
-**Question:** Solve the circuit to find mesh currents.
-![[Q&A-18.png]]
-
-**Answer:**
-Writing KVL equations for the three meshes:
-1.  **Mesh 1**: $4 - 3I_1 - 1(I_1-I_2) - 4(I_1-I_3) = 0 \implies 8I_1 - I_2 - 4I_3 = 4$
-2.  **Mesh 2**: $-1(I_2-I_1) - 2I_2 - 5(I_2-I_3) = 0 \implies -I_1 + 8I_2 - 5I_3 = 0$
-3.  **Mesh 3**: $-4(I_3-I_1) - 5(I_3-I_2) - 6I_3 = 0 \implies -4I_1 - 5I_2 + 15I_3 = 0$
-
-Solving simultanously:
-*   $I_1 = 0.66 A$
-*   $I_2 = 0.24 A$
-*   $I_3 = 0.26 A$
-
-### 5. Supermesh Analysis
-**Question:** Find the current through the 2Ω resistor.
-![[Q&A-20.png]]
-
-**Answer:**
-1.  **Supermesh**: The 6A current source defines $I_1 = 6A$.
-2.  **Mesh 2**: $36 - 12(I_2 - I_1) - 6I_2 = 0 \implies 36 - 18I_2 + 72 = 0 \implies 18I_2 = 108 \implies I_2 = 6A$.
-3.  **Mesh 3**: $-6(I_3-I_2) - 3I_3 - 2I_3 + 9 = 0 \implies -11I_3 + 36 + 9 = 0 \implies 11I_3 = 45$.
-    *   $I_3 = 4.09 A$.
-    *   Current through 2Ω resistor is **4.09 A**.
-
----
-
-## 3. Circuit Theorems
-
-### 6. Source Transformation
+### 4. Source Transformation
 **Question:** Find the current flowing through branch AB using Source Transformation.
 ![[Q&A-11.png]]
 
@@ -107,7 +77,70 @@ Solving simultanously:
     *   Current $I = 6V / 6\Omega = 1A$.
     *   Current through AB is **1 A**.
 
-### 7. Superposition Theorem
+### 5. Star-Delta Transformation (Theory)
+**Question:** Derive the Star-Delta transformation formula.
+**Answer:**
+Equating the resistance between terminals of a Star ($R_a, R_b, R_c$) and Delta ($R_{ab}, R_{bc}, R_{ca}$) network:
+*   **Delta to Star**: $R_a = \frac{R_{ab}R_{ca}}{R_{ab} + R_{bc} + R_{ca}}$. (Product of adjacent / Sum of all).
+*   **Star to Delta**: $R_{ab} = \frac{R_aR_b + R_bR_c + R_cR_a}{R_c}$. (Sum of products / Opposite R).
+
+### 6. Complex Bridge Reduction
+**Question:** Find equivalent resistance between A and B.
+![[Q&A-14.png]]
+
+**Answer:**
+1.  Identify the central Delta ($4\Omega, 8\Omega, 6\Omega$) or Pi-network. Convert to Star ($R_1, R_2, R_3$):
+    *   $R_1 = (4 \times 6) / 18 = 1.33\Omega$.
+    *   $R_2 = (4 \times 8) / 18 = 1.78\Omega$.
+    *   $R_3 = (6 \times 8) / 18 = 2.67\Omega$.
+2.  Substitute back into the circuit structure and simplify series/parallel combinations.
+    *   Result: **$R_{eq} \approx 5.08 \Omega$**.
+
+### 7. Equivalent Resistance Calculation
+**Problem:** Find $R_{XY}$ when switch is open and closed variants.
+**Solution:**
+*   **All Open**: Resistors in simple series sum to **28Ω**.
+*   **Shorts Applied**: Redrawing shows parallel structures.
+    *   **Both Shorted**: $R_{eq} \approx 5.14 \Omega$.
+
+### 8. Voltage Division
+**Problem:** Calculate $V_{AB}$ for a bridge with 20V source.
+**Solution:**
+*   $V_A = 20 \times \frac{15}{40} = 7.5V$.
+*   $V_B = 20 \times \frac{10}{50} = 4.0V$.
+*   $V_{AB} = 7.5 - 4.0 = 3.5V$.
+
+---
+
+## 3. DC Network Theorems
+
+### 9. Three-Mesh Circuit
+**Question:** Solve the circuit to find mesh currents.
+![[Q&A-18.png]]
+
+**Answer:**
+Writing KVL equations for the three meshes:
+1.  **Mesh 1**: $4 - 3I_1 - 1(I_1-I_2) - 4(I_1-I_3) = 0 \implies 8I_1 - I_2 - 4I_3 = 4$
+2.  **Mesh 2**: $-1(I_2-I_1) - 2I_2 - 5(I_2-I_3) = 0 \implies -I_1 + 8I_2 - 5I_3 = 0$
+3.  **Mesh 3**: $-4(I_3-I_1) - 5(I_3-I_2) - 6I_3 = 0 \implies -4I_1 - 5I_2 + 15I_3 = 0$
+
+Solving simultanously:
+*   $I_1 = 0.66 A$
+*   $I_2 = 0.24 A$
+*   $I_3 = 0.26 A$
+
+### 10. Supermesh Analysis
+**Question:** Find the current through the 2Ω resistor.
+![[Q&A-20.png]]
+
+**Answer:**
+1.  **Supermesh**: The 6A current source defines $I_1 = 6A$.
+2.  **Mesh 2**: $36 - 12(I_2 - I_1) - 6I_2 = 0 \implies 36 - 18I_2 + 72 = 0 \implies 18I_2 = 108 \implies I_2 = 6A$.
+3.  **Mesh 3**: $-6(I_3-I_2) - 3I_3 - 2I_3 + 9 = 0 \implies -11I_3 + 36 + 9 = 0 \implies 11I_3 = 45$.
+    *   $I_3 = 4.09 A$.
+    *   Current through 2Ω resistor is **4.09 A**.
+
+### 11. Superposition Theorem
 **Question:** Find the current through the 1Ω resistor.
 ![[Q&A-22.png]]
 
@@ -121,7 +154,7 @@ We calculate the contribution of each source independently:
     *   Similar analysis yields contribution.
     *   **Total Current (via Nodal Analysis check) approx 0.75 A**.
 
-### 8. Thevenin's Theorem
+### 12. Thevenin's Theorem
 **Question:** Obtain the current through the 10Ω resistor.
 ![[Q&A-26.png]]
 
@@ -135,46 +168,5 @@ We calculate the contribution of each source independently:
 3.  **Calculate Current**:
     *   $I = \frac{V_{th}}{R_{th} + R_L} = \frac{80}{10 + 10} = 4A$.
     *   Current is **4 A**.
-
----
-
-## 4. Star-Delta Transformations
-
-### 9. Theory
-**Question:** Derive the Star-Delta transformation formula.
-**Answer:**
-Equating the resistance between terminals of a Star ($R_a, R_b, R_c$) and Delta ($R_{ab}, R_{bc}, R_{ca}$) network:
-*   **Delta to Star**: $R_a = \frac{R_{ab}R_{ca}}{R_{ab} + R_{bc} + R_{ca}}$. (Product of adjacent / Sum of all).
-*   **Star to Delta**: $R_{ab} = \frac{R_aR_b + R_bR_c + R_cR_a}{R_c}$. (Sum of products / Opposite R).
-
-### 10. Complex Bridge Reduction
-**Question:** Find equivalent resistance between A and B.
-![[Q&A-14.png]]
-
-**Answer:**
-1.  Identify the central Delta ($4\Omega, 8\Omega, 6\Omega$) or Pi-network. Convert to Star ($R_1, R_2, R_3$):
-    *   $R_1 = (4 \times 6) / 18 = 1.33\Omega$.
-    *   $R_2 = (4 \times 8) / 18 = 1.78\Omega$.
-    *   $R_3 = (6 \times 8) / 18 = 2.67\Omega$.
-2.  Substitute back into the circuit structure and simplify series/parallel combinations.
-    *   Result: **$R_{eq} \approx 5.08 \Omega$**.
-
----
-
-## 5. Worked Examples
-
-### Example 1: Equivalent Resistance Calculation
-**Problem:** Find $R_{XY}$ when switch is open and closed variants.
-**Solution:**
-*   **All Open**: Resistors in simple series sum to **28Ω**.
-*   **Shorts Applied**: Redrawing shows parallel structures.
-    *   **Both Shorted**: $R_{eq} \approx 5.14 \Omega$.
-
-### Example 2: Voltage Division
-**Problem:** Calculate $V_{AB}$ for a bridge with 20V source.
-**Solution:**
-*   $V_A = 20 \times \frac{15}{40} = 7.5V$.
-*   $V_B = 20 \times \frac{10}{50} = 4.0V$.
-*   $V_{AB} = 7.5 - 4.0 = 3.5V$.
 
 ***

@@ -37,26 +37,12 @@ A quasi-static (or quasi-equilibrium) process is an idealized process that happe
 
 ---
 
-## Hydraulic Machines & Fluid Energy
-
-### 5. What is a hydraulic machine, and what is the difference between a turbine and a pump?
-A **hydraulic machine** is a device that converts the energy of a fluid into mechanical energy, or vice versa.
-* A **turbine** converts the energy of a fluid (kinetic and pressure energy) into mechanical work. For example, the force of water turns the blades of a turbine, which rotates a shaft.
-* A **pump** does the opposite; it uses mechanical work to increase the energy (primarily pressure) of a fluid.
-
-***
-
-### 6. How does a hydroelectric power plant work?
-In a hydroelectric plant, water stored at a high elevation (potential energy) flows down through a pipe. This flowing water strikes the blades of a **hydraulic turbine**, causing its shaft to rotate (mechanical energy). This rotating shaft is connected to a **generator**, which converts the mechanical energy into electrical energy.
-
----
-
 ## Internal Combustion (IC) Engines
 
-### 7. How are IC engines classified?
+### 5. How are IC engines classified?
 IC engines can be classified based on several criteria:
 * **Number of Strokes**: Four-stroke or two-stroke.
-* **Thermodynamic Cycle**: Otto cycle (for petrol engine# ￼￼￼￼￼￼Back￼￼s) or Diesel cycle.
+* **Thermodynamic Cycle**: Otto cycle (for petrol engines) or Diesel cycle.
 * **Ignition Method**: Spark Ignition (SI) for petrol engines, or Compression Ignition (CI) for diesel engines.
 * **Fuel Used**: Petrol, diesel, gas (CNG, LPG), or bi-fuel.
 * **Cylinder Arrangement**: In-line, V-type, radial, or opposed.
@@ -64,7 +50,7 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### 8. What are the functions of five major IC engine parts?
+### 6. What are the functions of five major IC engine parts?
 1.  **Cylinder**: The core part where fuel combustion takes place and the piston reciprocates to produce power.
 2.  **Piston**: A cylindrical component that moves up and down inside the cylinder. It transfers the force from the expanding gas to the crankshaft.
 3.  **Connecting Rod**: Connects the piston to the crankshaft, converting the piston's linear (reciprocating) motion into the crankshaft's rotational motion.
@@ -73,7 +59,7 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### 9. How does combustion differ in SI (Petrol) and CI (Diesel) engines?
+### 7. How does combustion differ in SI (Petrol) and CI (Diesel) engines?
 | Feature | SI (Petrol) Engine | CI (Diesel) Engine |
 | :--- | :--- | :--- |
 | **Intake** | A mixture of air and fuel is drawn in during the suction stroke. | Only air is drawn in during the suction stroke. |
@@ -82,7 +68,7 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### 10. What are the four strokes of a 4-stroke CI (Diesel) engine?
+### 8. What are the four strokes of a 4-stroke CI (Diesel) engine?
 1.  **Suction Stroke**: The piston moves down, and the inlet valve opens, drawing only air into the cylinder.
 2.  **Compression Stroke**: Both valves close, and the piston moves up, compressing the air to a very high pressure and temperature.
 3.  **Power (or Expansion) Stroke**: Fuel is injected into the hot compressed air, and it ignites instantly. The resulting combustion pushes the piston down, producing power. Both valves remain closed.
@@ -90,10 +76,24 @@ IC engines can be classified based on several criteria:
 
 ***
 
-### 11. How are engine performance parameters defined?
+### 9. How are engine performance parameters defined?
 * **Indicated Power (IP)**: The total theoretical power developed by the combustion of fuel inside the engine cylinder.
 * **Brake Power (BP)**: The actual, useful power available at the engine's crankshaft after accounting for internal friction losses. It's the power that can be used to do work.
 * **Mechanical Efficiency ($\eta_{mech}$)**: The ratio of brake power to indicated power. It represents how effectively the power developed in the cylinders is transmitted to the crankshaft. It is calculated as $\eta_{mech} = (BP / IP)$.
+
+---
+
+## Hydraulic Machines & Fluid Energy
+
+### 10. What is a hydraulic machine, and what is the difference between a turbine and a pump?
+A **hydraulic machine** is a device that converts the energy of a fluid into mechanical energy, or vice versa.
+* A **turbine** converts the energy of a fluid (kinetic and pressure energy) into mechanical work. For example, the force of water turns the blades of a turbine, which rotates a shaft.
+* A **pump** does the opposite; it uses mechanical work to increase the energy (primarily pressure) of a fluid.
+
+***
+
+### 11. How does a hydroelectric power plant work?
+In a hydroelectric plant, water stored at a high elevation (potential energy) flows down through a pipe. This flowing water strikes the blades of a **hydraulic turbine**, causing its shaft to rotate (mechanical energy). This rotating shaft is connected to a **generator**, which converts the mechanical energy into electrical energy.
 
 ---
 
@@ -158,60 +158,7 @@ The work done is **-20.69 kJ**.
 
 ***
 
-### 2. Friction Loss Calculation
-*A single-cylinder engine operating at 2000 rpm develops a torque of 8 N-m. The indicated power is 2.0 kW. Find the friction loss as a percentage of brake power.*
-
-**Solution**:
-First, calculate the Brake Power (BP).
-$$ BP = \frac{2\pi NT}{60} = \frac{2 \pi \times 2000 \times 8}{60} = 1675.5 \text{ W} = 1.676 \text{ kW} $$
-Next, find the Friction Power (FP).
-$$ FP = IP - BP = 2.0 \text{ kW} - 1.676 \text{ kW} = 0.324 \text{ kW} $$
-Finally, calculate the loss as a percentage of brake power.
-$$ \% \text{ Loss} = \frac{FP}{BP} \times 100 = \frac{0.324}{1.676} \times 100 = 19.33\% $$
-The friction loss is **19.33%** of the brake power.
-
-***
-
-### 3. Engine Performance Calculation
-*From a test on a 4-stroke petrol engine: speed = 1000 rpm, brake torque = 70 Nm, IMEP = 10 bar, stroke = 150 mm, bore = 100 mm, fuel consumption = 2.57 kg/h, CV of petrol = 41000 kJ/kg. Calculate the indicated, brake, and mechanical efficiencies.*
-
-**Solution**:
-1.  **Indicated Power (IP)**:
-    $A = (\pi/4)d^2 = (\pi/4)(0.1)^2 = 0.007854 \text{ m}^2$. For a 4-stroke, K=1/2.
-    $$ IP = \frac{P_m L A N K}{60} = \frac{(10 \times 10^5) \times 0.15 \times 0.007854 \times 1000 \times (1/2)}{60} = 9.817 \text{ kW} $$
-2.  **Brake Power (BP)**:
-    $$ BP = \frac{2\pi NT}{60} = \frac{2 \pi \times 1000 \times 70}{60} = 7.33 \text{ kW} $$
-3.  **Fuel Power (FP)**:
-    Mass flow rate $m_f = 2.57 \text{ kg/h} / 3600 \text{ s/h} = 0.000714 \text{ kg/s}$.
-    $$ \text{Fuel Power} = m_f \times CV = 0.000714 \times 41000 = 29.27 \text{ kW} $$
-4.  **Efficiencies**:
-    * **Indicated Thermal Efficiency**: $\eta_{ith} = \frac{IP}{\text{Fuel Power}} = \frac{9.817}{29.27} \times 100 = 33.54\%$
-    * **Brake Thermal Efficiency**: $\eta_{bth} = \frac{BP}{\text{Fuel Power}} = \frac{7.33}{29.27} \times 100 = 25.04\%$
-    * **Mechanical Efficiency**: $\eta_{mech} = \frac{BP}{IP} = \frac{7.33}{9.817} \times 100 = 74.67\%$
-
-***
-
-### 4. Engine Design Calculation
-*A 4-cylinder, 4-stroke petrol engine develops 30 kW at 2500 rpm. The mean effective pressure is 8 bar and mechanical efficiency is 80%. Calculate the diameter and stroke of each cylinder, assuming L=1.5d.*
-
-**Solution**:
-1.  **Find Indicated Power (IP)**:
-    $$ IP = \frac{BP}{\eta_{mech}} = \frac{30 \text{ kW}}{0.80} = 37.5 \text{ kW} $$
-2.  **Use the IP Formula**:
-    For a 4-cylinder, 4-stroke engine, n=4 and K=1/2.
-    $$ IP = \frac{n \cdot P_m \cdot L \cdot A \cdot N \cdot K}{60} $$
-    $$ 37500 = \frac{4 \times (8 \times 10^5) \times L \times A \times 2500 \times (1/2)}{60} $$
-    $$ 37500 = 66666.67 \times L \times A $$
-    $$ L \times A = 0.0005625 $$
-3.  **Substitute L=1.5d and A=($\pi/4$)d²**:
-    $$ (1.5d) \times (\frac{\pi}{4}d^2) = 0.0005625 $$
-    $$ 1.1781 d^3 = 0.0005625 $$
-    $$ d^3 = 0.0004774 \implies d = 0.0781 \text{ m} = 78.1 \text{ mm} $$
-4.  **Find Stroke (L)**:
-    $$ L = 1.5 \times d = 1.5 \times 78.1 = 117.15 \text{ mm} $$
-The bore is **78.1 mm** and the stroke is **117.15 mm**.
-
-### 5. Isothermal Work
+### 2. Isothermal Work
 A mass of 1.5 kg of air is compressed in a quasi-static process where $PV=constant$ from 0.1 MPa to 0.7 MPa. The initial density of the air is $1.16~kg/m^3$. Determine the work done.
 
 #### Solution
@@ -235,7 +182,7 @@ A mass of 1.5 kg of air is compressed in a quasi-static process where $PV=consta
 
 ---
 
-### 6. Polytropic Work
+### 3. Polytropic Work
 A mass of gas is compressed in a quasi-static process from 80 kPa, $0.1~m^3$ to 0.4 MPa, $0.03~m^3$. Assuming the process follows $PV^n = constant$, determine the work done.
 
 #### Solution
@@ -259,7 +206,7 @@ A mass of gas is compressed in a quasi-static process from 80 kPa, $0.1~m^3$ to 
 
 ---
 
-### 7. First Law for a Cycle
+### 4. First Law for a Cycle
 During one cycle, an engine has two work interactions (15 kJ *to* the fluid, 44 kJ *from* the fluid) and three heat interactions (75 kJ *to* the fluid, 40 kJ *from* the fluid, and one unknown). Evaluate the third heat transfer.
 
 #### Solution
@@ -282,7 +229,7 @@ During one cycle, an engine has two work interactions (15 kJ *to* the fluid, 44 
 
 ---
 
-### 8. Stirring Work
+### 5. Stirring Work
 1.5 kg of a liquid with a constant specific heat of $2.5~\text{kJ/kg-K}$ is stirred in a well-insulated chamber, causing its temperature to rise by 15°C. Find the change in internal energy ($\Delta E$) and the work done (W).
 
 #### Solution
@@ -305,7 +252,62 @@ During one cycle, an engine has two work interactions (15 kJ *to* the fluid, 44 
       $$W = -56.25~\text{kJ}$$
   3.  The change in internal energy is **+56.25 kJ** and the work done is **-56.25 kJ**. The negative work indicates that stirring work was done *on* the system.
 
----
+***
+
+### 6. Friction Loss Calculation
+*A single-cylinder engine operating at 2000 rpm develops a torque of 8 N-m. The indicated power is 2.0 kW. Find the friction loss as a percentage of brake power.*
+
+**Solution**:
+First, calculate the Brake Power (BP).
+$$ BP = \frac{2\pi NT}{60} = \frac{2 \pi \times 2000 \times 8}{60} = 1675.5 \text{ W} = 1.676 \text{ kW} $$
+Next, find the Friction Power (FP).
+$$ FP = IP - BP = 2.0 \text{ kW} - 1.676 \text{ kW} = 0.324 \text{ kW} $$
+Finally, calculate the loss as a percentage of brake power.
+$$ \% \text{ Loss} = \frac{FP}{BP} \times 100 = \frac{0.324}{1.676} \times 100 = 19.33\% $$
+The friction loss is **19.33%** of the brake power.
+
+***
+
+### 7. Engine Performance Calculation
+*From a test on a 4-stroke petrol engine: speed = 1000 rpm, brake torque = 70 Nm, IMEP = 10 bar, stroke = 150 mm, bore = 100 mm, fuel consumption = 2.57 kg/h, CV of petrol = 41000 kJ/kg. Calculate the indicated, brake, and mechanical efficiencies.*
+
+**Solution**:
+1.  **Indicated Power (IP)**:
+    $A = (\pi/4)d^2 = (\pi/4)(0.1)^2 = 0.007854 \text{ m}^2$. For a 4-stroke, K=1/2.
+    $$ IP = \frac{P_m L A N K}{60} = \frac{(10 \times 10^5) \times 0.15 \times 0.007854 \times 1000 \times (1/2)}{60} = 9.817 \text{ kW} $$
+2.  **Brake Power (BP)**:
+    $$ BP = \frac{2\pi NT}{60} = \frac{2 \pi \times 1000 \times 70}{60} = 7.33 \text{ kW} $$
+3.  **Fuel Power (FP)**:
+    Mass flow rate $m_f = 2.57 \text{ kg/h} / 3600 \text{ s/h} = 0.000714 \text{ kg/s}$.
+    $$ \text{Fuel Power} = m_f \times CV = 0.000714 \times 41000 = 29.27 \text{ kW} $$
+4.  **Efficiencies**:
+    * **Indicated Thermal Efficiency**: $\eta_{ith} = \frac{IP}{\text{Fuel Power}} = \frac{9.817}{29.27} \times 100 = 33.54\%$
+    * **Brake Thermal Efficiency**: $\eta_{bth} = \frac{BP}{\text{Fuel Power}} = \frac{7.33}{29.27} \times 100 = 25.04\%$
+    * **Mechanical Efficiency**: $\eta_{mech} = \frac{BP}{IP} = \frac{7.33}{9.817} \times 100 = 74.67\%$
+
+***
+
+### 8. Engine Design Calculation
+*A 4-cylinder, 4-stroke petrol engine develops 30 kW at 2500 rpm. The mean effective pressure is 8 bar and mechanical efficiency is 80%. Calculate the diameter and stroke of each cylinder, assuming L=1.5d.*
+
+**Solution**:
+1.  **Find Indicated Power (IP)**:
+    $$ IP = \frac{BP}{\eta_{mech}} = \frac{30 \text{ kW}}{0.80} = 37.5 \text{ kW} $$
+2.  **Use the IP Formula**:
+    For a 4-cylinder, 4-stroke engine, n=4 and K=1/2.
+    $$ IP = \frac{n \cdot P_m \cdot L \cdot A \cdot N \cdot K}{60} $$
+    $$ 37500 = \frac{4 \times (8 \times 10^5) \times L \times A \times 2500 \times (1/2)}{60} $$
+    $$ 37500 = 66666.67 \times L \times A $$
+    $$ L \times A = 0.0005625 $$
+3.  **Substitute L=1.5d and A=($\pi/4$)d²**:
+    $$ (1.5d) \times (\frac{\pi}{4}d^2) = 0.0005625 $$
+    $$ 1.1781 d^3 = 0.0005625 $$
+    $$ d^3 = 0.0004774 \implies d = 0.0781 \text{ m} = 78.1 \text{ mm} $$
+4.  **Find Stroke (L)**:
+    $$ L = 1.5 \times d = 1.5 \times 78.1 = 117.15 \text{ mm} $$
+The bore is **78.1 mm** and the stroke is **117.15 mm**.
+
+***
 
 ### 9. IC Engine Performance
 A single-cylinder, four-stroke engine test yields the following data:
@@ -339,3 +341,6 @@ Calculate the Brake Power (BP) and Mechanical Efficiency ($\eta_{mech}$).
   2.  **Mechanical Efficiency ($\eta_{mech}$)**:
       $$\eta_{mech} = \frac{BP}{IP} = \frac{2.589~\text{kW}}{3.141~\text{kW}} \approx 0.8241$$
   3.  The Brake Power is **2.589 kW** and the Mechanical Efficiency is **82.41%**.
+
+---
+# [[../Mechanical|Back]]

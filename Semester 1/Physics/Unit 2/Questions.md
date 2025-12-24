@@ -449,100 +449,500 @@ Additional practice questions for Unit 2 (Quantum Mechanics, Potentials, Wells).
 
 ## CL14: Step Potential (E > V₀)
 
-1. Using the Schrödinger's wave equation find the wave function associated with particle having energy 10 eV travelling along positive x-direction approach a potential step of height 7 eV.
-2. Define the terms reflection coefficient and transmission coefficient with respect to step potential.
-3. A stream of particles of mass m and total energy E moves towards a potential step of height V₀, if the energy of the electrons is lesser than the step potential (E < V₀) then by applying continuity conditions obtain the expression for reflection coefficient.
-4. The probability of reflection from a potential step is given by R, where the k's are the wavenumbers in the two regions. If a 5 eV electron encounters a 2 eV potential step, what is the probability that it will be reflected?
+### 1. Using the Schrödinger's wave equation find the wave function associated with particle having energy 10 eV travelling along positive x-direction approach a potential step of height 7 eV.
+
+#### Answer
+Given $E = 10 \text{ eV}$, $V_0 = 7 \text{ eV}$.
+Region 1 ($x<0, V=0$): $\psi_1(x) = A e^{ik_1 x} + B e^{-ik_1 x}$ where $k_1 = \sqrt{2mE}/\hbar$.
+Region 2 ($x>0, V=7$): $\psi_2(x) = C e^{ik_2 x}$ where $k_2 = \sqrt{2m(E-V_0)}/\hbar$.
+$k_1 \approx 5.12 \times 10^{10} \text{ m}^{-1}$ (using $\sqrt{E}$ proportionality).
+$k_2 \approx \sqrt{3/10} k_1 \approx 2.80 \times 10^{10} \text{ m}^{-1}$.
+Transmission requires matching boundary conditions to find B and C in terms of A.
+
+### 2. Define the terms reflection coefficient and transmission coefficient with respect to step potential.
+
+#### Answer
+*   **Reflection Coefficient (R)**: The ratio of the reflected probability current density (flux) to the incident probability current density. $R = |J_{ref}| / |J_{inc}|$. Physically, it represents the probability that a particle is reflected by the potential step.
+*   **Transmission Coefficient (T)**: The ratio of the transmitted probability current density to the incident probability current density. $T = |J_{trans}| / |J_{inc}|$. It represents the probability that a particle crosses the step.
+
+### 3. A stream of particles of mass m and total energy E moves towards a potential step of height V₀, if the energy of the electrons is lesser than the step potential (E < V₀) then by applying continuity conditions obtain the expression for reflection coefficient.
+
+#### Answer
+For $E < V_0$:
+Region 1: $\psi_1 = A e^{ikx} + B e^{-ikx}$.
+Region 2: $\psi_2 = D e^{-\alpha x}$ (decaying wave), where $\alpha = \sqrt{2m(V_0-E)}/\hbar$.
+Boundary Conditions at $x=0$:
+1. $A+B = D$
+2. $ik(A-B) = -\alpha D$
+Solving for $B/A$:
+$ik(A-B) = -\alpha(A+B) \implies A(ik+\alpha) = B(ik-\alpha)$.
+$\frac{B}{A} = \frac{ik+\alpha}{ik-\alpha}$.
+Reflection Coefficient $R = \left|\frac{B}{A}\right|^2 = \left|\frac{ik+\alpha}{ik-\alpha}\right|^2$.
+Since the numerator is the complex conjugate of the denominator ($z^*/z$), the modulus is 1.
+$$ R = 1 $$
+**Conclusion**: Total reflection occurs.
+
+### 4. The probability of reflection from a potential step is given by R, where the k's are the wavenumbers in the two regions. If a 5 eV electron encounters a 2 eV potential step, what is the probability that it will be reflected?
+
+#### Answer
+$E=5, V_0=2$.
+$R = \left(\frac{k_1-k_2}{k_1+k_2}\right)^2 = \left(\frac{\sqrt{E}-\sqrt{E-V_0}}{\sqrt{E}+\sqrt{E-V_0}}\right)^2$.
+$R = \left(\frac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}}\right)^2 = \left(\frac{2.236-1.732}{2.236+1.732}\right)^2 = \left(\frac{0.504}{3.968}\right)^2 \approx (0.127)^2 \approx 0.016$.
+Probability of reflection is **1.6%**.
 
 ---
 
 ## CL15: Penetration Depth
 
-1. A particle of mass and total energy moves from a region of constant potential V₀ to a region of potential V₁. If E > V₀, find the associated wave function and reflection coefficient for the particle experience a step potential.
-2. Explain the term penetration depth for a step potential.
-3. A proton of energy 3 eV approaches a potential step of height 4 eV. Evaluate the possible depth of penetration into the classically forbidden region.
-4. A spherical dust particle of given radius and density, moving at a given speed encounters a step potential of height equal to twice the K.E of the particle. Estimate the penetration depth of the particle inside the step.
+### 1. A particle of mass and total energy moves from a region of constant potential V₀ to a region of potential V₁. If E > V₀, find the associated wave function and reflection coefficient for the particle experience a step potential.
+
+#### Answer
+Assuming particle starts in $V_0=0$ and goes to $V_1$ (step height). If $E > V_1$:
+$\psi_1(x) = A e^{ik_1 x} + B e^{-ik_1 x}$.
+$\psi_2(x) = C e^{ik_2 x}$.
+Reflection Coefficient $R = (\frac{k_1 - k_2}{k_1 + k_2})^2$.
+
+### 2. Explain the term penetration depth for a step potential.
+
+#### Answer
+**Penetration Depth** ($\delta$ or $\Delta x$) is the characteristic distance within a potential barrier (where $E < V_0$) over which the probability of finding the particle decays significantly (typically by a factor of $1/e$).
+Formula: $\delta = \frac{1}{\alpha} = \frac{\hbar}{\sqrt{2m(V_0-E)}}$.
+It illustrates that quantum particles don't "bounce off" instantly at the wall but penetrate slightly into the forbidden region.
+
+### 3. A proton of energy 3 eV approaches a potential step of height 4 eV. Evaluate the possible depth of penetration into the classically forbidden region.
+
+#### Answer
+$m_p = 1.67 \times 10^{-27}$ kg. $V_0 - E = 1$ eV $= 1.6 \times 10^{-19}$ J.
+$\alpha = \frac{\sqrt{2 m_p (V_0-E)}}{\hbar} = \frac{\sqrt{2(1.67 \times 10^{-27})(1.6 \times 10^{-19})}}{1.054 \times 10^{-34}} = \frac{\sqrt{5.34 \times 10^{-46}}}{1.054 \times 10^{-34}} = \frac{2.31 \times 10^{-23}}{1.05 \times 10^{-34}} \approx 2.19 \times 10^{11} \text{ m}^{-1}$.
+Depth $\delta = 1/\alpha \approx 4.56 \times 10^{-12}$ m (approx 0.046 Å).
+
+### 4. A spherical dust particle of given radius and density, moving at a given speed encounters a step potential of height equal to twice the K.E of the particle. Estimate the penetration depth of the particle inside the step.
+
+#### Answer
+(See Worked Example 2 for detailed calculation).
+For a macroscopic dust particle (large mass $m$), the penetration depth $\delta = \hbar / \sqrt{2m(V_0-E)} = \hbar / \sqrt{2m(E)}$ is **extremely small** (negligible).
+Typically $\approx 10^{-22}$ m or less. It confirms that quantum tunneling is irrelevant for macroscopic objects.
 
 ---
 
 ## CL18: Infinite Potential Well
 
-1. Obtain the energy Eigen values for a particle bound in an infinite potential well. Comment on why the particle cannot have zero energy?
-2. Show that the probability of locating the particle between the limits 0 to 0.5L is the same in any quantum state. Here L is the width of the well.
-3. Plot the first two states Eigen functions for a particle in an infinite potential well.
-4. Plot the probability densities for the first three excited quantum states of an electron trapped in an infinite potential well of width L. Calculate the probability of locating the electron in the third excited state between the limits ⅜L and ⅝L where L is the width of the well?
-5. Show that the energy of an electron confined in a 1-D symmetric potential well of length 'L' and infinite depth is quantized. Is the electron trapped in a potential well allowed to take zero energy? If not, why?
-6. Derive the expression of energy Eigen values for a particle in an infinite potential well using the admissible solutions.
-7. The wave function associated with a particle in a infinite potential box is given. What is the probability of finding the particle in the region x=0 to L/4 and L/4 to L?
-8. A particle is free to move in a one dimensional region of zero potential between the two rigid walls. Show the energy relationships.
-9. The lowest energy level of a particle confined to a one-dimensional region of space with fixed dimension L. If an identical particle is confined to a similar region with fixed distance L/2, what is the energy of the lowest energy level that the particles have in common?
+### 1. Obtain the energy Eigen values for a particle bound in an infinite potential well. Comment on why the particle cannot have zero energy?
+*(Refer to main Q&A section Question 9)*.
+$E_n = \frac{n^2 h^2}{8mL^2}$. $n=1,2,3...$
+**Zero Energy:** implies $n=0$ or particle is at rest with zero uncertainty in momentum ($\Delta p=0$), which implies $\Delta x = \infty$. But particle is confined to L ($\Delta x \le L$). Thus $\Delta p$ cannot be 0, so $E$ cannot be 0. (Heisenberg Uncertainty).
+
+### 2. Show that the probability of locating the particle between the limits 0 to 0.5L is the same in any quantum state. Here L is the width of the well.
+For any state $\psi_n(x) = \sqrt{2/L}\sin(n\pi x/L)$.
+$|\psi_n|^2$ is symmetric about the center of the well ($L/2$).
+Therefore, the area under the curve from $0$ to $L/2$ is exactly half the total area (which is 1).
+Probability = 0.5.
+
+### 3. Plot the first two states Eigen functions for a particle in an infinite potential well.
+*   **n=1**: Single sine arch from 0 to L. Max at L/2. No nodes.
+*   **n=2**: Sine wave with one full period. Positive arch 0 to L/2, Negative arch L/2 to L. Node at L/2.
+
+### 4. Plot the probability densities for the first three excited quantum states of an electron trapped in an infinite potential well of width L. Calculate the probability of locating the electron in the third excited state between the limits ⅜L and ⅝L where L is the width of the well?
+
+#### Answer
+Third Excited State corresponds to **$n=4$**.
+Limits: 3L/8 to 5L/8 (Central quarter of the well).
+$P = \int_{3L/8}^{5L/8} \frac{2}{L}\sin^2(\frac{4\pi x}{L}) dx$.
+Let $\theta = \frac{4\pi x}{L}$. Range: $4\pi(3/8) = 1.5\pi$ to $4\pi(5/8) = 2.5\pi$.
+Interval width is $\pi$. $\sin^2$ integrates to $\pi/2$ over an interval of $\pi$.
+Correction:
+$P = \frac{2}{L} \frac{L}{4\pi} \int_{1.5\pi}^{2.5\pi} \sin^2 u du = \frac{1}{2\pi} [\frac{u}{2} - \frac{\sin 2u}{4}]_{1.5\pi}^{2.5\pi}$.
+$= \frac{1}{2\pi} [ (\frac{2.5\pi}{2}) - (\frac{1.5\pi}{2}) ] = \frac{1}{2\pi} [\frac{\pi}{2}] = 0.25$.
+Probability is **0.25**.
+
+### 5. Show that the energy of an electron confined in a 1-D symmetric potential well of length 'L' and infinite depth is quantized. Is the electron trapped in a potential well allowed to take zero energy? If not, why?
+*(Derivation of $E_n \propto n^2$)*. Bound states require standing wave solutions that vanish at boundaries, leading to discrete wavelengths $\lambda_n = 2L/n$ and thus discrete energies. (See Q1 for zero energy).
+
+### 6. Derive the expression of energy Eigen values for a particle in an infinite potential well using the admissible solutions.
+Solve SWE $-(\hbar^2/2m)\psi'' = E\psi$. $\psi'' + k^2\psi=0$.
+$\psi = A\sin(kx) + B\cos(kx)$.
+$\psi(0)=0 \implies B=0$. $\psi(L)=0 \implies \sin(kL)=0 \implies kL=n\pi$.
+$k = n\pi/L$. $E = \hbar^2 k^2 / 2m = \dots = n^2 h^2 / 8mL^2$.
+
+### 7. The wave function associated with a particle in a infinite potential box is given. What is the probability of finding the particle in the region x=0 to L/4 and L/4 to L?
+Assuming Ground State ($n=1$):
+*   **0 to L/4**: $P = \int_0^{L/4} \frac{2}{L}\sin^2(\frac{\pi x}{L}) dx = \frac{1}{\pi}[\theta - \sin\theta\cos\theta]_0^{\pi/4} = \dots \approx 0.091$ of total?
+    Calculation: $\frac{1}{L} \int_0^{L/4} (1-\cos(2\pi x/L)) dx = \frac{1}{L} [L/4 - \frac{L}{2\pi}\sin(\pi/2)] = 0.25 - \frac{1}{2\pi} \approx 0.25 - 0.159 = 0.09$. (~9%).
+*   **L/4 to L**: $1 - 0.09 = 0.91$ (~91%).
+
+### 8. A particle is free to move in a one dimensional region of zero potential between the two rigid walls. Show the energy relationships.
+This is the **Particle in a Box** problem.
+Relationships:
+1.  Energy is quantized: $E_n \propto n^2$.
+2.  Energy scales with inverse square of width: $E \propto 1/L^2$.
+3.  Energy scales with inverse of mass: $E \propto 1/m$.
+
+### 9. The lowest energy level of a particle confined to a one-dimensional region of space with fixed dimension L. If an identical particle is confined to a similar region with fixed distance L/2, what is the energy of the lowest energy level that the particles have in common?
+
+#### Answer
+Levels in Box L: $E_n(L) = n^2 E_1(L)$.
+Levels in Box L/2: $E_m(L/2) = \frac{m^2 h^2}{8m(L/2)^2} = 4 m^2 \frac{h^2}{8mL^2} = 4 m^2 E_1(L)$.
+We want $E_n(L) = E_m(L/2)$.
+$n^2 = 4 m^2 \implies n = 2m$.
+Lowest energy in common corresponds to lowest integers $m=1 \implies n=2$.
+Common Energy = $E_2(L) = 4 E_1(L)$ (or $E_1(L/2)$).
+Current Value: **4 times the ground state energy of the larger box**.
 
 ---
 
 ## CL19: 3D Box & Degeneracy
 
-1. What is meant by degeneracy of energy states in quantum systems?
-2. Give examples for degenerate states for a particle in three dimensional box with infinite potential at the boundaries.
-3. Calculate the Eigen value of the electron in the lowest energy level, confined in a 2D potential box of side 0.1 nm.
-4. Using the appropriate boundary conditions obtain the energy eigen values and the corresponding eigenfunctions for a particle trapped in a three dimensional infinite potential box.
+### 1. What is meant by degeneracy of energy states in quantum systems?
+
+#### Answer
+**Degeneracy** occurs when two or more distinct linearly independent quantum states (different wavefunctions/quantum numbers) correspond to the **same energy eigenvalue**. The number of such states is the "degree of degeneracy". It usually arises from symmetries in the system (e.g., cubic symmetry).
+
+### 2. Give examples for degenerate states for a particle in three dimensional box with infinite potential at the boundaries.
+
+#### Answer
+For a cubic box ($L_x=L_y=L_z=L$): Energy depends on $n_x^2+n_y^2+n_z^2$.
+*   State (2,1,1), (1,2,1), (1,1,2): Sum of squares $= 4+1+1=6$. All three have energy $6E_0$. (3-fold degeneracy).
+*   State (2,2,1), (2,1,2), (1,2,2): Sum $= 9$. (3-fold degeneracy).
+
+### 3. Calculate the Eigen value of the electron in the lowest energy level, confined in a 2D potential box of side 0.1 nm.
+
+#### Answer
+$E_{1,1} = \frac{h^2}{8mL^2}(1^2+1^2) = \frac{2 h^2}{8mL^2}$.
+$L = 10^{-10}$ m.
+$E = \frac{2(6.626 \times 10^{-34})^2}{8(9.11 \times 10^{-31})(10^{-20})} \approx \frac{87.8 \times 10^{-68}}{72.8 \times 10^{-51}} \approx 1.2 \times 10^{-17}$ J.
+$E \approx 75$ eV. (Since 1D ground state is ~37.6 eV, 2D is double that).
+
+### 4. Using the appropriate boundary conditions obtain the energy eigen values and the corresponding eigenfunctions for a particle trapped in a three dimensional infinite potential box.
+
+#### Answer
+Solve by separation of variables $\psi(x,y,z) = X(x)Y(y)Z(z)$.
+Each component satisfies 1D well equation.
+Energy $E = E_x + E_y + E_z = \frac{h^2}{8m}(\frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} + \frac{n_z^2}{L_z^2})$.
+Wavefunction $\psi = \sqrt{\frac{8}{V}} \sin(k_x x)\sin(k_y y)\sin(k_z z)$.
 
 ---
 
 ## CL21: Finite Well & Harmonic Oscillator
 
-1. Compare the energy levels of the first three quantum states of identically sized finite and infinite potential wells.
-2. Why do finite square wells have only a finite number of bound energy values? What are the characteristics of bound energy values?
-3. A particle trapped in a finite potential well. Sketch the Eigen functions for first three energy states.
-4. Plot the first two states Eigen wave functions and the probability function for a particle in a finite potential well.
-5. How are the energy values of a quantum mechanical oscillator fundamentally different from the energy values of a classical oscillator?
-6. The energy of a linear harmonic oscillator in the third excited state is 0.1 eV. Find the frequency of the oscillator.
-7. Sketch the wave functions and probability densities for the first two quantum states of quantum harmonic oscillators.
-8. A lithium atom, mass 1.17 × 10⁻²⁶ kg, is vibrating with simple harmonic motion in a crystal lattice, where the force constant k is 64.0 N/m. (a) what is the ground state energy of this system in eV? (b) What would be the wavelength of the photon that could excite this system to the n = 1 level?
-9. Establish Schrodinger's equation of a linear harmonic oscillator and write its solution.
+### 1. Compare the energy levels of the first three quantum states of identically sized finite and infinite potential wells.
+
+#### Answer
+$E_{finite} < E_{infinite}$ for all corresponding states $n$.
+*   Ground state: $E_1(fin) < E_1(inf)$.
+*   Excited states: Spacing is non-uniform in finite well.
+*   Reason: "Leaking" of wavefunction into walls effectively makes wavelength longer in finite well, lowering momentum and energy.
+
+### 2. Why do finite square wells have only a finite number of bound energy values? What are the characteristics of bound energy values?
+
+#### Answer
+Bound states must have $E < V_0$. Since the states are roughly spaced by $\hbar^2/2mL^2$, there is a limit to how many states fit below the potential cap $V_0$. Shallow or narrow wells may have very few states (always at least one symmetric state in 1D).
+Characteristics: Discrete, Non-degenerate (in 1D), Wave function decays exponentially outside.
+
+### 3. A particle trapped in a finite potential well. Sketch the Eigen functions for first three energy states.
+(Sketch should show sinusoidal inside, exponential decay outside. Matching values and slopes at boundaries. Number of nodes: 0, 1, 2).
+
+### 4. Plot the first two states Eigen wave functions and the probability function for a particle in a finite potential well.
+(Similar to Q3, assume even/odd symmetry).
+
+### 5. How are the energy values of a quantum mechanical oscillator fundamentally different from the energy values of a classical oscillator?
+
+#### Answer
+*   **Discrete vs Continuous**: Quantum E is quantized $(n+1/2)\hbar\omega$. Classical E is continuous (depends on amplitude A).
+*   **Minimum Energy**: Quantum has non-zero Zero Point Energy ($\hbar\omega/2$). Classical can be zero (at rest).
+
+### 6. The energy of a linear harmonic oscillator in the third excited state is 0.1 eV. Find the frequency of the oscillator.
+
+#### Answer
+Third Excited State $\implies n=3$.
+$E_3 = (3 + 1/2)\hbar\omega = 3.5 \hbar (2\pi \nu) = 3.5 h \nu$.
+$0.1 \text{ eV} = 1.6 \times 10^{-20}$ J.
+$1.6 \times 10^{-20} = 3.5 (6.626 \times 10^{-34}) \nu$.
+$\nu = \frac{1.6 \times 10^{-20}}{23.19 \times 10^{-34}} \approx 6.9 \times 10^{12}$ Hz.
+
+### 7. Sketch the wave functions and probability densities for the first two quantum states of quantum harmonic oscillators.
+(Bell curve for n=0; Two humps for n=1).
+
+### 8. A lithium atom, mass 1.17 × 10⁻²⁶ kg, is vibrating with simple harmonic motion in a crystal lattice, where the force constant k is 64.0 N/m. (a) what is the ground state energy of this system in eV? (b) What would be the wavelength of the photon that could excite this system to the n = 1 level?
+
+#### Answer
+(a) $\omega = \sqrt{k/m} = \sqrt{64 / 1.17 \times 10^{-26}} \approx \sqrt{54.7} \times 10^{13} \approx 7.4 \times 10^{13}$ rad/s.
+$E_0 = \frac{1}{2}\hbar\omega = \frac{1}{2}(1.054 \times 10^{-34})(7.4 \times 10^{13}) \approx 3.9 \times 10^{-21}$ J.
+In eV: $3.9 \times 10^{-21} / 1.6 \times 10^{-19} \approx 0.024$ eV.
+(b) Excitation $0 \to 1$ requires $\Delta E = \hbar\omega = 2 E_0 = 0.048$ eV.
+$\lambda = hc/\Delta E = (1240 \text{ nm eV}) / 0.048 \approx 25833$ nm $\approx 25.8 \mu$m (Infrared).
+
+### 9. Establish Schrodinger's equation of a linear harmonic oscillator and write its solution.
+Eq: $-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + \frac{1}{2}m\omega^2 x^2 \psi = E\psi$.
+Solution: $\psi_n(x) = N_n H_n(\alpha x) e^{-\alpha^2 x^2 / 2}$. (See main text).
 
 ---
 
 ## CL22: Hydrogen Atom
 
-1. Write down the Schrodinger wave equation for the hydrogen atom in spherical polar co-ordinates and explain the significance of different quantum numbers.
-2. Explain the stationary states of the hydrogen atom.
-3. Electrons in hydrogen are described by four numbers, n, l, m and ms. What restrictions (if any) are there on these four numbers?
-4. In the analysis of Schrodinger's equation for a hydrogen atom using spherical polar coordinates, elaborate the azimuthal and polar wave function. Also comment on the possible values of magnetic quantum number.
-5. Plot the ground-state eigen function of the hydrogen atom as a function of the distance r.
+### 1. Set up the Schrodinger's wave equation for a hydrogen atom in spherical polar coordinates. Explain the significance of three quantum numbers.
+
+#### Answer
+(Refer to main text Q23).
+$\nabla^2 \psi + \frac{2m}{\hbar^2}(E + \frac{e^2}{4\pi\epsilon_0 r})\psi = 0$.
+Laplacian in spherical coords: $\frac{1}{r^2}\frac{\partial}{\partial r}(r^2 \frac{\partial}{\partial r}) + \dots$
+**Quantum Numbers significance**:
+1.  **n (Principal)**: Determines total energy $E_n \propto -1/n^2$ and radial size.
+2.  **l (Orbital)**: Determines angular momentum magnitude $L = \hbar\sqrt{l(l+1)}$ and orbital shape.
+3.  **m (Magnetic)**: Determines z-component of angular momentum $L_z = m\hbar$ (Orientation).
+
+### 2. Discuss the stationary states of a hydrogen atom.
+
+#### Answer
+Stationary states are the eigenfunctions $\psi_{nlm}(r,\theta,\phi)$. They have definite energy $E_n$. The probability density $|\psi|^2$ is independent of time ($P(r,\theta,\phi)$), meaning charge distribution is static (no radiation emitted). Ground state is spherically symmetric.
+
+### 3. Mention the restriction on the quantum numbers n, l, m and ms.
+
+#### Answer
+*   $n = 1, 2, 3, \dots$ (Integer > 0).
+*   $l = 0, 1, 2, \dots, n-1$ (Integer $\ge 0$ bounded by $n$).
+*   $m_l = -l, \dots, 0, \dots, +l$ (Integer steps).
+*   $m_s = \pm 1/2$ (Spin up/down).
+
+### 4. Separate the Amplitude equation into Azimuthal and Polar parts. What is the significance of the magnetic quantum number?
+The angular part $Y(\theta, \phi) = \Theta(\theta)\Phi(\phi)$.
+*   **Azimuthal equation**: $\frac{d^2\Phi}{d\phi^2} + m^2\Phi = 0 \implies \Phi(\phi) = e^{im\phi}$.
+*   **Significance of m**: It arises from the periodicity in $\phi$ and quantizes the z-component of angular momentum ($L_z$). It creates the Zeeman splitting in magnetic fields.
+
+### 5. Plot the ground state wave function and probability density of the electron in a hydrogen atom against the radial distance.
+*   **Wave function $\psi_{100}(r)$**: Starts max at $r=0$, decays exponentially ($e^{-r/a_0}$).
+*   **Radial Probability Density $P(r) = 4\pi r^2 |\psi|^2$**: Starts at 0 (due to $r^2$), peaks at Bohr radius $a_0$, then decays.
 
 ---
 
 ## CL24: Quantum Free Electron Theory
 
-1. Give the basic ideas of quantum free electron theory of metals.
-2. Explain the (energy) distribution of free electrons at 0K based on the quantum free electron theory.
-3. Discuss the free electron theory of electronic conduction in metals. Comment on the effect of temperature and impurities on conductivity.
-4. State Mattheissen's rule and give an account of the nature of total resistivity both at high and low temperature.
-5. Describe how quantum free electron theory has been successful in overcoming the failures of classical free- electron theory.
-6. Elucidate the difference between classical free electro theory and quantum free electron theory.
+### 1. Describe the basic ideas of the free electron gas model.
+
+#### Answer
+1.  Valence electrons are free to move throughout the crystal lattice (constant potential $V=0$ inside).
+2.  Electrons are confined to the metal volume (Particle in a Box).
+3.  Electrons follow **Pauli Exclusion Principle** and **Fermi-Dirac Statistics** (not Maxwell-Boltzmann).
+4.  Potential due to ions is smeared out (uniform background).
+
+### 2. Explain the Fermi-Dirac distribution of electrons in a metal at 0K.
+
+#### Answer
+At $T=0$ K, the Fermi-Dirac function $f(E)$ is a step function:
+*   $f(E) = 1$ for $E < E_F$. (All states filled).
+*   $f(E) = 0$ for $E > E_F$. (All states empty).
+This means electrons fill energy levels from the bottom up to a maximum energy called the **Fermi Energy ($E_F$)**.
+
+### 3. Explain the electrical conduction in metals on the basis of the free electron gas model. Discuss the effect of temperature and impurity on the electrical conductivity.
+
+#### Answer
+Conduction occurs when an applied E-field shifts the Fermi sphere, giving a net drift velocity. Only electrons near $E_F$ can gain energy and move to empty states.
+*   **Temperature**: Vibrating ions (phonons) scatter electrons. $\rho \propto T$. Conductivity decreases as T increases.
+*   **Impurity**: Impurities disrupt periodic potential, causing scattering. $\rho_{imp}$ is temperature independent (residual resistivity). Conductivity decreases with impurities.
+
+### 4. State Mattheisen's rule.
+
+#### Answer
+The total resistivity of a metal is the sum of the resistivity due to thermal scattering (phonons) and the resistivity due to impurity/defect scattering:
+$$ \rho_{total} = \rho_{thermal}(T) + \rho_{residual} $$
+
+### 5. Discuss the success of quantum free electron theory over classical free electron theory.
+
+#### Answer
+1.  **Specific Heat**: QFET predicts correct electronic specific heat $C_v \propto T$ (very small at room temp), whereas CFET predicted $3R/2$ (large), solving the specific heat anomaly.
+2.  **Conductivity vs T**: QFET correctly explains $\sigma \propto 1/T$ via phonon scattering (mean free path changes), whereas CFET struggled with $\sigma \propto 1/\sqrt{T}$.
+3.  **Wiedemann-Franz Law**: QFET gives a Lorenz number $L$ closer to experimental values.
+
+### 6. Distinguish between classical and quantum free electron theory.
+
+#### Answer
+| Classical | Quantum |
+| :--- | :--- |
+| Maxwell-Boltzmann stats | Fermi-Dirac stats |
+| Energy is continuous | Energy is quantized/discrete |
+| All free electrons contribute to specific heat | Only electrons near $E_F$ contribute |
+| $v_{thermal} \propto \sqrt{T}$ | $v_{Fermi}$ is huge and roughly const with T |
 
 ---
 
 ## CL25: Fermi Factor
 
-1. Discuss the variation of Fermi factor on temperature and consequent effect on probability of occupation of energy levels.
-2. Use the Fermi distribution function to obtain the value of Fd for E-EF = 0.01 eV at 200 K.
-3. Show that the probability of occupancy of an energy level ΔE below the Fermi level is the same as that of the probability of non-occupancy of an energy level ΔE above the Fermi level.
-4. At what temperature would the probability of occupancy of an energy state 0.01eV below the Fermi level be 0.95?
-5. Estimate the temperature at which there is 2% probability that a state with energy 0.4 eV above the Fermi energy level is occupied.
-6. Show that the density of states for conduction electron per unit volume of the metal.
-7. Calculate the number of states lying in an energy interval above the Fermi-level for a crystal of unit volume with energy.
+### 1. Discuss the variation of Fermi factor with temperature.
+
+#### Answer
+*   **T = 0 K**: Sharp step function. 1 below $E_F$, 0 above.
+*   **T > 0 K**: The step smears out. Probability decreases from 1 to 0 over a width of $\approx kT$ around $E_F$. At $E=E_F$, $f(E)=0.5$. Electrons are thermally excited from just below $E_F$ to just above.
+
+### 2. Evaluate the Fermi function for an energy kT above the Fermi energy.
+
+#### Answer
+Let $E = E_F + kT$.
+$f(E) = \frac{1}{1 + e^{(E-E_F)/kT}} = \frac{1}{1 + e^{kT/kT}} = \frac{1}{1 + e^1} \approx \frac{1}{1 + 2.718} \approx \frac{1}{3.718} \approx 0.27$.
+
+### 3. Show that the probability of occupancy for an energy level $\Delta E$ above the Fermi level is equal to the probability of vacancy for an energy level $\Delta E$ below the Fermi level.
+
+#### Answer
+Occupancy at $E_F + \Delta E$:
+$f(E_F+\Delta E) = \frac{1}{1+e^{\Delta E/kT}}$.
+Occupancy at $E_F - \Delta E$:
+$f(E_F-\Delta E) = \frac{1}{1+e^{-\Delta E/kT}} = \frac{e^{\Delta E/kT}}{e^{\Delta E/kT}+1}$.
+Vacancy (Hole prob) at $E_F - \Delta E$:
+$1 - f(E_F-\Delta E) = 1 - \frac{e^{\Delta E/kT}}{e^{\Delta E/kT}+1} = \frac{1}{e^{\Delta E/kT}+1}$.
+Thus, $f(E_F+\Delta E) = 1 - f(E_F-\Delta E)$.
+
+### 4. At what temperature we have 5% probability that the electrons have an energy 0.01 eV above the Fermi energy?
+
+#### Answer
+Given $f(E) = 0.05$ at $E - E_F = 0.01$ eV.
+$0.05 = \frac{1}{e^{\Delta E/kT} + 1} \implies e^{\Delta E/kT} + 1 = 20 \implies e^{\Delta E/kT} = 19$.
+$\frac{\Delta E}{kT} = \ln(19) \approx 2.944$.
+$T = \frac{\Delta E}{k \times 2.944} = \frac{0.01 \times 1.6 \times 10^{-19}}{1.38 \times 10^{-23} \times 2.944} = \frac{1.6 \times 10^{-21}}{4.06 \times 10^{-23}} \approx 39.4$ K.
+
+### 5. At what temperature we have 2% probability that the electrons have an energy 0.4 eV above the Fermi energy?
+
+#### Answer
+$f = 0.02$. $\Delta E = 0.4$.
+$e^{\Delta E/kT} + 1 = 50 \implies e^{\Delta E/kT} = 49$.
+$T = \frac{0.4 \times 1.6 \times 10^{-19}}{1.38 \times 10^{-23} \times \ln(49)} = \frac{6.4 \times 10^{-20}}{1.38 \times 10^{-23} \times 3.89} \approx \frac{6400}{5.37} \approx 1191$ K.
+
+### 6. Write the expression for density of states for a particle in a box.
+
+#### Answer
+For a 3D metal:
+$$ g(E) dE = \frac{V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^{3/2} \sqrt{E} dE $$
+Or $Z(E) dE = \frac{4\pi V (2m)^{3/2}}{h^3} E^{1/2} dE$.
+
+### 7. Calculate number of electron states per unit volume in an energy interval of 0.02 eV above the Fermi energy for Sodium.
+(Assuming we need density of states $g(E_F)$).
+Given $E_F(Na) \approx 3.2$ eV.
+Number = $g(E_F) \times \Delta E$.
+(Calculation requires constants).
+Approximation: $N/V$ density is $\approx 2.6 \times 10^{28}$. But this asks for states in interval.
+Using $g(E_F) = \frac{3N}{2 E_F}$.
+Number density in range = $\frac{3n}{2 E_F} \Delta E$. ($n$ is electron density).
+For Na, $n \approx 2.65 \times 10^{28}$ m$^{-3}$.
+Result $\approx \frac{3(2.65 \times 10^{28})}{2(3.2)} (0.02) \approx 2.48 \times 10^{26}$ states/m$^3$.
 
 ---
 
 ## CL27: Fermi Energy
 
-1. Explain the concept of Fermi energy.
-2. Obtain an expression for Fermi energy using the concept of density of states.
-3. Determine the Fermi temperature and Fermi velocity in a metal with 18 × 10²⁸ free electrons per unit volume.
-4. Calculate the Fermi energy in eV for a metal at 0K, whose density is 10500 kg/m³, atomic weight is 107.9, and it has one conduction electron per atom.
-5. Using the expression of density of states, show that average energy of electrons in a metal at 0K is related to Fermi energy.
-6. A current of 5A can easily be carried in a copper wire of length 3m and resistance 20 mΩ at room temperature. Given: Density of copper = 8.95 × 10³kg/m³, mobility of charge carriers = 4.3 × 10⁻³ m²/Vs and Fermi energy = 7eV. Estimate and compare the values of: a) Drift velocity b) Thermal velocity c) Fermi velocity
+### 1. Explain the term Fermi Energy.
+
+#### Answer
+**Fermi Energy ($E_F$)** is the energy of the highest occupied quantum state in a system of fermions (electrons) at absolute zero temperature (0 K). It represents the maximum kinetic energy an electron can have at 0 K. It acts as the chemical potential of the electron gas.
+
+### 2. Derive the expression for the Fermi energy of a metal at 0K.
+
+#### Answer
+Total number of electrons $N = \int_0^{E_F} g(E) dE$.
+$N = \frac{V}{2\pi^2}(\frac{2m}{\hbar^2})^{3/2} \int_0^{E_F} E^{1/2} dE$.
+$N = \frac{V}{2\pi^2}(\frac{2m}{\hbar^2})^{3/2} [\frac{2}{3} E_F^{3/2}]$.
+Solve for $E_F$:
+$$ E_F = \frac{\hbar^2}{2m} \left( \frac{3\pi^2 N}{V} \right)^{2/3} $$
+
+### 3. Obtain an expression for the Fermi energy and Fermi velocity of a metal in terms of its density and atomic weight.
+
+#### Answer
+Electron density $n = N/V = \frac{\rho N_A \times \text{Valence}}{M_{atomic}}$.
+Substituting $n$ into $E_F$:
+$$ E_F = \frac{\hbar^2}{2m} (3\pi^2 n)^{2/3} $$
+Fermi Velocity $v_F$: From $\frac{1}{2} m v_F^2 = E_F \implies v_F = \sqrt{\frac{2E_F}{m}} = \frac{\hbar}{m}(3\pi^2 n)^{1/3}$.
+
+### 4. Calcium has a density of 1.55 × 10³ kg/m³. Calculate its Fermi energy (Atomic weight of Calcium is 40 and its valency is 2).
+
+#### Answer
+1.  Number density $n$:
+    $n = \frac{\text{Density} \times N_A \times \text{Valency}}{\text{Atomic Weight}} = \frac{1550 \times 6.022 \times 10^{23} \times 2}{40 \times 10^{-3} \text{ (kg/mol)}}$.
+    Wait, atomic weight 40 usually means 40 g/mol = 0.04 kg/mol.
+    $n = \frac{1550 \times 6.022 \times 10^{23} \times 2}{0.04} \approx 4.67 \times 10^{28} \text{ m}^{-3}$.
+2.  Fermi Energy:
+    $E_F = \frac{(1.054 \times 10^{-34})^2}{2(9.11 \times 10^{-31})} (3\pi^2 \times 4.67 \times 10^{28})^{2/3}$.
+    $E_F \approx (6.1 \times 10^{-39}) (1.38 \times 10^{30})^{2/3} \approx 6.1 \times 10^{-39} \times 1.24 \times 10^{20} \approx 7.56 \times 10^{-19}$ J.
+    $E_F \approx 4.7$ eV.
+
+### 5. Show that at absolute zero the average energy of the electron is ⅗ th of the Fermi energy.
+
+#### Answer
+Total Energy $U = \int_0^{E_F} E \cdot g(E) dE \propto \int_0^{E_F} E \cdot E^{1/2} dE = \int E^{3/2} dE$.
+$U \propto [\frac{2}{5} E^{5/2}]_0^{E_F} = \frac{2}{5} E_F^{5/2}$.
+Total Number $N \propto \int_0^{E_F} E^{1/2} dE = \frac{2}{3} E_F^{3/2}$.
+Average Energy $\bar{E} = \frac{U}{N} = \frac{\frac{2}{5} E_F^{5/2}}{\frac{2}{3} E_F^{3/2}} = \frac{3}{5} E_F$.
+
+### 6. A current of 5 A flows in a copper wire of cross section 10⁻⁴ m². Compare the drift velocity, thermal velocity and Fermi velocity of the electrons. (Fermi energy of Cu = 7 eV).
+
+#### Answer
+1.  **Drift Velocity ($v_d$)**:
+    $J = I/A = 5/10^{-4} = 5 \times 10^4$ A/m$^2$.
+    $v_d = J / ne$. ($n_{Cu} \approx 8.5 \times 10^{28}$).
+    $v_d \approx \frac{5 \times 10^4}{8.5 \times 10^{28} \times 1.6 \times 10^{-19}} \approx 3.7 \times 10^{-6}$ m/s (mm/s range).
+2.  **Thermal Velocity ($v_{th}$)**:
+    $\frac{1}{2} m v_{th}^2 = \frac{3}{2} kT$ (Classical approx for comparison, though mostly irrelevant for Fermi gas dynamics).
+    $v_{th} \approx \sqrt{3kT/m} \approx 1.1 \times 10^5$ m/s at 300K.
+3.  **Fermi Velocity ($v_F$)**:
+    $E_F = 7$ eV.
+    $v_F = \sqrt{2E_F/m} = \sqrt{\frac{2 \times 7 \times 1.6 \times 10^{-19}}{9.11 \times 10^{-31}}} \approx 1.57 \times 10^6$ m/s.
+    **Comparison**: $v_d \ll v_{th} < v_F$. Fermi velocity is the dominant speed of conducting electrons.
+
+---
+
+## CL27: Fermi Energy
+
+### 1. Explain the term Fermi Energy.
+
+#### Answer
+**Fermi Energy ($E_F$)** is the energy of the highest occupied quantum state in a system of fermions (electrons) at absolute zero temperature (0 K). It represents the maximum kinetic energy an electron can have at 0 K. It acts as the chemical potential of the electron gas.
+
+### 2. Derive the expression for the Fermi energy of a metal at 0K.
+
+#### Answer
+Total number of electrons $N = \int_0^{E_F} g(E) dE$.
+$N = \frac{V}{2\pi^2}(\frac{2m}{\hbar^2})^{3/2} \int_0^{E_F} E^{1/2} dE$.
+$N = \frac{V}{2\pi^2}(\frac{2m}{\hbar^2})^{3/2} [\frac{2}{3} E_F^{3/2}]$.
+Solve for $E_F$:
+$$ E_F = \frac{\hbar^2}{2m} \left( \frac{3\pi^2 N}{V} \right)^{2/3} $$
+
+### 3. Obtain an expression for the Fermi energy and Fermi velocity of a metal in terms of its density and atomic weight.
+
+#### Answer
+Electron density $n = N/V = \frac{\rho N_A \times \text{Valence}}{M_{atomic}}$.
+Substituting $n$ into $E_F$:
+$$ E_F = \frac{\hbar^2}{2m} (3\pi^2 n)^{2/3} $$
+Fermi Velocity $v_F$: From $\frac{1}{2} m v_F^2 = E_F \implies v_F = \sqrt{\frac{2E_F}{m}} = \frac{\hbar}{m}(3\pi^2 n)^{1/3}$.
+
+### 4. Calcium has a density of 1.55 × 10³ kg/m³. Calculate its Fermi energy (Atomic weight of Calcium is 40 and its valency is 2).
+
+#### Answer
+1.  Number density $n$:
+    $n = \frac{\text{Density} \times N_A \times \text{Valency}}{\text{Atomic Weight}} = \frac{1550 \times 6.022 \times 10^{23} \times 2}{40 \times 10^{-3} \text{ (kg/mol)}}$.
+    Wait, atomic weight 40 usually means 40 g/mol = 0.04 kg/mol.
+    $n = \frac{1550 \times 6.022 \times 10^{23} \times 2}{0.04} \approx 4.67 \times 10^{28} \text{ m}^{-3}$.
+2.  Fermi Energy:
+    $E_F = \frac{(1.054 \times 10^{-34})^2}{2(9.11 \times 10^{-31})} (3\pi^2 \times 4.67 \times 10^{28})^{2/3}$.
+    $E_F \approx (6.1 \times 10^{-39}) (1.38 \times 10^{30})^{2/3} \approx 6.1 \times 10^{-39} \times 1.24 \times 10^{20} \approx 7.56 \times 10^{-19}$ J.
+    $E_F \approx 4.7$ eV.
+
+### 5. Show that at absolute zero the average energy of the electron is ⅗ th of the Fermi energy.
+
+#### Answer
+Total Energy $U = \int_0^{E_F} E \cdot g(E) dE \propto \int_0^{E_F} E \cdot E^{1/2} dE = \int E^{3/2} dE$.
+$U \propto [\frac{2}{5} E^{5/2}]_0^{E_F} = \frac{2}{5} E_F^{5/2}$.
+Total Number $N \propto \int_0^{E_F} E^{1/2} dE = \frac{2}{3} E_F^{3/2}$.
+Average Energy $\bar{E} = \frac{U}{N} = \frac{\frac{2}{5} E_F^{5/2}}{\frac{2}{3} E_F^{3/2}} = \frac{3}{5} E_F$.
+
+### 6. A current of 5 A flows in a copper wire of cross section 10⁻⁴ m². Compare the drift velocity, thermal velocity and Fermi velocity of the electrons. (Fermi energy of Cu = 7 eV).
+
+#### Answer
+1.  **Drift Velocity ($v_d$)**:
+    $J = I/A = 5/10^{-4} = 5 \times 10^4$ A/m$^2$.
+    $v_d = J / ne$. ($n_{Cu} \approx 8.5 \times 10^{28}$).
+    $v_d \approx \frac{5 \times 10^4}{8.5 \times 10^{28} \times 1.6 \times 10^{-19}} \approx 3.7 \times 10^{-6}$ m/s (mm/s range).
+2.  **Thermal Velocity ($v_{th}$)**:
+    $\frac{1}{2} m v_{th}^2 = \frac{3}{2} kT$ (Classical approx for comparison, though mostly irrelevant for Fermi gas dynamics).
+    $v_{th} \approx \sqrt{3kT/m} \approx 1.1 \times 10^5$ m/s at 300K.
+3.  **Fermi Velocity ($v_F$)**:
+    $E_F = 7$ eV.
+    $v_F = \sqrt{2E_F/m} = \sqrt{\frac{2 \times 7 \times 1.6 \times 10^{-19}}{9.11 \times 10^{-31}}} \approx 1.57 \times 10^6$ m/s.
+    **Comparison**: $v_d \ll v_{th} < v_F$. Fermi velocity is the dominant speed of conducting electrons.
 
 ***
 
@@ -771,3 +1171,60 @@ The result is $g(E) = C \cdot E^{1/2}$, where $C = \frac{\pi}{2} (\frac{8m}{h^2}
 
 ***
 # [[../Physics|Back]]
+---
+## Assignment 2 Questions
+
+### 34. A particle of mass m=9.11×10^(-31) kg and energy E=4 eV approaches a rectangular potential barrier of height V_0=6 eV and width a=0.5 nm. (a) Calculate the penetration depth inside the barrier. (b) Estimate the transmission probability T.
+
+#### Answer
+Given: $m = 9.11 \times 10^{-31}$ kg, $E = 4$ eV, $V_0 = 6$ eV, width $a = 0.5$ nm $= 0.5 \times 10^{-9}$ m.
+The region is classically forbidden since $E < V_0$.
+
+**(a) Penetration Depth ($\delta$):**
+$\alpha = \sqrt{\frac{2m(V_0 - E)}{\hbar^2}}$.
+$V_0 - E = 2$ eV $= 3.204 \times 10^{-19}$ J.
+$\alpha = \frac{\sqrt{2 \times 9.11 \times 10^{-31} \times 3.204 \times 10^{-19}}}{1.054 \times 10^{-34}} \approx 7.25 \times 10^9 \text{ m}^{-1}$.
+Penetration depth $\delta = \frac{1}{\alpha} = \frac{1}{7.25 \times 10^9} \approx 0.138 \text{ nm}$.
+
+**(b) Transmission Probability (T):**
+For $\alpha a \approx 3.6 > 1$, use $T \approx 16 \frac{E}{V_0}(1-\frac{E}{V_0})e^{-2\alpha a}$.
+Pre-factor: $16(4/6)(1-4/6) \approx 3.55$.
+Exponential: $e^{-2(3.625)} \approx 7.1 \times 10^{-4}$.
+$T \approx 3.55 \times 7.1 \times 10^{-4} \approx 2.5 \times 10^{-3}$.
+**Result:** $\delta \approx 0.138$ nm; $T \approx 0.25\%$.
+
+### 35. Explain how the de Broglie wavelength of a particle changes when it encounters a rectangular potential step of height V_0, given that the particle's energy is E. Comment on the physical implications.
+
+#### Answer
+When a particle with energy $E$ encounters a potential step $V_0$:
+1.  **Region I ($V=0$):** $p_1 = \sqrt{2mE}$. $\lambda_1 = h/p_1$.
+2.  **Region II ($V=V_0$):** Kinetic energy decreases to $K' = E - V_0$ (assuming $E > V_0$).
+    Momentum decreases: $p_2 = \sqrt{2m(E-V_0)}$.
+    Wavelength increases: $\lambda_2 = \frac{h}{p_2} = \frac{h}{\sqrt{2m(E-V_0)}}$.
+**Conclusion:** $\lambda_2 > \lambda_1$.
+**Physical Implication:** The particle slows down (in a classical sense of reduced KE/momentum) as it climbs the potential hill, leading to a stretching of its wavelength. This change in wavelength leads to reflection and transmission phenomena at the boundary, similar to light changing speed and direction at an interface.
+
+### 36. A particle of mass m=9.11×10^(-31) kg is confined in a 1D infinite potential well of width a=0.5 nm. Calculate the energy (in eV) of the particle in the ground and the second excited state.
+
+#### Answer
+Energy levels: $E_n = \frac{n^2 h^2}{8ma^2}$.
+**Ground State ($n=1$):**
+$E_1 = \frac{(6.626 \times 10^{-34})^2}{8(9.11 \times 10^{-31})(0.5 \times 10^{-9})^2} \approx 2.41 \times 10^{-19} \text{ J}$.
+$E_1 \approx 1.50 \text{ eV}$.
+**Second Excited State ($n=3$):** (Note: $n=2$ is 1st excited state)
+$E_3 = 3^2 E_1 = 9 E_1$.
+$E_3 = 9 \times 1.50 = 13.5 \text{ eV}$.
+
+### 37. State any two physical consequences or applications of quantum tunneling.
+
+#### Answer
+1.  **Alpha Decay:** Radioactive nuclei emit alpha particles by tunneling through the Coulomb barrier, a process forbidden by classical mechanics.
+2.  **Tunnel Diode:** A semiconductor device (Esaki diode) that uses heavy doping to create a narrow depletion region, allowing significant electron tunneling. This results in negative differential resistance, useful for high-speed switching and microwave oscillation.
+
+### 38. Considering the spatial confinement of a quantum particle within a one-dimensional infinite potential domain extending from x=0 to x=a, enumerate the multiplicity of energetically indistinct eigenstates corresponding to quantized levels.
+
+#### Answer
+For a 1D infinite potential well, the energy levels are given by $E_n = \frac{n^2 h^2}{8ma^2}$ where $n = 1, 2, 3, \dots$.
+*   Since each energy level $E_n$ corresponds to a unique integer $n$ (state $\psi_n$), there is a **one-to-one correspondence** between energy and state.
+*   Therefore, the multiplicity of each energy level is **1**.
+*   The states are **non-degenerate**. There are no "energetically indistinct" eigenstates (distinct states with the same energy).

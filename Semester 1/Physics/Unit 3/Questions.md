@@ -478,135 +478,40 @@ Brillouin zones are fundamental concepts in solid-state physics that delineate r
 
 ---
 
-## Superconductivity
+## Hall Effect
 
-### 22. Define superconductivity. List and explain at least three fundamental properties of superconductors (e.g., zero resistance, perfect diamagnetism).
-
-#### Answer
-
-**Definition of Superconductivity:**
-Superconductivity is a quantum mechanical phenomenon observed in certain materials, called superconductors, when they are cooled below a characteristic critical temperature ($T_C$). Below $T_C$, these materials exhibit exactly zero electrical resistance (meaning current can flow indefinitely without energy loss) and completely expel magnetic fields from their interior (the Meissner effect).
-
-**Three Fundamental Properties of Superconductors:**
-
-1.  **Zero Electrical Resistance:**
-    *   **Explanation:** When cooled below its critical temperature ($T_C$), a superconductor loses all measurable electrical resistance. This means that if a current is induced in a closed loop of superconducting wire, it will continue to flow indefinitely without any applied voltage source or energy dissipation. Experiments have shown persistent currents flowing for years with no detectable decay. This property is due to electrons forming "Cooper pairs" that move coherently through the lattice without scattering, as explained by the BCS theory.
-    *   **Significance:** Allows for extremely efficient energy storage and transmission (though practical challenges remain). Crucial for high-field electromagnets.
-
-2.  **Perfect Diamagnetism (Meissner Effect):**
-    *   **Explanation:** When a superconductor is cooled below its critical temperature in the presence of an external magnetic field, it actively expels all magnetic field lines from its interior. This expulsion is called the Meissner effect. Unlike a perfect conductor (which would merely "trap" the flux already present), a superconductor actively pushes out pre-existing magnetic fields. This complete expulsion results in a net magnetization ($M$) that perfectly opposes the applied magnetic field ($H$), leading to a magnetic susceptibility $\chi_m = -1$ and relative permeability $\mu_r = 0$.
-    *   **Significance:** The Meissner effect is a defining characteristic of superconductivity, distinguishing it from merely perfect conductivity. It is responsible for magnetic levitation phenomena observed with superconductors.
-
-3.  **Existence of a Critical Temperature ($T_C$):**
-    *   **Explanation:** Superconductivity is not a universal property of all materials, nor does it occur at all temperatures. Each superconducting material has a specific critical temperature ($T_C$) below which it transitions from its normal conducting state to the superconducting state. Above $T_C$, the material behaves as a normal conductor (or semiconductor/insulator). This critical temperature can range from fractions of a Kelvin to over 130 K for high-temperature superconductors.
-    *   **Significance:** $T_C$ is a key parameter that dictates the operating conditions and feasibility of superconducting applications. Higher $T_C$ values mean less expensive and simpler cooling requirements (e.g., liquid nitrogen instead of liquid helium).
-
-**(Additional Property: Critical Magnetic Field ($H_C$))**
-*   **Explanation:** Superconductivity can be destroyed not only by increasing the temperature above $T_C$ but also by applying a magnetic field stronger than a certain value called the critical magnetic field ($H_C$). At a given temperature below $T_C$, if the external magnetic field exceeds $H_C(T)$, the material reverts to its normal, resistive state. $H_C$ typically decreases as temperature approaches $T_C$.
-*   **Significance:** Limits the maximum magnetic field that can be generated or screened by a superconductor. For many applications, high critical fields are desired.
-
-### 23. Describe three practical applications of superconductors in engineering or technology. For each application, briefly explain how superconductivity enables its function.
+### 22. Explain the Hall effect. Draw a schematic diagram of the experimental setup. Derive the expression for Hall voltage and discuss its applications in measuring carrier concentration.
 
 #### Answer
+**Hall Effect:** When a magnetic field ($B$) is applied perpendicular to a current-carrying conductor ($I$), a voltage (Hall voltage, $V_H$) is developed across the conductor perpendicular to both current and field.
+**Derivation:**
+Lorentz force $F_m = q(v_d \times B)$ deflects carriers.
+Charges accumulate, creating electric field $E_H$.
+Equilibrium: $F_e = F_m \implies qE_H = qv_dB \implies E_H = v_dB$.
+$V_H = E_H d$ (width). Current density $J = nqv_d$.
+$V_H = \frac{J}{nq} B d = \frac{IB}{nqt}$ (where $t$ is thickness).
+Hall Coefficient $R_H = \frac{1}{nq}$.
+**Applications:**
+1.  Determining carrier type (p-type vs n-type sign of voltage).
+2.  Calculating carrier concentration ($n = 1/R_H q$).
 
-1.  **Medical Imaging (MRI - Magnetic Resonance Imaging):**
-    *   **How Superconductivity Enables It:** MRI scanners use very strong and stable magnetic fields to align protons in the body's water molecules. These fields are generated by **superconducting electromagnets**. The zero electrical resistance of the superconducting coils allows them to carry extremely large currents for extended periods without dissipating energy as heat, producing powerful and consistent magnetic fields (typically 1.5 to 3 Tesla or more) necessary for high-resolution imaging. This eliminates the need for continuous power input to maintain the field once it's established, saving energy and providing field stability.
-
-2.  **Magnetic Levitation (Maglev Trains):**
-    *   **How Superconductivity Enables It:** Maglev trains use superconducting magnets on the train within the tracks to generate strong magnetic fields. The **Meissner effect** (perfect diamagnetism) of superconductors in the track or the repulsive force between strong superconducting magnets and normal conductors induces eddy currents, lifting the train above the guideway. The zero resistance also allows for powerful electromagnets for propulsion without energy loss. This virtually eliminates friction with the track, enabling trains to reach very high speeds (over 600 km/h) with high energy efficiency.
-
-3.  **High-Sensitivity Detection (SQUIDs - Superconducting Quantum Interference Devices):**
-    *   **How Superconductivity Enables It:** SQUIDs are among the most sensitive detectors of magnetic flux available. They exploit the quantum mechanical properties of superconductors, specifically the **Josephson effect** (tunneling of Cooper pairs through a thin insulating barrier between two superconductors) and **magnetic flux quantization**. The extreme sensitivity (capable of detecting magnetic fields many orders of magnitude weaker than the Earth's magnetic field) arises from these quantum phenomena.
-    *   **Applications:** Used in fields requiring ultra-low magnetic field measurements, such as:
-        *   **Biomagnetism (MEG/MCG):** Measuring faint magnetic fields produced by brain (magnetoencephalography) or heart (magnetocardiography) activity.
-        *   **Geophysics:** Detecting subtle magnetic anomalies in the Earth's crust.
-        *   **Materials Science:** Characterizing magnetic properties of novel materials.
-
-### 24. State and explain the Meissner effect. Illustrate its significance in distinguishing superconductors from perfect conductors.
+### 23. Briefly explain the quantum Hall effect. State its key features and significance in condensed matter physics.
 
 #### Answer
+**Quantum Hall Effect (QHE):**
+Observed in 2D electron systems (like MOSFETs) at low temperatures and strong magnetic fields. The Hall conductance $\sigma_{xy}$ is quantized in integer multiples of the fundamental constant $e^2/h$.
+**Features:**
+*   Hall resistance plateaus: $R_H = \frac{h}{e^2 \nu}$ where $\nu$ is an integer (Integer QHE).
+*   Precision: The quantization is extremely precise, independent of material details.
+**Significance:**
+*   Used to define the standard of electrical resistance (Klitzing constant).
+*   Demonstrates macroscopic quantum phenomena and topological states of matter.
 
-**State of Meissner Effect:**
-The Meissner effect states that when a material transitions into the superconducting state upon cooling below its critical temperature ($T_C$) in the presence of an external magnetic field, it **expels all magnetic field lines from its interior**. This results in the complete cancellation of the magnetic field inside the superconductor ($B=0$).
-
-**Explanation:**
-Imagine placing a normal conductor in a magnetic field and then cooling it. If it were merely a perfect electrical conductor (zero resistance), it would trap any magnetic flux already present within its bulk as eddy currents would be set up to oppose changes in flux, but these currents wouldn't decay. However, a superconductor does something more profound: it actively pushes out the magnetic field that *was* already inside it. This means the superconductor behaves as a **perfect diamagnet**, effectively generating an internal magnetization that completely cancels the applied external field. This expulsion of flux is an active thermodynamic process, not just a consequence of infinite conductivity.
-
-**Significance in Distinguishing Superconductors from Perfect Conductor(s):**
-The Meissner effect is crucial because it is a **defining characteristic** of superconductors, distinguishing them from a hypothetical "perfect conductor" that would only possess zero electrical resistance.
-*   **Perfect Conductor (Hypothetical):** If a normal conductor were cooled to zero resistance in a magnetic field, the magnetic flux lines initially threading through it would become "frozen in" (trapped) due to Lenz's law preventing any change in flux. The material would not expel existing fields.
-*   **Superconductor (Actual):** A superconductor, however, actively expels the magnetic flux as it passes below $T_C$. This implies that the superconducting state is fundamentally different from a normal conductor with zero resistance; it's a distinct thermodynamic phase that requires $B=0$ in its interior (for Type I superconductors, or partial expulsion for Type II). This perfect diamagnetism is what allows for striking phenomena like magnetic levitation.
-
-### 25. Differentiate between Type I and Type II superconductors. Explain their critical magnetic field behavior with the help of a schematic diagram.
-
-#### Answer
-
-**Differentiation between Type I and Type II Superconductors:**
-
-| Feature                | Type I Superconductors (Soft Superconductors)                                   | Type II Superconductors (Hard Superconductors)                                                                                          |
-| :--------------------- | :------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------- |
-| **Material Type**      | Typically pure metals (e.g., Al, Pb, Hg, Sn).                                   | Typically alloys or compounds, ceramic materials (e.g., NbTi, Nb3Sn, YBCO).                                                             |
-| **Meissner Effect**    | Exhibit a **complete Meissner effect**. Magnetic field is completely expelled up to $H_C$. | Exhibit a complete Meissner effect only up to $H_{C1}$. Partially expel field between $H_{C1}$ and $H_{C2}$ (mixed/vortex state).         |
-| **Critical Field(s)**  | Have a **single critical magnetic field ($H_C$)**.                             | Have **two critical magnetic fields**: a lower critical field ($H_{C1}$) and an upper critical field ($H_{C2}$).                       |
-| **Transition to Normal** | Abruptly transition from superconducting to normal state at $H_C$.              | Gradually transition through a "mixed" or "vortex" state between $H_{C1}$ and $H_{C2}$.                                                 |
-| **Critical Current**   | Low critical current density ($J_C$).                                          | High critical current density ($J_C$). Can carry much larger currents.                                                                  |
-| **Applications**       | Limited practical applications due to low $H_C$. Used in sensitive magnetometers (SQUIDs), fundamental research. | Widely used for high-field magnets (e.g., MRI, Maglev), power transmission, particle accelerators due to high $H_{C2}$ and $J_C$. |
-
-**Explanation of Critical Magnetic Field Behavior with Schematic Diagram:**
-
-**Description of Diagram:** This diagram shows the phase transition from superconducting to normal state as a function of external magnetic field (H) and temperature (T).
-*   **Type I Superconductors (Curve A):** A single smooth parabolic-like curve separates the superconducting phase (below the curve) from the normal phase (above the curve). Below this curve, the material is superconducting and exhibits zero resistance and the complete Meissner effect ($B=0$ inside). If either the temperature exceeds $T_C$ or the applied magnetic field exceeds $H_C(T)$, the material abruptly reverts to the normal (resistive) state.
-*   **Type II Superconductors (Curve B):** There are two critical field curves, $H_{C1}(T)$ and $H_{C2}(T)$.
-    *   **Meissner State (Region I, below $H_{C1}(T)$):** The material is in a fully superconducting state, with zero resistance and complete flux expulsion ($B=0$ inside), similar to Type I.
-    *   **Mixed/Vortex State (Region II, between $H_{C1}(T)$ and $H_{C2}(T)$):** Magnetic flux begins to penetrate the superconductor in quantized filaments called "vortices" or "fluxoids." These normal conducting regions are surrounded by supercurrents. The material still exhibits zero resistance to direct currents, but the Meissner effect is incomplete.
-    *   **Normal State (Region III, above $H_{C2}(T)$):** The material completely loses its superconducting properties and reverts to its normal, resistive state.
-The upper critical field $H_{C2}$ for Type II superconductors is typically much higher than the $H_C$ for Type I materials, making them suitable for high-field applications.
-
-![[https://qph.cf2.quoracdn.net/main-qimg-80dc48e7188b776a394b9f33333e680a-lq|Critical magnetic field behavior for Type I and Type II superconductors]]
-
-### 26. Define Cooper pairs. Explain their role in the microscopic theory of superconductivity (BCS theory).
-
-#### Answer
-
-**Definition of Cooper Pairs:**
-Cooper pairs are pairs of electrons that are weakly bound together within a superconductor, despite the electrostatic repulsion between them. This binding occurs via an indirect attractive interaction that is mediated by the collective vibrations of the crystal lattice, known as **phonons**. Each Cooper pair effectively consists of two electrons with opposite momenta and opposite spins ($\mathbf{k}\uparrow, -\mathbf{k}\downarrow$).
-
-**Role in the Microscopic Theory of Superconductivity (BCS Theory):**
-The BCS (Bardeen-Cooper-Schrieffer) theory (1957) provides a microscopic explanation for conventional superconductivity, and Cooper pairs are its central tenet:
-
-1.  **Phonon-Mediated Attraction:** The BCS theory proposes that when an electron moves through the crystal lattice, it slightly distorts the positively charged ion lattice locally. This distortion creates a region of enhanced positive charge (a "wake" of phonons). A second electron, following closely behind the first, is attracted to this region of positive charge. This indirect interaction, mediated by the exchange of a virtual phonon, overcomes the Coulomb repulsion between the two electrons, leading to a net attractive force between them.
-
-2.  **Bosonic Nature:** Although individual electrons are fermions (obeying Fermi-Dirac statistics and the Pauli Exclusion Principle), a Cooper pair, being a composite of two electrons, has an integer total spin (0 or 1). This means Cooper pairs effectively behave as **bosons**. Bosons are not restricted by the Pauli Exclusion Principle and can all occupy the same lowest-energy quantum state.
-
-3.  **Collective Coherent State (Superfluid):** At temperatures below the critical temperature ($T_C$), a macroscopic number of Cooper pairs condense into a single, highly ordered, ground quantum state. This forms a collective, coherent quantum fluid (a "superfluid"). All Cooper pairs in this state move together cohesively.
-
-4.  **Energy Gap and Zero Resistance:** To break a Cooper pair or to scatter it (which would lead to resistance), a minimum amount of energy is required. The BCS theory predicts the existence of an **energy gap ($2\Delta$)** above the ground state of the Cooper pairs. Below $T_C$, the thermal energy ($k_B T$) is less than this energy gap ($k_B T < 2\Delta$). Therefore, Cooper pairs cannot be easily broken or scattered by collisions with the lattice or impurities. This lack of scattering is what leads to the phenomenon of **zero electrical resistance**.
-
-In summary, Cooper pairs, formed through phonon-mediated attraction and behaving as bosons, condense into a coherent ground state below $T_C$. The energy required to perturb this state (the energy gap) ensures that the pairs can flow freely without scattering, thus leading to zero resistance.
-
-### 27. Briefly write about a Josephson junction and its application in a SQUID magnetometer.
-
-#### Answer
-
-**Josephson Junction (JJ):**
-A Josephson junction consists of two superconducting electrodes separated by a very thin (typically 1-2 nm) insulating barrier (e.g., oxide). Due to macroscopic quantum phenomena, Cooper pairs can tunnel through this insulating barrier even without an applied voltage. This tunneling creates a non-linear inductance and allows a supercurrent to flow up to a critical current ($I_c$) at zero voltage (DC Josephson effect), and an oscillating supercurrent when a constant voltage is applied (AC Josephson effect).
-
-**Application in a SQUID Magnetometer:**
-A **SQUID (Superconducting QUantum Interference Device)** is an extremely sensitive magnetometer that relies on one or two Josephson junctions to detect minuscule changes in magnetic flux.
-*   **Working Principle:** A SQUID typically consists of a superconducting ring interrupted by one (RF SQUID) or two (DC SQUID) Josephson junctions. The quantum mechanical phase of the superconducting wavefunction across each junction is sensitive to the magnetic flux ($\Phi$) enclosed by the superconducting loop. Due to quantum interference between Cooper pairs tunneling through the junctions, the critical current (for a DC SQUID) or the impedance (for an RF SQUID) of the loop varies periodically with the magnetic flux. Specifically, the electrical properties of the SQUID are periodic with the magnetic flux with a period of the magnetic flux quantum ($\Phi_0 = h/2e \approx 2.07 \times 10^{-15} \text{ Wb}$).
-*   **High Sensitivity:** This quantum interference effect makes SQUIDs extraordinarily sensitive to very weak magnetic fields (many orders of magnitude smaller than the Earth's magnetic field).
-*   **Magnetometer:** By coupling a detection coil to the SQUID, it can be used to measure extremely small external magnetic fields. This sensitivity is crucial for applications where very weak magnetic signals need to be detected.
-
-**Applications of SQUIDs:**
-*   **Biomagnetism:** For non-invasive measurements of magnetic fields produced by the brain (Magnetoencephalography, MEG) and heart (Magnetocardiography, MCG).
-*   **Geophysics:** Detecting subtle magnetic anomalies for mineral exploration or studying Earth's magnetic field.
-*   **Materials Science:** Characterizing magnetic properties of novel materials at very low magnetic fields.
-
-(Refer to [[#josephson-junctions-jj|Core Notes.md]] and [[#high-sensitivity-detection-squids|High-Sensitivity Detection (SQUIDs)]] for more detail).
+---
 
 ## Magnetic Materials
 
-### 28. Define and explain the following (a) magnetization M (b) magnetic field intensity or strength H, (c) magnetic flux density B (d) magnetic susceptibility χ. Classify magnetic materials based on susceptibility. (OR) write the properties of diamagnetic, paramagnetic, and ferromagnetic materials with suitable examples.
+### 24. Define and explain the following (a) magnetization M (b) magnetic field intensity or strength H, (c) magnetic flux density B (d) magnetic susceptibility χ. Classify magnetic materials based on susceptibility. (OR) write the properties of diamagnetic, paramagnetic, and ferromagnetic materials with suitable examples.
 
 #### Answer
 
@@ -668,7 +573,7 @@ A **SQUID (Superconducting QUantum Interference Device)** is an extremely sensit
     *   **Temperature Dependence:** Also has a Curie Temperature ($T_C$) above which it becomes paramagnetic.
     *   **Examples:** Ferrites (e.g., Fe$_3$O$_4$, NiFe$_2$O$_4$).
 
-### 29. Explain the microscopic origin of magnetism in solids. Discuss the role of electron spin and orbital motion.
+### 25. Explain the microscopic origin of magnetism in solids. Discuss the role of electron spin and orbital motion.
 
 #### Answer
 
@@ -687,7 +592,7 @@ The microscopic origin of magnetism in solids primarily stems from the quantum m
 **Total Atomic Magnetic Moment:**
 The total magnetic moment of an atom is the vector sum of orbital and spin magnetic moments of all its electrons. In solids, the crystalline environment can affect these moments. For example, in many solids, the orbital motion is "quenched" by interactions with the electric fields from neighboring atoms, reducing its contribution, and leaving the spin magnetic moment as the primary source of magnetism.
 
-### 30. Explain the concept of Larmor precession. Derive the expression for Larmor frequency and state its physical significance.
+### 26. Explain the concept of Larmor precession. Derive the expression for Larmor frequency and state its physical significance.
 
 #### Answer
 
@@ -719,7 +624,7 @@ Larmor precession describes the precessional motion of a magnetic dipole moment 
 *   **Spectroscopy (NMR/ESR):** Larmor precession is central to resonance techniques like Nuclear Magnetic Resonance (NMR) and Electron Spin Resonance (ESR). These techniques apply an oscillating electromagnetic field at the Larmor frequency. When the frequency matches, the moments resonate, allowing for precise measurements that reveal structural and chemical information about materials.
 *   **Measurement of Magnetic Fields:** The Larmor frequency directly depends on the magnetic field strength, making it a principle for measuring magnetic fields.
 
-### 31. Briefly explain diamagnetism in solids. State its characteristic features and give examples of diamagnetic materials.
+### 27. Briefly explain diamagnetism in solids. State its characteristic features and give examples of diamagnetic materials.
 
 #### Answer
 
@@ -742,7 +647,7 @@ Diamagnetism is a fundamental magnetic property exhibited by all materials, thou
 *   Noble gases (e.g., Argon, Neon)
 *   Superconductors (perfect diamagnets, $\chi_m = -1$)
 
-### 32. Briefly explain paramagnetism in solids. State its characteristic features and give examples of paramagnetic materials.
+### 28. Briefly explain paramagnetism in solids. State its characteristic features and give examples of paramagnetic materials.
 
 #### Answer
 
@@ -763,7 +668,7 @@ Paramagnetism is a form of magnetism exhibited by materials that contain atoms o
 *   Transition metal ions (e.g., Mn$^{2+}$, Fe$^{3+}$)
 *   Rare earth elements (e.g., Ytterbium)
 
-### 33. Present the quantum theory of paramagnetism. Derive the expression for magnetic susceptibility of paramagnetic materials.
+### 29. Present the quantum theory of paramagnetism. Derive the expression for magnetic susceptibility of paramagnetic materials.
 
 #### Answer
 
@@ -816,7 +721,7 @@ Where the Curie constant $C = \frac{N \mu^2 \mu_0}{k_B}$.
 
 This derivation shows that for paramagnetic materials, the susceptibility is directly proportional to the number of magnetic moments and inversely proportional to the absolute temperature. (Refer to [[#quantum-theory-of-paramagnetism|Core Notes.md]] for more detail).
 
-### 34. Briefly explain ferromagnetism in solids. State its characteristic features and give examples of ferromagnetic materials.
+### 30. Briefly explain ferromagnetism in solids. State its characteristic features and give examples of ferromagnetic materials.
 
 #### Answer
 
@@ -840,7 +745,7 @@ Ferromagnetism is the strongest form of magnetism, characterized by spontaneous 
 *   Gadolinium (Gd)
 *   Some alloys (e.g., Alnico, Permalloy)
 
-### 35. Explain the concept of Weiss molecular field in ferromagnetic materials.
+### 31. Explain the concept of Weiss molecular field in ferromagnetic materials.
 
 #### Answer
 
@@ -861,7 +766,7 @@ Weiss proposed that within a ferromagnetic material, there exists a very strong 
 
 **Importance:** While a classical approximation, the Weiss molecular field theory provided the first successful explanation for spontaneous magnetization, the existence of a Curie temperature, and the Curie-Weiss law. It correctly highlighted that a strong internal aligning force—later identified as the quantum exchange interaction—is necessary for ferromagnetism.
 
-### 36. Derive the Curie–Weiss law and discuss its importance.
+### 32. Derive the Curie–Weiss law and discuss its importance.
 
 #### Answer
 
@@ -898,7 +803,7 @@ The Curie-Weiss law describes the magnetic susceptibility of ferromagnetic mater
 *   **Yields Molecular Field Constant:** From the experimentally determined $T_C$ and $C_o$, the Weiss molecular field constant $\lambda$ can be estimated, providing insight into the strength of the internal aligning force (exchange interaction).
 *   **Foundation for Phase Transitions:** It was an early and vital model in the study of phase transitions, laying a groundwork for more sophisticated statistical mechanical theories of critical phenomena.
 
-**10. Write a note on ferromagnetic domains. Explain how domain formation minimizes the total energy of a ferromagnet.**
+### 33. Write a note on ferromagnetic domains. Explain how domain formation minimizes the total energy of a ferromagnet.**
 
 **Note on Ferromagnetic Domains:**
 Ferromagnetic materials are characterized by spontaneous magnetization, meaning they have a net magnetic moment even without an external applied field. However, macroscopic ferromagnetic samples can appear unmagnetized. This paradox is resolved by the concept of **magnetic domains**.
@@ -920,7 +825,7 @@ The formation of domains is a key mechanism by which a ferromagnetic material mi
 **Energy Minimization Process:**
 Initially, if a large sample were a single domain, it would have high magnetostatic energy. Splitting into multiple domains reduces this magnetostatic energy. However, this process incurs a cost in domain wall energy. The actual domain structure that forms (size, shape, and orientation of domains) is a dynamic equilibrium where the total energy (sum of exchange, magnetostatic, anisotropy, and domain wall energies) is at a minimum. The balance between reducing magnetostatic energy (by forming more domains) and increasing domain wall energy (by having more walls) dictates the optimal domain configuration.
 
-**11. Explain the hysteresis property of ferromagnetic materials. Draw and describe the hysteresis loop.**
+### 34. Explain the hysteresis property of ferromagnetic materials. Draw and describe the hysteresis loop.**
 
 **Explanation of Hysteresis Property:**
 Hysteresis (from Greek for "lagging behind") refers to the phenomenon where the magnetization ($M$) of a ferromagnetic material does not solely depend on the current value of the applied magnetic field ($H$), but also on its previous magnetic history. When the applied field is cycled (increased, decreased, and reversed), the magnetization traces a closed loop rather than a single curve. This "lagging" or delayed response is due to the irreversible movement of domain walls and irreversible domain rotation within the material.
@@ -941,7 +846,7 @@ Hysteresis (from Greek for "lagging behind") refers to the phenomenon where the 
 *   **Energy Loss:** The area enclosed by the hysteresis loop represents the energy dissipated as heat in the material during one complete cycle of magnetization and demagnetization.
 *   **Memory Effect:** Hysteresis gives ferromagnetic materials a "memory" of their magnetic history, making them suitable for data storage applications.
 
-**12. Differentiate between soft and hard magnetic materials (OR) classify magnetic materials based on hysteresis behavior.**
+### 35. Differentiate between soft and hard magnetic materials (OR) classify magnetic materials based on hysteresis behavior.**
 
 Based on their hysteresis behavior, particularly the shape of their hysteresis loop, ferromagnetic materials are classified into soft and hard magnetic materials.
 
@@ -958,7 +863,7 @@ Based on their hysteresis behavior, particularly the shape of their hysteresis l
 | **Applications**       | **Temporary magnets**, devices operating under AC fields. Used in transformer cores, electromagnets, magnetic shielding, recording heads, chokes. | **Permanent magnets**, devices requiring retained magnetism. Used in loudspeakers, motors, generators, magnetic clutches, magnetic recording media (hard drives). |
 | **Examples**           | Iron, Silicon steel, Permalloy, Ferrites.                     | Alnico, Neodymium magnets (NdFeB), Cobalt steel, Ceramic magnets.   |
 
-**13. Write a note on ferrimagnetism. Give examples and explain how it differs from ferromagnetism. (Neel’s law)**
+### 36. Write a note on ferrimagnetism. Give examples and explain how it differs from ferromagnetism. (Neel’s law)**
 
 **Note on Ferrimagnetism:**
 Ferrimagnetism is a type of magnetism exhibited by certain materials, typically ceramic oxides, that share characteristics of both ferromagnetism and antiferromagnetism. Like ferromagnets, ferrimagnetic materials exhibit **spontaneous magnetization** below a critical temperature (Néel temperature, $T_N$, though often referred to as Curie temperature, $T_C$, for these materials). However, the internal alignment of atomic magnetic moments is anti-parallel, similar to antiferromagnetism, but with a crucial difference.
@@ -985,7 +890,7 @@ While often referred to as $T_C$ for convenience (as they show macroscopic spont
     *   **Nickel ferrite (NiFe$_2$O$_4$):** Used in high-frequency applications.
 *   **Garnets:** Another class of ferrimagnetic materials.
 
-**14. Write a note on antiferromagnetism. Explain the spin arrangement and give examples. (Neel’s law)**
+### 37. Write a note on antiferromagnetism. Explain the spin arrangement and give examples. (Neel’s law)**
 
 **Note on Antiferromagnetism:**
 Antiferromagnetism is a form of magnetism where, below a characteristic temperature called the **Néel temperature ($T_N$)**, the magnetic moments of neighboring atoms or ions align in an anti-parallel fashion with **equal magnitudes**, resulting in a **zero net macroscopic magnetic moment**. Although individual atoms are magnetic, their moments perfectly cancel each other out over the bulk of the material.
@@ -1008,7 +913,7 @@ The key feature of antiferromagnetism is its specific spin arrangement. The crys
 *   **Cobalt Oxide (CoO)**
 *   Some rare earth compounds.
 
-**15. Define giant magnetoresistance. Explain its physical origin and mention at least two technological applications.**
+### 38. Define giant magnetoresistance. Explain its physical origin and mention at least two technological applications.**
 
 **Definition of Giant Magnetoresistance (GMR):**
 Giant Magnetoresistance (GMR) is a quantum mechanical phenomenon observed in multilayers of alternating ferromagnetic and non-magnetic thin films, where the electrical resistance of the structure changes significantly (often by tens of percent) depending on the relative orientation of the magnetization in the adjacent ferromagnetic layers.
@@ -1031,7 +936,7 @@ The GMR effect arises from **spin-dependent scattering** of conduction electrons
     *   **Automotive sensors:** Used in anti-lock braking systems (ABS), crankshaft position detection, etc.
     *   **Magnetic compasses:** Miniaturized electronic compasses.
 
-**16. Show that a solenoid with a current produces a magnetic field which resembles that of a bar magnet.**
+### 39. Show that a solenoid with a current produces a magnetic field which resembles that of a bar magnet.**
 
 The magnetic field produced by a current-carrying solenoid remarkably resembles that of a permanent bar magnet.
 
@@ -1055,7 +960,7 @@ A solenoid is essentially a long coil of wire wound helically. When current flow
 
 **Significance:** This striking resemblance highlights how electric currents are the fundamental source of all magnetism. It forms the basis of electromagnets, which are essential components in countless technologies, allowing for controllable magnetic fields generated solely by electrical means.
 
-**17. Write a note on how diamagnetism and paramagnetism were discussed in the classical theory of magnetism. List the failures of the classical theory of magnetism.**
+### 40. Write a note on how diamagnetism and paramagnetism were discussed in the classical theory of magnetism. List the failures of the classical theory of magnetism.**
 
 **Classical Theory Discussion of Diamagnetism and Paramagnetism:**
 
@@ -1080,7 +985,7 @@ Despite its successes in explaining the general features of diamagnetism and par
 
 (Refer to [[#classical-theory-of-magnetism|Core Notes.md]] for more detail on its ideas and limitations).
 
-**18. Discuss normal Zeeman effect using orbital angular momentum concept. Comment on how it helps in reducing the degeneracy in atoms.**
+### 41. Discuss normal Zeeman effect using orbital angular momentum concept. Comment on how it helps in reducing the degeneracy in atoms.**
 
 **Normal Zeeman Effect Using Orbital Angular Momentum Concept:**
 
@@ -1112,7 +1017,7 @@ The **Normal Zeeman Effect** describes the splitting of a single atomic spectral
 
 (Refer to [[#normal-zeeman-effect-using-orbital-angular-momentum|Core Notes.md]] for more detail).
 
-**19. Discuss the role of the magnetic moment operator in Electron Spin Resonance (ESR) and Nuclear Magnetic Resonance (NMR) spectroscopy.**
+### 42. Discuss the role of the magnetic moment operator in Electron Spin Resonance (ESR) and Nuclear Magnetic Resonance (NMR) spectroscopy.**
 
 In quantum mechanics, every measurable physical quantity (observable) is associated with an operator. The **magnetic moment operator ($\hat{\vec{\mu}}$)** is particularly important in spectroscopy techniques like ESR and NMR because it describes how particles with intrinsic magnetic moments interact with magnetic fields.
 
@@ -1142,7 +1047,7 @@ In quantum mechanics, every measurable physical quantity (observable) is associa
 
 (Refer to [[#role-of-the-magnetic-moment-operator-in-esr-and-nmr-spectroscopy|Core Notes.md]] for more detail).
 
-**20. List the Maxwell's equations which involve magnetic field and explain them.**
+### 43. List the Maxwell's equations which involve magnetic field and explain them.**
 
 Maxwell's equations are a set of four fundamental equations that describe how electric and magnetic fields are generated and interact. Two of these equations specifically involve magnetic fields:
 
@@ -1158,7 +1063,7 @@ Maxwell's equations are a set of four fundamental equations that describe how el
 
 (Refer to [[#maxwells-equations-involving-magnetic-field|Core Notes.md]] for more detail).
 
-**21. Discuss the ideas of the classical theory of magnetism and outline the limitations.**
+### 44. Discuss the ideas of the classical theory of magnetism and outline the limitations.**
 
 **Ideas of the Classical Theory of Magnetism:**
 
@@ -1182,7 +1087,7 @@ The classical theory ultimately proved inadequate in explaining many fundamental
 
 (Refer to [[#classical-theory-of-magnetism|Core Notes.md]] for more detail).
 
-**22. Give an outline of the Langevin's theory of paramagnetism.**
+### 45. Give an outline of the Langevin's theory of paramagnetism.**
 
 **Outline of Langevin's Theory of Paramagnetism:**
 
@@ -1214,7 +1119,7 @@ Langevin's theory successfully predicted the temperature dependence of paramagne
 
 (Refer to [[#paramagnetic-materials-quantum-treatment|Core Notes.md]] and [[#classical-theory-of-magnetism|Classical Theory of Magnetism]] for more detail).
 
-**23. What is the significance of Order -Disorder phase transitions? Give examples of first order and second order phase transitions.**
+### 46. What is the significance of Order -Disorder phase transitions? Give examples of first order and second order phase transitions.**
 
 A **phase transition** is a phenomenon where a material changes its physical state (or phase) due to changes in external conditions like temperature or pressure. **Order-disorder phase transitions** are a specific type where the arrangement of atoms, spins, or other microscopic elements within a material changes from an ordered, regular structure to a more random, disordered configuration (or vice versa).
 
@@ -1260,6 +1165,73 @@ Phase transitions are classified based on the behavior of thermodynamic quantiti
 (Refer to [[#phase-transitions|Core Notes.md]] for more detail).
 
 ---
+## Superconductivity
+
+### 47. Define superconductivity. List and explain at least three fundamental properties of superconductors.
+
+#### Answer
+*   **Definition**: Superconductivity is a state of matter occurring in certain materials below a characteristic critical temperature ($T_C$), characterized by **zero electrical resistance** and **perfect diamagnetism** (Meissner effect).
+*   **Properties**:
+    1.  **Zero Resistance**: Current flows without energy loss. Persistent currents can last indefinitely.
+    2.  **Meissner Effect**: Complete expulsion of magnetic flux from the interior ($B=0$).
+    3.  **Critical Temperature/Field**: Superconductivity exists only below a critical temperature ($T_C$) and critical magnetic field ($H_C$).
+
+### 48. Describe three practical applications of superconductors.
+
+#### Answer
+1.  **MRI**: Generating strong, stable magnetic fields for medical imaging.
+2.  **Maglev Trains**: Frictionless levitation using the Meissner effect or magnetic repulsion.
+3.  **SQUIDs**: Highly sensitive magnetic field sensors for magnetoencephalography and geophysics.
+
+### 49. State and explain the Meissner effect. Distinguish it from perfect conductivity.
+
+#### Answer
+*   **Meissner Effect**: The active expulsion of magnetic flux ($B=0$) when a superconductor is cooled below $T_C$.
+*   **Distinction**: A perfect conductor (zero resistance) would trap existing flux (Lenz's law), while a superconductor expels it. This proves superconductivity is a distinct thermodynamic state, not just infinite conductivity.
+
+### 50. Differentiate between Type I and Type II superconductors.
+
+#### Answer
+*   **Type I**: Complete Meissner effect until abrupt breakdown at $H_C$. Soft superconductors (Pb, Hg). Low critical field.
+*   **Type II**: Meissner state up to $H_{C1}$, Mixed state (vortices) between $H_{C1}$ and $H_{C2}$, Normal above $H_{C2}$. Hard superconductors (NbTi). High critical field, useful for magnets.
+
+### 51. Define Cooper pairs and explain their role in BCS theory.
+
+#### Answer
+*   **Cooper Pairs**: Pairs of electrons with opposite momenta and spin, weakly bound by phonon-mediated attraction.
+*   **BCS Theory**: At low T, Cooper pairs condense into a macroscopic ground state (bosonic behaviors). An energy gap ($2\Delta$) prevents scattering of pairs, leading to zero resistance.
+
+### 52. Briefly write about a Josephson junction and its application in a SQUID.
+
+#### Answer
+*   **Josephson Junction**: Two superconductors separated by a thin insulator. Allows tunneling of Cooper pairs (supercurrent) without voltage.
+*   **SQUID**: Uses interference of supercurrents in JJs to detect minute changes in magnetic flux. Used in brain mapping (MEG).
+
+### 53. Explain what a transmon qubit is. Describe its working principle and why it is preferred in superconducting quantum circuits.
+
+#### Answer
+**Transmon Qubit:**
+A type of superconducting charge qubit derived from the Cooper pair box. It consists of two superconducting islands connected by a Josephson junction (JJ) and shunted by a large capacitor.
+**Working Principle:**
+*   It operates as an anharmonic oscillator. The Josephson junction provides the non-linear inductance (anharmonicity), allowing specific control between energy levels $|0\rangle$ and $|1\rangle$.
+*   The large shunt capacitance reduces the sensitivity to charge noise.
+**Preference:**
+*   **Noise Immunity:** Significantly reduced sensitivity to charge noise compared to earlier charge qubits.
+*   **Anharmonicity:** Sufficient to address states individually with microwave pulses.
+*   Currently the leading design for superconducting quantum computers (e.g., IBM, Google).
+
+### 54. Explain the working principle of a Josephson junction. Discuss their significance in superconducting circuits.
+
+#### Answer
+**Josephson Junction:** Consists of two superconductors separated by a thin insulating barrier.
+**Principle:** Cooper pairs can tunnel through the barrier without resistance (Josephson tunneling).
+*   **DC Josephson Effect:** A DC supercurrent flows with zero voltage ($I = I_c \sin \phi$).
+*   **AC Josephson Effect:** If a DC voltage $V$ is applied, the current oscillates at frequency $f = 2eV/h$ (Emit microwaves).
+**Significance:**
+*   SQUIDs (Superconducting Quantum Interference Devices) for measuring minute magnetic fields (brain activity, geography).
+*   Standard (volt) definition.
+*   Building block of superconducting qubits (transmons).
+
 ## Problems based on CFET and QFET
 
 Refer to the [[Examples|Examples.md]] file for worked problems based on Classical and Quantum Free Electron Theory. Key examples include:
@@ -1279,143 +1251,601 @@ Additional practice questions for Unit 3 (Free Electron Theory, Band Theory, Mag
 
 ## CL23: Classical Free Electron Theory
 
-1. Bring out the salient features of Drude-Lorentz theory and mention the drawbacks of the classical free-electron theory.
-2. Define: (i) drift velocity (ii) relaxation time (iii) mean collision time (iv) mean free path and (v) mobility of electrons.
-3. Distinguish between drift velocity and thermal velocity of an electron.
-4. Give the microscopic form of Ohm's law and state whether the Ohm's law holds true at all temperatures.
-5. Using the free electron model derive the expression for electrical conductivity in a metal.
-6. The relaxation time of conduction electron in a metal is 3×10⁻¹⁴ s. If the density of electrons is 5.8×10²⁸ per m³, calculate the resistivity of the material and mobility of electrons.
+### 1. Bring out the salient features of Drude-Lorentz theory and mention the drawbacks of the classical free-electron theory.
+
+#### Answer
+**Features:**
+*   Valence electrons detached from atoms move freely like gas molecules (electron gas).
+*   collisions with positive ions cause resistance.
+*   Maxwell-Boltzmann statistics applies.
+**Drawbacks:**
+*   **Specific Heat Anomaly**: Predicted $C_v = \frac{3}{2}R$, inconsistent with experimental $C_v \approx 10^{-4}RT$.
+*   **Temperature Dependence of $\sigma$**: Predicted $\sigma \propto 1/\sqrt{T}$, experimentally $\sigma \propto 1/T$.
+*   **Hall Coefficient**: Could not explain positive Hall coefficients (holes).
+
+### 2. Define: (i) drift velocity (ii) relaxation time (iii) mean collision time (iv) mean free path and (v) mobility of electrons.
+
+#### Answer
+1.  **Drift Velocity ($v_d$)**: Average velocity acquired by electrons in the direction opposite to the applied electric field.
+2.  **Relaxation Time ($\tau$)**: Time taken for the drift velocity to decay to $1/e$ of its value after the field is removed.
+3.  **Mean Collision Time ($\tau_c$)**: Average time interval between two successive collisions. ($\tau \approx \tau_c$).
+4.  **Mean Free Path ($\lambda$)**: Average distance traveled by an electron between two successive collisions.
+5.  **Mobility ($\mu$)**: Magnitude of drift velocity per unit applied electric field ($\mu = v_d/E$).
+
+### 3. Distinguish between drift velocity and thermal velocity of an electron.
+
+#### Answer
+*   **Thermal Velocity**: Random motion due to temperature. High magnitude ($10^5$- $10^6$ m/s). Average vector sum is zero.
+*   **Drift Velocity**: Directed motion due to electric field. Very low magnitude ($10^{-3}$ - $10^{-4}$ m/s). Responsible for current.
+
+### 4. Give the microscopic form of Ohm's law and state whether the Ohm's law holds true at all temperatures.
+
+#### Answer
+Microscopic Ohm's Law: $\mathbf{J} = \sigma \mathbf{E}$.
+It holds true for metallic conductors over a wide range of temperatures, provided the physical state (phase) does not change and $\sigma$ is updated for that temperature. It fails for superconductors (infinite $\sigma$) and non-ohmic devices (semiconductors).
+
+### 5. Using the free electron model derive the expression for electrical conductivity in a metal.
+
+#### Answer
+Force $F = -eE$. Acceleration $a = -eE/m$.
+Drift velocity $v_d = a\tau = -\frac{e\tau}{m}E$.
+Current density $J = -ne v_d = -ne (-\frac{e\tau}{m}E) = \frac{ne^2\tau}{m}E$.
+Comparing with $J = \sigma E$:
+$$ \sigma = \frac{ne^2\tau}{m} $$
+
+### 6. The relaxation time of conduction electron in a metal is 3×10⁻¹⁴ s. If the density of electrons is 5.8×10²⁸ per m³, calculate the resistivity of the material and mobility of electrons.
+
+#### Answer
+$\tau = 3 \times 10^{-14}$ s, $n = 5.8 \times 10^{28}$ m$^{-3}$.
+Conductivity $\sigma = \frac{ne^2\tau}{m} = \frac{5.8 \times 10^{28} \times (1.6 \times 10^{-19})^2 \times 3 \times 10^{-14}}{9.11 \times 10^{-31}}$.
+$\sigma = \frac{5.8 \times 2.56 \times 3 \times 10^{-5}}{9.11 \times 10^{-31}} \approx \frac{44.5 \times 10^{-5}}{9.11 \times 10^{-31}} \approx 4.88 \times 10^{26}$ ?? Check powers.
+$28 - 38 - 14 = -24$. Denominator -31. Net $10^7$.
+$\sigma \approx 4.88 \times 10^7$ S/m.
+Resistivity $\rho = 1/\sigma \approx 2.05 \times 10^{-8} \, \Omega$m.
+Mobility $\mu = \frac{e\tau}{m} = \frac{1.6 \times 10^{-19} \times 3 \times 10^{-14}}{9.11 \times 10^{-31}} \approx \frac{4.8 \times 10^{-33}}{9.11 \times 10^{-31}} \approx 0.0053 \text{ m}^2/\text{Vs}$.
 
 ---
 
 ## CL26: Density of States
 
-7. Explain the concept of density of states and density of occupied states in metals.
-8. Derive an expression for the density of electron states in a metal.
-9. Calculate the density of states with energy between 4eV and 4.005eV in copper with Fermi energy of 7.02eV. (E = 4eV = 4×1.6×10⁻¹⁹ J and dE = 0.005×1.6×10⁻¹⁹ J, mass of electron = 9.1× 10⁻³¹ kg)
-10. Calculate the density of occupied states, for copper, at an energy level which is 0.026 eV above the Fermi level, at a temperature 300K. Assume Fermi energy of copper as 7eV.
-11. The energy states below EF in the range kT are emptied and probability of occupancy lies between 1 and 0.5. Justify.
-12. With suitable plot, explain the dependence of density of states on energy.
+### 7. Explain the concept of density of states and density of occupied states in metals.
+
+#### Answer
+*   **Density of States $g(E)$**: The number of available quantum energy states per unit volume per unit energy interval at energy $E$.
+*   **Density of Occupied States $n(E)$**: The number of states actually filled with electrons per unit volume per unit energy. $n(E) = g(E) \times f(E)$, where $f(E)$ is the Fermi-Dirac calculation.
+
+### 8. Derive an expression for the density of electron states in a metal.
+
+#### Answer
+Considering a particle in a 3D box of volume $V$: $E = \frac{h^2}{8m}(n^2/L^2)$.
+Number of states in sphere of radius $n$: $\frac{1}{8}(\frac{4}{3}\pi n^3)$. Convert $n$ to $E$. Include spin factor 2.
+Result: $g(E) = \frac{8\sqrt{2} \pi m^{3/2}}{h^3} E^{1/2}$.
+
+### 9. Calculate the density of states with energy between 4eV and 4.005eV in copper with Fermi energy of 7.02eV. (E = 4eV = 4×1.6×10⁻¹⁹ J and dE = 0.005×1.6×10⁻¹⁹ J, mass of electron = 9.1× 10⁻³¹ kg)
+
+#### Answer
+$g(E)dE = C \sqrt{E} dE$.
+Constant $C = \frac{8\sqrt{2}\pi m^{3/2}}{h^3} \approx 6.81 \times 10^{27}$ (in SI states/m$^3$/J$^{3/2}$... check units).
+Or just use formula.
+For Cu, $E_F \approx 7$ eV. Here $E=4$ eV.
+Ratio vs Fermi level density? $g(E)/g(E_F) = \sqrt{E/E_F} = \sqrt{4/7.02} \approx 0.75$.
+(Calculation needs explicit constants).
+
+### 10. Calculate the density of occupied states, for copper, at an energy level which is 0.026 eV above the Fermi level, at a temperature 300K. Assume Fermi energy of copper as 7eV.
+
+#### Answer
+$T=300$K $\implies kT \approx 0.026$ eV.
+Level is $E = E_F + 0.026$ eV $= E_F + kT$.
+Fermi factor $f(E) = \frac{1}{e^1 + 1} \approx 0.27$.
+Density of states $g(E) \approx g(E_F + small) \approx g(E_F)$.
+Occupied density $N(E) = g(E) f(E) \approx 0.27 \times g(E_F)$.
+
+### 11. The energy states below EF in the range kT are emptied and probability of occupancy lies between 1 and 0.5. Justify.
+
+#### Answer
+At $T>0$, thermal energy $kT$ excites electrons.
+For $E$ slightly below $E_F$ (range $E_F - kT$), electrons gain energy and move to $E > E_F$.
+Using Fermi function: At $E = E_F - kT$, exponent is $-1$. $f = 1/(e^{-1}+1) \approx 1/1.368 \approx 0.73$.
+So occupancy drops from 1 to ~0.73 to 0.5 (at $E_F$). States are partially emptied.
+
+### 12. With suitable plot, explain the dependence of density of states on energy.
+
+#### Answer
+Since $g(E) \propto \sqrt{E}$, the plot is a parabola starting from origin ($E=0, g=0$) and increasing.
+Dependence: Number of available states increases as square root of energy. Higher energy bands have more room for electrons.
 
 ---
 
 ## CL28: Temperature Dependence & Specific Heat
 
-13. Define effective number of electrons.
-14. The electrons near the Fermi level contribute to the conduction in metals. Explain.
-15. How does the specific heat of metals depend on temperature?
-16. Discuss the temperature dependence of conductivity of a metal based on the quantum free electron theory. How is the approach different from the classical method?
-17. Explain the contribution of free electrons to the specific heat of metals on the basis of quantum free electron theory.
+### 13. Define effective number of electrons.
+
+#### Answer
+The number of electrons per atom primarily responsible for transport properties or specific heat. In QFET, only the fraction $\approx T/T_F$ near the Fermi surface are "effective".
+
+### 14. The electrons near the Fermi level contribute to the conduction in metals. Explain.
+
+#### Answer
+Deep-lying electrons (energy $\ll E_F$) are surrounded by full states. They cannot gain small amounts of energy from an electric field because there are no empty states nearby to move into (Pauli exclusion). Only electrons within $\sim kT$ of $E_F$ have adjacent empty states available, so only they can be accelerated and contribute to conduction/specific heat.
+
+### 15. How does the specific heat of metals depend on temperature?
+
+#### Answer
+The electronic specific heat is proportional to $T$ ($C_{el} = \gamma T$).
+The lattice specific heat is proportional to $T^3$ (Debye law) at low T and constant ($3R$) at high T.
+Total specific heat at low T is $C = \gamma T + \beta T^3$.
+
+### 16. Discuss the temperature dependence of conductivity of a metal based on the quantum free electron theory. How is the approach different from the classical method?
+
+#### Answer
+QFET: $\sigma = \frac{ne^2\tau_F}{m}$. $v_F$ is constant. Temperature dependence comes strictly from $\tau_F$ (mean free path calculation). Phonon scattering gives $\tau \propto 1/T$, so $\sigma \propto 1/T$.
+Classical: $\sigma \propto 1/\sqrt{T}$ because it assumed $v_{thermal} \propto \sqrt{T}$. QFET corrects the velocity term to $v_F$.
+
+### 17. Explain the contribution of free electrons to the specific heat of metals on the basis of quantum free electron theory.
+
+#### Answer
+Since only a fraction $f \approx kT/E_F$ of electrons participate, the total internal energy is $U \approx N (kT/E_F) (kT)$.
+Specific heat $C_v = dU/dT \approx \frac{N k^2 T}{E_F}$.
+Exact derivation gives $C_{el} = \frac{\pi^2}{2} N k \frac{T}{T_F}$. This explains the very low value compared to classical prediction.
 
 ---
 
 ## CL29: Wiedemann-Franz Law
 
-18. Mention the expressions for electrical and thermal conductivities of a metal and hence obtain the Wiedemann-Franz law.
-19. State and explain Wiedemann–Franz law.
-20. Deduce the Lorenz number.
-21. What are the demerits of quantum free electron theory?
-22. Obtain the relation between thermal and electrical conductivities of a metal.
+### 18. Mention the expressions for electrical and thermal conductivities of a metal and hence obtain the Wiedemann-Franz law.
+
+#### Answer
+$\sigma = \frac{ne^2\tau}{m}$.
+$K = \frac{\pi^2 n k^2 T \tau}{3m}$.
+Ratio $\frac{K}{\sigma} = \frac{\pi^2 n k^2 T \tau / 3m}{n e^2 \tau / m} = \frac{\pi^2 k^2}{3 e^2} T$.
+$K/\sigma = L T$. This is the law.
+
+### 19. State and explain Wiedemann–Franz law.
+
+#### Answer
+Stipulates that the ratio of thermal conductivity ($K$) to electrical conductivity ($\sigma$) of a metal is directly proportional to its absolute temperature ($T$).
+$$ \frac{K}{\sigma} = L T $$
+where $L$ is the Lorenz number. Physically, it means good electrical conductors are also good thermal conductors because free electrons carry both charge and heat.
+
+### 20. Deduce the Lorenz number.
+
+#### Answer
+$L = \frac{\pi^2 k^2}{3 e^2}$.
+$L = \frac{\pi^2 (1.38 \times 10^{-23})^2}{3 (1.6 \times 10^{-19})^2} \approx 2.44 \times 10^{-8} \text{ W}\Omega \text{K}^{-2}$.
+
+### 21. What are the demerits of quantum free electron theory?
+
+#### Answer
+1.  **Hall Coefficient Significance**: Fails to distinctively explain why some metals (Zn, Cd) have positive Hall coefficient (requires Band theory/holes).
+2.  **Conductivity Classification**: Cannot explain why some solids are insulators or semiconductors (predicts all are conductors if electrons exist).
+3.  **Complex Band Shapes**: Assumes spherical Fermi surface, which isn't true for all metals.
+
+### 22. Obtain the relation between thermal and electrical conductivities of a metal.
+(Same as Q18). $K = L \sigma T$.
 
 ---
 
 ## CL30: Band Theory (Kronig-Penney)
 
-23. Explain the terms (i) Periodic potential (ii) Bloch function and (iii) Effective mass.
-24. Outline the Kronig Penny Model to describe the motion of electrons in a metal and discuss how the band structure evolves from this model.
-25. What is Bloch function and how is it different from the free electron wave function?
-26. How does the potential energy of an electron vary in an infinite one dimensional crystal and how this potential is represented in Kronig-Penny model?
-27. What is crystal momentum? Is it a conserved quantity?
-28. Describe the nature of potential experienced by valence electrons according to Kronig–Penny model. How does it affect the wave function of electron?
+### 23. Explain the terms (i) Periodic potential (ii) Bloch function and (iii) Effective mass.
+
+#### Answer
+1.  **Periodic Potential**: The potential $V(r)$ experienced by an electron in a crystal lattice is spatially periodic: $V(r+R) = V(r)$, due to the regular arrangement of positive ions.
+2.  **Bloch Function**: The wavefunction of an electron in a periodic potential. It is the product of a plane wave and a periodic function: $\psi_k(r) = u_k(r) e^{ik \cdot r}$, where $u_k(r+R) = u_k(r)$.
+3.  **Effective Mass ($m^*$)**: A parameter that mimics the mass of an electron responding to external forces while essentially ignoring the internal lattice forces. It incorporates the effect of the periodic potential into a "free" particle equation $F = m^* a$.
+
+### 24. Outline the Kronig Penny Model to describe the motion of electrons in a metal and discuss how the band structure evolves from this model.
+
+#### Answer
+*   **Model**: Approximates the periodic potential of a 1D crystal as a series of square wells (ions) and potential barriers (space between).
+*   **Solution**: Solving Schrödinger's equation with Bloch theorem leads to a transcendental condition: $P \frac{\sin \alpha a}{\alpha a} + \cos \alpha a = \cos ka$.
+*   **Band Structure**: Since $\cos ka$ must be between -1 and +1, only certain ranges of energy ($\alpha$) are allowed (Allowed Bands). The ranges where the condition fails are forbidden (Band Gaps). As interaction strength $P$ increases, gaps widen.
+
+### 25. What is Bloch function and how is it different from the free electron wave function?
+
+#### Answer
+*   **Free Electron**: $\psi(x) = A e^{ikx}$. Amplitude is constant everywhere.
+*   **Bloch Function**: $\psi(x) = u_k(x) e^{ikx}$. Amplitude $u_k(x)$ is modulated by the lattice periodicity.
+*   **Difference**: The Bloch function reflects the fact that the electron is not uniformly probable everywhere but feels the atomic cores.
+
+### 26. How does the potential energy of an electron vary in an infinite one dimensional crystal and how this potential is represented in Kronig-Penny model?
+
+#### Answer
+*   **Real Potential**: Varies smoothly, deep negative near nuclei (Coulomb attraction), rising between atoms.
+*   **Kronig-Penney Representation**: Simplified to a square wave. Regions of potential $V=0$ (or low) representing the atom vicinity? Actually, usually wells are atoms. KP model: Periodic array of rectangular barriers (width $b$, height $V_0$) and wells (width $a$, potential 0).
+
+### 27. What is crystal momentum? Is it a conserved quantity?
+
+#### Answer
+*   **Crystal Momentum**: $P_{crystal} = \hbar k$. It acts like momentum in electron dynamics (e.g. conservation laws in collisions).
+*   **Conservation**: It is not the true physical momentum $p = -i\hbar \nabla$ (which isn't conserved due to lattice force). Crystal momentum is conserved *modulo* a reciprocal lattice vector $G$ ($\hbar k' = \hbar k + \hbar G$) in lattice interactions. In effective mass approximation, it's treated as conserved.
+
+### 28. Describe the nature of potential experienced by valence electrons according to Kronig–Penny model. How does it affect the wave function of electron?
+
+#### Answer
+*   Nature: Periodic square barriers.
+*   Effect: The wavefunction solutions in the two regions (well and barrier) must match boundary conditions. This restricts the allowed values of $k$ and $E$, creating band gaps (forbidden energies) where no propagating wave solution exists.
 
 ---
 
 ## CL31: E-k Diagram & Band Gaps
 
-29. Discuss E-k diagram and give a qualitative picture of the origin of band gaps.
-30. Explain the E-k relationship for a free electron and relate it to the electron mass.
-31. Distinguish between conductors, insulators and semiconductors on the basis of band theory of solids.
-32. Draw the E-K graph for electrons in metal as per the band theory of solids and discuss the concept of the effective mass of electrons in the conduction band of the metal.
-33. With the help of E-K plot, show that materials can be classified into conductors, insulators and semiconductors.
+### 29. Discuss E-k diagram and give a qualitative picture of the origin of band gaps.
+
+#### Answer
+The E-k diagram plots Energy ($E$) vs wavenumber ($k$).
+*   **Origin of Gaps**: At Brillouin zone boundaries ($k = \pm n\pi/a$), the electron wave Bragg reflects off the lattice planes. The reflected wave interferes with the incident wave to form standing waves. One standing wave peaks at ion cores (lower energy), the other between cores (higher energy). The energy difference creates a gap where no traveling states exist.
+
+### 30. Explain the E-k relationship for a free electron and relate it to the electron mass.
+
+#### Answer
+For a free electron: $E = \frac{p^2}{2m} = \frac{\hbar^2 k^2}{2m}$.
+The graph is a parabola $E \propto k^2$.
+The curvature $\frac{d^2E}{dk^2} = \frac{\hbar^2}{m}$ is constant and inversely proportional to the mass $m$.
+
+### 31. Distinguish between conductors, insulators and semiconductors on the basis of band theory of solids.
+
+#### Answer
+*   **Conductors (Metals)**: Valence band is partially filled OR Valence and Conduction bands overlap. No energy gap to higher states. Electrons easily move.
+*   **Insulators**: Valence band is completely full. Conduction band is completely empty. Large band gap ($E_g > 3$ eV). Electrons cannot jump to CB.
+*   **Semiconductors**: Valence band full, Conduction band empty at 0K. Small band gap ($E_g \sim 1$ eV). Thermal excitation allows some conduction at room temp.
+
+### 32. Draw the E-K graph for electrons in metal as per the band theory of solids and discuss the concept of the effective mass of electrons in the conduction band of the metal.
+
+#### Answer
+*   **Graph**: Shows continuous bands separated by gaps at $k = n\pi/a$.
+*   **Effective Mass**: Near the bottom of a band, curvature is positive ($m^* > 0$, electron-like). Near the top of a band, curvature is negative ($m^* < 0$, hole-like).
+    $$ m^* = \hbar^2 / \left(\frac{d^2E}{dk^2}\right) $$
+    The interaction with the lattice modifies the inertial response.
+
+### 33. With the help of E-K plot, show that materials can be classified into conductors, insulators and semiconductors.
+
+#### Answer
+(Similar to Q31 but emphasizes the position of Fermi level).
+*   **Metal**: $E_F$ lies inside a band.
+*   **Insulator/Semi**: $E_F$ lies in the band gap. Width of gap determines type.
 
 ---
 
 ## CL32: Effective Mass
 
-34. What is meant by effective mass of electron?
-35. The "effective mass" of electrons depends on the curvature of the E-k plot. Explain this statement.
-36. "The mass of an electron in the periodic potential of a solid is different from the free electron mass" Is the statement true or false? Can the effective mass be positive and negative? If yes, what are the specific conditions for the same.
-37. In which condition for an electron its effective mass is equal to its true mass.
-38. Explain the concept of electrons and holes using the idea of effective mass.
-39. With the help of a neat labelled diagram, explain the curvature of E-k in conduction band and valence band.
+### 34. What is meant by effective mass of electron?
+
+#### Answer
+Effective mass ($m^*$) is the apparent mass of an electron in a crystal lattice when responding to an applied electric or magnetic field. It accounts for the internal forces from the periodic potential, allowing us to use semi-classical equations of motion.
+
+### 35. The "effective mass" of electrons depends on the curvature of the E-k plot. Explain this statement.
+
+#### Answer
+Group velocity $v_g = \frac{1}{\hbar}\frac{dE}{dk}$.
+Acceleration $a = \frac{dv_g}{dt} = \frac{1}{\hbar}\frac{d}{dt}\frac{dE}{dk} = \frac{1}{\hbar}\frac{d^2E}{dk^2}\frac{dk}{dt}$.
+Force $F = \hbar \frac{dk}{dt}$. So $a = \frac{1}{\hbar^2}\frac{d^2E}{dk^2} F$.
+Comparing to $F = ma \implies a = F/m$.
+We get $1/m^* = \frac{1}{\hbar^2}\frac{d^2E}{dk^2}$.
+Thus, effective mass is inversely proportional to the curvature ($\frac{d^2E}{dk^2}$) of the band. Sharp curvature = light mass; flat band = heavy mass.
+
+### 36. "The mass of an electron in the periodic potential of a solid is different from the free electron mass" Is the statement true or false? Can the effective mass be positive and negative? If yes, what are the specific conditions for the same.
+
+#### Answer
+*   **True**. $m^* \neq m_e$.
+*   **Pos/Neg**: Yes.
+*   **Conditions**:
+    *   **Positive**: Curvature is concave up (smile). Occurs at the bottom of a band.
+    *   **Negative**: Curvature is concave down (frown). Occurs at the top of a band (valence band edge). Negative mass implies electron accelerates opposite to force ( behaves like a positive hole).
+
+### 37. In which condition for an electron its effective mass is equal to its true mass.
+
+#### Answer
+When the potential is zero (Free electron) or constant. The E-k relation is perfectly parabolic ($E \propto k^2$) with standard curvature. In real solids, this happens only approximately for highly excited states far from band gaps or in specific materials with "free-electron-like" bands.
+
+### 38. Explain the concept of electrons and holes using the idea of effective mass.
+
+#### Answer
+*   Near the top of a filled valence band, $m^*$ is negative.
+*   The dynamic behavior of all electrons in a nearly full band is equivalent to the motion of a few positive charges ("holes") with **positive** effective mass ($m^*_h = -m^*_e$).
+*   A hole represents the absence of an electron.
+
+### 39. With the help of a neat labelled diagram, explain the curvature of E-k in conduction band and valence band.
+
+#### Answer
+*   **Conduction Band (Bottom)**: Curve opens upwards (positive curvature). $m^*$ is positive. Electrons act as negative carriers.
+*   **Valence Band (Top)**: Curve opens downwards (negative curvature). $m^*$ is negative for electrons. Conceptually replaced by holes with positive mass.
 
 ---
 
 ## CL33: Superconductivity
 
-40. Compare the dependence of resistance on temperature of a superconductor with that of a normal conductor.
-41. The DC resistance of a superconductor is practically zero. What about its AC resistance?
-42. What is meant by persistent current in a superconductor?
-43. Describe how cooper pairs are formed and explain the salient features of superconductivity.
-44. What are type I and type II superconductors?
-45. What is Meissner effect? Explain.
+### 40. Compare the dependence of resistance on temperature of a superconductor with that of a normal conductor.
+
+#### Answer
+*   **Normal Conductor**: Resistance decreases gradually with temperature ($R \sim T$ or $T^5$) but reaches a finite residual value at $T=0$ due to impurities.
+*   **Superconductor**: Resistance decreases with temperature until a critical temperature $T_c$, where it abruptly drops to exactly zero.
+
+### 41. The DC resistance of a superconductor is practically zero. What about its AC resistance?
+
+#### Answer
+AC resistance is **not zero**, though very small.
+Reason: Alternating current implies changing fields. The "normal" electrons (unpaired due to thermal excitation or finite frequency breaking pairs) are accelerated by the E-field and scatter, causing loss. Also, the inertia of Cooper pairs means they can't perfectly screen the E-field at non-zero frequencies. Loss increases with frequency ($R_{ac} \propto \omega^2$).
+
+### 42. What is meant by persistent current in a superconductor?
+
+#### Answer
+A current induced in a superconducting ring that flows undiminished for an indefinite period (years) without any external power source. This confirms the resistance is effectively zero ($< 10^{-25} \Omega$m).
+
+### 43. Describe how cooper pairs are formed and explain the salient features of superconductivity.
+
+#### Answer
+*   **Formation**: An electron moving through the lattice attracts positive ions (distortion/phonon), creating a region of excess positive charge. A second electron is attracted to this region. This attractive phonon-mediated interaction overcomes Coulomb repulsion, binding the electrons into a pair (Cooper pair).
+*   **Features**: Zero resistivity, Meissner effect (perfect diamagnetism), Critical field ($H_c$), Critical current ($J_c$).
+
+### 44. What are type I and type II superconductors?
+
+#### Answer
+*   **Type I (Soft)**: Exhibit complete Meissner effect until a critical field $H_c$, then abruptly become normal. (Pure metals like Pb, Hg). Low $H_c$.
+*   **Type II (Hard)**: Have two critical fields. Below $H_{c1}$: Meissner state. Between $H_{c1}$ and $H_{c2}$: Mixed/Vortex state (flux penetration). Above $H_{c2}$: Normal. (Alloys like NbTi). High $H_{c2}$ useful for magnets.
+
+### 45. What is Meissner effect? Explain.
+
+#### Answer
+The expulsion of magnetic flux lines from the interior of a superconductor when it is cooled below $T_c$ in a magnetic field. $B=0$ inside. It proves superconductivity is a thermodynamic state, not just perfect conductivity (which would trap flux, not expel it). This implies perfect diamagnetism ($\chi = -1$).
 
 ---
 
 ## CL46: Magnetic Materials
 
-46. The magnetic induction inside a medium is given by B = μ₀(H + M). Discuss this equation with basic principle.
-47. Define the following terms (i) Intensity of magnetization and (ii) relative permeability.
-48. Classify the magnetic materials based on susceptibility of the material.
-49. Explain magnetic flux density B, magnetic flux intensity H and magnetization M. How are they related to each other?
-50. A magnetic field of 2500 A/m is applied to a material which has a susceptibility of 800. Estimate (i) relative permeability (ii) intensity of magnetization and (iii) flux density.
+### 46. The magnetic induction inside a medium is given by B = μ₀(H + M). Discuss this equation with basic principle.
+
+#### Answer
+Total magnetic field $B$ is the sum of two contributions:
+1.  **External Field ($H$)**: The driving field produced by free currents (solenoid).
+2.  **Magnetization ($M$)**: The internal field produced by the alignment of atomic dipoles within the material.
+$\mu_0$ scales them to flux density. $B = \mu_0 H + \mu_0 M$.
+
+### 47. Define the following terms (i) Intensity of magnetization and (ii) relative permeability.
+
+#### Answer
+1.  **Intensity of Magnetization ($M$)**: The net magnetic dipole moment per unit volume of the material. $M = m_{net}/V$. Unit: A/m.
+2.  **Relative Permeability ($\mu_r$)**: The ratio of the permeability of the medium to that of free space. $\mu_r = \mu / \mu_0$. It indicates how much the material enhances the B-field.
+
+### 48. Classify the magnetic materials based on susceptibility of the material.
+
+#### Answer
+*   **Diamagnetic**: $\chi$ is small and negative ($\sim -10^{-5}$). Opposes field.
+*   **Paramagnetic**: $\chi$ is small and positive ($\sim 10^{-5}$). Weakly supports field.
+*   **Ferromagnetic**: $\chi$ is very large and positive ($\sim 1000$). Strongly supports field.
+
+### 49. Explain magnetic flux density B, magnetic flux intensity H and magnetization M. How are they related to each other?
+
+#### Answer
+*   $H$: Magnetizing force (cause).
+*   $M$: Material response (dipoles).
+*   $B$: Total effect (flux density).
+*   Relation: $B = \mu_0 (H + M)$ or $B = \mu H$.
+
+### 50. A magnetic field of 2500 A/m is applied to a material which has a susceptibility of 800. Estimate (i) relative permeability (ii) intensity of magnetization and (iii) flux density.
+
+#### Answer
+Given $H = 2500$ A/m, $\chi = 800$.
+i)  **Relative Permeability**: $\mu_r = 1 + \chi = 1 + 800 = 801$.
+ii) **Magnetization**: $M = \chi H = 800 \times 2500 = 2,000,000$ A/m $= 2 \times 10^6$ A/m.
+iii) **Flux Density**: $B = \mu_0 \mu_r H = (4\pi \times 10^{-7}) (801) (2500)$.
+    $B = 4\pi \times 10^{-7} \times 2,002,500 \approx 12.56 \times 0.2 \approx 2.516$ T.
 
 ---
 
 ## CL47: Orbital Magnetic Moment
 
-51. Obtain the expression for orbital magnetic moment of the electron and Explain Bohr magneton.
-52. Estimate the magnetic moment of an electron that revolves around a nucleus in an orbit of 0.53Å radius. If the frequency of revolution 6.6 × 10¹⁵ Hz.
-53. Why does a magnetic dipole due to orbital motion of the electron precess in a magnetic field?
-54. Evaluate the magnetic moment corresponding to one Bohr magneton.
-55. What is Larmor precession? A magnetic field of 2T is applied to an electron undergoing orbital motion. Calculate the precessional frequency.
+### 51. Obtain the expression for orbital magnetic moment of the electron and Explain Bohr magneton.
+
+#### Answer
+Electron charge $e$, mass $m$, in orbit radius $r$, velocity $v$.
+Current $I = e/T = ev/2\pi r$.
+Area $A = \pi r^2$.
+Magnetic Moment $\mu_l = IA = (ev/2\pi r)(\pi r^2) = evr/2$.
+Multiply/divide by $m$: $\mu_l = \frac{e}{2m} (mvr) = \frac{e}{2m} L$.
+**Bohr Magneton ($\mu_B$)**: The fundamental unit of atomic magnetism, corresponding to $L=\hbar$.
+$\mu_B = \frac{e\hbar}{2m} \approx 9.27 \times 10^{-24}$ J/T.
+
+### 52. Estimate the magnetic moment of an electron that revolves around a nucleus in an orbit of 0.53Å radius. If the frequency of revolution 6.6 × 10¹⁵ Hz.
+
+#### Answer
+$r = 0.53 \times 10^{-10}$ m. $f = 6.6 \times 10^{15}$ Hz.
+Current $I = ef = 1.6 \times 10^{-19} \times 6.6 \times 10^{15} \approx 1.056 \times 10^{-3}$ A.
+Area $A = \pi r^2 = 3.14 \times (0.53 \times 10^{-10})^2 \approx 8.82 \times 10^{-21}$ m$^2$.
+Moment $\mu = IA \approx 1.056 \times 10^{-3} \times 8.82 \times 10^{-21} \approx 9.31 \times 10^{-24}$ Am$^2$.
+(Matches $\mu_B \approx 9.27 \times 10^{-24}$ Am$^2$).
+
+### 53. Why does a magnetic dipole due to orbital motion of the electron precess in a magnetic field?
+
+#### Answer
+The external magnetic field $\mathbf{B}$ exerts a torque $\mathbf{\tau} = \mathbf{\mu} \times \mathbf{B}$ on the dipole. Since $\mathbf{\mu} \propto \mathbf{L}$, the torque changes the angular momentum ($\tau = d\mathbf{L}/dt$). The torque is perpendicular to $\mathbf{L}$, causing the tip of the $\mathbf{L}$ vector to trace a circle around $\mathbf{B}$ without changing magnitude (Precession).
+
+### 54. Evaluate the magnetic moment corresponding to one Bohr magneton.
+
+#### Answer
+$\mu_B = \frac{e\hbar}{2m_e}$.
+$e = 1.602 \times 10^{-19}$ C.
+$\hbar = 1.054 \times 10^{-34}$ Js.
+$m = 9.109 \times 10^{-31}$ kg.
+$\mu_B = \frac{1.602 \times 1.054 \times 10^{-53}}{2 \times 9.109 \times 10^{-31}} = \frac{1.688 \times 10^{-53}}{18.218 \times 10^{-31}} \approx 0.0927 \times 10^{-22}$.
+$\mu_B = 9.27 \times 10^{-24}$ J/T (or Am$^2$).
+
+### 55. What is Larmor precession? A magnetic field of 2T is applied to an electron undergoing orbital motion. Calculate the precessional frequency.
+
+#### Answer
+**Larmor Precession**: The rotation of the orbital plane/magnetic moment vector around the external magnetic field direction.
+**Frequency**: $\omega_L = \frac{eB}{2m}$.
+$f_L = \frac{\omega_L}{2\pi} = \frac{eB}{4\pi m}$.
+$f_L = \frac{1.6 \times 10^{-19} \times 2}{4 \times 3.14 \times 9.11 \times 10^{-31}} = \frac{3.2 \times 10^{-19}}{114.4 \times 10^{-31}}$.
+$f_L \approx 0.0279 \times 10^{12} = 2.79 \times 10^{10}$ Hz $\approx 28$ GHz.
 
 ---
 
 ## CL48: Classification of Magnetic Materials
 
-56. How are magnetic materials classified?
-57. Write the range of susceptibility values for each class of magnetic material.
-58. What happens, if diamagnetic, paramagnetic and ferromagnetic sample is suspended by thread and a bar magnet is slowly brought near each of the sample?
-59. Classify magnetic materials based on susceptibility dependence on temperature (χ versus T) and magnetization dependence on field (M versus H) plots.
-60. Elaborate on two tests which can differentiate a paramagnetic material from a diamagnetic material.
+### 56. How are magnetic materials classified?
+
+#### Answer
+Principally classified based on their response to an external magnetic field ($\chi$):
+1.  Diamagnetic ($\chi < 0$)
+2.  Paramagnetic ($\chi > 0$)
+3.  Ferromagnetic ($\chi \gg 0$)
+4.  Antiferromagnetic ($\chi > 0$, ordered)
+5.  Ferrimagnetic ($\chi \gg 0$, ordered)
+
+### 57. Write the range of susceptibility values for each class of magnetic material.
+
+#### Answer
+*   **Diamagnetic**: $-10^{-6}$ to $-10^{-3}$ (Small, Negative).
+*   **Paramagnetic**: $10^{-6}$ to $10^{-3}$ (Small, Positive).
+*   **Ferromagnetic**: $10^{2}$ to $10^{5}$ (Very Large, Positive).
+
+### 58. What happens, if diamagnetic, paramagnetic and ferromagnetic sample is suspended by thread and a bar magnet is slowly brought near each of the sample?
+
+#### Answer
+*   **Diamagnetic**: Turns perpendicular to the field (repelled). Moves to weaker field region.
+*   **Paramagnetic**: Turns parallel to the field (weakly attracted). Linearly aligns.
+*   **Ferromagnetic**: Turns parallel quickly and strongly attracted.
+
+### 59. Classify magnetic materials based on susceptibility dependence on temperature (χ versus T) and magnetization dependence on field (M versus H) plots.
+
+#### Answer
+*   **Diamagnetic**: $\chi$ independent of $T$. $M$ opposes $H$ linearly.
+*   **Paramagnetic**: $\chi \propto 1/T$ (Curie Law). $M$ along $H$ linearly (until saturation).
+*   **Ferromagnetic**: $\chi$ is complex (Hysteresis), decreases above $T_c$. $M$ nonlinear with $H$, shows saturation and hysteresis.
+
+### 60. Elaborate on two tests which can differentiate a paramagnetic material from a diamagnetic material.
+
+#### Answer
+1.  **Strong Magnet Test**: Place near a strong magnet. Paramagnetic is attracted. Diamagnetic is repelled.
+2.  **U-Tube (Quinke's) Method**: Liquid in U-tube. Apply field to one arm. Paramagnetic liquid rises ($ \chi > 0 $). Diamagnetic liquid is depressed ($ \chi < 0 $).
 
 ---
 
 ## CL49-50: Para & Ferromagnetism
 
-61. Obtain the expression saturation magnetization, if the magnetic interaction energy is much greater than the thermal energy.
-62. What does Brillouin function represent?
-63. Discuss the Brillouin function for magnetic materials for large values of j and when j=1/2. How does this lead to the expression for the paramagnetic susceptibility?
-64. How does magnetic susceptibility vary with temperature in case of paramagnetic materials?
-65. Describe Quantum theory of Paramagnetism.
-66. Discuss Weiss theory of spontaneous magnetization and express susceptibility in terms of the modified Curie-Weiss law.
-67. Explain how Curie law is modified by internal molecular field and mention the significance of Curie temperature.
+### 61. Obtain the expression saturation magnetization, if the magnetic interaction energy is much greater than the thermal energy.
+
+#### Answer
+If magnetic energy $\mu B \gg k_B T$, the thermal agitation is negligible. All atomic magnetic dipoles align perfectly with the external field.
+So, $\theta = 0$ for all dipoles. Cos$\theta = 1$.
+$M_s = N \mu$. (Total number of atoms $\times$ moment per atom).
+
+### 62. What does Brillouin function represent?
+
+#### Answer
+The Brillouin function $B_J(x)$ describes the dependence of the magnetization $M$ of a paramagnetic material on the magnetic field $H$ and temperature $T$, taking into account the quantization of angular momentum $J$.
+$$ M = N g \mu_B J B_J(x) \quad \text{where } x = \frac{g \mu_B J B}{k_B T} $$
+
+### 63. Discuss the Brillouin function for magnetic materials for large values of j and when j=1/2. How does this lead to the expression for the paramagnetic susceptibility?
+
+#### Answer
+*   **Large J ($J \to \infty$)**: $B_J(x) \to L(x)$ (Langevin function). Corresponding to classical limit.
+*   **Small x (High T)**: $B_J(x) \approx \frac{J+1}{3J} x$.
+    Substituting this into $M$:
+    $M \approx N g \mu_B J \frac{J+1}{3J} \frac{g \mu_B J B}{k_B T} = \frac{N g^2 \mu_B^2 J(J+1)}{3 k_B T} B$.
+    This yields Curie's Law $\chi = C/T$.
+
+### 64. How does magnetic susceptibility vary with temperature in case of paramagnetic materials?
+
+#### Answer
+Inversely proportional to absolute temperature.
+$\chi_m \propto \frac{1}{T}$.
+Curie's Law: $\chi_m = \frac{C}{T}$.
+
+### 65. Describe Quantum theory of Paramagnetism.
+
+#### Answer
+Replaces classical continuous dipoles with quantized angular momentum states ($J, m_J$).
+Energy levels $E = -m_J g \mu_B B$.
+Statistical summation leads to the Brillouin function.
+Successfully explains the magnitude of moments and the specific heat.
+
+### 66. Discuss Weiss theory of spontaneous magnetization and express susceptibility in terms of the modified Curie-Weiss law.
+
+#### Answer
+Weiss assumed an internal "molecular field" $H_m = \lambda M$ proportional to magnetization aligns spins.
+Effective field $H_{eff} = H + \lambda M$.
+Using Curie law for $H_{eff}$: $M = \frac{C}{T}(H + \lambda M)$.
+Solving for $\chi = M/H$:
+$$ \chi = \frac{C}{T - C\lambda} = \frac{C}{T - T_C} $$
+
+### 67. Explain how Curie law is modified by internal molecular field and mention the significance of Curie temperature.
+
+#### Answer
+*   **Modification**: The interaction term $T_C$ (Curie temperature) appears in the denominator ($T - T_C$), shifting the divergence from $T=0$ to $T=T_C$.
+*   **Significance**: $T_C$ marks the phase transition point. Below $T_C$, the molecular field is strong enough to cause spontaneous magnetization (Ferromagnetism). Above $T_C$, the material is Paramagnetic.
 
 ---
 
 ## CL51-52: Spin Ordering & GMR
 
-68. Elaborate on spin ordered magnetic materials and their classification.
-69. Discuss the temperature dependence of susceptibility for each type of magnetic material.
-70. Distinguish between soft and hard magnets with the help of hysteresis graphs.
-71. What are ferrites? In what respect is it superior to ferromagnetic materials?
-72. Explain the significance of Neel temperature.
-73. Discuss the parameters that distinguish Ferro, antiferro and Ferri-magnetic materials.
-74. What is Giant Magneto Resistance and mention its important applications.
-75. Briefly describe the structure of a GMR nano-device.
-76. Elaborate the significance of magnetization states of the magnetic layers towards giant magneto resistance.
-77. List various applications of ferromagnetic and anti-ferromagnetic materials.
+### 68. Elaborate on spin ordered magnetic materials and their classification.
+
+#### Answer
+Materials where exchange interactions create long-range order of magnetic moments.
+1.  **Ferromagnetic**: Parallel alignment ($\uparrow \uparrow \uparrow$). Large net M.
+2.  **Antiferromagnetic**: Antiparallel alignment of equal moments ($\uparrow \downarrow \uparrow \downarrow$). Zero net M.
+3.  **Ferrimagnetic**: Antiparallel alignment of unequal moments ($\Uparrow \downarrow \Uparrow$). Net M exists.
+
+### 69. Discuss the temperature dependence of susceptibility for each type of magnetic material.
+
+#### Answer
+*   **Paramagnetic**: $\chi = C/T$.
+*   **Ferromagnetic**: For $T > T_C$, $\chi = C/(T-T_C)$.
+*   **Antiferromagnetic**: For $T > T_N$, $\chi = C/(T+T_N)$. Susceptibility peaks at $T_N$.
+*   **Ferrimagnetic**: Complex, roughly $\chi \approx 1/(T \pm \theta)$.
+
+### 70. Distinguish between soft and hard magnets with the help of hysteresis graphs.
+
+#### Answer
+*   **Soft Magnets**: Narrow hysteresis loop. Low Coercivity $H_c$. Low Hysteresis loss. Easily magnetized/demagnetized. (e.g. Iron).
+*   **Hard Magnets**: Broad/Fat hysteresis loop. High Coercivity $H_c$. High Remanence $M_r$. Hard to demagnetize. (e.g. Steel, Alnico).
+
+### 71. What are ferrites? In what respect is it superior to ferromagnetic materials?
+
+#### Answer
+*   **Ferrites**: Ferrimagnetic ceramic oxides (e.g., $M \text{Fe}_2\text{O}_4$).
+*   **Superiority**: They are electrical insulators (high resistivity). This prevents Eddy currents, making them essential for high-frequency (RF/Microwave) cores where metallic ferromagnets would overheat and lose energy.
+
+### 72. Explain the significance of Neel temperature.
+
+#### Answer
+The critical temperature $T_N$ for an **Antiferromagnetic** material. Below $T_N$, the spins are ordered antiparallel. Above $T_N$, the order breaks down and the material becomes Paramagnetic.
+
+### 73. Discuss the parameters that distinguish Ferro, antiferro and Ferri-magnetic materials.
+
+#### Answer
+*   **Exchange Integral ($J_{ex}$)**: Positive for Ferro. Negative for Antiferro/Ferri.
+*   **Net Magnetization ($M$)**: Large for Ferro. Zero for Antiferro. Moderate for Ferri.
+*   **Spin Structure**: Parallel vs Antiparallel (Equal) vs Antiparallel (Unequal).
+
+### 74. What is Giant Magneto Resistance and mention its important applications.
+
+#### Answer
+The large change in electrical resistance observed in thin-film multilayers (FM/NM/FM) when the relative alignment of magnetizations changes from parallel (Low R) to antiparallel (High R).
+**Applications**: HDD Read heads, Magnetic RAM (MRAM), Biosensors.
+
+### 75. Briefly describe the structure of a GMR nano-device.
+
+#### Answer
+Usually a **Spin Valve** structure:
+1.  **Free Layer**: Ferromagnetic layer (soft) whose magnetization rotates with external field.
+2.  **Spacer**: Non-magnetic conductor (Cu) ~nm thick.
+3.  **Pinned Layer**: Ferromagnetic layer (hard) whose magnetization is fixed by an adjacent Antiferromagnet (Exchange bias).
+
+### 76. Elaborate the significance of magnetization states of the magnetic layers towards giant magneto resistance.
+
+#### Answer
+*   **Parallel State**: Spin-up electrons pass through both layers easily. This "short circuits" the device. Low Resistance.
+*   **Antiparallel State**: Spin-up electrons scatter in the second layer. Spin-down electrons scatter in the first layer. Both channels are blocked. High Resistance.
+The switching between these states allows digital 0/1 sensing.
+
+### 77. List various applications of ferromagnetic and anti-ferromagnetic materials.
+
+#### Answer
+*   **Ferromagnetic**: Transformers, Motors, Generators, Electromagnets, Permanent Magnets, Magnetic Shielding.
+*   **Antiferromagnetic**: Reference layers in Spin Valves (GMR heads), Magnetic storage (promising for speed/stability).
 
 ***
 
@@ -1494,3 +1924,78 @@ The relaxation time is approximately $3.82 \times 10^{-14}$ seconds.
 
 ---
 # [[../Physics|Back]]
+
+### 37. Write a note on ferromagnetic domains. Explain how domain formation minimizes the total energy of a ferromagnet.
+
+#### Answer
+**Ferromagnetic Domains:**
+Weiss proposed that a ferromagnetic material is divided into small regions called **domains**. within each domain, the magnetic moments of atoms are aligned in the same direction due to the strong exchange interaction (Weiss molecular field), resulting in spontaneous magnetization of the domain.
+*   In an unmagnetized sample, the domains are randomly oriented such that their net magnetic moment is zero.
+*   When an external field is applied, domains aligned with the field grow (domain wall displacement) or rotate (domain rotation), leading to net magnetization.
+
+**Energy Minimization:**
+Domain formation is a result of the competition between different energy terms to minimize total energy:
+1.  **Magnetostatic Energy:** Splitting into domains reduces the external magnetic field created by the magnet, lowering the magnetostatic potential energy. A single large domain would have high magnetostatic energy.
+2.  **Exchange Energy:** Wants spins to be parallel. Domain walls (where spins rotate) cost exchange energy.
+3.  **Anisotropy Energy:** Spins prefer specific crystallographic axes.
+The material forms domains until the reduction in magnetostatic energy is balanced by the cost of creating domain walls (exchange + anisotropy energy).
+
+### 38. Explain the hysteresis property of ferromagnetic materials. Draw and describe the hysteresis loop.
+
+#### Answer
+**Hysteresis** (meaning "lagging behind") is the phenomenon where the magnetization ($M$) or magnetic induction ($B$) of a ferromagnetic material depends not only on the current external magnetic field ($H$) but also on the history of its magnetization.
+**The Loop (B-H Curve):**
+1.  **Initial Magnetization:** Starting from 0, $B$ increases non-linearly with $H$ until saturation ($B_{sat}$).
+2.  **Retentivity ($B_r$):** When $H$ is reduced to 0, some magnetism remains ($B_r$). The domains do not fully relax.
+3.  **Coercivity ($H_c$):** To demagnetize the material ($B=0$), a reverse field $-H_c$ is required.
+4.  **Saturation in Reverse:** Increasing negative field leads to negative saturation.
+5.  **Closing the Loop:** Reversing $H$ again completes the loop.
+**Significance:** The area under the loop represents the energy dissipated as heat (hysteresis loss) per unit volume per cycle. Important for selecting materials for transformers (low loss) or permanent magnets (high retentivity/coercivity).
+
+### 39. Differentiate between soft and hard magnetic materials.
+
+#### Answer
+| Feature | Soft Magnetic Materials | Hard Magnetic Materials |
+| :--- | :--- | :--- |
+| **Coercivity** | Low (Easy to demagnetize) | High (Hard to demagnetize) |
+| **Retentivity** | Low | High |
+| **Hysteresis Loss** | Low (Loop area is small/thin) | High (Loop area is large/fat) |
+| **Permeability** | High | Low |
+| **Uses** | Transformers, electromagnets, motors (Iron, Permalloy) | Permanent magnets, data storage (Steel, Alnico, NdFeB) |
+
+### 40. Write a note on ferrimagnetism. Give examples and explain how it differs from ferromagnetism. (Neel’s law)
+
+#### Answer
+**Ferrimagnetism:**
+Materials where magnetic moments of adjacent ions align in **opposite directions** (anti-parallel) but are of **unequal magnitude**.
+*   Since the opposing moments do not cancel out completely, there is a net spontaneous magnetization (weaker than ferromagnetism).
+*   **Neel's Law:** Susceptibility obeys $\chi = \frac{C}{T \pm \theta}$ behavior but is complex. Above the Curie-Neel temperature ($T_{N}$), they become paramagnetic.
+*   **Examples:** Ferrites like Magnetite ($Fe_3O_4$), Nickel ferrite ($NiFe_2O_4$).
+*   **Difference:** Ferromagnets have parallel alignment of equal moments (strong net M). Ferrimagnets have anti-parallel unequal moments (weaker net M).
+
+### 41. Write a note on antiferromagnetism. Explain the spin arrangement and give examples. (Neel’s law)
+
+#### Answer
+**Antiferromagnetism:**
+Materials where magnetic moments of adjacent ions align in **opposite directions** (anti-parallel) and are of **equal magnitude**.
+*   The opposing moments cancel each other out completely, resulting in **zero net magnetization** ($M=0$) in the absence of an external field.
+*   **Spin Arrangement:** $\uparrow \downarrow \uparrow \downarrow$.
+*   **Neel Temperature ($T_N$):** Above $T_N$, thermal agitation overcomes the ordering, and the material becomes paramagnetic. Susceptibility $\chi = \frac{C}{T + \theta}$.
+*   **Examples:** Manganese Oxide (MnO), Chromium (Cr), Hematite ($\alpha-Fe_2O_3$).
+
+### 42. Define giant magnetoresistance (GMR). Explain its physical origin and mention at least two technological applications.
+
+#### Answer
+**Giant Magnetoresistance (GMR):**
+A quantum mechanical magnetoresistance effect observed in thin-film structures composed of alternating ferromagnetic and non-magnetic conductive layers. The electrical resistance changes significantly (drops) depending on whether the magnetization of adjacent ferromagnetic layers is parallel or anti-parallel.
+**Mechanism:**
+*   **Spin-dependent scattering:** Electrons with spin parallel to the magnetic domains pass through easily (low resistance). Electrons with anti-parallel spin scatter strongly (high resistance).
+*   Antiparallel alignment (induced by RKKY coupling or separate switching) $\to$ High Scattering $\to$ High Resistance.
+*   Parallel alignment (external field aligns both) $\to$ Low Scattering $\to$ Low Resistance.
+**Applications:**
+1.  **Hard Disk Drive (HDD) Read Heads:** High sensitivity allowed massive increase in storage density.
+2.  **Magnetic Sensors:** Biosensors, automotive position sensors.
+
+---
+
+

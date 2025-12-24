@@ -548,7 +548,7 @@ A **Light-Emitting Diode (LED)** is a semiconductor device that utilizes the pri
 4.  **Incoherent Light**: While LEDs emit light efficiently, it is **spontaneous emission**, which is generally incoherent and non-directional.
 
 **Description of Diagram (LED Energy Band Diagram with Forward Bias):** An energy band diagram showing a p-n junction under forward bias. Conduction and valence bands are shown for n-type and p-type regions. Under forward bias, the bands are tilted, and the depletion region narrows. Arrows depict electrons injecting from n-side into p-side, holes from p-side into n-side, and then recombining at the junction, emitting photons ($h\nu$).
-![[Attachments/led_band_diagram.png|LED Energy Band Diagram]]
+<!-- ![[Attachments/led_band_diagram.png|LED Energy Band Diagram]] -->
 
 ### 8.3 Semiconductor Laser (Diode Laser)
 
@@ -606,7 +606,7 @@ Part (a): Cross-section showing n-AlGaAs, p-GaAs (active layer), and p-AlGaAs la
 Part (b): Band diagram under forward bias, illustrating the conduction band and valence band edges forming quantum wells in the active GaAs layer, confining electrons and holes. Split quasi-Fermi levels are shown.
 Part (c): Refractive index profile, showing the higher refractive index of GaAs compared to AlGaAs, creating an optical waveguide.
 Part (d): Photon density profile, showing peak confinement within the GaAs active region.
-![[Attachments/double_heterostructure_laser.png|Double Heterostructure Laser]]
+<!-- ![[Attachments/double_heterostructure_laser.png|Double Heterostructure Laser]] -->
 
 #### 8.4.3 Why Creating White LEDs took a long time in the making?
 
@@ -975,7 +975,7 @@ The three phenomena are intimately related through crystal symmetry:
 
 *   **Ferroelectric Materials**: A subset of pyroelectric materials. They not only possess spontaneous polarization but also have the unique ability for the **direction of this spontaneous polarization to be reversed (switched)** by the application of an external electric field. This switching behavior leads to a **hysteresis loop** in their polarization versus electric field response. There are only 10 crystal classes that exhibit ferroelectricity (a subset of the pyroelectric classes).
 
-![[Attachments/crystal_classification_flowchart.png|Classification of Crystal Classes]]
+<!-- ![[Attachments/crystal_classification_flowchart.png|Classification of Crystal Classes]] -->
 
 **Summary of Interrelations:**
 
@@ -1020,7 +1020,7 @@ Many of the interesting dielectric properties discussed above are intrinsically 
     - **Below** : Transforms from orthorhombic to **rhombohedral symmetry**. The  ion shifts along a body diagonal, giving another ferroelectric phase.
 
 **Description of Diagram (BaTiO3 Phase Transitions and Properties):** A graph showing relative permittivity () as a function of temperature. It displays a sharp peak at the Curie temperature, where the material transitions from a high-symmetry (cubic, paraelectric) phase to lower-symmetry (tetragonal, orthorhombic, rhombohedral) ferroelectric phases upon cooling. Spontaneous polarization arises in the ferroelectric phases.  
-![[Attachments/batio3_phase_transitions.png|BaTiO3 Phase Transitions]]
+<!-- ![[Attachments/batio3_phase_transitions.png|BaTiO3 Phase Transitions]] -->
 
 ### 12.3 Hysteresis (P-E Loop)
 

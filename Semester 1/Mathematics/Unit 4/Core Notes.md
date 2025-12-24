@@ -90,4 +90,4 @@ When the order is half an odd integer ($p = n + 1/2$), Bessel functions reduce t
 *   **$J_{-1/2}(x) = \sqrt{\frac{2}{\pi x}} \cos x$**
 *   **$J_{3/2}(x) = \sqrt{\frac{2}{\pi x}} \left( \frac{\sin x}{x} - \cos x \right)$**
 
-*See [[Examples#example-3:-prove-j_1/2-identity|Example 3]] and [[Questions#10.-prove-that-$j_{-1/2}(x|Q&A Q10]]-=-\sqrt{\frac{2}{\pi-x}}-\cos-x$.).*
+*See  [[Questions#10.-prove-that-$j_{-1/2}(x|Q&A Q10]]*

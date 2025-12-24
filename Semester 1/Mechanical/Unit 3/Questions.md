@@ -28,14 +28,17 @@ dg-publish: true
 **4. Define the following casting terms with respect to a sand mould: cope, drag, pattern, and parting line.**
 *   **Answer**: **Cope** (upper flask), **Drag** (lower flask), **Pattern** (replica of final object with allowances), **Parting line** (dividing line between flasks/pattern halves). See [[Core Notes#221-moulding-box-and-pattern-media|Core Notes.md]].
 
-**5. Describe the functions of facing sand, moulding sand, and backing sand in the sand moulding procedure.**
-*   **Answer**: **Facing sand** (carbonaceous) provides good surface finish. **Moulding sand** (fresh silica, clay, moisture) makes the cavity. **Backing sand** (used, burnt sand) forms bulk of mould. See [[Core Notes#23-detailed-sand-moulding-procedure|Core Notes.md]].
-
 **6. Explain the roles of the pouring basin, sprue, runner, and gate in the gating system of a sand mould.**
 *   **Answer**: **Pouring basin** (initial pour), **Sprue** (vertical passage, flow control), **Runner** (horizontal passageways, flow regulation), **Gate** (entry point into mould cavity). See [[Core Notes#222-gating-and-feeding-system-components|Core Notes.md]].
 
 **7. What is a riser in casting, and why is it essential?**
 *   **Answer**: A **riser** is a molten metal reservoir that feeds liquid metal into the mould cavity to compensate for liquid shrinkage during solidification, preventing shrinkage cavities. See [[Core Notes#222-gating-and-feeding-system-components|Core Notes.md]].
+
+**5. Describe the functions of facing sand, moulding sand, and backing sand in the sand moulding procedure.**
+*   **Answer**: **Facing sand** (carbonaceous) provides good surface finish. **Moulding sand** (fresh silica, clay, moisture) makes the cavity. **Backing sand** (used, burnt sand) forms bulk of mould. See [[Core Notes#23-detailed-sand-moulding-procedure|Core Notes.md]].
+
+**15. Describe three key properties of moulding materials: refractoriness, permeability, and collapsibility.**
+*   **Answer**: **Refractoriness** (withstands high molten metal temps), **Permeability** (allows gases to escape), **Collapsibility** (breaks down after solidification for free contraction). See [[Core Notes#24-properties-of-moulding-materials-and-quality-control|Core Notes.md]].
 
 **8. Explain the concept of "Pattern Allowances" and state its purpose. List at least three types of pattern allowances.**
 *   **Answer**: Modifications to pattern dimensions to compensate for casting phenomena. Purpose: Ensure final product meets specifications. Types: **Shrinkage**, **Finish/Machining**, **Draft**, **Shake**, **Distortion** allowances. See [[Core Notes#25-pattern-allowances-correcting-for-process-imperfections|Core Notes.md]].
@@ -48,18 +51,6 @@ dg-publish: true
 
 **11. Describe the "Distortion Allowance" in pattern making. Why is it necessary, and how can it be implemented?**
 *   **Answer**: Pattern pre-deformation in the opposite direction of expected distortion. Necessary because solidified metal is weak and prone to warping, especially for complex or thin sections. Implemented via trial-and-error by distorting the pattern itself. See [[Core Notes#254-distortion-allowance|Core Notes.md]].
-
-**12. Differentiate between a "Solid or Single Piece Pattern" and a "Split Pattern," including their applications.**
-*   **Answer**: **Solid pattern** (single piece) for simple jobs, typically in drag (small-scale/prototype). **Split pattern** (two parts) for complex contours/depth, each half in cope and drag (easier withdrawal). See [[Core Notes#221-moulding-box-and-pattern-media|Core Notes.md]].
-
-**13. Describe "Cope and Drag Pattern" and "Match Plate Pattern." For what production scenarios are they typically used?**
-*   **Answer**: **Cope and Drag pattern** (halves on separate plates with gating) for heavy castings/continuous production. **Match Plate pattern** (halves and gating on single plate) for small, accurate, large-scale production. See [[Core Notes#221-moulding-box-and-pattern-media|Core Notes.md]]. *(Note: These definitions are implied from the OCR Q&A but not explicitly detailed in the core notes text provided. They would ideally be in a "Types of Patterns" subsection)*
-
-**14. Explain "Loose Piece Pattern" and "Sweep Pattern." Give an example for the application of a sweep pattern.**
-*   **Answer**: **Loose Piece pattern** (obstructing contour held loosely) for complex withdrawal (expensive, skilled). **Sweep pattern** (plane sweep generates axi-symmetrical shapes) for very large castings (e.g., bells in pit moulds). See [[Core Notes#221-moulding-box-and-pattern-media|Core Notes.md]]. *(Note: These definitions are implied from the OCR Q&A but not explicitly detailed in the core notes text provided. They would ideally be in a "Types of Patterns" subsection)*
-
-**15. Describe three key properties of moulding materials: refractoriness, permeability, and collapsibility.**
-*   **Answer**: **Refractoriness** (withstands high molten metal temps), **Permeability** (allows gases to escape), **Collapsibility** (breaks down after solidification for free contraction). See [[Core Notes#24-properties-of-moulding-materials-and-quality-control|Core Notes.md]].
 
 **16. Explain "blow holes" and "pin hole porosity" as gas defects in casting. What are their main causes?**
 *   **Answer**: **Blow holes** (internal/surface cavities) from trapped steam/gases (low permeability, insufficient venting). **Pin hole porosity** (small elongated holes) from dissolved hydrogen (high pouring temperature). See [[Core Notes#261-gas-defects|Core Notes.md]].
@@ -87,23 +78,11 @@ dg-publish: true
 
 ## 4. Metal Joining Processes: Welding and Allied Techniques
 
-**22. Describe the resistance welding process. Explain the principle of heat generation in resistance welding and state its formula.**
-*   **Answer**: Joining with heat and pressure, no filler/flux. Heat from electrical resistance at joint interface: $H=I^2Rt$. See [[Core Notes#412-welding-definition-and-methods|Core Notes.md]]. *(Note: Formula $H=I^2Rt$ is present in Q&A content but not explicitly in provided OCR section for resistance welding. However, it is an essential part of the answer, so it's good to include.)*
-
 **23. Explain the principle of Metal Inert Gas (MIG) welding. List its advantages and limitations.**
 *   **Answer**: Consumable wire electrode, arc shielded by inert gas/CO2. High deposition rate. Advantages: High speed, good quality, no slag. Limitations: Higher equipment cost, outdoor sensitivity. See [[Core Notes#441-metal-inert-gas-arc-welding-mig--gas-metal-arc-welding-gmaw|Core Notes.md]].
 
 **24. Explain the principle of Tungsten Inert Gas (TIG) welding. List its advantages and limitations.**
 *   **Answer**: Non-consumable tungsten electrode, arc shielded by inert gas. Filler added externally. Advantages: Smooth/sound welds, no flux, automatable. Limitations: High inert gas cost, slow speed for thick plates. See [[Core Notes#442-tungsten-inert-gas-tig-welding--gas-tungsten-arc-welding-gtaw|Core Notes.md]].
-
-**25. What is Laser Beam Welding (LBW)? Describe its principle and list its key characteristics.**
-*   **Answer**: Fusion welding using a highly concentrated laser beam as heat source. Principle: Intense laser energy melts and fuses joint. Characteristics: High power density, focused heat, narrow/deep welds, high welding rates. See [[Core Notes#412-welding-definition-and-methods|Core Notes.md]]. *(Note: LBW is not explicitly covered in the OCR notes but it's in the Q&A. I will add a full section for LBW.)*
-
-**26. Explain the concept of "Conduction Mode Welding" and "Keyhole Mode Welding" in Laser Beam Welding.**
-*   **Answer**: **Conduction mode** (lower power density): surface melting, shallow wide welds. **Keyhole mode** (higher power density): material vaporization, plasma keyhole, deep narrow welds. See [[Core Notes#412-welding-definition-and-methods|Core Notes.md]]. *(Note: These definitions are implied from the Q&A but would be placed into the added LBW section.)*
-
-**27. List five advantages and five disadvantages of Laser Beam Welding.**
-*   **Answer**: Advantages: High precision, minimal HAZ, high speed, deep/narrow welds, non-contact. Disadvantages: High equipment/maintenance cost, strict joint fit-up, limited penetration for thick materials, material sensitivity. See [[Core Notes#412-welding-definition-and-methods|Core Notes.md]]. *(Note: These are implied from the Q&A but would be placed into the added LBW section.)*
 
 **28. Describe "Cracks" and "Porosity" as common welding defects. What are their causes?**
 *   **Answer**: **Cracks** (discontinuities, hot/cold) from improper welding/solidification, high stress/cooling rate, wrong filler. **Porosity** (voids/holes) from gas entrapment (insufficient shielding, contamination). See [[Core Notes#45-welding-defects-and-integrity-compromise|Core Notes.md]].
@@ -113,5 +92,32 @@ dg-publish: true
 
 **30. List five advantages of brazing as a joining process.**
 *   **Answer**: Joins dissimilar metals, less preheating/distortion, faster speed, no spatter, little finishing, preserves base metal properties. See [[Core Notes#464-advantages-of-brazing|Core Notes.md]].
+
+---
+
+## Additional Questions
+
+### Additional Casting Questions
+**12. Differentiate between a "Solid or Single Piece Pattern" and a "Split Pattern," including their applications.**
+*   **Answer**: **Solid pattern** (single piece) for simple jobs, typically in drag (small-scale/prototype). **Split pattern** (two parts) for complex contours/depth, each half in cope and drag (easier withdrawal). See [[Core Notes#221-moulding-box-and-pattern-media|Core Notes.md]].
+
+**13. Describe "Cope and Drag Pattern" and "Match Plate Pattern." For what production scenarios are they typically used?**
+*   **Answer**: **Cope and Drag pattern** (halves on separate plates with gating) for heavy castings/continuous production. **Match Plate pattern** (halves and gating on single plate) for small, accurate, large-scale production. See [[Core Notes#221-moulding-box-and-pattern-media|Core Notes.md]]. *(Note: These definitions are implied from the OCR Q&A but not explicitly detailed in the core notes text provided. They would ideally be in a "Types of Patterns" subsection)*
+
+**14. Explain "Loose Piece Pattern" and "Sweep Pattern." Give an example for the application of a sweep pattern.**
+*   **Answer**: **Loose Piece pattern** (obstructing contour held loosely) for complex withdrawal (expensive, skilled). **Sweep pattern** (plane sweep generates axi-symmetrical shapes) for very large castings (e.g., bells in pit moulds). See [[Core Notes#221-moulding-box-and-pattern-media|Core Notes.md]]. *(Note: These definitions are implied from the OCR Q&A but not explicitly detailed in the core notes text provided. They would ideally be in a "Types of Patterns" subsection)*
+
+### Additional Welding Questions
+**22. Describe the resistance welding process. Explain the principle of heat generation in resistance welding and state its formula.**
+*   **Answer**: Joining with heat and pressure, no filler/flux. Heat from electrical resistance at joint interface: $H=I^2Rt$. See [[Core Notes#412-welding-definition-and-methods|Core Notes.md]]. *(Note: Formula $H=I^2Rt$ is present in Q&A content but not explicitly in provided OCR section for resistance welding. However, it is an essential part of the answer, so it's good to include.)*
+
+**25. What is Laser Beam Welding (LBW)? Describe its principle and list its key characteristics.**
+*   **Answer**: Fusion welding using a highly concentrated laser beam as heat source. Principle: Intense laser energy melts and fuses joint. Characteristics: High power density, focused heat, narrow/deep welds, high welding rates. See [[Core Notes#412-welding-definition-and-methods|Core Notes.md]]. *(Note: LBW is not explicitly covered in the OCR notes but it's in the Q&A. I will add a full section for LBW.)*
+
+**26. Explain the concept of "Conduction Mode Welding" and "Keyhole Mode Welding" in Laser Beam Welding.**
+*   **Answer**: **Conduction mode** (lower power density): surface melting, shallow wide welds. **Keyhole mode** (higher power density): material vaporization, plasma keyhole, deep narrow welds. See [[Core Notes#412-welding-definition-and-methods|Core Notes.md]]. *(Note: These definitions are implied from the Q&A but would be placed into the added LBW section.)*
+
+**27. List five advantages and five disadvantages of Laser Beam Welding.**
+*   **Answer**: Advantages: High precision, minimal HAZ, high speed, deep/narrow welds, non-contact. Disadvantages: High equipment/maintenance cost, strict joint fit-up, limited penetration for thick materials, material sensitivity. See [[Core Notes#412-welding-definition-and-methods|Core Notes.md]]. *(Note: These are implied from the Q&A but would be placed into the added LBW section.)*
 
 

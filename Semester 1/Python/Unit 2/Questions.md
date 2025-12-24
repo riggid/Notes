@@ -377,53 +377,7 @@ print(f"Duplicates: {duplicates}")
 print(f"Unique Candidates: {single_votes}")
 ```
 
-## 4. File Operations (New)
-
-### Program 16: Read and Display (CSV)
-**Read the contents of `pythonlab.csv` and display each record.**
-```python
-f = open("pythonlab.csv", "r")
-for line in f:
-    print(line.strip())
-f.close()
-```
-
-### Program 17: Count Employees (CSV)
-**Count how many employee records are present (excluding header).**
-```python
-with open("pythonlab.csv", "r") as f:
-    lines = f.readlines()
-    print("Total (excluding header):", len(lines) - 1)
-```
-
-### Program 18: Filter by Salary (CSV)
-**Print names of employees earning > 50,000.**
-```python
-with open("pythonlab.csv", "r") as f:
-    f.readline() # Skip header
-    for line in f:
-        data = line.strip().split(",")
-        if int(data[4]) > 50000:
-            print(f"{data[0]} - {data[4]}")
-```
-
-### Program 19: Sort by Salary (CSV)
-**Display names sorted by salary (highest first).**
-```python
-with open("pythonlab.csv", "r") as f:
-    f.readline()
-    records = []
-    for line in f:
-        data = line.strip().split(",")
-        records.append((data[0], int(data[4])))
-
-# Sort using lambda
-sorted_list = sorted(records, key=lambda x: x[1], reverse=True)
-for name, sal in sorted_list:
-    print(f"{name} - {sal}")
-```
-
-## 5. Functions
+## 4. Functions
 
 ### Program 16: Basic Functions (Mandatory)
 ```python
@@ -448,6 +402,53 @@ print(summarize(10, 20, 5, 40))
 ```text
 Sum: 75, Max: 40
 ```
+
+## 5. File Operations
+
+### Program 18: Read and Display (CSV)
+**Read the contents of `pythonlab.csv` and display each record.**
+```python
+f = open("pythonlab.csv", "r")
+for line in f:
+    print(line.strip())
+f.close()
+```
+
+### Program 19: Count Employees (CSV)
+**Count how many employee records are present (excluding header).**
+```python
+with open("pythonlab.csv", "r") as f:
+    lines = f.readlines()
+    print("Total (excluding header):", len(lines) - 1)
+```
+
+### Program 20: Filter by Salary (CSV)
+**Print names of employees earning > 50,000.**
+```python
+with open("pythonlab.csv", "r") as f:
+    f.readline() # Skip header
+    for line in f:
+        data = line.strip().split(",")
+        if int(data[4]) > 50000:
+            print(f"{data[0]} - {data[4]}")
+```
+
+### Program 21: Sort by Salary (CSV)
+**Display names sorted by salary (highest first).**
+```python
+with open("pythonlab.csv", "r") as f:
+    f.readline()
+    records = []
+    for line in f:
+        data = line.strip().split(",")
+        records.append((data[0], int(data[4])))
+
+# Sort using lambda
+sorted_list = sorted(records, key=lambda x: x[1], reverse=True)
+for name, sal in sorted_list:
+    print(f"{name} - {sal}")
+```
+
 # Mandatory Programs - UNIT 2
 
 > **Source**: PESU - UE25CS151A - Python for Computational Problem Solving (2025)
@@ -796,38 +797,4 @@ print("Cartesian Product:", cartesian)
 **Pythonic way (Set Comprehension)**:
 ```python
 cartesian = {(i, j) for i in s1 for j in s2}
-```
-
----
-
-## Program 15: Sieve of Eratosthenes
-
-**Task**: Find all prime numbers up to n.
-
-```python
-n = 17
-sieve = set(range(2, n + 1))
-
-while sieve:
-    small = min(sieve)  # smallest is always prime
-    print(small, end=" ")
-    sieve = sieve - set(range(small, n + 1, small))
-
-# Output: 2 3 5 7 11 13 17
-```
-
-**Alternative (storing primes)**:
-```python
-n = 17
-sieve = set(range(2, n + 1))
-primes = set()
-while sieve:
-    small = min(sieve)
-    primes.add(small)
-    sieve.difference_update(set(range(small, n + 1, small)))
-
-for p in sorted(primes):
-    print(p, end=" ")
-```
-
 ```

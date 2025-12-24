@@ -165,7 +165,7 @@ dg-publish: true
     print(p.age())
     ```
 
-**21. Programming Exercise: Shape Subclasses**
+**22. Programming Exercise: Shape Subclasses**
 *   **Question**: Create a `Shape` base class and `Square`/`Circle` subclasses with an `area()` method.
 *   **Solution**:
     ```python
@@ -181,7 +181,7 @@ dg-publish: true
         def area(self): return 3.14 * self.r ** 2
     ```
 
-**22. Programming Exercise: Point in Circle**
+**23. Programming Exercise: Point in Circle**
 *   **Question**: Function to check if a point `(px, py)` is inside a circle defined by `(cx, cy, r)`.
 *   **Solution**:
     ```python
@@ -194,7 +194,7 @@ dg-publish: true
 
 ## 4. Exception Handling
 
-**23. What is the syntax for handling exceptions in Python?**
+**24. What is the syntax for handling exceptions in Python?**
 *   **Answer**:
     ```python
     try:
@@ -205,13 +205,13 @@ dg-publish: true
         # Always executes (cleanup)
     ```
 
-**24. True or False: The `finally` block is executed only if an exception occurs.**
+**25. True or False: The `finally` block is executed only if an exception occurs.**
 *   **Answer**: **False**. It is **always** executed, regardless of whether an exception occurred or not.
 
-**25. True or False: You can have multiple `except` blocks for a single `try`.**
+**26. True or False: You can have multiple `except` blocks for a single `try`.**
 *   **Answer**: **True**. You can catch different exceptions separately.
 
-**26. Programming Exercise: Integer Input**
+**27. Programming Exercise: Integer Input**
 *   **Question**: Handle the error when a user inputs a non-integer.
 *   **Solution**:
     ```python
@@ -221,7 +221,7 @@ dg-publish: true
         print("Not a valid integer")
     ```
 
-**27. Programming Exercise: File Not Found**
+**28. Programming Exercise: File Not Found**
 *   **Question**: Handle the case where a file does not exist.
 *   **Solution**:
     ```python
